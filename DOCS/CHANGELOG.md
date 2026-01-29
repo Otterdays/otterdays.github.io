@@ -2,6 +2,13 @@
 
 All notable changes to this project. Format: [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [0.6.0] — 2026-01-29
+
+### Added
+
+- 30 additional projects with "Blank" descriptions (misc/archived projects).
+- Total: 48 projects displayed.
+
 ## [0.5.0] — 2026-01-29
 
 ### Added
