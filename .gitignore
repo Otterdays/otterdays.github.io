@@ -1,0 +1,15 @@
+# Secrets — never commit
+.env
+.env.*
+*.pem
+*.key
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Optional local output (uncomment if you don't want to track)
+# repos.md
