@@ -2,6 +2,12 @@
 
 All notable changes to this project. Format: [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [0.4.0] — 2026-01-29
+
+### Added
+
+- Three new projects: GaelDrive (3D open world car game), Better-Me (habit tracker), Aethereal Hymns (AI music generation).
+
 ## [0.3.0] — 2026-01-29
 
 ### Added
