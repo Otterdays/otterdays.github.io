@@ -5,9 +5,9 @@
 
 **Last 5 actions:**
 1. Init DOCS structure.
-2. Add SCRATCHPAD, SUMMARY, SBOM, STYLE_GUIDE, My_Thoughts, CHANGELOG, ARCHITECTURE.
-3. Create index.html dev profile.
-4. Add README, .gitignore.
-5. (Next) Push to GitHub; enable Pages.
+2. Create index.html dev profile.
+3. Add README, .gitignore; push to GitHub.
+4. Add Feeshman Deelux project card.
+5. Style project cards with tags.
 
-**Next steps:** Git init (if needed), add remote, push. Enable GitHub Pages (Source: main branch / root).
+**Next steps:** Commit and push project updates. Add more projects as needed. Enable GitHub Pages if not done yet.
