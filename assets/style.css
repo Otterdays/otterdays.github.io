@@ -24,9 +24,9 @@ body {
 }
 
 .profile {
-  max-width: 90rem;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 2rem 3rem;
+  padding: 2rem 4rem;
 }
 
 .profile-header {
