@@ -2,6 +2,13 @@
 
 All notable changes to this project. Format: [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [0.3.0] — 2026-01-29
+
+### Added
+
+- Seven more projects: Simpleton CLI, Pop-Em Pictures, BlockBanger, 3JS Body Baker, Chipper Chopper, AI Adventures, FireFest.
+- Responsive grid layout (auto-fill, min 280px columns).
+
 ## [0.2.0] — 2026-01-29
 
 ### Added
