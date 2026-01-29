@@ -2,6 +2,13 @@
 
 All notable changes to this project. Format: [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [0.5.0] — 2026-01-29
+
+### Added
+
+- Seven more projects: JeSsy-Assety, Dagda Server Manager, Click-It-Goin, Nexus Engine, RunicOS, RAIN.CHAT v2, Game: RolePlayed.
+- Total: 18 projects displayed.
+
 ## [0.4.0] — 2026-01-29
 
 ### Added
