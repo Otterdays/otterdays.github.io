@@ -2,6 +2,14 @@
 
 All notable changes to this project. Format: [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [0.7.0] — 2026-01-29
+
+### Added
+
+- 30 more projects from recent repos.
+- "Proof Of Purchase" — receipt scanner with budget analytics.
+- Total: 78 projects displayed.
+
 ## [0.6.0] — 2026-01-29
 
 ### Added
