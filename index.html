@@ -606,7 +606,9 @@
     document.querySelectorAll('.project-card').forEach(function (card) {
       var title = card.querySelector('.project-title');
       if (!title) return;
-      var isGame = title.textContent.trim().indexOf('GAME-') === 0;
+      var t = title.textContent.trim();
+      var games = ['kingdom.io', 'GaelDrive', 'FireFest', 'Brain-Busters'];
+      var isGame = t.indexOf('GAME-') === 0 || t.indexOf('Game:') === 0 || games.indexOf(t) !== -1;
       var badge = document.createElement('span');
       badge.className = 'project-badge ' + (isGame ? 'badge-game' : 'badge-software');
       badge.textContent = isGame ? 'Game' : 'Software';
