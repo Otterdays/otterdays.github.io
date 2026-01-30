@@ -1,6 +1,7 @@
 /* [TRACE: STYLE_GUIDE.md] — Dev profile styles */
 
-:root {
+:root,
+[data-theme="dark"] {
   --bg: #0f1419;
   --fg: #e6edf3;
   --muted: #8b949e;
@@ -9,8 +10,115 @@
   --border: #30363d;
 }
 
+[data-theme="light"] {
+  --bg: #f6f8fa;
+  --fg: #1f2328;
+  --muted: #656d76;
+  --accent: #0969da;
+  --card: #ffffff;
+  --border: #d0d7de;
+}
+
+[data-theme="google"] {
+  --bg: #202124;
+  --fg: #e8eaed;
+  --muted: #9aa0a6;
+  --accent: #8ab4f8;
+  --card: #292a2d;
+  --border: #5f6368;
+}
+
+[data-theme="openai"] {
+  --bg: #0d0d0d;
+  --fg: #ececec;
+  --muted: #8e8ea0;
+  --accent: #10a37f;
+  --card: #171717;
+  --border: #2f2f2f;
+}
+
+[data-theme="anthropic"] {
+  --bg: #1a1a1a;
+  --fg: #f0f0f0;
+  --muted: #a0a0a0;
+  --accent: #d97706;
+  --card: #262626;
+  --border: #404040;
+}
+
 * {
   box-sizing: border-box;
+}
+
+.theme-switcher {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 100;
+}
+
+.theme-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.75rem;
+  font-size: 0.85rem;
+  font-family: inherit;
+  color: var(--fg);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.theme-btn:hover {
+  background: var(--border);
+}
+
+.theme-btn-icon {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.theme-btn-arrow {
+  font-size: 0.6rem;
+  opacity: 0.7;
+}
+
+.theme-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 0.35rem;
+  min-width: 10rem;
+  padding: 0.35rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.theme-dropdown[hidden] {
+  display: none;
+}
+
+.theme-dropdown button {
+  display: block;
+  width: 100%;
+  padding: 0.45rem 0.65rem;
+  font-size: 0.85rem;
+  font-family: inherit;
+  text-align: left;
+  color: var(--fg);
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.theme-dropdown button:hover {
+  background: var(--border);
 }
 
 body {
