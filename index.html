@@ -607,7 +607,7 @@
       var title = card.querySelector('.project-title');
       if (!title) return;
       var t = title.textContent.trim();
-      var games = ['kingdom.io', 'GaelDrive', 'FireFest', 'Brain-Busters'];
+      var games = ['kingdom.io', 'GaelDrive', 'FireFest', 'Brain-Busters', 'Click-It-Goin', 'otter.planes.io', 'Runes-of-Tir-na-nOg', 'Zombobs', 'Fable-Forged'];
       var isGame = t.indexOf('GAME-') === 0 || t.indexOf('Game:') === 0 || games.indexOf(t) !== -1;
       var badge = document.createElement('span');
       badge.className = 'project-badge ' + (isGame ? 'badge-game' : 'badge-software');
