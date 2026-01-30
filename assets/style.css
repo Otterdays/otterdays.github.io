@@ -26,7 +26,7 @@ body {
 .profile {
   max-width: 100%;
   margin: 0;
-  padding: 2rem 1.5rem;
+  padding: 1.5rem 1rem;
 }
 
 .profile-header {
@@ -62,8 +62,8 @@ body {
 }
 
 .profile-section {
-  margin-top: 1.5rem;
-  padding: 1rem;
+  margin-top: 1.25rem;
+  padding: 0.75rem;
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 6px;
@@ -80,44 +80,44 @@ body {
   color: var(--muted);
 }
 
-/* ~6 columns at full width; drops to 5, 4, 3… on zoom/smaller viewport */
+/* ~6 columns at default width; tighter gaps so 6th panel fits */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1rem;
-  margin-top: 0.75rem;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.65rem;
+  margin-top: 0.5rem;
 }
 
 .project-card {
-  padding: 1rem;
+  padding: 0.75rem;
   background: var(--bg);
   border: 1px solid var(--border);
   border-radius: 4px;
 }
 
 .project-title {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.35rem;
   color: var(--accent);
 }
 
 .project-desc {
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.5rem;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .project-tags {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.35rem;
   flex-wrap: wrap;
 }
 
 .tag {
   display: inline-block;
-  padding: 0.125rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.1rem 0.4rem;
+  font-size: 0.7rem;
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 3px;
