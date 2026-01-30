@@ -2,6 +2,14 @@
 
 All notable changes to this project. Format: [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [0.8.0] — 2026-01-29
+
+### Changed
+
+- Profile: name Ryan, short About ("Short dev profile. 1+ year AI coding & engineering.").
+- Projects list sorted alphanumerically by title.
+- Page title: Ryan — Dev profile.
+
 ## [0.7.0] — 2026-01-29
 
 ### Added
