@@ -1,13 +1,13 @@
 # SCRATCHPAD
 
-**Active:** Dev profile site setup.  
+**Active:** Dev profile maintenance.  
 **Blockers:** None.
 
 **Last 5 actions:**
-1. Add README, .gitignore; push to GitHub.
-2. Add initial 8 projects (Feeshman Deelux, Simpleton CLI, etc.).
-3. Add GaelDrive, Better-Me, Aethereal Hymns.
-4. Add 7 more projects (JeSsy-Assety, Dagda, Click-It-Goin, Nexus, RunicOS, RAIN, RolePlayed).
-5. Total: 18 projects on site.
+1. Theme switcher (Dark, Light, Google, OpenAI, Anthropic, Otterdays).
+2. Badge system (Game, Software, Minecraft, Music, Android) with multi-badge support.
+3. Encoding fixes (title, profile handle).
+4. Duplicate section removed; projects sorted alphanumerically.
+5. Layout tweaks (6-wide grid, edge-to-edge, compact).
 
-**Next steps:** Commit and push project updates. Add more projects as needed. Enable GitHub Pages if not done yet.
+**Next steps:** Commit/push as needed. Add projects or badges per user request.

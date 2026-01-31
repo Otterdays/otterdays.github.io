@@ -4,22 +4,33 @@
 
 ```
 /
-├── index.html          # Dev profile landing
+├── index.html          # Dev profile, theme switcher, badge script
 ├── assets/
-│   └── style.css       # Minimal profile styles
+│   └── style.css       # Themes, badges, layout
 ├── fetch-github-repos.js  # Optional local script (repos list)
-├── DOCS/               # Project docs (not public-facing content)
+├── DOCS/               # Project docs (not public-facing)
 ├── README.md
 └── .gitignore
 ```
 
+## Themes
+
+- **data-theme** on `body`: dark (default), light, google, openai, anthropic, lorenz (Otterdays).
+- Stored in localStorage as `dev-profile-theme`. CSS variables: `--bg`, `--fg`, `--muted`, `--accent`, `--card`, `--border`.
+
+## Badges
+
+- **Types:** Game, Software, Minecraft, Music, Android.
+- Injected by script; project title → badge mapping in JS. Cards can show multiple badges (e.g. Brain-Busters: Android + Game).
+
 ## GitHub Pages
 
-- **Source:** Branch `main`, root (or `/docs` if you switch later).
-- **Content:** Static files only; no server, no API keys in repo.
-- **URL:** `https://otterdays.github.io/` (or custom domain if configured).
+- **Source:** Branch `main`, root.
+- **Content:** Static files; no server, no API keys.
+- **URL:** `https://otterdays.github.io/`
 
 ## Data flow
 
-- Profile content is static in `index.html`.
-- `fetch-github-repos.js` is for local use only; run manually to generate `repos.md`; do not commit secrets or tokens.
+- Profile content static in `index.html`.
+- Theme + badge scripts run on load; no external deps.
+- `fetch-github-repos.js` for local use only; do not commit secrets.

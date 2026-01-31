@@ -2,6 +2,22 @@
 
 All notable changes to this project. Format: [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [0.9.0] — 2026-01-30
+
+### Added
+
+- Theme switcher (top right): Dark, Light, Google, OpenAI, Anthropic, Otterdays (red/blue).
+- Badge system: Game, Software, Minecraft, Music, Android; cards can show multiple badges.
+- Badge assignments: Game-Runic-Lands, music projects, Minecraft projects, Android projects.
+
+### Changed
+
+- Software badge: indigo/blue. Game badge: amber/orange/red. Android badge: red–blue gradient.
+- Layout: 6-wide responsive grid, edge-to-edge, compact spacing.
+- Fixed encoding: page title, profile handle (middot).
+- Removed duplicate projects section; fixed sort script fallout.
+- Renamed 835 union (from B35_onion); sorted correctly.
+
 ## [0.8.0] — 2026-01-29
 
 ### Changed

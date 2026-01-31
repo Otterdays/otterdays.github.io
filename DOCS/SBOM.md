@@ -1,12 +1,13 @@
 # SBOM — Software Bill of Materials
 
-**Updated:** 2026-01-29
+**Updated:** 2026-01-30
 
 ## Runtime / site
 
 | Item        | Version | Purpose              | Notes                    |
 |-------------|---------|----------------------|--------------------------|
 | HTML/CSS/JS | —       | Static site          | No third-party packages  |
+| Inline JS   | —       | Theme switcher, badges | No external deps       |
 
 ## Tooling (optional, local)
 

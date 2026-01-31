@@ -2,7 +2,9 @@
 
 **Project:** otterdays.github.io — static dev profile site for GitHub Pages.
 
-**Status:** Ready to serve. Static HTML/CSS; no build step.
+**Status:** Ready to serve. Static HTML/CSS; small inline script for theme + badges.
+
+**Features:** Theme switcher (6 themes, localStorage), project badges (Game/Software/Minecraft/Music/Android), responsive 6-wide grid, ~77 projects.
 
 **Quick links:**
 - [SCRATCHPAD](SCRATCHPAD.md) — active tasks, blockers

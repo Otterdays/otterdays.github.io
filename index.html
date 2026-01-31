@@ -19,6 +19,7 @@
       <button type="button" role="menuitem" data-theme="google">Google</button>
       <button type="button" role="menuitem" data-theme="openai">OpenAI</button>
       <button type="button" role="menuitem" data-theme="anthropic">Anthropic</button>
+      <button type="button" role="menuitem" data-theme="lorenz">Otterdays</button>
     </div>
   </div>
   <main class="profile">
@@ -623,7 +624,7 @@
       var btn = document.getElementById('theme-btn');
       var dropdown = document.getElementById('theme-dropdown');
       var label = document.getElementById('theme-label');
-      var labels = { dark: 'Dark', light: 'Light', google: 'Google', openai: 'OpenAI', anthropic: 'Anthropic' };
+      var labels = { dark: 'Dark', light: 'Light', google: 'Google', openai: 'OpenAI', anthropic: 'Anthropic', lorenz: 'Otterdays' };
 
       function apply(name) {
         body.setAttribute('data-theme', name || 'dark');
@@ -655,12 +656,29 @@
       var title = card.querySelector('.project-title');
       if (!title) return;
       var t = title.textContent.trim();
-      var games = ['kingdom.io', 'GaelDrive', 'FireFest', 'Brain-Busters', 'Click-It-Goin', 'otter.planes.io', 'Runes-of-Tir-na-nOg', 'Zombobs', 'Fable-Forged'];
+      var games = ['kingdom.io', 'GaelDrive', 'FireFest', 'Brain-Busters', 'Click-It-Goin', 'otter.planes.io', 'Runes-of-Tir-na-nOg', 'Zombobs', 'Fable-Forged', 'Game-Runic-Lands'];
+      var music = ['Aethereal Hymns', 'Audacious', 'BlockBanger'];
+      var minecraft = ['Feeshman Deelux', 'Chipper Chopper', 'MC-Companion-Map'];
+      var android = ['Proof Of Purchase', 'Nebula-Camera', 'Brain-Busters', 'Lorenzez-Notez', 'Meal_Mate'];
       var isGame = t.indexOf('GAME-') === 0 || t.indexOf('Game:') === 0 || games.indexOf(t) !== -1;
-      var badge = document.createElement('span');
-      badge.className = 'project-badge ' + (isGame ? 'badge-game' : 'badge-software');
-      badge.textContent = isGame ? 'Game' : 'Software';
-      card.insertBefore(badge, card.firstChild);
+      var isMusic = music.indexOf(t) !== -1;
+      var isMinecraft = minecraft.indexOf(t) !== -1;
+      var isAndroid = android.indexOf(t) !== -1;
+      var types = [];
+      if (isMinecraft) types.push('minecraft');
+      if (isMusic) types.push('music');
+      if (isAndroid) types.push('android');
+      if (isGame) types.push('game');
+      if (types.length === 0) types.push('software');
+      var wrap = document.createElement('div');
+      wrap.className = 'project-badges';
+      types.forEach(function (type) {
+        var badge = document.createElement('span');
+        badge.className = 'project-badge badge-' + type;
+        badge.textContent = type.charAt(0).toUpperCase() + type.slice(1);
+        wrap.appendChild(badge);
+      });
+      card.insertBefore(wrap, card.firstChild);
     });
   </script>
 </body>

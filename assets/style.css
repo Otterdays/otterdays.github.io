@@ -46,6 +46,15 @@
   --border: #404040;
 }
 
+[data-theme="lorenz"] {
+  --bg: #0a0c14;
+  --fg: #eae8f2;
+  --muted: #9ca3af;
+  --accent: #ef4444;
+  --card: #12101a;
+  --border: #1e3a5f;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -205,10 +214,17 @@ body {
   border-radius: 4px;
 }
 
-.project-badge {
+.project-badges {
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  justify-content: flex-end;
+}
+
+.project-badge {
   font-size: 0.6rem;
   padding: 0.2rem 0.55rem;
   border-radius: 999px;
@@ -219,13 +235,31 @@ body {
 }
 
 .badge-game {
-  background: linear-gradient(135deg, #58a6ff 0%, #a371f7 50%, #f778ba 100%);
+  background: linear-gradient(135deg, #f59e0b 0%, #ea580c 50%, #dc2626 100%);
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .badge-software {
-  background: linear-gradient(135deg, #238636 0%, #2ea043 50%, #56d364 100%);
+  background: linear-gradient(135deg, #5c6bc0 0%, #7986cb 50%, #9fa8da 100%);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.badge-minecraft {
+  background: linear-gradient(135deg, #7cb342 0%, #8bc34a 50%, #9e9d24 100%);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.badge-music {
+  background: linear-gradient(135deg, #ab47bc 0%, #ba68c8 50%, #ce93d8 100%);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.badge-android {
+  background: linear-gradient(135deg, #dc2626 0%, #2563eb 100%);
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.25);
 }
