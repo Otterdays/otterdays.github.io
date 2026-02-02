@@ -2,6 +2,14 @@
 
 All notable changes to this project. Format: [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [0.10.0] — 2026-01-31
+
+### Added
+
+- AI Chats page (`chats.html`): quick links to ChatGPT, Gemini, Grok.
+- Nav entry "AI Chats" on all pages.
+- `.chat-link-card` styles for link grid on chats page.
+
 ## [0.9.0] — 2026-01-30
 
 ### Added

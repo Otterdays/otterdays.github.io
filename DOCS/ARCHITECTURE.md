@@ -5,6 +5,9 @@
 ```
 /
 ├── index.html          # Dev profile, theme switcher, badge script
+├── programs.html       # Projects grid with badges
+├── chats.html          # AI Chats quick links
+├── tools.html          # Desktop Tools: CLI (e.g. Gemini CLI), IDE (e.g. OpenAI Codex)
 ├── assets/
 │   └── style.css       # Themes, badges, layout
 ├── fetch-github-repos.js  # Optional local script (repos list)

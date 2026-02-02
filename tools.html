@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ryan - Home</title>
+  <title>Ryan - Desktop Tools</title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body data-theme="dark">
   <nav class="top-nav">
-    <a href="index.html" class="active">Home</a>
+    <a href="index.html">Home</a>
     <a href="programs.html">Programs</a>
     <a href="chats.html">AI Chats</a>
-    <a href="tools.html">Desktop Tools</a>
+    <a href="tools.html" class="active">Desktop Tools</a>
   </nav>
   <div class="theme-switcher">
     <button type="button" class="theme-btn" id="theme-btn" aria-label="Change theme" aria-expanded="false" aria-haspopup="true">
@@ -28,18 +28,41 @@
       <button type="button" role="menuitem" data-theme="lorenz">Otterdays</button>
     </div>
   </div>
-  <main class="home">
-    <div class="home-image">
-      <img src="assets/placeholder.svg" alt="" width="320" height="240">
-    </div>
-    <h1 class="home-title">Ryan</h1>
-    <p class="home-handle">Otterdays &middot; Developer</p>
-    <p class="home-info">Short dev profile. 1+ year AI coding &amp; engineering.</p>
-    <nav class="home-links">
-      <a href="#" class="home-link disabled" aria-disabled="true" title="Coming soon">X</a>
-      <a href="#" class="home-link disabled" aria-disabled="true" title="Coming soon">Bluesky</a>
-      <a href="https://github.com/Otterdays" rel="noopener noreferrer" target="_blank" class="home-link">GitHub</a>
-    </nav>
+  <main class="profile">
+    <header class="profile-header">
+      <h1 class="profile-title">Desktop Tools</h1>
+      <p class="profile-handle">CLI, IDE, and browser-based coding environments</p>
+    </header>
+    <section class="profile-section">
+      <h2>CLI</h2>
+      <div class="chat-links">
+        <a href="https://geminicli.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Gemini CLI</span>
+          <span class="chat-link-desc">Google&rsquo;s CLI: build, debug &amp; deploy with AI from the terminal</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+      </div>
+    </section>
+    <section class="profile-section">
+      <h2>IDE</h2>
+      <div class="chat-links">
+        <a href="https://chatgpt.com/codex/get-started" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">OpenAI Codex</span>
+          <span class="chat-link-desc">OpenAI&rsquo;s desktop IDE; Mac only for now</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+      </div>
+    </section>
+    <section class="profile-section">
+      <h2>Browser Tools</h2>
+      <div class="chat-links">
+        <a href="https://aistudio.google.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Google AI Studio</span>
+          <span class="chat-link-desc">Web-based AI development environment by Google</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+      </div>
+    </section>
   </main>
   <script>
     (function () {
@@ -49,17 +72,19 @@
       var dropdown = document.getElementById('theme-dropdown');
       var label = document.getElementById('theme-label');
       var labels = { dark: 'Dark', light: 'Light', google: 'Google', openai: 'OpenAI', anthropic: 'Anthropic', lorenz: 'Otterdays' };
+
       function apply(name) {
         body.setAttribute('data-theme', name || 'dark');
         if (label) label.textContent = labels[name] || 'Dark';
         try { localStorage.setItem(KEY, name || 'dark'); } catch (e) {}
       }
-      if (btn) btn.addEventListener('click', function () {
+
+      btn.addEventListener('click', function () {
         var open = dropdown.getAttribute('hidden') == null;
         dropdown.toggleAttribute('hidden', open);
         btn.setAttribute('aria-expanded', !open);
       });
-      if (dropdown) dropdown.querySelectorAll('[data-theme]').forEach(function (opt) {
+      dropdown.querySelectorAll('[data-theme]').forEach(function (opt) {
         opt.addEventListener('click', function () {
           apply(opt.getAttribute('data-theme'));
           dropdown.setAttribute('hidden', '');
@@ -67,7 +92,7 @@
         });
       });
       document.addEventListener('click', function (e) {
-        if (btn && dropdown && !btn.contains(e.target) && !dropdown.contains(e.target)) {
+        if (!btn.contains(e.target) && !dropdown.contains(e.target)) {
           dropdown.setAttribute('hidden', '');
           btn.setAttribute('aria-expanded', 'false');
         }
