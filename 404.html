@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 - Page Not Found | Otterdays</title>
+  <meta name="description" content="The page you're looking for doesn't exist. Return to Otterdays developer profile.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <style>
+    .error-page {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: calc(100vh - 4rem);
+      text-align: center;
+      padding: 2rem;
+    }
+    .error-code {
+      font-size: 8rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--accent) 0%, var(--muted) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin: 0;
+      line-height: 1;
+    }
+    .error-title {
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin: 1rem 0 0.5rem;
+      color: var(--fg);
+    }
+    .error-desc {
+      color: var(--muted);
+      margin: 0 0 2rem;
+      max-width: 24rem;
+    }
+    .error-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      color: var(--bg);
+      background: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: all 0.25s ease;
+    }
+    .error-link:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px var(--accent-glow);
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <nav class="top-nav">
+    <a href="index.html">Home</a>
+    <a href="programs.html">Programs</a>
+    <a href="chats.html">AI Chats</a>
+    <a href="tools.html">Desktop Tools</a>
+  </nav>
+  <div class="theme-switcher">
+    <button type="button" class="theme-btn" id="theme-btn" aria-label="Change theme" aria-expanded="false" aria-haspopup="true">
+      <span class="theme-btn-icon" aria-hidden="true">◐</span>
+      <span class="theme-btn-label" id="theme-label">Dark</span>
+      <span class="theme-btn-arrow">▼</span>
+    </button>
+    <div class="theme-dropdown" id="theme-dropdown" role="menu" hidden>
+      <button type="button" role="menuitem" data-theme="dark">Dark</button>
+      <button type="button" role="menuitem" data-theme="light">Light</button>
+      <button type="button" role="menuitem" data-theme="google">Google</button>
+      <button type="button" role="menuitem" data-theme="openai">OpenAI</button>
+      <button type="button" role="menuitem" data-theme="anthropic">Anthropic</button>
+      <button type="button" role="menuitem" data-theme="lorenz">Otterdays</button>
+    </div>
+  </div>
+  <main class="error-page">
+    <p class="error-code">404</p>
+    <h1 class="error-title">Page Not Found</h1>
+    <p class="error-desc">The page you're looking for doesn't exist or has been moved. Let's get you back on track.</p>
+    <a href="index.html" class="error-link">
+      <span>←</span> Back to Home
+    </a>
+  </main>
+  <script src="js/theme.js"></script>
+</body>
+</html>

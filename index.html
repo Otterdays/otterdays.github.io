@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ryan - Home</title>
-  <link rel="stylesheet" href="assets/style.css">
+  <title>Ryan | Otterdays - Developer Profile</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Ryan (Otterdays) - Developer with 1+ year of AI coding and engineering experience. Explore projects, tools, and resources.">
+  <meta name="keywords" content="developer, AI coding, engineering, programming, games, tools">
+  <meta name="author" content="Ryan Otterdays">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://otterdays.github.io/">
+  <meta property="og:title" content="Ryan | Otterdays - Developer Profile">
+  <meta property="og:description" content="Developer with 1+ year of AI coding and engineering experience.">
+  <meta property="og:image" content="https://otterdays.github.io/images/placeholder.svg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Ryan | Otterdays - Developer Profile">
+  <meta name="twitter:description" content="Developer with 1+ year of AI coding and engineering experience.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicon.svg">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://otterdays.github.io/">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body data-theme="dark">
   <nav class="top-nav">
     <a href="index.html" class="active">Home</a>
@@ -14,7 +43,8 @@
     <a href="tools.html">Desktop Tools</a>
   </nav>
   <div class="theme-switcher">
-    <button type="button" class="theme-btn" id="theme-btn" aria-label="Change theme" aria-expanded="false" aria-haspopup="true">
+    <button type="button" class="theme-btn" id="theme-btn" aria-label="Change theme" aria-expanded="false"
+      aria-haspopup="true">
       <span class="theme-btn-icon" aria-hidden="true">◐</span>
       <span class="theme-btn-label" id="theme-label">Dark</span>
       <span class="theme-btn-arrow">▼</span>
@@ -30,7 +60,7 @@
   </div>
   <main class="home">
     <div class="home-image">
-      <img src="assets/placeholder.svg" alt="" width="320" height="240">
+      <img src="images/placeholder.svg" alt="Ryan Otterdays profile" width="320" height="240">
     </div>
     <h1 class="home-title">Ryan</h1>
     <p class="home-handle">Otterdays &middot; Developer</p>
@@ -41,39 +71,7 @@
       <a href="https://github.com/Otterdays" rel="noopener noreferrer" target="_blank" class="home-link">GitHub</a>
     </nav>
   </main>
-  <script>
-    (function () {
-      var KEY = 'dev-profile-theme';
-      var body = document.body;
-      var btn = document.getElementById('theme-btn');
-      var dropdown = document.getElementById('theme-dropdown');
-      var label = document.getElementById('theme-label');
-      var labels = { dark: 'Dark', light: 'Light', google: 'Google', openai: 'OpenAI', anthropic: 'Anthropic', lorenz: 'Otterdays' };
-      function apply(name) {
-        body.setAttribute('data-theme', name || 'dark');
-        if (label) label.textContent = labels[name] || 'Dark';
-        try { localStorage.setItem(KEY, name || 'dark'); } catch (e) {}
-      }
-      if (btn) btn.addEventListener('click', function () {
-        var open = dropdown.getAttribute('hidden') == null;
-        dropdown.toggleAttribute('hidden', open);
-        btn.setAttribute('aria-expanded', !open);
-      });
-      if (dropdown) dropdown.querySelectorAll('[data-theme]').forEach(function (opt) {
-        opt.addEventListener('click', function () {
-          apply(opt.getAttribute('data-theme'));
-          dropdown.setAttribute('hidden', '');
-          btn.setAttribute('aria-expanded', 'false');
-        });
-      });
-      document.addEventListener('click', function (e) {
-        if (btn && dropdown && !btn.contains(e.target) && !dropdown.contains(e.target)) {
-          dropdown.setAttribute('hidden', '');
-          btn.setAttribute('aria-expanded', 'false');
-        }
-      });
-      apply(localStorage.getItem(KEY));
-    })();
-  </script>
+  <script src="js/theme.js"></script>
 </body>
+
 </html>
