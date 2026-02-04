@@ -38,7 +38,15 @@
         <a href="media.html" class="active">Media Gen</a>
         <a href="companies.html">Companies</a>
         <a href="tools.html">Tools</a>
+        <a href="specials.html">Specials</a>
+        <a href="about.html">About</a>
     </nav>
+    <!-- Search Trigger -->
+    <button type="button" class="search-trigger" id="search-trigger" aria-label="Search site">
+        <span class="search-trigger-icon" aria-hidden="true">🔍</span>
+        <span class="search-trigger-text">Search</span>
+        <span class="search-trigger-kbd"><kbd>⌘</kbd><kbd>K</kbd></span>
+    </button>
     <div class="theme-switcher">
         <button type="button" class="theme-btn" id="theme-btn" aria-label="Change theme" aria-expanded="false"
             aria-haspopup="true">
@@ -53,6 +61,9 @@
             <button type="button" role="menuitem" data-theme="openai">OpenAI</button>
             <button type="button" role="menuitem" data-theme="anthropic">Anthropic</button>
             <button type="button" role="menuitem" data-theme="lorenz">Otterdays</button>
+            <button type="button" role="menuitem" data-theme="github">GitHub</button>
+            <button type="button" role="menuitem" data-theme="dracula">Dracula</button>
+            <button type="button" role="menuitem" data-theme="nord">Nord</button>
         </div>
     </div>
     <main class="profile">
@@ -106,6 +117,17 @@
                     <span class="chat-link-desc">AI short video creator by Google</span>
                     <span class="chat-link-arrow">→</span>
                 </a>
+                <a href="https://supermaker.ai/explore/" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card">
+                    <span class="chat-link-name">SuperMaker AI</span>
+                    <span class="chat-link-desc">Free AI video, image &amp; music in one place</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://cuzi.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Cuzi AI</span>
+                    <span class="chat-link-desc">All-in-one: text-to-video, image-to-video, text-to-image</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
             </div>
         </section>
 
@@ -127,9 +149,19 @@
                     <span class="chat-link-desc">Open-source image generation</span>
                     <span class="chat-link-arrow">→</span>
                 </a>
+                <a href="https://blackforestlabs.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">FLUX</span>
+                    <span class="chat-link-desc">Black Forest Labs image gen &amp; editing (FLUX.2)</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
                 <a href="https://ideogram.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
                     <span class="chat-link-name">Ideogram</span>
                     <span class="chat-link-desc">AI image generator with text rendering</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://www.recraft.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Recraft</span>
+                    <span class="chat-link-desc">AI graphic design, vectors &amp; assets</span>
                     <span class="chat-link-arrow">→</span>
                 </a>
                 <a href="https://leonardo.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
@@ -164,10 +196,68 @@
                     <span class="chat-link-desc">AI voice generation &amp; cloning</span>
                     <span class="chat-link-arrow">→</span>
                 </a>
+                <a href="https://www.musicai.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">MusicAI</span>
+                    <span class="chat-link-desc">Free AI music up to 8 min, commercial use; text/lyrics to music</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Platforms &amp; discover</h2>
+            <p>Browse many AI apps (image, video, audio, chat) in one place.</p>
+            <div class="chat-links">
+                <a href="https://huggingface.co/spaces" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card">
+                    <span class="chat-link-name">Hugging Face Spaces</span>
+                    <span class="chat-link-desc">1M+ AI apps: image, video, audio, chat; host &amp; discover</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
             </div>
         </section>
     </main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+        <div class="site-stats">
+            <div class="stat-item" title="Indexed items"><span class="stat-icon">🔍</span> 100+ items</div>
+            <div class="stat-item" title="Pages"><span class="stat-icon">📄</span> 9 pages</div>
+            <div class="stat-item" title="Companies listed"><span class="stat-icon">🏢</span> 55+ companies</div>
+        </div>
+        <div class="site-copy">
+            &copy; 2026 Ryan Otterdays. Maintained with ❤️.
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button type="button" class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top">↑</button>
+
+    <!-- Search Modal -->
+    <div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Site search" hidden>
+        <div class="search-modal" id="search-modal">
+            <div class="search-header">
+                <span class="search-icon">🔍</span>
+                <input type="text" class="search-input" id="search-input"
+                    placeholder="Search projects, tools, companies..." autocomplete="off" autocapitalize="off"
+                    spellcheck="false">
+                <button type="button" class="search-close" id="search-close" aria-label="Close search">ESC</button>
+            </div>
+            <div class="search-meta">
+                <span class="search-count" id="search-count"></span>
+                <div class="search-hints">
+                    <span class="search-hint"><kbd>↑↓</kbd> Navigate</span>
+                    <span class="search-hint"><kbd>↵</kbd> Select</span>
+                    <span class="search-hint"><kbd>ESC</kbd> Close</span>
+                </div>
+            </div>
+            <div class="search-results" id="search-results"></div>
+        </div>
+    </div>
+
     <script src="js/theme.js"></script>
+    <script src="js/search-data.js"></script>
+    <script src="js/search.js"></script>
 </body>
 
 </html>

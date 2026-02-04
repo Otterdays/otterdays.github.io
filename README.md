@@ -19,17 +19,22 @@ Personal developer portfolio site, served on [GitHub Pages](https://pages.github
 | `index.html` | Home profile page |
 | `programs.html` | 60+ projects with auto-badges |
 | `chats.html` | Links to AI chat platforms |
-| `tools.html` | Developer tools (CLI, IDE, Browser) |
+| `media.html` | AI media gen (video/image tools) |
+| `companies.html` | AI & dev tools by company |
+| `tools.html` | Developer tools (CLI, IDE, browser) |
+| `specials.html` | Free & special services (e.g. free domains) |
+| `about.html` | About this site: projects, tools, and link policy |
 | `404.html` | Custom error page |
 
 ## Project Structure
 
 ```
-├── css/style.css      # All styles
-├── js/theme.js        # Theme switcher
-├── js/badges.js       # Project badge logic
-├── images/            # Favicon & images
-└── DOCS/              # Documentation
+├── css/style.css           # All styles
+├── js/theme.js             # Theme switcher
+├── js/badges.js            # Project badge logic
+├── fetch-github-repos.js   # Optional: fetch repos → repos.md
+├── images/                 # Favicon & images
+└── DOCS/                   # Documentation
 ```
 
 ## Local Development
@@ -41,8 +46,8 @@ npx serve .
 # Option 2: Open directly
 start index.html
 
-# Optional: Generate repos list
-node fetch-github-repos.js
+# Optional: Fetch GitHub repos (writes repos.md)
+node fetch-github-repos.js [username]
 ```
 
 ## Deployment

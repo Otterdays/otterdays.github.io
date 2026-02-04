@@ -8,8 +8,9 @@
 
   <!-- SEO Meta Tags -->
   <meta name="description"
-    content="CLI, IDE, and browser-based coding tools including Gemini CLI, OpenAI Codex, and Google AI Studio.">
-  <meta name="keywords" content="developer tools, CLI, IDE, Gemini CLI, OpenAI Codex, AI Studio, coding">
+    content="CLI, IDE, and browser tools: Cursor, Warp, Factory, TRAE, Gemini CLI, Kimi/Mistral Vibe/Crush/Qwen Code, Docker, Wispr Flow speech-to-text, Claude download.">
+  <meta name="keywords"
+    content="developer tools, CLI, IDE, Cursor, Warp, Gemini CLI, Docker, speech-to-text, Wispr Flow, coding">
   <meta name="author" content="Ryan Otterdays">
 
   <!-- Open Graph / Social -->
@@ -37,7 +38,15 @@
     <a href="media.html">Media Gen</a>
     <a href="companies.html">Companies</a>
     <a href="tools.html" class="active">Tools</a>
+    <a href="specials.html">Specials</a>
+    <a href="about.html">About</a>
   </nav>
+  <!-- Search Trigger -->
+  <button type="button" class="search-trigger" id="search-trigger" aria-label="Search site">
+    <span class="search-trigger-icon" aria-hidden="true">🔍</span>
+    <span class="search-trigger-text">Search</span>
+    <span class="search-trigger-kbd"><kbd>⌘</kbd><kbd>K</kbd></span>
+  </button>
   <div class="theme-switcher">
     <button type="button" class="theme-btn" id="theme-btn" aria-label="Change theme" aria-expanded="false"
       aria-haspopup="true">
@@ -52,6 +61,9 @@
       <button type="button" role="menuitem" data-theme="openai">OpenAI</button>
       <button type="button" role="menuitem" data-theme="anthropic">Anthropic</button>
       <button type="button" role="menuitem" data-theme="lorenz">Otterdays</button>
+      <button type="button" role="menuitem" data-theme="github">GitHub</button>
+      <button type="button" role="menuitem" data-theme="dracula">Dracula</button>
+      <button type="button" role="menuitem" data-theme="nord">Nord</button>
     </div>
   </div>
   <main class="profile">
@@ -67,11 +79,70 @@
           <span class="chat-link-desc">Google&rsquo;s CLI: build, debug &amp; deploy with AI from the terminal</span>
           <span class="chat-link-arrow">→</span>
         </a>
+        <a href="https://developers.openai.com/codex/cli" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">OpenAI Codex CLI</span>
+          <span class="chat-link-desc">OpenAI&rsquo;s AI-assisted terminal with slash commands</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://github.com/MoonshotAI/kimi-cli" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">Kimi Code CLI</span>
+          <span class="chat-link-desc">Moonshot AI: terminal agent; read/edit code, shell, MCP, ACP</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://github.com/mistralai/mistral-vibe" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">Mistral Vibe</span>
+          <span class="chat-link-desc">Mistral&rsquo;s open-source CLI coding assistant; skills, MCP</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://github.com/charmbracelet/crush" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">Crush</span>
+          <span class="chat-link-desc">Charm: agentic CLI; multi-model, LSP, MCP, sessions</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://github.com/QwenLM/qwen-code" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Qwen Code</span>
+          <span class="chat-link-desc">QwenLM: open-source terminal agent; OAuth free tier, IDE integration</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
       </div>
     </section>
     <section class="profile-section">
       <h2>IDE</h2>
       <div class="chat-links">
+        <a href="https://cursor.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Cursor</span>
+          <span class="chat-link-desc">AI-first code editor; agent, Tab autocomplete, multi-model</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://www.trae.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">TRAE</span>
+          <span class="chat-link-desc">10x AI engineer; build software solutions independently</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://www.warp.dev/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Warp</span>
+          <span class="chat-link-desc">Agentic terminal &amp; IDE; full terminal use, multi-model</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://factory.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Factory</span>
+          <span class="chat-link-desc">Agent-native dev; Droids in IDE, web, CLI, Slack, backlog</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://antigravity.google/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Google Antigravity</span>
+          <span class="chat-link-desc">Google&rsquo;s agentic IDE; autonomous agents, editor/terminal/browser</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://developer.android.com/studio" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Android Studio</span>
+          <span class="chat-link-desc">Official Android IDE; Gemini in Android Studio, Cloud</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
         <a href="https://chatgpt.com/codex/get-started" rel="noopener noreferrer" target="_blank"
           class="chat-link-card">
           <span class="chat-link-name">OpenAI Codex</span>
@@ -88,14 +159,40 @@
     <section class="profile-section">
       <h2>Browser Tools</h2>
       <div class="chat-links">
+        <a href="https://bolt.new/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Bolt</span>
+          <span class="chat-link-desc">StackBlitz: build apps &amp; sites by chatting with AI (Bolt V2)</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
         <a href="https://aistudio.google.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Google AI Studio</span>
           <span class="chat-link-desc">Web-based AI development environment by Google</span>
           <span class="chat-link-arrow">→</span>
         </a>
+        <a href="https://replit.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Replit</span>
+          <span class="chat-link-desc">Browser IDE: build, run &amp; deploy with AI; no install</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://ampcode.com/free" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Amp Free</span>
+          <span class="chat-link-desc">Free agentic coding in VS Code, JetBrains &amp; CLI</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
         <a href="https://firebase.google.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Firebase</span>
-          <span class="chat-link-desc">Google&rsquo;s app platform with AI, hosting, database &amp; auth</span>
+          <span class="chat-link-desc">Google: hosting, Firestore, Auth, Firebase ML, AI (Studio, Gemini in Firebase,
+            Genkit)</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://www.mongodb.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">MongoDB</span>
+          <span class="chat-link-desc">Atlas: document DB, vector search, stream processing; AI-ready platform</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://huggingface.co/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Hugging Face</span>
+          <span class="chat-link-desc">Models (2M+), datasets (500k+), Spaces (1M+ apps); Inference, HuggingChat</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://supabase.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
@@ -124,10 +221,138 @@
           <span class="chat-link-desc">Browser automation agent by Google</span>
           <span class="chat-link-arrow">→</span>
         </a>
+        <a href="https://www.netlify.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Netlify</span>
+          <span class="chat-link-desc">Free static &amp; Jamstack hosting from Git, serverless functions</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://pages.cloudflare.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Cloudflare Pages</span>
+          <span class="chat-link-desc">Free static hosting from Git, edge, unlimited collaborators</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+      </div>
+    </section>
+    <section class="profile-section">
+      <h2>Tunneling</h2>
+      <p>Expose your local server to the internet without DNS or firewall config.</p>
+      <div class="chat-links">
+        <a href="https://theboroer.github.io/localtunnel-www/" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">Localtunnel</span>
+          <span class="chat-link-desc">Share localhost via a public HTTPS URL; <code>npm i -g localtunnel</code> then
+            <code>lt --port 8000</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://tunnelmole.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Tunnelmole</span>
+          <span class="chat-link-desc">Free open-source ngrok alternative; no login, self-hostable</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://retunnel.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">reTunnel</span>
+          <span class="chat-link-desc">Free unified ingress / secure tunnels for developers</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+      </div>
+    </section>
+    <section class="profile-section">
+      <h2>Voice &amp; speech-to-text</h2>
+      <div class="chat-links">
+        <a href="https://wisprflow.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Wispr Flow</span>
+          <span class="chat-link-desc">AI voice dictation; speech to polished text in every app (Mac, Windows,
+            iPhone)</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+      </div>
+    </section>
+    <section class="profile-section">
+      <h2>DevOps &amp; containers</h2>
+      <div class="chat-links">
+        <a href="https://www.docker.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Docker</span>
+          <span class="chat-link-desc">Containers, MCP catalog, agentic stack with Compose</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+      </div>
+    </section>
+    <section class="profile-section">
+      <h2>Game development</h2>
+      <div class="chat-links">
+        <a href="https://rosebud.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Rosebud AI</span>
+          <span class="chat-link-desc">Vibe coding: make 2D/3D games &amp; worlds with AI; no code, browser</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://itch.io/game-development" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">itch.io (game dev)</span>
+          <span class="chat-link-desc">Indie dev portal: publish games, assets, jams, dev logs</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+      </div>
+    </section>
+    <section class="profile-section">
+      <h2>Reference</h2>
+      <div class="chat-links">
+        <a href="https://modelcontextprotocol.io/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Model Context Protocol (MCP)</span>
+          <span class="chat-link-desc">Open standard (Anthropic) for AI ↔ tools &amp; data; Cursor, Xcode use it</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://claude.com/download" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Claude (desktop &amp; mobile)</span>
+          <span class="chat-link-desc">Download Claude app for macOS, Windows, iOS, Android</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://html.onlineviewer.net/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">HTML Online Viewer</span>
+          <span class="chat-link-desc">Edit and preview HTML in the browser; format, highlight</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
       </div>
     </section>
   </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="site-stats">
+      <div class="stat-item" title="Indexed items"><span class="stat-icon">🔍</span> 100+ items</div>
+      <div class="stat-item" title="Pages"><span class="stat-icon">📄</span> 9 pages</div>
+      <div class="stat-item" title="Companies listed"><span class="stat-icon">🏢</span> 55+ companies</div>
+    </div>
+    <div class="site-copy">
+      &copy; 2026 Ryan Otterdays. Maintained with ❤️.
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button type="button" class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top">↑</button>
+
+  <!-- Search Modal -->
+  <div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Site search" hidden>
+    <div class="search-modal" id="search-modal">
+      <div class="search-header">
+        <span class="search-icon">🔍</span>
+        <input type="text" class="search-input" id="search-input" placeholder="Search projects, tools, companies..."
+          autocomplete="off" autocapitalize="off" spellcheck="false">
+        <button type="button" class="search-close" id="search-close" aria-label="Close search">ESC</button>
+      </div>
+      <div class="search-meta">
+        <span class="search-count" id="search-count"></span>
+        <div class="search-hints">
+          <span class="search-hint"><kbd>↑↓</kbd> Navigate</span>
+          <span class="search-hint"><kbd>↵</kbd> Select</span>
+          <span class="search-hint"><kbd>ESC</kbd> Close</span>
+        </div>
+      </div>
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+
   <script src="js/theme.js"></script>
+  <script src="js/search-data.js"></script>
+  <script src="js/search.js"></script>
 </body>
 
 </html>

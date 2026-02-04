@@ -38,7 +38,15 @@
         <a href="media.html">Media Gen</a>
         <a href="companies.html" class="active">Companies</a>
         <a href="tools.html">Tools</a>
+        <a href="specials.html">Specials</a>
+        <a href="about.html">About</a>
     </nav>
+    <!-- Search Trigger -->
+    <button type="button" class="search-trigger" id="search-trigger" aria-label="Search site">
+        <span class="search-trigger-icon" aria-hidden="true">🔍</span>
+        <span class="search-trigger-text">Search</span>
+        <span class="search-trigger-kbd"><kbd>⌘</kbd><kbd>K</kbd></span>
+    </button>
     <div class="theme-switcher">
         <button type="button" class="theme-btn" id="theme-btn" aria-label="Change theme" aria-expanded="false"
             aria-haspopup="true">
@@ -53,6 +61,9 @@
             <button type="button" role="menuitem" data-theme="openai">OpenAI</button>
             <button type="button" role="menuitem" data-theme="anthropic">Anthropic</button>
             <button type="button" role="menuitem" data-theme="lorenz">Otterdays</button>
+            <button type="button" role="menuitem" data-theme="github">GitHub</button>
+            <button type="button" role="menuitem" data-theme="dracula">Dracula</button>
+            <button type="button" role="menuitem" data-theme="nord">Nord</button>
         </div>
     </div>
     <main class="profile">
@@ -75,9 +86,16 @@
                     <span class="chat-link-desc">Web-based AI development</span>
                     <span class="chat-link-arrow">→</span>
                 </a>
+                <a href="https://notebooklm.google.com/" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card">
+                    <span class="chat-link-name">NotebookLM</span>
+                    <span class="chat-link-desc">AI notebook: chat with your docs, PDFs &amp; sources</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
                 <a href="https://firebase.google.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
                     <span class="chat-link-name">Firebase</span>
-                    <span class="chat-link-desc">App platform with AI, hosting, database</span>
+                    <span class="chat-link-desc">Hosting, Firestore, Auth, Firebase ML, AI (Studio, Gemini in Firebase,
+                        Genkit)</span>
                     <span class="chat-link-arrow">→</span>
                 </a>
                 <a href="https://cloud.google.com/vertex-ai" rel="noopener noreferrer" target="_blank"
@@ -136,6 +154,17 @@
                     <span class="chat-link-desc">AI short video creator</span>
                     <span class="chat-link-arrow">→</span>
                 </a>
+                <a href="https://antigravity.google/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Antigravity</span>
+                    <span class="chat-link-desc">Agentic IDE; autonomous agents across editor, terminal, browser</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://developer.android.com/studio" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card">
+                    <span class="chat-link-name">Android Studio</span>
+                    <span class="chat-link-desc">Official Android IDE; Gemini in Android Studio</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
             </div>
         </section>
 
@@ -163,6 +192,12 @@
                     <span class="chat-link-desc">Desktop coding assistant</span>
                     <span class="chat-link-arrow">→</span>
                 </a>
+                <a href="https://developers.openai.com/codex/cli" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card">
+                    <span class="chat-link-name">Codex CLI</span>
+                    <span class="chat-link-desc">AI-assisted terminal</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
             </div>
         </section>
 
@@ -178,6 +213,17 @@
                     class="chat-link-card">
                     <span class="chat-link-name">API Console</span>
                     <span class="chat-link-desc">Developer API access</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://modelcontextprotocol.io/" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card">
+                    <span class="chat-link-name">Model Context Protocol (MCP)</span>
+                    <span class="chat-link-desc">Open standard for AI ↔ tools (Anthropic)</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://claude.com/download" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Claude (desktop &amp; mobile)</span>
+                    <span class="chat-link-desc">Download Claude app for macOS, Windows, iOS, Android</span>
                     <span class="chat-link-arrow">→</span>
                 </a>
             </div>
@@ -235,6 +281,17 @@
         </section>
 
         <section class="profile-section">
+            <h2>Cursor</h2>
+            <div class="chat-links">
+                <a href="https://cursor.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Cursor</span>
+                    <span class="chat-link-desc">AI-first code editor; agent, Tab autocomplete, multi-model</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
             <h2>Mistral</h2>
             <div class="chat-links">
                 <a href="https://chat.mistral.ai/chat" rel="noopener noreferrer" target="_blank" class="chat-link-card">
@@ -245,6 +302,12 @@
                 <a href="https://console.mistral.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
                     <span class="chat-link-name">API Console</span>
                     <span class="chat-link-desc">Developer platform</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://github.com/mistralai/mistral-vibe" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card">
+                    <span class="chat-link-name">Mistral Vibe</span>
+                    <span class="chat-link-desc">Open-source CLI coding assistant; skills, MCP</span>
                     <span class="chat-link-arrow">→</span>
                 </a>
             </div>
@@ -268,11 +331,17 @@
         </section>
 
         <section class="profile-section">
-            <h2>Alibaba</h2>
+            <h2>Alibaba / QwenLM</h2>
             <div class="chat-links">
                 <a href="https://chat.qwen.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
                     <span class="chat-link-name">Qwen</span>
                     <span class="chat-link-desc">Qwen AI chat</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://github.com/QwenLM/qwen-code" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card">
+                    <span class="chat-link-name">Qwen Code</span>
+                    <span class="chat-link-desc">Open-source terminal agent; OAuth free tier, IDE integration</span>
                     <span class="chat-link-arrow">→</span>
                 </a>
             </div>
@@ -288,8 +357,683 @@
                 </a>
             </div>
         </section>
+
+        <section class="profile-section">
+            <h2>Perplexity</h2>
+            <div class="chat-links">
+                <a href="https://www.perplexity.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Perplexity</span>
+                    <span class="chat-link-desc">AI answer engine with cited search</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Moonshot AI</h2>
+            <div class="chat-links">
+                <a href="https://www.kimi.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Kimi</span>
+                    <span class="chat-link-desc">Visual coding &amp; agent swarm</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://github.com/MoonshotAI/kimi-cli" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card">
+                    <span class="chat-link-name">Kimi Code CLI</span>
+                    <span class="chat-link-desc">Terminal agent; MCP, ACP, VS Code extension</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Minimax</h2>
+            <div class="chat-links">
+                <a href="https://agent.minimax.io/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Minimax</span>
+                    <span class="chat-link-desc">AI agent chat</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>IBM</h2>
+            <div class="chat-links">
+                <a href="https://www.ibm.com/granite/playground" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card">
+                    <span class="chat-link-name">IBM Granite</span>
+                    <span class="chat-link-desc">Granite Playground</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Zhipu AI</h2>
+            <div class="chat-links">
+                <a href="https://chat.z.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Z.ai</span>
+                    <span class="chat-link-desc">GLM-4 powered chat</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Quora</h2>
+            <div class="chat-links">
+                <a href="https://poe.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Poe</span>
+                    <span class="chat-link-desc">Multi-model hub (100+ models)</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Character.AI</h2>
+            <div class="chat-links">
+                <a href="https://character.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Character.AI</span>
+                    <span class="chat-link-desc">10M+ user-created AI characters</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Inflection</h2>
+            <div class="chat-links">
+                <a href="https://pi.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Pi</span>
+                    <span class="chat-link-desc">Personal, emotionally intelligent AI</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Cohere</h2>
+            <div class="chat-links">
+                <a href="https://chat.cohere.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Cohere Chat</span>
+                    <span class="chat-link-desc">Command R, RAG</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://cohere.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Cohere</span>
+                    <span class="chat-link-desc">Developer platform</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Arcee AI</h2>
+            <div class="chat-links">
+                <a href="https://www.arcee.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Arcee AI</span>
+                    <span class="chat-link-desc">Open intelligence lab; Trinity models</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Allen Institute for AI</h2>
+            <div class="chat-links">
+                <a href="https://allenai.org/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Allen AI (Ai2)</span>
+                    <span class="chat-link-desc">Open models (Olmo, Molmo), research</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>DuckDuckGo</h2>
+            <div class="chat-links">
+                <a href="https://duck.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Duck.ai</span>
+                    <span class="chat-link-desc">Privacy-first AI chat</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>OpenRouter</h2>
+            <div class="chat-links">
+                <a href="https://openrouter.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">OpenRouter</span>
+                    <span class="chat-link-desc">One API for 300+ models, 60+ providers</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Groq</h2>
+            <div class="chat-links">
+                <a href="https://console.groq.com/home" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card">
+                    <span class="chat-link-name">Groq Cloud</span>
+                    <span class="chat-link-desc">Fast inference; playground &amp; API</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>SambaNova</h2>
+            <div class="chat-links">
+                <a href="https://cloud.sambanova.ai/playground" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card">
+                    <span class="chat-link-name">SambaNova Playground</span>
+                    <span class="chat-link-desc">Inference playground</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Cerebras</h2>
+            <div class="chat-links">
+                <a href="https://www.cerebras.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Cerebras</span>
+                    <span class="chat-link-desc">Ultra-fast inference; Try Chat</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Hugging Face</h2>
+            <div class="chat-links">
+                <a href="https://huggingface.co/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Hugging Face</span>
+                    <span class="chat-link-desc">Models (2M+), datasets (500k+), Spaces (1M+ apps)</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://huggingface.co/chat" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">HuggingChat</span>
+                    <span class="chat-link-desc">Chat with open-source models</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Docker</h2>
+            <div class="chat-links">
+                <a href="https://www.docker.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Docker</span>
+                    <span class="chat-link-desc">Containers, MCP catalog, agentic stack, hardened images</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>StackBlitz</h2>
+            <div class="chat-links">
+                <a href="https://bolt.new/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Bolt</span>
+                    <span class="chat-link-desc">Build apps &amp; sites by chatting with AI</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Replit</h2>
+            <div class="chat-links">
+                <a href="https://replit.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Replit</span>
+                    <span class="chat-link-desc">Browser IDE: build, run &amp; deploy with AI</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Amp</h2>
+            <div class="chat-links">
+                <a href="https://ampcode.com/free" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Amp Free</span>
+                    <span class="chat-link-desc">Agentic coding in VS Code, JetBrains &amp; CLI</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>TRAE</h2>
+            <div class="chat-links">
+                <a href="https://www.trae.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">TRAE</span>
+                    <span class="chat-link-desc">10x AI engineer; build software solutions independently</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Warp</h2>
+            <div class="chat-links">
+                <a href="https://www.warp.dev/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Warp</span>
+                    <span class="chat-link-desc">Agentic terminal &amp; IDE; full terminal use, multi-model</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Wispr</h2>
+            <div class="chat-links">
+                <a href="https://wisprflow.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Wispr Flow</span>
+                    <span class="chat-link-desc">AI voice dictation; speech to polished text in every app</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Factory</h2>
+            <div class="chat-links">
+                <a href="https://factory.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Factory</span>
+                    <span class="chat-link-desc">Agent-native dev; Droids in IDE, web, CLI, Slack, backlog</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Charm Bracelet</h2>
+            <div class="chat-links">
+                <a href="https://github.com/charmbracelet/crush" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card">
+                    <span class="chat-link-name">Crush</span>
+                    <span class="chat-link-desc">Agentic CLI; multi-model, LSP, MCP, sessions</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Netlify</h2>
+            <div class="chat-links">
+                <a href="https://www.netlify.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Netlify</span>
+                    <span class="chat-link-desc">Static &amp; Jamstack hosting from Git</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Cloudflare</h2>
+            <div class="chat-links">
+                <a href="https://pages.cloudflare.com/" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card">
+                    <span class="chat-link-name">Cloudflare Pages</span>
+                    <span class="chat-link-desc">Static hosting from Git, edge</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Vercel</h2>
+            <div class="chat-links">
+                <a href="https://vercel.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Vercel</span>
+                    <span class="chat-link-desc">Deploy frontend apps with edge functions</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Supabase</h2>
+            <div class="chat-links">
+                <a href="https://supabase.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Supabase</span>
+                    <span class="chat-link-desc">Open source Firebase alternative, Postgres</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>MongoDB</h2>
+            <div class="chat-links">
+                <a href="https://www.mongodb.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">MongoDB Atlas</span>
+                    <span class="chat-link-desc">Document DB, vector search, stream processing; AI-ready</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Adobe</h2>
+            <div class="chat-links">
+                <a href="https://www.adobe.com/products/firefly.html" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card">
+                    <span class="chat-link-name">Adobe Firefly</span>
+                    <span class="chat-link-desc">Generative AI for creatives</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Stability AI</h2>
+            <div class="chat-links">
+                <a href="https://stability.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Stable Diffusion</span>
+                    <span class="chat-link-desc">Open-source image generation</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Black Forest Labs</h2>
+            <div class="chat-links">
+                <a href="https://blackforestlabs.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">FLUX</span>
+                    <span class="chat-link-desc">Image gen &amp; editing (FLUX.2)</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Runway</h2>
+            <div class="chat-links">
+                <a href="https://runwayml.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Runway</span>
+                    <span class="chat-link-desc">Gen-3 video &amp; creative AI</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Midjourney</h2>
+            <div class="chat-links">
+                <a href="https://www.midjourney.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Midjourney</span>
+                    <span class="chat-link-desc">Text-to-image AI art</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Ideogram</h2>
+            <div class="chat-links">
+                <a href="https://ideogram.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Ideogram</span>
+                    <span class="chat-link-desc">AI image generator with text rendering</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Recraft</h2>
+            <div class="chat-links">
+                <a href="https://www.recraft.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Recraft</span>
+                    <span class="chat-link-desc">AI graphic design, vectors &amp; assets</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Leonardo.ai</h2>
+            <div class="chat-links">
+                <a href="https://leonardo.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Leonardo.ai</span>
+                    <span class="chat-link-desc">AI art for game assets</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Luma</h2>
+            <div class="chat-links">
+                <a href="https://lumalabs.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Luma Dream Machine</span>
+                    <span class="chat-link-desc">Text-to-video generation</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>ElevenLabs</h2>
+            <div class="chat-links">
+                <a href="https://elevenlabs.io/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">ElevenLabs</span>
+                    <span class="chat-link-desc">AI voice generation &amp; cloning</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Suno</h2>
+            <div class="chat-links">
+                <a href="https://suno.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Suno</span>
+                    <span class="chat-link-desc">AI music from text prompts</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Udio</h2>
+            <div class="chat-links">
+                <a href="https://www.udio.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Udio</span>
+                    <span class="chat-link-desc">AI music creation</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Artlist</h2>
+            <div class="chat-links">
+                <a href="https://artlist.io/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Artlist</span>
+                    <span class="chat-link-desc">AI video, stock footage &amp; music</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Synthesia</h2>
+            <div class="chat-links">
+                <a href="https://www.synthesia.io/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Synthesia</span>
+                    <span class="chat-link-desc">AI avatar video</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>HeyGen</h2>
+            <div class="chat-links">
+                <a href="https://www.heygen.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">HeyGen</span>
+                    <span class="chat-link-desc">AI video with digital avatars</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Pika</h2>
+            <div class="chat-links">
+                <a href="https://pika.art/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Pika</span>
+                    <span class="chat-link-desc">Text-to-video &amp; image-to-video</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>SuperMaker AI</h2>
+            <div class="chat-links">
+                <a href="https://supermaker.ai/explore/" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card">
+                    <span class="chat-link-name">SuperMaker AI</span>
+                    <span class="chat-link-desc">Video, image &amp; music in one place</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Cuzi AI</h2>
+            <div class="chat-links">
+                <a href="https://cuzi.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Cuzi AI</span>
+                    <span class="chat-link-desc">Text-to-video, image-to-video, text-to-image</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>MusicAI</h2>
+            <div class="chat-links">
+                <a href="https://www.musicai.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">MusicAI</span>
+                    <span class="chat-link-desc">AI music, commercial use</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+        <section class="profile-section">
+            <h2>Rosebud AI</h2>
+            <div class="chat-links">
+                <a href="https://rosebud.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Rosebud AI</span>
+                    <span class="chat-link-desc">Vibe coding: 2D/3D games &amp; worlds with AI; Game Creator, PixelVibe,
+                        AI Storybook</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+        <section class="profile-section">
+            <h2>itch.io</h2>
+            <div class="chat-links">
+                <a href="https://itch.io/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">itch.io</span>
+                    <span class="chat-link-desc">Indie game store: free/paid games, jams, dev portal, assets,
+                        bundles</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+        <section class="profile-section">
+            <h2>Armor Games</h2>
+            <div class="chat-links">
+                <a href="https://armorgames.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Armor Games</span>
+                    <span class="chat-link-desc">Free online games: action, puzzle, strategy, MMO, dev portal</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+        <section class="profile-section">
+            <h2>Newgrounds</h2>
+            <div class="chat-links">
+                <a href="https://www.newgrounds.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Newgrounds</span>
+                    <span class="chat-link-desc">Classic portal: games, art, audio; Flash legacy, indie community</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+        <section class="profile-section">
+            <h2>PlayHop</h2>
+            <div class="chat-links">
+                <a href="https://playhop.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">PlayHop</span>
+                    <span class="chat-link-desc">Free browser games platform</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+        <section class="profile-section">
+            <h2>Yandex</h2>
+            <div class="chat-links">
+                <a href="https://yandex.com/games/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Yandex Games</span>
+                    <span class="chat-link-desc">Yandex game portal: play in browser</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
     </main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+        <div class="site-stats">
+            <div class="stat-item" title="Indexed items"><span class="stat-icon">🔍</span> 100+ items</div>
+            <div class="stat-item" title="Pages"><span class="stat-icon">📄</span> 9 pages</div>
+            <div class="stat-item" title="Companies listed"><span class="stat-icon">🏢</span> 55+ companies</div>
+        </div>
+        <div class="site-copy">
+            &copy; 2026 Ryan Otterdays. Maintained with ❤️.
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button type="button" class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top">↑</button>
+
+    <!-- Search Modal -->
+    <div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Site search" hidden>
+        <div class="search-modal" id="search-modal">
+            <div class="search-header">
+                <span class="search-icon">🔍</span>
+                <input type="text" class="search-input" id="search-input"
+                    placeholder="Search projects, tools, companies..." autocomplete="off" autocapitalize="off"
+                    spellcheck="false">
+                <button type="button" class="search-close" id="search-close" aria-label="Close search">ESC</button>
+            </div>
+            <div class="search-meta">
+                <span class="search-count" id="search-count"></span>
+                <div class="search-hints">
+                    <span class="search-hint"><kbd>↑↓</kbd> Navigate</span>
+                    <span class="search-hint"><kbd>↵</kbd> Select</span>
+                    <span class="search-hint"><kbd>ESC</kbd> Close</span>
+                </div>
+            </div>
+            <div class="search-results" id="search-results"></div>
+        </div>
+    </div>
+
     <script src="js/theme.js"></script>
+    <script src="js/search-data.js"></script>
+    <script src="js/search.js"></script>
 </body>
 
 </html>

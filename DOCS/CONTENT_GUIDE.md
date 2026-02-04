@@ -1,0 +1,267 @@
+# CONTENT_GUIDE
+
+How to add new content to the website and ensure it appears in search.
+
+---
+
+## Quick Checklist
+
+When adding **any** new item:
+
+1. ✅ Add HTML entry to the appropriate page
+2. ✅ Add entry to `js/search-data.js`
+3. ✅ Use consistent tags (see Tag Reference below)
+4. ✅ Add company entry to `companies.html` if it's a new organization
+5. ✅ Update `DOCS/SCRATCHPAD.md` and `DOCS/CHANGELOG.md`
+
+---
+
+## 1. Adding to HTML Pages
+
+### Page → Content Type Mapping
+
+| Page | What to add | When to use |
+|------|-------------|-------------|
+| `programs.html` | Your own projects | Personal creations, repos, apps |
+| `chats.html` | AI chat assistants & provider hubs | Interactive AI you can "talk to" |
+| `media.html` | AI media generation tools | Video, image, audio, 3D generation |
+| `tools.html` | Developer tools | CLI, IDE, browser, tunneling, DevOps |
+| `companies.html` | Organizations/companies | Every company with products on the site |
+| `specials.html` | Free resources, learning | Domains, courses, unique offers |
+
+### HTML Template (link card)
+
+```html
+<a href="https://example.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+    <span class="chat-link-name">Tool Name</span>
+    <span class="chat-link-desc">Brief description of what it does</span>
+    <span class="chat-link-arrow">→</span>
+</a>
+```
+
+### HTML Template (section with multiple cards)
+
+```html
+<section class="profile-section">
+    <h2>Section Title</h2>
+    <div class="chat-links">
+        <!-- Add cards here -->
+    </div>
+</section>
+```
+
+---
+
+## 2. Adding to Search Index
+
+**File:** `js/search-data.js`
+
+### Entry Format
+
+```javascript
+{ title: "Tool Name", desc: "Brief description.", category: "tool", tags: ["Tag1", "Tag2", "Tag3"], url: "tools.html" }
+```
+
+### Fields
+
+| Field | Required | Description | Example |
+|-------|----------|-------------|---------|
+| `title` | ✅ | Exact display name | `"Wispr Flow"` |
+| `desc` | ✅ | 10-20 word description | `"AI voice dictation..."` |
+| `category` | ✅ | Content type (see below) | `"tool"` |
+| `tags` | ✅ | 2-4 searchable tags | `["Voice", "Speech-to-text"]` |
+| `url` | ✅ | Target HTML page | `"tools.html"` |
+
+### Category Values
+
+| Category | Icon | Color | Used for |
+|----------|------|-------|----------|
+| `project` | 📦 | Blue | Personal projects (programs.html) |
+| `chat` | 💬 | Green | AI chat assistants (chats.html) |
+| `media` | 🎨 | Orange | Media generation (media.html) |
+| `company` | 🏢 | Purple | Organizations (companies.html) |
+| `tool` | 🛠️ | Red | Developer tools (tools.html) |
+| `special` | ⭐ | Amber | Free resources (specials.html) |
+| `page` | 📄 | Indigo | Site pages (navigation) |
+
+### Placement in File
+
+Add entries in the appropriate section (look for comment headers):
+
+```javascript
+// === PROJECTS (programs.html) ===
+// === AI CHATS (chats.html) ===
+// === MEDIA GENERATION (media.html) ===
+// === COMPANIES (companies.html) ===
+// === TOOLS (tools.html) ===
+// === SPECIALS (specials.html) ===
+// === PAGES ===
+```
+
+---
+
+## 3. Tag Reference (Standardized)
+
+Use these standard tags for consistency. **Always use Title Case.**
+
+### Tool Types
+- `CLI` — Command-line interface
+- `IDE` — Integrated development environment
+- `Browser` — Web-based tool
+- `Terminal` — Terminal/shell tool
+- `Agent` — AI agent/autonomous
+
+### AI/ML
+- `AI` — General AI
+- `GPT-4` — OpenAI GPT-4
+- `Claude` — Anthropic Claude
+- `Gemini` — Google Gemini
+- `Llama` — Meta Llama
+- `MCP` — Model Context Protocol
+- `Assistant` — AI assistant
+- `Multimodal` — Multiple modalities
+
+### Media
+- `Image` — Image generation
+- `Video` — Video generation
+- `Music` — Music generation
+- `Voice` — Voice/TTS
+- `3D` — 3D generation
+- `Art` — Artistic output
+- `Avatar` — Digital avatars
+
+### Platforms
+- `Open Source` — Open-source project
+- `Enterprise` — Enterprise/business
+- `Free` — Free tier available
+
+### Companies (as tags)
+- `OpenAI`, `Anthropic`, `Google`, `Meta`, `Microsoft`, `xAI`, `Mistral`, `Cohere`, `Stability`
+
+### Development
+- `TypeScript`, `JavaScript`, `Python`, `Kotlin`, `Rust`, `Java`
+- `Android`, `iOS`, `Web`, `Desktop`
+- `Coding`, `DevOps`, `Containers`
+
+---
+
+## 4. Companies Page Rule
+
+**Every organization with a product on the site should have a section on `companies.html`.**
+
+If you add a new tool/chat/media from a company not yet listed:
+
+1. Add a new section to `companies.html`
+2. Add a search entry with `category: "company"`
+3. Link to their main product(s)
+
+### Company Section Template
+
+```html
+<section class="profile-section">
+    <h2>Company Name</h2>
+    <div class="chat-links">
+        <a href="https://company.com/product" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+            <span class="chat-link-name">Product Name</span>
+            <span class="chat-link-desc">What the product does</span>
+            <span class="chat-link-arrow">→</span>
+        </a>
+    </div>
+</section>
+```
+
+---
+
+## 5. Documentation Updates
+
+After adding content, update:
+
+1. **`DOCS/SCRATCHPAD.md`** — Add to "Last 5 actions"
+2. **`DOCS/CHANGELOG.md`** — Add under current version or create new patch version
+3. **`DOCS/ARCHITECTURE.md`** — If adding new sections or page structure changes
+
+---
+
+## 6. Examples
+
+### Example: Adding a new AI chat assistant
+
+**1. Add to `chats.html`** (in appropriate section):
+```html
+<a href="https://newchat.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+    <span class="chat-link-name">NewChat</span>
+    <span class="chat-link-desc">AI assistant with unique features</span>
+    <span class="chat-link-arrow">→</span>
+</a>
+```
+
+**2. Add to `js/search-data.js`** (under `// === AI CHATS ===`):
+```javascript
+{ title: "NewChat", desc: "AI assistant with unique features.", category: "chat", tags: ["AI", "Assistant", "NewCompany"], url: "chats.html" },
+```
+
+**3. Add company to `companies.html`** (if new):
+```html
+<section class="profile-section">
+    <h2>NewCompany</h2>
+    <div class="chat-links">
+        <a href="https://newchat.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+            <span class="chat-link-name">NewChat</span>
+            <span class="chat-link-desc">AI assistant with unique features</span>
+            <span class="chat-link-arrow">→</span>
+        </a>
+    </div>
+</section>
+```
+
+**4. Add company to search** (under `// === COMPANIES ===`):
+```javascript
+{ title: "NewCompany", desc: "Creator of NewChat AI assistant.", category: "company", tags: ["AI", "Assistant", "Startup"], url: "companies.html" },
+```
+
+**5. Update SCRATCHPAD.md**:
+```markdown
+1. Chats: added NewChat; Companies: NewCompany; Search: NewChat, NewCompany
+```
+
+---
+
+## 7. Testing Search
+
+After adding entries:
+
+1. Open any page in browser
+2. Press `Cmd/Ctrl + K` or click the search button
+3. Type part of the new entry's title
+4. Verify it appears with correct icon and description
+5. Click or press Enter to navigate
+
+---
+
+## 8. Common Mistakes to Avoid
+
+| ❌ Don't | ✅ Do |
+|----------|-------|
+| Lowercase tags | Title Case tags (`"cli"` → `"CLI"`) |
+| Forget search entry | Always add to `search-data.js` |
+| Skip company page | Add company if it's a new org |
+| Duplicate entries | Check if item already exists |
+| Long descriptions | Keep to 10-20 words |
+| Missing trailing comma | Add comma after each entry |
+| Invalid category | Use only: project, chat, media, company, tool, special, page |
+
+---
+
+## Quick Reference Card
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│ ADDING NEW CONTENT                                          │
+├─────────────────────────────────────────────────────────────┤
+│ 1. HTML page    → Add card to correct page                  │
+│ 2. Search       → Add entry to js/search-data.js            │
+│ 3. Company      → Add section to companies.html (if new)    │
+│ 4. Docs         → Update SCRATCHPAD + CHANGELOG             │
+│ 5. Test         → Cmd/Ctrl+K and search for it              │
+└─────────────────────────────────────────────────────────────┘
+```

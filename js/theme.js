@@ -11,14 +11,17 @@
   var btn = document.getElementById('theme-btn');
   var dropdown = document.getElementById('theme-dropdown');
   var label = document.getElementById('theme-label');
-  
+
   var labels = {
     dark: 'Dark',
     light: 'Light',
     google: 'Google',
     openai: 'OpenAI',
     anthropic: 'Anthropic',
-    lorenz: 'Otterdays'
+    lorenz: 'Otterdays',
+    github: 'GitHub',
+    dracula: 'Dracula',
+    nord: 'Nord'
   };
 
   /**
@@ -66,4 +69,44 @@
 
   // Apply saved theme on load
   apply(localStorage.getItem(KEY));
+
+  /**
+   * Spotlight Effect for Cards
+   * Tracks mouse position relative to cards to create a glowing border effect.
+   */
+  var cards = document.querySelectorAll('.project-card, .chat-link-card, .home-link');
+
+  document.addEventListener('mousemove', function (e) {
+    cards.forEach(function (card) {
+      var rect = card.getBoundingClientRect();
+      var x = e.clientX - rect.left;
+      var y = e.clientY - rect.top;
+
+      card.style.setProperty('--mouse-x', x + 'px');
+      card.style.setProperty('--mouse-y', y + 'px');
+    });
+  });
+  /**
+   * Scroll to Top Button Logic
+   */
+  var scrollBtn = document.getElementById('scroll-top-btn');
+
+  if (scrollBtn) {
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 300) {
+        scrollBtn.classList.add('visible');
+      } else {
+        scrollBtn.classList.remove('visible');
+      }
+    });
+
+    scrollBtn.addEventListener('click', function () {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+      // Move focus for accessibility
+      document.body.focus();
+    });
+  }
 })();

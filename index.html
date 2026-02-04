@@ -36,14 +36,22 @@
 </head>
 
 <body data-theme="dark">
-  <nav class="top-nav">
+  <nav class="top-nav stagger-1">
     <a href="index.html" class="active">Home</a>
     <a href="programs.html">Programs</a>
     <a href="chats.html">AI Chats</a>
     <a href="media.html">Media Gen</a>
     <a href="companies.html">Companies</a>
     <a href="tools.html">Tools</a>
+    <a href="specials.html">Specials</a>
+    <a href="about.html">About</a>
   </nav>
+  <!-- Search Trigger -->
+  <button type="button" class="search-trigger" id="search-trigger" aria-label="Search site">
+    <span class="search-trigger-icon" aria-hidden="true">🔍</span>
+    <span class="search-trigger-text">Search</span>
+    <span class="search-trigger-kbd"><kbd>⌘</kbd><kbd>K</kbd></span>
+  </button>
   <div class="theme-switcher">
     <button type="button" class="theme-btn" id="theme-btn" aria-label="Change theme" aria-expanded="false"
       aria-haspopup="true">
@@ -51,29 +59,71 @@
       <span class="theme-btn-label" id="theme-label">Dark</span>
       <span class="theme-btn-arrow">▼</span>
     </button>
-    <div class="theme-dropdown" id="theme-dropdown" role="menu" hidden>
-      <button type="button" role="menuitem" data-theme="dark">Dark</button>
-      <button type="button" role="menuitem" data-theme="light">Light</button>
-      <button type="button" role="menuitem" data-theme="google">Google</button>
-      <button type="button" role="menuitem" data-theme="openai">OpenAI</button>
-      <button type="button" role="menuitem" data-theme="anthropic">Anthropic</button>
-      <button type="button" role="menuitem" data-theme="lorenz">Otterdays</button>
+    <div class="theme-dropdown" id="theme-dropdown" hidden>
+      <button type="button" data-theme="dark">Dark</button>
+      <button type="button" data-theme="light">Light</button>
+      <button type="button" data-theme="google">Google</button>
+      <button type="button" data-theme="openai">OpenAI</button>
+      <button type="button" data-theme="anthropic">Anthropic</button>
+      <button type="button" data-theme="lorenz">Otterdays</button>
+      <button type="button" data-theme="github">GitHub</button>
+      <button type="button" data-theme="dracula">Dracula</button>
+      <button type="button" data-theme="nord">Nord</button>
     </div>
   </div>
   <main class="home">
-    <div class="home-image">
+    <div class="home-image stagger-2">
       <img src="images/placeholder.svg" alt="Ryan Otterdays profile" width="320" height="240">
     </div>
-    <h1 class="home-title">Ryan</h1>
-    <p class="home-handle">Otterdays &middot; Developer</p>
-    <p class="home-info">Short dev profile. 1+ year AI coding &amp; engineering.</p>
-    <nav class="home-links">
+    <h1 class="home-title stagger-3">Ryan</h1>
+    <p class="home-handle stagger-3">Otterdays &middot; Developer</p>
+    <p class="home-info stagger-4">Short dev profile. 1+ year AI coding &amp; engineering.</p>
+    <nav class="home-links stagger-5">
       <a href="#" class="home-link disabled" aria-disabled="true" title="Coming soon">X</a>
       <a href="#" class="home-link disabled" aria-disabled="true" title="Coming soon">Bluesky</a>
       <a href="https://github.com/Otterdays" rel="noopener noreferrer" target="_blank" class="home-link">GitHub</a>
     </nav>
   </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="site-stats">
+      <div class="stat-item" title="Indexed items"><span class="stat-icon">🔍</span> 100+ items</div>
+      <div class="stat-item" title="Pages"><span class="stat-icon">📄</span> 9 pages</div>
+      <div class="stat-item" title="Companies listed"><span class="stat-icon">🏢</span> 55+ companies</div>
+    </div>
+    <div class="site-copy">
+      &copy; 2026 Ryan Otterdays. Maintained with ❤️.
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button type="button" class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top">↑</button>
+
+  <!-- Search Modal -->
+  <div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Site search" hidden>
+    <div class="search-modal" id="search-modal">
+      <div class="search-header">
+        <span class="search-icon">🔍</span>
+        <input type="text" class="search-input" id="search-input" placeholder="Search projects, tools, companies..."
+          autocomplete="off" autocapitalize="off" spellcheck="false">
+        <button type="button" class="search-close" id="search-close" aria-label="Close search">ESC</button>
+      </div>
+      <div class="search-meta">
+        <span class="search-count" id="search-count"></span>
+        <div class="search-hints">
+          <span class="search-hint"><kbd>↑↓</kbd> Navigate</span>
+          <span class="search-hint"><kbd>↵</kbd> Select</span>
+          <span class="search-hint"><kbd>ESC</kbd> Close</span>
+        </div>
+      </div>
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+
   <script src="js/theme.js"></script>
+  <script src="js/search-data.js"></script>
+  <script src="js/search.js"></script>
 </body>
 
 </html>

@@ -4,23 +4,29 @@
 
 ```
 /
-├── index.html              # Homepage with profile and social links
-├── programs.html           # Projects grid with badges (60+ projects)
-├── chats.html              # AI Chat quick links (ChatGPT, Gemini, etc.)
-├── tools.html              # Desktop Tools: CLI, IDE, Browser-based
+├── index.html              # Home: profile, social links
+├── programs.html           # Projects grid with badges (~60+ projects)
+├── chats.html              # AI Chats: Assistants + Provider hubs & playgrounds
+├── media.html              # AI Media Gen: Video, Image, Audio
+├── companies.html          # AI & dev tools by company (50+ companies)
+├── tools.html              # Desktop Tools: CLI, IDE, Browser, Tunneling, Reference
+├── specials.html           # Specials: Free domains, Learning
 ├── 404.html                # Custom 404 error page
 ├── css/
-│   └── style.css           # Themes, badges, layout styles
+│   └── style.css           # Themes, badges, layout, chat-link cards, search modal
 ├── js/
-│   ├── theme.js            # Theme switcher module (shared)
-│   └── badges.js           # Project badge injection (programs.html only)
+│   ├── theme.js            # Theme switcher (shared; all pages)
+│   ├── badges.js           # Project badge injection (programs.html only)
+│   ├── search-data.js      # Search index with all searchable items
+│   └── search.js           # Search modal logic, fuzzy matching, keyboard nav
 ├── images/
 │   ├── favicon.svg         # Site favicon
 │   └── placeholder.svg     # Profile placeholder image
-├── fetch-github-repos.js   # Optional local script (repos list)
+├── fetch-github-repos.js   # Optional: fetch GitHub repos → repos.md (local)
 ├── DOCS/                   # Project documentation (not public-facing)
 │   ├── ARCHITECTURE.md
 │   ├── CHANGELOG.md
+│   ├── CONTENT_GUIDE.md    # How to add content and update search
 │   ├── My_Thoughts.md
 │   ├── SBOM.md
 │   ├── SCRATCHPAD.md
@@ -31,34 +37,75 @@
 └── .gitignore
 ```
 
+## Navigation (all pages)
+
+Order: Home → Programs → AI Chats → Media Gen → Companies → Tools → Specials. Same `<nav class="top-nav">` on every HTML page; theme switcher present on index, programs, chats, media, companies, tools, specials, 404.
+
+## Page breakdown
+
+| Page           | Sections / content |
+|----------------|--------------------|
+| **index**      | Profile, image, home links (X, Bluesky, GitHub). |
+| **programs**   | Profile header + projects grid; `js/badges.js` adds badges by title. |
+| **chats**      | **Assistants:** ChatGPT, Claude, Gemini, NotebookLM, Perplexity, Grok, Kimi, DeepSeek, Qwen, Minimax, IBM Granite, Z.ai, Amazon Nova, Meta AI, Copilot, Mistral, Poe, Character.AI, Pi, Cohere, Arcee AI, Allen AI, Duck.ai. **Provider hubs:** OpenRouter, T3 Chat, Groq Cloud, SambaNova, Cerebras. |
+| **media**      | **Video:** Artlist, Runway, Pika, Synthesia, HeyGen, Luma, Google Flow, Sparkify, SuperMaker, Cuzi. **Image:** Midjourney, ChatGPT Images, Stable Diffusion, FLUX, Ideogram, Recraft, Leonardo, Adobe Firefly. **Audio:** Suno, Udio, ElevenLabs, MusicAI. |
+| **companies**  | One section per company; 50+ companies with links to their main product(s) (chat, API, playground, etc.). |
+| **tools**      | **CLI:** Gemini CLI, Codex CLI. **IDE:** Codex, Jules. **Browser:** Bolt, AI Studio, Replit, Amp, Firebase, Supabase, Vercel, Stitch, Opal, Mariner, Netlify, Cloudflare. **Tunneling:** Localtunnel, Tunnelmole, reTunnel. **Reference:** MCP. |
+| **specials**   | **Free domains:** DigitalPlat, FreeDomain, FreeDomain GitHub. **Learning:** freeCodeCamp. |
+| **404**        | Error code, title, back link. |
+
 ## Themes
 
-- **data-theme** on `body`: dark (default), light, google, openai, anthropic, lorenz (Otterdays).
+- **data-theme** on `body`: `dark` (default), `light`, `google`, `openai`, `anthropic`, `lorenz` (Otterdays).
 - Stored in localStorage as `dev-profile-theme`.
 - CSS variables: `--bg`, `--fg`, `--muted`, `--accent`, `--card`, `--border`, `--glass`, `--accent-glow`.
 
 ## Badges
 
 - **Types:** Game, Software, Minecraft, Music, Android.
-- Injected by `js/badges.js`; project title → badge mapping in JS.
-- Cards can show multiple badges (e.g. Brain-Busters: Android + Game).
+- Injected by `js/badges.js` on `programs.html`; project title → badge mapping in JS.
+- Cards can show multiple badges.
 
 ## GitHub Pages
 
 - **Source:** Branch `main`, root.
-- **Content:** Static files; no server, no API keys.
-- **URL:** `https://otterdays.github.io/`
-- **404 Page:** Custom 404.html is auto-served by GitHub Pages.
+- **Content:** Static files only; no server, no API keys in delivered site.
+- **URL:** https://otterdays.github.io/
+- **404:** Custom `404.html` is auto-served by GitHub Pages.
 
 ## Data flow
 
-- Profile content static in HTML files.
-- Theme script (`js/theme.js`) runs on all pages.
-- Badge script (`js/badges.js`) runs only on `programs.html`.
-- `fetch-github-repos.js` for local use only; do not commit secrets.
+- All content is static HTML; no CMS or API at runtime.
+- `js/theme.js` runs on every page (theme dropdown, localStorage).
+- `js/badges.js` runs only on `programs.html` (badge injection).
+- `js/search-data.js` and `js/search.js` run on all pages (unified search).
+- `fetch-github-repos.js` is for local use only; output `repos.md` is optional and not required for the site.
+
+## Search System
+
+**Architecture:**
+- `js/search-data.js`: Static array of all searchable items with title, description, category, tags, and URL
+- `js/search.js`: IIFE module handling modal UI, search algorithm, keyboard navigation
+
+**Features:**
+- **Trigger:** Search button in nav bar + `Cmd/Ctrl+K` keyboard shortcut
+- **Search algorithm:** Fuzzy matching with scored results (title > tags > category > description)
+- **UI:** Glassmorphic modal with results list, category icons, and hints
+- **Navigation:** Arrow keys (↑↓), Enter to select, Escape to close
+- **Accessibility:** ARIA labels, focus trap, screen reader support
+
+**Categories:**
+| Category | Icon | Color |
+|----------|------|-------|
+| project | 📦 | Blue (#58a6ff) |
+| chat | 💬 | Green (#10a37f) |
+| media | 🎨 | Orange (#d97706) |
+| company | 🏢 | Purple (#8b5cf6) |
+| tool | 🛠️ | Red (#ef4444) |
+| special | ⭐ | Amber (#f59e0b) |
+| page | 📄 | Indigo (#6366f1) |
 
 ## SEO
 
-- All pages have proper `<title>`, `<meta description>`, Open Graph tags.
-- Canonical URLs set for each page.
-- Favicon served as SVG for scalability.
+- Every page has `<title>`, `<meta name="description">`, Open Graph tags, canonical URL.
+- Favicon: SVG for scalability.
