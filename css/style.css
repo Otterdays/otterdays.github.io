@@ -329,8 +329,10 @@ body::after {
   right: 0;
   z-index: 99;
   display: flex;
+  flex-wrap: wrap;
   gap: 0.25rem;
   padding: 0.75rem 1rem;
+  padding-right: 10rem; /* Reserve space for search + theme buttons */
   background: var(--glass);
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
@@ -988,8 +990,28 @@ body::after {
 
 /* === RESPONSIVE ADJUSTMENTS === */
 @media (max-width: 768px) {
+  body {
+    padding-top: 4.5rem; /* More room below nav when it wraps to two rows */
+  }
+
+  .top-nav {
+    padding-right: 8rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .top-nav a {
+    padding: 0.35rem 0.65rem;
+    font-size: 0.8rem;
+  }
+
+  .home {
+    padding-top: 3.5rem; /* Extra breathing room below nav for home title */
+  }
+
   .profile {
     padding: 1.25rem 0.85rem;
+    padding-top: 2rem; /* Clear gap between nav and page title */
   }
 
   .profile-title {
@@ -1383,6 +1405,45 @@ body::after {
 
 /* Mobile Adjustments */
 @media (max-width: 640px) {
+  body {
+    padding-top: 5rem; /* Nav can be two rows; keep title clearly below */
+  }
+
+  .home {
+    padding-top: 4rem;
+  }
+
+  .profile {
+    padding-top: 2.25rem;
+  }
+
+  .top-nav {
+    padding-right: 7rem; /* Room for search (right: 5rem) + theme button */
+  }
+
+  .theme-switcher {
+    top: 0.5rem;
+    right: 0.65rem;
+  }
+
+  .theme-btn {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  .theme-btn-label {
+    max-width: 3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .theme-dropdown {
+    max-height: min(70vh, 20rem);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
   .search-trigger {
     right: 5rem;
     padding: 0.45rem 0.65rem;
