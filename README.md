@@ -1,18 +1,27 @@
 # otterdays.github.io
 
-Personal developer portfolio site, served on [GitHub Pages](https://pages.github.com/).
+> Personal developer portfolio — static site, no build step, served on GitHub Pages.
 
-🌐 **Live:** https://otterdays.github.io/
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-success?style=flat-square&logo=github)](https://otterdays.github.io/)
+[![Static Site](https://img.shields.io/badge/Static-HTML%20%7C%20CSS%20%7C%20JS-blue?style=flat-square)](https://github.com/Otterdays/otterdays.github.io)
+
+**Live site:** [https://otterdays.github.io/](https://otterdays.github.io/)
+
+---
 
 ## Features
 
-- 🎨 **14 Themes:** Dark, Light, Google, OpenAI, Anthropic, Otterdays, GitHub, Dracula, Nord, VS Code, Synthwave, Monokai, Solarized, Gruvbox
-- 🏷️ **Project Badges:** Game, Software, Minecraft, Music, Android (multi-badge support)
-- 📂 **Companies Page:** Collapsible sections with top-center toggle and smooth open/close animation
-- 🔍 **Unified Search:** Cmd/Ctrl+K, fuzzy matching, keyboard navigation
-- 📱 **Responsive:** Mobile-first design with glassmorphism effects
-- ⚡ **Performance:** No build step, pure HTML/CSS/JS
-- 🔗 **SEO Ready:** Open Graph, meta descriptions, canonical URLs
+| | |
+|---|---|
+| 🎨 **14 Themes** | Dark, Light, Google, OpenAI, Anthropic, Otterdays, GitHub, Dracula, Nord, VS Code, Synthwave, Monokai, Solarized, Gruvbox |
+| 🏷️ **Project Badges** | Game, Software, Minecraft, Music, Android (multi-badge support) |
+| 📂 **Companies Page** | Collapsible sections with top-center toggle and smooth open/close animation |
+| 🔍 **Unified Search** | Cmd/Ctrl+K, fuzzy matching, keyboard navigation |
+| 📱 **Responsive** | Mobile-first design with glassmorphism effects |
+| ⚡ **Performance** | No build step, pure HTML/CSS/JS |
+| 🔗 **SEO Ready** | Open Graph, meta descriptions, canonical URLs |
+
+---
 
 ## Pages
 
@@ -25,8 +34,11 @@ Personal developer portfolio site, served on [GitHub Pages](https://pages.github
 | `companies.html` | AI & dev tools by company |
 | `tools.html` | Developer tools (CLI, IDE, browser) |
 | `specials.html` | Free & special services (e.g. free domains) |
+| `skills.html` | IDE skills & MCPs (Cursor setup) |
 | `about.html` | About this site: projects, tools, and link policy |
 | `404.html` | Custom error page |
+
+---
 
 ## Project Structure
 
@@ -42,6 +54,8 @@ Personal developer portfolio site, served on [GitHub Pages](https://pages.github
 └── DOCS/                   # Documentation (SCRATCHPAD, SUMMARY, CHANGELOG, etc.)
 ```
 
+---
+
 ## Local Development
 
 ```bash
@@ -55,11 +69,15 @@ start index.html
 node fetch-github-repos.js [username]
 ```
 
+---
+
 ## Deployment
 
 Push to `main` branch → GitHub Pages auto-deploys.
 
 No build step. No sensitive data in this repo.
+
+---
 
 ## Links
 

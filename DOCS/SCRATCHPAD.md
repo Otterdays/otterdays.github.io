@@ -4,18 +4,17 @@
 **Blockers:** None.
 
 **Last 5 actions:**
-1. **Themes:** Added Synthwave, Monokai, Solarized, Gruvbox (Total 13).
-2. **Refactor:** `js/theme.js` now dynamically generates theme dropdown items (DRY); future themes need only JS/CSS updates.
-3. **Docs:** Updated CHANGELOG (v1.7.0) and README.
-4. **Companies page:** Added 7 new sections (Abacus.AI, DeepAI, Figma, Genspark, Hostinger, JDoodle, QuillBot) and Manus under Meta.
-5. **Tools page:** Added 10 new tools; new Web builders section.
+1. **Tools:** Added Local LLM runtimes section: Ollama, LM Studio, vLLM.
+2. **Companies:** Added Ollama, LM Studio, vLLM (vllm.ai link); footer 78+ companies.
+3. **Search index:** Ollama, LM Studio, vLLM indexed as tool and company in `js/search-data.js`.
+4. **Footer:** Site-wide "Companies listed" stat updated to 78+ on all HTML pages.
+5. **Docs:** SCRATCHPAD, CHANGELOG updated.
 
 **Latest structural changes (2026-02-04):**
-- `js/theme.js`: Refactored to populate `#theme-dropdown` dynamically from a `labels` object.
-- `css/style.css`: Added 4 new theme blocks (Synthwave, Monokai, Solarized, Gruvbox).
+- `tools.html`: New section "Local LLM runtimes" with Ollama, LM Studio, vLLM.
+- `companies.html`: +3 company sections (Ollama, LM Studio, vLLM); vLLM has GitHub + vllm.ai links; footer 78+ companies.
+- `js/search-data.js`: +3 tool entries, +3 company entries for Ollama, LM Studio, vLLM.
 
-**Search system:**
-- Fuzzy matching, scored results, Cmd/Ctrl+K, keyboard nav.
+**Search system:** Fuzzy matching, scored results, Cmd/Ctrl+K, keyboard nav.
 
-**Next steps:**
-- Verify theme switching in browser (especially dropdown generation).
+**Next steps:** None. Optional: browser check of search hits for new links.

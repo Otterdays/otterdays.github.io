@@ -18,6 +18,46 @@ All notable changes to this project are documented in this file. Format: [Keep a
 
 ### Added
 
+**AI Chats** (`chats.html`, `js/search-data.js`)
+- **Provider Chats:** Deep Cogito (Cogito 671B–70B), Dolphin Chat (dphn.ai), Falcon (TII; H1R 7B, H1 Arabic), K2 Think (MBZUAI), LongCat AI (think, search, image & video), Nous Chat (Hermes; worldbuilding, code, reasoning), Public AI (Apertus; Switzerland), StepFun (chat, Q&A, image, Step Audio Studio), Tencent Hunyuan (Hunyuan AI Studio). All indexed.
+- **Provider hubs:** ZenMux (unified gateway to many models; chat & API; compensation for subpar results). Indexed.
+- **Provider hubs (previous):** Sup AI (multi-model orchestration; research-grade accuracy, logprob confidence, always cited). Indexed.
+- **Provider hubs (previous):** Lumio AI, WebLLM Chat, Chat LLM (1096+ models), Higgsfield Assist. All indexed.
+
+**Companies** (`companies.html`, `js/search-data.js`)
+- **New sections:** Ollama (run open models locally). LM Studio (local AI on your computer; headless llmster, SDK, MCP). vLLM (high-throughput inference & serving for LLMs; vllm.ai). Footer stat 78+ companies site-wide. All indexed.
+- **Previous:** Qoder, OpenCode, Kilo, Roo Code, Quests. IBM: Project Bob. StackBlitz: bolt.diy. Footer 75+ companies. All indexed.
+- **Previous:** Deep Cogito, Dolphin (dphn.ai), K2 Think (MBZUAI), LongCat, Nous Research, Public AI, StepFun, TII (Falcon), Tencent Hunyuan, ZenMux. All indexed.
+
+**Tools** (`tools.html`, `js/search-data.js`)
+- **Local LLM runtimes:** New section with Ollama (run open models locally; works with Codex, Claude Code, OpenCode, Open WebUI, Msty). LM Studio (local AI on your computer; headless llmster, SDK, MCP, OpenAI-compatible). vLLM (high-throughput inference & serving for LLMs; OpenAI-compatible API; PagedAttention, Hugging Face). All indexed.
+- **CLI:** Qoder CLI (terminal-native agentic; &lt;70ms startup, CI/CD). OpenCode (open-source agent; terminal, desktop, IDE; 75+ LLM providers, LSP). Kilo Code (all-in-one agentic platform; VS Code, JetBrains, CLI; #1 on OpenRouter). Roo Code (open-source AI dev team; VS Code + Cloud; model-agnostic). All indexed.
+- **IDE:** Qoder (agentic platform: IDE, CLI, JetBrains; Editor &amp; Quest, Repo Wiki, MCP). Windsurf (AI coding IDE; Cascade, Tab, MCP, JetBrains). IBM Project Bob (AI software dev partner; chat in editor, code review, vulnerability &amp; secrets detection). All indexed.
+- **Web builders:** bolt.diy (open-source Bolt: full-stack with any LLM; 19+ providers, MCP, Electron). Quests (open-source app builder; build &amp; run locally with any LLM; BYOK, desktop, templates). Both indexed.
+- **Reference:** Spec Kit (GitHub: Spec-Driven Development toolkit; specs become executable; Specify CLI; works with Qoder, Cursor, OpenCode, etc.). Indexed.
+- **Web builders (previous):** Biela (AI web & app builder; Claude 4.5 Opus). Squarespace AI (Blueprint AI Builder). Vibecode (AI mobile & web app builder). Wix AI (create business-ready website in no time with AI). All indexed.
+- **Browser Tools:** Cloudflare AI (build AI agents & MCP servers; serverless GPU inference, R2; Agents SDK). Indexed.
+- **Reference:** There&rsquo;s An AI For That (directory of 45,800+ AI tools for 11,356 tasks; search, categories, just released). Indexed.
+- **Web builders (previous):** Anything (create.xyz), Builder.io, Emergent. All indexed.
+
+**Media Gen** (`media.html`, `js/search-data.js`)
+- **Video:** Agent Opus — create videos from ideas: article to video, script to video, motion design, X post to video. Higgsfield — AI video & image: Vibe Motion, Grok Imagine, motion control, cinema studio. Both indexed.
+
+**Companies** (`companies.html`, `js/search-data.js`)
+- **New sections:** Biela (AI web & app builder). Squarespace (Blueprint AI Builder). Sup AI (multi-model orchestration, research-grade accuracy). Vibecode (AI mobile & web app builder). Wix (AI website builder). All indexed.
+- **Cloudflare:** Cloudflare AI link added (build AI agents & MCP servers; Agents SDK).
+- **Previous:** Agent Opus, Anything (Create.xyz), Builder (Builder.io), Emergent, Lumio AI, Higgsfield. All indexed.
+
+**Tools** (`tools.html`, `js/search-data.js`)
+- **Reference:** findmypapers.ai — semantic search for 300,000+ AI research papers; find, compare, explain with citations. Indexed.
+
+**Docs** (`DOCS/STYLE_GUIDE.md`)
+- **Stagger / fade-in:** Documented `fadeInUp` animation, `.stagger-1` … `.stagger-5` classes, and that search/theme use the same effect (delays 0.2s, 0.3s) so header controls match page flow.
+
+**Search index** (`js/search-data.js`)
+- **Companies:** GitHub (platform: Copilot, Actions, Codespaces), Railway (intelligent cloud).
+- **Tools:** Google AI Studio, Lovable, Base44, Railway — all added so site search finds new Tools/Companies links.
+
 **Tools page** (`tools.html`, `js/search-data.js`)
 - **Web builders:** Hostinger Horizons (no-code AI, 1-click launch), Manus (Meta: slides, sites, apps from prompts).
 - **Browser Tools:** Abacus AI Deep Agent (general agent), DeepAI (creative AI suite), Figma (design, Dev Mode, MCP), Genspark (AI workspace), JDoodle (online IDE), LLMChat (research & agentic workflows), QuillBot (writing tools).
