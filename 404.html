@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,6 +19,7 @@
       text-align: center;
       padding: 2rem;
     }
+
     .error-code {
       font-size: 8rem;
       font-weight: 700;
@@ -28,17 +30,20 @@
       margin: 0;
       line-height: 1;
     }
+
     .error-title {
       font-size: 1.75rem;
       font-weight: 600;
       margin: 1rem 0 0.5rem;
       color: var(--fg);
     }
+
     .error-desc {
       color: var(--muted);
       margin: 0 0 2rem;
       max-width: 24rem;
     }
+
     .error-link {
       display: inline-flex;
       align-items: center;
@@ -51,21 +56,26 @@
       border-radius: 8px;
       transition: all 0.25s ease;
     }
+
     .error-link:hover {
       transform: translateY(-2px);
       box-shadow: 0 8px 24px var(--accent-glow);
     }
   </style>
 </head>
+
 <body data-theme="dark">
   <nav class="top-nav">
     <a href="index.html">Home</a>
     <a href="programs.html">Programs</a>
     <a href="chats.html">AI Chats</a>
-    <a href="tools.html">Desktop Tools</a>
+    <a href="media.html">Media Gen</a>
+    <a href="companies.html">Companies</a>
+    <a href="tools.html">Tools</a>
   </nav>
   <div class="theme-switcher">
-    <button type="button" class="theme-btn" id="theme-btn" aria-label="Change theme" aria-expanded="false" aria-haspopup="true">
+    <button type="button" class="theme-btn" id="theme-btn" aria-label="Change theme" aria-expanded="false"
+      aria-haspopup="true">
       <span class="theme-btn-icon" aria-hidden="true">◐</span>
       <span class="theme-btn-label" id="theme-label">Dark</span>
       <span class="theme-btn-arrow">▼</span>
@@ -89,4 +99,5 @@
   </main>
   <script src="js/theme.js"></script>
 </body>
+
 </html>
