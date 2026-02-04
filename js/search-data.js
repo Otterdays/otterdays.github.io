@@ -162,5 +162,6 @@ var SEARCH_DATA = [
     { title: "Tools", desc: "Developer tools including CLI, IDE, and browser tools.", category: "page", tags: ["Tools", "Developer", "IDE"], url: "tools.html" },
     { title: "Specials", desc: "Free resources, domains, learning, and games (itch.io, Armor Games, PlayHop, Newgrounds, Yandex Games).", category: "page", tags: ["Free", "Resources", "Learning", "Games"], url: "specials.html" },
     { title: "Skills", desc: "IDE skills and MCPs for my Cursor setup: agent skills, Model Context Protocol servers.", category: "page", tags: ["Cursor", "IDE", "MCP", "Skills"], url: "skills.html" },
-    { title: "About", desc: "What this site is: projects and tools worth sharing. Every link is safe and direct.", category: "page", tags: ["About", "Site", "Links"], url: "about.html" }
+    { title: "About", desc: "What this site is: projects and tools worth sharing. Every link is safe and direct.", category: "page", tags: ["About", "Site", "Links"], url: "about.html" },
+    { title: "Dev tips", desc: "Trigger mobile view in Chrome: F12 (or Cmd+Option+I on Mac), then Toggle Device Toolbar.", category: "page", tags: ["Dev", "Chrome", "F12", "Mobile", "Debug"], url: "about.html" }
 ];

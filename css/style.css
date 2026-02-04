@@ -1406,24 +1406,24 @@ body::after {
 /* Mobile Adjustments */
 @media (max-width: 640px) {
   body {
-    padding-top: 5rem; /* Nav can be two rows; keep title clearly below */
+    padding-top: 5.25rem; /* Nav can be two rows; keep title clearly below */
   }
 
   .home {
-    padding-top: 4rem;
+    padding-top: 4.25rem;
   }
 
   .profile {
-    padding-top: 2.25rem;
+    padding-top: 2.5rem; /* Extra smidge so text sits below nav */
   }
 
   .top-nav {
-    padding-right: 7rem; /* Room for search (right: 5rem) + theme button */
+    padding-right: 8rem; /* Room for search + theme, both inset so not cut off */
   }
 
   .theme-switcher {
     top: 0.5rem;
-    right: 0.65rem;
+    right: 1rem; /* Inset from edge so theme button not obstructed */
   }
 
   .theme-btn {
@@ -1445,7 +1445,7 @@ body::after {
   }
 
   .search-trigger {
-    right: 5rem;
+    right: 5.5rem; /* Inset so search button fully visible, not cut off */
     padding: 0.45rem 0.65rem;
   }
 
@@ -1464,6 +1464,33 @@ body::after {
 
   .search-hints {
     display: none;
+  }
+}
+
+/* Very narrow viewports: keep search + theme fully visible */
+@media (max-width: 480px) {
+  body {
+    padding-top: 5.5rem;
+  }
+
+  .home {
+    padding-top: 4.5rem;
+  }
+
+  .profile {
+    padding-top: 2.75rem;
+  }
+
+  .top-nav {
+    padding-right: 8.5rem;
+  }
+
+  .theme-switcher {
+    right: 1.25rem;
+  }
+
+  .search-trigger {
+    right: 6rem;
   }
 }
 /* === QoL ADDITIONS === */
