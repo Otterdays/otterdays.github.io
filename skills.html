@@ -4,68 +4,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>404 - Page Not Found | Otterdays</title>
-  <meta name="description" content="The page you're looking for doesn't exist. Return to Otterdays developer profile.">
-  <meta name="robots" content="noindex, nofollow">
-  <link rel="stylesheet" href="css/style.css">
+  <title>Skills | Otterdays</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="IDE skills and MCPs for my Cursor setup: agent skills, Model Context Protocol servers, and tools reference.">
+  <meta name="keywords"
+    content="Cursor IDE, MCP, agent skills, Model Context Protocol, IDE setup, Cursor tools">
+  <meta name="author" content="Ryan Otterdays">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://otterdays.github.io/skills.html">
+  <meta property="og:title" content="Skills | Otterdays">
+  <meta property="og:description" content="IDE skills and MCPs for my Cursor setup.">
+
+  <!-- Favicon -->
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-  <style>
-    .error-page {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: calc(100vh - 4rem);
-      text-align: center;
-      padding: 2rem;
-    }
+  <link rel="apple-touch-icon" href="images/favicon.svg">
 
-    .error-code {
-      font-size: 8rem;
-      font-weight: 700;
-      background: linear-gradient(135deg, var(--accent) 0%, var(--muted) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      margin: 0;
-      line-height: 1;
-    }
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://otterdays.github.io/skills.html">
 
-    .error-title {
-      font-size: 1.75rem;
-      font-weight: 600;
-      margin: 1rem 0 0.5rem;
-      color: var(--fg);
-    }
-
-    .error-desc {
-      color: var(--muted);
-      margin: 0 0 2rem;
-      max-width: 24rem;
-    }
-
-    .error-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.75rem 1.5rem;
-      color: var(--bg);
-      background: var(--accent);
-      text-decoration: none;
-      font-weight: 600;
-      border-radius: 8px;
-      transition: all 0.25s ease;
-    }
-
-    .error-link:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px var(--accent-glow);
-    }
-  </style>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body data-theme="dark">
-  <nav class="top-nav stagger-1">
+  <nav class="top-nav">
     <a href="index.html">Home</a>
     <a href="programs.html">Programs</a>
     <a href="chats.html">AI Chats</a>
@@ -73,7 +39,7 @@
     <a href="companies.html">Companies</a>
     <a href="tools.html">Tools</a>
     <a href="specials.html">Specials</a>
-    <a href="skills.html">Skills</a>
+    <a href="skills.html" class="active">Skills</a>
     <a href="about.html">About</a>
   </nav>
   <!-- Search Trigger -->
@@ -101,16 +67,38 @@
       <button type="button" role="menuitem" data-theme="nord">Nord</button>
     </div>
   </div>
-  <main class="error-page">
-    <p class="error-code stagger-2">404</p>
-    <h1 class="error-title stagger-3">Page Not Found</h1>
-    <p class="error-desc stagger-3">The page you're looking for doesn't exist or has been moved. Let's get you back on
-      track.</p>
-    <a href="index.html" class="error-link stagger-4">
-      <span>←</span> Back to Home
-    </a>
-  </main>
+  <main class="profile">
+    <header class="profile-header">
+      <h1 class="profile-title">Skills</h1>
+      <p class="profile-handle">IDE skills and MCPs for my Cursor setup</p>
+    </header>
 
+    <section class="profile-section">
+      <h2>MCPs (Model Context Protocol)</h2>
+      <p>Servers that expose extra tools to the agent (browser, Docker, etc.).</p>
+      <ul class="about-list">
+        <li><strong>MCP_DOCKER</strong> — User-level; Docker MCP gateway (<code>docker mcp gateway run</code>).</li>
+        <li><strong>cursor-ide-browser</strong> — Project-level; browser automation: navigate, snapshot, click, type, scroll, lock/unlock tabs. Use for frontend testing and live page interaction.</li>
+      </ul>
+    </section>
+
+    <section class="profile-section">
+      <h2>Agent skills</h2>
+      <p>Cursor Agent Skills (SKILL.md) the agent can use when the task fits.</p>
+      <ul class="about-list">
+        <li><strong>create-rule</strong> — Create Cursor rules, coding standards, <code>.cursor/rules/</code>, RULE.md.</li>
+        <li><strong>create-skill</strong> — Create or edit Agent Skills (SKILL.md format, best practices).</li>
+        <li><strong>update-cursor-settings</strong> — Change Cursor/VSCode settings (settings.json).</li>
+        <li><strong>create-subagent</strong> — Subagent-related workflows.</li>
+        <li><strong>migrate-to-skills</strong> — Migrate existing guidance into skills.</li>
+      </ul>
+    </section>
+
+    <section class="profile-section">
+      <h2>Reference</h2>
+      <p>Full reference for this setup is in the repo: <code>DOCS/CURSOR_IDE_SETUP.md</code>. Built-in agent tools (file, search, terminal, etc.) are always available; MCPs add capabilities like browser and Docker.</p>
+    </section>
+  </main>
 
   <!-- Site Footer -->
   <footer class="site-footer">

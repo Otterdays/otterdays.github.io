@@ -6,7 +6,7 @@ Personal developer portfolio site, served on [GitHub Pages](https://pages.github
 
 ## Features
 
-- 🎨 **9 Themes:** Dark, Light, Google, OpenAI, Anthropic, Otterdays, GitHub, Dracula, Nord
+- 🎨 **14 Themes:** Dark, Light, Google, OpenAI, Anthropic, Otterdays, GitHub, Dracula, Nord, VS Code, Synthwave, Monokai, Solarized, Gruvbox
 - 🏷️ **Project Badges:** Game, Software, Minecraft, Music, Android (multi-badge support)
 - 📂 **Companies Page:** Collapsible sections with top-center toggle and smooth open/close animation
 - 🔍 **Unified Search:** Cmd/Ctrl+K, fuzzy matching, keyboard navigation

@@ -126,6 +126,76 @@ body[data-theme="nord"] {
   --glass: rgba(59, 66, 82, 0.8);
 }
 
+/* Synthwave Theme - Neon dreams */
+body[data-theme="synthwave"] {
+  --bg: #2b213a;
+  --bg-gradient: linear-gradient(180deg, #2b213a 0%, #1a1324 100%);
+  --fg: #fff0f5;
+  --muted: #b39ddb;
+  --accent: #ff71ce;
+  --accent-glow: rgba(255, 113, 206, 0.4);
+  --card: rgba(43, 33, 58, 0.9);
+  --card-solid: #2b213a;
+  --border: #01cdfe;
+  --glass: rgba(43, 33, 58, 0.85);
+}
+
+/* Monokai Theme - Code classic */
+body[data-theme="monokai"] {
+  --bg: #272822;
+  --bg-gradient: linear-gradient(135deg, #272822 0%, #1e1f1c 100%);
+  --fg: #f8f8f2;
+  --muted: #75715e;
+  --accent: #a6e22e;
+  --accent-glow: rgba(166, 226, 46, 0.2);
+  --card: rgba(39, 40, 34, 0.95);
+  --card-solid: #272822;
+  --border: #49483e;
+  --glass: rgba(39, 40, 34, 0.9);
+}
+
+/* Solarized Dark Theme - Precision & contrast */
+body[data-theme="solarized"] {
+  --bg: #002b36;
+  --bg-gradient: linear-gradient(180deg, #002b36 0%, #073642 100%);
+  --fg: #839496;
+  --muted: #586e75;
+  --accent: #b58900;
+  --accent-glow: rgba(181, 137, 0, 0.2);
+  --card: rgba(0, 43, 54, 0.95);
+  --card-solid: #002b36;
+  --border: #073642;
+  --glass: rgba(7, 54, 66, 0.8);
+}
+
+/* VS Code Theme - Editor standard */
+body[data-theme="vscode"] {
+  --bg: #1e1e1e;
+  --bg-gradient: linear-gradient(135deg, #1e1e1e 0%, #252526 100%);
+  --fg: #d4d4d4;
+  --muted: #858585;
+  --accent: #007acc;
+  --accent-glow: rgba(0, 122, 204, 0.25);
+  --card: rgba(37, 37, 38, 0.95);
+  --card-solid: #1e1e1e;
+  --border: #333333;
+  --glass: rgba(30, 30, 30, 0.9);
+}
+
+/* Gruvbox Theme - Retro groove */
+body[data-theme="gruvbox"] {
+  --bg: #282828;
+  --bg-gradient: linear-gradient(135deg, #282828 0%, #1d2021 100%);
+  --fg: #ebdbb2;
+  --muted: #a89984;
+  --accent: #fe8019;
+  --accent-glow: rgba(254, 128, 25, 0.2);
+  --card: rgba(40, 40, 40, 0.95);
+  --card-solid: #282828;
+  --border: #504945;
+  --glass: rgba(50, 48, 47, 0.9);
+}
+
 /* === BASE RESET === */
 * {
   box-sizing: border-box;

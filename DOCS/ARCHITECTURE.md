@@ -57,7 +57,7 @@ Order: Home → Programs → AI Chats → Media Gen → Companies → Tools → 
 
 ## Themes
 
-- **data-theme** on `body`: `dark` (default), `light`, `google`, `openai`, `anthropic`, `lorenz` (Otterdays), `github`, `dracula`, `nord` (9 total).
+- **data-theme** on `body`: `dark` (default), `light`, `google`, `openai`, `anthropic`, `lorenz` (Otterdays), `github`, `dracula`, `nord`, `vscode`, `synthwave`, `monokai`, `solarized`, `gruvbox` (14 total).
 - Stored in localStorage as `dev-profile-theme`.
 - CSS variables: `--bg`, `--fg`, `--muted`, `--accent`, `--card`, `--border`, `--glass`, `--accent-glow`.
 

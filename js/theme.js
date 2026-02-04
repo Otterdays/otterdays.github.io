@@ -21,7 +21,12 @@
     lorenz: 'Otterdays',
     github: 'GitHub',
     dracula: 'Dracula',
-    nord: 'Nord'
+    nord: 'Nord',
+    vscode: 'VS Code',
+    synthwave: 'Synthwave',
+    monokai: 'Monokai',
+    solarized: 'Solarized',
+    gruvbox: 'Gruvbox'
   };
 
   /**
@@ -30,6 +35,9 @@
    */
   function apply(name) {
     var theme = name || 'dark';
+    // Fallback if theme doesn't exist in labels (e.g. removed theme)
+    if (!labels[theme]) theme = 'dark';
+    
     body.setAttribute('data-theme', theme);
     if (label) label.textContent = labels[theme] || 'Dark';
     try {
@@ -48,14 +56,25 @@
     });
   }
 
-  // Handle theme selection from dropdown
+  // Populate dropdown dynamically and handle selection
   if (dropdown) {
-    dropdown.querySelectorAll('[data-theme]').forEach(function (opt) {
+    // Clear any hardcoded items
+    dropdown.innerHTML = '';
+
+    Object.keys(labels).forEach(function (key) {
+      var opt = document.createElement('button');
+      opt.type = 'button';
+      opt.setAttribute('role', 'menuitem');
+      opt.setAttribute('data-theme', key);
+      opt.textContent = labels[key];
+      
       opt.addEventListener('click', function () {
-        apply(opt.getAttribute('data-theme'));
+        apply(key);
         dropdown.setAttribute('hidden', '');
-        btn.setAttribute('aria-expanded', 'false');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
       });
+
+      dropdown.appendChild(opt);
     });
   }
 
@@ -86,6 +105,7 @@
       card.style.setProperty('--mouse-y', y + 'px');
     });
   });
+
   /**
    * Scroll to Top Button Logic
    */

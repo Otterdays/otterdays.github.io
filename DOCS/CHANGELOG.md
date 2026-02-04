@@ -2,9 +2,32 @@
 
 All notable changes to this project are documented in this file. Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.7.0] - 2026-02-04
+
+### Added
+
+**Themes** (`css/style.css`, `js/theme.js`)
+- **VS Code:** Editor standard (dark grey/blue).
+- **Synthwave:** Neon dreams (purple/pink/cyan).
+- **Monokai:** Code classic (dark grey/yellow/pink).
+- **Solarized:** Precision & contrast (teal/blue).
+- **Gruvbox:** Retro groove (warm dark/orange).
+- **Refactor:** Theme switcher now dynamically generates the dropdown list from JS; no HTML updates required for future themes.
+
 ## [Unreleased]
 
 ### Added
+
+**Tools page** (`tools.html`, `js/search-data.js`)
+- **Web builders:** Hostinger Horizons (no-code AI, 1-click launch), Manus (Meta: slides, sites, apps from prompts).
+- **Browser Tools:** Abacus AI Deep Agent (general agent), DeepAI (creative AI suite), Figma (design, Dev Mode, MCP), Genspark (AI workspace), JDoodle (online IDE), LLMChat (research & agentic workflows), QuillBot (writing tools).
+- **Reference:** Wikipedia List of LLMs (reference list).
+- All 10 new tools added to site search index.
+
+**Companies page** (`companies.html`, `js/search-data.js`)
+- **New sections:** Abacus.AI (Deep Agent), DeepAI (creative AI), Figma (design), Genspark (AI workspace), Hostinger (Horizons), JDoodle (online IDE), QuillBot (writing tools).
+- **Meta:** Added Manus link (Hands On AI).
+- **Search:** All 7 new companies indexed. Footer stat 60+ companies.
 
 **Companies page** (`companies.html`, `css/style.css`, `js/companies.js`)
 - **Collapsible sections:** Each company section can be minimized/expanded.
