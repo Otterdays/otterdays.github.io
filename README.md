@@ -6,11 +6,13 @@ Personal developer portfolio site, served on [GitHub Pages](https://pages.github
 
 ## Features
 
-- 🎨 **6 Themes:** Dark, Light, Google, OpenAI, Anthropic, Otterdays
+- 🎨 **9 Themes:** Dark, Light, Google, OpenAI, Anthropic, Otterdays, GitHub, Dracula, Nord
 - 🏷️ **Project Badges:** Game, Software, Minecraft, Music, Android (multi-badge support)
+- 📂 **Companies Page:** Collapsible sections with top-center toggle and smooth open/close animation
+- 🔍 **Unified Search:** Cmd/Ctrl+K, fuzzy matching, keyboard navigation
 - 📱 **Responsive:** Mobile-first design with glassmorphism effects
 - ⚡ **Performance:** No build step, pure HTML/CSS/JS
-- 🔍 **SEO Ready:** Open Graph, meta descriptions, canonical URLs
+- 🔗 **SEO Ready:** Open Graph, meta descriptions, canonical URLs
 
 ## Pages
 
@@ -29,12 +31,15 @@ Personal developer portfolio site, served on [GitHub Pages](https://pages.github
 ## Project Structure
 
 ```
-├── css/style.css           # All styles
-├── js/theme.js             # Theme switcher
-├── js/badges.js            # Project badge logic
+├── css/style.css           # Themes, layout, chat-link cards, search, companies collapsible, QoL/footer
+├── js/theme.js             # Theme switcher (all pages)
+├── js/badges.js            # Project badge logic (programs only)
+├── js/companies.js         # Section minimization (companies page only)
+├── js/search-data.js       # Search index
+├── js/search.js            # Search modal, fuzzy match, keyboard nav
 ├── fetch-github-repos.js   # Optional: fetch repos → repos.md
 ├── images/                 # Favicon & images
-└── DOCS/                   # Documentation
+└── DOCS/                   # Documentation (SCRATCHPAD, SUMMARY, CHANGELOG, etc.)
 ```
 
 ## Local Development

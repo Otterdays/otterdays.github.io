@@ -12,7 +12,8 @@ When adding **any** new item:
 2. ✅ Add entry to `js/search-data.js`
 3. ✅ Use consistent tags (see Tag Reference below)
 4. ✅ Add company entry to `companies.html` if it's a new organization
-5. ✅ Update `DOCS/SCRATCHPAD.md` and `DOCS/CHANGELOG.md`
+5. ✅ **Tools page:** Keep CLI, IDE, and Browser Tools in **alphabetical order** by card name (`.chat-link-name`)
+6. ✅ Update `DOCS/SCRATCHPAD.md` and `DOCS/CHANGELOG.md`
 
 ---
 
@@ -50,6 +51,11 @@ When adding **any** new item:
 </section>
 ```
 
+### Page-specific notes
+
+- **Companies page** (`companies.html`): Has body class `companies-page` and loads `js/companies.js`. Sections are collapsible (toggle at top center). Minimization styles live under `.companies-page` in `css/style.css`; other pages are unaffected.
+- **Tools page** (`tools.html`): CLI, IDE, and Browser Tools sections are kept **alphabetically** by card name (`.chat-link-name`). When adding a new card, insert it in A–Z order within its section.
+
 ---
 
 ## 2. Adding to Search Index
@@ -83,6 +89,10 @@ When adding **any** new item:
 | `tool` | 🛠️ | Red | Developer tools (tools.html) |
 | `special` | ⭐ | Amber | Free resources (specials.html) |
 | `page` | 📄 | Indigo | Site pages (navigation) |
+
+### Reminder: New links added to HTML
+
+If you add new link cards to any page (e.g. GitHub, Railway, Lovable, v0, Base44), add matching entries to `js/search-data.js` so they appear in site search. Use the same `title`, `desc`, `category`, `tags`, and `url` as appropriate for the page.
 
 ### Placement in File
 

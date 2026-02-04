@@ -8,15 +8,16 @@
 ├── programs.html           # Projects grid with badges (~60+ projects)
 ├── chats.html              # AI Chats: Assistants + Provider hubs & playgrounds
 ├── media.html              # AI Media Gen: Video, Image, Audio
-├── companies.html          # AI & dev tools by company (50+ companies)
-├── tools.html              # Desktop Tools: CLI, IDE, Browser, Tunneling, Reference
+├── companies.html          # AI & dev tools by company (56+ companies); collapsible sections (companies-page only)
+├── tools.html              # Desktop Tools: CLI, IDE, Browser (A–Z), Tunneling, Reference
 ├── specials.html           # Specials: Free domains, Learning
 ├── 404.html                # Custom 404 error page
 ├── css/
-│   └── style.css           # Themes, badges, layout, chat-link cards, search modal
+│   └── style.css           # Themes, badges, layout, chat-link cards, search modal, companies collapsible, QoL/footer
 ├── js/
 │   ├── theme.js            # Theme switcher (shared; all pages)
 │   ├── badges.js           # Project badge injection (programs.html only)
+│   ├── companies.js        # Section minimization (companies.html only; body.companies-page)
 │   ├── search-data.js      # Search index with all searchable items
 │   └── search.js           # Search modal logic, fuzzy matching, keyboard nav
 ├── images/
@@ -49,14 +50,14 @@ Order: Home → Programs → AI Chats → Media Gen → Companies → Tools → 
 | **programs**   | Profile header + projects grid; `js/badges.js` adds badges by title. |
 | **chats**      | **Assistants:** ChatGPT, Claude, Gemini, NotebookLM, Perplexity, Grok, Kimi, DeepSeek, Qwen, Minimax, IBM Granite, Z.ai, Amazon Nova, Meta AI, Copilot, Mistral, Poe, Character.AI, Pi, Cohere, Arcee AI, Allen AI, Duck.ai. **Provider hubs:** OpenRouter, T3 Chat, Groq Cloud, SambaNova, Cerebras. |
 | **media**      | **Video:** Artlist, Runway, Pika, Synthesia, HeyGen, Luma, Google Flow, Sparkify, SuperMaker, Cuzi. **Image:** Midjourney, ChatGPT Images, Stable Diffusion, FLUX, Ideogram, Recraft, Leonardo, Adobe Firefly. **Audio:** Suno, Udio, ElevenLabs, MusicAI. |
-| **companies**  | One section per company; 50+ companies with links to their main product(s) (chat, API, playground, etc.). |
-| **tools**      | **CLI:** Gemini CLI, Codex CLI. **IDE:** Codex, Jules. **Browser:** Bolt, AI Studio, Replit, Amp, Firebase, Supabase, Vercel, Stitch, Opal, Mariner, Netlify, Cloudflare. **Tunneling:** Localtunnel, Tunnelmole, reTunnel. **Reference:** MCP. |
+| **companies**  | One section per company (56+); collapsible sections (toggle at top center). GitHub, Railway added. |
+| **tools**      | **CLI (A–Z):** Crush, Gemini CLI, Kimi Code CLI, Mistral Vibe, OpenAI Codex CLI, Qwen Code. **IDE (A–Z):** Android Studio, Cursor, Factory, Google Antigravity, Jules, OpenAI Codex, TRAE, Warp. **Web builders:** Bolt, Firebase Studio, Google AI Studio, Lovable, Replit, v0. **Browser (A–Z):** Amp Free, Base44, Cloudflare Pages, Firebase, Hugging Face, MongoDB, Netlify, Opal, Project Mariner, Railway, Stitch, Supabase, Vercel. **Tunneling:** Localtunnel, Tunnelmole, reTunnel. **Reference:** MCP, Claude download, HTML Online Viewer. |
 | **specials**   | **Free domains:** DigitalPlat, FreeDomain, FreeDomain GitHub. **Learning:** freeCodeCamp. |
 | **404**        | Error code, title, back link. |
 
 ## Themes
 
-- **data-theme** on `body`: `dark` (default), `light`, `google`, `openai`, `anthropic`, `lorenz` (Otterdays).
+- **data-theme** on `body`: `dark` (default), `light`, `google`, `openai`, `anthropic`, `lorenz` (Otterdays), `github`, `dracula`, `nord` (9 total).
 - Stored in localStorage as `dev-profile-theme`.
 - CSS variables: `--bg`, `--fg`, `--muted`, `--accent`, `--card`, `--border`, `--glass`, `--accent-glow`.
 
@@ -76,8 +77,9 @@ Order: Home → Programs → AI Chats → Media Gen → Companies → Tools → 
 ## Data flow
 
 - All content is static HTML; no CMS or API at runtime.
-- `js/theme.js` runs on every page (theme dropdown, localStorage).
+- `js/theme.js` runs on every page (theme dropdown, scroll-to-top, localStorage).
 - `js/badges.js` runs only on `programs.html` (badge injection).
+- `js/companies.js` runs only when `body` has class `companies-page` (section minimization; injects toggle + collapsible wrapper).
 - `js/search-data.js` and `js/search.js` run on all pages (unified search).
 - `fetch-github-repos.js` is for local use only; output `repos.md` is optional and not required for the site.
 

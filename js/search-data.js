@@ -96,6 +96,7 @@ var SEARCH_DATA = [
     { title: "Bolt", desc: "AI-powered full-stack app builder.", category: "tool", tags: ["Browser", "Full-stack", "AI"], url: "tools.html" },
     { title: "Replit", desc: "Cloud IDE with AI code generation.", category: "tool", tags: ["Browser", "Cloud", "IDE"], url: "tools.html" },
     { title: "Firebase", desc: "Google: hosting, Firestore, Auth, Firebase ML, AI (Studio, Gemini in Firebase, Genkit).", category: "tool", tags: ["Google", "Hosting", "Database", "ML"], url: "tools.html" },
+    { title: "Firebase Studio", desc: "Google: full-stack AI workspace; build backends, front ends & mobile with Gemini.", category: "tool", tags: ["Google", "Web Builder", "Gemini", "Full-stack"], url: "tools.html" },
     { title: "MongoDB", desc: "Atlas: document DB, vector search, stream processing; AI-ready platform.", category: "tool", tags: ["Database", "Atlas", "Vector Search"], url: "tools.html" },
     { title: "Hugging Face", desc: "Models (2M+), datasets (500k+), Spaces (1M+ apps); Inference, HuggingChat.", category: "tool", tags: ["Models", "Datasets", "Spaces"], url: "tools.html" },
     { title: "StackBlitz", desc: "Instant web development environment.", category: "tool", tags: ["Browser", "Web", "Instant"], url: "tools.html" },

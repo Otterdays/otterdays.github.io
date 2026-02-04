@@ -2,14 +2,19 @@
 
 **Project:** otterdays.github.io — static dev profile site for GitHub Pages.
 
-**Status:** Ready to serve. Static HTML/CSS; small shared scripts for theme + badges + search. No build step.
+**Status:** Ready to serve. Static HTML/CSS/JS; small shared scripts for theme, badges, search, companies minimization. No build step.
 
 **Features:**
-- **6 themes:** Dark, Light, Google, OpenAI, Anthropic, Otterdays (localStorage).
+- **9 themes:** Dark, Light, Google, OpenAI, Anthropic, Otterdays, GitHub, Dracula, Nord (localStorage).
 - **Project badges:** Game, Software, Minecraft, Music, Android (multi-badge; `js/badges.js` on programs).
-- **Unified search:** Site-wide search with Cmd/Ctrl+K shortcut, fuzzy matching, keyboard navigation (`js/search.js`).
+- **Unified search:** Site-wide search with Cmd/Ctrl+K, fuzzy matching, keyboard navigation (`js/search.js`, `js/search-data.js`).
+- **Companies page:** Collapsible sections with top-center toggle and smooth open/close animation (`js/companies.js`; companies only).
 - **Responsive:** Mobile-first, glassmorphism; 6-wide project grid.
-- **Pages:** Home, Programs (~60+ projects), AI Chats (Assistants + Provider hubs), Media Gen (video/image/audio), Companies (61+ companies), Tools (CLI/IDE/Browser/Tunneling/DevOps/Game dev/Reference), Specials (free domains, learning, games & play), About (site description, link policy), 404.
+- **Pages:** Home, Programs (~60+ projects), AI Chats (Assistants + Provider hubs), Media Gen (video/image/audio), Companies (56+ companies, collapsible), Tools (CLI/IDE/Browser/Tunneling/DevOps/Game dev/Reference, alphabetical), Specials (free domains, learning, games & play), About, 404.
+
+**Recent content (2026-02-04):**
+- **Companies:** New sections GitHub (platform), Railway (cloud). style.css corruption fixed (QoL/footer block re-appended).
+- **Tools:** Alphabetical order for CLI, IDE, Browser Tools; new entries Base44, Lovable, Railway, v0 in Browser Tools.
 
 **Quick links:**
 - [SCRATCHPAD](SCRATCHPAD.md) — active tasks, blockers, last 5 actions

@@ -6,6 +6,53 @@ All notable changes to this project are documented in this file. Format: [Keep a
 
 ### Added
 
+**Companies page** (`companies.html`, `css/style.css`, `js/companies.js`)
+- **Collapsible sections:** Each company section can be minimized/expanded.
+- **Top-center indicator:** Clickable pill with chevron in the middle of each panel’s top area to open/close.
+- **Animation:** Smooth grid-based open/close with rotating chevron; companies-page only (no impact on other pages).
+- **New company sections:** GitHub (platform: Copilot, Actions, Codespaces), Railway (all-in-one cloud).
+
+**Tools page** (`tools.html`)
+- **Alphabetical order:** CLI, IDE, and Browser Tools sections reordered A–Z by card name.
+- **New Browser Tools:** Base44 (build apps with natural language), Lovable (build apps & sites with AI), Railway (deploy/network/scale/monitor), v0 (Vercel: build agents/apps/sites with AI).
+- **Web builders section:** New section with Bolt, Firebase Studio ([studio.firebase.google.com](https://studio.firebase.google.com/)), Google AI Studio, Lovable, Replit, v0; those five removed from Browser Tools.
+
+### Fixed
+
+**style.css** (corruption)
+- From ~line 1310 onward the file was UTF-16/null-byte corrupted. Truncated at last good `}\n}` (end of `@media (max-width: 640px)` search block) and re-appended the QoL/footer CSS block: scroll-to-top button, external link indicator, `@keyframes bg-shift`, `.site-footer`, `.site-stats`, `.stat-item`, `.stat-icon`.
+
+### Changed
+
+- **Docs:** SCRATCHPAD, SUMMARY, CHANGELOG, ARCHITECTURE, CONTENT_GUIDE, README, STYLE_GUIDE updated to reflect all recent changes.
+
+---
+
+## [1.6.0] - 2026-02-04
+
+### Added
+
+**Themes** (`css/style.css`, `js/theme.js`)
+- **GitHub:** Dark theme with blue accents check, familiar to devs.
+- **Dracula:** High contrast "vampire" theme with purple/pink accents.
+- **Nord:** Cool blue-gray arctic theme, calm and sophisticated.
+- Added to theme dropdown on all pages (Total: 9 themes).
+
+**Visual & QoL Enhancements** (`css/style.css`, `js/theme.js`)
+- **Scroll-to-top button:** Circular button appears after scrolling 300px; smooth scroll to top.
+- **Site Footer:** Added to all pages with stats (indexed items, page count, company count).
+- **External Link Indicators:** Subtle "↗" arrow on external links for better UX.
+- **Animated Background:** Slow, subtle gradient shift (15s loop) to bring pages to life.
+
+### Changed
+- All HTML pages updated to include new footer, scroll button, and 9-theme dropdown.
+
+---
+
+## [1.5.1] - 2026-02-04
+
+### Added
+
 **Specials** (`specials.html`)
 - **Games & play** — itch.io (indie store, jams, dev portal), Armor Games (free online games), PlayHop (browser games), Newgrounds (classic portal), Yandex Games (browser).
 

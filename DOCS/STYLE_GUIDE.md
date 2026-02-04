@@ -13,3 +13,7 @@
 **Link cards:** External links use `.chat-link-card` with `.chat-link-name`, `.chat-link-desc`, `.chat-link-arrow`. Always `rel="noopener noreferrer" target="_blank"` for outbound links.
 
 **New pages:** Add to nav on every HTML file (index, programs, chats, media, companies, tools, specials, 404). Include theme switcher, favicon, canonical URL, and SEO meta tags per existing pages.
+
+**Companies page only:** Collapsible-section CSS and behavior are scoped to `body.companies-page`. Use `.companies-page` as parent for any companies-specific styles so other pages (chats, tools, media, etc.) are unchanged.
+
+**Tools page:** Within each section (CLI, IDE, Browser Tools), keep link cards in **alphabetical order** by `.chat-link-name` for consistent UX.
