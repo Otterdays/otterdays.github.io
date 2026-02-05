@@ -173,6 +173,8 @@ var SEARCH_DATA = [
     { title: "NVIDIA ChatRTX", desc: "Local personalized chatbot on Windows RTX; RAG, TensorRT-LLM, chat with files, voice, image search.", category: "tool", tags: ["Local LLM", "NVIDIA", "RTX"], url: "tools.html" },
     { title: "Discord Developers", desc: "Build bots, apps, integrations; API, webhooks, rich presence.", category: "tool", tags: ["Discord", "API", "Bots"], url: "tools.html" },
     { title: "WebLLM", desc: "Run LLMs in the browser with WebGPU; MLC-ai; no server needed.", category: "tool", tags: ["Browser", "LLM", "WebGPU"], url: "tools.html" },
+    { title: "Zread", desc: "Codebase index: discover repos, trending, MCP; paste repo URL or search by keywords.", category: "tool", tags: ["Codebase", "Index", "MCP", "Repos"], url: "tools.html" },
+    { title: "Code Wiki", desc: "Google: Gemini-generated docs for repos; always up-to-date; find open source repos.", category: "tool", tags: ["Codebase", "Google", "Gemini", "Docs"], url: "tools.html" },
     { title: "Algolia", desc: "AI-powered search and discovery; instant, relevant results.", category: "tool", tags: ["Search", "AI", "Discovery"], url: "tools.html" },
     { title: "Abacus AI Deep Agent", desc: "General agent: build apps, reports, presentations; connect to systems, agentic tasks.", category: "tool", tags: ["Agent", "Apps", "Abacus.AI"], url: "tools.html" },
     { title: "Cursor", desc: "AI-first code editor built on VS Code.", category: "tool", tags: ["IDE", "AI", "VS Code"], url: "tools.html" },

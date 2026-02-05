@@ -82,7 +82,8 @@
         'findmypapers.ai': USA, 'HTML Online Viewer': USA, 'Spec Kit': USA,
         'There\'s An AI For That': UK, 'WebLLM': USA,
         'Tencent': CN, 'Allen AI': USA,
-        'Anything (create.xyz)': USA
+        'Anything (create.xyz)': USA,
+        'Zread': CN, 'Code Wiki': USA
     };
     window.BADGE_COUNTRY_MAP = COUNTRY_MAP;
 
