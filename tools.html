@@ -31,48 +31,75 @@
 </head>
 
 <body data-theme="dark">
-  <nav class="top-nav">
-    <a href="index.html">Home</a>
-    <a href="programs.html">Programs</a>
-    <a href="chats.html">AI Chats</a>
-    <a href="media.html">Media Gen</a>
-    <a href="companies.html">Companies</a>
-    <a href="tools.html" class="active">Tools</a>
-    <a href="specials.html">Specials</a>
-    <a href="skills.html">Skills/Tools</a>
-    <a href="about.html">About</a>
+  <!-- Sidebar Navigation -->
+  <nav class="sidebar">
+    <a href="index.html" title="Home">
+      <span class="sidebar-icon">🏠</span>
+      <span class="sidebar-text">Home</span>
+    </a>
+    <a href="programs.html" title="Programs">
+      <span class="sidebar-icon">🎮</span>
+      <span class="sidebar-text">Programs</span>
+    </a>
+    <a href="chats.html" title="AI Chats">
+      <span class="sidebar-icon">💬</span>
+      <span class="sidebar-text">AI Chats</span>
+    </a>
+    <a href="media.html" title="Media Gen">
+      <span class="sidebar-icon">🎨</span>
+      <span class="sidebar-text">Media Gen</span>
+    </a>
+    <a href="companies.html" title="Companies">
+      <span class="sidebar-icon">🏢</span>
+      <span class="sidebar-text">Companies</span>
+    </a>
+    <a href="tools.html" class="active" title="Tools">
+      <span class="sidebar-icon">🛠️</span>
+      <span class="sidebar-text">Tools</span>
+    </a>
+    <a href="specials.html" title="Specials">
+      <span class="sidebar-icon">⭐</span>
+      <span class="sidebar-text">Specials</span>
+    </a>
+    <a href="skills.html" title="Skills">
+      <span class="sidebar-icon">🧠</span>
+      <span class="sidebar-text">Skills</span>
+    </a>
+    <a href="about.html" title="About">
+      <span class="sidebar-icon">👤</span>
+      <span class="sidebar-text">About</span>
+    </a>
   </nav>
-  <!-- Version Badge -->
-  <a href="about.html" class="version-badge" title="Version 1.7.0 – Click for details">
-    <span class="version-badge-icon">🎮</span>
-    <span class="version-badge-text">v1.7.0</span>
-  </a>
-  <!-- Search Trigger -->
-  <button type="button" class="search-trigger" id="search-trigger" aria-label="Search site">
-    <span class="search-trigger-icon" aria-hidden="true">🔍</span>
-    <span class="search-trigger-text">Search</span>
-    <span class="search-trigger-kbd"><kbd>⌘</kbd><kbd>K</kbd></span>
-  </button>
-  <div class="theme-switcher">
-    <button type="button" class="theme-btn" id="theme-btn" aria-label="Change theme" aria-expanded="false"
-      aria-haspopup="true">
-      <span class="theme-btn-icon" aria-hidden="true">◐</span>
-      <span class="theme-btn-label" id="theme-label">Dark</span>
-      <span class="theme-btn-arrow">▼</span>
-    </button>
-    <div class="theme-dropdown" id="theme-dropdown" role="menu" hidden>
-      <button type="button" role="menuitem" data-theme="dark">Dark</button>
-      <button type="button" role="menuitem" data-theme="light">Light</button>
-      <button type="button" role="menuitem" data-theme="google">Google</button>
-      <button type="button" role="menuitem" data-theme="openai">OpenAI</button>
-      <button type="button" role="menuitem" data-theme="anthropic">Anthropic</button>
-      <button type="button" role="menuitem" data-theme="lorenz">Otterdays</button>
-      <button type="button" role="menuitem" data-theme="github">GitHub</button>
-      <button type="button" role="menuitem" data-theme="dracula">Dracula</button>
-      <button type="button" role="menuitem" data-theme="nord">Nord</button>
+
+  <main class="content">
+    <!-- Top Bar: Search & Theme (Floating) -->
+    <div style="display: flex; justify-content: flex-end; gap: 1rem; margin-bottom: 2rem;">
+      <!-- Version Badge -->
+      <a href="about.html" class="version-badge" title="Version 1.8.1 – Click for details" style="margin-right: auto;">
+        <span class="version-badge-icon">🎮</span>
+        <span class="version-badge-text">v1.8.1</span>
+      </a>
+
+      <button type="button" class="search-trigger" id="search-trigger" aria-label="Search site"
+        style="position: static;">
+        <span class="search-trigger-icon" aria-hidden="true">🔍</span>
+        <span class="search-trigger-text">Search</span>
+        <span class="search-trigger-kbd"><kbd>⌘</kbd><kbd>K</kbd></span>
+      </button>
+
+      <div class="theme-switcher" style="position: static;">
+        <button type="button" class="theme-btn" id="theme-btn" aria-label="Change theme" aria-expanded="false"
+          aria-haspopup="true">
+          <span class="theme-btn-icon" aria-hidden="true">◐</span>
+          <span class="theme-btn-label" id="theme-label">Dark</span>
+          <span class="theme-btn-arrow">▼</span>
+        </button>
+        <div class="theme-dropdown" id="theme-dropdown" role="menu" hidden>
+          <!-- Populated by JS -->
+        </div>
+      </div>
     </div>
-  </div>
-  <main class="profile">
+
     <header class="profile-header">
       <h1 class="profile-title">Desktop Tools</h1>
       <p class="profile-handle">Software that helps developers write, test, and build apps</p>
@@ -94,6 +121,13 @@
         <em>understand what you want</em> and help you.
       </p>
       <div class="chat-links">
+        <a href="https://cline.bot/cline-cli" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card chat-link-card-featured">
+          <span class="chat-link-card-image"><img src="images/cline-cli.png" alt="Cline CLI" width="120" height="80"></span>
+          <span class="chat-link-name">Cline CLI</span>
+          <span class="chat-link-desc">Run tasks headlessly; power GitHub Actions, Discord bots, game characters, Linear tickets. <code>npm install -g cline</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
         <a href="https://github.com/charmbracelet/crush" rel="noopener noreferrer" target="_blank"
           class="chat-link-card">
           <span class="chat-link-name">Crush</span>
@@ -146,6 +180,11 @@
           <span class="chat-link-desc">QwenLM: open-source terminal agent; OAuth free tier, IDE integration</span>
           <span class="chat-link-arrow">→</span>
         </a>
+        <a href="https://www.augmentcode.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Augment CLI</span>
+          <span class="chat-link-desc">AI-powered coding in the terminal; same Context Engine as IDE; #1 on SWE-Bench Pro</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
         <a href="https://roocode.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Roo Code</span>
           <span class="chat-link-desc">Open-source AI dev team; VS Code extension + Cloud agents; model-agnostic, role
@@ -163,6 +202,16 @@
         <a href="https://developer.android.com/studio" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Android Studio</span>
           <span class="chat-link-desc">Official Android IDE; Gemini in Android Studio, Cloud</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://zencoder.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Zencoder</span>
+          <span class="chat-link-desc">Zenflow orchestration + agents; IDE, CLI, Zen Agents; spec-driven, parallel execution, built-in verification</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://www.augmentcode.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Augment Code</span>
+          <span class="chat-link-desc">Context Engine for AI coding; IDE agents, code review, CLI; #1 on SWE-Bench Pro</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://cursor.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
@@ -272,6 +321,11 @@
           <span class="chat-link-desc">Turn words into mobile apps, sites, tools; GPT-5 &amp; 40+ integrations</span>
           <span class="chat-link-arrow">→</span>
         </a>
+        <a href="https://biela.dev/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Biela</span>
+          <span class="chat-link-desc">AI web &amp; app builder: imagine, prompt, create; Claude 4.5 Opus</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
         <a href="https://bolt.new/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Bolt</span>
           <span class="chat-link-desc">StackBlitz: build apps &amp; sites by chatting with AI (Bolt V2)</span>
@@ -282,11 +336,6 @@
           <span class="chat-link-name">bolt.diy</span>
           <span class="chat-link-desc">Open-source Bolt: prompt, run, edit &amp; deploy full-stack apps with any LLM;
             19+ providers, MCP, Electron</span>
-          <span class="chat-link-arrow">→</span>
-        </a>
-        <a href="https://biela.dev/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">Biela</span>
-          <span class="chat-link-desc">AI web &amp; app builder: imagine, prompt, create; Claude 4.5 Opus</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://www.builder.io/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
@@ -389,16 +438,37 @@
       <h2>Local LLM runtimes</h2>
       <p>Run open models on your machine or server; keep data local.</p>
       <div class="chat-links">
-        <a href="https://ollama.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">Ollama</span>
-          <span class="chat-link-desc">Easiest way to run open models locally; works with Codex, Claude Code, OpenCode,
-            Open WebUI, Msty, etc.</span>
+        <a href="https://jan.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Jan</span>
+          <span class="chat-link-desc">Open-source ChatGPT alternative; run 100% offline on your computer</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://lmstudio.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">LM Studio</span>
           <span class="chat-link-desc">Local AI on your computer; run LLMs privately and free; headless (llmster), SDK,
             MCP, OpenAI-compatible API</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://msty.app/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Msty</span>
+          <span class="chat-link-desc">Easiest local AI app; Works with Ollama; highly polished UI</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://www.nvidia.com/en-us/ai-on-rtx/chatrtx/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">NVIDIA ChatRTX</span>
+          <span class="chat-link-desc">Local personalized chatbot on Windows RTX; RAG, TensorRT-LLM, chat with files, voice, image search</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://ollama.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Ollama</span>
+          <span class="chat-link-desc">Easiest way to run open models locally; works with Codex, Claude Code, OpenCode,
+            Open WebUI, Msty, etc.</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://openwebui.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Open WebUI</span>
+          <span class="chat-link-desc">Extensible, feature-rich, user-friendly self-hosted WebUI (formerly Ollama
+            WebUI)</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://github.com/vllm-project/vllm" rel="noopener noreferrer" target="_blank" class="chat-link-card">
@@ -408,21 +478,19 @@
           <span class="chat-link-arrow">→</span>
         </a>
       </div>
-      <div class="chat-links" style="margin-top: 1rem;">
-        <a href="https://jan.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">Jan</span>
-          <span class="chat-link-desc">Open-source ChatGPT alternative; run 100% offline on your computer</span>
+    </section>
+    <section class="profile-section">
+      <h2>Browser AI</h2>
+      <p>AI assistants and chat built into web browsers. Privacy-focused, contextual, no account required for many.</p>
+      <div class="chat-links">
+        <a href="https://brave.com/leo/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Brave Leo</span>
+          <span class="chat-link-desc">Privacy-first AI in Brave; summarize pages, PDFs, translate; Llama, Mixtral, Claude; BYOM, no account</span>
           <span class="chat-link-arrow">→</span>
         </a>
-        <a href="https://msty.app/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">Msty</span>
-          <span class="chat-link-desc">Easiest local AI app; Works with Ollama; highly polished UI</span>
-          <span class="chat-link-arrow">→</span>
-        </a>
-        <a href="https://openwebui.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">Open WebUI</span>
-          <span class="chat-link-desc">Extensible, feature-rich, user-friendly self-hosted WebUI (formerly Ollama
-            WebUI)</span>
+        <a href="https://www.diabrowser.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Dia Browser</span>
+          <span class="chat-link-desc">AI browser from Arc makers; chat with your tabs, in-line copy editor, tutor in every tab</span>
           <span class="chat-link-arrow">→</span>
         </a>
       </div>
@@ -434,12 +502,6 @@
           <span class="chat-link-name">Abacus AI Deep Agent</span>
           <span class="chat-link-desc">General agent: build apps, reports, presentations; connect to systems, agentic
             tasks</span>
-          <span class="chat-link-arrow">→</span>
-        </a>
-
-        <a href="https://you.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">You.com</span>
-          <span class="chat-link-desc">The AI search engine; chat, write, code, create images</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://ampcode.com/free" rel="noopener noreferrer" target="_blank" class="chat-link-card">
@@ -555,6 +617,11 @@
           <span class="chat-link-desc">Deploy frontend apps with edge functions</span>
           <span class="chat-link-arrow">→</span>
         </a>
+        <a href="https://you.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">You.com</span>
+          <span class="chat-link-desc">The AI search engine; chat, write, code, create images</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
       </div>
     </section>
     <section class="profile-section">
@@ -568,14 +635,14 @@
             <code>lt --port 8000</code></span>
           <span class="chat-link-arrow">→</span>
         </a>
-        <a href="https://tunnelmole.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">Tunnelmole</span>
-          <span class="chat-link-desc">Free open-source ngrok alternative; no login, self-hostable</span>
-          <span class="chat-link-arrow">→</span>
-        </a>
         <a href="https://retunnel.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">reTunnel</span>
           <span class="chat-link-desc">Free unified ingress / secure tunnels for developers</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://tunnelmole.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Tunnelmole</span>
+          <span class="chat-link-desc">Free open-source ngrok alternative; no login, self-hostable</span>
           <span class="chat-link-arrow">→</span>
         </a>
       </div>
@@ -619,16 +686,15 @@
     <section class="profile-section">
       <h2>Reference</h2>
       <div class="chat-links">
-        <a href="https://github.com/github/spec-kit?tab=readme-ov-file" rel="noopener noreferrer" target="_blank"
-          class="chat-link-card">
-          <span class="chat-link-name">Spec Kit</span>
-          <span class="chat-link-desc">GitHub: Spec-Driven Development toolkit; specs become executable; Specify CLI,
-            works with Qoder, Cursor, OpenCode, etc.</span>
+        <a href="https://www.algolia.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Algolia</span>
+          <span class="chat-link-desc">AI-powered search &amp; discovery; instant, relevant results</span>
           <span class="chat-link-arrow">→</span>
         </a>
-        <a href="https://modelcontextprotocol.io/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">Model Context Protocol (MCP)</span>
-          <span class="chat-link-desc">Open standard (Anthropic) for AI ↔ tools &amp; data; Cursor, Xcode use it</span>
+        <a href="https://arena.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Arena</span>
+          <span class="chat-link-desc">Benchmark &amp; compare the best AI models; experience the frontier; battle,
+            leaderboard, file upload</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://claude.com/download" rel="noopener noreferrer" target="_blank" class="chat-link-card">
@@ -636,9 +702,49 @@
           <span class="chat-link-desc">Download Claude app for macOS, Windows, iOS, Android</span>
           <span class="chat-link-arrow">→</span>
         </a>
+        <a href="https://www.designarena.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Design Arena</span>
+          <span class="chat-link-desc">Community-driven AI design benchmark: vote to discover which AI is best at design
+            (website, image, video, UI)</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://discord.com/developers" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Discord Developers</span>
+          <span class="chat-link-desc">Build bots, apps, integrations; API, webhooks, rich presence</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://www.findmypapers.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">findmypapers.ai</span>
+          <span class="chat-link-desc">Semantic search for 300,000+ AI research papers; find, compare, explain with
+            citations</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
         <a href="https://html.onlineviewer.net/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">HTML Online Viewer</span>
           <span class="chat-link-desc">Edit and preview HTML in the browser; format, highlight</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://modelcontextprotocol.io/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Model Context Protocol (MCP)</span>
+          <span class="chat-link-desc">Open standard (Anthropic) for AI ↔ tools &amp; data; Cursor, Xcode use it</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://github.com/github/spec-kit?tab=readme-ov-file" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">Spec Kit</span>
+          <span class="chat-link-desc">GitHub: Spec-Driven Development toolkit; specs become executable; Specify CLI,
+            works with Qoder, Cursor, OpenCode, etc.</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://theresanaiforthat.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">There&rsquo;s An AI For That</span>
+          <span class="chat-link-desc">Directory of 45,800+ AI tools for 11,356 tasks; search, categories, just
+            released</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://github.com/mlc-ai/web-llm" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">WebLLM</span>
+          <span class="chat-link-desc">Run LLMs in the browser with WebGPU; MLC-ai; no server needed</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" rel="noopener noreferrer" target="_blank"
@@ -653,45 +759,20 @@
           <span class="chat-link-desc">Reference list of large language models with parameters, licenses, notes</span>
           <span class="chat-link-arrow">→</span>
         </a>
-        <a href="https://www.findmypapers.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">findmypapers.ai</span>
-          <span class="chat-link-desc">Semantic search for 300,000+ AI research papers; find, compare, explain with
-            citations</span>
-          <span class="chat-link-arrow">→</span>
-        </a>
-        <a href="https://theresanaiforthat.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">There&rsquo;s An AI For That</span>
-          <span class="chat-link-desc">Directory of 45,800+ AI tools for 11,356 tasks; search, categories, just
-            released</span>
-          <span class="chat-link-arrow">→</span>
-        </a>
-        <a href="https://arena.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">Arena</span>
-          <span class="chat-link-desc">Benchmark &amp; compare the best AI models; experience the frontier; battle,
-            leaderboard, file upload</span>
-          <span class="chat-link-arrow">→</span>
-        </a>
-        <a href="https://www.designarena.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">Design Arena</span>
-          <span class="chat-link-desc">Community-driven AI design benchmark: vote to discover which AI is best at design
-            (website, image, video, UI)</span>
-          <span class="chat-link-arrow">→</span>
-        </a>
       </div>
     </section>
+    <!-- Site Footer -->
+    <footer class="site-footer">
+      <div class="site-stats">
+        <div class="stat-item" title="Indexed items"><span class="stat-icon">🔍</span> 100+ items</div>
+        <div class="stat-item" title="Pages"><span class="stat-icon">📄</span> 10 pages</div>
+        <div class="stat-item" title="Companies listed"><span class="stat-icon">🏢</span> 78+ companies</div>
+      </div>
+      <div class="site-copy">
+        &copy; 2026 Ryan Otterdays. Maintained with ❤️.
+      </div>
+    </footer>
   </main>
-
-  <!-- Site Footer -->
-  <footer class="site-footer">
-    <div class="site-stats">
-      <div class="stat-item" title="Indexed items"><span class="stat-icon">🔍</span> 100+ items</div>
-      <div class="stat-item" title="Pages"><span class="stat-icon">📄</span> 10 pages</div>
-      <div class="stat-item" title="Companies listed"><span class="stat-icon">🏢</span> 78+ companies</div>
-    </div>
-    <div class="site-copy">
-      &copy; 2026 Ryan Otterdays. Maintained with ❤️.
-    </div>
-  </footer>
 
   <!-- Scroll to Top Button -->
   <button type="button" class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top">↑</button>
@@ -717,6 +798,7 @@
     </div>
   </div>
 
+  <script src="js/badges.js"></script>
   <script src="js/theme.js"></script>
   <script src="js/search-data.js"></script>
   <script src="js/search.js"></script>

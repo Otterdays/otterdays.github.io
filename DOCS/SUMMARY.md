@@ -7,6 +7,7 @@
 **Features:**
 - **13 themes:** Dark, Light, Google, OpenAI, Anthropic, Otterdays, GitHub, Dracula, Nord, VS Code, Synthwave, Monokai, Solarized, Gruvbox (localStorage).
 - **Project badges:** Game, Software, Minecraft, Music, Android (multi-badge; `js/badges.js` on programs).
+- **Country badges:** Origin (full country name) on all card pages and company section headers; shared map in `js/badges.js`; company = country for products.
 - **Unified search:** Site-wide search with Cmd/Ctrl+K, fuzzy matching, keyboard navigation (`js/search.js`, `js/search-data.js`).
 - **Companies page:** Collapsible sections with top-center toggle, minimized by default (`js/companies.js`; companies only).
 - **Responsive:** Mobile-first, glassmorphism; 6-wide project grid.

@@ -2,6 +2,42 @@
 
 All notable changes to this project are documented in this file. Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.8.1] - 2026-02-04
+
+### Added
+- **Country badges site-wide:** Origin badges on all card pages (media, tools, chats, specials, companies) via `js/badges.js`; shared `BADGE_COUNTRY_MAP` for companies page section headers and card badges.
+- **Full country names:** Badges show full labels (e.g. "United States", "United Kingdom") with wrapping for multi-word names; compact pill styling (top-right of cards).
+- **Product coverage:** All Google, OpenAI, and other product names added to country map (company = country principle): e.g. OpenAI Codex, Google AI Studio, Android Studio, Gemini, Jules, and 50+ tools/chats/media entries.
+
+### Changed
+- **Badge styling:** Card country badges — smaller padding/font, tighter wrap; companies page section badges — reduced size, pill style (border, background).
+- **Companies page:** Section h2 badges use shared map; smaller, less prominent.
+
+## [1.8.0] - 2026-02-04
+
+### Changed
+- **UI/UX Redesign:** Complete overhaul of the site's design language ("Futuristic Glassmorphism").
+- **Sidebar Navigation:** Replaced the top navigation bar with a dynamic, expandable sidebar (icons + text).
+- **Glassmorphism:** Implemented `backdrop-filter: blur()` and translucent backgrounds for all cards (`.project-card`, `.chat-link-card`).
+- **Bento Grid:** Adopted a hierarchical grid layout (`.bento-grid`) with "Featured" cards (`.col-span-2`) for better visual rhythm.
+- **Motion:** Added 3D perspective tilt effects on hover (JS-driven) and staggered `slideInRight` entrance animations for content.
+- **Layout Architecture:** Switched to a CSS Grid main layout (`sidebar` + `content`). Moved Search, Theme Switcher, and Version Badge to a floating "Top Bar" within the content area.
+- **Theme Organization:** Refactored CSS themes into modular files (`css/themes/`) and categorized them in the dropdown (Core, Brands, Editors, Creative).
+- **New Themes:** Added **Forest**, **Coffee**, **Cyber**, **Aqua**, and **Luxury** (Creative category).
+
+### Refactored
+- All pages (`index.html`, `programs.html`, `chats.html`, `media.html`, `companies.html`, `tools.html`, `specials.html`, `skills.html`, `about.html`, `404.html`) updated to the new Sidebar + Content layout.
+
+## [1.7.1] - 2026-02-04
+
+### Changed
+- **Programs** (`programs.html`): Project cards alphabetized A–Z by `.project-title`; featured block (Nexus Engine, RAIN.CHAT v2, RunicOS) unchanged at top.
+- **Tools page** (`tools.html`): Alphabetized all sections by `.chat-link-name` — Web builders (Biela before Bolt), Local LLM runtimes (Jan, LM Studio, Msty, NVIDIA ChatRTX, Ollama, Open WebUI, vLLM in one list), Browser Tools (You.com at end), Tunneling (Localtunnel, reTunnel, Tunnelmole), Reference (Algolia through Wikipedia List of LLMs).
+- **AI Chats** (`chats.html`): Provider Chats, Other Assistants, and Provider hubs &amp; playgrounds — link cards A–Z by `.chat-link-name`.
+- **Media Gen** (`media.html`): Video Generation, Image Generation, and Audio &amp; Music — link cards A–Z.
+- **Specials** (`specials.html`): Games &amp; play section — Armor Games, itch.io, Newgrounds, PlayHop, Yandex Games (A–Z).
+- **Companies** (`companies.html`): Product cards within each company section alphabetized by `.chat-link-name` (Google, OpenAI, Anthropic, Meta, Microsoft, Mistral, IBM, Cohere, Hugging Face).
+
 ## [1.7.0] - 2026-02-04
 
 ### Added

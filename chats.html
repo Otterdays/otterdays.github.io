@@ -30,328 +30,310 @@
 </head>
 
 <body data-theme="dark">
-  <nav class="top-nav">
-    <a href="index.html">Home</a>
-    <a href="programs.html">Programs</a>
-    <a href="chats.html" class="active">AI Chats</a>
-    <a href="media.html">Media Gen</a>
-    <a href="companies.html">Companies</a>
-    <a href="tools.html">Tools</a>
-    <a href="specials.html">Specials</a>
-    <a href="skills.html">Skills/Tools</a>
-    <a href="about.html">About</a>
+  <!-- Sidebar Navigation -->
+  <nav class="sidebar">
+    <a href="index.html" title="Home">
+      <span class="sidebar-icon">🏠</span>
+      <span class="sidebar-text">Home</span>
+    </a>
+    <a href="programs.html" title="Programs">
+      <span class="sidebar-icon">🎮</span>
+      <span class="sidebar-text">Programs</span>
+    </a>
+    <a href="chats.html" class="active" title="AI Chats">
+      <span class="sidebar-icon">💬</span>
+      <span class="sidebar-text">AI Chats</span>
+    </a>
+    <a href="media.html" title="Media Gen">
+      <span class="sidebar-icon">🎨</span>
+      <span class="sidebar-text">Media Gen</span>
+    </a>
+    <a href="companies.html" title="Companies">
+      <span class="sidebar-icon">🏢</span>
+      <span class="sidebar-text">Companies</span>
+    </a>
+    <a href="tools.html" title="Tools">
+      <span class="sidebar-icon">🛠️</span>
+      <span class="sidebar-text">Tools</span>
+    </a>
+    <a href="specials.html" title="Specials">
+      <span class="sidebar-icon">⭐</span>
+      <span class="sidebar-text">Specials</span>
+    </a>
+    <a href="skills.html" title="Skills">
+      <span class="sidebar-icon">🧠</span>
+      <span class="sidebar-text">Skills</span>
+    </a>
+    <a href="about.html" title="About">
+      <span class="sidebar-icon">👤</span>
+      <span class="sidebar-text">About</span>
+    </a>
   </nav>
-  <!-- Version Badge -->
-  <a href="about.html" class="version-badge" title="Version 1.7.0 – Click for details">
-    <span class="version-badge-icon">🎮</span>
-    <span class="version-badge-text">v1.7.0</span>
-  </a>
-  <!-- Search Trigger -->
-  <button type="button" class="search-trigger" id="search-trigger" aria-label="Search site">
-    <span class="search-trigger-icon" aria-hidden="true">🔍</span>
-    <span class="search-trigger-text">Search</span>
-    <span class="search-trigger-kbd"><kbd>⌘</kbd><kbd>K</kbd></span>
-  </button>
-  <div class="theme-switcher">
-    <button type="button" class="theme-btn" id="theme-btn" aria-label="Change theme" aria-expanded="false"
-      aria-haspopup="true">
-      <span class="theme-btn-icon" aria-hidden="true">◐</span>
-      <span class="theme-btn-label" id="theme-label">Dark</span>
-      <span class="theme-btn-arrow">▼</span>
-    </button>
-    <div class="theme-dropdown" id="theme-dropdown" role="menu" hidden>
-      <button type="button" role="menuitem" data-theme="dark">Dark</button>
-      <button type="button" role="menuitem" data-theme="light">Light</button>
-      <button type="button" role="menuitem" data-theme="google">Google</button>
-      <button type="button" role="menuitem" data-theme="openai">OpenAI</button>
-      <button type="button" role="menuitem" data-theme="anthropic">Anthropic</button>
-      <button type="button" role="menuitem" data-theme="lorenz">Otterdays</button>
-      <button type="button" role="menuitem" data-theme="github">GitHub</button>
-      <button type="button" role="menuitem" data-theme="dracula">Dracula</button>
-      <button type="button" role="menuitem" data-theme="nord">Nord</button>
+
+  <!-- Main Content Area -->
+  <main class="content">
+    
+    <!-- Top Bar: Search & Theme (Floating) -->
+    <div style="display: flex; justify-content: flex-end; gap: 1rem; margin-bottom: 2rem;">
+       <!-- Version Badge -->
+      <a href="about.html" class="version-badge" title="Version 1.8.1 – Click for details" style="margin-right: auto;">
+        <span class="version-badge-icon">🎮</span>
+        <span class="version-badge-text">v1.8.1</span>
+      </a>
+      
+      <button type="button" class="search-trigger" id="search-trigger" aria-label="Search site" style="position: static;">
+        <span class="search-trigger-icon" aria-hidden="true">🔍</span>
+        <span class="search-trigger-text">Search</span>
+        <span class="search-trigger-kbd"><kbd>⌘</kbd><kbd>K</kbd></span>
+      </button>
+
+      <div class="theme-switcher" style="position: static;">
+        <button type="button" class="theme-btn" id="theme-btn" aria-label="Change theme" aria-expanded="false"
+          aria-haspopup="true">
+          <span class="theme-btn-icon" aria-hidden="true">◐</span>
+          <span class="theme-btn-label" id="theme-label">Dark</span>
+          <span class="theme-btn-arrow">▼</span>
+        </button>
+        <div class="theme-dropdown" id="theme-dropdown" role="menu" hidden>
+           <!-- Populated by JS -->
+        </div>
+      </div>
     </div>
-  </div>
-  <main class="profile">
-    <header class="profile-header">
-      <h1 class="profile-title">AI Chats</h1>
-      <p class="profile-handle">Talk to AI assistants that can help you with almost anything</p>
+
+    <header class="profile-header" style="text-align: left; margin-bottom: 3rem;">
+      <h1 class="profile-title" style="font-size: 3rem;">AI Chats</h1>
+      <p class="profile-handle" style="font-size: 1.2rem;">Your command center for intelligence.</p>
     </header>
 
-    <section class="profile-section">
-      <h2>👋 New to AI?</h2>
-      <p><strong>AI chat assistants</strong> are like having a super-smart helper available 24/7. You type a question or
-        request in plain English, and the AI responds with helpful answers. Think of them like talking to a really
-        knowledgeable friend who never gets tired of your questions.</p>
-      <p>You can ask them to explain things, help write emails, brainstorm ideas, answer homework questions, translate
-        languages, or even just have a conversation. Most are <strong>free to try</strong>—just click any link below and
-        start typing!</p>
-    </section>
-
-    <section class="profile-section">
-      <h2>Provider Chats</h2>
-      <p>These are official chat apps made by the companies that build the AI. Each has its own personality and
-        strengths—try a few to see which one clicks with you.</p>
-      <div class="chat-links">
-        <a href="https://chatgpt.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+    <section class="profile-section" style="background: none; border: none; box-shadow: none; padding: 0;">
+      <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Provider Chats</h2>
+      
+      <!-- Bento Grid Layout -->
+      <div class="chat-links bento-grid">
+        
+        <!-- Featured Big Cards -->
+        <a href="https://chatgpt.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card card-featured col-span-2 row-span-2">
           <span class="chat-link-name">ChatGPT</span>
-          <span class="chat-link-desc">OpenAI&rsquo;s conversational AI</span>
-          <span class="chat-link-arrow">→</span>
-        </a>
-        <a href="https://claude.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">Claude</span>
-          <span class="chat-link-desc">Anthropic&rsquo;s AI assistant; strong on docs &amp; reasoning</span>
-          <span class="chat-link-arrow">→</span>
-        </a>
-        <a href="https://gemini.google.com/app" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">Gemini</span>
-          <span class="chat-link-desc">Google&rsquo;s AI assistant</span>
+          <span class="chat-link-desc">OpenAI&rsquo;s conversational AI. The standard bearer.</span>
           <span class="chat-link-arrow">→</span>
         </a>
 
+        <a href="https://claude.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card card-featured col-span-2">
+          <span class="chat-link-name">Claude</span>
+          <span class="chat-link-desc">Anthropic&rsquo;s AI. Unmatched reasoning &amp; coding.</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+
+        <a href="https://gemini.google.com/app" rel="noopener noreferrer" target="_blank" class="chat-link-card card-featured col-span-2">
+          <span class="chat-link-name">Gemini</span>
+          <span class="chat-link-desc">Google&rsquo;s multimodal powerhouse.</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+
+        <!-- Standard Cards -->
         <a href="https://grok.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Grok</span>
           <span class="chat-link-desc">xAI&rsquo;s real-time chat</span>
           <span class="chat-link-arrow">→</span>
         </a>
+
         <a href="https://www.kimi.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Kimi</span>
-          <span class="chat-link-desc">Moonshot AI, visual coding &amp; agent swarm</span>
+          <span class="chat-link-desc">Moonshot AI, visual coding</span>
           <span class="chat-link-arrow">→</span>
         </a>
+
         <a href="https://chat.deepseek.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">DeepSeek</span>
           <span class="chat-link-desc">DeepSeek chat</span>
           <span class="chat-link-arrow">→</span>
         </a>
+
         <a href="https://chat.mistral.ai/chat" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Le Chat</span>
           <span class="chat-link-desc">Mistral AI chat</span>
           <span class="chat-link-arrow">→</span>
         </a>
+
         <a href="https://chat.qwen.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Qwen</span>
           <span class="chat-link-desc">Alibaba&rsquo;s Qwen Chat</span>
           <span class="chat-link-arrow">→</span>
         </a>
+        
+        <!-- More standard cards -->
+        <a href="https://openclaw.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">OpenClaw</span>
+          <span class="chat-link-desc">Personal AI assistant</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        
+        <a href="https://www.moltbook.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Moltbook</span>
+          <span class="chat-link-desc">AI-only social platform</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        
         <a href="https://agent.minimax.io/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Minimax</span>
           <span class="chat-link-desc">Minimax AI agent</span>
           <span class="chat-link-arrow">→</span>
         </a>
-        <a href="https://www.ibm.com/granite/playground" rel="noopener noreferrer" target="_blank"
-          class="chat-link-card">
+
+         <a href="https://www.ibm.com/granite/playground" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">IBM Granite</span>
-          <span class="chat-link-desc">IBM Granite Playground</span>
+          <span class="chat-link-desc">Playground</span>
           <span class="chat-link-arrow">→</span>
         </a>
+
         <a href="https://chat.z.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Z.ai</span>
-          <span class="chat-link-desc">GLM-4 powered chat</span>
+          <span class="chat-link-desc">GLM-4 powered</span>
           <span class="chat-link-arrow">→</span>
         </a>
+
         <a href="https://nova.amazon.com/chat" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Amazon Nova</span>
-          <span class="chat-link-desc">Amazon&rsquo;s AI assistant</span>
+          <span class="chat-link-desc">Amazon&rsquo;s AI</span>
           <span class="chat-link-arrow">→</span>
         </a>
+        
         <a href="https://www.meta.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Meta AI</span>
           <span class="chat-link-desc">Meta&rsquo;s AI assistant</span>
           <span class="chat-link-arrow">→</span>
         </a>
+
         <a href="https://chat.deepcogito.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Deep Cogito</span>
-          <span class="chat-link-desc">Multi-model chat (Cogito 671B, 405B, 109B, 70B); ask anything</span>
+          <span class="chat-link-desc">Multi-model chat</span>
           <span class="chat-link-arrow">→</span>
         </a>
-        <a href="https://chat.dphn.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+
+         <a href="https://chat.dphn.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Dolphin Chat</span>
-          <span class="chat-link-desc">Dolphin models; chat, bot, models, network, docs</span>
+          <span class="chat-link-desc">Uncensored models</span>
           <span class="chat-link-arrow">→</span>
         </a>
+
         <a href="https://falconllm.tii.ae/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">Falcon (TII)</span>
-          <span class="chat-link-desc">Technology Innovation Institute: Falcon H1R 7B, H1 Arabic; try our chat</span>
+          <span class="chat-link-name">Falcon</span>
+          <span class="chat-link-desc">TII Falcon H1R</span>
           <span class="chat-link-arrow">→</span>
         </a>
+        
         <a href="https://www.k2think.ai/guest" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">K2 Think</span>
-          <span class="chat-link-desc">MBZUAI open-source reasoning model; ask anything</span>
+          <span class="chat-link-desc">MBZUAI reasoning</span>
           <span class="chat-link-arrow">→</span>
         </a>
-        <a href="https://longcat.chat/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+
+         <a href="https://longcat.chat/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">LongCat AI</span>
-          <span class="chat-link-desc">More than fast: think, search, generate image &amp; video</span>
+          <span class="chat-link-desc">Think, search, gen</span>
           <span class="chat-link-arrow">→</span>
         </a>
-        <a href="https://chat.nousresearch.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+
+         <a href="https://chat.nousresearch.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Nous Chat</span>
-          <span class="chat-link-desc">Hermes models (e.g. 4-405B); worldbuilding, code, reasoning</span>
+          <span class="chat-link-desc">Hermes models</span>
           <span class="chat-link-arrow">→</span>
         </a>
-        <a href="https://publicai.co/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+
+         <a href="https://publicai.co/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Public AI</span>
-          <span class="chat-link-desc">Try Apertus: open-source LLM from public institution (Switzerland)</span>
+          <span class="chat-link-desc">Open-source Apertus</span>
           <span class="chat-link-arrow">→</span>
         </a>
+
         <a href="https://stepfun.ai/chats/new" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">StepFun</span>
-          <span class="chat-link-desc">Chat, knowledge-base Q&amp;A, image creation, Step Audio Studio</span>
+          <span class="chat-link-desc">Knowledge-base Q&amp;A</span>
           <span class="chat-link-arrow">→</span>
         </a>
-        <a href="https://hunyuan.tencent.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">Tencent Hunyuan</span>
-          <span class="chat-link-desc">Hunyuan AI Studio: dialogue, multimodal, model access, research</span>
+
+         <a href="https://hunyuan.tencent.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Tencent</span>
+          <span class="chat-link-desc">Hunyuan AI Studio</span>
           <span class="chat-link-arrow">→</span>
         </a>
-        <a href="https://www.arcee.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+
+         <a href="https://www.arcee.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Arcee AI</span>
-          <span class="chat-link-desc">US-based open intelligence lab; Trinity models (Nano, Mini, Large)</span>
+          <span class="chat-link-desc">Trinity models</span>
           <span class="chat-link-arrow">→</span>
         </a>
-        <a href="https://allenai.org/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">Allen AI (Ai2)</span>
-          <span class="chat-link-desc">Allen Institute for AI: open models (Olmo, Molmo), research &amp; docs</span>
+
+         <a href="https://allenai.org/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Allen AI</span>
+          <span class="chat-link-desc">Olmo, Molmo</span>
           <span class="chat-link-arrow">→</span>
         </a>
       </div>
     </section>
-    <section class="profile-section">
-      <h2>Other Assistants</h2>
-      <div class="chat-links">
-        <a href="https://notebooklm.google.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">NotebookLM</span>
-          <span class="chat-link-desc">Google&rsquo;s AI notebook: chat with your docs, PDFs &amp; sources</span>
-          <span class="chat-link-arrow">→</span>
-        </a>
-        <a href="https://www.perplexity.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+
+    <section class="profile-section" style="background: none; border: none; box-shadow: none; padding: 0; margin-top: 4rem;">
+      <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Other Assistants</h2>
+      <div class="chat-links bento-grid">
+         <a href="https://www.perplexity.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card col-span-2">
           <span class="chat-link-name">Perplexity</span>
           <span class="chat-link-desc">AI answer engine with cited search</span>
           <span class="chat-link-arrow">→</span>
         </a>
-        <a href="https://copilot.microsoft.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">Microsoft Copilot</span>
-          <span class="chat-link-desc">Microsoft&rsquo;s AI assistant</span>
-          <span class="chat-link-arrow">→</span>
-        </a>
-        <a href="https://huggingface.co/chat" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">HuggingChat</span>
-          <span class="chat-link-desc">Hugging Face chat with open-source models</span>
-          <span class="chat-link-arrow">→</span>
-        </a>
-        <a href="https://poe.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">Poe</span>
-          <span class="chat-link-desc">Quora&rsquo;s multi-model hub (100+ models in one place)</span>
+         <a href="https://notebooklm.google.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card col-span-2">
+          <span class="chat-link-name">NotebookLM</span>
+          <span class="chat-link-desc">Google&rsquo;s AI notebook</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://character.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Character.AI</span>
-          <span class="chat-link-desc">Chat with 10M+ user-created AI characters</span>
+          <span class="chat-link-desc">10M+ characters</span>
           <span class="chat-link-arrow">→</span>
         </a>
-        <a href="https://pi.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">Pi</span>
-          <span class="chat-link-desc">Inflection&rsquo;s personal, emotionally intelligent AI</span>
+         <a href="https://chat.cohere.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Cohere</span>
+          <span class="chat-link-desc">Command R</span>
           <span class="chat-link-arrow">→</span>
         </a>
-        <a href="https://chat.cohere.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">Cohere Chat</span>
-          <span class="chat-link-desc">Cohere&rsquo;s conversational AI (Command R, RAG)</span>
-          <span class="chat-link-arrow">→</span>
-        </a>
-
-        <a href="https://duck.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+         <a href="https://duck.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Duck.ai</span>
-          <span class="chat-link-desc">DuckDuckGo&rsquo;s AI chat; privacy-first, no training on your data</span>
+          <span class="chat-link-desc">Privacy-first</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+         <a href="https://huggingface.co/chat" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">HuggingChat</span>
+          <span class="chat-link-desc">Open-source models</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+         <a href="https://copilot.microsoft.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Copilot</span>
+          <span class="chat-link-desc">Microsoft</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+         <a href="https://pi.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Pi</span>
+          <span class="chat-link-desc">Emotional AI</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+         <a href="https://poe.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Poe</span>
+          <span class="chat-link-desc">Multi-model hub</span>
           <span class="chat-link-arrow">→</span>
         </a>
       </div>
     </section>
-    <section class="profile-section">
-      <h2>Provider hubs &amp; playgrounds</h2>
-      <p>Unified interfaces to chat with many models via one API or playground.</p>
-      <div class="chat-links">
-        <a href="https://openrouter.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">OpenRouter</span>
-          <span class="chat-link-desc">One API for 300+ models, 60+ providers; OpenAI-compatible</span>
-          <span class="chat-link-arrow">→</span>
-        </a>
-        <a href="https://t3.chat/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">T3 Chat</span>
-          <span class="chat-link-desc">Multi-model chat (e.g. Kimi K2)</span>
-          <span class="chat-link-arrow">→</span>
-        </a>
-        <a href="https://console.groq.com/home" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">Groq Cloud</span>
-          <span class="chat-link-desc">Fast inference: GPT OSS, Llama, Qwen, Kimi; playground &amp; API</span>
-          <span class="chat-link-arrow">→</span>
-        </a>
-        <a href="https://cloud.sambanova.ai/playground" rel="noopener noreferrer" target="_blank"
-          class="chat-link-card">
-          <span class="chat-link-name">SambaNova Playground</span>
-          <span class="chat-link-desc">SambaNova inference playground</span>
-          <span class="chat-link-arrow">→</span>
-        </a>
-        <a href="https://arena.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">Arena</span>
-          <span class="chat-link-desc">Benchmark &amp; compare the best AI models; experience the frontier; battle,
-            leaderboard</span>
-          <span class="chat-link-arrow">→</span>
-        </a>
-        <a href="https://www.cerebras.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">Cerebras</span>
-          <span class="chat-link-desc">Ultra-fast inference; Try Chat, GLM, Qwen, Llama &amp; more</span>
-          <span class="chat-link-arrow">→</span>
-        </a>
-        <a href="https://chats-llm.com/chat" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">Chat LLM</span>
-          <span class="chat-link-desc">Free chat with 1096+ AI models in one place</span>
-          <span class="chat-link-arrow">→</span>
-        </a>
-        <a href="https://higgsfield.ai/chat" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">Higgsfield Assist</span>
-          <span class="chat-link-desc">Creative copilot for prompts &amp; storyboards; video &amp; image
-            workflows</span>
-          <span class="chat-link-arrow">→</span>
-        </a>
-        <a href="https://www.lumioai.tech/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">Lumio AI</span>
-          <span class="chat-link-desc">India&rsquo;s multi-LLM platform: GPT-4o, Claude, Gemini, DeepSeek, Mistral, Grok
-            in one workspace</span>
-          <span class="chat-link-arrow">→</span>
-        </a>
-        <a href="https://sup.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">Sup AI</span>
-          <span class="chat-link-desc">Multi-model orchestration; research-grade accuracy, logprob confidence scoring,
-            always cited</span>
-          <span class="chat-link-arrow">→</span>
-        </a>
-        <a href="https://chat.webllm.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">WebLLM Chat</span>
-          <span class="chat-link-desc">Browser-based LLM chat; run models in the browser</span>
-          <span class="chat-link-arrow">→</span>
-        </a>
-        <a href="https://zenmux.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">ZenMux</span>
-          <span class="chat-link-desc">Unified gateway to many models; chat &amp; API; compensation for subpar
-            results</span>
-          <span class="chat-link-arrow">→</span>
-        </a>
+    <!-- Site Footer -->
+    <footer class="site-footer">
+      <div class="site-stats">
+        <div class="stat-item" title="Indexed items"><span class="stat-icon">🔍</span> 100+ items</div>
+        <div class="stat-item" title="Pages"><span class="stat-icon">📄</span> 10 pages</div>
+        <div class="stat-item" title="Companies listed"><span class="stat-icon">🏢</span> 78+ companies</div>
       </div>
-    </section>
+      <div class="site-copy">
+        &copy; 2026 Ryan Otterdays. Maintained with ❤️.
+      </div>
+    </footer>
   </main>
-
-  <!-- Site Footer -->
-  <footer class="site-footer">
-    <div class="site-stats">
-      <div class="stat-item" title="Indexed items"><span class="stat-icon">🔍</span> 100+ items</div>
-      <div class="stat-item" title="Pages"><span class="stat-icon">📄</span> 10 pages</div>
-      <div class="stat-item" title="Companies listed"><span class="stat-icon">🏢</span> 78+ companies</div>
-    </div>
-    <div class="site-copy">
-      &copy; 2026 Ryan Otterdays. Maintained with ❤️.
-    </div>
-  </footer>
 
   <!-- Scroll to Top Button -->
   <button type="button" class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top">↑</button>
@@ -377,6 +359,7 @@
     </div>
   </div>
 
+  <script src="js/badges.js"></script>
   <script src="js/theme.js"></script>
   <script src="js/search-data.js"></script>
   <script src="js/search.js"></script>

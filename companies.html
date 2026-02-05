@@ -31,48 +31,76 @@
 </head>
 
 <body data-theme="dark" class="companies-page">
-    <nav class="top-nav">
-        <a href="index.html">Home</a>
-        <a href="programs.html">Programs</a>
-        <a href="chats.html">AI Chats</a>
-        <a href="media.html">Media Gen</a>
-        <a href="companies.html" class="active">Companies</a>
-        <a href="tools.html">Tools</a>
-        <a href="specials.html">Specials</a>
-        <a href="skills.html">Skills/Tools</a>
-        <a href="about.html">About</a>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <a href="index.html" title="Home">
+            <span class="sidebar-icon">🏠</span>
+            <span class="sidebar-text">Home</span>
+        </a>
+        <a href="programs.html" title="Programs">
+            <span class="sidebar-icon">🎮</span>
+            <span class="sidebar-text">Programs</span>
+        </a>
+        <a href="chats.html" title="AI Chats">
+            <span class="sidebar-icon">💬</span>
+            <span class="sidebar-text">AI Chats</span>
+        </a>
+        <a href="media.html" title="Media Gen">
+            <span class="sidebar-icon">🎨</span>
+            <span class="sidebar-text">Media Gen</span>
+        </a>
+        <a href="companies.html" class="active" title="Companies">
+            <span class="sidebar-icon">🏢</span>
+            <span class="sidebar-text">Companies</span>
+        </a>
+        <a href="tools.html" title="Tools">
+            <span class="sidebar-icon">🛠️</span>
+            <span class="sidebar-text">Tools</span>
+        </a>
+        <a href="specials.html" title="Specials">
+            <span class="sidebar-icon">⭐</span>
+            <span class="sidebar-text">Specials</span>
+        </a>
+        <a href="skills.html" title="Skills">
+            <span class="sidebar-icon">🧠</span>
+            <span class="sidebar-text">Skills</span>
+        </a>
+        <a href="about.html" title="About">
+            <span class="sidebar-icon">👤</span>
+            <span class="sidebar-text">About</span>
+        </a>
     </nav>
-    <!-- Version Badge -->
-    <a href="about.html" class="version-badge" title="Version 1.7.0 – Click for details">
-        <span class="version-badge-icon">🎮</span>
-        <span class="version-badge-text">v1.7.0</span>
-    </a>
-    <!-- Search Trigger -->
-    <button type="button" class="search-trigger" id="search-trigger" aria-label="Search site">
-        <span class="search-trigger-icon" aria-hidden="true">🔍</span>
-        <span class="search-trigger-text">Search</span>
-        <span class="search-trigger-kbd"><kbd>⌘</kbd><kbd>K</kbd></span>
-    </button>
-    <div class="theme-switcher">
-        <button type="button" class="theme-btn" id="theme-btn" aria-label="Change theme" aria-expanded="false"
-            aria-haspopup="true">
-            <span class="theme-btn-icon" aria-hidden="true">◐</span>
-            <span class="theme-btn-label" id="theme-label">Dark</span>
-            <span class="theme-btn-arrow">▼</span>
-        </button>
-        <div class="theme-dropdown" id="theme-dropdown" role="menu" hidden>
-            <button type="button" role="menuitem" data-theme="dark">Dark</button>
-            <button type="button" role="menuitem" data-theme="light">Light</button>
-            <button type="button" role="menuitem" data-theme="google">Google</button>
-            <button type="button" role="menuitem" data-theme="openai">OpenAI</button>
-            <button type="button" role="menuitem" data-theme="anthropic">Anthropic</button>
-            <button type="button" role="menuitem" data-theme="lorenz">Otterdays</button>
-            <button type="button" role="menuitem" data-theme="github">GitHub</button>
-            <button type="button" role="menuitem" data-theme="dracula">Dracula</button>
-            <button type="button" role="menuitem" data-theme="nord">Nord</button>
+
+    <main class="content">
+        <!-- Top Bar: Search & Theme (Floating) -->
+        <div style="display: flex; justify-content: flex-end; gap: 1rem; margin-bottom: 2rem;">
+            <!-- Version Badge -->
+            <a href="about.html" class="version-badge" title="Version 1.8.1 – Click for details"
+                style="margin-right: auto;">
+                <span class="version-badge-icon">🎮</span>
+                <span class="version-badge-text">v1.8.1</span>
+            </a>
+
+            <button type="button" class="search-trigger" id="search-trigger" aria-label="Search site"
+                style="position: static;">
+                <span class="search-trigger-icon" aria-hidden="true">🔍</span>
+                <span class="search-trigger-text">Search</span>
+                <span class="search-trigger-kbd"><kbd>⌘</kbd><kbd>K</kbd></span>
+            </button>
+
+            <div class="theme-switcher" style="position: static;">
+                <button type="button" class="theme-btn" id="theme-btn" aria-label="Change theme" aria-expanded="false"
+                    aria-haspopup="true">
+                    <span class="theme-btn-icon" aria-hidden="true">◐</span>
+                    <span class="theme-btn-label" id="theme-label">Dark</span>
+                    <span class="theme-btn-arrow">▼</span>
+                </button>
+                <div class="theme-dropdown" id="theme-dropdown" role="menu" hidden>
+                    <!-- Populated by JS -->
+                </div>
+            </div>
         </div>
-    </div>
-    <main class="profile">
+
         <header class="profile-header">
             <h1 class="profile-title">Companies</h1>
             <p class="profile-handle">Meet the companies building AI and developer tools</p>
@@ -90,21 +118,20 @@
         <section class="profile-section">
             <h2>Google</h2>
             <div class="chat-links">
-                <a href="https://gemini.google.com/app" rel="noopener noreferrer" target="_blank"
-                    class="chat-link-card">
-                    <span class="chat-link-name">Gemini</span>
-                    <span class="chat-link-desc">AI assistant &amp; chat</span>
-                    <span class="chat-link-arrow">→</span>
-                </a>
                 <a href="https://aistudio.google.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
                     <span class="chat-link-name">AI Studio</span>
                     <span class="chat-link-desc">Web-based AI development</span>
                     <span class="chat-link-arrow">→</span>
                 </a>
-                <a href="https://notebooklm.google.com/" rel="noopener noreferrer" target="_blank"
+                <a href="https://developer.android.com/studio" rel="noopener noreferrer" target="_blank"
                     class="chat-link-card">
-                    <span class="chat-link-name">NotebookLM</span>
-                    <span class="chat-link-desc">AI notebook: chat with your docs, PDFs &amp; sources</span>
+                    <span class="chat-link-name">Android Studio</span>
+                    <span class="chat-link-desc">Official Android IDE; Gemini in Android Studio</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://antigravity.google/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Antigravity</span>
+                    <span class="chat-link-desc">Agentic IDE; autonomous agents across editor, terminal, browser</span>
                     <span class="chat-link-arrow">→</span>
                 </a>
                 <a href="https://firebase.google.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
@@ -113,10 +140,16 @@
                         Genkit)</span>
                     <span class="chat-link-arrow">→</span>
                 </a>
-                <a href="https://cloud.google.com/vertex-ai" rel="noopener noreferrer" target="_blank"
+                <a href="https://labs.google/flow/about" rel="noopener noreferrer" target="_blank"
                     class="chat-link-card">
-                    <span class="chat-link-name">Vertex AI</span>
-                    <span class="chat-link-desc">Enterprise ML platform</span>
+                    <span class="chat-link-name">Flow</span>
+                    <span class="chat-link-desc">AI filmmaking with Veo</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://gemini.google.com/app" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card">
+                    <span class="chat-link-name">Gemini</span>
+                    <span class="chat-link-desc">AI assistant &amp; chat</span>
                     <span class="chat-link-arrow">→</span>
                 </a>
                 <a href="https://geminicli.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
@@ -134,27 +167,15 @@
                     <span class="chat-link-desc">Autonomous coding agent</span>
                     <span class="chat-link-arrow">→</span>
                 </a>
-                <a href="https://labs.google/flow/about" rel="noopener noreferrer" target="_blank"
+                <a href="https://notebooklm.google.com/" rel="noopener noreferrer" target="_blank"
                     class="chat-link-card">
-                    <span class="chat-link-name">Flow</span>
-                    <span class="chat-link-desc">AI filmmaking with Veo</span>
-                    <span class="chat-link-arrow">→</span>
-                </a>
-                <a href="https://stitch.withgoogle.com/" rel="noopener noreferrer" target="_blank"
-                    class="chat-link-card">
-                    <span class="chat-link-name">Stitch</span>
-                    <span class="chat-link-desc">AI UI design generator</span>
+                    <span class="chat-link-name">NotebookLM</span>
+                    <span class="chat-link-desc">AI notebook: chat with your docs, PDFs &amp; sources</span>
                     <span class="chat-link-arrow">→</span>
                 </a>
                 <a href="https://opal.google/landing/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
                     <span class="chat-link-name">Opal</span>
                     <span class="chat-link-desc">AI app builder experiment</span>
-                    <span class="chat-link-arrow">→</span>
-                </a>
-                <a href="https://labs.google.com/mariner/landing" rel="noopener noreferrer" target="_blank"
-                    class="chat-link-card">
-                    <span class="chat-link-name">Project Mariner</span>
-                    <span class="chat-link-desc">Browser automation agent</span>
                     <span class="chat-link-arrow">→</span>
                 </a>
                 <a href="https://labs.google.com/u/0/pomelli/onboarding" rel="noopener noreferrer" target="_blank"
@@ -164,21 +185,28 @@
                         ideas, creatives</span>
                     <span class="chat-link-arrow">→</span>
                 </a>
+                <a href="https://labs.google.com/mariner/landing" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card">
+                    <span class="chat-link-name">Project Mariner</span>
+                    <span class="chat-link-desc">Browser automation agent</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
                 <a href="https://sparkify.withgoogle.com/explore" rel="noopener noreferrer" target="_blank"
                     class="chat-link-card">
                     <span class="chat-link-name">Sparkify</span>
                     <span class="chat-link-desc">AI short video creator</span>
                     <span class="chat-link-arrow">→</span>
                 </a>
-                <a href="https://antigravity.google/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-                    <span class="chat-link-name">Antigravity</span>
-                    <span class="chat-link-desc">Agentic IDE; autonomous agents across editor, terminal, browser</span>
+                <a href="https://stitch.withgoogle.com/" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card">
+                    <span class="chat-link-name">Stitch</span>
+                    <span class="chat-link-desc">AI UI design generator</span>
                     <span class="chat-link-arrow">→</span>
                 </a>
-                <a href="https://developer.android.com/studio" rel="noopener noreferrer" target="_blank"
+                <a href="https://cloud.google.com/vertex-ai" rel="noopener noreferrer" target="_blank"
                     class="chat-link-card">
-                    <span class="chat-link-name">Android Studio</span>
-                    <span class="chat-link-desc">Official Android IDE; Gemini in Android Studio</span>
+                    <span class="chat-link-name">Vertex AI</span>
+                    <span class="chat-link-desc">Enterprise ML platform</span>
                     <span class="chat-link-arrow">→</span>
                 </a>
             </div>
@@ -187,25 +215,19 @@
         <section class="profile-section">
             <h2>OpenAI</h2>
             <div class="chat-links">
-                <a href="https://chatgpt.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-                    <span class="chat-link-name">ChatGPT</span>
-                    <span class="chat-link-desc">Conversational AI chat</span>
-                    <span class="chat-link-arrow">→</span>
-                </a>
                 <a href="https://platform.openai.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
                     <span class="chat-link-name">API Platform</span>
                     <span class="chat-link-desc">Developer API access</span>
                     <span class="chat-link-arrow">→</span>
                 </a>
+                <a href="https://chatgpt.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">ChatGPT</span>
+                    <span class="chat-link-desc">Conversational AI chat</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
                 <a href="https://chatgpt.com/images/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
                     <span class="chat-link-name">ChatGPT Images</span>
                     <span class="chat-link-desc">Image generation</span>
-                    <span class="chat-link-arrow">→</span>
-                </a>
-                <a href="https://chatgpt.com/codex/get-started" rel="noopener noreferrer" target="_blank"
-                    class="chat-link-card">
-                    <span class="chat-link-name">Codex IDE</span>
-                    <span class="chat-link-desc">Desktop coding assistant</span>
                     <span class="chat-link-arrow">→</span>
                 </a>
                 <a href="https://developers.openai.com/codex/cli" rel="noopener noreferrer" target="_blank"
@@ -214,21 +236,37 @@
                     <span class="chat-link-desc">AI-assisted terminal</span>
                     <span class="chat-link-arrow">→</span>
                 </a>
+                <a href="https://chatgpt.com/codex/get-started" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card">
+                    <span class="chat-link-name">Codex IDE</span>
+                    <span class="chat-link-desc">Desktop coding assistant</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://sora.chatgpt.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Sora</span>
+                    <span class="chat-link-desc">Cinematic text-to-video generator</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
             </div>
         </section>
 
         <section class="profile-section">
             <h2>Anthropic</h2>
             <div class="chat-links">
+                <a href="https://console.anthropic.com/" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card">
+                    <span class="chat-link-name">API Console</span>
+                    <span class="chat-link-desc">Developer API access</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
                 <a href="https://claude.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
                     <span class="chat-link-name">Claude</span>
                     <span class="chat-link-desc">AI assistant chat</span>
                     <span class="chat-link-arrow">→</span>
                 </a>
-                <a href="https://console.anthropic.com/" rel="noopener noreferrer" target="_blank"
-                    class="chat-link-card">
-                    <span class="chat-link-name">API Console</span>
-                    <span class="chat-link-desc">Developer API access</span>
+                <a href="https://claude.com/download" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Claude (desktop &amp; mobile)</span>
+                    <span class="chat-link-desc">Download Claude app for macOS, Windows, iOS, Android</span>
                     <span class="chat-link-arrow">→</span>
                 </a>
                 <a href="https://modelcontextprotocol.io/" rel="noopener noreferrer" target="_blank"
@@ -237,22 +275,12 @@
                     <span class="chat-link-desc">Open standard for AI ↔ tools (Anthropic)</span>
                     <span class="chat-link-arrow">→</span>
                 </a>
-                <a href="https://claude.com/download" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-                    <span class="chat-link-name">Claude (desktop &amp; mobile)</span>
-                    <span class="chat-link-desc">Download Claude app for macOS, Windows, iOS, Android</span>
-                    <span class="chat-link-arrow">→</span>
-                </a>
             </div>
         </section>
 
         <section class="profile-section">
             <h2>Meta</h2>
             <div class="chat-links">
-                <a href="https://www.meta.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-                    <span class="chat-link-name">Meta AI</span>
-                    <span class="chat-link-desc">AI assistant</span>
-                    <span class="chat-link-arrow">→</span>
-                </a>
                 <a href="https://llama.meta.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
                     <span class="chat-link-name">Llama</span>
                     <span class="chat-link-desc">Open source LLM</span>
@@ -263,22 +291,27 @@
                     <span class="chat-link-desc">Hands On AI: slides, sites, apps from prompts</span>
                     <span class="chat-link-arrow">→</span>
                 </a>
+                <a href="https://www.meta.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Meta AI</span>
+                    <span class="chat-link-desc">AI assistant</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
             </div>
         </section>
 
         <section class="profile-section">
             <h2>Microsoft</h2>
             <div class="chat-links">
-                <a href="https://copilot.microsoft.com/" rel="noopener noreferrer" target="_blank"
-                    class="chat-link-card">
-                    <span class="chat-link-name">Copilot</span>
-                    <span class="chat-link-desc">AI assistant</span>
-                    <span class="chat-link-arrow">→</span>
-                </a>
                 <a href="https://azure.microsoft.com/en-us/products/ai-services/openai-service"
                     rel="noopener noreferrer" target="_blank" class="chat-link-card">
                     <span class="chat-link-name">Azure OpenAI</span>
                     <span class="chat-link-desc">Enterprise AI service</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://copilot.microsoft.com/" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card">
+                    <span class="chat-link-name">Copilot</span>
+                    <span class="chat-link-desc">AI assistant</span>
                     <span class="chat-link-arrow">→</span>
                 </a>
                 <a href="https://github.com/features/copilot" rel="noopener noreferrer" target="_blank"
@@ -315,14 +348,14 @@
         <section class="profile-section">
             <h2>Mistral</h2>
             <div class="chat-links">
-                <a href="https://chat.mistral.ai/chat" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-                    <span class="chat-link-name">Le Chat</span>
-                    <span class="chat-link-desc">Mistral AI assistant</span>
-                    <span class="chat-link-arrow">→</span>
-                </a>
                 <a href="https://console.mistral.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
                     <span class="chat-link-name">API Console</span>
                     <span class="chat-link-desc">Developer platform</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://chat.mistral.ai/chat" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Le Chat</span>
+                    <span class="chat-link-desc">Mistral AI assistant</span>
                     <span class="chat-link-arrow">→</span>
                 </a>
                 <a href="https://github.com/mistralai/mistral-vibe" rel="noopener noreferrer" target="_blank"
@@ -456,17 +489,17 @@
         <section class="profile-section">
             <h2>IBM</h2>
             <div class="chat-links">
+                <a href="https://www.ibm.com/granite/playground" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card">
+                    <span class="chat-link-name">IBM Granite</span>
+                    <span class="chat-link-desc">Granite Playground</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
                 <a href="https://www.ibm.com/products/bob" rel="noopener noreferrer" target="_blank"
                     class="chat-link-card">
                     <span class="chat-link-name">Project Bob</span>
                     <span class="chat-link-desc">AI software dev partner; chat in editor, code review, vulnerability
                         &amp; secrets detection</span>
-                    <span class="chat-link-arrow">→</span>
-                </a>
-                <a href="https://www.ibm.com/granite/playground" rel="noopener noreferrer" target="_blank"
-                    class="chat-link-card">
-                    <span class="chat-link-name">IBM Granite</span>
-                    <span class="chat-link-desc">Granite Playground</span>
                     <span class="chat-link-arrow">→</span>
                 </a>
             </div>
@@ -519,14 +552,14 @@
         <section class="profile-section">
             <h2>Cohere</h2>
             <div class="chat-links">
-                <a href="https://chat.cohere.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-                    <span class="chat-link-name">Cohere Chat</span>
-                    <span class="chat-link-desc">Command R, RAG</span>
-                    <span class="chat-link-arrow">→</span>
-                </a>
                 <a href="https://cohere.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
                     <span class="chat-link-name">Cohere</span>
                     <span class="chat-link-desc">Developer platform</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://chat.cohere.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Cohere Chat</span>
+                    <span class="chat-link-desc">Command R, RAG</span>
                     <span class="chat-link-arrow">→</span>
                 </a>
             </div>
@@ -758,14 +791,14 @@
         <section class="profile-section">
             <h2>Hugging Face</h2>
             <div class="chat-links">
-                <a href="https://huggingface.co/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-                    <span class="chat-link-name">Hugging Face</span>
-                    <span class="chat-link-desc">Models (2M+), datasets (500k+), Spaces (1M+ apps)</span>
-                    <span class="chat-link-arrow">→</span>
-                </a>
                 <a href="https://huggingface.co/chat" rel="noopener noreferrer" target="_blank" class="chat-link-card">
                     <span class="chat-link-name">HuggingChat</span>
                     <span class="chat-link-desc">Chat with open-source models</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://huggingface.co/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Hugging Face</span>
+                    <span class="chat-link-desc">Models (2M+), datasets (500k+), Spaces (1M+ apps)</span>
                     <span class="chat-link-arrow">→</span>
                 </a>
             </div>
@@ -1636,19 +1669,18 @@
             </div>
         </section>
 
+        <!-- Site Footer -->
+        <footer class="site-footer">
+            <div class="site-stats">
+                <div class="stat-item" title="Indexed items"><span class="stat-icon">🔍</span> 100+ items</div>
+                <div class="stat-item" title="Pages"><span class="stat-icon">📄</span> 10 pages</div>
+                <div class="stat-item" title="Companies listed"><span class="stat-icon">🏢</span> 78+ companies</div>
+            </div>
+            <div class="site-copy">
+                &copy; 2026 Ryan Otterdays. Maintained with ❤️.
+            </div>
+        </footer>
     </main>
-
-    <!-- Site Footer -->
-    <footer class="site-footer">
-        <div class="site-stats">
-            <div class="stat-item" title="Indexed items"><span class="stat-icon">🔍</span> 100+ items</div>
-            <div class="stat-item" title="Pages"><span class="stat-icon">📄</span> 10 pages</div>
-            <div class="stat-item" title="Companies listed"><span class="stat-icon">🏢</span> 78+ companies</div>
-        </div>
-        <div class="site-copy">
-            &copy; 2026 Ryan Otterdays. Maintained with ❤️.
-        </div>
-    </footer>
 
     <!-- Scroll to Top Button -->
     <button type="button" class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top">↑</button>
@@ -1675,6 +1707,7 @@
         </div>
     </div>
 
+    <script src="js/badges.js"></script>
     <script src="js/theme.js"></script>
     <script src="js/search-data.js"></script>
     <script src="js/search.js"></script>

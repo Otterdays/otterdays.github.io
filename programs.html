@@ -30,59 +30,118 @@
 </head>
 
 <body data-theme="dark">
-  <nav class="top-nav">
-    <a href="index.html">Home</a>
-    <a href="programs.html" class="active">Programs</a>
-    <a href="chats.html">AI Chats</a>
-    <a href="media.html">Media Gen</a>
-    <a href="companies.html">Companies</a>
-    <a href="tools.html">Tools</a>
-    <a href="specials.html">Specials</a>
-    <a href="skills.html">Skills/Tools</a>
-    <a href="about.html">About</a>
+  <!-- Sidebar Navigation -->
+  <nav class="sidebar">
+    <a href="index.html" title="Home">
+      <span class="sidebar-icon">🏠</span>
+      <span class="sidebar-text">Home</span>
+    </a>
+    <a href="programs.html" class="active" title="Programs">
+      <span class="sidebar-icon">🎮</span>
+      <span class="sidebar-text">Programs</span>
+    </a>
+    <a href="chats.html" title="AI Chats">
+      <span class="sidebar-icon">💬</span>
+      <span class="sidebar-text">AI Chats</span>
+    </a>
+    <a href="media.html" title="Media Gen">
+      <span class="sidebar-icon">🎨</span>
+      <span class="sidebar-text">Media Gen</span>
+    </a>
+    <a href="companies.html" title="Companies">
+      <span class="sidebar-icon">🏢</span>
+      <span class="sidebar-text">Companies</span>
+    </a>
+    <a href="tools.html" title="Tools">
+      <span class="sidebar-icon">🛠️</span>
+      <span class="sidebar-text">Tools</span>
+    </a>
+    <a href="specials.html" title="Specials">
+      <span class="sidebar-icon">⭐</span>
+      <span class="sidebar-text">Specials</span>
+    </a>
+    <a href="skills.html" title="Skills">
+      <span class="sidebar-icon">🧠</span>
+      <span class="sidebar-text">Skills</span>
+    </a>
+    <a href="about.html" title="About">
+      <span class="sidebar-icon">👤</span>
+      <span class="sidebar-text">About</span>
+    </a>
   </nav>
-  <!-- Version Badge -->
-  <a href="about.html" class="version-badge" title="Version 1.7.0 – Click for details">
-    <span class="version-badge-icon">🎮</span>
-    <span class="version-badge-text">v1.7.0</span>
-  </a>
-  <!-- Search Trigger -->
-  <button type="button" class="search-trigger" id="search-trigger" aria-label="Search site">
-    <span class="search-trigger-icon" aria-hidden="true">🔍</span>
-    <span class="search-trigger-text">Search</span>
-    <span class="search-trigger-kbd"><kbd>⌘</kbd><kbd>K</kbd></span>
-  </button>
-  <div class="theme-switcher">
-    <button type="button" class="theme-btn" id="theme-btn" aria-label="Change theme" aria-expanded="false"
-      aria-haspopup="true">
-      <span class="theme-btn-icon" aria-hidden="true">◐</span>
-      <span class="theme-btn-label" id="theme-label">Dark</span>
-      <span class="theme-btn-arrow">▼</span>
-    </button>
-    <div class="theme-dropdown" id="theme-dropdown" role="menu" hidden>
-      <button type="button" role="menuitem" data-theme="dark">Dark</button>
-      <button type="button" role="menuitem" data-theme="light">Light</button>
-      <button type="button" role="menuitem" data-theme="google">Google</button>
-      <button type="button" role="menuitem" data-theme="openai">OpenAI</button>
-      <button type="button" role="menuitem" data-theme="anthropic">Anthropic</button>
-      <button type="button" role="menuitem" data-theme="lorenz">Otterdays</button>
-      <button type="button" role="menuitem" data-theme="github">GitHub</button>
-      <button type="button" role="menuitem" data-theme="dracula">Dracula</button>
-      <button type="button" role="menuitem" data-theme="nord">Nord</button>
+
+  <!-- Main Content Area -->
+  <main class="content">
+    
+    <!-- Top Bar: Search & Theme (Floating) -->
+    <div style="display: flex; justify-content: flex-end; gap: 1rem; margin-bottom: 2rem;">
+       <!-- Version Badge -->
+      <a href="about.html" class="version-badge" title="Version 1.8.1 – Click for details" style="margin-right: auto;">
+        <span class="version-badge-icon">🎮</span>
+        <span class="version-badge-text">v1.8.1</span>
+      </a>
+      
+      <button type="button" class="search-trigger" id="search-trigger" aria-label="Search site" style="position: static;">
+        <span class="search-trigger-icon" aria-hidden="true">🔍</span>
+        <span class="search-trigger-text">Search</span>
+        <span class="search-trigger-kbd"><kbd>⌘</kbd><kbd>K</kbd></span>
+      </button>
+
+      <div class="theme-switcher" style="position: static;">
+        <button type="button" class="theme-btn" id="theme-btn" aria-label="Change theme" aria-expanded="false"
+          aria-haspopup="true">
+          <span class="theme-btn-icon" aria-hidden="true">◐</span>
+          <span class="theme-btn-label" id="theme-label">Dark</span>
+          <span class="theme-btn-arrow">▼</span>
+        </button>
+        <div class="theme-dropdown" id="theme-dropdown" role="menu" hidden>
+           <!-- Populated by JS -->
+        </div>
+      </div>
     </div>
-  </div>
-  <main class="profile">
-    <header class="profile-header">
-      <h1 class="profile-title">Ryan</h1>
-      <p class="profile-handle">Otterdays &middot; Developer</p>
+
+    <header class="profile-header" style="text-align: left; margin-bottom: 3rem;">
+      <h1 class="profile-title" style="font-size: 3rem;">Ryan</h1>
+      <p class="profile-handle" style="font-size: 1.2rem;">Otterdays &middot; Developer</p>
     </header>
-    <section class="profile-section">
-      <h2>About</h2>
+    <section class="profile-section" style="background: none; border: none; box-shadow: none; padding: 0;">
+      <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">About</h2>
       <p>Short dev profile. 1+ year AI coding &amp; engineering.</p>
     </section>
-    <section class="profile-section">
-      <h2>Projects</h2>
-      <div class="projects-grid">
+    <section class="profile-section" style="background: none; border: none; box-shadow: none; padding: 0; margin-top: 4rem;">
+      <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Projects</h2>
+      <div class="projects-grid bento-grid">
+        <!-- Manually Featured Projects -->
+        <article class="project-card col-span-2 row-span-2 card-featured">
+          <h3 class="project-title" style="font-size: 1.5rem;">Nexus Engine</h3>
+          <p class="project-desc" style="font-size: 1rem;">AI-first game engine with natural language APIs and ECS architecture.</p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Pygame</span>
+            <span class="tag">AI</span>
+          </div>
+        </article>
+        
+        <article class="project-card col-span-2">
+          <h3 class="project-title">RAIN.CHAT v2</h3>
+          <p class="project-desc">Local AI-native IDE with zero cloud dependencies and built-in AI inference engine.</p>
+          <div class="project-tags">
+            <span class="tag">Rust</span>
+            <span class="tag">AI</span>
+            <span class="tag">IDE</span>
+          </div>
+        </article>
+        
+        <article class="project-card col-span-2">
+          <h3 class="project-title">RunicOS</h3>
+          <p class="project-desc">Modern web-based operating system built with Svelte 5 and real-time WebSocket updates.</p>
+          <div class="project-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Svelte</span>
+            <span class="tag">WebOS</span>
+          </div>
+        </article>
+        
         <article class="project-card">
           <h3 class="project-title">3JS Body Baker</h3>
           <p class="project-desc">Three.js character model maker with preset parts and customizable models.</p>
@@ -92,6 +151,8 @@
             <span class="tag">3D Modeling</span>
           </div>
         </article>
+
+        <!-- Standard Projects (A–Z) -->
         <article class="project-card">
           <h3 class="project-title">835 union</h3>
           <p class="project-desc">Blank.</p>
@@ -457,15 +518,6 @@
           </div>
         </article>
         <article class="project-card">
-          <h3 class="project-title">Nexus Engine</h3>
-          <p class="project-desc">AI-first game engine with natural language APIs and ECS architecture.</p>
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">Pygame</span>
-            <span class="tag">AI</span>
-          </div>
-        </article>
-        <article class="project-card">
           <h3 class="project-title">Old-Website</h3>
           <p class="project-desc">Blank.</p>
           <div class="project-tags">
@@ -667,19 +719,18 @@
         </article>
       </div>
     </section>
+    <!-- Site Footer -->
+    <footer class="site-footer">
+      <div class="site-stats">
+        <div class="stat-item" title="Indexed items"><span class="stat-icon">🔍</span> 100+ items</div>
+        <div class="stat-item" title="Pages"><span class="stat-icon">📄</span> 10 pages</div>
+        <div class="stat-item" title="Companies listed"><span class="stat-icon">🏢</span> 78+ companies</div>
+      </div>
+      <div class="site-copy">
+        &copy; 2026 Ryan Otterdays. Maintained with ❤️.
+      </div>
+    </footer>
   </main>
-
-  <!-- Site Footer -->
-  <footer class="site-footer">
-    <div class="site-stats">
-      <div class="stat-item" title="Indexed items"><span class="stat-icon">🔍</span> 100+ items</div>
-      <div class="stat-item" title="Pages"><span class="stat-icon">📄</span> 10 pages</div>
-      <div class="stat-item" title="Companies listed"><span class="stat-icon">🏢</span> 78+ companies</div>
-    </div>
-    <div class="site-copy">
-      &copy; 2026 Ryan Otterdays. Maintained with ❤️.
-    </div>
-  </footer>
 
   <!-- Scroll to Top Button -->
   <button type="button" class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top">↑</button>
