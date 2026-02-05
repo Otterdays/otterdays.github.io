@@ -142,6 +142,22 @@
 
             card.insertBefore(wrap, card.firstChild);
         });
+
+        // Inject URLs into chat cards
+        document.querySelectorAll('.chat-link-card').forEach(function (card) {
+            if (!card.href) return;
+            try {
+                var url = new URL(card.href);
+                var domain = url.hostname.replace(/^www\./, '');
+                var span = document.createElement('span');
+                span.className = 'chat-link-url';
+                span.textContent = domain;
+                card.appendChild(span);
+            } catch (e) {
+                // ignore invalid URLs
+            }
+        });
+
         injectCountryBadgesOnCards();
     });
 })();

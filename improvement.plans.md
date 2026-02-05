@@ -1,7 +1,7 @@
 # 🚀 Improvement Plans
 
 ## Visual Polish
-- [ ] **Card hover micro-animations**
+- [x] **Card hover micro-animations**
   - **Difficulty:** 1/5
   - **Trace:** `css/style.css` (Target `.chat-link-card`, `.project-card`)
 - [ ] **Skeleton loading states**
@@ -35,7 +35,7 @@
   - **Trace:** `js/search.js` (Filtering logic), `HTML pages` (UI component)
 
 ## Themes & Customization
-- [ ] **Theme preview on hover**
+- [x] **Theme preview on hover**
   - **Difficulty:** 3/5
   - **Trace:** `js/theme.js` (Event listeners, temporary CSS variable injection)
 - [ ] **Auto dark/light mode**
@@ -44,7 +44,7 @@
 - [ ] **Custom accent color picker**
   - **Difficulty:** 4/5
   - **Trace:** `js/theme.js` (LocalStorage, CSS Variable manager), `UI` (Color input)
-- [ ] **Theme transition animations**
+- [x] **Theme transition animations**
   - **Difficulty:** 2/5
   - **Trace:** `css/style.css` (Global transition on colors/backgrounds)
 

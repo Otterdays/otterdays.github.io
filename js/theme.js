@@ -11,6 +11,7 @@
   var btn = document.getElementById('theme-btn');
   var dropdown = document.getElementById('theme-dropdown');
   var label = document.getElementById('theme-label');
+  var savedTheme = localStorage.getItem(KEY) || 'dark';
 
   var labels = {
     // Core
@@ -45,17 +46,22 @@
    * Apply a theme to the document and persist to localStorage.
    * @param {string} name - Theme identifier
    */
-  function apply(name) {
+  function apply(name, persist) {
+    if (persist === undefined) persist = true;
     var theme = name || 'dark';
     // Fallback if theme doesn't exist in labels (e.g. removed theme)
     if (!labels[theme]) theme = 'dark';
-    
+
     body.setAttribute('data-theme', theme);
-    if (label) label.textContent = labels[theme] || 'Dark';
-    try {
-      localStorage.setItem(KEY, theme);
-    } catch (e) {
-      // localStorage may be unavailable in private browsing
+
+    if (persist) {
+      if (label) label.textContent = labels[theme] || 'Dark';
+      try {
+        localStorage.setItem(KEY, theme);
+      } catch (e) {
+        // localStorage may be unavailable in private browsing
+      }
+      savedTheme = theme;
     }
   }
 
@@ -93,7 +99,7 @@
     // Clear any hardcoded items
     dropdown.innerHTML = '';
 
-    themeGroups.forEach(function(group) {
+    themeGroups.forEach(function (group) {
       // Create group title
       if (group.title) {
         var title = document.createElement('div');
@@ -103,23 +109,33 @@
       }
 
       // Create buttons for this group
-      group.themes.forEach(function(key) {
+      group.themes.forEach(function (key) {
         if (labels[key]) {
           var opt = document.createElement('button');
           opt.type = 'button';
           opt.setAttribute('role', 'menuitem');
           opt.setAttribute('data-theme', key);
           opt.textContent = labels[key];
-          
+
           opt.addEventListener('click', function () {
-            apply(key);
+            apply(key, true);
             dropdown.setAttribute('hidden', '');
             if (btn) btn.setAttribute('aria-expanded', 'false');
+          });
+
+          // Preview on hover
+          opt.addEventListener('mouseenter', function () {
+            apply(key, false);
           });
 
           dropdown.appendChild(opt);
         }
       });
+    });
+
+    // Revert preview on mouse leave
+    dropdown.addEventListener('mouseleave', function () {
+      apply(savedTheme, false);
     });
   }
 
@@ -175,56 +191,40 @@
     });
   }
 
-  /**
-   * Scroll Progress Indicator [TRACE: improvement.plans.md]
-   */
+  /* Scroll Progress Indicator [MODERNIZED: CSS Scroll-Driven Animation] */
   var progressWrap = document.createElement('div');
   progressWrap.className = 'scroll-progress';
   progressWrap.setAttribute('role', 'progressbar');
   progressWrap.setAttribute('aria-label', 'Page scroll progress');
-  progressWrap.setAttribute('aria-valuemin', '0');
-  progressWrap.setAttribute('aria-valuemax', '100');
   var progressFill = document.createElement('div');
   progressFill.className = 'scroll-progress-fill';
   progressWrap.appendChild(progressFill);
   document.body.insertBefore(progressWrap, document.body.firstChild);
-
-  function updateScrollProgress() {
-    var scrollTop = window.scrollY;
-    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
-    var pct = docHeight > 0 ? Math.min(100, (scrollTop / docHeight) * 100) : 0;
-    progressFill.style.width = pct + '%';
-    progressWrap.setAttribute('aria-valuenow', Math.round(pct));
-  }
-
-  window.addEventListener('scroll', updateScrollProgress);
-  window.addEventListener('resize', updateScrollProgress);
-  updateScrollProgress();
 
   /**
    * 3D Tilt Effect for Cards
    * Adds a subtle 3D perspective tilt to cards on hover
    */
   var tiltCards = document.querySelectorAll('.project-card, .chat-link-card, .home-link');
-  
-  tiltCards.forEach(function(card) {
-    card.addEventListener('mousemove', function(e) {
+
+  tiltCards.forEach(function (card) {
+    card.addEventListener('mousemove', function (e) {
       var rect = card.getBoundingClientRect();
       var x = e.clientX - rect.left;
       var y = e.clientY - rect.top;
-      
+
       // Calculate rotation based on mouse position
       // Max rotation: 5 degrees
       var xPct = x / rect.width;
       var yPct = y / rect.height;
-      
+
       var xRot = (0.5 - yPct) * 10; // Rotate around X axis (up/down tilt)
       var yRot = (xPct - 0.5) * 10; // Rotate around Y axis (left/right tilt)
-      
+
       card.style.transform = 'perspective(1000px) rotateX(' + xRot + 'deg) rotateY(' + yRot + 'deg) scale(1.02)';
     });
-    
-    card.addEventListener('mouseleave', function() {
+
+    card.addEventListener('mouseleave', function () {
       card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
     });
   });

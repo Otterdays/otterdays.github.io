@@ -4,11 +4,11 @@
 **Blockers:** None.
 
 **Last 5 actions:**
-1. **Country badges:** Refactored badges site-wide — full names, top-right pill on cards; tighter wrap; companies page badge smaller.
-2. **COUNTRY_MAP:** Added all missing product labels (Google, OpenAI, tools/chats/media) so every company product shows origin.
-3. **Docs:** Updated CHANGELOG [1.8.1], SCRATCHPAD; git commit and push.
-4. **Alphabetize:** programs.html — project cards A–Z by `.project-title`; featured block unchanged at top.
-5. **Redesign:** Applied "Futuristic Redesign" (Sidebar, Glassmorphism, Bento Grid) to `companies.html` (maintained collapsible sections logic).
+1. **Modernization:** Implemented CSS `animation-timeline: scroll()` for the progress bar (removing JS) and applied `text-wrap: balance` to headings for 2025 typography standards.
+2. **UX:** Added domain URL display (e.g. `elevenlabs.io`) to lower-left footer of all `.chat-link-card` items using JS + CSS styling.
+3. **Themes:** Implemented "Preview on Hover" in theme switcher and added smooth `cubic-bezier` transitions to `body` background/colors.
+4. **Visual:** Added "dope ass" glint effect (CSS linear-gradient + skew + animation) to `.project-card`, `.chat-link-card`, and `.home-link` on hover.
+5. **Country badges:** Refactored badges site-wide — full names, top-right pill on cards; tighter wrap; companies page badge smaller.
 
 **Latest structural changes (2026-02-04):**
 - **Sidebar Navigation:** Replaced top navigation bar with a sticky, expandable sidebar (icons + text). CSS Grid layout (`64px 1fr` -> `240px 1fr`).

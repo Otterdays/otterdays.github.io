@@ -58,6 +58,9 @@
 body {
   margin: 0;
   background: var(--bg);
+  transition: background-color 0.5s cubic-bezier(0.2, 0.8, 0.2, 1), color 0.3s ease;
+  /* Nicer theme transition */
+
   min-height: 100vh;
   font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
   font-size: 1rem;
@@ -67,12 +70,14 @@ body {
   position: relative;
   /* Sidebar Layout Grid */
   display: grid;
-  grid-template-columns: 64px 1fr; /* Default collapsed sidebar width */
+  grid-template-columns: 64px 1fr;
+  /* Default collapsed sidebar width */
   transition: grid-template-columns 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body:has(.sidebar:hover) {
-  grid-template-columns: 240px 1fr; /* Expanded width */
+  grid-template-columns: 240px 1fr;
+  /* Expanded width */
 }
 
 /* === SIDEBAR NAVIGATION === */
@@ -92,7 +97,8 @@ body:has(.sidebar:hover) {
   overflow-x: hidden;
   overflow-y: auto;
   transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  width: 100%; /* Fill grid cell */
+  width: 100%;
+  /* Fill grid cell */
 }
 
 /* Sidebar Links */
@@ -118,7 +124,8 @@ body:has(.sidebar:hover) {
   background: var(--accent-glow);
   color: var(--accent);
   font-weight: 600;
-  box-shadow: inset 2px 0 0 0 var(--accent); /* Left border indicator */
+  box-shadow: inset 2px 0 0 0 var(--accent);
+  /* Left border indicator */
 }
 
 .sidebar-icon {
@@ -150,21 +157,71 @@ body:has(.sidebar:hover) {
 .project-card,
 .chat-link-card,
 .home-link {
-  background: rgba(22, 27, 34, 0.4); /* More transparent base */
+  background: rgba(22, 27, 34, 0.4);
+  /* More transparent base */
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  /* Required for glint effect */
+  position: relative;
 }
 
-/* Stronger Hover Glow */
+/* Stronger Hover Glow & Glint Trigger */
 .project-card:hover,
 .chat-link-card:hover,
 .home-link:hover {
   border-color: var(--accent);
-  box-shadow: 0 0 20px var(--accent-glow), inset 0 0 20px var(--accent-glow);
-  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 0 25px var(--accent-glow), inset 0 0 20px rgba(var(--accent), 0.2);
+  transform: translateY(-5px) scale(1.02);
   z-index: 10;
+  backdrop-filter: blur(12px) brightness(1.2);
+  /* Lighting up effect */
+}
+
+/* === GLINT EFFECT === */
+.project-card::after,
+.chat-link-card::after,
+.home-link::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right,
+      transparent 0%,
+      rgba(255, 255, 255, 0.01) 30%,
+      rgba(255, 255, 255, 0.4) 50%,
+      rgba(255, 255, 255, 0.01) 70%,
+      transparent 100%);
+  transform: skewX(-25deg);
+  z-index: 20;
+  pointer-events: none;
+  transition: none;
+}
+
+.project-card:hover::after,
+.chat-link-card:hover::after,
+.home-link:hover::after {
+  animation: shine 0.75s ease-out forwards;
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    left: 200%;
+    opacity: 0;
+  }
 }
 
 /* === BENTO GRID UTILITIES === */
@@ -172,7 +229,8 @@ body:has(.sidebar:hover) {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.5rem;
-  grid-auto-flow: dense; /* Fill gaps */
+  grid-auto-flow: dense;
+  /* Fill gaps */
 }
 
 .col-span-2 {
@@ -204,6 +262,7 @@ body:has(.sidebar:hover) {
     opacity: 0;
     transform: translateX(30px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -222,8 +281,10 @@ body:has(.sidebar:hover) {
 /* Mobile Adjustments */
 @media (max-width: 768px) {
   body {
-    grid-template-columns: 1fr; /* Stack layout */
-    padding-bottom: 4rem; /* Bottom nav space */
+    grid-template-columns: 1fr;
+    /* Stack layout */
+    padding-bottom: 4rem;
+    /* Bottom nav space */
   }
 
   .sidebar {
@@ -237,19 +298,22 @@ body:has(.sidebar:hover) {
     padding: 0.5rem;
     border-top: 1px solid var(--border);
     border-right: none;
-    background: var(--bg); /* Solid bg for mobile nav */
+    background: var(--bg);
+    /* Solid bg for mobile nav */
   }
-  
+
   .sidebar-text {
-    display: none; /* Icon only on mobile */
+    display: none;
+    /* Icon only on mobile */
   }
-  
+
   .content {
     padding: 1rem;
   }
-  
+
   .col-span-2 {
-    grid-column: span 1; /* Stack bento on mobile */
+    grid-column: span 1;
+    /* Stack bento on mobile */
   }
 }
 
@@ -264,6 +328,8 @@ h6,
 .top-nav a {
   font-family: var(--font-heading, 'Inter', sans-serif);
   letter-spacing: -0.02em;
+  text-wrap: balance;
+  /* Modern typography 2025 */
 }
 
 
@@ -598,17 +664,16 @@ body::after {
 }
 
 @supports (background-clip: text) or (-webkit-background-clip: text) {
+
   .home-title,
   .profile-title {
     color: transparent;
     -webkit-text-fill-color: transparent;
     /* Lighter→darker gradient; dark end kept at 75% accent so it stays readable on dark themes */
-    background: linear-gradient(
-      110deg,
-      color-mix(in srgb, var(--accent) 55%, white) 0%,
-      var(--accent) 50%,
-      color-mix(in srgb, var(--accent) 75%, black) 100%
-    );
+    background: linear-gradient(110deg,
+        color-mix(in srgb, var(--accent) 55%, white) 0%,
+        var(--accent) 50%,
+        color-mix(in srgb, var(--accent) 75%, black) 100%);
     -webkit-background-clip: text;
     background-clip: text;
   }
@@ -897,7 +962,8 @@ body::after {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
-  padding: 1rem 1.15rem;
+  padding: 1rem 1.15rem 2.8rem 1.15rem;
+  /* Increased bottom padding for footer row */
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 12px;
@@ -942,19 +1008,19 @@ body::after {
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
-  padding: 0.18rem 0.4rem;
-  font-size: 0.65rem;
+  padding: 0.12rem 0.32rem;
+  font-size: 0.62rem;
   font-weight: 600;
-  line-height: 1.15;
-  max-width: 4.8rem;
+  line-height: 1.1;
+  max-width: 4.2rem;
   white-space: normal;
   word-break: break-word;
   text-align: right;
   color: var(--muted);
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.03);
 }
 
 .chat-link-card:hover .country-badge {
@@ -970,10 +1036,41 @@ body::after {
 }
 
 .chat-link-arrow {
-  align-self: flex-end;
+  position: absolute;
+  bottom: 0.9rem;
+  right: 1.15rem;
   font-size: 1.15rem;
   opacity: 0.5;
   transition: all 0.3s ease;
+  transform: translateX(0);
+}
+
+.chat-link-card:hover .chat-link-arrow {
+  opacity: 1;
+  color: var(--accent);
+  transform: translateX(3px);
+}
+
+/* URL in lower left */
+.chat-link-url {
+  position: absolute;
+  bottom: 1.15rem;
+  left: 1.15rem;
+  font-size: 0.7rem;
+  font-family: 'Space Grotesk', ui-monospace, monospace;
+  color: var(--muted);
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 70%;
+  z-index: 5;
+}
+
+.chat-link-card:hover .chat-link-url {
+  opacity: 1;
+  color: var(--accent);
 }
 
 .chat-link-card:hover .chat-link-arrow {
@@ -1018,16 +1115,17 @@ body::after {
 }
 
 .companies-page .country-badge {
-  font-size: 0.72rem;
+  font-size: 0.65rem;
   line-height: 1.1;
   opacity: 0.9;
   flex-shrink: 0;
-  padding: 0.12rem 0.35rem;
+  padding: 0.1rem 0.28rem;
   font-weight: 600;
   color: var(--muted);
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid var(--border);
-  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.03);
 }
 
 .companies-page .profile-section .collapsible-wrapper {
@@ -1360,6 +1458,40 @@ body::after {
   color: var(--muted);
   background: var(--bg);
   border-bottom: 1px solid var(--border);
+}
+
+/* === MODERN SCROLL PROGRESS (2025) === */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  z-index: 1001;
+  /* Above navbar */
+  pointer-events: none;
+  background: transparent;
+}
+
+.scroll-progress-fill {
+  width: 100%;
+  height: 100%;
+  background: var(--accent);
+  transform-origin: 0 50%;
+  transform: scaleX(0);
+  animation: grow-progress auto linear;
+  animation-timeline: scroll();
+  /* CSS native scroll animation */
+}
+
+@keyframes grow-progress {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
 }
 
 .search-count {

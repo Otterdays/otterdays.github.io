@@ -2,6 +2,11 @@
 
 All notable changes to this project are documented in this file. Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [Unreleased]
+
+### Changed
+- **Country badges (refinement):** Tighter padding and smaller font on card and companies-page badges; softer background/border and subtle inset highlight for a more refined, less heavy look; max-width 4.2rem so multi-word names wrap in a smaller footprint.
+
 ## [1.8.1] - 2026-02-04
 
 ### Added
