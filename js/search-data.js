@@ -60,6 +60,8 @@ var SEARCH_DATA = [
     { title: "StepFun", desc: "Chat, knowledge-base Q&A, image creation, Step Audio Studio.", category: "chat", tags: ["StepFun", "Chat", "Audio"], url: "chats.html" },
     { title: "Tencent Hunyuan", desc: "Hunyuan AI Studio: dialogue, multimodal, model access, research.", category: "chat", tags: ["Tencent", "Hunyuan", "Multimodal"], url: "chats.html" },
     { title: "ZenMux", desc: "Unified gateway to many models; chat and API; compensation for subpar results.", category: "chat", tags: ["Multi-model", "API", "Gateway"], url: "chats.html" },
+    { title: "OpenClaw", desc: "Viral personal AI assistant hosted on your system.", category: "chat", tags: ["Personal", "Hosted", "Assistant"], url: "chats.html" },
+    { title: "Moltbook", desc: "AI-only social platform; chat and share with AI.", category: "chat", tags: ["Social", "AI", "Platform"], url: "chats.html" },
 
     // === MEDIA GENERATION (media.html) ===
     { title: "DALL-E 3", desc: "OpenAI's advanced image generation model.", category: "media", tags: ["OpenAI", "Image", "Generation"], url: "media.html" },
@@ -68,7 +70,9 @@ var SEARCH_DATA = [
     { title: "Ideogram", desc: "AI image generator with excellent text rendering.", category: "media", tags: ["Image", "Text", "Art"], url: "media.html" },
     { title: "Leonardo.AI", desc: "AI art generation with fine-tuned models.", category: "media", tags: ["Art", "Game Assets", "AI"], url: "media.html" },
     { title: "Recraft", desc: "Vector and raster AI image generation.", category: "media", tags: ["Vector", "Design", "AI"], url: "media.html" },
-    { title: "Sora", desc: "OpenAI's text-to-video generation model.", category: "media", tags: ["Video", "OpenAI", "Generation"], url: "media.html" },
+    { title: "Sora 2", desc: "OpenAI's text-to-video generator; web and mobile app.", category: "media", tags: ["Video", "OpenAI", "Generation"], url: "media.html" },
+    { title: "Veo 3", desc: "Google's Veo 3.1 video generation in AI Studio.", category: "media", tags: ["Video", "Google", "Generation"], url: "media.html" },
+    { title: "Grok Imagine", desc: "xAI's image and video generation.", category: "media", tags: ["Image", "Video", "xAI"], url: "media.html" },
     { title: "Runway", desc: "AI video editing and generation platform.", category: "media", tags: ["Video", "Editing", "AI"], url: "media.html" },
     { title: "Pika", desc: "AI video generation and editing.", category: "media", tags: ["Video", "Generation", "AI"], url: "media.html" },
     { title: "Luma AI", desc: "3D and video AI generation.", category: "media", tags: ["3D", "Video", "AI"], url: "media.html" },
@@ -88,7 +92,7 @@ var SEARCH_DATA = [
     { title: "Soundraw", desc: "AI music generator for creators; royalty-free.", category: "media", tags: ["Music", "Audio", "Generation"], url: "media.html" },
 
     // === COMPANIES (companies.html) ===
-    { title: "OpenAI", desc: "Creator of GPT, DALL-E, and Sora. Leading AI research lab.", category: "company", tags: ["GPT", "ChatGPT", "Research"], url: "companies.html" },
+    { title: "OpenAI", desc: "Creator of GPT, DALL-E, and Sora. Leading AI research lab.", category: "company", tags: ["GPT", "ChatGPT", "Sora", "Research"], url: "companies.html" },
     { title: "Anthropic", desc: "AI safety company, creator of Claude.", category: "company", tags: ["Claude", "Safety", "Research"], url: "companies.html" },
     { title: "Google DeepMind", desc: "Google's AI research division behind Gemini.", category: "company", tags: ["Gemini", "Research", "Google"], url: "companies.html" },
     { title: "Meta AI", desc: "Meta's AI division, creators of Llama models.", category: "company", tags: ["Llama", "Open Source", "Meta"], url: "companies.html" },
@@ -160,6 +164,16 @@ var SEARCH_DATA = [
 
 
     // === TOOLS (tools.html) ===
+    { title: "Cline CLI", desc: "Run tasks headlessly; power GitHub Actions, Discord bots, game characters, Linear tickets.", category: "tool", tags: ["CLI", "Agent", "Headless"], url: "tools.html" },
+    { title: "Augment CLI", desc: "AI-powered coding in the terminal; same Context Engine as IDE; #1 on SWE-Bench Pro.", category: "tool", tags: ["CLI", "AI", "Coding"], url: "tools.html" },
+    { title: "Zencoder", desc: "Zenflow orchestration + agents; IDE, CLI, Zen Agents; spec-driven, parallel execution.", category: "tool", tags: ["IDE", "CLI", "Agent"], url: "tools.html" },
+    { title: "Augment Code", desc: "Context Engine for AI coding; IDE agents, code review, CLI; #1 on SWE-Bench Pro.", category: "tool", tags: ["IDE", "AI", "Coding"], url: "tools.html" },
+    { title: "Brave Leo", desc: "Privacy-first AI in Brave; summarize pages, PDFs, translate; Llama, Mixtral, Claude; BYOM, no account.", category: "tool", tags: ["Browser AI", "Privacy", "Leo"], url: "tools.html" },
+    { title: "Dia Browser", desc: "AI browser from Arc makers; chat with your tabs, in-line copy editor, tutor in every tab.", category: "tool", tags: ["Browser AI", "Arc", "Tabs"], url: "tools.html" },
+    { title: "NVIDIA ChatRTX", desc: "Local personalized chatbot on Windows RTX; RAG, TensorRT-LLM, chat with files, voice, image search.", category: "tool", tags: ["Local LLM", "NVIDIA", "RTX"], url: "tools.html" },
+    { title: "Discord Developers", desc: "Build bots, apps, integrations; API, webhooks, rich presence.", category: "tool", tags: ["Discord", "API", "Bots"], url: "tools.html" },
+    { title: "WebLLM", desc: "Run LLMs in the browser with WebGPU; MLC-ai; no server needed.", category: "tool", tags: ["Browser", "LLM", "WebGPU"], url: "tools.html" },
+    { title: "Algolia", desc: "AI-powered search and discovery; instant, relevant results.", category: "tool", tags: ["Search", "AI", "Discovery"], url: "tools.html" },
     { title: "Abacus AI Deep Agent", desc: "General agent: build apps, reports, presentations; connect to systems, agentic tasks.", category: "tool", tags: ["Agent", "Apps", "Abacus.AI"], url: "tools.html" },
     { title: "Cursor", desc: "AI-first code editor built on VS Code.", category: "tool", tags: ["IDE", "AI", "VS Code"], url: "tools.html" },
     { title: "Windsurf", desc: "AI coding IDE; Cascade agent, Tab autocomplete, MCP, JetBrains plugin.", category: "tool", tags: ["IDE", "AI", "Cascade"], url: "tools.html" },

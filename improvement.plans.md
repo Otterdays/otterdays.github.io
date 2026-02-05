@@ -69,3 +69,57 @@
 - [ ] **Reduced motion mode**
   - **Difficulty:** 2/5
   - **Trace:** `css/style.css` (`@media (prefers-reduced-motion)`)
+
+---
+
+## Ideas backlog (QoL, themes, links, everything)
+
+**QoL & UX**
+- [ ] **Breadcrumb / "You are here"** — Small text above content: Home → Programs (or current page). Low effort, high clarity.
+- [ ] **"Back to top" after long scroll** — You have a scroll-top button; consider showing it only after ~2 screens (Intersection Observer or scroll threshold).
+- [ ] **Copy link / Share** — On About or key pages, a "Copy link" or "Share" button (Web Share API with fallback).
+- [ ] **Print-friendly CSS** — `@media print` to hide sidebar, simplify cards, show URLs so the site is useful when printed.
+- [ ] **Skip to main content** — `<a href="#main" class="skip-link">Skip to content</a>` + `id="main"` on `<main>` for keyboard/screen-reader users.
+- [ ] **Focus visible** — Ensure `:focus-visible` is styled on nav, search, theme, cards so keyboard users see where they are.
+- [ ] **Theme transition** — Short (e.g. 0.2s) transition on `body` for `background-color` / `color` when switching themes so it doesn’t flash.
+
+**Themes**
+- [ ] **Auto dark/light** — `prefers-color-scheme` in theme.js; default to system, still allow manual override (localStorage).
+- [ ] **Theme preview on hover** — In the theme dropdown, hovering an option briefly applies that theme; click to confirm (reduces misclicks).
+- [ ] **More themes** — Catppuccin, Tokyo Night, One Dark, Rose Pine; or seasonal (e.g. Halloween, Winter) if you like variety.
+- [ ] **Theme transition animation** — As above; smooth flip instead of instant swap.
+
+**Links & content**
+- [ ] **About: "How to add a link"** — One short paragraph + link to CONTENT_GUIDE or a short inline checklist (add to HTML, add to search, add company if new).
+- [ ] **About: Changelog teaser** — "Recent changes" with 3–5 bullets from CHANGELOG (manual or script); link to full changelog if you add a changelog page.
+- [ ] **Footer: Repo / Edit on GitHub** — Link to GitHub repo (e.g. "Source" or "Edit this page") so devs can find the repo.
+- [ ] **Footer: RSS** — If you ever add a blog or "Recently added" feed, an RSS link in the footer.
+- [ ] **404: Suggested links** — "Try: Home, Programs, Tools" or a few popular pages so 404 isn’t a dead end.
+- [ ] **Programs: repo links** — If projects have GitHub URLs, add a small "Repo" or icon link on each card (optional, only where you have the URL).
+
+**Search & discovery**
+- [ ] **"Surprise me!" in search** — Button that picks a random result and navigates (or opens) it; fun and discovery.
+- [ ] **Search: filter by category** — Chips or dropdown: All / Chats / Tools / Companies / etc. to narrow results.
+- [ ] **Search: recent searches** — Store last 5 queries in localStorage and show "Recent: X, Y" under the input (optional).
+
+**Delight & polish**
+- [ ] **Easter egg** — Konami code or a hidden shortcut that does something small (e.g. confetti, theme shuffle, or "Surprise me!").
+- [ ] **Card hover micro-animations** — Slight scale or shadow on `.chat-link-card` / `.project-card` hover (you already have this in plans).
+- [ ] **Animated favicon** — Favicon that changes with theme or shows a small animation on load (optional; can be distracting).
+- [ ] **Staggered entrance** — Stagger delay on cards or sections so the page doesn’t pop in all at once (you have stagger classes; apply to more sections if desired).
+
+**SEO & meta**
+- [ ] **JSON-LD** — Person or WebSite schema on index/about so search engines understand the site.
+- [ ] **OG image per section** — Different `og:image` for Programs vs Tools vs About (optional; current single image is fine).
+- [ ] **Sitemap** — `sitemap.xml` listing all 10 pages for crawlers (static list is enough).
+
+**Docs & maintenance**
+- [ ] **STYLE_GUIDE: Programs order** — "Keep project cards A–Z by `.project-title`; featured block stays at top."
+- [ ] **CONTENT_GUIDE: Programs** — "New project: add card in A–Z order; add to search-data.js; update SCRATCHPAD/CHANGELOG."
+- [ ] **Link checker** — Occasional script or CI step to `fetch` key URLs and report broken links (optional).
+
+**Optional biggers**
+- [ ] **Changelog page** — Dedicated page that renders CHANGELOG.md or a short "Recent" list; link from About and version badge.
+- [ ] **Dark/light toggle in nav** — In addition to full theme switcher, a single "Dark / Light" flip for quick switch.
+- [ ] **Collapsible sections on other pages** — Reuse companies-style collapsible on Chats/Media/Tools sections (optional; adds complexity).
+- [ ] **Quick filter chips on Programs** — Filter by tag (Game, Music, TypeScript, etc.) without leaving the page.

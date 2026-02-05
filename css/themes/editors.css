@@ -1,0 +1,85 @@
+/* === EDITOR THEMES === */
+
+/* Dracula Theme - Cult favorite among developers */
+body[data-theme="dracula"] {
+  --bg: #282a36;
+  --bg-gradient: linear-gradient(150deg, #282a36 0%, #1e1f29 40%, #282a36 100%);
+  --fg: #f8f8f2;
+  --muted: #6272a4;
+  --accent: #bd93f9;
+  --accent-glow: rgba(189, 147, 249, 0.3);
+  --card: rgba(40, 42, 54, 0.9);
+  --card-solid: #282a36;
+  --border: #44475a;
+  --glass: rgba(40, 42, 54, 0.8);
+}
+
+/* Nord Theme - Calm and sophisticated */
+body[data-theme="nord"] {
+  --bg: #2e3440;
+  --bg-gradient: linear-gradient(135deg, #2e3440 0%, #3b4252 50%, #2e3440 100%);
+  --fg: #eceff4;
+  --muted: #81a1c1;
+  --accent: #88c0d0;
+  --accent-glow: rgba(136, 192, 208, 0.25);
+  --card: rgba(46, 52, 64, 0.9);
+  --card-solid: #3b4252;
+  --border: #4c566a;
+  --glass: rgba(59, 66, 82, 0.8);
+}
+
+/* Monokai Theme - Code classic */
+body[data-theme="monokai"] {
+  --bg: #272822;
+  --bg-gradient: linear-gradient(135deg, #272822 0%, #1e1f1c 100%);
+  --fg: #f8f8f2;
+  --muted: #75715e;
+  --accent: #a6e22e;
+  --accent-glow: rgba(166, 226, 46, 0.2);
+  --card: rgba(39, 40, 34, 0.95);
+  --card-solid: #272822;
+  --border: #49483e;
+  --glass: rgba(39, 40, 34, 0.9);
+}
+
+/* Solarized Dark Theme - Precision & contrast */
+body[data-theme="solarized"] {
+  --bg: #002b36;
+  --bg-gradient: linear-gradient(180deg, #002b36 0%, #073642 100%);
+  --fg: #839496;
+  --muted: #586e75;
+  --accent: #b58900;
+  --accent-glow: rgba(181, 137, 0, 0.2);
+  --card: rgba(0, 43, 54, 0.95);
+  --card-solid: #002b36;
+  --border: #073642;
+  --glass: rgba(7, 54, 66, 0.8);
+}
+
+/* VS Code Theme - Editor standard */
+body[data-theme="vscode"] {
+  --bg: #1e1e1e;
+  --bg-gradient: linear-gradient(135deg, #1e1e1e 0%, #252526 100%);
+  --fg: #d4d4d4;
+  --muted: #858585;
+  --accent: #007acc;
+  --accent-glow: rgba(0, 122, 204, 0.25);
+  --card: rgba(37, 37, 38, 0.95);
+  --card-solid: #1e1e1e;
+  --border: #333333;
+  --glass: rgba(30, 30, 30, 0.9);
+}
+
+/* Gruvbox Theme - Retro groove */
+body[data-theme="gruvbox"] {
+  --bg: #282828;
+  --bg-gradient: linear-gradient(135deg, #282828 0%, #1d2021 100%);
+  --fg: #ebdbb2;
+  --muted: #a89984;
+  --accent: #fe8019;
+  --accent-glow: rgba(254, 128, 25, 0.2);
+  --card: rgba(40, 40, 40, 0.95);
+  --card-solid: #282828;
+  --border: #504945;
+  --glass: rgba(50, 48, 47, 0.9);
+}

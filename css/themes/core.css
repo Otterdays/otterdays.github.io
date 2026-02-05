@@ -1,0 +1,28 @@
+/* === CORE THEMES === */
+:root,
+body[data-theme="dark"] {
+  --bg: #0a0d12;
+  --bg-gradient: #0a0d12;
+  --fg: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --accent-glow: rgba(88, 166, 255, 0.4);
+  --card: rgba(22, 27, 34, 0.7);
+  --card-solid: #161b22;
+  --border: rgba(240, 246, 252, 0.1);
+  --glass: rgba(13, 17, 23, 0.7);
+  --font-heading: 'Space Grotesk', sans-serif;
+}
+
+body[data-theme="light"] {
+  --bg: #f0f3f6;
+  --bg-gradient: linear-gradient(135deg, #f0f3f6 0%, #f6f8fa 50%, #f0f3f6 100%);
+  --fg: #1f2328;
+  --muted: #656d76;
+  --accent: #0969da;
+  --accent-glow: rgba(9, 105, 218, 0.2);
+  --card: rgba(255, 255, 255, 0.9);
+  --card-solid: #ffffff;
+  --border: #d0d7de;
+  --glass: rgba(255, 255, 255, 0.75);
+}

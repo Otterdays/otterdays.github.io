@@ -13,20 +13,32 @@
   var label = document.getElementById('theme-label');
 
   var labels = {
+    // Core
     dark: 'Dark',
     light: 'Light',
+
+    // Brands
+    anthropic: 'Anthropic',
+    github: 'GitHub',
     google: 'Google',
     openai: 'OpenAI',
-    anthropic: 'Anthropic',
-    lorenz: 'Otterdays',
-    github: 'GitHub',
+
+    // Editors
     dracula: 'Dracula',
-    nord: 'Nord',
-    vscode: 'VS Code',
-    synthwave: 'Synthwave',
+    gruvbox: 'Gruvbox',
     monokai: 'Monokai',
+    nord: 'Nord',
     solarized: 'Solarized',
-    gruvbox: 'Gruvbox'
+    vscode: 'VS Code',
+
+    // Creative
+    aqua: 'Aqua',
+    coffee: 'Coffee',
+    cyber: 'Cyber',
+    forest: 'Forest',
+    luxury: 'Luxury',
+    lorenz: 'Otterdays',
+    synthwave: 'Synthwave'
   };
 
   /**
@@ -56,25 +68,58 @@
     });
   }
 
+  // Theme groups configuration
+  var themeGroups = [
+    {
+      title: 'Core',
+      themes: ['dark', 'light']
+    },
+    {
+      title: 'Brands',
+      themes: ['anthropic', 'github', 'google', 'openai']
+    },
+    {
+      title: 'Editors',
+      themes: ['dracula', 'gruvbox', 'monokai', 'nord', 'solarized', 'vscode']
+    },
+    {
+      title: 'Creative',
+      themes: ['aqua', 'coffee', 'cyber', 'forest', 'luxury', 'lorenz', 'synthwave']
+    }
+  ];
+
   // Populate dropdown dynamically and handle selection
   if (dropdown) {
     // Clear any hardcoded items
     dropdown.innerHTML = '';
 
-    Object.keys(labels).forEach(function (key) {
-      var opt = document.createElement('button');
-      opt.type = 'button';
-      opt.setAttribute('role', 'menuitem');
-      opt.setAttribute('data-theme', key);
-      opt.textContent = labels[key];
-      
-      opt.addEventListener('click', function () {
-        apply(key);
-        dropdown.setAttribute('hidden', '');
-        if (btn) btn.setAttribute('aria-expanded', 'false');
-      });
+    themeGroups.forEach(function(group) {
+      // Create group title
+      if (group.title) {
+        var title = document.createElement('div');
+        title.className = 'theme-group-title';
+        title.textContent = group.title;
+        dropdown.appendChild(title);
+      }
 
-      dropdown.appendChild(opt);
+      // Create buttons for this group
+      group.themes.forEach(function(key) {
+        if (labels[key]) {
+          var opt = document.createElement('button');
+          opt.type = 'button';
+          opt.setAttribute('role', 'menuitem');
+          opt.setAttribute('data-theme', key);
+          opt.textContent = labels[key];
+          
+          opt.addEventListener('click', function () {
+            apply(key);
+            dropdown.setAttribute('hidden', '');
+            if (btn) btn.setAttribute('aria-expanded', 'false');
+          });
+
+          dropdown.appendChild(opt);
+        }
+      });
     });
   }
 
@@ -155,4 +200,32 @@
   window.addEventListener('scroll', updateScrollProgress);
   window.addEventListener('resize', updateScrollProgress);
   updateScrollProgress();
+
+  /**
+   * 3D Tilt Effect for Cards
+   * Adds a subtle 3D perspective tilt to cards on hover
+   */
+  var tiltCards = document.querySelectorAll('.project-card, .chat-link-card, .home-link');
+  
+  tiltCards.forEach(function(card) {
+    card.addEventListener('mousemove', function(e) {
+      var rect = card.getBoundingClientRect();
+      var x = e.clientX - rect.left;
+      var y = e.clientY - rect.top;
+      
+      // Calculate rotation based on mouse position
+      // Max rotation: 5 degrees
+      var xPct = x / rect.width;
+      var yPct = y / rect.height;
+      
+      var xRot = (0.5 - yPct) * 10; // Rotate around X axis (up/down tilt)
+      var yRot = (xPct - 0.5) * 10; // Rotate around Y axis (left/right tilt)
+      
+      card.style.transform = 'perspective(1000px) rotateX(' + xRot + 'deg) rotateY(' + yRot + 'deg) scale(1.02)';
+    });
+    
+    card.addEventListener('mouseleave', function() {
+      card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
+    });
+  });
 })();

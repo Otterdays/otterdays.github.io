@@ -1,0 +1,63 @@
+---
+alwaysApply: true
+---
+
+description: "2025-2026 Web Standards for Otterdays.github.io: Semantic HTML, Modern CSS (Nesting, Container Queries), and Latest JavaScript (ES2025+)."globs:
+
+"**/*.html"
+"**/*.css"
+"**/*.js"
+"**/*.jsx"
+"**/*.tsx"
+"**/*.ts"
+"**/*.astro"alwaysApply: false
+2025-2026 Web Development Standards for Otterdays
+1. HTML Architecture (Semantic & Accessible)
+Prioritize Semantic HTML: Always use semantic elements (<article>, <section>, <figure>, <figcaption>, <nav>, <aside>) over generic <div> structures to improve SEO and accessibility.
+Modern Forms:
+Use field-sizing: content for <textarea> elements to enable auto-resizing without JS.
+For custom <select> dropdowns, use appearance: base-select to gain full styling control over options and triggers.
+Internationalization: If adding multi-language support, use the direction attribute (ltr/rtl) on specific elements rather than global CSS overrides where possible.
+Link Types: Use rel="preload" for critical assets and rel="prefetch" for likely next pages to optimize LCP (Largest Contentful Paint).
+2. CSS Architecture (Modern 2025/2026 Features)
+Adopt Native CSS Nesting: Stop using SCSS/Sass preprocessors for new stylesheets. Use native nesting syntax (& .child) to reduce build complexity and improve browser-native debugging.
+Exception: Continue using SCSS only if existing mixins/functions cannot be ported to CSS Custom Properties.
+Implement Container Queries: Use @container (min-width: ...) instead of media queries for component-level responsiveness. This ensures components (cards, navbars) react to their parent container, not just the viewport.
+Use the :has() Selector:
+Utilize for parent styling logic (e.g., styling a form group based on an error message child).
+Avoid deep nesting when :has() can flatten the selector structure.
+Layout & Positioning:
+Use aspect-ratio for media containers instead of the old padding-bottom hack.
+Prefer Anchor Positioning (position: anchor) for tooltips and popovers to avoid absolute positioning calculations in JS.
+Use Subgrid (grid-template-columns: subgrid) when aligning nested components to parent grid tracks.
+Color & Theming:
+Use light-dark() function for handling color values to simplify dark mode implementation.
+Utilize color-mix() for generating color variations (hover states, alpha transparency) rather than hardcoding hex codes.
+Use text-wrap: balance for headlines to prevent widow lines.
+Typography:
+Use logical properties (margin-inline, padding-block) instead of physical directions (left, right) to better support RTL languages.
+Use clamp() for fluid typography instead of multiple media queries.
+3. JavaScript Architecture (ES2025+ & Modern Performance)
+Temporal API: Replace standard Date object usage with the modern Temporal API for date/time calculations, parsing, and formatting (e.g., blog post dates).
+Pattern Matching: (Experimental/Transpilation) Use match statements instead of complex switch/else chains for data validation and component rendering logic.
+Error Handling:
+Use Error.cause property for error chaining: throw new Error('Failed to load', { cause: originalError }).
+Use Error.isError() checks (if supported in target environment) for robust error validation.
+Resource Management:
+Use using and await using syntax for disposing of resources (stream handles, file connections) if applicable to the backend/build scripts.
+Decorators: Apply standard JS/TS decorators (@log, @deprecated) to classes and methods for cross-cutting concerns like logging and deprecation warnings.
+Arrays & Iterators:
+Use Array.prototype.groupBy() for organizing data lists (e.g., blog posts by year/category) instead of manual reduce loops.
+Use Math.sumPrecise() for numerical calculations (e.g., statistics on the site) to avoid floating-point errors.
+4. Performance & Accessibility (Perf & A11y)
+Rendering Optimization:
+Use content-visibility: auto for off-screen sections (like long blog lists) to improve rendering performance.
+Use scroll-driven animations (animation-timeline: view()) for scroll effects instead of JS scroll listeners to ensure 60fps performance.
+Focus Management:
+Always use :focus-visible instead of :focus to show outline rings only for keyboard navigation, keeping mouse interaction clean.
+Images:
+Use native <img> attributes loading="lazy" and decoding="async".
+Prefer AVIF/WebP formats with <picture> elements for art direction.
+5. Project Specifics (Assumptions)
+Framework Detection: Automatically detect if the project uses Jekyll, Hugo, Astro, or Next.js and adhere to the specific data structure (e.g., Jekyll Front Matter, Astro Props).
+SEO: Ensure all pages have unique <title> and <meta name="description"> tags. Use <meta name="theme-color"> for mobile browser bar customization.

@@ -41,27 +41,51 @@
 
 ## Navigation (all pages)
 
-Order: Home → Programs → AI Chats → Media Gen → Companies → Tools → Specials → Skills/Tools → About. Same `<nav class="top-nav">` on every HTML page; theme switcher present on index, programs, chats, media, companies, tools, specials, skills, 404.
+**Sidebar Navigation:** A sticky, collapsible sidebar on the left (`.sidebar`).
+- **Collapsed (64px):** Shows icons only.
+- **Expanded (240px):** Expands on hover to show text labels.
+- **Mobile:** Fixed bottom navigation bar (icons only).
+- **Links:** Home, Programs, AI Chats, Media Gen, Companies, Tools, Specials, Skills/Tools, About.
 
 ## Page breakdown
 
 | Page           | Sections / content |
 |----------------|--------------------|
-| **index**      | Profile, image, home links (X, Bluesky, GitHub). |
-| **programs**   | Profile header + projects grid; `js/badges.js` adds badges by title. |
-| **chats**      | **Assistants:** ChatGPT, Claude, Gemini, NotebookLM, Perplexity, Grok, Kimi, DeepSeek, Qwen, Minimax, IBM Granite, Z.ai, Amazon Nova, Meta AI, Copilot, Mistral, Poe, Character.AI, Pi, Cohere, Arcee AI, Allen AI, Duck.ai. **Provider hubs:** OpenRouter, T3 Chat, Groq Cloud, SambaNova, Cerebras. |
-| **media**      | **Video:** Artlist, Runway, Pika, Synthesia, HeyGen, Luma, Google Flow, Sparkify, SuperMaker, Cuzi. **Image:** Midjourney, ChatGPT Images, Stable Diffusion, FLUX, Ideogram, Recraft, Leonardo, Adobe Firefly. **Audio:** Suno, Udio, ElevenLabs, MusicAI. |
-| **companies**  | One section per company (56+); collapsible sections (toggle at top center). GitHub, Railway added. |
-| **tools**      | **CLI (A–Z):** Crush, Gemini CLI, Kimi Code CLI, Mistral Vibe, OpenAI Codex CLI, Qwen Code. **IDE (A–Z):** Android Studio, Cursor, Factory, Google Antigravity, Jules, OpenAI Codex, TRAE, Warp. **Web builders:** Bolt, Firebase Studio, Google AI Studio, Lovable, Replit, v0. **Browser (A–Z):** Amp Free, Base44, Cloudflare Pages, Firebase, Hugging Face, MongoDB, Netlify, Opal, Project Mariner, Railway, Stitch, Supabase, Vercel. **Tunneling:** Localtunnel, Tunnelmole, reTunnel. **Reference:** MCP, Claude download, HTML Online Viewer. |
-| **specials**   | **Free domains:** DigitalPlat, FreeDomain, FreeDomain GitHub. **Learning:** freeCodeCamp. |
-| **skills**     | **Cursor agentic tools:** File/code, search, terminal, lint, todo, web, memory, image, MCP. **Antigravity agentic tools:** File/Code, Editing, Terminal, Web, Creativity, MCPs. **MCPs:** MCP_DOCKER, cursor-ide-browser. **Agent skills:** create-rule, create-skill, update-cursor-settings, create-subagent, migrate-to-skills. **SkillBox:** antjanus/skillbox (track-session, git-worktree, generate-skill, ideal-react-component, rate-skill). **Skills directory:** React (6), Testing (6), Git & workflows (6); npx skills find, skills.sh, /find-skills. |
-| **404**        | Error code, title, back link. |
+| **index**      | Profile, image, home links (X, Bluesky, GitHub). **Bento layout:** Image (col-span-2 on mobile), profile text. |
+| **programs**   | Profile header + projects grid; `js/badges.js` adds badges by title. **Glassmorphic cards.** |
+| **chats**      | **Assistants** & **Provider hubs**: Bento grid layout with featured cards (e.g. OpenAI, Anthropic). |
+| **media**      | **Video**, **Image**, **Audio**: Bento grid layout. |
+| **companies**  | One section per company (56+); collapsible sections (toggle at top center). **Sidebar layout.** |
+| **tools**      | **CLI**, **IDE**, **Web builders**, **Browser**, **Tunneling**, **Reference**: Bento grid layout. |
+| **specials**   | **Free domains**, **Learning**, **Games**: Bento grid layout. |
+| **skills**     | **Agentic tools**, **MCPs**, **Skills**: Bento grid layout. |
+| **404**        | Error code, title, back link. Centered layout. |
 
 ## Themes
 
-- **data-theme** on `body`: `dark` (default), `light`, `google`, `openai`, `anthropic`, `lorenz` (Otterdays), `github`, `dracula`, `nord`, `vscode`, `synthwave`, `monokai`, `solarized`, `gruvbox` (14 total).
+- **data-theme** on `body`.
+- **Categories:**
+    - **Core:** Dark, Light.
+    - **Brands:** Google, OpenAI, Anthropic, Otterdays (Lorenz), GitHub.
+    - **Editors:** VS Code, Dracula, Nord, Monokai, Solarized, Gruvbox, Synthwave.
+    - **Creative:** Forest, Coffee, Cyber, Aqua, Luxury.
+- **Total:** 19 themes.
 - Stored in localStorage as `dev-profile-theme`.
 - CSS variables: `--bg`, `--fg`, `--muted`, `--accent`, `--card`, `--border`, `--glass`, `--accent-glow`.
+
+## Layout Architecture
+
+**CSS Grid:**
+- `body { display: grid; grid-template-columns: 64px 1fr; }`
+- **Sidebar:** Fixed width (64px -> 240px hover).
+- **Content:** `1fr` area (`.content`).
+- **Top Bar:** Floating flex container inside `.content` for Version Badge, Search, and Theme Switcher.
+
+## Glassmorphism & Motion
+
+- **Cards:** `.project-card`, `.chat-link-card` use `backdrop-filter: blur(12px)` and `rgba(..., 0.4)` backgrounds.
+- **3D Tilt:** `js/theme.js` adds mousemove event listeners to cards to apply `rotateX`/`rotateY` transforms based on cursor position.
+- **Entrance:** Content slides in from right (`slideInRight` keyframe).
 
 ## Badges
 

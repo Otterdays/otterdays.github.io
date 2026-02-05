@@ -1,0 +1,37 @@
+---
+alwaysApply: true
+---
+
+description: "Organizational standards for Otterdays.github.io including Git conventions, documentation, and file structure."globs:
+
+"**/*.md"
+"**/*.json"
+".gitignore"
+"README.md"alwaysApply: false
+Project Workflow & Organizational Standards
+1. Git & Commit Conventions
+Commit Messages: Use conventional commits format: type(scope): description.
+Types: feat (new feature), fix (bug fix), style (formatting), refactor (code restructuring), docs (documentation).
+Example: feat(blog): add dark mode toggle using light-dark()
+Branching: Use main (or master) for production. Create feature branches named feature/short-description or fix/short-description.
+No Secrets: Never commit API keys, .env files, or sensitive credentials.
+2. Documentation Standards
+README Maintenance: Keep the root README.md updated with:
+Local development setup instructions.
+Tech stack versions (e.g., "Node v20", "Jekyll 4.3").
+Deployment commands.
+Inline Comments: Document complex CSS logic (especially container queries or nested contexts) and JS utility functions directly in the code.
+Changelog: Maintain a CHANGELOG.md to track significant updates to the site design or functionality.
+3. File Organization
+Components: Keep UI components isolated. If using a framework (React/Vue/Astro), group components by feature (e.g., components/blog/, components/layout/).
+Assets: Store images in an assets/images/ or public/images/ folder. Use descriptive filenames (kebab-case) like blog-post-cover-2025.jpg instead of img001.jpg.
+CSS Architecture:
+Prefer component-scoped CSS (CSS Modules, Scoped Styles, or Shadow DOM) over global stylesheets where possible to prevent style leakage.
+If using a global CSS file, organize it by section with clear comments: /* === Global Reset === */, /* === Typography === */.
+4. Code Quality
+Linting: Always run the project's linter (e.g., ESLint, Stylelint) before committing.
+Testing: If adding JS logic (like search or filtering), write unit tests using a framework compatible with the stack (e.g., Vitest, Jest).
+Spelling: Ensure English content is spell-checked, especially for public-facing headers and navigation items.
+5. Deployment
+Build Verification: Before pushing to main, run a local build (npm run build or equivalent) to ensure there are no build errors.
+Preview: Use GitHub Pages preview or a local server to verify changes before merging.

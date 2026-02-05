@@ -1,0 +1,57 @@
+/* === BRAND THEMES === */
+
+/* Google */
+body[data-theme="google"] {
+  --bg: #181a1e;
+  --bg-gradient: linear-gradient(145deg, #181a1e 0%, #202124 40%, #1a1c20 100%);
+  --fg: #e8eaed;
+  --muted: #9aa0a6;
+  --accent: #8ab4f8;
+  --accent-glow: rgba(138, 180, 248, 0.25);
+  --card: rgba(41, 42, 45, 0.85);
+  --card-solid: #292a2d;
+  --border: #5f6368;
+  --glass: rgba(41, 42, 45, 0.7);
+}
+
+/* OpenAI */
+body[data-theme="openai"] {
+  --bg: #090909;
+  --bg-gradient: linear-gradient(160deg, #090909 0%, #0d0d0d 50%, #080808 100%);
+  --fg: #ececec;
+  --muted: #8e8ea0;
+  --accent: #10a37f;
+  --accent-glow: rgba(16, 163, 127, 0.3);
+  --card: rgba(23, 23, 23, 0.9);
+  --card-solid: #171717;
+  --border: #2f2f2f;
+  --glass: rgba(23, 23, 23, 0.75);
+}
+
+/* Anthropic */
+body[data-theme="anthropic"] {
+  --bg: #141414;
+  --bg-gradient: linear-gradient(135deg, #141414 0%, #1a1a1a 50%, #121212 100%);
+  --fg: #f0f0f0;
+  --muted: #a0a0a0;
+  --accent: #d97706;
+  --accent-glow: rgba(217, 119, 6, 0.3);
+  --card: rgba(38, 38, 38, 0.85);
+  --card-solid: #262626;
+  --border: #404040;
+  --glass: rgba(38, 38, 38, 0.7);
+}
+
+/* GitHub Theme - Developer home base */
+body[data-theme="github"] {
+  --bg: #0d1117;
+  --bg-gradient: linear-gradient(145deg, #0d1117 0%, #161b22 50%, #0d1117 100%);
+  --fg: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --accent-glow: rgba(88, 166, 255, 0.25);
+  --card: rgba(22, 27, 34, 0.9);
+  --card-solid: #161b22;
+  --border: #30363d;
+  --glass: rgba(22, 27, 34, 0.8);
+}
