@@ -15,3 +15,5 @@
 - **Companies minimization:** Collapsible sections only on the Companies page (body class `companies-page`); other pages that use `.profile-section` (chats, tools, media, specials) are unchanged. Scoped CSS under `.companies-page` and a guard in `js/companies.js` keep behavior and styles isolated.
 
 - **Tools page order:** CLI, IDE, and Browser Tools sections are kept alphabetically by card name (`.chat-link-name`) so users can scan and find items quickly; new entries should be inserted in A–Z order.
+
+- **Gradient text (page titles):** `.home-title` and `.profile-title` already had `linear-gradient(135deg, var(--fg), var(--accent))`. Improvement: (1) shifted gradient stops so accent dominates the tail (0%→45%→100%) for more visual pop; (2) unified both selectors in one `@supports` block; (3) added `color: var(--accent)` fallback for browsers without `background-clip: text`; (4) added `-webkit-text-fill-color: transparent` for Safari. Theme-aware (uses `--fg`, `--accent`) so all 14 themes get matching gradients.

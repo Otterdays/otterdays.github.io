@@ -80,6 +80,12 @@ var SEARCH_DATA = [
     { title: "Hugging Face Spaces", desc: "1M+ AI apps: image, video, audio, chat; host and discover.", category: "media", tags: ["Hugging Face", "Spaces", "Apps"], url: "media.html" },
     { title: "Higgsfield", desc: "AI video and image generator: Vibe Motion, Grok Imagine, motion control, cinema studio.", category: "media", tags: ["Video", "Image", "Higgsfield"], url: "media.html" },
     { title: "Agent Opus", desc: "Create videos from ideas: article to video, script to video, motion design, X post to video.", category: "media", tags: ["Video", "Article to Video", "Motion Design"], url: "media.html" },
+    { title: "Descript", desc: "All-in-one video & podcast editor; edit by transcribing.", category: "media", tags: ["Video", "Editing", "Audio"], url: "media.html" },
+
+    { title: "OpusClip", desc: "AI video repurposing; turn long videos into shorts.", category: "media", tags: ["Video", "Shorts", "Repurposing"], url: "media.html" },
+    { title: "Google Flow", desc: "AI filmmaking with Veo (formerly VideoFX).", category: "media", tags: ["Video", "Google", "Veo"], url: "media.html" },
+    { title: "Canva Magic Studio", desc: "All-in-one AI design suite.", category: "media", tags: ["Design", "Image", "AI"], url: "media.html" },
+    { title: "Soundraw", desc: "AI music generator for creators; royalty-free.", category: "media", tags: ["Music", "Audio", "Generation"], url: "media.html" },
 
     // === COMPANIES (companies.html) ===
     { title: "OpenAI", desc: "Creator of GPT, DALL-E, and Sora. Leading AI research lab.", category: "company", tags: ["GPT", "ChatGPT", "Research"], url: "companies.html" },
@@ -137,11 +143,21 @@ var SEARCH_DATA = [
     { title: "Qoder", desc: "Agentic coding platform: IDE, CLI, JetBrains; Editor and Quest modes, Repo Wiki, MCP.", category: "company", tags: ["IDE", "CLI", "Agent"], url: "companies.html" },
     { title: "OpenCode", desc: "Open-source AI coding agent; terminal, desktop, IDE; 75+ LLM providers.", category: "company", tags: ["Open Source", "CLI", "IDE"], url: "companies.html" },
     { title: "Kilo", desc: "Kilo Code: all-in-one agentic engineering platform; VS Code, JetBrains, CLI; #1 on OpenRouter.", category: "company", tags: ["Agent", "IDE", "Open Source"], url: "companies.html" },
+    { title: "Kiro", desc: "Amazon: agentic AI development; spec-driven coding.", category: "company", tags: ["Spec-Driven", "Framework", "Amazon"], url: "companies.html" },
     { title: "Roo Code", desc: "Open-source AI dev team; VS Code extension + Cloud agents; model-agnostic.", category: "company", tags: ["Open Source", "IDE", "Agent"], url: "companies.html" },
     { title: "Quests", desc: "Open-source app builder; build and run apps locally with any LLM; BYOK, desktop.", category: "company", tags: ["Web Builder", "Open Source", "Desktop"], url: "companies.html" },
     { title: "Ollama", desc: "Run open models locally; works with Codex, Claude Code, OpenCode, Open WebUI, Msty, etc.", category: "company", tags: ["Local LLM", "Inference", "Open Source"], url: "companies.html" },
     { title: "LM Studio", desc: "Local AI on your computer; run LLMs privately and free; headless (llmster), SDK, MCP, OpenAI-compatible.", category: "company", tags: ["Local LLM", "Inference", "Desktop"], url: "companies.html" },
     { title: "vLLM", desc: "High-throughput inference and serving for LLMs; OpenAI-compatible API; PagedAttention, Hugging Face.", category: "company", tags: ["Local LLM", "Inference", "Serving"], url: "companies.html" },
+    { title: "Snyk", desc: "Developer security: find & fix vulnerabilities.", category: "company", tags: ["Security", "DevOps", "AI"], url: "companies.html" },
+    { title: "Tabnine", desc: "AI code completion assistant.", category: "company", tags: ["Coding", "IDE", "Assistant"], url: "companies.html" },
+    { title: "Sourcegraph", desc: "Code intelligence platform; Cody AI.", category: "company", tags: ["Coding", "Search", "Cody"], url: "companies.html" },
+    { title: "Mintlify", desc: "AI documentation writer.", category: "company", tags: ["Docs", "Writing", "AI"], url: "companies.html" },
+    { title: "Descript", desc: "Video & podcast editing platform.", category: "company", tags: ["Video", "Audio", "Editing"], url: "companies.html" },
+    { title: "Canva", desc: "Design platform; Magic Studio AI.", category: "company", tags: ["Design", "Graphics", "AI"], url: "companies.html" },
+    { title: "Adobe", desc: "Creative Cloud; Firefly AI models.", category: "company", tags: ["Design", "Creative", "Firefly"], url: "companies.html" },
+    { title: "You.com", desc: "AI consumer search engine & chat.", category: "company", tags: ["Search", "Chat", "AI"], url: "companies.html" },
+
 
     // === TOOLS (tools.html) ===
     { title: "Abacus AI Deep Agent", desc: "General agent: build apps, reports, presentations; connect to systems, agentic tasks.", category: "tool", tags: ["Agent", "Apps", "Abacus.AI"], url: "tools.html" },
@@ -176,6 +192,7 @@ var SEARCH_DATA = [
     { title: "Tunnelmole", desc: "Simple tunneling for local development.", category: "tool", tags: ["Tunneling", "Simple", "Dev"], url: "tools.html" },
     { title: "TRAE", desc: "10x AI engineer; build software solutions independently.", category: "tool", tags: ["IDE", "AI", "Agent"], url: "tools.html" },
     { title: "Warp", desc: "Agentic terminal and IDE with full terminal use.", category: "tool", tags: ["Terminal", "IDE", "Agent"], url: "tools.html" },
+    { title: "Kiro", desc: "Agentic AI development; spec-driven coding from prototype to production.", category: "tool", tags: ["IDE", "Agent", "Spec-Driven"], url: "tools.html" },
     { title: "Factory", desc: "Agent-native dev; Droids in IDE, web, CLI, Slack.", category: "tool", tags: ["Agent", "IDE", "Droids"], url: "tools.html" },
     { title: "Figma", desc: "Collaborative interface design: Design, Dev Mode, FigJam, Figma Make, MCP for AI.", category: "tool", tags: ["Design", "UI", "Collaboration", "MCP"], url: "tools.html" },
     { title: "Genspark", desc: "AI workspace: Sparkpages, search, presentations, videos, research; 9 models, 80+ tools.", category: "tool", tags: ["AI", "Search", "Workspace", "Agent"], url: "tools.html" },
@@ -219,6 +236,17 @@ var SEARCH_DATA = [
     { title: "Design Arena", desc: "Community-driven AI design benchmark: vote to discover which AI is best at design (website, image, video, UI).", category: "tool", tags: ["Design", "Benchmark", "AI"], url: "tools.html" },
     { title: "Vibecode", desc: "AI mobile and web app builder; describe what you want, watch it come to life; Claude.", category: "tool", tags: ["Web Builder", "Mobile", "AI"], url: "tools.html" },
     { title: "Wix AI", desc: "Create a unique, business-ready website in no time with AI; chat with AI website creator.", category: "tool", tags: ["Web Builder", "AI", "Website"], url: "tools.html" },
+    { title: "Amazon Q Developer", desc: "AWS: AI coding companion; completion, refactoring.", category: "tool", tags: ["Coding", "AWS", "IDE"], url: "tools.html" },
+    { title: "CodeGPT", desc: "VS Code extension; chat with code, refactor, document.", category: "tool", tags: ["Coding", "IDE", "VS Code"], url: "tools.html" },
+    { title: "Mintlify", desc: "AI documentation writer; generates beautiful docs from code.", category: "tool", tags: ["Docs", "Writing", "Tool"], url: "tools.html" },
+    { title: "Snyk", desc: "Developer security platform; AI-powered vulnerability finding.", category: "tool", tags: ["Security", "DevOps", "Tool"], url: "tools.html" },
+    { title: "Sourcegraph Cody", desc: "AI coding assistant; codebase-aware chat and autocomplete.", category: "tool", tags: ["Coding", "IDE", "Cody"], url: "tools.html" },
+    { title: "Tabnine", desc: "AI code completion; private, secure, works offline.", category: "tool", tags: ["Coding", "IDE", "Offline"], url: "tools.html" },
+    { title: "Jan", desc: "Open-source ChatGPT alternative; run 100% offline.", category: "tool", tags: ["Local LLM", "Offline", "Desktop"], url: "tools.html" },
+    { title: "Msty", desc: "Easiest local AI app; Works with Ollama; highly polished UI.", category: "tool", tags: ["Local LLM", "Desktop", "UI"], url: "tools.html" },
+    { title: "Open WebUI", desc: "Extensible self-hosted WebUI (formerly Ollama WebUI).", category: "tool", tags: ["Local LLM", "WebUI", "Self-hosted"], url: "tools.html" },
+
+    { title: "You.com", desc: "The AI search engine; chat, write, code, create images.", category: "tool", tags: ["Search", "Chat", "Browser"], url: "tools.html" },
 
     // === SPECIALS (specials.html) ===
     { title: "DigitalPlat FreeDomain", desc: "Get free domain names for your projects.", category: "special", tags: ["Domain", "Free", "Hosting"], url: "specials.html" },
@@ -238,7 +266,9 @@ var SEARCH_DATA = [
     { title: "Companies", desc: "55+ AI and tech companies directory.", category: "page", tags: ["Companies", "Directory", "AI"], url: "companies.html" },
     { title: "Tools", desc: "Developer tools including CLI, IDE, and browser tools.", category: "page", tags: ["Tools", "Developer", "IDE"], url: "tools.html" },
     { title: "Specials", desc: "Free resources, domains, learning, and games (itch.io, Armor Games, PlayHop, Newgrounds, Yandex Games).", category: "page", tags: ["Free", "Resources", "Learning", "Games"], url: "specials.html" },
-    { title: "Skills", desc: "IDE skills and MCPs for my Cursor setup: agent skills, Model Context Protocol servers.", category: "page", tags: ["Cursor", "IDE", "MCP", "Skills"], url: "skills.html" },
+    { title: "Skills/Tools", desc: "IDE skills, Cursor agentic tools, Google Antigravity agentic tools (file, search, browser, etc.), and MCPs.", category: "page", tags: ["Cursor", "Antigravity", "IDE", "MCP", "Skills", "Tools", "Agent"], url: "skills.html" },
+    { title: "SkillBox", desc: "Utility AI agent skills: track-session, git-worktree, generate-skill, ideal-react-component, rate-skill. Works with Cursor, Codex, Gemini CLI, OpenCode, Replit, 40+ agents.", category: "tool", tags: ["Skills", "Vercel", "Claude Code", "Cursor", "Agent", "SKILL.md"], url: "skills.html" },
+    { title: "Skills directory", desc: "Discover skills by category: React, Testing, Git & workflows. npx skills find [query], skills.sh.", category: "page", tags: ["Skills", "Vercel", "React", "Testing", "Git", "find-skills"], url: "skills.html" },
     { title: "About", desc: "What this site is: projects and tools worth sharing. Every link is safe and direct.", category: "page", tags: ["About", "Site", "Links"], url: "about.html" },
     { title: "Dev tips", desc: "Trigger mobile view in Chrome: F12 (or Cmd+Option+I on Mac), then Toggle Device Toolbar.", category: "page", tags: ["Dev", "Chrome", "F12", "Mobile", "Debug"], url: "about.html" }
 ];

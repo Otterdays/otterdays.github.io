@@ -45,36 +45,57 @@
         page: '#6366f1'
     };
 
+    // === TEXT NORMALIZATION ===
+    // Strips special characters for better fuzzy matching
+    // e.g., "there's" becomes "theres", "DALL-E" becomes "dalle"
+    function normalizeText(text) {
+        return text
+            .toLowerCase()
+            .replace(/[''`´]/g, '')      // Remove apostrophes
+            .replace(/[-–—]/g, '')        // Remove dashes
+            .replace(/[^\w\s]/g, '')      // Remove other special chars
+            .trim();
+    }
+
     // === SEARCH ALGORITHM ===
     function searchItems(query) {
         if (!query || query.length < 1) return [];
 
         var q = query.toLowerCase().trim();
+        var qNorm = normalizeText(query);
         var words = q.split(/\s+/);
+        var wordsNorm = qNorm.split(/\s+/);
         var scored = [];
 
         SEARCH_DATA.forEach(function (item) {
             var score = 0;
             var titleLower = item.title.toLowerCase();
+            var titleNorm = normalizeText(item.title);
             var descLower = item.desc.toLowerCase();
+            var descNorm = normalizeText(item.desc);
             var tagsLower = item.tags.map(function (t) { return t.toLowerCase(); });
+            var tagsNorm = item.tags.map(function (t) { return normalizeText(t); });
             var categoryLower = item.category.toLowerCase();
 
-            words.forEach(function (word) {
+            // Check both original and normalized versions
+            words.forEach(function (word, idx) {
+                var wordNorm = wordsNorm[idx] || normalizeText(word);
+
                 // Exact title match (highest priority)
-                if (titleLower === word) {
+                if (titleLower === word || titleNorm === wordNorm) {
                     score += 100;
-                } else if (titleLower.startsWith(word)) {
+                } else if (titleLower.startsWith(word) || titleNorm.startsWith(wordNorm)) {
                     score += 50;
-                } else if (titleLower.includes(word)) {
+                } else if (titleLower.includes(word) || titleNorm.includes(wordNorm)) {
                     score += 25;
                 }
 
-                // Tag match
-                tagsLower.forEach(function (tag) {
-                    if (tag === word) {
+                // Tag match (check both versions)
+                tagsLower.forEach(function (tag, tagIdx) {
+                    var tagNorm = tagsNorm[tagIdx];
+                    if (tag === word || tagNorm === wordNorm) {
                         score += 30;
-                    } else if (tag.includes(word)) {
+                    } else if (tag.includes(word) || tagNorm.includes(wordNorm)) {
                         score += 15;
                     }
                 });
@@ -84,8 +105,8 @@
                     score += 20;
                 }
 
-                // Description match (lower priority)
-                if (descLower.includes(word)) {
+                // Description match (check both versions)
+                if (descLower.includes(word) || descNorm.includes(wordNorm)) {
                     score += 10;
                 }
             });
@@ -102,6 +123,18 @@
         });
 
         return scored.slice(0, MAX_RESULTS).map(function (s) { return s.item; });
+    }
+
+    // === BUILD URL WITH SEARCH HIGHLIGHT ===
+    function buildSearchUrl(item, query) {
+        var url = item.url;
+        if (query && query.trim()) {
+            // Add search query as hash param for highlight-jump
+            var encodedQuery = encodeURIComponent(query.trim());
+            var encodedTitle = encodeURIComponent(item.title);
+            url += '#search=' + encodedQuery + '&target=' + encodedTitle;
+        }
+        return url;
     }
 
     // === RENDER RESULTS ===
@@ -129,10 +162,12 @@
             return;
         }
 
+        var currentQuery = input.value;
         var html = items.map(function (item, index) {
             var icon = categoryIcons[item.category] || '📄';
             var isSelected = index === selectedIndex ? ' selected' : '';
-            return '<a href="' + item.url + '" class="search-result-item' + isSelected + '" data-index="' + index + '">' +
+            var itemUrl = buildSearchUrl(item, currentQuery);
+            return '<a href="' + itemUrl + '" class="search-result-item' + isSelected + '" data-index="' + index + '">' +
                 '<span class="search-result-icon" style="background:' + (categoryColors[item.category] || '#888') + '">' + icon + '</span>' +
                 '<div class="search-result-content">' +
                 '<div class="search-result-title">' + escapeHtml(item.title) + '</div>' +
@@ -203,7 +238,8 @@
 
     function selectResult() {
         if (selectedIndex >= 0 && currentResults[selectedIndex]) {
-            window.location.href = currentResults[selectedIndex].url;
+            var query = input ? input.value : '';
+            window.location.href = buildSearchUrl(currentResults[selectedIndex], query);
         }
     }
 
@@ -313,6 +349,105 @@
                 selectResult();
             });
         }
+
+        // Handle search highlight from URL hash
+        handleSearchHighlight();
+    }
+
+    // === HIGHLIGHT & JUMP ===
+    // Parses URL hash to find and highlight searched item
+    function handleSearchHighlight() {
+        var hash = window.location.hash;
+        if (!hash || !hash.includes('search=')) return;
+
+        // Parse hash params
+        var params = {};
+        hash.slice(1).split('&').forEach(function (part) {
+            var kv = part.split('=');
+            if (kv.length === 2) {
+                params[kv[0]] = decodeURIComponent(kv[1]);
+            }
+        });
+
+        var searchQuery = params.search;
+        var targetTitle = params.target;
+
+        if (!searchQuery && !targetTitle) return;
+
+        // Small delay to let page render
+        setTimeout(function () {
+            var found = findAndHighlight(targetTitle, searchQuery);
+            if (found) {
+                // Clear hash after highlight
+                history.replaceState(null, '', window.location.pathname + window.location.search);
+            }
+        }, 300);
+    }
+
+    function findAndHighlight(targetTitle, searchQuery) {
+        var searchLower = (targetTitle || searchQuery || '').toLowerCase();
+        var searchNorm = normalizeText(targetTitle || searchQuery || '');
+
+        // Try to find elements that match the search
+        // Priority: chat-link-card links, then any link, then headings
+        var candidates = [];
+
+        // Check chat-link-cards first (most common for tools/chats)
+        document.querySelectorAll('.chat-link-card').forEach(function (el) {
+            var nameEl = el.querySelector('.chat-link-name');
+            if (nameEl) {
+                var text = nameEl.textContent || '';
+                var textLower = text.toLowerCase();
+                var textNorm = normalizeText(text);
+                if (textLower.includes(searchLower) || textNorm.includes(searchNorm) ||
+                    searchLower.includes(textLower) || searchNorm.includes(textNorm)) {
+                    candidates.push({ el: el, score: textLower === searchLower ? 100 : 50 });
+                }
+            }
+        });
+
+        // Check project cards
+        document.querySelectorAll('.project-card').forEach(function (el) {
+            var titleEl = el.querySelector('.project-title');
+            if (titleEl) {
+                var text = titleEl.textContent || '';
+                var textLower = text.toLowerCase();
+                var textNorm = normalizeText(text);
+                if (textLower.includes(searchLower) || textNorm.includes(searchNorm) ||
+                    searchLower.includes(textLower) || searchNorm.includes(textNorm)) {
+                    candidates.push({ el: el, score: textLower === searchLower ? 100 : 50 });
+                }
+            }
+        });
+
+        // Check section headings
+        document.querySelectorAll('h2, h3').forEach(function (el) {
+            var text = el.textContent || '';
+            var textLower = text.toLowerCase();
+            var textNorm = normalizeText(text);
+            if (textLower.includes(searchLower) || textNorm.includes(searchNorm)) {
+                candidates.push({ el: el, score: 30 });
+            }
+        });
+
+        if (candidates.length === 0) return false;
+
+        // Sort by score and pick the best match
+        candidates.sort(function (a, b) { return b.score - a.score; });
+        var target = candidates[0].el;
+
+        // Scroll into view
+        target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+        // Add highlight effect
+        target.classList.add('search-highlight');
+
+        // Remove highlight after animation
+        setTimeout(function () {
+            target.classList.remove('search-highlight');
+        }, 3000);
+
+        return true;
     }
 
     // Run init when DOM is ready

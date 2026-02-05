@@ -39,9 +39,14 @@
     <a href="companies.html">Companies</a>
     <a href="tools.html" class="active">Tools</a>
     <a href="specials.html">Specials</a>
-    <a href="skills.html">Skills</a>
+    <a href="skills.html">Skills/Tools</a>
     <a href="about.html">About</a>
   </nav>
+  <!-- Version Badge -->
+  <a href="about.html" class="version-badge" title="Version 1.7.0 – Click for details">
+    <span class="version-badge-icon">🎮</span>
+    <span class="version-badge-text">v1.7.0</span>
+  </a>
   <!-- Search Trigger -->
   <button type="button" class="search-trigger" id="search-trigger" aria-label="Search site">
     <span class="search-trigger-icon" aria-hidden="true">🔍</span>
@@ -70,10 +75,24 @@
   <main class="profile">
     <header class="profile-header">
       <h1 class="profile-title">Desktop Tools</h1>
-      <p class="profile-handle">CLI, IDE, web builders, and browser-based coding environments</p>
+      <p class="profile-handle">Software that helps developers write, test, and build apps</p>
     </header>
+
+    <section class="profile-section">
+      <h2>🛠️ What are Developer Tools?</h2>
+      <p>These are programs that help people write code and build software. Don't worry if you're not a programmer—some
+        of these tools can <strong>help you learn to code</strong> or even <strong>build simple apps without coding
+          experience</strong>.</p>
+      <p>Think of them like specialized word processors for writing computer programs, except now many have AI built in
+        to help you along the way.</p>
+    </section>
+
     <section class="profile-section">
       <h2>CLI</h2>
+      <p><strong>CLI = Command Line Interface.</strong> These are tools you use by typing commands (like in the movies
+        when hackers type on black screens). They're powerful but take some learning. The AI-powered ones can actually
+        <em>understand what you want</em> and help you.
+      </p>
       <div class="chat-links">
         <a href="https://github.com/charmbracelet/crush" rel="noopener noreferrer" target="_blank"
           class="chat-link-card">
@@ -94,7 +113,8 @@
         </a>
         <a href="https://github.com/Kilo-Org/kilocode" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Kilo Code</span>
-          <span class="chat-link-desc">All-in-one agentic engineering platform; VS Code, JetBrains, CLI; #1 on OpenRouter</span>
+          <span class="chat-link-desc">All-in-one agentic engineering platform; VS Code, JetBrains, CLI; #1 on
+            OpenRouter</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://github.com/mistralai/mistral-vibe" rel="noopener noreferrer" target="_blank"
@@ -105,7 +125,8 @@
         </a>
         <a href="https://opencode.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">OpenCode</span>
-          <span class="chat-link-desc">Open-source AI coding agent; terminal, desktop, IDE; 75+ LLM providers, LSP, multi-session</span>
+          <span class="chat-link-desc">Open-source AI coding agent; terminal, desktop, IDE; 75+ LLM providers, LSP,
+            multi-session</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://developers.openai.com/codex/cli" rel="noopener noreferrer" target="_blank"
@@ -116,7 +137,8 @@
         </a>
         <a href="https://qoder.com/cli" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Qoder CLI</span>
-          <span class="chat-link-desc">Terminal-native agentic coding; fix, review, automate; &lt;70ms startup, CI/CD</span>
+          <span class="chat-link-desc">Terminal-native agentic coding; fix, review, automate; &lt;70ms startup,
+            CI/CD</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://github.com/QwenLM/qwen-code" rel="noopener noreferrer" target="_blank" class="chat-link-card">
@@ -126,13 +148,17 @@
         </a>
         <a href="https://roocode.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Roo Code</span>
-          <span class="chat-link-desc">Open-source AI dev team; VS Code extension + Cloud agents; model-agnostic, role modes</span>
+          <span class="chat-link-desc">Open-source AI dev team; VS Code extension + Cloud agents; model-agnostic, role
+            modes</span>
           <span class="chat-link-arrow">→</span>
         </a>
       </div>
     </section>
     <section class="profile-section">
       <h2>IDE</h2>
+      <p><strong>IDE = Integrated Development Environment.</strong> Think of it as Microsoft Word, but for writing code
+        instead of documents. These are full programs you install on your computer. Many now have AI assistants built in
+        that can suggest code, fix errors, or even write entire functions for you.</p>
       <div class="chat-links">
         <a href="https://developer.android.com/studio" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Android Studio</span>
@@ -156,12 +182,18 @@
         </a>
         <a href="https://www.ibm.com/products/bob" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">IBM Project Bob</span>
-          <span class="chat-link-desc">IBM&rsquo;s AI software dev partner; chat in editor, code review, vulnerability &amp; secrets detection</span>
+          <span class="chat-link-desc">IBM&rsquo;s AI software dev partner; chat in editor, code review, vulnerability
+            &amp; secrets detection</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://jules.google/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Jules</span>
           <span class="chat-link-desc">Google&rsquo;s autonomous coding agent</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://kiro.dev/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Kiro</span>
+          <span class="chat-link-desc">Agentic AI development; spec-driven coding from prototype to production</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://chatgpt.com/codex/get-started" rel="noopener noreferrer" target="_blank"
@@ -172,7 +204,8 @@
         </a>
         <a href="https://qoder.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Qoder</span>
-          <span class="chat-link-desc">Agentic coding platform: IDE, CLI, JetBrains; Editor &amp; Quest modes, Repo Wiki, MCP</span>
+          <span class="chat-link-desc">Agentic coding platform: IDE, CLI, JetBrains; Editor &amp; Quest modes, Repo
+            Wiki, MCP</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://www.trae.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
@@ -193,8 +226,46 @@
       </div>
     </section>
     <section class="profile-section">
+      <h2>Coding Assistants</h2>
+      <p>AI plugins and extensions for your existing IDE.</p>
+      <div class="chat-links">
+        <a href="https://aws.amazon.com/q/developer/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Amazon Q Developer</span>
+          <span class="chat-link-desc">AWS: AI coding companion; completion, refactoring, security scans</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://codegpt.co/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">CodeGPT</span>
+          <span class="chat-link-desc">VS Code extension; chat with code, refactor, document, many models</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://mintlify.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Mintlify</span>
+          <span class="chat-link-desc">AI documentation writer; generates beautiful docs from code</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://snyk.io/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Snyk</span>
+          <span class="chat-link-desc">Developer security platform; AI-powered vulnerability finding &amp; fixing</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://sourcegraph.com/cody" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Sourcegraph Cody</span>
+          <span class="chat-link-desc">AI coding assistant; codebase-aware chat and autocomplete</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://www.tabnine.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Tabnine</span>
+          <span class="chat-link-desc">AI code completion; private, secure, works offline</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+      </div>
+    </section>
+    <section class="profile-section">
       <h2>Web builders</h2>
-      <p>Build apps and sites in the browser with AI; no install.</p>
+      <p>🚀 <strong>Best for beginners!</strong> These let you build websites and apps <em>just by describing what you
+          want</em>—no coding required. The AI writes the code for you. Everything runs in your browser, so there's
+        nothing to install. Just sign up and start creating.</p>
       <div class="chat-links">
         <a href="https://www.create.xyz/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Anything (create.xyz)</span>
@@ -206,9 +277,11 @@
           <span class="chat-link-desc">StackBlitz: build apps &amp; sites by chatting with AI (Bolt V2)</span>
           <span class="chat-link-arrow">→</span>
         </a>
-        <a href="https://github.com/stackblitz-labs/bolt.diy" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+        <a href="https://github.com/stackblitz-labs/bolt.diy" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
           <span class="chat-link-name">bolt.diy</span>
-          <span class="chat-link-desc">Open-source Bolt: prompt, run, edit &amp; deploy full-stack apps with any LLM; 19+ providers, MCP, Electron</span>
+          <span class="chat-link-desc">Open-source Bolt: prompt, run, edit &amp; deploy full-stack apps with any LLM;
+            19+ providers, MCP, Electron</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://biela.dev/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
@@ -218,22 +291,26 @@
         </a>
         <a href="https://www.builder.io/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Builder.io</span>
-          <span class="chat-link-desc">AI frontend engineer: design, prototype, ship UI; Fusion &amp; Publish; Figma to code, MCP</span>
+          <span class="chat-link-desc">AI frontend engineer: design, prototype, ship UI; Fusion &amp; Publish; Figma to
+            code, MCP</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://app.emergent.sh/home" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Emergent</span>
-          <span class="chat-link-desc">Build full-stack apps, mobile apps &amp; landing pages through conversation; Claude, GitHub</span>
+          <span class="chat-link-desc">Build full-stack apps, mobile apps &amp; landing pages through conversation;
+            Claude, GitHub</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://studio.firebase.google.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Firebase Studio</span>
-          <span class="chat-link-desc">Google: full-stack AI workspace; build backends, front ends &amp; mobile with Gemini</span>
+          <span class="chat-link-desc">Google: full-stack AI workspace; build backends, front ends &amp; mobile with
+            Gemini</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://gdevelop.io/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">GDevelop</span>
-          <span class="chat-link-desc">Open-source, no-code &amp; AI game engine; 2D, 3D, multiplayer; publish to iOS, Android, Steam, web; event system + AI</span>
+          <span class="chat-link-desc">Open-source, no-code &amp; AI game engine; 2D, 3D, multiplayer; publish to iOS,
+            Android, Steam, web; event system + AI</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://aistudio.google.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
@@ -243,12 +320,14 @@
         </a>
         <a href="https://www.hostinger.com/horizons" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Hostinger Horizons</span>
-          <span class="chat-link-desc">No-code AI partner: tell your idea, 1-click launch, latest LLMs; hosting &amp; domain</span>
+          <span class="chat-link-desc">No-code AI partner: tell your idea, 1-click launch, latest LLMs; hosting &amp;
+            domain</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://www.jabali.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Jabali</span>
-          <span class="chat-link-desc">AI Game Maker: describe your idea, AI builds your game; no-code 2D &amp; 3D; Jabali Studio (Windows, Mac)</span>
+          <span class="chat-link-desc">AI Game Maker: describe your idea, AI builds your game; no-code 2D &amp; 3D;
+            Jabali Studio (Windows, Mac)</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://lovable.dev/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
@@ -258,12 +337,14 @@
         </a>
         <a href="https://manus.im/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Manus</span>
-          <span class="chat-link-desc">Hands On AI (Meta): create slides, build websites, develop apps from prompts</span>
+          <span class="chat-link-desc">Hands On AI (Meta): create slides, build websites, develop apps from
+            prompts</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://quests.dev/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Quests</span>
-          <span class="chat-link-desc">Open-source app builder; build &amp; run apps locally with any LLM; BYOK, desktop, templates</span>
+          <span class="chat-link-desc">Open-source app builder; build &amp; run apps locally with any LLM; BYOK,
+            desktop, templates</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://replit.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
@@ -273,12 +354,15 @@
         </a>
         <a href="https://www.rocket.new/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Rocket.new</span>
-          <span class="chat-link-desc">Think it. Type it. Launch it. Build production-ready web &amp; mobile apps from plain text; no coding</span>
+          <span class="chat-link-desc">Think it. Type it. Launch it. Build production-ready web &amp; mobile apps from
+            plain text; no coding</span>
           <span class="chat-link-arrow">→</span>
         </a>
-        <a href="https://www.squarespace.com/websites/ai-website-builder" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+        <a href="https://www.squarespace.com/websites/ai-website-builder" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
           <span class="chat-link-name">Squarespace AI</span>
-          <span class="chat-link-desc">Blueprint AI Builder: personalized website in minutes; brand personality, design intelligence</span>
+          <span class="chat-link-desc">Blueprint AI Builder: personalized website in minutes; brand personality, design
+            intelligence</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://v0.app/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
@@ -288,12 +372,15 @@
         </a>
         <a href="https://www.vibecodeapp.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Vibecode</span>
-          <span class="chat-link-desc">AI mobile &amp; web app builder; describe what you want, watch it come to life; Claude</span>
+          <span class="chat-link-desc">AI mobile &amp; web app builder; describe what you want, watch it come to life;
+            Claude</span>
           <span class="chat-link-arrow">→</span>
         </a>
-        <a href="https://www.wix.com/ai-website-builder" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+        <a href="https://www.wix.com/ai-website-builder" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
           <span class="chat-link-name">Wix AI</span>
-          <span class="chat-link-desc">Create a unique, business-ready website in no time with AI; chat with AI website creator</span>
+          <span class="chat-link-desc">Create a unique, business-ready website in no time with AI; chat with AI website
+            creator</span>
           <span class="chat-link-arrow">→</span>
         </a>
       </div>
@@ -304,17 +391,38 @@
       <div class="chat-links">
         <a href="https://ollama.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Ollama</span>
-          <span class="chat-link-desc">Easiest way to run open models locally; works with Codex, Claude Code, OpenCode, Open WebUI, Msty, etc.</span>
+          <span class="chat-link-desc">Easiest way to run open models locally; works with Codex, Claude Code, OpenCode,
+            Open WebUI, Msty, etc.</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://lmstudio.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">LM Studio</span>
-          <span class="chat-link-desc">Local AI on your computer; run LLMs privately and free; headless (llmster), SDK, MCP, OpenAI-compatible API</span>
+          <span class="chat-link-desc">Local AI on your computer; run LLMs privately and free; headless (llmster), SDK,
+            MCP, OpenAI-compatible API</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://github.com/vllm-project/vllm" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">vLLM</span>
-          <span class="chat-link-desc">High-throughput, memory-efficient inference &amp; serving for LLMs; OpenAI-compatible API; PagedAttention, Hugging Face</span>
+          <span class="chat-link-desc">High-throughput, memory-efficient inference &amp; serving for LLMs;
+            OpenAI-compatible API; PagedAttention, Hugging Face</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+      </div>
+      <div class="chat-links" style="margin-top: 1rem;">
+        <a href="https://jan.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Jan</span>
+          <span class="chat-link-desc">Open-source ChatGPT alternative; run 100% offline on your computer</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://msty.app/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Msty</span>
+          <span class="chat-link-desc">Easiest local AI app; Works with Ollama; highly polished UI</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://openwebui.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Open WebUI</span>
+          <span class="chat-link-desc">Extensible, feature-rich, user-friendly self-hosted WebUI (formerly Ollama
+            WebUI)</span>
           <span class="chat-link-arrow">→</span>
         </a>
       </div>
@@ -324,7 +432,14 @@
       <div class="chat-links">
         <a href="https://deepagent.abacus.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Abacus AI Deep Agent</span>
-          <span class="chat-link-desc">General agent: build apps, reports, presentations; connect to systems, agentic tasks</span>
+          <span class="chat-link-desc">General agent: build apps, reports, presentations; connect to systems, agentic
+            tasks</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+
+        <a href="https://you.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">You.com</span>
+          <span class="chat-link-desc">The AI search engine; chat, write, code, create images</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://ampcode.com/free" rel="noopener noreferrer" target="_blank" class="chat-link-card">
@@ -337,9 +452,11 @@
           <span class="chat-link-desc">Build fully-functional apps in minutes with natural language; no code</span>
           <span class="chat-link-arrow">→</span>
         </a>
-        <a href="https://workers.cloudflare.com/solutions/ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+        <a href="https://workers.cloudflare.com/solutions/ai/" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
           <span class="chat-link-name">Cloudflare AI</span>
-          <span class="chat-link-desc">Build AI agents &amp; MCP servers; serverless GPU inference, R2 storage; Agents SDK</span>
+          <span class="chat-link-desc">Build AI agents &amp; MCP servers; serverless GPU inference, R2 storage; Agents
+            SDK</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://pages.cloudflare.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
@@ -349,7 +466,8 @@
         </a>
         <a href="https://deepai.org/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">DeepAI</span>
-          <span class="chat-link-desc">All-in-one creative AI: chat, image, video, music, voice, photo editor; APIs</span>
+          <span class="chat-link-desc">All-in-one creative AI: chat, image, video, music, voice, photo editor;
+            APIs</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://firebase.google.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
@@ -360,12 +478,14 @@
         </a>
         <a href="https://www.figma.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Figma</span>
-          <span class="chat-link-desc">Collaborative interface design: Design, Dev Mode, FigJam, Figma Make, MCP for AI</span>
+          <span class="chat-link-desc">Collaborative interface design: Design, Dev Mode, FigJam, Figma Make, MCP for
+            AI</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://www.genspark.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Genspark</span>
-          <span class="chat-link-desc">AI workspace: Sparkpages, search, presentations, videos, research; 9 models, 80+ tools</span>
+          <span class="chat-link-desc">AI workspace: Sparkpages, search, presentations, videos, research; 9 models, 80+
+            tools</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://aistudio.google.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
@@ -411,7 +531,8 @@
         </a>
         <a href="https://quillbot.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">QuillBot</span>
-          <span class="chat-link-desc">Writing: paraphrase, grammar, AI detector, plagiarism, humanizer, translate, summarizer</span>
+          <span class="chat-link-desc">Writing: paraphrase, grammar, AI detector, plagiarism, humanizer, translate,
+            summarizer</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://railway.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
@@ -498,9 +619,11 @@
     <section class="profile-section">
       <h2>Reference</h2>
       <div class="chat-links">
-        <a href="https://github.com/github/spec-kit?tab=readme-ov-file" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+        <a href="https://github.com/github/spec-kit?tab=readme-ov-file" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
           <span class="chat-link-name">Spec Kit</span>
-          <span class="chat-link-desc">GitHub: Spec-Driven Development toolkit; specs become executable; Specify CLI, works with Qoder, Cursor, OpenCode, etc.</span>
+          <span class="chat-link-desc">GitHub: Spec-Driven Development toolkit; specs become executable; Specify CLI,
+            works with Qoder, Cursor, OpenCode, etc.</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://modelcontextprotocol.io/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
@@ -518,34 +641,40 @@
           <span class="chat-link-desc">Edit and preview HTML in the browser; format, highlight</span>
           <span class="chat-link-arrow">→</span>
         </a>
-        <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+        <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
           <span class="chat-link-name">Wikipedia Artificial Intelligence</span>
           <span class="chat-link-desc">Overview of AI: goals, techniques, applications, ethics, history</span>
           <span class="chat-link-arrow">→</span>
         </a>
-        <a href="https://en.wikipedia.org/wiki/List_of_large_language_models" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+        <a href="https://en.wikipedia.org/wiki/List_of_large_language_models" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
           <span class="chat-link-name">Wikipedia List of LLMs</span>
           <span class="chat-link-desc">Reference list of large language models with parameters, licenses, notes</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://www.findmypapers.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">findmypapers.ai</span>
-          <span class="chat-link-desc">Semantic search for 300,000+ AI research papers; find, compare, explain with citations</span>
+          <span class="chat-link-desc">Semantic search for 300,000+ AI research papers; find, compare, explain with
+            citations</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://theresanaiforthat.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">There&rsquo;s An AI For That</span>
-          <span class="chat-link-desc">Directory of 45,800+ AI tools for 11,356 tasks; search, categories, just released</span>
+          <span class="chat-link-desc">Directory of 45,800+ AI tools for 11,356 tasks; search, categories, just
+            released</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://arena.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Arena</span>
-          <span class="chat-link-desc">Benchmark &amp; compare the best AI models; experience the frontier; battle, leaderboard, file upload</span>
+          <span class="chat-link-desc">Benchmark &amp; compare the best AI models; experience the frontier; battle,
+            leaderboard, file upload</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://www.designarena.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Design Arena</span>
-          <span class="chat-link-desc">Community-driven AI design benchmark: vote to discover which AI is best at design (website, image, video, UI)</span>
+          <span class="chat-link-desc">Community-driven AI design benchmark: vote to discover which AI is best at design
+            (website, image, video, UI)</span>
           <span class="chat-link-arrow">→</span>
         </a>
       </div>

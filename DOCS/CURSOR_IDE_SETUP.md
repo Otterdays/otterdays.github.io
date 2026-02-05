@@ -1,6 +1,12 @@
 # Cursor IDE setup — Tools & MCPs
 
-Concise reference for tools and MCPs in this Cursor IDE setup. Use for the Skills page and handoff.
+Concise reference for tools and MCPs in this Cursor IDE setup. Use for the Skills/Tools page and handoff.
+
+---
+
+## Built-in agent tools (Cursor)
+
+Standard tools the agent has without MCP: `read_file`, `write`, `search_replace`, `delete_file`, `edit_notebook`, `codebase_search`, `grep`, `list_dir`, `glob_file_search`, `run_terminal_cmd`, `read_lints`, `todo_write`, `web_search`, `mcp_web_fetch`, `update_memory`, `generate_image`, `call_mcp_tool`, `list_mcp_resources`, `fetch_mcp_resource`. Full list on `skills.html`.
 
 ---
 
@@ -35,14 +41,18 @@ Skills are Cursor Agent Skills (SKILL.md) under `~/.cursor/skills-cursor/`. The 
 
 ---
 
-## Built-in agent tools (no MCP)
+## SkillBox & Skills directory
 
-Standard tools the agent has without MCP: file read/write, search (grep, codebase search), terminal, glob, lint, todo, web search, image generation, etc. These are always available; MCPs add extra capabilities (e.g. browser, Docker).
+**SkillBox** ([antjanus/skillbox](https://github.com/antjanus/skillbox)): Curated utility skills. Install: `npx skills add antjanus/skillbox`. Skills: track-session, git-worktree, generate-skill, ideal-react-component, rate-skill. Works with Cursor, Codex, Gemini CLI, OpenCode, Replit, 40+ agents.
+
+**Skills directory:** Discover skills via `npx skills find [query]` or [skills.sh](https://skills.sh/). Categories: React, Testing, Git & workflows. Use `/find-skills` or ask "find a skill for X" to have the agent search.
 
 ---
 
 ## Summary
 
+- **Built-in tools:** File, search, terminal, lint, todo, web, memory, image, MCP. Full list on `skills.html`.
 - **MCPs:** Docker (user), cursor-ide-browser (project).
-- **Skills:** create-rule, create-skill, update-cursor-settings, create-subagent, migrate-to-skills.
-- **Doc:** Keep this file updated when you add/remove MCPs or skills. Skills page in the site nav can summarize or link here.
+- **Agent skills:** create-rule, create-skill, update-cursor-settings, create-subagent, migrate-to-skills.
+- **SkillBox:** antjanus/skillbox. **Skills directory:** npx skills find, skills.sh, /find-skills.
+- **Doc:** Keep this file updated when you add/remove MCPs or skills. Skills/Tools page in the site nav summarizes and links here.

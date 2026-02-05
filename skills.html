@@ -4,20 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Skills | Otterdays</title>
+  <title>Skills/Tools | Otterdays</title>
 
   <!-- SEO Meta Tags -->
   <meta name="description"
-    content="IDE skills and MCPs for my Cursor setup: agent skills, Model Context Protocol servers, and tools reference.">
-  <meta name="keywords"
-    content="Cursor IDE, MCP, agent skills, Model Context Protocol, IDE setup, Cursor tools">
+    content="IDE skills, Cursor agentic tools, and MCPs: built-in tools (file, search, terminal, etc.) plus Model Context Protocol servers.">
+  <meta name="keywords" content="Cursor IDE, MCP, agent skills, Model Context Protocol, IDE setup, Cursor tools">
   <meta name="author" content="Ryan Otterdays">
 
   <!-- Open Graph / Social -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://otterdays.github.io/skills.html">
-  <meta property="og:title" content="Skills | Otterdays">
-  <meta property="og:description" content="IDE skills and MCPs for my Cursor setup.">
+  <meta property="og:title" content="Skills/Tools | Otterdays">
+  <meta property="og:description" content="IDE skills, Cursor agentic tools, and MCPs for my Cursor setup.">
 
   <!-- Favicon -->
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
@@ -39,9 +38,14 @@
     <a href="companies.html">Companies</a>
     <a href="tools.html">Tools</a>
     <a href="specials.html">Specials</a>
-    <a href="skills.html" class="active">Skills</a>
+    <a href="skills.html" class="active">Skills/Tools</a>
     <a href="about.html">About</a>
   </nav>
+  <!-- Version Badge -->
+  <a href="about.html" class="version-badge" title="Version 1.7.0 – Click for details">
+    <span class="version-badge-icon">🎮</span>
+    <span class="version-badge-text">v1.7.0</span>
+  </a>
   <!-- Search Trigger -->
   <button type="button" class="search-trigger" id="search-trigger" aria-label="Search site">
     <span class="search-trigger-icon" aria-hidden="true">🔍</span>
@@ -69,16 +73,114 @@
   </div>
   <main class="profile">
     <header class="profile-header">
-      <h1 class="profile-title">Skills</h1>
-      <p class="profile-handle">IDE skills and MCPs for my Cursor setup</p>
+      <h1 class="profile-title">Skills/Tools</h1>
+      <p class="profile-handle">IDE skills, agentic tools, and MCPs for my Cursor setup</p>
     </header>
+
+    <section class="profile-section">
+      <h2>Cursor agentic tools</h2>
+      <p>Tools the Cursor AI agent can use. Built-in tools plus MCP extend capabilities.</p>
+      <h3>File &amp; code</h3>
+      <ul class="about-list">
+        <li><strong>read_file</strong> — Read files (including images) from the workspace.</li>
+        <li><strong>write</strong> — Create or overwrite files.</li>
+        <li><strong>search_replace</strong> — Exact string replacements in files.</li>
+        <li><strong>delete_file</strong> — Remove a file.</li>
+        <li><strong>edit_notebook</strong> — Add, edit, or update Jupyter notebook cells.</li>
+      </ul>
+      <h3>Search &amp; discovery</h3>
+      <ul class="about-list">
+        <li><strong>codebase_search</strong> — Semantic search to find code by meaning.</li>
+        <li><strong>grep</strong> — Pattern-based text search with ripgrep.</li>
+        <li><strong>list_dir</strong> — List contents of a directory.</li>
+        <li><strong>glob_file_search</strong> — Find files by glob pattern.</li>
+      </ul>
+      <h3>Terminal &amp; execution</h3>
+      <ul class="about-list">
+        <li><strong>run_terminal_cmd</strong> — Run shell commands (npm, builds, dev servers, etc.).</li>
+      </ul>
+      <h3>Quality &amp; diagnostics</h3>
+      <ul class="about-list">
+        <li><strong>read_lints</strong> — Read linter errors and diagnostics for files.</li>
+      </ul>
+      <h3>Task management</h3>
+      <ul class="about-list">
+        <li><strong>todo_write</strong> — Create and update todo lists for multi-step work.</li>
+      </ul>
+      <h3>Web &amp; research</h3>
+      <ul class="about-list">
+        <li><strong>web_search</strong> — Search the web for up-to-date information.</li>
+        <li><strong>mcp_web_fetch</strong> — Fetch content from a URL and return it as markdown.</li>
+      </ul>
+      <h3>Memory</h3>
+      <ul class="about-list">
+        <li><strong>update_memory</strong> — Create, update, or delete persistent memories across sessions.</li>
+      </ul>
+      <h3>Image generation</h3>
+      <ul class="about-list">
+        <li><strong>generate_image</strong> — Generate an image from a text description (when explicitly requested).
+        </li>
+      </ul>
+      <h3>MCP (Model Context Protocol)</h3>
+      <ul class="about-list">
+        <li><strong>call_mcp_tool</strong> — Invoke tools exposed by MCP servers.</li>
+        <li><strong>list_mcp_resources</strong> / <strong>fetch_mcp_resource</strong> — Discover and fetch MCP
+          resources.</li>
+      </ul>
+    </section>
+
+    <section class="profile-section">
+      <h2>Antigravity agentic tools</h2>
+      <p>Tools available to the Google Antigravity agent. Built-in capabilities plus connected MCP servers.</p>
+      <h3>File System &amp; Code Navigation</h3>
+      <ul class="about-list">
+        <li><strong>view_file</strong> — Read file contents.</li>
+        <li><strong>view_file_outline</strong> — High-level breakdown of classes/functions.</li>
+        <li><strong>view_code_item</strong> — View specific code nodes.</li>
+        <li><strong>list_dir</strong> — List directory contents.</li>
+        <li><strong>find_by_name</strong> — Find files by name (fd).</li>
+        <li><strong>grep_search</strong> — Search text/patterns in files (ripgrep).</li>
+      </ul>
+      <h3>Editing &amp; Creation</h3>
+      <ul class="about-list">
+        <li><strong>write_to_file</strong> — Create or overwrite files.</li>
+        <li><strong>replace_file_content</strong> — Precise single-block edits.</li>
+        <li><strong>multi_replace_file_content</strong> — Multiple non-contiguous edits.</li>
+      </ul>
+      <h3>Terminal &amp; Execution</h3>
+      <ul class="about-list">
+        <li><strong>run_command</strong> — Execute shell commands (PowerShell).</li>
+        <li><strong>send_command_input</strong> — Interact with running processes.</li>
+        <li><strong>command_status</strong> — Check background command status.</li>
+        <li><strong>read_terminal</strong> — Read terminal output.</li>
+      </ul>
+      <h3>Web &amp; Browser</h3>
+      <ul class="about-list">
+        <li><strong>search_web</strong> — Google search.</li>
+        <li><strong>browser_subagent</strong> — Autonomous browser interaction (click, type, nav).</li>
+        <li><strong>read_url_content</strong> — Headless text fetch.</li>
+        <li><strong>view_content_chunk</strong> — Read sections of large web docs.</li>
+      </ul>
+      <h3>Intelligence &amp; Creativity</h3>
+      <ul class="about-list">
+        <li><strong>generate_image</strong> — Create images/UI mockups.</li>
+        <li><strong>sequential_thinking</strong> — Meta-cognitive problem solving.</li>
+      </ul>
+      <h3>Connected MCP Servers</h3>
+      <ul class="about-list">
+        <li><strong>Arize Tracing</strong> — Observability &amp; debugging (support, docs).</li>
+        <li><strong>Genkit</strong> — AI framework integration (runtime control, flow listing/running).</li>
+        <li><strong>System Resources</strong> — List/read system resources.</li>
+      </ul>
+    </section>
 
     <section class="profile-section">
       <h2>MCPs (Model Context Protocol)</h2>
       <p>Servers that expose extra tools to the agent (browser, Docker, etc.).</p>
       <ul class="about-list">
         <li><strong>MCP_DOCKER</strong> — User-level; Docker MCP gateway (<code>docker mcp gateway run</code>).</li>
-        <li><strong>cursor-ide-browser</strong> — Project-level; browser automation: navigate, snapshot, click, type, scroll, lock/unlock tabs. Use for frontend testing and live page interaction.</li>
+        <li><strong>cursor-ide-browser</strong> — Project-level; browser automation: navigate, snapshot, click, type,
+          scroll, lock/unlock tabs. Use for frontend testing and live page interaction.</li>
       </ul>
     </section>
 
@@ -86,7 +188,8 @@
       <h2>Agent skills</h2>
       <p>Cursor Agent Skills (SKILL.md) the agent can use when the task fits.</p>
       <ul class="about-list">
-        <li><strong>create-rule</strong> — Create Cursor rules, coding standards, <code>.cursor/rules/</code>, RULE.md.</li>
+        <li><strong>create-rule</strong> — Create Cursor rules, coding standards, <code>.cursor/rules/</code>, RULE.md.
+        </li>
         <li><strong>create-skill</strong> — Create or edit Agent Skills (SKILL.md format, best practices).</li>
         <li><strong>update-cursor-settings</strong> — Change Cursor/VSCode settings (settings.json).</li>
         <li><strong>create-subagent</strong> — Subagent-related workflows.</li>
@@ -95,8 +198,177 @@
     </section>
 
     <section class="profile-section">
+      <h2>SkillBox</h2>
+      <p>Curated utility skills for Claude Code, Cursor, and 40+ AI agents. Install via Vercel Skills CLI.</p>
+      <div class="chat-links">
+        <a href="https://github.com/antjanus/skillbox" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">SkillBox (antjanus/skillbox)</span>
+          <span class="chat-link-desc">Utility AI agent skills: track-session, git-worktree, generate-skill,
+            ideal-react-component, rate-skill. Works with Amp, Codex, Gemini CLI, GitHub Copilot, Kimi Code CLI,
+            OpenCode, Replit, Antigravity, Cursor.</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+      </div>
+      <p>Install: <code>npx skills add antjanus/skillbox</code></p>
+      <ul class="about-list">
+        <li><strong>track-session</strong> — Track, stop, resume, save progress on long-running development sessions.
+        </li>
+        <li><strong>git-worktree</strong> — Manage multiple branches simultaneously using git worktrees for parallel
+          work.</li>
+        <li><strong>generate-skill</strong> — Interactive skill builder that generates high-quality SKILL.md files.</li>
+        <li><strong>ideal-react-component</strong> — Battle-tested React component structure pattern.</li>
+        <li><strong>rate-skill</strong> — Rate and evaluate skills.</li>
+      </ul>
+    </section>
+
+    <section class="profile-section">
+      <h2>Skills directory</h2>
+      <p>Discover and install skills from the open ecosystem. Search: <code>npx skills find [query]</code>. Browse: <a
+          href="https://skills.sh/" rel="noopener noreferrer" target="_blank">skills.sh</a>. Use
+        <code>/find-skills</code> or ask &ldquo;find a skill for X&rdquo; to have the agent search for you.</p>
+      <h3>React</h3>
+      <div class="chat-links">
+        <a href="https://skills.sh/vercel-labs/agent-skills/vercel-react-best-practices" rel="noopener noreferrer"
+          target="_blank" class="chat-link-card">
+          <span class="chat-link-name">vercel-react-best-practices</span>
+          <span class="chat-link-desc">Vercel React &amp; Next.js best practices.
+            <code>npx skills add vercel-labs/agent-skills@vercel-react-best-practices</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://skills.sh/vercel-labs/agent-skills/vercel-react-native-skills" rel="noopener noreferrer"
+          target="_blank" class="chat-link-card">
+          <span class="chat-link-name">vercel-react-native-skills</span>
+          <span class="chat-link-desc">React Native development skills from Vercel.
+            <code>npx skills add vercel-labs/agent-skills@vercel-react-native-skills</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://skills.sh/callstackincubator/agent-skills/react-native-best-practices"
+          rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">react-native-best-practices</span>
+          <span class="chat-link-desc">Callstack React Native best practices.
+            <code>npx skills add callstackincubator/agent-skills@react-native-best-practices</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://skills.sh/softaworks/agent-toolkit/react-dev" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">react-dev</span>
+          <span class="chat-link-desc">React development toolkit.
+            <code>npx skills add softaworks/agent-toolkit@react-dev</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://skills.sh/softaworks/agent-toolkit/react-useeffect" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">react-useeffect</span>
+          <span class="chat-link-desc">React useEffect patterns and debugging.
+            <code>npx skills add softaworks/agent-toolkit@react-useeffect</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://skills.sh/google-labs-code/stitch-skills/react-components" rel="noopener noreferrer"
+          target="_blank" class="chat-link-card">
+          <span class="chat-link-name">react:components</span>
+          <span class="chat-link-desc">Google Stitch: React component patterns.
+            <code>npx skills add google-labs-code/stitch-skills@react:components</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+      </div>
+      <h3>Testing</h3>
+      <div class="chat-links">
+        <a href="https://skills.sh/anthropics/skills/webapp-testing" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">webapp-testing</span>
+          <span class="chat-link-desc">Anthropic: web app testing patterns.
+            <code>npx skills add anthropics/skills@webapp-testing</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://skills.sh/wshobson/agents/python-testing-patterns" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">python-testing-patterns</span>
+          <span class="chat-link-desc">Python testing patterns.
+            <code>npx skills add wshobson/agents@python-testing-patterns</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://skills.sh/wshobson/agents/e2e-testing-patterns" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">e2e-testing-patterns</span>
+          <span class="chat-link-desc">End-to-end testing patterns.
+            <code>npx skills add wshobson/agents@e2e-testing-patterns</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://skills.sh/wshobson/agents/javascript-testing-patterns" rel="noopener noreferrer"
+          target="_blank" class="chat-link-card">
+          <span class="chat-link-name">javascript-testing-patterns</span>
+          <span class="chat-link-desc">JavaScript testing patterns.
+            <code>npx skills add wshobson/agents@javascript-testing-patterns</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://skills.sh/wshobson/agents/screen-reader-testing" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">screen-reader-testing</span>
+          <span class="chat-link-desc">Screen reader and accessibility testing.
+            <code>npx skills add wshobson/agents@screen-reader-testing</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://skills.sh/wshobson/agents/temporal-python-testing" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">temporal-python-testing</span>
+          <span class="chat-link-desc">Temporal workflow testing in Python.
+            <code>npx skills add wshobson/agents@temporal-python-testing</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+      </div>
+      <h3>Git &amp; workflows</h3>
+      <div class="chat-links">
+        <a href="https://skills.sh/obra/superpowers/using-git-worktrees" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">using-git-worktrees</span>
+          <span class="chat-link-desc">Obra: git worktrees for parallel work.
+            <code>npx skills add obra/superpowers@using-git-worktrees</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://skills.sh/wshobson/agents/github-actions-templates" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">github-actions-templates</span>
+          <span class="chat-link-desc">GitHub Actions templates and patterns.
+            <code>npx skills add wshobson/agents@github-actions-templates</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://skills.sh/wshobson/agents/git-advanced-workflows" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">git-advanced-workflows</span>
+          <span class="chat-link-desc">Advanced git workflows.
+            <code>npx skills add wshobson/agents@git-advanced-workflows</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://skills.sh/wshobson/agents/gitlab-ci-patterns" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">gitlab-ci-patterns</span>
+          <span class="chat-link-desc">GitLab CI patterns.
+            <code>npx skills add wshobson/agents@gitlab-ci-patterns</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://skills.sh/wshobson/agents/gitops-workflow" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">gitops-workflow</span>
+          <span class="chat-link-desc">GitOps workflow patterns.
+            <code>npx skills add wshobson/agents@gitops-workflow</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://skills.sh/github/awesome-copilot/git-commit" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">git-commit</span>
+          <span class="chat-link-desc">GitHub: conventional commit messages.
+            <code>npx skills add github/awesome-copilot@git-commit</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="profile-section">
       <h2>Reference</h2>
-      <p>Full reference for this setup is in the repo: <code>DOCS/CURSOR_IDE_SETUP.md</code>. Built-in agent tools (file, search, terminal, etc.) are always available; MCPs add capabilities like browser and Docker.</p>
+      <p>Full reference for this setup is in the repo: <code>DOCS/CURSOR_IDE_SETUP.md</code>. The Cursor agent has
+        built-in tools (file, search, terminal, etc.) and can use MCPs (e.g. cursor-ide-browser) for browser automation
+        and Docker. Discover more skills at <a href="https://skills.sh/" rel="noopener noreferrer"
+          target="_blank">skills.sh</a>.</p>
     </section>
   </main>
 

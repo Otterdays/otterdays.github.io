@@ -34,7 +34,7 @@
 | `companies.html` | AI & dev tools by company |
 | `tools.html` | Developer tools (CLI, IDE, browser) |
 | `specials.html` | Free & special services (e.g. free domains) |
-| `skills.html` | IDE skills & MCPs (Cursor setup) |
+| `skills.html` | Skills/Tools: Cursor & Antigravity agentic tools, MCPs, SkillBox, Skills directory |
 | `about.html` | About this site: projects, tools, and link policy |
 | `404.html` | Custom error page |
 

@@ -129,4 +129,30 @@
       document.body.focus();
     });
   }
+
+  /**
+   * Scroll Progress Indicator [TRACE: improvement.plans.md]
+   */
+  var progressWrap = document.createElement('div');
+  progressWrap.className = 'scroll-progress';
+  progressWrap.setAttribute('role', 'progressbar');
+  progressWrap.setAttribute('aria-label', 'Page scroll progress');
+  progressWrap.setAttribute('aria-valuemin', '0');
+  progressWrap.setAttribute('aria-valuemax', '100');
+  var progressFill = document.createElement('div');
+  progressFill.className = 'scroll-progress-fill';
+  progressWrap.appendChild(progressFill);
+  document.body.insertBefore(progressWrap, document.body.firstChild);
+
+  function updateScrollProgress() {
+    var scrollTop = window.scrollY;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    var pct = docHeight > 0 ? Math.min(100, (scrollTop / docHeight) * 100) : 0;
+    progressFill.style.width = pct + '%';
+    progressWrap.setAttribute('aria-valuenow', Math.round(pct));
+  }
+
+  window.addEventListener('scroll', updateScrollProgress);
+  window.addEventListener('resize', updateScrollProgress);
+  updateScrollProgress();
 })();

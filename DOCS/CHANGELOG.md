@@ -7,6 +7,13 @@ All notable changes to this project are documented in this file. Format: [Keep a
 ### Added
 
 **Themes** (`css/style.css`, `js/theme.js`)
+**Skills/Tools** (`skills.html`, `js/search-data.js`)
+- **Antigravity agentic tools:** Full list of capabilities (File/Code, Editing, Terminal, Web, Creativity, MCPs).
+- **SkillBox:** Utility AI agent skills (track-session, git-worktree, generate-skill).
+- **Skills directory:** React, Testing, Git & workflows skills; links to skills.sh.
+- **Search:** Antigravity, SkillBox, Skills directory, Kiro, Google Flow.
+
+**Themes** (`css/style.css`, `js/theme.js`)
 - **VS Code:** Editor standard (dark grey/blue).
 - **Synthwave:** Neon dreams (purple/pink/cyan).
 - **Monokai:** Code classic (dark grey/yellow/pink).
@@ -14,9 +21,29 @@ All notable changes to this project are documented in this file. Format: [Keep a
 - **Gruvbox:** Retro groove (warm dark/orange).
 - **Refactor:** Theme switcher now dynamically generates the dropdown list from JS; no HTML updates required for future themes.
 
+### Removed
+- **Phind:** Removed from Tools and Companies pages and search index.
+- **Haiper:** Removed from Media page and search index.
+
+### Changed
+- **Media:** Renamed Google VideoFX to **Google Flow** (labs.google/fx/tools/flow).
+- **Companies:** Updated Kiro to "Amazon: agentic AI development" and moved to Amazon section.
+
 ## [Unreleased]
 
 ### Added
+
+**Visual** (`css/style.css`)
+- **Gradient text for page titles:** Richer fg→accent gradient (0%→45%→100%) on `.home-title` and `.profile-title`. Theme-aware across 14 themes. @supports fallback with solid accent for older browsers. improvement.plans.md checked off.
+
+**UX** (`css/style.css`, `js/theme.js`)
+- **Scroll progress indicator:** Thin fixed bar at top of viewport fills left-to-right with accent gradient as user scrolls. Injected by theme.js on load; ARIA progressbar for accessibility. improvement.plans.md: scroll progress item checked off.
+
+**Skills/Tools** (`skills.html`, `js/search-data.js`)
+- **Cursor agentic tools:** File & code (read_file, write, search_replace, delete_file, edit_notebook), Search & discovery (codebase_search, grep, list_dir, glob_file_search), Terminal (run_terminal_cmd), Quality (read_lints), Task management (todo_write), Web & research (web_search, mcp_web_fetch), Memory (update_memory), Image (generate_image), MCP (call_mcp_tool, list/fetch_mcp_resource). All documented on Skills page.
+- **Antigravity agentic tools:** File/Code, Editing, Terminal, Web, Creativity, Connected MCPs. Documented on Skills page.
+- **SkillBox:** Link to [antjanus/skillbox](https://github.com/antjanus/skillbox). Install: `npx skills add antjanus/skillbox`. Skills: track-session, git-worktree, generate-skill, ideal-react-component, rate-skill. Works with Amp, Codex, Gemini CLI, GitHub Copilot, Kimi Code CLI, OpenCode, Replit, Antigravity, Cursor. Search entry added.
+- **Skills directory:** Discover skills via `npx skills find [query]` and [skills.sh](https://skills.sh/). Categories: **React** (6: vercel-react-best-practices, vercel-react-native-skills, react-native-best-practices, react-dev, react-useeffect, react:components), **Testing** (6: webapp-testing, python-testing-patterns, e2e-testing-patterns, javascript-testing-patterns, screen-reader-testing, temporal-python-testing), **Git & workflows** (6: using-git-worktrees, github-actions-templates, git-advanced-workflows, gitlab-ci-patterns, gitops-workflow, git-commit). Each skill has install command and skills.sh link. `/find-skills` and "find a skill for X" documented. Search entry added.
 
 **AI Chats** (`chats.html`, `js/search-data.js`)
 - **Provider Chats:** Deep Cogito (Cogito 671B–70B), Dolphin Chat (dphn.ai), Falcon (TII; H1R 7B, H1 Arabic), K2 Think (MBZUAI), LongCat AI (think, search, image & video), Nous Chat (Hermes; worldbuilding, code, reasoning), Public AI (Apertus; Switzerland), StepFun (chat, Q&A, image, Step Audio Studio), Tencent Hunyuan (Hunyuan AI Studio). All indexed.
@@ -80,6 +107,11 @@ All notable changes to this project are documented in this file. Format: [Keep a
 - **New Browser Tools:** Base44 (build apps with natural language), Lovable (build apps & sites with AI), Railway (deploy/network/scale/monitor), v0 (Vercel: build agents/apps/sites with AI).
 - **Web builders section:** New section with Bolt, Firebase Studio ([studio.firebase.google.com](https://studio.firebase.google.com/)), Google AI Studio, Lovable, Replit, v0; those five removed from Browser Tools.
 
+### Removed
+
+- **Tools/Companies:** Phind (search engine), Haiper (video gen) — removed per user request.
+- **Companies:** Kiro standalone section (moved to Amazon).
+
 ### Fixed
 
 **style.css** (corruption)
@@ -87,7 +119,11 @@ All notable changes to this project are documented in this file. Format: [Keep a
 
 ### Changed
 
+- **Skills page:** Renamed tab and page from "Skills" to "Skills/Tools" across all HTML nav links.
 - **Docs:** SCRATCHPAD, SUMMARY, CHANGELOG, ARCHITECTURE, CONTENT_GUIDE, README, STYLE_GUIDE updated to reflect all recent changes.
+- **Media:** Renamed Google VideoFX to **Google Flow** (labs.google/fx/tools/flow). Added **Canva Magic Studio** to Image Generation.
+- **Companies:** Added **Amazon** section (Amazon Q, Kiro). Kiro updated to "Amazon: agentic AI development".
+- **Search:** Added **SkillBox** and **Skills directory** entries.
 
 ---
 
