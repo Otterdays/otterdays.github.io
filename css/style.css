@@ -1,7 +1,7 @@
 /* [TRACE: STYLE_GUIDE.md] ? Dev profile styles ? BEAUTIFIED */
 
 /* === MODERN FONT === */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+/* Fonts loaded via <link> in HTML <head> for parallel loading */
 
 /* === CSS VARIABLES (THEMES) === */
 @import 'themes/core.css';
@@ -79,8 +79,8 @@ body:has(.sidebar:hover) {
   top: 0;
   height: 100vh;
   background: var(--glass);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-right: 1px solid var(--border);
   padding: 1rem 0.5rem;
   display: flex;
@@ -169,8 +169,8 @@ body:has(.sidebar:hover) {
   box-shadow: 0 0 25px var(--accent-glow), inset 0 0 20px rgba(var(--accent), 0.2);
   transform: translateY(-5px) scale(1.02);
   z-index: 10;
-  backdrop-filter: blur(12px) brightness(1.2);
-  /* Lighting up effect */
+  backdrop-filter: blur(12px);
+  /* Lighting up effect — removed brightness for GPU savings */
 }
 
 /* === GLINT EFFECT === */
@@ -341,9 +341,10 @@ body::after {
 body::before {
   background: radial-gradient(circle at 15% 50%, var(--accent-glow) 0%, transparent 45%),
     radial-gradient(circle at 85% 30%, rgba(120, 50, 255, 0.15) 0%, transparent 40%);
-  filter: blur(60px);
+  filter: blur(40px);
   animation: meshMove 15s ease-in-out infinite alternate;
   opacity: 0.6;
+  will-change: transform;
 }
 
 /* Secondary Subtle Noise */
@@ -546,8 +547,8 @@ body::after {
   min-width: 11rem;
   padding: 0.5rem;
   background: var(--glass);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--border);
   border-radius: 12px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35), 0 2px 8px rgba(0, 0, 0, 0.2);
@@ -762,8 +763,7 @@ body::after {
   margin-top: 1.5rem;
   padding: 1rem;
   background: var(--glass);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  /* backdrop-filter removed for GPU savings — glass bg provides the effect */
   border: 1px solid var(--border);
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
@@ -1072,8 +1072,8 @@ body::after {
   color: var(--accent);
 }
 
-/* === COMPANIES PAGE: COLLAPSIBLE SECTIONS === */
-/* [TRACE: STYLE_GUIDE.md] Companies-only minimization; no impact on other pages. */
+/* === COLLAPSIBLE SECTIONS (companies, tools, specials, skills, media) === */
+/* [TRACE: STYLE_GUIDE.md] Body class .collapsible-pages + .companies-page for intro/badges. */
 .companies-page .profile-section.companies-intro {
   display: block;
 }
@@ -1082,7 +1082,7 @@ body::after {
   margin-bottom: 0.65rem;
 }
 
-.companies-page .profile-section:not(.companies-intro) {
+.collapsible-pages .profile-section:has(.collapsible-wrapper) {
   position: relative;
   overflow: visible;
   display: grid;
@@ -1092,12 +1092,12 @@ body::after {
   gap: 0 0.5rem;
 }
 
-.companies-page .profile-section .section-toggle {
+.collapsible-pages .profile-section .section-toggle {
   grid-column: 1;
   grid-row: 1;
 }
 
-.companies-page .profile-section h2 {
+.collapsible-pages .profile-section h2 {
   grid-column: 2;
   grid-row: 1;
   margin: 0;
@@ -1121,12 +1121,12 @@ body::after {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.03);
 }
 
-.companies-page .profile-section .collapsible-wrapper {
+.collapsible-pages .profile-section .collapsible-wrapper {
   grid-column: 1 / -1;
   grid-row: 2;
 }
 
-.companies-page .section-toggle {
+.collapsible-pages .section-toggle {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1141,17 +1141,17 @@ body::after {
   transition: color 0.2s ease, background 0.2s ease;
 }
 
-.companies-page .section-toggle:hover {
+.collapsible-pages .section-toggle:hover {
   color: var(--accent);
   background: var(--accent-glow);
 }
 
-.companies-page .section-toggle:focus-visible {
+.collapsible-pages .section-toggle:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
 }
 
-.companies-page .toggle-icon {
+.collapsible-pages .toggle-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1162,20 +1162,20 @@ body::after {
   transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), background 0.2s ease;
 }
 
-.companies-page .section-toggle:hover .toggle-icon {
+.collapsible-pages .section-toggle:hover .toggle-icon {
   background: var(--accent);
   color: var(--bg);
 }
 
-.companies-page .toggle-icon svg {
+.collapsible-pages .toggle-icon svg {
   transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.companies-page .profile-section.minimized .toggle-icon svg {
+.collapsible-pages .profile-section.minimized .toggle-icon svg {
   transform: rotate(-180deg);
 }
 
-.companies-page .collapsible-wrapper {
+.collapsible-pages .collapsible-wrapper {
   display: grid;
   grid-template-rows: 1fr;
   transition: grid-template-rows 0.4s cubic-bezier(0.4, 0, 0.2, 1),
@@ -1184,24 +1184,63 @@ body::after {
   overflow: hidden;
 }
 
-.companies-page .profile-section:not(.minimized) .collapsible-wrapper {
+.collapsible-pages .profile-section:not(.minimized) .collapsible-wrapper {
   overflow: visible;
 }
 
-.companies-page .collapsible-wrapper>.chat-links {
+.collapsible-pages .collapsible-content {
   min-height: 0;
   overflow: visible;
+}
+
+.collapsible-pages .collapsible-content > .chat-links,
+.collapsible-pages .collapsible-content > .bento-grid {
   margin-top: 0.5rem;
   padding-top: 0.25rem;
 }
 
-.companies-page .profile-section.minimized .collapsible-wrapper {
+.collapsible-pages .profile-section.minimized .collapsible-wrapper {
   grid-template-rows: 0fr;
   opacity: 0;
 }
 
-.companies-page .profile-section.minimized .collapsible-wrapper>.chat-links {
+.collapsible-pages .profile-section.minimized .collapsible-content > .chat-links,
+.collapsible-pages .profile-section.minimized .collapsible-content > .bento-grid {
   margin-top: 0;
+}
+
+/* Compact layout on collapsible pages (match Companies density) */
+.collapsible-pages .profile-header {
+  margin-bottom: 1.5rem;
+}
+
+.collapsible-pages .profile-section {
+  margin-top: 0.75rem;
+  padding: 0.6rem 1rem;
+}
+
+.collapsible-pages .profile-section:has(.collapsible-wrapper) {
+  padding: 0.5rem 1rem;
+  gap: 0 0.4rem;
+}
+
+.collapsible-pages .profile-section:has(.collapsible-wrapper) h2 {
+  font-size: 1rem;
+}
+
+.collapsible-pages .profile-section:not(:has(.collapsible-wrapper)) {
+  padding: 0.85rem 1rem;
+  margin-top: 1rem;
+}
+
+/* Media page: accent styling for collapsible section title boxes */
+.media-page .profile-section.media-section-accent {
+  border-left: 3px solid var(--accent);
+  background: color-mix(in srgb, var(--accent) 6%, transparent);
+}
+
+.media-page .profile-section.media-section-accent h2 {
+  font-size: 1.15rem;
 }
 
 /* === RESPONSIVE ADJUSTMENTS === */

@@ -151,21 +151,55 @@
   apply(localStorage.getItem(KEY));
 
   /**
-   * Spotlight Effect for Cards
-   * Tracks mouse position relative to cards to create a glowing border effect.
+   * Unified Card Effects (Spotlight + 3D Tilt)
+   * Uses requestAnimationFrame throttle + event delegation.
    */
-  var cards = document.querySelectorAll('.project-card, .chat-link-card, .home-link');
+  var CARD_SEL = '.project-card, .chat-link-card, .home-link';
+  var spotlightTicking = false;
 
+  // Spotlight: throttled via rAF, skips distant cards
   document.addEventListener('mousemove', function (e) {
-    cards.forEach(function (card) {
-      var rect = card.getBoundingClientRect();
-      var x = e.clientX - rect.left;
-      var y = e.clientY - rect.top;
+    if (spotlightTicking) return;
+    spotlightTicking = true;
 
-      card.style.setProperty('--mouse-x', x + 'px');
-      card.style.setProperty('--mouse-y', y + 'px');
+    requestAnimationFrame(function () {
+      var cards = document.querySelectorAll(CARD_SEL);
+      var cx = e.clientX;
+      var cy = e.clientY;
+
+      cards.forEach(function (card) {
+        var rect = card.getBoundingClientRect();
+        if (rect.bottom < cy - 600 || rect.top > cy + 600 ||
+            rect.right < cx - 600 || rect.left > cx + 600) return;
+
+        card.style.setProperty('--mouse-x', (cx - rect.left) + 'px');
+        card.style.setProperty('--mouse-y', (cy - rect.top) + 'px');
+      });
+
+      spotlightTicking = false;
     });
   });
+
+  // 3D Tilt: delegated, only processes the hovered card
+  document.addEventListener('mousemove', function (e) {
+    var card = e.target.closest(CARD_SEL);
+    if (!card) return;
+
+    var rect = card.getBoundingClientRect();
+    var xPct = (e.clientX - rect.left) / rect.width;
+    var yPct = (e.clientY - rect.top) / rect.height;
+    var xRot = (0.5 - yPct) * 10;
+    var yRot = (xPct - 0.5) * 10;
+
+    card.style.transform = 'perspective(1000px) rotateX(' + xRot + 'deg) rotateY(' + yRot + 'deg) scale(1.02)';
+  });
+
+  document.addEventListener('mouseleave', function (e) {
+    var card = e.target.closest(CARD_SEL);
+    if (card) {
+      card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
+    }
+  }, true);
 
   /**
    * Scroll to Top Button Logic
@@ -200,32 +234,4 @@
   progressFill.className = 'scroll-progress-fill';
   progressWrap.appendChild(progressFill);
   document.body.insertBefore(progressWrap, document.body.firstChild);
-
-  /**
-   * 3D Tilt Effect for Cards
-   * Adds a subtle 3D perspective tilt to cards on hover
-   */
-  var tiltCards = document.querySelectorAll('.project-card, .chat-link-card, .home-link');
-
-  tiltCards.forEach(function (card) {
-    card.addEventListener('mousemove', function (e) {
-      var rect = card.getBoundingClientRect();
-      var x = e.clientX - rect.left;
-      var y = e.clientY - rect.top;
-
-      // Calculate rotation based on mouse position
-      // Max rotation: 5 degrees
-      var xPct = x / rect.width;
-      var yPct = y / rect.height;
-
-      var xRot = (0.5 - yPct) * 10; // Rotate around X axis (up/down tilt)
-      var yRot = (xPct - 0.5) * 10; // Rotate around Y axis (left/right tilt)
-
-      card.style.transform = 'perspective(1000px) rotateX(' + xRot + 'deg) rotateY(' + yRot + 'deg) scale(1.02)';
-    });
-
-    card.addEventListener('mouseleave', function () {
-      card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
-    });
-  });
 })();

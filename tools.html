@@ -26,11 +26,17 @@
   <!-- Canonical URL -->
   <link rel="canonical" href="https://otterdays.github.io/tools.html">
 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body data-theme="dark">
+<body data-theme="dark" class="tools-page collapsible-pages">
   <!-- Sidebar Navigation -->
   <nav class="sidebar">
     <a href="index.html" title="Home">
@@ -75,9 +81,9 @@
     <!-- Top Bar: Search & Theme (Floating) -->
     <div style="display: flex; justify-content: flex-end; gap: 1rem; margin-bottom: 2rem;">
       <!-- Version Badge -->
-      <a href="about.html" class="version-badge" title="Version 1.8.1 – Click for details" style="margin-right: auto;">
+      <a href="about.html" class="version-badge" title="Version 1.8.2 – Click for details" style="margin-right: auto;">
         <span class="version-badge-icon">🎮</span>
-        <span class="version-badge-text">v1.8.1</span>
+        <span class="version-badge-text">v1.8.2</span>
       </a>
 
       <button type="button" class="search-trigger" id="search-trigger" aria-label="Search site"
@@ -123,9 +129,11 @@
       <div class="chat-links">
         <a href="https://cline.bot/cline-cli" rel="noopener noreferrer" target="_blank"
           class="chat-link-card chat-link-card-featured">
-          <span class="chat-link-card-image"><img src="images/cline-cli.png" alt="Cline CLI" width="120" height="80"></span>
+          <span class="chat-link-card-image"><img src="images/cline-cli.png" alt="Cline CLI" width="120" height="80"
+              loading="lazy"></span>
           <span class="chat-link-name">Cline CLI</span>
-          <span class="chat-link-desc">Run tasks headlessly; power GitHub Actions, Discord bots, game characters, Linear tickets. <code>npm install -g cline</code></span>
+          <span class="chat-link-desc">Run tasks headlessly; power GitHub Actions, Discord bots, game characters, Linear
+            tickets. <code>npm install -g cline</code></span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://github.com/charmbracelet/crush" rel="noopener noreferrer" target="_blank"
@@ -182,7 +190,8 @@
         </a>
         <a href="https://www.augmentcode.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Augment CLI</span>
-          <span class="chat-link-desc">AI-powered coding in the terminal; same Context Engine as IDE; #1 on SWE-Bench Pro</span>
+          <span class="chat-link-desc">AI-powered coding in the terminal; same Context Engine as IDE; #1 on SWE-Bench
+            Pro</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://roocode.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
@@ -206,12 +215,14 @@
         </a>
         <a href="https://zencoder.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Zencoder</span>
-          <span class="chat-link-desc">Zenflow orchestration + agents; IDE, CLI, Zen Agents; spec-driven, parallel execution, built-in verification</span>
+          <span class="chat-link-desc">Zenflow orchestration + agents; IDE, CLI, Zen Agents; spec-driven, parallel
+            execution, built-in verification</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://www.augmentcode.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Augment Code</span>
-          <span class="chat-link-desc">Context Engine for AI coding; IDE agents, code review, CLI; #1 on SWE-Bench Pro</span>
+          <span class="chat-link-desc">Context Engine for AI coding; IDE agents, code review, CLI; #1 on SWE-Bench
+            Pro</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://cursor.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
@@ -454,9 +465,11 @@
           <span class="chat-link-desc">Easiest local AI app; Works with Ollama; highly polished UI</span>
           <span class="chat-link-arrow">→</span>
         </a>
-        <a href="https://www.nvidia.com/en-us/ai-on-rtx/chatrtx/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+        <a href="https://www.nvidia.com/en-us/ai-on-rtx/chatrtx/" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
           <span class="chat-link-name">NVIDIA ChatRTX</span>
-          <span class="chat-link-desc">Local personalized chatbot on Windows RTX; RAG, TensorRT-LLM, chat with files, voice, image search</span>
+          <span class="chat-link-desc">Local personalized chatbot on Windows RTX; RAG, TensorRT-LLM, chat with files,
+            voice, image search</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://ollama.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
@@ -485,12 +498,14 @@
       <div class="chat-links">
         <a href="https://brave.com/leo/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Brave Leo</span>
-          <span class="chat-link-desc">Privacy-first AI in Brave; summarize pages, PDFs, translate; Llama, Mixtral, Claude; BYOM, no account</span>
+          <span class="chat-link-desc">Privacy-first AI in Brave; summarize pages, PDFs, translate; Llama, Mixtral,
+            Claude; BYOM, no account</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://www.diabrowser.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Dia Browser</span>
-          <span class="chat-link-desc">AI browser from Arc makers; chat with your tabs, in-line copy editor, tutor in every tab</span>
+          <span class="chat-link-desc">AI browser from Arc makers; chat with your tabs, in-line copy editor, tutor in
+            every tab</span>
           <span class="chat-link-arrow">→</span>
         </a>
       </div>
@@ -689,12 +704,14 @@
       <div class="chat-links">
         <a href="https://zread.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Zread</span>
-          <span class="chat-link-desc">Codebase index: discover repos, trending, MCP; paste repo URL or search by keywords</span>
+          <span class="chat-link-desc">Codebase index: discover repos, trending, MCP; paste repo URL or search by
+            keywords</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://codewiki.google/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Code Wiki</span>
-          <span class="chat-link-desc">Google: Gemini-generated docs for repos; always up-to-date; find open source repos</span>
+          <span class="chat-link-desc">Google: Gemini-generated docs for repos; always up-to-date; find open source
+            repos</span>
           <span class="chat-link-arrow">→</span>
         </a>
       </div>
@@ -814,10 +831,11 @@
     </div>
   </div>
 
-  <script src="js/badges.js"></script>
+  <script src="js/badges.js" defer></script>
   <script src="js/theme.js"></script>
-  <script src="js/search-data.js"></script>
-  <script src="js/search.js"></script>
+  <script src="js/search-data.js" defer></script>
+  <script src="js/search.js" defer></script>
+  <script src="js/collapsible.js"></script>
 </body>
 
 </html>

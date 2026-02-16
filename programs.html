@@ -25,6 +25,12 @@
   <!-- Canonical URL -->
   <link rel="canonical" href="https://otterdays.github.io/programs.html">
 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -72,16 +78,17 @@
 
   <!-- Main Content Area -->
   <main class="content">
-    
+
     <!-- Top Bar: Search & Theme (Floating) -->
     <div style="display: flex; justify-content: flex-end; gap: 1rem; margin-bottom: 2rem;">
-       <!-- Version Badge -->
-      <a href="about.html" class="version-badge" title="Version 1.8.1 – Click for details" style="margin-right: auto;">
+      <!-- Version Badge -->
+      <a href="about.html" class="version-badge" title="Version 1.8.2 – Click for details" style="margin-right: auto;">
         <span class="version-badge-icon">🎮</span>
-        <span class="version-badge-text">v1.8.1</span>
+        <span class="version-badge-text">v1.8.2</span>
       </a>
-      
-      <button type="button" class="search-trigger" id="search-trigger" aria-label="Search site" style="position: static;">
+
+      <button type="button" class="search-trigger" id="search-trigger" aria-label="Search site"
+        style="position: static;">
         <span class="search-trigger-icon" aria-hidden="true">🔍</span>
         <span class="search-trigger-text">Search</span>
         <span class="search-trigger-kbd"><kbd>⌘</kbd><kbd>K</kbd></span>
@@ -95,7 +102,7 @@
           <span class="theme-btn-arrow">▼</span>
         </button>
         <div class="theme-dropdown" id="theme-dropdown" role="menu" hidden>
-           <!-- Populated by JS -->
+          <!-- Populated by JS -->
         </div>
       </div>
     </div>
@@ -108,20 +115,22 @@
       <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">About</h2>
       <p>Short dev profile. 1+ year AI coding &amp; engineering.</p>
     </section>
-    <section class="profile-section" style="background: none; border: none; box-shadow: none; padding: 0; margin-top: 4rem;">
+    <section class="profile-section"
+      style="background: none; border: none; box-shadow: none; padding: 0; margin-top: 4rem;">
       <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Projects</h2>
       <div class="projects-grid bento-grid">
         <!-- Manually Featured Projects -->
         <article class="project-card col-span-2 row-span-2 card-featured">
           <h3 class="project-title" style="font-size: 1.5rem;">Nexus Engine</h3>
-          <p class="project-desc" style="font-size: 1rem;">AI-first game engine with natural language APIs and ECS architecture.</p>
+          <p class="project-desc" style="font-size: 1rem;">AI-first game engine with natural language APIs and ECS
+            architecture.</p>
           <div class="project-tags">
             <span class="tag">Python</span>
             <span class="tag">Pygame</span>
             <span class="tag">AI</span>
           </div>
         </article>
-        
+
         <article class="project-card col-span-2">
           <h3 class="project-title">RAIN.CHAT v2</h3>
           <p class="project-desc">Local AI-native IDE with zero cloud dependencies and built-in AI inference engine.</p>
@@ -131,17 +140,18 @@
             <span class="tag">IDE</span>
           </div>
         </article>
-        
+
         <article class="project-card col-span-2">
           <h3 class="project-title">RunicOS</h3>
-          <p class="project-desc">Modern web-based operating system built with Svelte 5 and real-time WebSocket updates.</p>
+          <p class="project-desc">Modern web-based operating system built with Svelte 5 and real-time WebSocket updates.
+          </p>
           <div class="project-tags">
             <span class="tag">JavaScript</span>
             <span class="tag">Svelte</span>
             <span class="tag">WebOS</span>
           </div>
         </article>
-        
+
         <article class="project-card">
           <h3 class="project-title">3JS Body Baker</h3>
           <p class="project-desc">Three.js character model maker with preset parts and customizable models.</p>
@@ -757,9 +767,9 @@
   </div>
 
   <script src="js/theme.js"></script>
-  <script src="js/badges.js"></script>
-  <script src="js/search-data.js"></script>
-  <script src="js/search.js"></script>
+  <script src="js/badges.js" defer></script>
+  <script src="js/search-data.js" defer></script>
+  <script src="js/search.js" defer></script>
 </body>
 
 </html>

@@ -8,7 +8,7 @@
 ├── programs.html           # Projects grid with badges (~60+ projects)
 ├── chats.html              # AI Chats: Assistants + Provider hubs & playgrounds
 ├── media.html              # AI Media Gen: Video, Image, Audio
-├── companies.html          # AI & dev tools by company (56+ companies); collapsible sections (companies-page only)
+├── companies.html          # AI & dev tools by company (56+ companies); collapsible sections
 ├── tools.html              # Desktop Tools: CLI, IDE, Browser (A–Z), Tunneling, Reference
 ├── specials.html           # Specials: Free domains, Learning
 ├── skills.html             # Skills/Tools: Cursor & Antigravity agentic tools, MCPs, SkillBox, Skills directory
@@ -18,7 +18,8 @@
 ├── js/
 │   ├── theme.js            # Theme switcher (shared; all pages)
 │   ├── badges.js           # Project badge injection (programs.html only)
-│   ├── companies.js        # Section minimization (companies.html only; body.companies-page)
+│   ├── collapsible.js      # Collapsible sections (companies, tools, specials, skills, media; body.collapsible-pages)
+│   ├── companies.js        # Country badges (companies.html only; body.companies-page)
 │   ├── search-data.js      # Search index with all searchable items
 │   └── search.js           # Search modal logic, fuzzy matching, keyboard nav
 ├── images/
@@ -54,11 +55,11 @@
 | **index**      | Profile, image, home links (X, Bluesky, GitHub). **Bento layout:** Image (col-span-2 on mobile), profile text. |
 | **programs**   | Profile header + projects grid; `js/badges.js` adds badges by title. **Glassmorphic cards.** |
 | **chats**      | **Assistants** & **Provider hubs**: Bento grid layout with featured cards (e.g. OpenAI, Anthropic). |
-| **media**      | **Video**, **Image**, **Audio**: Bento grid layout. |
+| **media**      | **Video**, **Image**, **Audio**, **Platforms**: Collapsible sections. Bento grid layout with emoji accents. |
 | **companies**  | One section per company (56+); collapsible sections (toggle at top center). **Sidebar layout.** |
-| **tools**      | **CLI**, **IDE**, **Web builders**, **Browser**, **Tunneling**, **Reference**: Bento grid layout. |
-| **specials**   | **Free domains**, **Learning**, **Games**: Bento grid layout. |
-| **skills**     | **Agentic tools**, **MCPs**, **Skills**: Bento grid layout. |
+| **tools**      | **CLI**, **IDE**, **Web builders**, **Browser**, **Tunneling**, **Reference**: Collapsible sections. |
+| **specials**   | **Free domains**, **Learning**, **Games**: Collapsible sections. |
+| **skills**     | **Agentic tools**, **MCPs**, **Skills**: Collapsible sections. |
 | **404**        | Error code, title, back link. Centered layout. |
 
 ## Themes
@@ -105,7 +106,8 @@
 - All content is static HTML; no CMS or API at runtime.
 - `js/theme.js` runs on every page (theme dropdown, scroll-to-top, scroll progress bar, localStorage).
 - `js/badges.js` runs only on `programs.html` (badge injection).
-- `js/companies.js` runs only when `body` has class `companies-page` (section minimization; injects toggle + collapsible wrapper).
+- `js/collapsible.js` runs when `body` has class `collapsible-pages` (companies, tools, specials, skills, media); injects toggle + collapsible wrapper.
+- `js/companies.js` runs only when `body` has class `companies-page` (country badge injection).
 - `js/search-data.js` and `js/search.js` run on all pages (unified search).
 - `fetch-github-repos.js` is for local use only; output `repos.md` is optional and not required for the site.
 

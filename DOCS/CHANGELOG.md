@@ -4,8 +4,21 @@ All notable changes to this project are documented in this file. Format: [Keep a
 
 ## [Unreleased]
 
+## [1.8.2] - 2026-02-16
+
+### Added
+- **Collapsible sections:** Tools, Specials, Skills, and Media Gen now have collapsible panes like Companies (`js/collapsible.js`).
+- **Search category labels:** Results show "Company", "Chat", "Tool", etc. for clarity.
+- **Media page accents:** Emoji icons (🎬 🖼️ 🎵 📦) and title box styling (left accent border, subtle background) on section headers.
+
 ### Changed
-- **Country badges (refinement):** Tighter padding and smaller font on card and companies-page badges; softer background/border and subtle inset highlight for a more refined, less heavy look; max-width 4.2rem so multi-word names wrap in a smaller footprint.
+- **Search:** Companies panel auto-expands when landing from search; prefer section header over product cards (e.g. OpenAI not Azure OpenAI); modal closes on result click/Enter (fixes same-page hash nav).
+- **Collapsible:** Shared `collapsible.js` for all 5 pages; fixed multi-child bug (content wrapped in single inner div); compact layout.
+- **Companies page:** `companies.js` now only adds country badges; collapsible logic moved to `collapsible.js`.
+
+### Fixed
+- **Collapsible sections:** Content not showing when expanded on Media, Tools, Specials (multi-child grid bug).
+- **Search:** Modal staying open when clicking result on same page (e.g. Companies → OpenAI).
 
 ## [1.8.1] - 2026-02-04
 

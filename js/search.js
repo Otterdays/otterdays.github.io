@@ -253,6 +253,7 @@
     function selectResult() {
         if (selectedIndex >= 0 && currentResults[selectedIndex]) {
             var query = input ? input.value : '';
+            closeSearch(); // Close immediately so modal doesn't stay open on same-page hash nav
             window.location.href = buildSearchUrl(currentResults[selectedIndex], query);
         }
     }
@@ -325,6 +326,12 @@
         }
     }
 
+    function handleResultClick(e) {
+        if (e.target.closest('.search-result-item')) {
+            closeSearch(); // Close on click so same-page hash nav doesn't leave modal open
+        }
+    }
+
     // === INITIALIZATION ===
     function init() {
         if (!overlay || !input || !results) {
@@ -351,6 +358,9 @@
 
         // Result hover
         results.addEventListener('mousemove', handleResultHover);
+
+        // Result click: close modal so it doesn't stay open on same-page navigation (e.g. companies → companies#target=OpenAI)
+        results.addEventListener('click', handleResultClick);
 
         // Global keyboard shortcut
         document.addEventListener('keydown', handleGlobalKeydown);
@@ -441,9 +451,9 @@
             var textNorm = normalizeText(text);
             if (textLower.includes(searchLower) || textNorm.includes(searchNorm)) {
                 var score = 30;
-                // On companies page: prefer company section header when target matches exactly
-                // (avoids landing on "Azure OpenAI" under Microsoft when user clicked "OpenAI" company)
-                if (document.body.classList.contains('companies-page') && !el.closest('.companies-intro')) {
+                // On collapsible pages: prefer section header when target matches exactly
+                // (e.g. OpenAI section not "Azure OpenAI" card; CLI section on tools)
+                if (document.body.classList.contains('collapsible-pages') && !el.closest('.companies-intro')) {
                     var targetNorm = normalizeText(targetTitle || '');
                     if (textNorm === targetNorm || textNorm.startsWith(targetNorm + ' ') || textLower.startsWith(searchLower)) {
                         score = 100;
@@ -459,8 +469,8 @@
         candidates.sort(function (a, b) { return b.score - a.score; });
         var target = candidates[0].el;
 
-        // On companies page: expand the matching company panel so the user can see the content
-        if (document.body.classList.contains('companies-page')) {
+        // On collapsible pages (companies, tools, specials, skills, media): expand the matching panel
+        if (document.body.classList.contains('collapsible-pages')) {
             var section = target.closest('.profile-section');
             if (section && !section.classList.contains('companies-intro')) {
                 section.classList.remove('minimized');

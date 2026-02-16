@@ -31,6 +31,11 @@
   <!-- Canonical URL -->
   <link rel="canonical" href="https://otterdays.github.io/">
 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -82,9 +87,9 @@
     <!-- Top Bar: Search & Theme (Floating) -->
     <div style="display: flex; justify-content: flex-end; gap: 1rem; margin-bottom: 2rem;">
        <!-- Version Badge -->
-      <a href="about.html" class="version-badge" title="Version 1.8.1 – Click for details" style="margin-right: auto;">
+      <a href="about.html" class="version-badge" title="Version 1.8.2 – Click for details" style="margin-right: auto;">
         <span class="version-badge-icon">🎮</span>
-        <span class="version-badge-text">v1.8.1</span>
+        <span class="version-badge-text">v1.8.2</span>
       </a>
       
       <button type="button" class="search-trigger" id="search-trigger" aria-label="Search site" style="position: static;">
@@ -157,8 +162,8 @@
   </div>
 
   <script src="js/theme.js"></script>
-  <script src="js/search-data.js"></script>
-  <script src="js/search.js"></script>
+  <script src="js/search-data.js" defer></script>
+  <script src="js/search.js" defer></script>
 </body>
 
 </html>

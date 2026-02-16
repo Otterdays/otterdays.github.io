@@ -26,314 +26,335 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://otterdays.github.io/media.html">
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body data-theme="dark">
+<body data-theme="dark" class="media-page collapsible-pages">
     <!-- Sidebar Navigation -->
     <nav class="sidebar">
-      <a href="index.html" title="Home">
-        <span class="sidebar-icon">🏠</span>
-        <span class="sidebar-text">Home</span>
-      </a>
-      <a href="programs.html" title="Programs">
-        <span class="sidebar-icon">🎮</span>
-        <span class="sidebar-text">Programs</span>
-      </a>
-      <a href="chats.html" title="AI Chats">
-        <span class="sidebar-icon">💬</span>
-        <span class="sidebar-text">AI Chats</span>
-      </a>
-      <a href="media.html" class="active" title="Media Gen">
-        <span class="sidebar-icon">🎨</span>
-        <span class="sidebar-text">Media Gen</span>
-      </a>
-      <a href="companies.html" title="Companies">
-        <span class="sidebar-icon">🏢</span>
-        <span class="sidebar-text">Companies</span>
-      </a>
-      <a href="tools.html" title="Tools">
-        <span class="sidebar-icon">🛠️</span>
-        <span class="sidebar-text">Tools</span>
-      </a>
-      <a href="specials.html" title="Specials">
-        <span class="sidebar-icon">⭐</span>
-        <span class="sidebar-text">Specials</span>
-      </a>
-      <a href="skills.html" title="Skills">
-        <span class="sidebar-icon">🧠</span>
-        <span class="sidebar-text">Skills</span>
-      </a>
-      <a href="about.html" title="About">
-        <span class="sidebar-icon">👤</span>
-        <span class="sidebar-text">About</span>
-      </a>
+        <a href="index.html" title="Home">
+            <span class="sidebar-icon">🏠</span>
+            <span class="sidebar-text">Home</span>
+        </a>
+        <a href="programs.html" title="Programs">
+            <span class="sidebar-icon">🎮</span>
+            <span class="sidebar-text">Programs</span>
+        </a>
+        <a href="chats.html" title="AI Chats">
+            <span class="sidebar-icon">💬</span>
+            <span class="sidebar-text">AI Chats</span>
+        </a>
+        <a href="media.html" class="active" title="Media Gen">
+            <span class="sidebar-icon">🎨</span>
+            <span class="sidebar-text">Media Gen</span>
+        </a>
+        <a href="companies.html" title="Companies">
+            <span class="sidebar-icon">🏢</span>
+            <span class="sidebar-text">Companies</span>
+        </a>
+        <a href="tools.html" title="Tools">
+            <span class="sidebar-icon">🛠️</span>
+            <span class="sidebar-text">Tools</span>
+        </a>
+        <a href="specials.html" title="Specials">
+            <span class="sidebar-icon">⭐</span>
+            <span class="sidebar-text">Specials</span>
+        </a>
+        <a href="skills.html" title="Skills">
+            <span class="sidebar-icon">🧠</span>
+            <span class="sidebar-text">Skills</span>
+        </a>
+        <a href="about.html" title="About">
+            <span class="sidebar-icon">👤</span>
+            <span class="sidebar-text">About</span>
+        </a>
     </nav>
 
     <!-- Main Content Area -->
     <main class="content">
-      
-      <!-- Top Bar: Search & Theme (Floating) -->
-      <div style="display: flex; justify-content: flex-end; gap: 1rem; margin-bottom: 2rem;">
-         <!-- Version Badge -->
-        <a href="about.html" class="version-badge" title="Version 1.8.1 – Click for details" style="margin-right: auto;">
-          <span class="version-badge-icon">🎮</span>
-          <span class="version-badge-text">v1.8.1</span>
-        </a>
-        
-        <button type="button" class="search-trigger" id="search-trigger" aria-label="Search site" style="position: static;">
-          <span class="search-trigger-icon" aria-hidden="true">🔍</span>
-          <span class="search-trigger-text">Search</span>
-          <span class="search-trigger-kbd"><kbd>⌘</kbd><kbd>K</kbd></span>
-        </button>
-  
-        <div class="theme-switcher" style="position: static;">
-          <button type="button" class="theme-btn" id="theme-btn" aria-label="Change theme" aria-expanded="false"
-            aria-haspopup="true">
-            <span class="theme-btn-icon" aria-hidden="true">◐</span>
-            <span class="theme-btn-label" id="theme-label">Dark</span>
-            <span class="theme-btn-arrow">▼</span>
-          </button>
-          <div class="theme-dropdown" id="theme-dropdown" role="menu" hidden>
-             <!-- Populated by JS -->
-          </div>
+
+        <!-- Top Bar: Search & Theme (Floating) -->
+        <div style="display: flex; justify-content: flex-end; gap: 1rem; margin-bottom: 2rem;">
+            <!-- Version Badge -->
+            <a href="about.html" class="version-badge" title="Version 1.8.2 – Click for details"
+                style="margin-right: auto;">
+                <span class="version-badge-icon">🎮</span>
+                <span class="version-badge-text">v1.8.2</span>
+            </a>
+
+            <button type="button" class="search-trigger" id="search-trigger" aria-label="Search site"
+                style="position: static;">
+                <span class="search-trigger-icon" aria-hidden="true">🔍</span>
+                <span class="search-trigger-text">Search</span>
+                <span class="search-trigger-kbd"><kbd>⌘</kbd><kbd>K</kbd></span>
+            </button>
+
+            <div class="theme-switcher" style="position: static;">
+                <button type="button" class="theme-btn" id="theme-btn" aria-label="Change theme" aria-expanded="false"
+                    aria-haspopup="true">
+                    <span class="theme-btn-icon" aria-hidden="true">◐</span>
+                    <span class="theme-btn-label" id="theme-label">Dark</span>
+                    <span class="theme-btn-arrow">▼</span>
+                </button>
+                <div class="theme-dropdown" id="theme-dropdown" role="menu" hidden>
+                    <!-- Populated by JS -->
+                </div>
+            </div>
         </div>
-      </div>
 
-    <header class="profile-header" style="text-align: left; margin-bottom: 3rem;">
-        <h1 class="profile-title" style="font-size: 3rem;">AI Media Gen</h1>
-        <p class="profile-handle" style="font-size: 1.2rem;">Create videos, images, and music just by describing what you want</p>
-    </header>
+        <header class="profile-header" style="text-align: left; margin-bottom: 3rem;">
+            <h1 class="profile-title" style="font-size: 3rem;">AI Media Gen</h1>
+            <p class="profile-handle" style="font-size: 1.2rem;">Create videos, images, and music just by describing
+                what you want</p>
+        </header>
 
-    <section class="profile-section" style="background: none; border: none; box-shadow: none; padding: 0;">
-        <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">🎨 What is AI Media Generation?</h2>
-        <p>Imagine typing "a sunset over the ocean with dolphins jumping" and having a computer <strong>create that
-                image for you in seconds</strong>. That's AI media generation! These tools can create pictures,
-            videos, and even music from simple text descriptions.</p>
-        <p>No artistic skills required—just describe what you want in everyday words. It's like having a personal
-            artist, filmmaker, and musician who works instantly. Most tools offer <strong>free trials</strong> so
-            you can experiment.</p>
-    </section>
+        <section class="profile-section" style="background: none; border: none; box-shadow: none; padding: 0;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">🎨 What is AI Media Generation?</h2>
+            <p>Imagine typing "a sunset over the ocean with dolphins jumping" and having a computer <strong>create that
+                    image for you in seconds</strong>. That's AI media generation! These tools can create pictures,
+                videos, and even music from simple text descriptions.</p>
+            <p>No artistic skills required—just describe what you want in everyday words. It's like having a personal
+                artist, filmmaker, and musician who works instantly. Most tools offer <strong>free trials</strong> so
+                you can experiment.</p>
+        </section>
 
-    <section class="profile-section" style="background: none; border: none; box-shadow: none; padding: 0; margin-top: 4rem;">
-        <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Video Generation</h2>
-        <p>Turn your ideas into videos. Describe a scene, and AI creates moving footage—great for social media,
-            presentations, or just for fun.</p>
-        <div class="chat-links bento-grid">
-            
-            <!-- Featured Video Tools -->
-            <a href="https://runwayml.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card card-featured col-span-2 row-span-2">
-                <span class="chat-link-name">Runway</span>
-                <span class="chat-link-desc">Gen-3 video generation &amp; creative AI tools. The industry standard.</span>
-                <span class="chat-link-arrow">→</span>
-            </a>
+        <section class="profile-section media-section-accent"
+            style="box-shadow: none; margin-top: 4rem;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">🎬 Video Generation</h2>
+            <p>Turn your ideas into videos. Describe a scene, and AI creates moving footage—great for social media,
+                presentations, or just for fun.</p>
+            <div class="chat-links bento-grid">
 
-            <a href="https://sora.chatgpt.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card card-featured col-span-2">
-                <span class="chat-link-name">Sora 2</span>
-                <span class="chat-link-desc">OpenAI&rsquo;s cinematic video generator.</span>
-                <span class="chat-link-arrow">→</span>
-            </a>
+                <!-- Featured Video Tools -->
+                <a href="https://runwayml.com/" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card card-featured col-span-2 row-span-2">
+                    <span class="chat-link-name">Runway</span>
+                    <span class="chat-link-desc">Gen-3 video generation &amp; creative AI tools. The industry
+                        standard.</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
 
-            <a href="https://lumalabs.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card card-featured col-span-2">
-                <span class="chat-link-name">Luma Dream Machine</span>
-                <span class="chat-link-desc">High-quality text-to-video generation.</span>
-                <span class="chat-link-arrow">→</span>
-            </a>
+                <a href="https://sora.chatgpt.com/" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card card-featured col-span-2">
+                    <span class="chat-link-name">Sora 2</span>
+                    <span class="chat-link-desc">OpenAI&rsquo;s cinematic video generator.</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
 
-            <!-- Standard Video Cards -->
-            <a href="https://agent.opus.pro/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-                <span class="chat-link-name">Agent Opus</span>
-                <span class="chat-link-desc">Article to video</span>
-                <span class="chat-link-arrow">→</span>
-            </a>
-            <a href="https://artlist.io/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-                <span class="chat-link-name">Artlist</span>
-                <span class="chat-link-desc">Stock footage &amp; music</span>
-                <span class="chat-link-arrow">→</span>
-            </a>
-            <a href="https://cuzi.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-                <span class="chat-link-name">Cuzi AI</span>
-                <span class="chat-link-desc">All-in-one generator</span>
-                <span class="chat-link-arrow">→</span>
-            </a>
-            <a href="https://www.descript.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-                <span class="chat-link-name">Descript</span>
-                <span class="chat-link-desc">Edit by transcribing</span>
-                <span class="chat-link-arrow">→</span>
-            </a>
-            <a href="https://labs.google/flow/about" rel="noopener noreferrer" target="_blank"
-                class="chat-link-card">
-                <span class="chat-link-name">Google Flow</span>
-                <span class="chat-link-desc">AI filmmaking with Veo</span>
-                <span class="chat-link-arrow">→</span>
-            </a>
-            <a href="https://www.heygen.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-                <span class="chat-link-name">HeyGen</span>
-                <span class="chat-link-desc">AI avatars</span>
-                <span class="chat-link-arrow">→</span>
-            </a>
-            <a href="https://higgsfield.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-                <span class="chat-link-name">Higgsfield</span>
-                <span class="chat-link-desc">Vibe Motion</span>
-                <span class="chat-link-arrow">→</span>
-            </a>
-            <a href="https://www.opus.pro/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-                <span class="chat-link-name">OpusClip</span>
-                <span class="chat-link-desc">Long to shorts</span>
-                <span class="chat-link-arrow">→</span>
-            </a>
-            <a href="https://pika.art/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-                <span class="chat-link-name">Pika</span>
-                <span class="chat-link-desc">Text/Image to video</span>
-                <span class="chat-link-arrow">→</span>
-            </a>
-            <a href="https://sparkify.withgoogle.com/explore" rel="noopener noreferrer" target="_blank"
-                class="chat-link-card">
-                <span class="chat-link-name">Sparkify</span>
-                <span class="chat-link-desc">Short video creator</span>
-                <span class="chat-link-arrow">→</span>
-            </a>
-            <a href="https://supermaker.ai/explore/" rel="noopener noreferrer" target="_blank"
-                class="chat-link-card">
-                <span class="chat-link-name">SuperMaker</span>
-                <span class="chat-link-desc">Free AI suite</span>
-                <span class="chat-link-arrow">→</span>
-            </a>
-            <a href="https://www.synthesia.io/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-                <span class="chat-link-name">Synthesia</span>
-                <span class="chat-link-desc">Avatar generation</span>
-                <span class="chat-link-arrow">→</span>
-            </a>
-            <a href="https://aistudio.google.com/models/veo-3" rel="noopener noreferrer" target="_blank"
-                class="chat-link-card">
-                <span class="chat-link-name">Veo 3</span>
-                <span class="chat-link-desc">Google Veo 3.1</span>
-                <span class="chat-link-arrow">→</span>
-            </a>
-        </div>
-    </section>
+                <a href="https://lumalabs.ai/" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card card-featured col-span-2">
+                    <span class="chat-link-name">Luma Dream Machine</span>
+                    <span class="chat-link-desc">High-quality text-to-video generation.</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
 
-    <section class="profile-section" style="background: none; border: none; box-shadow: none; padding: 0; margin-top: 4rem;">
-        <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Image Generation</h2>
-        <p>Type a description like "a cute cat wearing a wizard hat" and get a picture in seconds. These tools are
-            great for social media posts, art projects, or visualizing ideas.</p>
-        <div class="chat-links bento-grid">
-            
-            <!-- Featured Image Tools -->
-            <a href="https://www.midjourney.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card card-featured col-span-2">
-                <span class="chat-link-name">Midjourney</span>
-                <span class="chat-link-desc">The gold standard for AI art generation.</span>
-                <span class="chat-link-arrow">→</span>
-            </a>
+                <!-- Standard Video Cards -->
+                <a href="https://agent.opus.pro/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Agent Opus</span>
+                    <span class="chat-link-desc">Article to video</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://artlist.io/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Artlist</span>
+                    <span class="chat-link-desc">Stock footage &amp; music</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://cuzi.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Cuzi AI</span>
+                    <span class="chat-link-desc">All-in-one generator</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://www.descript.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Descript</span>
+                    <span class="chat-link-desc">Edit by transcribing</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://labs.google/flow/about" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card">
+                    <span class="chat-link-name">Google Flow</span>
+                    <span class="chat-link-desc">AI filmmaking with Veo</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://www.heygen.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">HeyGen</span>
+                    <span class="chat-link-desc">AI avatars</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://higgsfield.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Higgsfield</span>
+                    <span class="chat-link-desc">Vibe Motion</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://www.opus.pro/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">OpusClip</span>
+                    <span class="chat-link-desc">Long to shorts</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://pika.art/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Pika</span>
+                    <span class="chat-link-desc">Text/Image to video</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://sparkify.withgoogle.com/explore" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card">
+                    <span class="chat-link-name">Sparkify</span>
+                    <span class="chat-link-desc">Short video creator</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://supermaker.ai/explore/" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card">
+                    <span class="chat-link-name">SuperMaker</span>
+                    <span class="chat-link-desc">Free AI suite</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://www.synthesia.io/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Synthesia</span>
+                    <span class="chat-link-desc">Avatar generation</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://aistudio.google.com/models/veo-3" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card">
+                    <span class="chat-link-name">Veo 3</span>
+                    <span class="chat-link-desc">Google Veo 3.1</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
 
-            <a href="https://blackforestlabs.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card card-featured col-span-2">
-                <span class="chat-link-name">FLUX</span>
-                <span class="chat-link-desc">State-of-the-art open models (FLUX.1).</span>
-                <span class="chat-link-arrow">→</span>
-            </a>
+        <section class="profile-section media-section-accent"
+            style="box-shadow: none; margin-top: 4rem;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">🖼️ Image Generation</h2>
+            <p>Type a description like "a cute cat wearing a wizard hat" and get a picture in seconds. These tools are
+                great for social media posts, art projects, or visualizing ideas.</p>
+            <div class="chat-links bento-grid">
 
-            <!-- Standard Image Cards -->
-            <a href="https://www.adobe.com/products/firefly.html" rel="noopener noreferrer" target="_blank"
-                class="chat-link-card">
-                <span class="chat-link-name">Firefly</span>
-                <span class="chat-link-desc">Adobe&rsquo;s AI</span>
-                <span class="chat-link-arrow">→</span>
-            </a>
-            <a href="https://www.canva.com/magic-home/" rel="noopener noreferrer" target="_blank"
-                class="chat-link-card">
-                <span class="chat-link-name">Canva</span>
-                <span class="chat-link-desc">Magic Studio</span>
-                <span class="chat-link-arrow">→</span>
-            </a>
-            <a href="https://chatgpt.com/images/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-                <span class="chat-link-name">DALL-E 3</span>
-                <span class="chat-link-desc">Via ChatGPT</span>
-                <span class="chat-link-arrow">→</span>
-            </a>
-            <a href="https://grok.com/imagine" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-                <span class="chat-link-name">Grok Imagine</span>
-                <span class="chat-link-desc">xAI generation</span>
-                <span class="chat-link-arrow">→</span>
-            </a>
-            <a href="https://ideogram.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-                <span class="chat-link-name">Ideogram</span>
-                <span class="chat-link-desc">Great typography</span>
-                <span class="chat-link-arrow">→</span>
-            </a>
-            <a href="https://leonardo.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-                <span class="chat-link-name">Leonardo.ai</span>
-                <span class="chat-link-desc">Game assets</span>
-                <span class="chat-link-arrow">→</span>
-            </a>
-            <a href="https://www.recraft.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-                <span class="chat-link-name">Recraft</span>
-                <span class="chat-link-desc">Vector design</span>
-                <span class="chat-link-arrow">→</span>
-            </a>
-            <a href="https://stability.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-                <span class="chat-link-name">Stable Diffusion</span>
-                <span class="chat-link-desc">Open-source</span>
-                <span class="chat-link-arrow">→</span>
-            </a>
-        </div>
-    </section>
+                <!-- Featured Image Tools -->
+                <a href="https://www.midjourney.com/" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card card-featured col-span-2">
+                    <span class="chat-link-name">Midjourney</span>
+                    <span class="chat-link-desc">The gold standard for AI art generation.</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
 
-    <section class="profile-section" style="background: none; border: none; box-shadow: none; padding: 0; margin-top: 4rem;">
-        <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Audio &amp; Music</h2>
-        <div class="chat-links bento-grid">
-            <a href="https://suno.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card card-featured col-span-2">
-                <span class="chat-link-name">Suno</span>
-                <span class="chat-link-desc">Radio-quality music generation from text.</span>
-                <span class="chat-link-arrow">→</span>
-            </a>
-            
-            <a href="https://elevenlabs.io/" rel="noopener noreferrer" target="_blank" class="chat-link-card card-featured col-span-2">
-                <span class="chat-link-name">ElevenLabs</span>
-                <span class="chat-link-desc">The most realistic AI voice generation.</span>
-                <span class="chat-link-arrow">→</span>
-            </a>
+                <a href="https://blackforestlabs.ai/" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card card-featured col-span-2">
+                    <span class="chat-link-name">FLUX</span>
+                    <span class="chat-link-desc">State-of-the-art open models (FLUX.1).</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
 
-            <a href="https://www.musicai.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-                <span class="chat-link-name">MusicAI</span>
-                <span class="chat-link-desc">Lyrics to music</span>
-                <span class="chat-link-arrow">→</span>
-            </a>
-            <a href="https://soundraw.io/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-                <span class="chat-link-name">Soundraw</span>
-                <span class="chat-link-desc">Royalty-free BGM</span>
-                <span class="chat-link-arrow">→</span>
-            </a>
-            <a href="https://www.udio.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-                <span class="chat-link-name">Udio</span>
-                <span class="chat-link-desc">Music creation</span>
-                <span class="chat-link-arrow">→</span>
-            </a>
-        </div>
-    </section>
+                <!-- Standard Image Cards -->
+                <a href="https://www.adobe.com/products/firefly.html" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card">
+                    <span class="chat-link-name">Firefly</span>
+                    <span class="chat-link-desc">Adobe&rsquo;s AI</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://www.canva.com/magic-home/" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card">
+                    <span class="chat-link-name">Canva</span>
+                    <span class="chat-link-desc">Magic Studio</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://chatgpt.com/images/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">DALL-E 3</span>
+                    <span class="chat-link-desc">Via ChatGPT</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://grok.com/imagine" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Grok Imagine</span>
+                    <span class="chat-link-desc">xAI generation</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://ideogram.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Ideogram</span>
+                    <span class="chat-link-desc">Great typography</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://leonardo.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Leonardo.ai</span>
+                    <span class="chat-link-desc">Game assets</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://www.recraft.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Recraft</span>
+                    <span class="chat-link-desc">Vector design</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://stability.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Stable Diffusion</span>
+                    <span class="chat-link-desc">Open-source</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
 
-    <section class="profile-section" style="background: none; border: none; box-shadow: none; padding: 0; margin-top: 4rem;">
-        <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Platforms &amp; discover</h2>
-        <div class="chat-links bento-grid">
-            <a href="https://huggingface.co/spaces" rel="noopener noreferrer" target="_blank"
-                class="chat-link-card col-span-2">
-                <span class="chat-link-name">Hugging Face Spaces</span>
-                <span class="chat-link-desc">1M+ AI apps: image, video, audio, chat; host &amp; discover</span>
-                <span class="chat-link-arrow">→</span>
-            </a>
-        </div>
-    </section>
-    <!-- Site Footer -->
-    <footer class="site-footer">
-        <div class="site-stats">
-            <div class="stat-item" title="Indexed items"><span class="stat-icon">🔍</span> 100+ items</div>
-            <div class="stat-item" title="Pages"><span class="stat-icon">📄</span> 10 pages</div>
-            <div class="stat-item" title="Companies listed"><span class="stat-icon">🏢</span> 78+ companies</div>
-        </div>
-        <div class="site-copy">
-            &copy; 2026 Ryan Otterdays. Maintained with ❤️.
-        </div>
-    </footer>
+        <section class="profile-section media-section-accent"
+            style="box-shadow: none; margin-top: 4rem;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">🎵 Audio &amp; Music</h2>
+            <div class="chat-links bento-grid">
+                <a href="https://suno.com/" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card card-featured col-span-2">
+                    <span class="chat-link-name">Suno</span>
+                    <span class="chat-link-desc">Radio-quality music generation from text.</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+
+                <a href="https://elevenlabs.io/" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card card-featured col-span-2">
+                    <span class="chat-link-name">ElevenLabs</span>
+                    <span class="chat-link-desc">The most realistic AI voice generation.</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+
+                <a href="https://www.musicai.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">MusicAI</span>
+                    <span class="chat-link-desc">Lyrics to music</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://soundraw.io/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Soundraw</span>
+                    <span class="chat-link-desc">Royalty-free BGM</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+                <a href="https://www.udio.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+                    <span class="chat-link-name">Udio</span>
+                    <span class="chat-link-desc">Music creation</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="profile-section media-section-accent"
+            style="box-shadow: none; margin-top: 4rem;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">📦 Platforms &amp; discover</h2>
+            <div class="chat-links bento-grid">
+                <a href="https://huggingface.co/spaces" rel="noopener noreferrer" target="_blank"
+                    class="chat-link-card col-span-2">
+                    <span class="chat-link-name">Hugging Face Spaces</span>
+                    <span class="chat-link-desc">1M+ AI apps: image, video, audio, chat; host &amp; discover</span>
+                    <span class="chat-link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+        <!-- Site Footer -->
+        <footer class="site-footer">
+            <div class="site-stats">
+                <div class="stat-item" title="Indexed items"><span class="stat-icon">🔍</span> 100+ items</div>
+                <div class="stat-item" title="Pages"><span class="stat-icon">📄</span> 10 pages</div>
+                <div class="stat-item" title="Companies listed"><span class="stat-icon">🏢</span> 78+ companies</div>
+            </div>
+            <div class="site-copy">
+                &copy; 2026 Ryan Otterdays. Maintained with ❤️.
+            </div>
+        </footer>
     </main>
 
     <!-- Scroll to Top Button -->
@@ -361,10 +382,11 @@
         </div>
     </div>
 
-    <script src="js/badges.js"></script>
+    <script src="js/badges.js" defer></script>
     <script src="js/theme.js"></script>
-    <script src="js/search-data.js"></script>
-    <script src="js/search.js"></script>
+    <script src="js/search-data.js" defer></script>
+    <script src="js/search.js" defer></script>
+    <script src="js/collapsible.js"></script>
 </body>
 
 </html>

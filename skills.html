@@ -25,11 +25,17 @@
   <!-- Canonical URL -->
   <link rel="canonical" href="https://otterdays.github.io/skills.html">
 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body data-theme="dark">
+<body data-theme="dark" class="skills-page collapsible-pages">
   <!-- Sidebar Navigation -->
   <nav class="sidebar">
     <a href="index.html" title="Home">
@@ -74,9 +80,9 @@
     <!-- Top Bar: Search & Theme (Floating) -->
     <div style="display: flex; justify-content: flex-end; gap: 1rem; margin-bottom: 2rem;">
       <!-- Version Badge -->
-      <a href="about.html" class="version-badge" title="Version 1.8.1 – Click for details" style="margin-right: auto;">
+      <a href="about.html" class="version-badge" title="Version 1.8.2 – Click for details" style="margin-right: auto;">
         <span class="version-badge-icon">🎮</span>
-        <span class="version-badge-text">v1.8.1</span>
+        <span class="version-badge-text">v1.8.2</span>
       </a>
 
       <button type="button" class="search-trigger" id="search-trigger" aria-label="Search site"
@@ -252,7 +258,8 @@
       <h2>Skills directory</h2>
       <p>Discover and install skills from the open ecosystem. Search: <code>npx skills find [query]</code>. Browse: <a
           href="https://skills.sh/" rel="noopener noreferrer" target="_blank">skills.sh</a>. Use
-        <code>/find-skills</code> or ask &ldquo;find a skill for X&rdquo; to have the agent search for you.</p>
+        <code>/find-skills</code> or ask &ldquo;find a skill for X&rdquo; to have the agent search for you.
+      </p>
       <h3>React</h3>
       <div class="chat-links">
         <a href="https://skills.sh/vercel-labs/agent-skills/vercel-react-best-practices" rel="noopener noreferrer"
@@ -435,8 +442,9 @@
   </div>
 
   <script src="js/theme.js"></script>
-  <script src="js/search-data.js"></script>
-  <script src="js/search.js"></script>
+  <script src="js/search-data.js" defer></script>
+  <script src="js/search.js" defer></script>
+  <script src="js/collapsible.js"></script>
 </body>
 
 </html>
