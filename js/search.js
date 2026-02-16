@@ -45,6 +45,16 @@
         page: '#6366f1'
     };
 
+    var categoryLabels = {
+        project: 'Project',
+        chat: 'Chat',
+        media: 'Media',
+        company: 'Company',
+        tool: 'Tool',
+        special: 'Special',
+        page: 'Page'
+    };
+
     // === TEXT NORMALIZATION ===
     // Strips special characters for better fuzzy matching
     // e.g., "there's" becomes "theres", "DALL-E" becomes "dalle"
@@ -167,10 +177,14 @@
             var icon = categoryIcons[item.category] || '📄';
             var isSelected = index === selectedIndex ? ' selected' : '';
             var itemUrl = buildSearchUrl(item, currentQuery);
+            var categoryLabel = categoryLabels[item.category] || '';
             return '<a href="' + itemUrl + '" class="search-result-item' + isSelected + '" data-index="' + index + '">' +
                 '<span class="search-result-icon" style="background:' + (categoryColors[item.category] || '#888') + '">' + icon + '</span>' +
                 '<div class="search-result-content">' +
-                '<div class="search-result-title">' + escapeHtml(item.title) + '</div>' +
+                '<div class="search-result-title">' +
+                '<span class="search-result-title-text">' + escapeHtml(item.title) + '</span>' +
+                (categoryLabel ? '<span class="search-result-category">' + escapeHtml(categoryLabel) + '</span>' : '') +
+                '</div>' +
                 '<div class="search-result-desc">' + escapeHtml(item.desc) + '</div>' +
                 '<div class="search-result-tags">' + item.tags.slice(0, 3).map(function (t) {
                     return '<span class="search-result-tag">' + escapeHtml(t) + '</span>';
@@ -426,7 +440,16 @@
             var textLower = text.toLowerCase();
             var textNorm = normalizeText(text);
             if (textLower.includes(searchLower) || textNorm.includes(searchNorm)) {
-                candidates.push({ el: el, score: 30 });
+                var score = 30;
+                // On companies page: prefer company section header when target matches exactly
+                // (avoids landing on "Azure OpenAI" under Microsoft when user clicked "OpenAI" company)
+                if (document.body.classList.contains('companies-page') && !el.closest('.companies-intro')) {
+                    var targetNorm = normalizeText(targetTitle || '');
+                    if (textNorm === targetNorm || textNorm.startsWith(targetNorm + ' ') || textLower.startsWith(searchLower)) {
+                        score = 100;
+                    }
+                }
+                candidates.push({ el: el, score: score });
             }
         });
 
@@ -435,6 +458,16 @@
         // Sort by score and pick the best match
         candidates.sort(function (a, b) { return b.score - a.score; });
         var target = candidates[0].el;
+
+        // On companies page: expand the matching company panel so the user can see the content
+        if (document.body.classList.contains('companies-page')) {
+            var section = target.closest('.profile-section');
+            if (section && !section.classList.contains('companies-intro')) {
+                section.classList.remove('minimized');
+                var toggle = section.querySelector('.section-toggle');
+                if (toggle) toggle.setAttribute('aria-expanded', 'true');
+            }
+        }
 
         // Scroll into view
         target.scrollIntoView({ behavior: 'smooth', block: 'center' });
