@@ -2121,3 +2121,167 @@ body {
     padding: 0.3rem 0.6rem;
   }
 }
+
+/* === UPDATE TIMELINE === */
+.update-timeline {
+  position: relative;
+  padding-inline-start: 2rem;
+  margin-top: 2rem;
+}
+
+.update-timeline::before {
+  content: '';
+  position: absolute;
+  left: 0.4rem;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  width: 2px;
+  background: color-mix(in srgb, var(--accent) 30%, transparent);
+  border-radius: 1px;
+}
+
+.update-card {
+  position: relative;
+  margin-bottom: 1.5rem;
+  content-visibility: auto;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s cubic-bezier(0.2, 0.8, 0.2, 1),
+    transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.update-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.update-dot {
+  position: absolute;
+  left: -2rem;
+  top: 1.25rem;
+  width: 12px;
+  height: 12px;
+  margin-left: -5px;
+  background: var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 12px var(--accent-glow);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.update-card:hover .update-dot {
+  box-shadow: 0 0 20px var(--accent-glow);
+  transform: scale(1.15);
+}
+
+.update-card-inner {
+  background: var(--glass);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.update-card--latest .update-card-inner {
+  box-shadow: 0 0 20px var(--accent-glow), 0 4px 16px rgba(0, 0, 0, 0.1);
+  border-color: color-mix(in srgb, var(--accent) 50%, var(--border));
+}
+
+.update-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.update-version {
+  font-family: var(--font-heading, 'Inter', sans-serif);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--accent);
+}
+
+.update-date {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.update-section {
+  margin-bottom: 0.75rem;
+}
+
+.update-section:last-child {
+  margin-bottom: 0;
+}
+
+.update-badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border-radius: 6px;
+  margin-right: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.update-badge--added {
+  background: color-mix(in srgb, #22c55e 25%, transparent);
+  color: color-mix(in srgb, #22c55e 90%, var(--fg));
+}
+
+.update-badge--changed {
+  background: color-mix(in srgb, var(--accent) 25%, transparent);
+  color: var(--accent);
+}
+
+.update-badge--fixed {
+  background: color-mix(in srgb, #f59e0b 25%, transparent);
+  color: color-mix(in srgb, #f59e0b 90%, var(--fg));
+}
+
+.update-badge--removed {
+  background: color-mix(in srgb, #ef4444 25%, transparent);
+  color: color-mix(in srgb, #ef4444 90%, var(--fg));
+}
+
+.update-badge--latest {
+  background: var(--accent-glow);
+  color: var(--accent);
+}
+
+.update-list {
+  margin: 0.5rem 0 0;
+  padding-inline-start: 1.25rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.update-list li {
+  margin-bottom: 0.35rem;
+}
+
+.update-list li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 640px) {
+  .update-timeline {
+    padding-inline-start: 1.5rem;
+  }
+
+  .update-timeline::before {
+    left: 0.25rem;
+  }
+
+  .update-dot {
+    left: -1.5rem;
+    width: 10px;
+    height: 10px;
+    margin-left: -4px;
+  }
+
+  .update-card-inner {
+    padding: 1rem 1.25rem;
+  }
+}

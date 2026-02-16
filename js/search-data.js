@@ -62,12 +62,15 @@ var SEARCH_DATA = [
     { title: "ZenMux", desc: "Unified gateway to many models; chat and API; compensation for subpar results.", category: "chat", tags: ["Multi-model", "API", "Gateway"], url: "chats.html" },
     { title: "OpenClaw", desc: "Viral personal AI assistant hosted on your system.", category: "chat", tags: ["Personal", "Hosted", "Assistant"], url: "chats.html" },
     { title: "Moltbook", desc: "AI-only social platform; chat and share with AI.", category: "chat", tags: ["Social", "AI", "Platform"], url: "chats.html" },
+    { title: "T3 Chat", desc: "Fast AI chatbot; multi-model; by theo gg.", category: "chat", tags: ["theo gg", "T3", "Multi-model", "Chat"], url: "chats.html" },
+    { title: "T3 Chat", desc: "Fast AI chatbot; multi-model; by theo gg.", category: "chat", tags: ["theo gg", "Multi-model", "Chat"], url: "chats.html" },
 
     // === MEDIA GENERATION (media.html) ===
     { title: "DALL-E 3", desc: "OpenAI's advanced image generation model.", category: "media", tags: ["OpenAI", "Image", "Generation"], url: "media.html" },
     { title: "Midjourney", desc: "Premium AI art generation with stunning aesthetics.", category: "media", tags: ["Art", "Image", "Premium"], url: "media.html" },
     { title: "Stable Diffusion", desc: "Open-source image generation model.", category: "media", tags: ["Open Source", "Image", "Stability"], url: "media.html" },
     { title: "Ideogram", desc: "AI image generator with excellent text rendering.", category: "media", tags: ["Image", "Text", "Art"], url: "media.html" },
+    { title: "T3 Canvas", desc: "AI image studio: generate, compare, iterate; by theo gg.", category: "media", tags: ["Image", "theo gg", "Studio"], url: "media.html" },
     { title: "Leonardo.AI", desc: "AI art generation with fine-tuned models.", category: "media", tags: ["Art", "Game Assets", "AI"], url: "media.html" },
     { title: "Recraft", desc: "Vector and raster AI image generation.", category: "media", tags: ["Vector", "Design", "AI"], url: "media.html" },
     { title: "Sora 2", desc: "OpenAI's text-to-video generator; web and mobile app.", category: "media", tags: ["Video", "OpenAI", "Generation"], url: "media.html" },
@@ -90,6 +93,7 @@ var SEARCH_DATA = [
     { title: "Google Flow", desc: "AI filmmaking with Veo (formerly VideoFX).", category: "media", tags: ["Video", "Google", "Veo"], url: "media.html" },
     { title: "Canva Magic Studio", desc: "All-in-one AI design suite.", category: "media", tags: ["Design", "Image", "AI"], url: "media.html" },
     { title: "Soundraw", desc: "AI music generator for creators; royalty-free.", category: "media", tags: ["Music", "Audio", "Generation"], url: "media.html" },
+    { title: "T3 Canvas", desc: "AI image studio: generate, compare, iterate on AI visuals; by theo gg.", category: "media", tags: ["Image", "AI", "theo gg", "T3"], url: "media.html" },
 
     // === COMPANIES (companies.html) ===
     { title: "OpenAI", desc: "Creator of GPT, DALL-E, and Sora. Leading AI research lab.", category: "company", tags: ["GPT", "ChatGPT", "Sora", "Research"], url: "companies.html" },
@@ -161,6 +165,7 @@ var SEARCH_DATA = [
     { title: "Canva", desc: "Design platform; Magic Studio AI.", category: "company", tags: ["Design", "Graphics", "AI"], url: "companies.html" },
     { title: "Adobe", desc: "Creative Cloud; Firefly AI models.", category: "company", tags: ["Design", "Creative", "Firefly"], url: "companies.html" },
     { title: "You.com", desc: "AI consumer search engine & chat.", category: "company", tags: ["Search", "Chat", "AI"], url: "companies.html" },
+    { title: "T3 (theo gg)", desc: "shoo (auth), T3 Chat, T3 Canvas; by theo gg.", category: "company", tags: ["theo gg", "shoo", "T3 Chat", "T3 Canvas"], url: "companies.html" },
 
 
     // === TOOLS (tools.html) ===
@@ -234,7 +239,11 @@ var SEARCH_DATA = [
     { title: "IBM Project Bob", desc: "IBM's AI software dev partner; chat in editor, code review, vulnerability and secrets detection.", category: "tool", tags: ["IDE", "IBM", "Agent"], url: "tools.html" },
     { title: "bolt.diy", desc: "Open-source Bolt: prompt, run, edit and deploy full-stack apps with any LLM; 19+ providers, MCP, Electron.", category: "tool", tags: ["Web Builder", "Open Source", "Full-stack"], url: "tools.html" },
     { title: "Quests", desc: "Open-source app builder; build and run apps locally with any LLM; BYOK, desktop, templates.", category: "tool", tags: ["Web Builder", "Open Source", "Desktop"], url: "tools.html" },
+    { title: "shoo", desc: "Auth in 2 lines of code. Free, open source. By theo gg.", category: "tool", tags: ["Auth", "Open Source", "theo gg"], url: "tools.html" },
     { title: "Spec Kit", desc: "GitHub: Spec-Driven Development toolkit; specs become executable; Specify CLI, works with Qoder, Cursor, OpenCode.", category: "tool", tags: ["Reference", "Spec-Driven", "CLI"], url: "tools.html" },
+    { title: "shoo", desc: "Auth in 2 lines of code. Free, open source. By theo gg.", category: "tool", tags: ["Auth", "Open Source", "theo gg", "Free"], url: "tools.html" },
+    { title: "Squoosh", desc: "Quick, simple image compression; Google; WebP, AVIF, resize.", category: "tool", tags: ["Image", "Compression", "WebP", "AVIF"], url: "tools.html" },
+    { title: "Squoosh", desc: "Quick, simple image compression; Google; WebP, AVIF, resize.", category: "tool", tags: ["Image", "Compression", "Google"], url: "tools.html" },
     { title: "Ollama", desc: "Easiest way to run open models locally; works with Codex, Claude Code, OpenCode, Open WebUI, Msty, etc.", category: "tool", tags: ["Local LLM", "Inference", "Open Source"], url: "tools.html" },
     { title: "LM Studio", desc: "Local AI on your computer; run LLMs privately and free; headless (llmster), SDK, MCP, OpenAI-compatible API.", category: "tool", tags: ["Local LLM", "Inference", "Desktop"], url: "tools.html" },
     { title: "vLLM", desc: "High-throughput, memory-efficient inference and serving for LLMs; OpenAI-compatible API; PagedAttention, Hugging Face.", category: "tool", tags: ["Local LLM", "Inference", "Serving"], url: "tools.html" },
@@ -286,5 +295,8 @@ var SEARCH_DATA = [
     { title: "SkillBox", desc: "Utility AI agent skills: track-session, git-worktree, generate-skill, ideal-react-component, rate-skill. Works with Cursor, Codex, Gemini CLI, OpenCode, Replit, 40+ agents.", category: "tool", tags: ["Skills", "Vercel", "Claude Code", "Cursor", "Agent", "SKILL.md"], url: "skills.html" },
     { title: "Skills directory", desc: "Discover skills by category: React, Testing, Git & workflows. npx skills find [query], skills.sh.", category: "page", tags: ["Skills", "Vercel", "React", "Testing", "Git", "find-skills"], url: "skills.html" },
     { title: "About", desc: "What this site is: projects and tools worth sharing. Every link is safe and direct.", category: "page", tags: ["About", "Site", "Links"], url: "about.html" },
+    { title: "Updates", desc: "Site update log: version history, new features, fixes, and changes.", category: "page", tags: ["Updates", "Changelog", "Version"], url: "updates.html" },
+    { title: "Inspirations", desc: "People and projects that inspire what I build and share.", category: "page", tags: ["Inspirations", "theo gg", "About"], url: "about.html" },
+    { title: "Inspirations", desc: "People and projects that inspire: theo gg (shoo, T3 Chat, T3 Canvas).", category: "page", tags: ["Inspirations", "theo gg", "About"], url: "about.html" },
     { title: "Dev tips", desc: "Trigger mobile view in Chrome: F12 (or Cmd+Option+I on Mac), then Toggle Device Toolbar.", category: "page", tags: ["Dev", "Chrome", "F12", "Mobile", "Debug"], url: "about.html" }
 ];

@@ -4,27 +4,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About | Otterdays</title>
+  <title>Updates | Otterdays</title>
 
   <!-- SEO Meta Tags -->
   <meta name="description"
-    content="About this site: a mix of Ryan Otterdays' projects and tools found, tried, or explored—all links safe and direct.">
-  <meta name="keywords" content="about, Otterdays, developer, projects, tools, portfolio">
+    content="Site update log: version history, new features, fixes, and changes to Otterdays.github.io.">
+  <meta name="keywords" content="updates, changelog, version history, Otterdays">
   <meta name="author" content="Ryan Otterdays">
 
   <!-- Open Graph / Social -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://otterdays.github.io/about.html">
-  <meta property="og:title" content="About | Otterdays">
+  <meta property="og:url" content="https://otterdays.github.io/updates.html">
+  <meta property="og:title" content="Updates | Otterdays">
   <meta property="og:description"
-    content="About this site: projects and tools worth sharing. Every link is safe and direct.">
+    content="Site update log: version history, new features, fixes, and changes.">
 
   <!-- Favicon -->
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="images/favicon.svg">
 
   <!-- Canonical URL -->
-  <link rel="canonical" href="https://otterdays.github.io/about.html">
+  <link rel="canonical" href="https://otterdays.github.io/updates.html">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,11 +71,11 @@
       <span class="sidebar-icon">🧠</span>
       <span class="sidebar-text">Skills</span>
     </a>
-    <a href="updates.html" title="Updates">
+    <a href="updates.html" class="active" title="Updates">
       <span class="sidebar-icon">📋</span>
       <span class="sidebar-text">Updates</span>
     </a>
-    <a href="about.html" class="active" title="About">
+    <a href="about.html" title="About">
       <span class="sidebar-icon">👤</span>
       <span class="sidebar-text">About</span>
     </a>
@@ -111,59 +111,12 @@
     </div>
 
     <header class="profile-header">
-      <h1 class="profile-title">About this site</h1>
-      <p class="profile-handle">What this site is and how it&rsquo;s put together</p>
+      <h1 class="profile-title">Site Updates</h1>
+      <p class="profile-handle">Version history, new features, fixes, and changes</p>
     </header>
 
-    <section class="profile-section">
-      <h2>What this is</h2>
-      <p>This site is a mix of <strong>my projects</strong> and <strong>tools I&rsquo;ve found, tried, or looked
-          at</strong> at some point and want to share. It&rsquo;s a personal hub: part portfolio (Programs), part link
-        collection (AI Chats, Media Gen, Companies, Tools, Specials).</p>
-    </section>
+    <div class="update-timeline" id="update-entries"></div>
 
-    <section class="profile-section">
-      <h2>Links</h2>
-      <p>Every link here is intended to be <strong>safe and direct</strong>—no redirect chains or affiliate wrappers. I
-        link to official sites, docs, or trusted sources so you can open a link and land where you expect.</p>
-    </section>
-
-    <section class="profile-section">
-      <h2>Pages at a glance</h2>
-      <ul class="about-list">
-        <li><strong>Home</strong> — Short intro and profile.</li>
-        <li><strong>Programs</strong> — My projects (games, tools, experiments).</li>
-        <li><strong>AI Chats</strong> — Chat assistants and provider hubs/playgrounds.</li>
-        <li><strong>Media Gen</strong> — AI tools for video, image, and audio generation.</li>
-        <li><strong>Companies</strong> — Companies and products, grouped by brand.</li>
-        <li><strong>Tools</strong> — CLI, IDE, browser tools, tunneling, voice, DevOps, reference.</li>
-        <li><strong>Specials</strong> — Free and special services (e.g. free domains, learning).</li>
-        <li><strong>Skills/Tools</strong> — IDE skills, agentic tools, and MCPs for my Cursor setup.</li>
-      </ul>
-    </section>
-
-    <section class="profile-section">
-      <h2>Dev tips</h2>
-      <p>To trigger mobile view in Chrome on desktop: open the site, press <kbd>F12</kbd> (or
-        <kbd>Cmd</kbd>+<kbd>Option</kbd>+<kbd>I</kbd> on Mac) to open DevTools, then click the <strong>Toggle Device
-          Toolbar</strong> icon (phone/tablet) in the top-left of DevTools. You can pick a device, set dimensions, or
-        use Responsive mode to resize the viewport and debug how the site looks on mobile.
-      </p>
-    </section>
-
-    <section class="profile-section">
-      <h2>Inspirations</h2>
-      <p>People and projects that inspire what I build and share.</p>
-      <ul class="about-list">
-        <li><strong><a href="https://t3.gg/" rel="noopener noreferrer" target="_blank">theo gg</a></strong> — Builder, creator of <a href="https://shoo.dev/" rel="noopener noreferrer" target="_blank">shoo</a> (auth in 2 lines), <a href="https://t3.chat/" rel="noopener noreferrer" target="_blank">T3 Chat</a>, <a href="https://t3canvas.com/" rel="noopener noreferrer" target="_blank">T3 Canvas</a>.</li>
-      </ul>
-    </section>
-
-    <section class="profile-section">
-      <h2>Who</h2>
-      <p>Ryan (Otterdays). Developer. You can find me on <a href="https://github.com/Otterdays"
-          rel="noopener noreferrer" target="_blank">GitHub</a>.</p>
-    </section>
     <!-- Site Footer -->
     <footer class="site-footer">
       <div class="site-stats">
@@ -203,6 +156,8 @@
   <script src="js/theme.js"></script>
   <script src="js/search-data.js" defer></script>
   <script src="js/search.js" defer></script>
+  <script src="js/updates-data.js" defer></script>
+  <script src="js/updates.js" defer></script>
 </body>
 
 </html>

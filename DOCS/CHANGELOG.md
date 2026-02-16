@@ -4,6 +4,10 @@ All notable changes to this project are documented in this file. Format: [Keep a
 
 ## [Unreleased]
 
+### Added
+- **Updates page:** New dedicated changelog page (`updates.html`) with vertical timeline, glass cards, type badges (Added/Changed/Fixed/Removed), scroll-driven fade-in via IntersectionObserver; `js/updates-data.js`, `js/updates.js`; sidebar nav between Skills and About; version badge now links to updates; search index entry.
+- **Content:** shoo.dev (Tools Auth), Squoosh (Tools Reference), T3 Chat (chats), T3 Canvas (media), theo gg (About Inspirations, Companies T3 section); search index entries.
+
 ## [1.8.2] - 2026-02-16
 
 ### Added

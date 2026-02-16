@@ -4,13 +4,14 @@
 **Blockers:** None.
 
 **Last 5 actions:**
-1. **Collapsible:** Extended to tools, specials, skills, media via `js/collapsible.js`; fixed multi-child grid bug (wrapper inner div); compact layout.
-2. **Search:** Companies panel auto-expand when landing from search; prefer section header over product cards (e.g. OpenAI not Azure OpenAI); category labels (Company, Chat, Tool); close modal on result click.
-3. **Media:** Emoji accents (🎬 🖼️ 🎵 📦) and section title box styling (left accent border, subtle background).
-4. **Country badges:** Refactored badges site-wide — full names, top-right pill on cards; tighter wrap; companies page badge smaller.
-5. **Modernization:** Implemented CSS `animation-timeline: scroll()` for the progress bar (removing JS) and applied `text-wrap: balance` to headings for 2025 typography standards.
+1. **Updates page:** New updates.html with vertical timeline, glass cards, type badges (Added/Changed/Fixed/Removed); js/updates-data.js, js/updates.js; version badge now links to updates; sidebar nav + search index.
+2. **Content:** T3 (theo gg) section on companies.html; shoo, Squoosh, T3 Chat, T3 Canvas, Inspirations (About); search index updated.
+3. **Collapsible:** Extended to tools, specials, skills, media via `js/collapsible.js`; fixed multi-child grid bug (wrapper inner div); compact layout.
+4. **Search:** Companies panel auto-expand when landing from search; prefer section header over product cards (e.g. OpenAI not Azure OpenAI); category labels (Company, Chat, Tool); close modal on result click.
+5. **Media:** Emoji accents (🎬 🖼️ 🎵 📦) and section title box styling (left accent border, subtle background).
 
 **Latest structural changes (2026-02-16):**
+- **Updates page:** New dedicated changelog page (updates.html) with timeline rail, glass cards, scroll-driven fade-in; version badge links to updates; 11 pages site-wide.
 - **Collapsible:** Shared `js/collapsible.js` for companies, tools, specials, skills, media; body class `collapsible-pages`; `companies.js` now only adds country badges.
 - **Search:** Expand matching panel on collapsible pages; prefer company section header; category labels; close modal on click/Enter.
 
