@@ -5,12 +5,22 @@ All notable changes to this project are documented in this file. Format: [Keep a
 ## [Unreleased]
 
 ### Added
+- **A-Z Filter Bar:** Sticky filter bar on collapsible pages (companies, tools, specials, skills, media); filter sections by first letter; All | # | A–Z pills; glassmorphism styling; sessionStorage persistence; `js/filter.js`, `.filter-bar` in style.css.
+- **Tools:** New section “Coding plans” — subscription/API plans that plug into existing IDEs & CLIs; first entry: Z.ai GLM Coding Plan (z.ai/subscribe; GLM-5 & GLM-4.7 for Cursor, Claude Code, Cline, Kilo Code, Roo Code, Crush, Gemini CLI, etc.; Lite/Pro/Max, MCP); tools.html, companies.html Zhipu AI, search-data.js, badges.js.
+- **Tools:** Gemini CLI dual-link — official site (geminicli.com) + GitHub repo (github.com/google-gemini/gemini-cli); second card “Gemini CLI GitHub” (94k+ stars, Apache 2.0); tools.html, companies.html, search-data.js, badges.js.
 - **Tools:** Z Code (IDE; zcode-ai.com — simple, fast, vibe-ready AI agent; plan, code, review, deploy); Ghostty (Terminal; ghostty.org — GPU-accelerated, cross-platform terminal emulator); new Terminal section in tools.html; companies.html, search-data.js, badges.js updated.
 - **A11y & QoL:** Reduced motion mode (`@media prefers-reduced-motion`); skip-to-content link + `id="main"` on all 11 pages; `:focus-visible` ring on interactive elements; auto dark/light mode (system preference default in theme.js); print-friendly CSS (hide sidebar, show URLs); sitemap.xml (11 pages); footer "Source" link to GitHub on all pages.
 - **Content:** About "Pages at a glance" now includes Updates; duplicate Inspirations entry removed from search-data.js.
 - **Stagger:** About page profile-sections now use stagger-1 through stagger-5 for entrance animation.
 - **Updates page:** New dedicated changelog page (`updates.html`) with vertical timeline, glass cards, type badges (Added/Changed/Fixed/Removed), scroll-driven fade-in via IntersectionObserver; `js/updates-data.js`, `js/updates.js`; sidebar nav between Skills and About; version badge now links to updates; search index entry.
 - **Content:** shoo.dev (Tools Auth), Squoosh (Tools Reference), T3 Chat (chats), T3 Canvas (media), theo gg (About Inspirations, Companies T3 section); search index entries.
+
+### Changed
+- **A-Z Filter Bar:** Click the active letter again to clear the filter and show all sections (QoL).
+- **Tools:** Desktop Tools sections sorted A–Z (Auth, Browser AI, Browser Tools, CLI, Codebase & research, Coding Assistants, Coding plans, DevOps & containers, Game development, IDE, Local LLM runtimes, Reference, Terminal, Tunneling, Voice & speech-to-text, Web builders).
+
+### Fixed
+- **A-Z Filter Bar:** Filtered-out sections now hide correctly on collapsible pages (CSS specificity: `.collapsible-pages .profile-section.filter-hidden` overrides grid display).
 
 ## [1.8.2] - 2026-02-16
 

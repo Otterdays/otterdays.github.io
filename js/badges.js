@@ -62,11 +62,11 @@
         'Llama': USA, 'Manus': USA, 'Meta AI': USA, 'Azure OpenAI': USA, 'Copilot': USA,
         'GitHub Copilot': USA, 'Grok': USA, 'Le Chat': FR, 'Mistral Vibe': FR, 'Amazon Nova': USA,
         'AWS Bedrock': USA, 'Qwen': CN, 'Qwen Code': CN, 'DeepSeek Chat': CN, 'Kimi': CN,
-        'Kimi Code CLI': CN, 'IBM Granite': USA, 'Project Bob': USA, 'Z.ai': CN, 'Poe': USA,
+        'Kimi Code CLI': CN, 'IBM Granite': USA, 'Project Bob': USA, 'Z.ai': CN, 'Z.ai GLM Coding Plan': CN, 'GLM Coding Plan': CN, 'Poe': USA,
         'Squarespace AI': USA, 'OpenClaw': USA, 'Moltbook': USA, 'Kiro': USA,
         /* Google products (all US) */
         'AI Studio': USA, 'Android Studio': USA, 'Antigravity': USA, 'Firebase': USA,
-        'Flow': USA, 'Gemini': USA, 'Gemini CLI': USA, 'Google Labs': USA, 'Jules': USA,
+        'Flow': USA, 'Gemini': USA, 'Gemini CLI': USA, 'Gemini CLI GitHub': USA, 'Google Labs': USA, 'Jules': USA,
         'NotebookLM': USA, 'Opal': USA, 'Pomelli': USA, 'Google Antigravity': USA,
         'Google AI Studio': USA, 'Google Flow': USA, 'Firebase Studio': USA,
         /* OpenAI / Microsoft (US) */
