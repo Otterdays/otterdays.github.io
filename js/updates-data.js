@@ -7,7 +7,7 @@ const UPDATES_DATA = [
     version: "Unreleased",
     date: "TBD",
     sections: [
-      { type: "added", items: ["Content: shoo.dev (Tools Auth), Squoosh (Tools Reference), T3 Chat (chats), T3 Canvas (media), theo gg (About Inspirations, Companies T3 section); search index entries."] }
+      { type: "added", items: ["A11y & QoL: Reduced motion mode, skip-to-content link, :focus-visible ring, auto dark/light (system preference), print-friendly CSS, sitemap.xml, footer Source link.", "Content: shoo.dev (Tools Auth), Squoosh (Tools Reference), T3 Chat (chats), T3 Canvas (media), theo gg (About Inspirations, Companies T3 section); search index entries.", "About: Pages at a glance now includes Updates; duplicate Inspirations removed from search.", "Stagger: About profile-sections use stagger-1 through stagger-5 for entrance animation."] }
     ]
   },
   {

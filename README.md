@@ -19,7 +19,8 @@
 | 🔍 **Unified Search** | Cmd/Ctrl+K, fuzzy matching, keyboard navigation |
 | 📱 **Responsive** | Mobile-first design with glassmorphism effects |
 | ⚡ **Performance** | No build step, pure HTML/CSS/JS |
-| 🔗 **SEO Ready** | Open Graph, meta descriptions, canonical URLs |
+| 🔗 **SEO Ready** | Open Graph, meta descriptions, canonical URLs, sitemap.xml |
+| ♿ **A11y** | Skip-to-content, :focus-visible, reduced motion, print-friendly CSS |
 
 ---
 
@@ -35,6 +36,7 @@
 | `tools.html` | Developer tools (CLI, IDE, browser) |
 | `specials.html` | Free & special services (e.g. free domains) |
 | `skills.html` | Skills/Tools: Cursor & Antigravity agentic tools, MCPs, SkillBox, Skills directory |
+| `updates.html` | Version history, new features, fixes, and changes |
 | `about.html` | About this site: projects, tools, and link policy |
 | `404.html` | Custom error page |
 
@@ -49,6 +51,8 @@
 ├── js/companies.js         # Section minimization (companies page only)
 ├── js/search-data.js       # Search index
 ├── js/search.js            # Search modal, fuzzy match, keyboard nav
+├── js/updates-data.js      # Update log data
+├── js/updates.js           # Updates page renderer
 ├── fetch-github-repos.js   # Optional: fetch repos → repos.md
 ├── images/                 # Favicon & images
 └── DOCS/                   # Documentation (SCRATCHPAD, SUMMARY, CHANGELOG, etc.)

@@ -12,10 +12,15 @@
 - **Collapsible sections:** Companies, Tools, Specials, Skills, Media Gen — collapsible panes with toggle, minimized by default (`js/collapsible.js`).
 - **Responsive:** Mobile-first, glassmorphism; 6-wide project grid.
 - **Scroll progress:** Thin bar at top fills left-to-right as you scroll (`js/theme.js`, `css/style.css`).
+- **A11y & QoL:** Reduced motion mode, skip-to-content link, :focus-visible ring, auto dark/light (system preference), print-friendly CSS, sitemap.xml, footer Source link.
 - **Gradient titles:** Home and profile page titles use theme-aware gradient text (fg→accent).
-- **Pages (10):** Home, Programs (~60+ projects), AI Chats, Media Gen, Companies (56+ companies, collapsible), Tools (CLI/IDE/Web builders/Browser, alphabetical), Specials, Skills/Tools (Cursor & Antigravity agentic tools, MCPs, SkillBox, Skills directory — React/Testing/Git), About, 404.
+- **Pages (11):** Home, Programs (~60+ projects), AI Chats, Media Gen, Companies (78+ companies, collapsible), Tools (CLI/IDE/Web builders/Browser, alphabetical), Specials, Skills/Tools (Cursor & Antigravity agentic tools, MCPs, SkillBox, Skills directory — React/Testing/Git), Updates (version history), About, 404.
 
-**Recent content (2026-02-04):**
+**Recent (2026-02-16):**
+- **Patch 2 (1–10):** Reduced motion, skip link, focus-visible, auto dark/light, print CSS, sitemap.xml, footer Source, About Updates, Inspirations dedup, stagger on About.
+- **Updates page:** Dedicated changelog (updates.html) with timeline, glass cards, type badges.
+
+**Previous content (2026-02-04):**
 - **AI Chats:** Sup AI (multi-model orchestration, research-grade accuracy); Lumio AI, WebLLM Chat, Chat LLM, Higgsfield Assist in provider hubs.
 - **Media:** Higgsfield (video & image); Agent Opus (article/script to video, motion design).
 - **Companies:** Biela, Squarespace, Sup AI, Vibecode, Wix; Cloudflare AI link in Cloudflare; Agent Opus, Anything, Builder, Emergent, Lumio AI, Higgsfield; collapsible panels (minimized by default).
