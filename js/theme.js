@@ -11,7 +11,8 @@
   var btn = document.getElementById('theme-btn');
   var dropdown = document.getElementById('theme-dropdown');
   var label = document.getElementById('theme-label');
-  var savedTheme = localStorage.getItem(KEY) || 'dark';
+  var savedTheme = localStorage.getItem(KEY) ||
+    (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
 
   var labels = {
     // Core
@@ -147,8 +148,8 @@
     }
   });
 
-  // Apply saved theme on load
-  apply(localStorage.getItem(KEY));
+  // Apply saved theme on load (localStorage overrides system preference)
+  apply(localStorage.getItem(KEY) || savedTheme);
 
   /**
    * Unified Card Effects (Spotlight + 3D Tilt)

@@ -1,5 +1,7 @@
 # 🚀 Improvement Plans
 
+*Refreshed 2026-02: Collapsible, Staggered entrance, Changelog page, and "Collapsible on other pages" marked done.*
+
 ## Visual Polish
 - [x] **Card hover micro-animations**
   - **Difficulty:** 1/5
@@ -13,9 +15,9 @@
 - [x] **Custom scrollbar styling**
   - **Difficulty:** 1/5
   - **Trace:** `css/style.css` (Target `::-webkit-scrollbar`)
-- [ ] **Staggered entrance animations**
+- [x] **Staggered entrance animations**
   - **Difficulty:** 2/5
-  - **Trace:** `css/style.css` (Animations), `HTML files` (Stagger delay classes)
+  - **Trace:** `css/style.css` (Animations), `HTML files` (Stagger delay classes). Partially: stagger classes used on Home, 404; update cards use IntersectionObserver fade-in.
 
 ## UX & Navigation
 - [ ] **Keyboard navigation for cards**
@@ -27,9 +29,9 @@
 - [ ] **Breadcrumb / "You are here"**
   - **Difficulty:** 1/5
   - **Trace:** `HTML files` (Navigation component), `css/style.css`
-- [ ] **Collapsible sections**
+- [x] **Collapsible sections**
   - **Difficulty:** 3/5
-  - **Trace:** `js/main.js` (Toggle logic), `css/style.css` (Transitions)
+  - **Trace:** `js/collapsible.js` (shared), `css/style.css` (transitions); Companies, Tools, Specials, Skills, Media.
 - [ ] **Quick filter chips**
   - **Difficulty:** 4/5
   - **Trace:** `js/search.js` (Filtering logic), `HTML pages` (UI component)
@@ -85,13 +87,13 @@
 
 **Themes**
 - [ ] **Auto dark/light** — `prefers-color-scheme` in theme.js; default to system, still allow manual override (localStorage).
-- [ ] **Theme preview on hover** — In the theme dropdown, hovering an option briefly applies that theme; click to confirm (reduces misclicks).
+- [x] **Theme preview on hover** — In the theme dropdown, hovering an option briefly applies that theme; click to confirm (reduces misclicks).
 - [ ] **More themes** — Catppuccin, Tokyo Night, One Dark, Rose Pine; or seasonal (e.g. Halloween, Winter) if you like variety.
 - [ ] **Theme transition animation** — As above; smooth flip instead of instant swap.
 
 **Links & content**
 - [ ] **About: "How to add a link"** — One short paragraph + link to CONTENT_GUIDE or a short inline checklist (add to HTML, add to search, add company if new).
-- [ ] **About: Changelog teaser** — "Recent changes" with 3–5 bullets from CHANGELOG (manual or script); link to full changelog if you add a changelog page.
+- [ ] **About: Changelog teaser** — "Recent changes" with 3–5 bullets from CHANGELOG (manual or script). Dedicated Updates page exists; optional teaser on About still possible.
 - [ ] **Footer: Repo / Edit on GitHub** — Link to GitHub repo (e.g. "Source" or "Edit this page") so devs can find the repo.
 - [ ] **Footer: RSS** — If you ever add a blog or "Recently added" feed, an RSS link in the footer.
 - [ ] **404: Suggested links** — "Try: Home, Programs, Tools" or a few popular pages so 404 isn’t a dead end.
@@ -111,7 +113,7 @@
 **SEO & meta**
 - [ ] **JSON-LD** — Person or WebSite schema on index/about so search engines understand the site.
 - [ ] **OG image per section** — Different `og:image` for Programs vs Tools vs About (optional; current single image is fine).
-- [ ] **Sitemap** — `sitemap.xml` listing all 10 pages for crawlers (static list is enough).
+- [ ] **Sitemap** — `sitemap.xml` listing all 11 pages for crawlers (static list is enough).
 
 **Docs & maintenance**
 - [ ] **STYLE_GUIDE: Programs order** — "Keep project cards A–Z by `.project-title`; featured block stays at top."
@@ -119,7 +121,7 @@
 - [ ] **Link checker** — Occasional script or CI step to `fetch` key URLs and report broken links (optional).
 
 **Optional biggers**
-- [ ] **Changelog page** — Dedicated page that renders CHANGELOG.md or a short "Recent" list; link from About and version badge.
+- [x] **Changelog page** — Done: `updates.html` + `js/updates-data.js`, `js/updates.js`; version badge links to updates.
 - [ ] **Dark/light toggle in nav** — In addition to full theme switcher, a single "Dark / Light" flip for quick switch.
-- [ ] **Collapsible sections on other pages** — Reuse companies-style collapsible on Chats/Media/Tools sections (optional; adds complexity).
+- [x] **Collapsible sections on other pages** — Done: collapsible reused on Tools, Specials, Skills, Media via `collapsible.js`.
 - [ ] **Quick filter chips on Programs** — Filter by tag (Game, Music, TypeScript, etc.) without leaving the page.

@@ -4,7 +4,7 @@
 **Blockers:** None.
 
 **Last 5 actions:**
-1. **Updates page:** New updates.html with vertical timeline, glass cards, type badges (Added/Changed/Fixed/Removed); js/updates-data.js, js/updates.js; version badge now links to updates; sidebar nav + search index.
+1. **Patch 2 (1–10):** Reduced motion, skip link, focus-visible, auto dark/light, print CSS, sitemap.xml, footer Source, About Updates, Inspirations dedup, stagger on About.
 2. **Content:** T3 (theo gg) section on companies.html; shoo, Squoosh, T3 Chat, T3 Canvas, Inspirations (About); search index updated.
 3. **Collapsible:** Extended to tools, specials, skills, media via `js/collapsible.js`; fixed multi-child grid bug (wrapper inner div); compact layout.
 4. **Search:** Companies panel auto-expand when landing from search; prefer section header over product cards (e.g. OpenAI not Azure OpenAI); category labels (Company, Chat, Tool); close modal on result click.

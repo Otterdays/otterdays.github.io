@@ -5,6 +5,9 @@ All notable changes to this project are documented in this file. Format: [Keep a
 ## [Unreleased]
 
 ### Added
+- **A11y & QoL:** Reduced motion mode (`@media prefers-reduced-motion`); skip-to-content link + `id="main"` on all 11 pages; `:focus-visible` ring on interactive elements; auto dark/light mode (system preference default in theme.js); print-friendly CSS (hide sidebar, show URLs); sitemap.xml (11 pages); footer "Source" link to GitHub on all pages.
+- **Content:** About "Pages at a glance" now includes Updates; duplicate Inspirations entry removed from search-data.js.
+- **Stagger:** About page profile-sections now use stagger-1 through stagger-5 for entrance animation.
 - **Updates page:** New dedicated changelog page (`updates.html`) with vertical timeline, glass cards, type badges (Added/Changed/Fixed/Removed), scroll-driven fade-in via IntersectionObserver; `js/updates-data.js`, `js/updates.js`; sidebar nav between Skills and About; version badge now links to updates; search index entry.
 - **Content:** shoo.dev (Tools Auth), Squoosh (Tools Reference), T3 Chat (chats), T3 Canvas (media), theo gg (About Inspirations, Companies T3 section); search index entries.
 

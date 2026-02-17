@@ -69,3 +69,11 @@ Here's my full list, organized by effort. I cross-referenced your `improvement.p
 ---
 
 That's 25 items across the spectrum. The first 9 are low-hanging fruit you could knock out fast; the middle tier adds real user-facing polish; the bigger ones are "when you feel like it" projects.
+
+---
+
+**Done:** #25 — improvement.plans.md refreshed (collapsible, stagger, changelog page, optional biggers; backlog consistency; sitemap 11 pages).
+
+**Done:** #24 — Top bar inline styles moved to `.top-bar` CSS class; 11 HTML files updated; layout centralized in `css/style.css`.
+
+**Done:** Patch 2 items 1–10 — Reduced motion, skip link, focus-visible, auto dark/light, print CSS, sitemap.xml, footer Source link, About Updates, duplicate Inspirations removed, stagger on About.
