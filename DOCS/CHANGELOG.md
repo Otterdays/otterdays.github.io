@@ -5,6 +5,7 @@ All notable changes to this project are documented in this file. Format: [Keep a
 ## [Unreleased]
 
 ### Added
+- **Tools:** Z Code (IDE; zcode-ai.com — simple, fast, vibe-ready AI agent; plan, code, review, deploy); Ghostty (Terminal; ghostty.org — GPU-accelerated, cross-platform terminal emulator); new Terminal section in tools.html; companies.html, search-data.js, badges.js updated.
 - **A11y & QoL:** Reduced motion mode (`@media prefers-reduced-motion`); skip-to-content link + `id="main"` on all 11 pages; `:focus-visible` ring on interactive elements; auto dark/light mode (system preference default in theme.js); print-friendly CSS (hide sidebar, show URLs); sitemap.xml (11 pages); footer "Source" link to GitHub on all pages.
 - **Content:** About "Pages at a glance" now includes Updates; duplicate Inspirations entry removed from search-data.js.
 - **Stagger:** About page profile-sections now use stagger-1 through stagger-5 for entrance animation.

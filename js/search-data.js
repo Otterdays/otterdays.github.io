@@ -184,6 +184,8 @@ var SEARCH_DATA = [
     { title: "Abacus AI Deep Agent", desc: "General agent: build apps, reports, presentations; connect to systems, agentic tasks.", category: "tool", tags: ["Agent", "Apps", "Abacus.AI"], url: "tools.html" },
     { title: "Cursor", desc: "AI-first code editor built on VS Code.", category: "tool", tags: ["IDE", "AI", "VS Code"], url: "tools.html" },
     { title: "Windsurf", desc: "AI coding IDE; Cascade agent, Tab autocomplete, MCP, JetBrains plugin.", category: "tool", tags: ["IDE", "AI", "Cascade"], url: "tools.html" },
+    { title: "Z Code", desc: "Simple, fast, vibe-ready AI agent; plan, code, review, deploy with your existing tools.", category: "tool", tags: ["IDE", "Agent", "AI"], url: "tools.html" },
+    { title: "Ghostty", desc: "Fast, feature-rich, cross-platform terminal; GPU acceleration, native UI.", category: "tool", tags: ["Terminal", "GPU", "Cross-platform"], url: "tools.html" },
     { title: "Zed", desc: "High-performance code editor with AI built-in.", category: "tool", tags: ["IDE", "Performance", "Rust"], url: "tools.html" },
     { title: "GitHub Copilot", desc: "AI pair programmer in your IDE.", category: "tool", tags: ["AI", "Coding", "GitHub"], url: "tools.html" },
     { title: "Aider", desc: "AI pair programming in your terminal.", category: "tool", tags: ["CLI", "AI", "Terminal"], url: "tools.html" },

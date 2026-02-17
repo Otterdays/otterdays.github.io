@@ -4,7 +4,8 @@
 **Blockers:** None.
 
 **Last 5 actions:**
-1. **Patch 2 (1–10):** Reduced motion, skip link, focus-visible, auto dark/light, print CSS, sitemap.xml, footer Source, About Updates, Inspirations dedup, stagger on About.
+1. **Tools:** Added Z Code (IDE) and Ghostty (Terminal); new Terminal section in tools.html; companies.html, search-data.js, badges.js updated.
+2. **Patch 2 (1–10):** Reduced motion, skip link, focus-visible, auto dark/light, print CSS, sitemap.xml, footer Source, About Updates, Inspirations dedup, stagger on About.
 2. **Content:** T3 (theo gg) section on companies.html; shoo, Squoosh, T3 Chat, T3 Canvas, Inspirations (About); search index updated.
 3. **Collapsible:** Extended to tools, specials, skills, media via `js/collapsible.js`; fixed multi-child grid bug (wrapper inner div); compact layout.
 4. **Search:** Companies panel auto-expand when landing from search; prefer section header over product cards (e.g. OpenAI not Azure OpenAI); category labels (Company, Chat, Tool); close modal on result click.

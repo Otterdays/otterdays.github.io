@@ -73,7 +73,7 @@
         'OpenAI Codex': USA, 'OpenAI Codex CLI': USA,
         /* Other products by company */
         'Zencoder': USA, 'Augment Code': USA, 'Augment CLI': USA, 'IBM Project Bob': USA,
-        'Windsurf': USA, 'Amazon Q Developer': USA, 'CodeGPT': USA, 'Sourcegraph Cody': USA,
+        'Windsurf': USA, 'Z Code': USA, 'Ghostty': USA, 'Amazon Q Developer': USA, 'CodeGPT': USA, 'Sourcegraph Cody': USA,
         'Cline CLI': USA, 'Hostinger Horizons': { flag: '\uD83C\uDDF1\uD83C\uDDF9', label: 'Lithuania' },
         'Lovable': USA, 'v0': USA, 'Jan': USA, 'Msty': USA, 'NVIDIA ChatRTX': USA,
         'Open WebUI': USA, 'Brave Leo': USA, 'Dia Browser': USA, 'Abacus AI Deep Agent': USA,
