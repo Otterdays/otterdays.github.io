@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inspirations | Otterdays</title>
+  <meta name="description" content="People and creators who influence what I build and share — game dev, tools, and beyond.">
+  <meta name="keywords" content="inspirations, Brackeys, game dev, tutorials, Otterdays">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://otterdays.github.io/inspirations.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .inspirations-page .inspiration-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 1.5rem;
+    }
+    .inspiration-card {
+      background: var(--glass);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: slideInRight 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    }
+    .inspiration-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+    }
+    .inspiration-banner {
+      height: 100px;
+      background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 40%, #ec4899 70%, #f97316 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .inspiration-banner span {
+      font-family: var(--font-heading, 'Space Grotesk', sans-serif);
+      font-weight: 700;
+      font-size: 1.1rem;
+      letter-spacing: 0.08em;
+      color: rgba(255, 255, 255, 0.95);
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    }
+    .inspiration-body {
+      padding: 1.25rem 1.5rem;
+    }
+    .inspiration-avatar {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      margin: -36px auto 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 3px solid var(--glass);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+      font-family: var(--font-heading, 'Space Grotesk', sans-serif);
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #fff;
+    }
+    .inspiration-avatar--fallback {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .inspiration-name {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin: 0.75rem 0 0.25rem;
+      color: var(--fg);
+    }
+    .inspiration-role {
+      font-size: 0.8rem;
+      color: var(--accent);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .inspiration-desc {
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.5;
+      margin: 0.75rem 0 1rem;
+    }
+    .inspiration-stats {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+    .inspiration-stats span {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .inspiration-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+    .inspiration-tag {
+      padding: 0.2rem 0.5rem;
+      font-size: 0.7rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--muted);
+    }
+    .inspiration-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .inspiration-link:hover {
+      opacity: 0.9;
+      transform: scale(1.02);
+    }
+    .inspiration-link:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+
+<body class="inspirations-page" data-theme="dark">
+  <a href="#main" class="skip-link">Skip to content</a>
+  <nav class="sidebar">
+    <a href="index.html" title="Home"><span class="sidebar-icon">🏠</span><span class="sidebar-text">Home</span></a>
+    <a href="programs.html" title="Programs"><span class="sidebar-icon">🎮</span><span class="sidebar-text">Programs</span></a>
+    <a href="chats.html" title="AI Chats"><span class="sidebar-icon">💬</span><span class="sidebar-text">AI Chats</span></a>
+    <a href="museum.html" title="AI Museum"><span class="sidebar-icon">🏛️</span><span class="sidebar-text">AI Museum</span></a>
+    <a href="media.html" title="Media Gen"><span class="sidebar-icon">🎨</span><span class="sidebar-text">Media Gen</span></a>
+    <a href="companies.html" title="Companies"><span class="sidebar-icon">🏢</span><span class="sidebar-text">Companies</span></a>
+    <a href="tools.html" title="Tools"><span class="sidebar-icon">🛠️</span><span class="sidebar-text">Tools</span></a>
+    <a href="specials.html" title="Specials"><span class="sidebar-icon">⭐</span><span class="sidebar-text">Specials</span></a>
+    <a href="skills.html" title="Skills"><span class="sidebar-icon">🧠</span><span class="sidebar-text">Skills</span></a>
+    <a href="updates.html" title="Updates"><span class="sidebar-icon">📋</span><span class="sidebar-text">Updates</span></a>
+    <a href="explore.html" title="Explore Data"><span class="sidebar-icon">📊</span><span class="sidebar-text">Explore</span></a>
+    <a href="inspirations.html" class="active" title="Inspirations"><span class="sidebar-icon">✨</span><span class="sidebar-text">Inspirations</span></a>
+    <a href="about.html" title="About"><span class="sidebar-icon">👤</span><span class="sidebar-text">About</span></a>
+  </nav>
+
+  <main class="content" id="main">
+    <div class="top-bar">
+      <a href="updates.html" class="version-badge" title="Version 1.8.6 – Click for details">
+        <span class="version-badge-icon">🎮</span>
+        <span class="version-badge-text">v1.8.6</span>
+      </a>
+      <button type="button" class="search-trigger" id="search-trigger" aria-label="Search site">
+        <span class="search-trigger-icon" aria-hidden="true">🔍</span>
+        <span class="search-trigger-text">Search</span>
+        <span class="search-trigger-kbd"><kbd>⌘</kbd><kbd>K</kbd></span>
+      </button>
+      <div class="theme-switcher">
+        <button type="button" class="theme-btn" id="theme-btn" aria-label="Change theme" aria-expanded="false" aria-haspopup="true">
+          <span class="theme-btn-icon" aria-hidden="true">◐</span>
+          <span class="theme-btn-label" id="theme-label">Dark</span>
+          <span class="theme-btn-arrow">▼</span>
+        </button>
+        <div class="theme-dropdown" id="theme-dropdown" role="menu" hidden></div>
+      </div>
+    </div>
+
+    <header class="profile-header">
+      <h1 class="profile-title">Inspirations</h1>
+      <p class="profile-handle">People and creators who influence what I build and share</p>
+    </header>
+
+    <section class="profile-section">
+      <div class="inspiration-grid">
+        <article class="inspiration-card">
+          <div class="inspiration-banner">
+            <span>GAME DEV TUTORIALS</span>
+          </div>
+          <div class="inspiration-avatar inspiration-avatar--fallback" aria-hidden="true">B</div>
+          <div class="inspiration-body">
+            <h2 class="inspiration-name">Brackeys</h2>
+            <p class="inspiration-role">Game Developer</p>
+            <p class="inspiration-desc">Learn how to make video games. Tutorials on Godot, Unity, 3D, VFX, lighting, GDScript — and free assets. &ldquo;Hello everyone!&rdquo;</p>
+            <div class="inspiration-stats">
+              <span>📺 1.92M subscribers</span>
+              <span>🎬 470 videos</span>
+            </div>
+            <div class="inspiration-tags">
+              <span class="inspiration-tag">Godot</span>
+              <span class="inspiration-tag">Unity</span>
+              <span class="inspiration-tag">Tutorials</span>
+              <span class="inspiration-tag">Free Assets</span>
+              <span class="inspiration-tag">Game Jam</span>
+            </div>
+            <a href="https://www.youtube.com/@Brackeys" rel="noopener noreferrer" target="_blank" class="inspiration-link">
+              Watch on YouTube →
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="site-stats">
+        <div class="stat-item" title="Indexed items"><span class="stat-icon">🔍</span> 100+ items</div>
+        <div class="stat-item" title="Pages"><span class="stat-icon">📄</span> 14 pages</div>
+        <div class="stat-item" title="Companies listed"><span class="stat-icon">🏢</span> 78+ companies</div>
+      </div>
+      <div class="site-copy">
+        &copy; 2026 Ryan Otterdays. Maintained with ❤️. <a href="https://github.com/Otterdays/otterdays.github.io" rel="noopener noreferrer" target="_blank">Source</a>
+      </div>
+    </footer>
+  </main>
+
+  <button type="button" class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top">↑</button>
+
+  <div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Site search" hidden>
+    <div class="search-modal" id="search-modal">
+      <div class="search-header">
+        <span class="search-icon">🔍</span>
+        <input type="text" class="search-input" id="search-input" placeholder="Search projects, tools, companies..." autocomplete="off" autocapitalize="off" spellcheck="false">
+        <button type="button" class="search-close" id="search-close" aria-label="Close search">ESC</button>
+      </div>
+      <div class="search-meta">
+        <span class="search-count" id="search-count"></span>
+        <div class="search-hints">
+          <span class="search-hint"><kbd>↑↓</kbd> Navigate</span>
+          <span class="search-hint"><kbd>↵</kbd> Select</span>
+          <span class="search-hint"><kbd>ESC</kbd> Close</span>
+        </div>
+      </div>
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+
+  <script src="js/theme.js"></script>
+  <script src="js/qol.js"></script>
+  <script src="js/search-data.js" defer></script>
+  <script src="js/search.js" defer></script>
+</body>
+
+</html>

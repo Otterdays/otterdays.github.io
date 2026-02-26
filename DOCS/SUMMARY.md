@@ -28,6 +28,8 @@
 - **Skills:** Antigravity agentic tools (capabilities list), SkillBox, Skills directory (React, Testing, Git).
 - **Search:** Index updated for all new links (chats, media, companies, tools, skills).
 
+**Docs:** `DOCS/journal/` — dated journal entries (e.g. 2026-02-25). Tools Reference: 11 AI research/papers sites + AI Tools Directory, Marketer Milk (26 best AI marketing tools), Read AI, Saner.AI, Gamma, Grammarly. Current version v1.8.6.
+
 **Quick links:**
 - [SCRATCHPAD](SCRATCHPAD.md) — active tasks, blockers, last 5 actions
 - [CONTENT_GUIDE](CONTENT_GUIDE.md) — how to add content and update search

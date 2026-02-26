@@ -2131,6 +2131,13 @@ body {
   border-radius: 4px;
 }
 
+.site-clock {
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+  opacity: 0.85;
+}
+
 /* === VERSION BADGE (Game-style) === */
 .version-badge {
   position: fixed;

@@ -5,6 +5,22 @@ All notable changes to this project are documented in this file. Format: [Keep a
 ## [Unreleased]
 
 ### Added
+- (Future updates.)
+
+## [1.8.6] - 2026-02-25
+
+### Added
+- **Tools (Reference):** AI Tools Directory (aitoolsdirectory.com), Marketer Milk — 26 best AI marketing tools (marketermilk.com/blog/ai-marketing-tools), Read AI (meeting copilot; Zoom, Meet, Teams; Search Copilot), Saner.AI (AI personal assistant for ADHD), Gamma (presentations, documents, websites from prompts), Grammarly (writing assistant); search index updated.
+
+## [1.8.5] - 2026-02-25
+
+### Added
+- **Tools (Reference):** AI research & papers — Connected Papers, Consensus, Elicit, Georgetown Library AI Tools (curated guide), Ithaka S+R GenAI Product Tracker, Keenious, Research Rabbit, scite, Scholarcy, Semantic Scholar, Undermind; all in Reference section A–Z; search index updated.
+- **DOCS:** New journal folder `DOCS/journal/` with entry `2026-02-25.md`.
+
+## [1.8.4] - 2026-02-25 (prior Unreleased content)
+
+### Added
 - **Tools (Coding Assistants):** Codeium (forever-free AI coding; completion, chat, 70+ languages), Continue (open-source; VS Code, JetBrains; model-agnostic).
 - **Tools (Reference):** MCP Directory (mcpserverdirectory.org; discover 10,000+ MCP servers).
 - **Media (Video):** Kling (Kuaishou; dynamic motion, API), LTX Video (Lightricks; 4K at 50fps, open-source).
@@ -32,6 +48,12 @@ All notable changes to this project are documented in this file. Format: [Keep a
 ## [1.8.4] - 2026-02-25
 
 ### Added
+- **Tools (Coding Assistants):** Codeium (forever-free AI coding), Continue (open-source; VS Code, JetBrains; model-agnostic).
+- **Tools (Reference):** MCP Directory (10,000+ MCP servers).
+- **Media (Video):** Kling (Kuaishou), LTX Video (Lightricks).
+- **Specials:** New section Free AI coding — Gemini Code Assist (free), p5js AI.
+- **Chats:** Llama 4 (Meta open-source multimodal).
+- **Companies:** Codeium (Codeium + Windsurf), Continue, Kuaishou (Kling), Lightricks (LTX Video).
 - **Tools (IDE):** IntelliJ IDEA (jetbrains.com/idea) — leading IDE for Java & Kotlin; JetBrains AI built-in.
 - **Tools (Debug & QA):** Jam (jam.dev) — one-click bug reports; auto-capture console, network, repro steps; instant replay; MCP.
 - **Tools (Web builders):** Builder.io GitHub (github.com/BuilderIO/builder) — SDKs, Figma to code, visual dev platform.
@@ -39,6 +61,7 @@ All notable changes to this project are documented in this file. Format: [Keep a
 - **Explore page:** Data viz (donut chart, bar chart, tag cloud); sidebar nav, search index, sitemap.
 - **QoL:** URL tooltips on chat cards; search hint on hover (⌘K); footer stats as links (items→search, pages→updates, companies→companies).
 - **Footer:** 13 pages (includes Explore); Mintlify link/description updated (llms.txt, MCP, intelligent docs).
+- **Coverage:** Aligns with LogRocket/JetBrains 2025-2026 AI dev rankings (Cursor, Windsurf, Copilot, v0, Bolt, JetBrains AI, Kimi Code, Claude Code, Antigravity).
 
 ### Changed
 - **Mintlify:** Description updated to Intelligent docs platform; built for humans & AI; llms.txt, MCP.

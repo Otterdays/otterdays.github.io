@@ -9,6 +9,42 @@
     injectCardTooltips();
     addSearchHint();
     enhanceFooterStats();
+    initLiveClock();
+  }
+
+  /** Live EST clock in footer */
+  function initLiveClock() {
+    var footer = document.querySelector('.site-footer');
+    if (!footer) return;
+
+    var clock = document.createElement('div');
+    clock.className = 'site-clock';
+    clock.setAttribute('aria-live', 'polite');
+    clock.setAttribute('aria-label', 'Current time in Eastern');
+    footer.appendChild(clock);
+
+    function tick() {
+      var now = new Date();
+      var timeStr = now.toLocaleTimeString('en-US', {
+        timeZone: 'America/New_York',
+        hour: 'numeric',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: true
+      });
+      var parts = now.toLocaleDateString('en-US', {
+        timeZone: 'America/New_York',
+        day: '2-digit',
+        month: 'short',
+        year: 'numeric'
+      }).split(/[\s,]+/);
+      var dateStr = parts.length >= 3 ? parts[1] + '-' + parts[0] + '-' + parts[2] : '';
+      var tzStr = now.toLocaleTimeString('en-US', { timeZone: 'America/New_York', timeZoneName: 'short' }).split(' ').pop() || 'EST';
+      clock.textContent = timeStr + ' ' + tzStr + ' · ' + dateStr;
+    }
+
+    tick();
+    setInterval(tick, 1000);
   }
 
   /** Add title="Open [Name] in new tab → domain.com" to external link cards */

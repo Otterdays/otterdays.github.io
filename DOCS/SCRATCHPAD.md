@@ -4,7 +4,9 @@
 **Blockers:** None.
 
 **Last 5 actions:**
-1. **Content batch:** Codeium, Continue (Tools); MCP Directory (Reference); Kling, LTX Video (Media); Free AI coding section — Gemini Code Assist, p5js AI (Specials); Llama 4 (Chats); Companies: Codeium, Continue, Kuaishou, Lightricks; search-data.js, badges.js, updates-data.js Unreleased, CHANGELOG, SCRATCHPAD.
+1. **Tools (Reference):** Added AI Tools Directory, Marketer Milk (26 best AI marketing tools), Read AI, Saner.AI, Gamma, Grammarly to tools.html; search-data.js; updates-data.js v1.8.6; CHANGELOG [1.8.6]; journal 2026-02-25; SCRATCHPAD.
+2. **Tools (Reference) + Docs:** Added 11 AI research tools (Connected Papers, Consensus, Elicit, Georgetown Library AI Tools, Ithaka S+R GenAI Tracker, Keenious, Research Rabbit, scite, Scholarcy, Semantic Scholar, Undermind) to tools.html; search-data.js entries; updates-data.js v1.8.5; DOCS/journal/2026-02-25.md; CHANGELOG [1.8.5]; SCRATCHPAD.
+2. **Content batch:** Codeium, Continue (Tools); MCP Directory (Reference); Kling, LTX Video (Media); Free AI coding section — Gemini Code Assist, p5js AI (Specials); Llama 4 (Chats); Companies: Codeium, Continue, Kuaishou, Lightricks; search-data.js, badges.js, updates-data.js Unreleased, CHANGELOG, SCRATCHPAD.
 2. **Version 1.8.3:** Unreleased → 1.8.3 (2026-02-25); updates-data.js new entry; version badge v1.8.3 on all 12 pages; CHANGELOG [1.8.3] added.
 2. **Tools (IDE/CLI/Assistants):** Added Aider, Claude Code, Open Interpreter (CLI), Zed (IDE), GitHub Copilot (Coding Assistants) to tools.html in A–Z order; Open Interpreter in search-data.js; CHANGELOG, SCRATCHPAD updated.
 3. **AI Museum page:** New `museum.html` — 12 exhibit display cases; 🏛️ nav link on all 12 sidebars; CHANGELOG updated.
