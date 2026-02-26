@@ -312,6 +312,7 @@ var SEARCH_DATA = [
     { title: "Skills directory", desc: "Discover skills by category: React, Testing, Git & workflows. npx skills find [query], skills.sh.", category: "page", tags: ["Skills", "Vercel", "React", "Testing", "Git", "find-skills"], url: "skills.html" },
     { title: "About", desc: "What this site is: projects and tools worth sharing. Every link is safe and direct.", category: "page", tags: ["About", "Site", "Links"], url: "about.html" },
     { title: "Updates", desc: "Site update log: version history, new features, fixes, and changes.", category: "page", tags: ["Updates", "Changelog", "Version"], url: "updates.html" },
+    { title: "Explore", desc: "Visual breakdown of all indexed data: categories, tags, and page distribution.", category: "page", tags: ["Data", "Visualization", "Stats", "Explore"], url: "explore.html" },
     { title: "Inspirations", desc: "People and projects that inspire: theo gg (shoo, T3 Chat, T3 Canvas).", category: "page", tags: ["Inspirations", "theo gg", "About"], url: "about.html" },
     { title: "Dev tips", desc: "Trigger mobile view in Chrome: F12 (or Cmd+Option+I on Mac), then Toggle Device Toolbar.", category: "page", tags: ["Dev", "Chrome", "F12", "Mobile", "Debug"], url: "about.html" }
 ];

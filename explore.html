@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Explore Data | Otterdays</title>
+  <meta name="description" content="Visual breakdown of all indexed data: categories, tags, and page distribution.">
+  <meta name="keywords" content="data, visualization, stats, explore, Otterdays">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://otterdays.github.io/explore.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .explore-page .explore-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; }
+    .explore-card { background: var(--glass); backdrop-filter: blur(12px); border: 1px solid var(--border); border-radius: 16px; padding: 1.5rem; animation: slideInRight 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
+    .explore-card h3 { margin: 0 0 1rem; font-size: 1.1rem; color: var(--accent); }
+    .explore-total { font-size: 3rem; font-weight: 700; background: linear-gradient(135deg, var(--fg), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .explore-donut { width: 200px; height: 200px; margin: 0 auto 1rem; border-radius: 50%; background: conic-gradient(var(--accent) 0% var(--p1), color-mix(in srgb, var(--accent) 70%, transparent) var(--p1) var(--p2), color-mix(in srgb, var(--accent) 50%, transparent) var(--p2) var(--p3), color-mix(in srgb, var(--accent) 30%, transparent) var(--p3) var(--p4), var(--border) var(--p4) 100%); }
+    .explore-bars { display: flex; flex-direction: column; gap: 0.6rem; }
+    .explore-bar-row { display: flex; align-items: center; gap: 0.75rem; }
+    .explore-bar-label { min-width: 90px; font-size: 0.85rem; }
+    .explore-bar-track { flex: 1; height: 20px; background: var(--card); border-radius: 10px; overflow: hidden; }
+    .explore-bar-fill { height: 100%; background: linear-gradient(90deg, var(--accent), color-mix(in srgb, var(--accent) 60%, transparent)); border-radius: 10px; transition: width 0.8s cubic-bezier(0.2, 0.8, 0.2, 1); }
+    .explore-bar-val { font-size: 0.8rem; color: var(--muted); min-width: 2ch; text-align: right; }
+    .explore-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .explore-tag { padding: 0.25rem 0.6rem; font-size: 0.75rem; background: var(--card); border: 1px solid var(--border); border-radius: 999px; transition: all 0.2s ease; }
+    .explore-tag:hover { border-color: var(--accent); color: var(--accent); }
+    .explore-tag--large { font-size: 0.95rem; }
+    .explore-tag--small { font-size: 0.65rem; opacity: 0.8; }
+    .explore-legend { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.75rem; }
+    .explore-legend-item { display: flex; align-items: center; gap: 0.35rem; font-size: 0.8rem; }
+    .explore-legend-dot { width: 8px; height: 8px; border-radius: 50%; }
+    .explore-hero { text-align: center; padding: 2rem 0; }
+  </style>
+</head>
+
+<body class="explore-page" data-theme="dark">
+  <a href="#main" class="skip-link">Skip to content</a>
+  <nav class="sidebar">
+    <a href="index.html" title="Home"><span class="sidebar-icon">🏠</span><span class="sidebar-text">Home</span></a>
+    <a href="programs.html" title="Programs"><span class="sidebar-icon">🎮</span><span class="sidebar-text">Programs</span></a>
+    <a href="chats.html" title="AI Chats"><span class="sidebar-icon">💬</span><span class="sidebar-text">AI Chats</span></a>
+    <a href="museum.html" title="AI Museum"><span class="sidebar-icon">🏛️</span><span class="sidebar-text">AI Museum</span></a>
+    <a href="media.html" title="Media Gen"><span class="sidebar-icon">🎨</span><span class="sidebar-text">Media Gen</span></a>
+    <a href="companies.html" title="Companies"><span class="sidebar-icon">🏢</span><span class="sidebar-text">Companies</span></a>
+    <a href="tools.html" title="Tools"><span class="sidebar-icon">🛠️</span><span class="sidebar-text">Tools</span></a>
+    <a href="specials.html" title="Specials"><span class="sidebar-icon">⭐</span><span class="sidebar-text">Specials</span></a>
+    <a href="skills.html" title="Skills"><span class="sidebar-icon">🧠</span><span class="sidebar-text">Skills</span></a>
+    <a href="updates.html" title="Updates"><span class="sidebar-icon">📋</span><span class="sidebar-text">Updates</span></a>
+    <a href="explore.html" class="active" title="Explore Data"><span class="sidebar-icon">📊</span><span class="sidebar-text">Explore</span></a>
+    <a href="about.html" title="About"><span class="sidebar-icon">👤</span><span class="sidebar-text">About</span></a>
+  </nav>
+
+  <main class="content" id="main">
+    <div class="top-bar">
+      <a href="updates.html" class="version-badge" title="Version 1.8.3 – Click for details">
+        <span class="version-badge-icon">🎮</span>
+        <span class="version-badge-text">v1.8.3</span>
+      </a>
+      <button type="button" class="search-trigger" id="search-trigger" aria-label="Search site">
+        <span class="search-trigger-icon" aria-hidden="true">🔍</span>
+        <span class="search-trigger-text">Search</span>
+        <span class="search-trigger-kbd"><kbd>⌘</kbd><kbd>K</kbd></span>
+      </button>
+      <div class="theme-switcher">
+        <button type="button" class="theme-btn" id="theme-btn" aria-label="Change theme" aria-expanded="false" aria-haspopup="true">
+          <span class="theme-btn-icon" aria-hidden="true">◐</span>
+          <span class="theme-btn-label" id="theme-label">Dark</span>
+          <span class="theme-btn-arrow">▼</span>
+        </button>
+        <div class="theme-dropdown" id="theme-dropdown" role="menu" hidden></div>
+      </div>
+    </div>
+
+    <header class="profile-header explore-hero">
+      <h1 class="profile-title">Explore Data</h1>
+      <p class="profile-handle">Visual breakdown of everything indexed on this site</p>
+      <p class="explore-total" id="explore-total">0</p>
+      <p style="font-size: 0.9rem; color: var(--muted);">items across categories, pages, and tags</p>
+    </header>
+
+    <section class="profile-section">
+      <div class="explore-grid" id="explore-grid"></div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="site-stats">
+        <div class="stat-item" title="Indexed items"><span class="stat-icon">🔍</span> 100+ items</div>
+        <div class="stat-item" title="Pages"><span class="stat-icon">📄</span> 13 pages</div>
+        <div class="stat-item" title="Companies listed"><span class="stat-icon">🏢</span> 78+ companies</div>
+      </div>
+      <div class="site-copy">
+        &copy; 2026 Ryan Otterdays. Maintained with ❤️. <a href="https://github.com/Otterdays/otterdays.github.io" rel="noopener noreferrer" target="_blank">Source</a>
+      </div>
+    </footer>
+  </main>
+
+  <button type="button" class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top">↑</button>
+
+  <div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Site search" hidden>
+    <div class="search-modal" id="search-modal">
+      <div class="search-header">
+        <span class="search-icon">🔍</span>
+        <input type="text" class="search-input" id="search-input" placeholder="Search projects, tools, companies..." autocomplete="off" autocapitalize="off" spellcheck="false">
+        <button type="button" class="search-close" id="search-close" aria-label="Close search">ESC</button>
+      </div>
+      <div class="search-meta">
+        <span class="search-count" id="search-count"></span>
+        <div class="search-hints">
+          <span class="search-hint"><kbd>↑↓</kbd> Navigate</span>
+          <span class="search-hint"><kbd>↵</kbd> Select</span>
+          <span class="search-hint"><kbd>ESC</kbd> Close</span>
+        </div>
+      </div>
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+
+  <script src="js/theme.js"></script>
+  <script src="js/qol.js"></script>
+  <script src="js/search-data.js" defer></script>
+  <script src="js/search.js" defer></script>
+  <script src="js/explore.js" defer></script>
+</body>
+
+</html>

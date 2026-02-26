@@ -1,6 +1,6 @@
 # 🚀 Improvement Plans
 
-*Refreshed 2026-02: Collapsible, Staggered entrance, Changelog page, and "Collapsible on other pages" marked done.*
+*Refreshed 2026-02: Collapsible, Staggered entrance, Changelog page, and "Collapsible on other pages" marked done. QoL & polish checklist added (URL tooltips, search hint, footer links, New badge, theme toast, etc.).*
 
 ## Visual Polish
 - [x] **Card hover micro-animations**
@@ -75,6 +75,21 @@
 ---
 
 ## Ideas backlog (QoL, themes, links, everything)
+
+**QoL & polish (2026-02)**
+- [ ] **URL tooltips on cards** — Add `title="Open [Name] in new tab → example.com"` to external link cards so users see destination before clicking.
+- [ ] **Search hint on hover** — Show "Search site (⌘K)" in tooltip or label when hovering the search button.
+- [ ] **Footer stats as links** — "100+ items" opens search; "78+ companies" links to companies.html; "11 pages" links to updates or index.
+- [ ] **Section quick-jump** — On long pages (tools, companies, media), floating "Jump to section" dropdown or pill bar to scroll to sections.
+- [ ] **"New" badge on recent cards** — Small "New" pill on recently added items (Codeium, Continue, LTX Video, etc.); `data-new` or JS list.
+- [ ] **Theme change toast** — Brief "Theme saved" message when switching themes.
+- [ ] **Click feedback on cards** — Stronger `:active` state (e.g. scale-down) so clicks feel responsive.
+- [ ] **Copy link on card hover** — Small copy icon that copies URL to clipboard; power-user feature.
+- [ ] **Staggered card entrance** — `animation-delay: calc(var(--i) * 30ms)` for cards in sections; smoother reveal.
+- [ ] **Focus ring animation** — Subtle pulse or glow on `:focus-visible` for keyboard users.
+- [ ] **Scroll-to-top feedback** — Brief "↑ Scrolled to top" or similar after clicking scroll-to-top.
+- [ ] **Skip links per section** — On long pages, add "Skip to Tools" / "Skip to Companies" etc.
+- [ ] **Live region for search** — Announce result count and selection changes to screen readers.
 
 **QoL & UX**
 - [ ] **Breadcrumb / "You are here"** — Small text above content: Home → Programs (or current page). Low effort, high clarity.
