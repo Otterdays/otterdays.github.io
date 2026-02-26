@@ -29,6 +29,22 @@ All notable changes to this project are documented in this file. Format: [Keep a
 ### Fixed
 - **A-Z Filter Bar:** Filtered-out sections now hide correctly on collapsible pages (CSS specificity: `.collapsible-pages .profile-section.filter-hidden` overrides grid display).
 
+## [1.8.4] - 2026-02-25
+
+### Added
+- **Tools (IDE):** IntelliJ IDEA (jetbrains.com/idea) — leading IDE for Java & Kotlin; JetBrains AI built-in.
+- **Tools (Debug & QA):** Jam (jam.dev) — one-click bug reports; auto-capture console, network, repro steps; instant replay; MCP.
+- **Tools (Web builders):** Builder.io GitHub (github.com/BuilderIO/builder) — SDKs, Figma to code, visual dev platform.
+- **Companies:** Jam, JetBrains (IntelliJ IDEA).
+- **Explore page:** Data viz (donut chart, bar chart, tag cloud); sidebar nav, search index, sitemap.
+- **QoL:** URL tooltips on chat cards; search hint on hover (⌘K); footer stats as links (items→search, pages→updates, companies→companies).
+- **Footer:** 13 pages (includes Explore); Mintlify link/description updated (llms.txt, MCP, intelligent docs).
+
+### Changed
+- **Mintlify:** Description updated to Intelligent docs platform; built for humans & AI; llms.txt, MCP.
+- **Sitemap:** explore.html, museum.html added.
+- **Version badge:** v1.8.4 site-wide (13 pages).
+
 ## [1.8.3] - 2026-02-25
 
 ### Added

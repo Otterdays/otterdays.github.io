@@ -11,6 +11,14 @@ const UPDATES_DATA = [
     ]
   },
   {
+    version: "1.8.4",
+    date: "2026-02-25",
+    sections: [
+      { type: "added", items: ["Tools (IDE): IntelliJ IDEA (jetbrains.com/idea) — leading IDE for Java & Kotlin; JetBrains AI built-in.", "Tools (Debug & QA): Jam (jam.dev) — one-click bug reports; auto-capture console, network, repro steps; instant replay; MCP.", "Tools (Web builders): Builder.io GitHub (github.com/BuilderIO/builder) — SDKs, Figma to code, visual dev platform.", "Companies: Jam, JetBrains (IntelliJ IDEA).", "Explore page: Data viz (donut chart, bar chart, tag cloud); sidebar nav, search index, sitemap.", "QoL: URL tooltips on chat cards, search hint on hover (⌘K), footer stats as links (items→search, pages→updates, companies→companies).", "Footer: 13 pages (includes Explore); Mintlify link/description updated (llms.txt, MCP, intelligent docs)."] },
+      { type: "changed", items: ["Mintlify: description updated to Intelligent docs platform; built for humans & AI; llms.txt, MCP.", "Sitemap: explore.html, museum.html added."] }
+    ]
+  },
+  {
     version: "1.8.3",
     date: "2026-02-25",
     sections: [
