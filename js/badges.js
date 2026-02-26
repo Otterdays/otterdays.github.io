@@ -40,7 +40,7 @@
         'Descript': USA, 'Canva': AU, 'You.com': USA, 'Wix': IL, 'Hostinger': { flag: '\uD83C\uDDF1\uD83C\uDDF9', label: 'Lithuania' },
         'Lumio AI': IN, 'Jabali': USA, 'Agent Opus': USA, 'Arena': USA, 'Anything (Create.xyz)': USA,
         'Builder': USA, 'Biela': USA, 'Emergent': USA, 'Squarespace': USA, 'Sup AI': USA,
-        'Arcee AI': USA, 'Rocket': USA, 'JDoodle': SG, 'Amp': USA, 'TRAE': USA, 'Wispr': USA,
+        'Arcee AI': USA, 'Rocket': USA, 'JDoodle': SG, 'Jam': USA, 'JetBrains': { flag: '\uD83C\uDDE8\uD83C\uDDFF', label: 'Czech Republic' }, 'Amp': USA, 'TRAE': USA, 'Wispr': USA,
         'Vibecode': USA, 'Pika': USA, 'Design Arena': USA, 'Higgsfield': USA, 'SuperMaker AI': USA,
         'Cuzi AI': USA, 'MusicAI': USA, 'PlayHop': USA, 'Deep Cogito': USA, 'Dolphin (dphn.ai)': USA,
         'LongCat': USA, 'ZenMux': USA, 'Qoder': USA, 'OpenCode': USA, 'Kilo': USA, 'Roo Code': USA,
@@ -72,7 +72,7 @@
         /* OpenAI / Microsoft (US) */
         'OpenAI Codex': USA, 'OpenAI Codex CLI': USA,
         /* Other products by company */
-        'Zencoder': USA, 'Augment Code': USA, 'Augment CLI': USA, 'IBM Project Bob': USA,
+        'Zencoder': USA, 'Augment Code': USA, 'Augment CLI': USA, 'IBM Project Bob': USA, 'IntelliJ IDEA': { flag: '\uD83C\uDDE8\uD83C\uDDFF', label: 'Czech Republic' },
         'Windsurf': USA, 'Z Code': USA, 'Ghostty': USA, 'Amazon Q Developer': USA, 'CodeGPT': USA, 'Sourcegraph Cody': USA,
         'Cline CLI': USA, 'Hostinger Horizons': { flag: '\uD83C\uDDF1\uD83C\uDDF9', label: 'Lithuania' },
         'Lovable': USA, 'v0': USA, 'Jan': USA, 'Msty': USA, 'NVIDIA ChatRTX': USA,
