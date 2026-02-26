@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Model Museum | Otterdays</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="The AI Model Museum — a curated collection of landmark artificial intelligence models, their capabilities, and what made them notable. From GPT-4o to Claude Sonnet 4.6.">
+  <meta name="keywords"
+    content="AI models, Claude, GPT-4o, Gemini, DeepSeek, Llama, o3, AI history, language models, LLM">
+  <meta name="author" content="Ryan Otterdays">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://otterdays.github.io/museum.html">
+  <meta property="og:title" content="AI Model Museum | Otterdays">
+  <meta property="og:description"
+    content="A curated museum of landmark AI models — capabilities, creators, and context.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicon.svg">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://otterdays.github.io/museum.html">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-theme="dark">
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Sidebar Navigation -->
+  <nav class="sidebar">
+    <a href="index.html" title="Home">
+      <span class="sidebar-icon">🏠</span>
+      <span class="sidebar-text">Home</span>
+    </a>
+    <a href="programs.html" title="Programs">
+      <span class="sidebar-icon">🎮</span>
+      <span class="sidebar-text">Programs</span>
+    </a>
+    <a href="chats.html" title="AI Chats">
+      <span class="sidebar-icon">💬</span>
+      <span class="sidebar-text">AI Chats</span>
+    </a>
+    <a href="museum.html" class="active" title="AI Museum">
+      <span class="sidebar-icon">🏛️</span>
+      <span class="sidebar-text">AI Museum</span>
+    </a>
+    <a href="media.html" title="Media Gen">
+      <span class="sidebar-icon">🎨</span>
+      <span class="sidebar-text">Media Gen</span>
+    </a>
+    <a href="companies.html" title="Companies">
+      <span class="sidebar-icon">🏢</span>
+      <span class="sidebar-text">Companies</span>
+    </a>
+    <a href="tools.html" title="Tools">
+      <span class="sidebar-icon">🛠️</span>
+      <span class="sidebar-text">Tools</span>
+    </a>
+    <a href="specials.html" title="Specials">
+      <span class="sidebar-icon">⭐</span>
+      <span class="sidebar-text">Specials</span>
+    </a>
+    <a href="skills.html" title="Skills">
+      <span class="sidebar-icon">🧠</span>
+      <span class="sidebar-text">Skills</span>
+    </a>
+    <a href="updates.html" title="Updates">
+      <span class="sidebar-icon">📋</span>
+      <span class="sidebar-text">Updates</span>
+    </a>
+    <a href="about.html" title="About">
+      <span class="sidebar-icon">👤</span>
+      <span class="sidebar-text">About</span>
+    </a>
+  </nav>
+
+  <main class="content" id="main">
+    <!-- Top Bar: Search & Theme (Floating) -->
+    <div class="top-bar">
+      <!-- Version Badge -->
+      <a href="updates.html" class="version-badge" title="Version 1.8.3 – Click for details">
+        <span class="version-badge-icon">🎮</span>
+        <span class="version-badge-text">v1.8.3</span>
+      </a>
+
+      <button type="button" class="search-trigger" id="search-trigger" aria-label="Search site">
+        <span class="search-trigger-icon" aria-hidden="true">🔍</span>
+        <span class="search-trigger-text">Search</span>
+        <span class="search-trigger-kbd"><kbd>⌘</kbd><kbd>K</kbd></span>
+      </button>
+
+      <div class="theme-switcher">
+        <button type="button" class="theme-btn" id="theme-btn" aria-label="Change theme" aria-expanded="false"
+          aria-haspopup="true">
+          <span class="theme-btn-icon" aria-hidden="true">◐</span>
+          <span class="theme-btn-label" id="theme-label">Dark</span>
+          <span class="theme-btn-arrow">▼</span>
+        </button>
+        <div class="theme-dropdown" id="theme-dropdown" role="menu" hidden>
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Page Header -->
+    <header class="profile-header stagger-1">
+      <h1 class="profile-title">🏛️ AI Model Museum</h1>
+      <p class="profile-handle">A curated collection of landmark language models &middot; Admission free</p>
+    </header>
+
+    <!-- Museum Intro Card -->
+    <div class="museum-intro-card stagger-2">
+      <em>Welcome.</em> This museum documents notable AI language models — what they introduced, who built them, and
+      why they mattered. Models are organized by their debut year. The newest exhibit is always on the front steps.
+      No flash photography. Don't touch the weights.
+    </div>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!--  FEATURED EXHIBIT — Claude Sonnet 4.6          -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <div class="museum-section-title stagger-2">Featured Exhibit</div>
+
+    <article class="featured-exhibit stagger-3" data-company="anthropic" aria-label="Featured: Claude Sonnet 4.6">
+      <span class="exhibit-new-badge" aria-label="Newest exhibit">✦ Newest Exhibit &nbsp;·&nbsp; Feb 2026</span>
+      <div class="exhibit-number">Exhibit ∞ &nbsp;·&nbsp; Anthropic</div>
+
+      <h2 class="exhibit-title">Claude Sonnet 4.6</h2>
+
+      <div class="exhibit-meta">
+        <strong>Anthropic</strong>
+        <span class="exhibit-divider">·</span>
+        <span>February 2026</span>
+        <span class="exhibit-divider">·</span>
+        <span>200K context</span>
+        <span class="exhibit-divider">·</span>
+        <span class="exhibit-era">2026</span>
+      </div>
+
+      <p class="exhibit-desc">
+        The latest model from Anthropic — and the one powering this very page right now. Claude Sonnet 4.6 is a fast,
+        highly capable reasoning model with best-in-class coding, strong vision understanding, and agentic task
+        execution. Built with a deep emphasis on helpfulness, harmlessness, and honesty. If you're reading this
+        through a Cursor chat, hi.
+      </p>
+
+      <div class="exhibit-traits">
+        <span class="exhibit-trait">Extended Reasoning</span>
+        <span class="exhibit-trait">Vision</span>
+        <span class="exhibit-trait">Code Generation</span>
+        <span class="exhibit-trait">Agentic Tasks</span>
+        <span class="exhibit-trait">Tool Use</span>
+        <span class="exhibit-trait">200K Context</span>
+        <span class="exhibit-trait">Multilingual</span>
+        <span class="exhibit-trait">Cursor Native</span>
+      </div>
+    </article>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!--  RECENT ACQUISITIONS — 2025                    -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <div class="museum-section-title stagger-3">Recent Acquisitions &nbsp;·&nbsp; 2025</div>
+
+    <div class="museum-gallery stagger-4">
+
+      <!-- Claude 3.7 Sonnet -->
+      <article class="exhibit-card" data-company="anthropic" aria-label="Claude 3.7 Sonnet">
+        <div class="exhibit-card-header">
+          <span class="exhibit-number">Exhibit 2025/001</span>
+          <span class="exhibit-era">Feb 2025</span>
+        </div>
+        <h3 class="exhibit-title">Claude 3.7 Sonnet</h3>
+        <div class="exhibit-meta">
+          <strong>Anthropic</strong>
+          <span class="exhibit-divider">·</span>
+          <span>200K ctx</span>
+        </div>
+        <p class="exhibit-desc">
+          Introduced "extended thinking" — a visible chain-of-thought reasoning mode that lets Claude work through
+          hard problems step by step before answering. Set new coding benchmarks at launch.
+        </p>
+        <div class="exhibit-traits">
+          <span class="exhibit-trait">Extended Thinking</span>
+          <span class="exhibit-trait">Coding</span>
+          <span class="exhibit-trait">200K Context</span>
+        </div>
+      </article>
+
+      <!-- Grok 3 -->
+      <article class="exhibit-card" data-company="xai" aria-label="Grok 3">
+        <div class="exhibit-card-header">
+          <span class="exhibit-number">Exhibit 2025/002</span>
+          <span class="exhibit-era">Feb 2025</span>
+        </div>
+        <h3 class="exhibit-title">Grok 3</h3>
+        <div class="exhibit-meta">
+          <strong>xAI</strong>
+          <span class="exhibit-divider">·</span>
+          <span>Real-time data</span>
+        </div>
+        <p class="exhibit-desc">
+          Trained on a cluster of 200,000 GPUs. Notable for "DeepSearch" — a deep research mode that browses the web
+          iteratively. Integrated with X (Twitter) for real-time context.
+        </p>
+        <div class="exhibit-traits">
+          <span class="exhibit-trait">DeepSearch</span>
+          <span class="exhibit-trait">Reasoning</span>
+          <span class="exhibit-trait">Real-time Data</span>
+        </div>
+      </article>
+
+      <!-- o3 -->
+      <article class="exhibit-card" data-company="openai" aria-label="OpenAI o3">
+        <div class="exhibit-card-header">
+          <span class="exhibit-number">Exhibit 2025/003</span>
+          <span class="exhibit-era">Jan 2025</span>
+        </div>
+        <h3 class="exhibit-title">o3</h3>
+        <div class="exhibit-meta">
+          <strong>OpenAI</strong>
+          <span class="exhibit-divider">·</span>
+          <span>Reasoning model</span>
+        </div>
+        <p class="exhibit-desc">
+          Achieved near-human scores on ARC-AGI, a benchmark designed to resist AI brute-force. The strongest
+          reasoning model OpenAI has released, with compute-scaled thinking at inference time.
+        </p>
+        <div class="exhibit-traits">
+          <span class="exhibit-trait">ARC-AGI SOTA</span>
+          <span class="exhibit-trait">Math</span>
+          <span class="exhibit-trait">Science</span>
+          <span class="exhibit-trait">Chain-of-Thought</span>
+        </div>
+      </article>
+
+      <!-- DeepSeek R1 -->
+      <article class="exhibit-card" data-company="deepseek" aria-label="DeepSeek R1">
+        <div class="exhibit-card-header">
+          <span class="exhibit-number">Exhibit 2025/004</span>
+          <span class="exhibit-era">Jan 2025</span>
+        </div>
+        <h3 class="exhibit-title">DeepSeek R1</h3>
+        <div class="exhibit-meta">
+          <strong>DeepSeek</strong>
+          <span class="exhibit-divider">·</span>
+          <span>Open weights</span>
+        </div>
+        <p class="exhibit-desc">
+          Open-source reasoning model that matched o1 on benchmarks at a fraction of the training cost. Caused
+          significant market disruption at launch. Freely downloadable and runnable locally.
+        </p>
+        <div class="exhibit-traits">
+          <span class="exhibit-trait">Open Source</span>
+          <span class="exhibit-trait">Reasoning</span>
+          <span class="exhibit-trait">Runs Locally</span>
+          <span class="exhibit-trait">Cost Efficient</span>
+        </div>
+      </article>
+
+      <!-- Gemini 2.0 Flash -->
+      <article class="exhibit-card" data-company="google" aria-label="Gemini 2.0 Flash">
+        <div class="exhibit-card-header">
+          <span class="exhibit-number">Exhibit 2025/005</span>
+          <span class="exhibit-era">Feb 2025</span>
+        </div>
+        <h3 class="exhibit-title">Gemini 2.0 Flash</h3>
+        <div class="exhibit-meta">
+          <strong>Google DeepMind</strong>
+          <span class="exhibit-divider">·</span>
+          <span>Multimodal</span>
+        </div>
+        <p class="exhibit-desc">
+          Google's fast flagship for 2025. Native multimodal — handles text, images, audio, and video. Designed for
+          agentic use cases and high-throughput applications with a generous free tier.
+        </p>
+        <div class="exhibit-traits">
+          <span class="exhibit-trait">Multimodal</span>
+          <span class="exhibit-trait">Fast</span>
+          <span class="exhibit-trait">Agentic</span>
+          <span class="exhibit-trait">1M Context</span>
+        </div>
+      </article>
+
+    </div><!-- /museum-gallery 2025 -->
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!--  ESTABLISHED COLLECTION — 2024                 -->
+    <!-- ═══════════════════════════════════════════════ -->
+    <div class="museum-section-title">Established Collection &nbsp;·&nbsp; 2024</div>
+
+    <div class="museum-gallery">
+
+      <!-- GPT-4o -->
+      <article class="exhibit-card" data-company="openai" aria-label="GPT-4o">
+        <div class="exhibit-card-header">
+          <span class="exhibit-number">Exhibit 2024/001</span>
+          <span class="exhibit-era">May 2024</span>
+        </div>
+        <h3 class="exhibit-title">GPT-4o</h3>
+        <div class="exhibit-meta">
+          <strong>OpenAI</strong>
+          <span class="exhibit-divider">·</span>
+          <span>Omni multimodal</span>
+        </div>
+        <p class="exhibit-desc">
+          "Omni" — the first model to handle text, image, and audio natively in one architecture. Introduced
+          real-time voice conversation with human-like response speeds. Became ChatGPT's default model.
+        </p>
+        <div class="exhibit-traits">
+          <span class="exhibit-trait">Voice</span>
+          <span class="exhibit-trait">Vision</span>
+          <span class="exhibit-trait">Fast</span>
+          <span class="exhibit-trait">128K Context</span>
+        </div>
+      </article>
+
+      <!-- o1 -->
+      <article class="exhibit-card" data-company="openai" aria-label="OpenAI o1">
+        <div class="exhibit-card-header">
+          <span class="exhibit-number">Exhibit 2024/002</span>
+          <span class="exhibit-era">Sep 2024</span>
+        </div>
+        <h3 class="exhibit-title">o1</h3>
+        <div class="exhibit-meta">
+          <strong>OpenAI</strong>
+          <span class="exhibit-divider">·</span>
+          <span>First public reasoning model</span>
+        </div>
+        <p class="exhibit-desc">
+          OpenAI's first publicly released reasoning model. Introduced the paradigm of spending more compute at
+          inference time to "think" before responding — enabling PhD-level performance on math and science.
+        </p>
+        <div class="exhibit-traits">
+          <span class="exhibit-trait">Reasoning</span>
+          <span class="exhibit-trait">Math</span>
+          <span class="exhibit-trait">Science</span>
+          <span class="exhibit-trait">Coding</span>
+        </div>
+      </article>
+
+      <!-- Claude 3.5 Sonnet -->
+      <article class="exhibit-card" data-company="anthropic" aria-label="Claude 3.5 Sonnet">
+        <div class="exhibit-card-header">
+          <span class="exhibit-number">Exhibit 2024/003</span>
+          <span class="exhibit-era">Oct 2024</span>
+        </div>
+        <h3 class="exhibit-title">Claude 3.5 Sonnet</h3>
+        <div class="exhibit-meta">
+          <strong>Anthropic</strong>
+          <span class="exhibit-divider">·</span>
+          <span>200K ctx</span>
+        </div>
+        <p class="exhibit-desc">
+          Topped coding benchmarks for months at release. Introduced "computer use" — the ability to control a
+          desktop GUI like a human would. Became the go-to model for agentic coding workflows.
+        </p>
+        <div class="exhibit-traits">
+          <span class="exhibit-trait">Computer Use</span>
+          <span class="exhibit-trait">Coding</span>
+          <span class="exhibit-trait">Agentic</span>
+        </div>
+      </article>
+
+      <!-- DeepSeek V3 -->
+      <article class="exhibit-card" data-company="deepseek" aria-label="DeepSeek V3">
+        <div class="exhibit-card-header">
+          <span class="exhibit-number">Exhibit 2024/004</span>
+          <span class="exhibit-era">Dec 2024</span>
+        </div>
+        <h3 class="exhibit-title">DeepSeek V3</h3>
+        <div class="exhibit-meta">
+          <strong>DeepSeek</strong>
+          <span class="exhibit-divider">·</span>
+          <span>MoE · Open weights</span>
+        </div>
+        <p class="exhibit-desc">
+          A mixture-of-experts model with 671B total parameters (37B active). Trained for $5.6M — shocking
+          efficiency compared to Western frontier models. Matched GPT-4o on benchmarks, fully open source.
+        </p>
+        <div class="exhibit-traits">
+          <span class="exhibit-trait">MoE Architecture</span>
+          <span class="exhibit-trait">Open Source</span>
+          <span class="exhibit-trait">Cost Efficient</span>
+        </div>
+      </article>
+
+      <!-- Llama 3.3 70B -->
+      <article class="exhibit-card" data-company="meta" aria-label="Llama 3.3 70B">
+        <div class="exhibit-card-header">
+          <span class="exhibit-number">Exhibit 2024/005</span>
+          <span class="exhibit-era">Dec 2024</span>
+        </div>
+        <h3 class="exhibit-title">Llama 3.3 70B</h3>
+        <div class="exhibit-meta">
+          <strong>Meta AI</strong>
+          <span class="exhibit-divider">·</span>
+          <span>Open weights</span>
+        </div>
+        <p class="exhibit-desc">
+          Meta's openly released 70B model that outperformed the 405B Llama 3.1 on several benchmarks. A milestone
+          for on-device and self-hosted AI — runs on consumer hardware with quantization.
+        </p>
+        <div class="exhibit-traits">
+          <span class="exhibit-trait">Open Weights</span>
+          <span class="exhibit-trait">Runs Locally</span>
+          <span class="exhibit-trait">Instruction Tuned</span>
+        </div>
+      </article>
+
+      <!-- Gemini 1.5 Pro -->
+      <article class="exhibit-card" data-company="google" aria-label="Gemini 1.5 Pro">
+        <div class="exhibit-card-header">
+          <span class="exhibit-number">Exhibit 2024/006</span>
+          <span class="exhibit-era">Feb 2024</span>
+        </div>
+        <h3 class="exhibit-title">Gemini 1.5 Pro</h3>
+        <div class="exhibit-meta">
+          <strong>Google DeepMind</strong>
+          <span class="exhibit-divider">·</span>
+          <span>1M context</span>
+        </div>
+        <p class="exhibit-desc">
+          Introduced a breakthrough 1M token context window — enough to hold entire codebases, books, or hours
+          of video. Changed what "long context" meant for the industry.
+        </p>
+        <div class="exhibit-traits">
+          <span class="exhibit-trait">1M Token Context</span>
+          <span class="exhibit-trait">Multimodal</span>
+          <span class="exhibit-trait">MoE</span>
+        </div>
+      </article>
+
+    </div><!-- /museum-gallery 2024 -->
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+      <div class="site-stats">
+        <div class="stat-item" title="Indexed items"><span class="stat-icon">🔍</span> 100+ items</div>
+        <div class="stat-item" title="Pages"><span class="stat-icon">📄</span> 12 pages</div>
+        <div class="stat-item" title="Companies listed"><span class="stat-icon">🏢</span> 78+ companies</div>
+      </div>
+      <div class="site-copy">
+        &copy; 2026 Ryan Otterdays. Maintained with ❤️.
+        <a href="https://github.com/Otterdays/otterdays.github.io" rel="noopener noreferrer"
+          target="_blank">Source</a>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Scroll to Top Button -->
+  <button type="button" class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top">↑</button>
+
+  <!-- Search Modal -->
+  <div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Site search" hidden>
+    <div class="search-modal" id="search-modal">
+      <div class="search-header">
+        <span class="search-icon">🔍</span>
+        <input type="text" class="search-input" id="search-input" placeholder="Search projects, tools, companies..."
+          autocomplete="off" autocapitalize="off" spellcheck="false">
+        <button type="button" class="search-close" id="search-close" aria-label="Close search">ESC</button>
+      </div>
+      <div class="search-meta">
+        <span class="search-count" id="search-count"></span>
+        <div class="search-hints">
+          <span class="search-hint"><kbd>↑↓</kbd> Navigate</span>
+          <span class="search-hint"><kbd>↵</kbd> Select</span>
+          <span class="search-hint"><kbd>ESC</kbd> Close</span>
+        </div>
+      </div>
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+
+  <script src="js/theme.js"></script>
+  <script src="js/search-data.js" defer></script>
+  <script src="js/search.js" defer></script>
+</body>
+
+</html>

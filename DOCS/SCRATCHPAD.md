@@ -4,10 +4,12 @@
 **Blockers:** None.
 
 **Last 5 actions:**
-1. **Docs & Updates:** SCRATCHPAD, CHANGELOG, updates-data.js updated for A-Z filter fix (CSS specificity for .filter-hidden) and click-active-letter-to-undo QoL.
-2. **A-Z Filter Bar:** Fixed filter not hiding sections (CSS specificity: .collapsible-pages .profile-section.filter-hidden); click active letter again to reset to All (js/filter.js).
-3. **A-Z Filter Bar:** Added sticky filter bar to collapsible pages (companies, tools, specials, skills, media); js/filter.js, css/style.css, script tags on all 5 pages; sessionStorage persistence.
-2. **Tools:** Sorted Desktop Tools sections A–Z (Auth, Browser AI, Browser Tools, CLI, Codebase & research, Coding Assistants, Coding plans, DevOps & containers, Game development, IDE, Local LLM runtimes, Reference, Terminal, Tunneling, Voice & speech-to-text, Web builders).
+1. **Content batch:** Codeium, Continue (Tools); MCP Directory (Reference); Kling, LTX Video (Media); Free AI coding section — Gemini Code Assist, p5js AI (Specials); Llama 4 (Chats); Companies: Codeium, Continue, Kuaishou, Lightricks; search-data.js, badges.js, updates-data.js Unreleased, CHANGELOG, SCRATCHPAD.
+2. **Version 1.8.3:** Unreleased → 1.8.3 (2026-02-25); updates-data.js new entry; version badge v1.8.3 on all 12 pages; CHANGELOG [1.8.3] added.
+2. **Tools (IDE/CLI/Assistants):** Added Aider, Claude Code, Open Interpreter (CLI), Zed (IDE), GitHub Copilot (Coding Assistants) to tools.html in A–Z order; Open Interpreter in search-data.js; CHANGELOG, SCRATCHPAD updated.
+3. **AI Museum page:** New `museum.html` — 12 exhibit display cases; 🏛️ nav link on all 12 sidebars; CHANGELOG updated.
+4. **Docs & Updates:** SCRATCHPAD, CHANGELOG, updates-data.js for A-Z filter fix and click-active-letter-to-undo.
+5. **A-Z Filter Bar:** Fixed filter hide (CSS .filter-hidden); sticky bar on collapsible pages; sessionStorage.
 2. **Tools:** New section “Coding plans” (subscription/API for IDEs & CLIs); Z.ai GLM Coding Plan (z.ai/subscribe) first entry; companies.html Zhipu AI, search-data.js, badges.js updated.
 3. **Docs:** SCRATCHPAD, CHANGELOG, updates-data.js updated for Gemini CLI dual-link and prior Tools changes.
 4. **Tools:** Gemini CLI dual-link — geminicli.com + GitHub (github.com/google-gemini/gemini-cli); second card “Gemini CLI GitHub”; tools.html, companies.html, search-data.js, badges.js.

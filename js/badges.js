@@ -83,7 +83,10 @@
         'There\'s An AI For That': UK, 'WebLLM': USA,
         'Tencent': CN, 'Allen AI': USA,
         'Anything (create.xyz)': USA,
-        'Zread': CN, 'Code Wiki': USA
+        'Zread': CN, 'Code Wiki': USA,
+        'Codeium': USA, 'Continue': USA, 'MCP Directory': USA, 'Kuaishou': CN, 'Lightricks': IL,
+        'Kling': CN, 'LTX Video': IL, 'Lightricks': IL, 'Kuaishou': CN,
+        'Gemini Code Assist (free)': USA, 'p5js AI': USA, 'Llama 4': USA
     };
     window.BADGE_COUNTRY_MAP = COUNTRY_MAP;
 

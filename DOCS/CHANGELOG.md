@@ -5,6 +5,13 @@ All notable changes to this project are documented in this file. Format: [Keep a
 ## [Unreleased]
 
 ### Added
+- **Tools (Coding Assistants):** Codeium (forever-free AI coding; completion, chat, 70+ languages), Continue (open-source; VS Code, JetBrains; model-agnostic).
+- **Tools (Reference):** MCP Directory (mcpserverdirectory.org; discover 10,000+ MCP servers).
+- **Media (Video):** Kling (Kuaishou; dynamic motion, API), LTX Video (Lightricks; 4K at 50fps, open-source).
+- **Specials:** New section Free AI coding — Gemini Code Assist (free), p5js AI.
+- **Chats:** Llama 4 (Meta open-source multimodal).
+- **Companies:** Codeium (Codeium + Windsurf), Continue, Kuaishou (Kling), Lightricks (LTX Video).
+- **AI Model Museum:** New page `museum.html` — a curated museum of landmark AI language models presented as display-case exhibits; featured exhibit: Claude Sonnet 4.6 (newest, spotlight glow, pulsing badge); 2025 gallery (Claude 3.7 Sonnet, Grok 3, o3, DeepSeek R1, Gemini 2.0 Flash); 2024 gallery (GPT-4o, o1, Claude 3.5 Sonnet, DeepSeek V3, Llama 3.3 70B, Gemini 1.5 Pro); museum CSS (spotlight animation, company accent borders, era badges, trait pills, section dividers) appended to style.css; 🏛️ sidebar link added to all 12 pages between AI Chats and Media Gen.
 - **A-Z Filter Bar:** Sticky filter bar on collapsible pages (companies, tools, specials, skills, media); filter sections by first letter; All | # | A–Z pills; glassmorphism styling; sessionStorage persistence; `js/filter.js`, `.filter-bar` in style.css.
 - **Tools:** New section “Coding plans” — subscription/API plans that plug into existing IDEs & CLIs; first entry: Z.ai GLM Coding Plan (z.ai/subscribe; GLM-5 & GLM-4.7 for Cursor, Claude Code, Cline, Kilo Code, Roo Code, Crush, Gemini CLI, etc.; Lite/Pro/Max, MCP); tools.html, companies.html Zhipu AI, search-data.js, badges.js.
 - **Tools:** Gemini CLI dual-link — official site (geminicli.com) + GitHub repo (github.com/google-gemini/gemini-cli); second card “Gemini CLI GitHub” (94k+ stars, Apache 2.0); tools.html, companies.html, search-data.js, badges.js.
@@ -21,6 +28,14 @@ All notable changes to this project are documented in this file. Format: [Keep a
 
 ### Fixed
 - **A-Z Filter Bar:** Filtered-out sections now hide correctly on collapsible pages (CSS specificity: `.collapsible-pages .profile-section.filter-hidden` overrides grid display).
+
+## [1.8.3] - 2026-02-25
+
+### Added
+- **Tools (IDE/CLI/Coding Assistants):** New cards on tools.html (A–Z): Aider (CLI), Claude Code (CLI), Open Interpreter (CLI), Zed (IDE), GitHub Copilot (Coding Assistants); search-data.js entry for Open Interpreter.
+
+### Changed
+- **Updates page:** Unreleased content released as v1.8.3; version badge set to 1.8.3 site-wide (12 pages).
 
 ## [1.8.2] - 2026-02-16
 

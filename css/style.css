@@ -2416,6 +2416,297 @@ button:focus-visible,
   outline-offset: 2px;
 }
 
+/* === AI MODEL MUSEUM === */
+
+/* Featured Exhibit — hero display case for the newest model */
+.featured-exhibit {
+  position: relative;
+  background: var(--glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2.5rem 2rem 2rem;
+  margin-bottom: 2.5rem;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  /* spotlight glow from above */
+  box-shadow:
+    0 0 60px -10px color-mix(in srgb, var(--accent), transparent 55%),
+    0 4px 32px color-mix(in srgb, var(--bg), transparent 30%);
+}
+
+.featured-exhibit::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 280px;
+  height: 220px;
+  background: radial-gradient(
+    ellipse at center top,
+    color-mix(in srgb, var(--accent), transparent 55%) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+  animation: spotlight-pulse 4s ease-in-out infinite;
+}
+
+@keyframes spotlight-pulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+.featured-exhibit:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 0 90px -10px color-mix(in srgb, var(--accent), transparent 40%),
+    0 8px 40px color-mix(in srgb, var(--bg), transparent 20%);
+}
+
+/* "NEWEST EXHIBIT" ribbon badge */
+.exhibit-new-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.8rem;
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--accent), #f0c 10%),
+    var(--accent)
+  );
+  color: var(--bg);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 2px 12px color-mix(in srgb, var(--accent), transparent 50%);
+  animation: badge-glow 2.5s ease-in-out infinite;
+}
+
+@keyframes badge-glow {
+  0%, 100% { box-shadow: 0 2px 12px color-mix(in srgb, var(--accent), transparent 50%); }
+  50% { box-shadow: 0 2px 24px color-mix(in srgb, var(--accent), transparent 25%); }
+}
+
+/* Exhibit identifier number */
+.exhibit-number {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.4rem;
+}
+
+.featured-exhibit .exhibit-number {
+  font-size: 0.72rem;
+}
+
+/* Featured exhibit model name */
+.featured-exhibit .exhibit-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--fg) 0%, var(--accent) 60%, var(--fg) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 0 0.5rem;
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+/* Company + date meta line */
+.exhibit-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.exhibit-meta strong {
+  color: var(--fg);
+  font-weight: 600;
+}
+
+.exhibit-divider {
+  color: var(--border);
+}
+
+/* Description text */
+.exhibit-desc {
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+  max-width: 58ch;
+}
+
+.featured-exhibit .exhibit-desc {
+  font-size: 1rem;
+  max-width: 64ch;
+}
+
+/* Capability trait pills */
+.exhibit-traits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.exhibit-trait {
+  display: inline-flex;
+  padding: 0.2rem 0.55rem;
+  border-radius: 5px;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  background: color-mix(in srgb, var(--fg), transparent 90%);
+  color: color-mix(in srgb, var(--fg), transparent 20%);
+  border: 1px solid var(--border);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.exhibit-trait:hover {
+  background: color-mix(in srgb, var(--accent), transparent 80%);
+  color: var(--accent);
+  border-color: color-mix(in srgb, var(--accent), transparent 50%);
+}
+
+.featured-exhibit .exhibit-trait {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.65rem;
+}
+
+/* Museum Gallery Grid */
+.museum-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 1.25rem;
+}
+
+/* Individual exhibit display case */
+.exhibit-card {
+  position: relative;
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  /* company accent left stripe */
+  border-left: 3px solid var(--exhibit-accent, var(--border));
+}
+
+.exhibit-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px color-mix(in srgb, var(--exhibit-accent, var(--accent)), transparent 65%);
+  border-color: color-mix(in srgb, var(--exhibit-accent, var(--accent)), transparent 40%);
+}
+
+/* Company accent colors via data attribute */
+.exhibit-card[data-company="anthropic"] { --exhibit-accent: #d97757; }
+.exhibit-card[data-company="openai"]    { --exhibit-accent: #10a37f; }
+.exhibit-card[data-company="google"]    { --exhibit-accent: #4285f4; }
+.exhibit-card[data-company="xai"]       { --exhibit-accent: #9b7fff; }
+.exhibit-card[data-company="deepseek"]  { --exhibit-accent: #2db0a8; }
+.exhibit-card[data-company="meta"]      { --exhibit-accent: #0082fb; }
+.exhibit-card[data-company="mistral"]   { --exhibit-accent: #ff7000; }
+
+/* Card header row: exhibit number + era badge */
+.exhibit-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Era year badge */
+.exhibit-era {
+  display: inline-flex;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  background: color-mix(in srgb, var(--exhibit-accent, var(--accent)), transparent 82%);
+  color: var(--exhibit-accent, var(--accent));
+  border: 1px solid color-mix(in srgb, var(--exhibit-accent, var(--accent)), transparent 55%);
+}
+
+/* Card model name */
+.exhibit-card .exhibit-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--fg);
+  margin: 0;
+  line-height: 1.25;
+}
+
+/* Card exhibit traits push to bottom */
+.exhibit-card .exhibit-traits {
+  margin-top: auto;
+}
+
+/* Museum section headings */
+.museum-section-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin: 2rem 0 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.museum-section-title::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, var(--border), transparent);
+}
+
+/* Museum intro blurb */
+.museum-intro-card {
+  background: color-mix(in srgb, var(--accent), transparent 92%);
+  border: 1px solid color-mix(in srgb, var(--accent), transparent 70%);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.museum-intro-card em {
+  color: var(--fg);
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* Print exclusion */
+@media print {
+  .featured-exhibit::before,
+  .exhibit-new-badge {
+    display: none;
+  }
+}
+
 /* === PRINT STYLES === */
 @media print {
   .skip-link,
