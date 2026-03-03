@@ -11,6 +11,13 @@ const UPDATES_DATA = [
     ]
   },
   {
+    version: "1.8.7",
+    date: "2026-03-02",
+    sections: [
+      { type: "added", items: ["Tools (IDE): RexIDE (command center for AI agents), Theia IDE (Eclipse Theia; AI-native, open-source, cloud & desktop), PearAI (AI code editor; Roo Code/Cline, Continue, PearAI Router), Blackbox AI (unifies Claude Code, Codex, Gemini; multi-agent, chairman LLM), Devin (AI software engineer; autonomous tickets, plan, test, PR; Slack, Linear, Jira, GitHub); search index updated."] }
+    ]
+  },
+  {
     version: "1.8.6",
     date: "2026-02-25",
     sections: [

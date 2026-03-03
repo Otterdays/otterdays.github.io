@@ -7,6 +7,11 @@ All notable changes to this project are documented in this file. Format: [Keep a
 ### Added
 - (Future updates.)
 
+## [1.8.7] - 2026-03-02
+
+### Added
+- **Tools (IDE):** RexIDE (IDE command center for AI agents; session-first, multi-project; ClaudeCode, Codex, OpenCode), Theia IDE (Eclipse Theia; AI-native, open-source for cloud & desktop; 3000+ extensions), PearAI (AI code editor; Agent Roo Code/Cline, Chat Continue, PearAI Router; Y Combinator), Blackbox AI (unifies Claude Code, Codex, Gemini in one IDE; multi-agent execution, chairman LLM; 30M+ builders), Devin (AI software engineer; autonomous tickets, plan, test, PR; Slack, Linear, Jira, GitHub; migrations, refactors); search index updated.
+
 ## [1.8.6] - 2026-02-25
 
 ### Added
