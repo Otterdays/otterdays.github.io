@@ -7,21 +7,13 @@ All notable changes to this project are documented in this file. Format: [Keep a
 ### Added
 - (Future updates.)
 
-## [1.8.7] - 2026-03-02
-
-### Added
-- **Tools (IDE):** RexIDE (IDE command center for AI agents; session-first, multi-project; ClaudeCode, Codex, OpenCode), Theia IDE (Eclipse Theia; AI-native, open-source for cloud & desktop; 3000+ extensions), PearAI (AI code editor; Agent Roo Code/Cline, Chat Continue, PearAI Router; Y Combinator), Blackbox AI (unifies Claude Code, Codex, Gemini in one IDE; multi-agent execution, chairman LLM; 30M+ builders), Devin (AI software engineer; autonomous tickets, plan, test, PR; Slack, Linear, Jira, GitHub; migrations, refactors); search index updated.
-
-## [1.8.6] - 2026-02-25
-
-### Added
-- **Tools (Reference):** AI Tools Directory (aitoolsdirectory.com), Marketer Milk — 26 best AI marketing tools (marketermilk.com/blog/ai-marketing-tools), Read AI (meeting copilot; Zoom, Meet, Teams; Search Copilot), Saner.AI (AI personal assistant for ADHD), Gamma (presentations, documents, websites from prompts), Grammarly (writing assistant); search index updated.
-
 ## [1.8.5] - 2026-02-25
 
 ### Added
-- **Tools (Reference):** AI research & papers — Connected Papers, Consensus, Elicit, Georgetown Library AI Tools (curated guide), Ithaka S+R GenAI Product Tracker, Keenious, Research Rabbit, scite, Scholarcy, Semantic Scholar, Undermind; all in Reference section A–Z; search index updated.
-- **DOCS:** New journal folder `DOCS/journal/` with entry `2026-02-25.md`.
+- **Tools (Reference):** AI research & papers — Connected Papers, Consensus, Elicit, Georgetown Library AI Tools, Ithaka S+R GenAI Tracker, Keenious, Research Rabbit, scite, Scholarcy, Semantic Scholar, Undermind; AI Tools Directory, Marketer Milk (26 best AI marketing tools), Read AI, Saner.AI, Gamma, Grammarly; all in Reference section A–Z.
+- **Tools (IDE):** RexIDE (command center for AI agents), Theia IDE (Eclipse Theia; AI-native, open-source), PearAI (AI code editor; Roo Code/Cline, Continue, PearAI Router), Blackbox AI (unifies Claude Code, Codex, Gemini; multi-agent), Devin (AI software engineer; autonomous tickets, plan, test, PR; Slack, Linear, Jira, GitHub).
+- **DOCS:** New journal folder `DOCS/journal/` with entries `2026-02-25.md`, `2026-03-02.md`.
+- **Search index** updated for all new entries.
 
 ## [1.8.4] - 2026-02-25 (prior Unreleased content)
 
