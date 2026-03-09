@@ -34,6 +34,7 @@
     vscode: 'VS Code',
 
     // Creative
+    atelier: 'Atelier',
     aqua: 'Aqua',
     coffee: 'Coffee',
     cyber: 'Cyber',
@@ -91,7 +92,7 @@
     },
     {
       title: 'Creative',
-      themes: ['aqua', 'coffee', 'cyber', 'forest', 'luxury', 'lorenz', 'synthwave']
+      themes: ['atelier', 'aqua', 'coffee', 'cyber', 'forest', 'luxury', 'lorenz', 'synthwave']
     }
   ];
 
@@ -153,54 +154,36 @@
 
   /**
    * Unified Card Effects (Spotlight + 3D Tilt)
-   * Uses requestAnimationFrame throttle + event delegation.
+   * Uses per-card pointer handlers to avoid scanning large pages.
    */
   var CARD_SEL = '.project-card, .chat-link-card, .home-link';
-  var spotlightTicking = false;
+  var cards = document.querySelectorAll(CARD_SEL);
+  var prefersReducedMotion = window.matchMedia &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var isCoarsePointer = window.matchMedia &&
+    window.matchMedia('(pointer: coarse)').matches;
 
-  // Spotlight: throttled via rAF, skips distant cards
-  document.addEventListener('mousemove', function (e) {
-    if (spotlightTicking) return;
-    spotlightTicking = true;
-
-    requestAnimationFrame(function () {
-      var cards = document.querySelectorAll(CARD_SEL);
-      var cx = e.clientX;
-      var cy = e.clientY;
-
-      cards.forEach(function (card) {
+  if (!prefersReducedMotion && !isCoarsePointer) {
+    cards.forEach(function (card) {
+      card.addEventListener('pointermove', function (e) {
         var rect = card.getBoundingClientRect();
-        if (rect.bottom < cy - 600 || rect.top > cy + 600 ||
-            rect.right < cx - 600 || rect.left > cx + 600) return;
+        var x = e.clientX - rect.left;
+        var y = e.clientY - rect.top;
+        var xPct = x / rect.width;
+        var yPct = y / rect.height;
+        var xRot = (0.5 - yPct) * 10;
+        var yRot = (xPct - 0.5) * 10;
 
-        card.style.setProperty('--mouse-x', (cx - rect.left) + 'px');
-        card.style.setProperty('--mouse-y', (cy - rect.top) + 'px');
+        card.style.setProperty('--mouse-x', x + 'px');
+        card.style.setProperty('--mouse-y', y + 'px');
+        card.style.transform = 'perspective(1000px) rotateX(' + xRot + 'deg) rotateY(' + yRot + 'deg) scale(1.02)';
       });
 
-      spotlightTicking = false;
+      card.addEventListener('pointerleave', function () {
+        card.style.transform = '';
+      });
     });
-  });
-
-  // 3D Tilt: delegated, only processes the hovered card
-  document.addEventListener('mousemove', function (e) {
-    var card = e.target.closest(CARD_SEL);
-    if (!card) return;
-
-    var rect = card.getBoundingClientRect();
-    var xPct = (e.clientX - rect.left) / rect.width;
-    var yPct = (e.clientY - rect.top) / rect.height;
-    var xRot = (0.5 - yPct) * 10;
-    var yRot = (xPct - 0.5) * 10;
-
-    card.style.transform = 'perspective(1000px) rotateX(' + xRot + 'deg) rotateY(' + yRot + 'deg) scale(1.02)';
-  });
-
-  document.addEventListener('mouseleave', function (e) {
-    var card = e.target.closest(CARD_SEL);
-    if (card) {
-      card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
-    }
-  }, true);
+  }
 
   /**
    * Scroll to Top Button Logic

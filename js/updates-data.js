@@ -7,14 +7,39 @@ const UPDATES_DATA = [
     version: "Unreleased",
     date: "TBD",
     sections: [
-      { type: "added", items: ["Future updates will appear here."] }
+      {
+        type: "added",
+        items: [
+          "Page-load transition: Added a shared loading veil with a blurred panel, accent pulse, and animated progress sweep for reloads and initial UI load.",
+          "Theme picker: Added Atelier, a warmer editorial-style colorway with paper tones, teal accents, and softer mesh lighting.",
+          "Light theme refresh: Default white/ink direction now uses cleaner neutrals, restrained blue accents, and calmer surface styling."
+        ]
+      },
+      {
+        type: "changed",
+        items: [
+          "Loader behavior: The new page-load effect fades out on window load, respects reduced motion, has a timeout fallback, and now hides the app shell earlier to prevent pre-loader styling flashes.",
+          "Search: Same-page result jumps now re-run highlight and collapsible-section expansion on hash changes.",
+          "Search shortcut: Cmd/Ctrl+K now ignores focused inputs, textareas, selects, and contenteditable targets.",
+          "Search results: Hover selection no longer triggers repeated smooth scrolling inside the result list.",
+          "Card effects: theme.js now uses per-card pointer handlers for spotlight + tilt instead of document-wide mousemove scans."
+        ]
+      },
+      {
+        type: "fixed",
+        items: [
+          "Search reliability: Repeated in-page searches no longer silently fail after the first hash-based jump.",
+          "Footer accessibility: The live Eastern clock no longer behaves like a constantly updating live region."
+        ]
+      }
     ]
   },
   {
     version: "1.8.5",
     date: "2026-02-25",
     sections: [
-      { type: "added", items: ["Tools (Reference): AI research & papers — Connected Papers, Consensus, Elicit, Georgetown Library AI Tools, Ithaka S+R GenAI Tracker, Keenious, Research Rabbit, scite, Scholarcy, Semantic Scholar, Undermind; all in Reference section A–Z.", "Tools (Reference): AI Tools Directory, Marketer Milk (26 best AI marketing tools), Read AI (meeting copilot), Saner.AI (ADHD assistant), Gamma (presentations & docs), Grammarly (writing).", "Tools (IDE): RexIDE, T3 Code (minimal web GUI for coding agents; Codex-first; by theo gg; npx t3 or desktop app), Theia IDE, PearAI, Blackbox AI, Devin.", "Companies (T3 theo gg): t3.gg (main site), YouTube @t3dotgg, T3 Code added to T3 (theo gg) section.", "DOCS: New journal folder (DOCS/journal/) with entries 2026-02-25, 2026-03-02.", "Search index updated for all new entries."] }
+      { type: "added", items: ["Tools (Hosting/Deploy): Render, Fly.io, Coolify, DigitalOcean, Heroku, and Zeabur added to Tools.", "Companies: Render, Fly.io, Coolify, DigitalOcean, Heroku, and Zeabur added.", "Search index & Badges: Updated search-data.js and badges.js to include the new hosting platforms.", "Tools (Reference): AI research & papers — Connected Papers, Consensus, Elicit, Georgetown Library AI Tools, Ithaka S+R GenAI Tracker, Keenious, Research Rabbit, scite, Scholarcy, Semantic Scholar, Undermind; all in Reference section A–Z.", "Tools (Reference): AI Tools Directory, Marketer Milk (26 best AI marketing tools), Read AI (meeting copilot), Saner.AI (ADHD assistant), Gamma (presentations & docs), Grammarly (writing).", "Tools (IDE): RexIDE, T3 Code (minimal web GUI for coding agents; Codex-first; by theo gg; npx t3 or desktop app), Theia IDE, PearAI, Blackbox AI, Devin.", "Companies (T3 theo gg): t3.gg (main site), YouTube @t3dotgg, T3 Code added to T3 (theo gg) section.", "Inspirations: theo gg card added — Developer & Creator; t3.gg, shoo, T3 Chat, T3 Canvas, T3 Code, create-t3-app.",
+      "Posts: New archive page (posts.html) for saved articles; first entry: SMH — Alibaba ROME AI bot went rogue, cryptomining; sidebar 📰, 15 pages site-wide.", "DOCS: New journal folder (DOCS/journal/) with entries 2026-02-25, 2026-03-02.", "Search index updated for all new entries."] }
     ]
   },
   {

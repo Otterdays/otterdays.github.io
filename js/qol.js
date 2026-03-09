@@ -5,11 +5,62 @@
 (function () {
   'use strict';
 
+  initPageLoader();
+
   function init() {
     injectCardTooltips();
     addSearchHint();
     enhanceFooterStats();
     initLiveClock();
+  }
+
+  function initPageLoader() {
+    var root = document.documentElement;
+    var body = document.body;
+    if (!body || body.querySelector('.page-loader')) return;
+
+    var reducedMotion = window.matchMedia &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var startedAt = Date.now();
+    var minVisibleMs = reducedMotion ? 120 : 320;
+    var exitMs = reducedMotion ? 120 : 320;
+    var finished = false;
+    var title = (document.title || 'Otterdays').split('|')[0].trim() || 'Otterdays';
+    var loader = document.createElement('div');
+
+    root.classList.add('ui-loading');
+    loader.className = 'page-loader';
+    loader.setAttribute('aria-hidden', 'true');
+    loader.innerHTML = '<div class="page-loader__panel">' +
+      '<div class="page-loader__mark"></div>' +
+      '<div class="page-loader__title">' + escapeHtml(title) + '</div>' +
+      '<div class="page-loader__bar"><span class="page-loader__bar-fill"></span></div>' +
+      '</div>';
+    body.appendChild(loader);
+
+    requestAnimationFrame(function () {
+      loader.classList.add('is-visible');
+    });
+
+    function finishLoader() {
+      if (finished) return;
+      finished = true;
+      window.setTimeout(function () {
+        loader.classList.add('is-exiting');
+        root.classList.remove('ui-loading');
+        root.classList.add('ui-ready');
+        window.setTimeout(function () {
+          if (loader.parentNode) loader.parentNode.removeChild(loader);
+        }, exitMs);
+      }, Math.max(0, minVisibleMs - (Date.now() - startedAt)));
+    }
+
+    if (document.readyState === 'complete') {
+      finishLoader();
+    } else {
+      window.addEventListener('load', finishLoader, { once: true });
+      window.setTimeout(finishLoader, 1800);
+    }
   }
 
   /** Live EST clock in footer */
@@ -19,7 +70,6 @@
 
     var clock = document.createElement('div');
     clock.className = 'site-clock';
-    clock.setAttribute('aria-live', 'polite');
     clock.setAttribute('aria-label', 'Current time in Eastern');
     footer.appendChild(clock);
 
@@ -44,7 +94,7 @@
     }
 
     tick();
-    setInterval(tick, 1000);
+    setInterval(tick, 30000);
   }
 
   /** Add title="Open [Name] in new tab → domain.com" to external link cards */
@@ -69,6 +119,12 @@
     } catch (e) {
       return href;
     }
+  }
+
+  function escapeHtml(text) {
+    var div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
   }
 
   /** Add "Search site (⌘K)" tooltip to search trigger */

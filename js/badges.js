@@ -28,7 +28,7 @@
         'Zhipu AI': CN, 'Quora': USA, 'Character.AI': USA, 'Inflection': USA, 'Cohere': CA,
         'Abacus.AI': USA, 'Allen Institute for AI': USA, 'DuckDuckGo': USA, 'QuillBot': USA,
         'OpenRouter': USA, 'Groq': USA, 'GitHub': USA, 'SambaNova': USA, 'Cerebras': USA,
-        'Hugging Face': FR, 'Docker': USA, 'StackBlitz': USA, 'Replit': USA, 'Railway': USA,
+        'Hugging Face': FR, 'Docker': USA, 'StackBlitz': USA, 'Replit': USA, 'Railway': USA, 'Render': USA, 'Fly.io': USA, 'Heroku': USA, 'DigitalOcean': USA,
         'Warp': USA, 'Factory': USA, 'Charm Bracelet': USA, 'Netlify': USA, 'Cloudflare': USA,
         'Vercel': USA, 'Supabase': SG, 'MongoDB': USA, 'Adobe': USA, 'Figma': USA,
         'Stability AI': UK, 'Black Forest Labs': DE, 'Runway': USA, 'DeepAI': USA, 'Midjourney': USA,

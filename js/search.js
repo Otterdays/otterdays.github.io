@@ -213,12 +213,13 @@
         }
     }
 
-    function updateSelection() {
+    function updateSelection(scrollBehavior) {
+        var behavior = scrollBehavior || 'auto';
         var items = results.querySelectorAll('.search-result-item');
         items.forEach(function (item, index) {
             if (index === selectedIndex) {
                 item.classList.add('selected');
-                item.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+                item.scrollIntoView({ block: 'nearest', behavior: behavior });
             } else {
                 item.classList.remove('selected');
             }
@@ -274,14 +275,14 @@
                 e.preventDefault();
                 if (currentResults.length > 0) {
                     selectedIndex = (selectedIndex + 1) % currentResults.length;
-                    updateSelection();
+                    updateSelection('smooth');
                 }
                 break;
             case 'ArrowUp':
                 e.preventDefault();
                 if (currentResults.length > 0) {
                     selectedIndex = selectedIndex <= 0 ? currentResults.length - 1 : selectedIndex - 1;
-                    updateSelection();
+                    updateSelection('smooth');
                 }
                 break;
             case 'Enter':
@@ -295,7 +296,16 @@
         }
     }
 
+    function isEditableTarget(target) {
+        if (!target) return false;
+        if (target.isContentEditable) return true;
+        var tag = target.tagName;
+        return tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT';
+    }
+
     function handleGlobalKeydown(e) {
+        if (isEditableTarget(e.target)) return;
+
         // Cmd/Ctrl + K to open search
         if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
             e.preventDefault();
@@ -321,9 +331,15 @@
     function handleResultHover(e) {
         var item = e.target.closest('.search-result-item');
         if (item) {
-            selectedIndex = parseInt(item.dataset.index, 10);
+            var nextIndex = parseInt(item.dataset.index, 10);
+            if (nextIndex === selectedIndex) return;
+            selectedIndex = nextIndex;
             updateSelection();
         }
+    }
+
+    function handleHashChange() {
+        handleSearchHighlight();
     }
 
     function handleResultClick(e) {
@@ -364,6 +380,7 @@
 
         // Global keyboard shortcut
         document.addEventListener('keydown', handleGlobalKeydown);
+        window.addEventListener('hashchange', handleHashChange);
 
         // Prevent form submission
         var form = modal ? modal.querySelector('form') : null;

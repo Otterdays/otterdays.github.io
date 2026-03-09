@@ -5,14 +5,30 @@ All notable changes to this project are documented in this file. Format: [Keep a
 ## [Unreleased]
 
 ### Added
+- **Page-load transition:** Added a shared site-wide loading veil with a blurred panel, accent pulse, and animated progress sweep for page reloads and initial UI load.
+- **Theme:** New `Atelier` colorway added to the theme picker; warmer editorial palette alongside the refreshed `Light` theme.
+- **Design system:** `Light` theme retuned toward a cleaner white/ink baseline with calmer blue accents and more professional neutral surfaces.
 - (Future updates.)
+
+### Changed
+- **Loader behavior:** The new page-load effect now fades out on `window.load`, respects reduced motion, includes a timeout fallback, and hides the app shell earlier to prevent pre-loader styling flashes.
+- **Search:** Same-page result navigation now re-runs highlight/expand behavior on `hashchange`, so repeated in-page searches stay reliable.
+- **Search:** `Cmd/Ctrl+K` ignores focused editable fields instead of hijacking form input behavior.
+- **Search results:** Hover selection no longer forces smooth scrolling on every mouse move in the result list.
+- **Theme interactions:** Card spotlight/tilt effects now use per-card pointer handlers rather than document-wide mousemove scans, reducing work on content-heavy pages.
+- **Footer clock:** Eastern time footer clock refreshes less aggressively and no longer uses a live region for every tick.
 
 ## [1.8.5] - 2026-02-25
 
 ### Added
+- **Tools (Hosting/Deploy):** Render, Fly.io, Coolify, DigitalOcean, Heroku, and Zeabur added to Tools.
+- **Companies:** Render, Fly.io, Coolify, DigitalOcean, Heroku, and Zeabur added.
+- **Search index & Badges:** Updated `search-data.js` and `badges.js` to include the new hosting platforms.
 - **Tools (Reference):** AI research & papers — Connected Papers, Consensus, Elicit, Georgetown Library AI Tools, Ithaka S+R GenAI Tracker, Keenious, Research Rabbit, scite, Scholarcy, Semantic Scholar, Undermind; AI Tools Directory, Marketer Milk (26 best AI marketing tools), Read AI, Saner.AI, Gamma, Grammarly; all in Reference section A–Z.
 - **Tools (IDE):** RexIDE (command center for AI agents), T3 Code (minimal web GUI for coding agents; Codex-first, Claude Code soon; by theo gg; npx t3 or desktop app), Theia IDE (Eclipse Theia; AI-native, open-source), PearAI (AI code editor; Roo Code/Cline, Continue, PearAI Router), Blackbox AI (unifies Claude Code, Codex, Gemini; multi-agent), Devin (AI software engineer; autonomous tickets, plan, test, PR; Slack, Linear, Jira, GitHub).
 - **Companies (T3 theo gg):** t3.gg (main site), YouTube @t3dotgg, T3 Code added to T3 (theo gg) section.
+- **Inspirations:** theo gg card added — Developer & Creator; t3.gg, shoo, T3 Chat, T3 Canvas, T3 Code, create-t3-app; Visit t3.gg link.
+- **Posts:** New archive page (`posts.html`) for saved articles; first entry: Sydney Morning Herald — Alibaba ROME AI bot went rogue, cryptomining; sidebar 📰 Posts link; 15 pages site-wide.
 - **DOCS:** New journal folder `DOCS/journal/` with entries `2026-02-25.md`, `2026-03-02.md`.
 - **Search index** updated for all new entries.
 

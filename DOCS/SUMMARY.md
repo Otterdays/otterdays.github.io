@@ -1,5 +1,18 @@
 # SUMMARY
 
+## Recent update — 2026-03-09 (page-load effect)
+
+- **Page-load UX:** Added a shared site-wide load/reload transition with a blurred panel, accent pulse, and moving progress bar.
+- **Implementation:** Loader is injected from `js/qol.js`, styled in `css/style.css`, fades out on `window.load`, and includes a timeout fallback.
+- **A11y:** Respects reduced-motion users and avoids getting stuck if load timing is unusual.
+
+## Recent update — 2026-03-09
+
+- **Search UX/engineering:** Same-page search targets now re-highlight on hash changes, `Cmd/Ctrl+K` no longer hijacks focused inputs, and result-list hover avoids extra smooth-scroll churn.
+- **Interaction performance:** Card spotlight / tilt effects moved from document-wide mousemove scans to per-card pointer handlers for cheaper runtime behavior on large pages.
+- **A11y/QoL:** Footer clock no longer announces every refresh via a live region and now updates less aggressively.
+- **Updates trail:** `DOCS/CHANGELOG.md`, `DOCS/SCRATCHPAD.md`, and `js/updates-data.js` refreshed for the engineering pass.
+
 **Project:** otterdays.github.io — static dev profile site for GitHub Pages.
 
 **Status:** Ready to serve. Static HTML/CSS/JS; small shared scripts for theme, badges, search, companies minimization. No build step.
@@ -14,7 +27,7 @@
 - **Scroll progress:** Thin bar at top fills left-to-right as you scroll (`js/theme.js`, `css/style.css`).
 - **A11y & QoL:** Reduced motion mode, skip-to-content link, :focus-visible ring, auto dark/light (system preference), print-friendly CSS, sitemap.xml, footer Source link.
 - **Gradient titles:** Home and profile page titles use theme-aware gradient text (fg→accent).
-- **Pages (11):** Home, Programs (~60+ projects), AI Chats, Media Gen, Companies (78+ companies, collapsible), Tools (CLI/IDE/Web builders/Browser, alphabetical), Specials, Skills/Tools (Cursor & Antigravity agentic tools, MCPs, SkillBox, Skills directory — React/Testing/Git), Updates (version history), About, 404.
+- **Pages (15):** Home, Programs (~60+ projects), AI Chats, AI Museum, Media Gen, Companies (78+ companies, collapsible), Tools (CLI/IDE/Web builders/Browser, alphabetical), Specials, Skills/Tools, Updates, Explore, Inspirations, Posts (archived articles), About, 404.
 
 **Recent (2026-02-16):**
 - **Patch 2 (1–10):** Reduced motion, skip link, focus-visible, auto dark/light, print CSS, sitemap.xml, footer Source, About Updates, Inspirations dedup, stagger on About.
@@ -28,7 +41,7 @@
 - **Skills:** Antigravity agentic tools (capabilities list), SkillBox, Skills directory (React, Testing, Git).
 - **Search:** Index updated for all new links (chats, media, companies, tools, skills).
 
-**Docs:** `DOCS/journal/` — dated journal entries (e.g. 2026-02-25, 2026-03-02). Tools Reference: 11 AI research/papers sites + AI Tools Directory, Marketer Milk, Read AI, Saner.AI, Gamma, Grammarly. Tools IDE: RexIDE, Theia IDE, PearAI, Blackbox AI, Devin. Current version v1.8.5.
+**Docs:** `DOCS/journal/` — dated journal entries (e.g. 2026-02-25, 2026-03-02). Tools Reference: 11 AI research/papers sites + AI Tools Directory, Marketer Milk, Read AI, Saner.AI, Gamma, Grammarly. Tools IDE: RexIDE, T3 Code, Theia IDE, PearAI, Blackbox AI, Devin. Inspirations: Brackeys, theo gg (full cards). Posts: archive page for saved articles (e.g. SMH ROME AI bot). Current version v1.8.5.
 
 **Quick links:**
 - [SCRATCHPAD](SCRATCHPAD.md) — active tasks, blockers, last 5 actions

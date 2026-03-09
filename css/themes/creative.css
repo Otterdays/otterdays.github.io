@@ -1,5 +1,20 @@
 /* === CREATIVE THEMES === */
 
+body[data-theme="atelier"] {
+  --bg: #f4efe7;
+  --bg-gradient: linear-gradient(180deg, #f8f4ec 0%, #f4efe7 55%, #ebe4da 100%);
+  --fg: #1f2937;
+  --muted: #6b7280;
+  --accent: #0f766e;
+  --accent-glow: rgba(15, 118, 110, 0.16);
+  --card: rgba(255, 251, 245, 0.84);
+  --card-solid: #fffaf3;
+  --border: #d8cec2;
+  --glass: rgba(255, 250, 243, 0.72);
+  --mesh-primary: rgba(15, 118, 110, 0.12);
+  --mesh-secondary: rgba(194, 120, 67, 0.12);
+}
+
 body[data-theme="lorenz"] {
   --bg: #070810;
   --bg-gradient: linear-gradient(155deg, #070810 0%, #0a0c14 30%, #0d0818 70%, #070810 100%);
