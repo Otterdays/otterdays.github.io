@@ -11,7 +11,8 @@ All notable changes to this project are documented in this file. Format: [Keep a
 
 ### Added
 - **Tools (Reference):** AI research & papers — Connected Papers, Consensus, Elicit, Georgetown Library AI Tools, Ithaka S+R GenAI Tracker, Keenious, Research Rabbit, scite, Scholarcy, Semantic Scholar, Undermind; AI Tools Directory, Marketer Milk (26 best AI marketing tools), Read AI, Saner.AI, Gamma, Grammarly; all in Reference section A–Z.
-- **Tools (IDE):** RexIDE (command center for AI agents), Theia IDE (Eclipse Theia; AI-native, open-source), PearAI (AI code editor; Roo Code/Cline, Continue, PearAI Router), Blackbox AI (unifies Claude Code, Codex, Gemini; multi-agent), Devin (AI software engineer; autonomous tickets, plan, test, PR; Slack, Linear, Jira, GitHub).
+- **Tools (IDE):** RexIDE (command center for AI agents), T3 Code (minimal web GUI for coding agents; Codex-first, Claude Code soon; by theo gg; npx t3 or desktop app), Theia IDE (Eclipse Theia; AI-native, open-source), PearAI (AI code editor; Roo Code/Cline, Continue, PearAI Router), Blackbox AI (unifies Claude Code, Codex, Gemini; multi-agent), Devin (AI software engineer; autonomous tickets, plan, test, PR; Slack, Linear, Jira, GitHub).
+- **Companies (T3 theo gg):** t3.gg (main site), YouTube @t3dotgg, T3 Code added to T3 (theo gg) section.
 - **DOCS:** New journal folder `DOCS/journal/` with entries `2026-02-25.md`, `2026-03-02.md`.
 - **Search index** updated for all new entries.
 

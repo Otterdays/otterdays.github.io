@@ -4,7 +4,8 @@
 **Blockers:** None.
 
 **Last 5 actions:**
-1. **Merge 1.8.5–1.8.7:** Consolidated into single v1.8.5; updates-data.js, CHANGELOG; version badge v1.8.5 site-wide; SCRATCHPAD.
+1. **T3 Code + theo gg org:** Added T3 Code (github.com/pingdotgg/t3code) to tools.html IDE section; companies.html T3 (theo gg): t3.gg (main site), YouTube @t3dotgg, T3 Code; search-data.js T3 Code + updated T3 company/Inspirations entries; SCRATCHPAD.
+2. **Merge 1.8.5–1.8.7:** Consolidated into single v1.8.5; updates-data.js, CHANGELOG; version badge v1.8.5 site-wide; SCRATCHPAD.
 2. **Tools (Reference) + Docs:** Added 11 AI research tools (Connected Papers, Consensus, Elicit, Georgetown Library AI Tools, Ithaka S+R GenAI Tracker, Keenious, Research Rabbit, scite, Scholarcy, Semantic Scholar, Undermind) to tools.html; search-data.js entries; updates-data.js v1.8.5; DOCS/journal/2026-02-25.md; CHANGELOG [1.8.5]; SCRATCHPAD.
 2. **Content batch:** Codeium, Continue (Tools); MCP Directory (Reference); Kling, LTX Video (Media); Free AI coding section — Gemini Code Assist, p5js AI (Specials); Llama 4 (Chats); Companies: Codeium, Continue, Kuaishou, Lightricks; search-data.js, badges.js, updates-data.js Unreleased, CHANGELOG, SCRATCHPAD.
 2. **Version 1.8.3:** Unreleased → 1.8.3 (2026-02-25); updates-data.js new entry; version badge v1.8.3 on all 12 pages; CHANGELOG [1.8.3] added.

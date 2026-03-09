@@ -173,7 +173,8 @@ var SEARCH_DATA = [
     { title: "Canva", desc: "Design platform; Magic Studio AI.", category: "company", tags: ["Design", "Graphics", "AI"], url: "companies.html" },
     { title: "Adobe", desc: "Creative Cloud; Firefly AI models.", category: "company", tags: ["Design", "Creative", "Firefly"], url: "companies.html" },
     { title: "You.com", desc: "AI consumer search engine & chat.", category: "company", tags: ["Search", "Chat", "AI"], url: "companies.html" },
-    { title: "T3 (theo gg)", desc: "shoo (auth), T3 Chat, T3 Canvas; by theo gg.", category: "company", tags: ["theo gg", "shoo", "T3 Chat", "T3 Canvas"], url: "companies.html" },
+    { title: "T3 (theo gg)", desc: "t3.gg, shoo (auth), T3 Chat, T3 Canvas, T3 Code; by theo gg.", category: "company", tags: ["theo gg", "shoo", "T3 Chat", "T3 Canvas", "T3 Code"], url: "companies.html" },
+    { title: "T3 Code", desc: "Minimal web GUI for coding agents; Codex-first, Claude Code soon; by theo gg; npx t3 or desktop app.", category: "tool", tags: ["IDE", "theo gg", "T3", "Codex"], url: "tools.html" },
 
 
     // === TOOLS (tools.html) ===
@@ -342,7 +343,7 @@ var SEARCH_DATA = [
     { title: "About", desc: "What this site is: projects and tools worth sharing. Every link is safe and direct.", category: "page", tags: ["About", "Site", "Links"], url: "about.html" },
     { title: "Updates", desc: "Site update log: version history, new features, fixes, and changes.", category: "page", tags: ["Updates", "Changelog", "Version"], url: "updates.html" },
     { title: "Explore", desc: "Visual breakdown of all indexed data: categories, tags, and page distribution.", category: "page", tags: ["Data", "Visualization", "Stats", "Explore"], url: "explore.html" },
-    { title: "Inspirations", desc: "People and creators who influence what I build: Brackeys (game dev), theo gg (shoo, T3 Chat, T3 Canvas).", category: "page", tags: ["Inspirations", "Brackeys", "theo gg"], url: "inspirations.html" },
+    { title: "Inspirations", desc: "People and creators who influence what I build: Brackeys (game dev), theo gg (shoo, T3 Chat, T3 Canvas, T3 Code).", category: "page", tags: ["Inspirations", "Brackeys", "theo gg"], url: "inspirations.html" },
     { title: "Brackeys", desc: "Game dev tutorials on Godot, Unity, 3D, VFX; 1.92M subs, 470 videos; free assets.", category: "page", tags: ["Game Dev", "Tutorials", "Godot", "Unity", "YouTube"], url: "inspirations.html" },
     { title: "Dev tips", desc: "Trigger mobile view in Chrome: F12 (or Cmd+Option+I on Mac), then Toggle Device Toolbar.", category: "page", tags: ["Dev", "Chrome", "F12", "Mobile", "Debug"], url: "about.html" }
 ];
