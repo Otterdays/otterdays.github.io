@@ -165,6 +165,8 @@ var SEARCH_DATA = [
     { title: "ZenMux", desc: "Unified gateway to many models; chat and API; compensation for subpar results.", category: "company", tags: ["Multi-model", "API", "Gateway"], url: "companies.html" },
     { title: "Qoder", desc: "Agentic coding platform: IDE, CLI, JetBrains; Editor and Quest modes, Repo Wiki, MCP.", category: "company", tags: ["IDE", "CLI", "Agent"], url: "companies.html" },
     { title: "OpenCode", desc: "Open-source AI coding agent; terminal, desktop, IDE; 75+ LLM providers.", category: "company", tags: ["Open Source", "CLI", "IDE"], url: "companies.html" },
+    { title: "OpenCode Desktop", desc: "Desktop app (beta macOS, Windows, Linux); native app experience.", category: "company", tags: ["OpenCode", "Desktop", "Beta"], url: "companies.html" },
+    { title: "OpenCode Zen", desc: "Handpicked, benchmarked models optimized for coding agents; validated quality.", category: "company", tags: ["OpenCode", "Models", "Coding Agents"], url: "companies.html" },
     { title: "Kilo", desc: "Kilo Code: all-in-one agentic engineering platform; VS Code, JetBrains, CLI; #1 on OpenRouter.", category: "company", tags: ["Agent", "IDE", "Open Source"], url: "companies.html" },
     { title: "Kiro", desc: "Amazon: agentic AI development; spec-driven coding.", category: "company", tags: ["Spec-Driven", "Framework", "Amazon"], url: "companies.html" },
     { title: "Roo Code", desc: "Open-source AI dev team; VS Code extension + Cloud agents; model-agnostic.", category: "company", tags: ["Open Source", "IDE", "Agent"], url: "companies.html" },

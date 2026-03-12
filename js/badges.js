@@ -43,7 +43,7 @@
         'Arcee AI': USA, 'Rocket': USA, 'JDoodle': SG, 'Jam': USA, 'JetBrains': { flag: '\uD83C\uDDE8\uD83C\uDDFF', label: 'Czech Republic' }, 'Amp': USA, 'TRAE': USA, 'Wispr': USA,
         'Vibecode': USA, 'Pika': USA, 'Design Arena': USA, 'Higgsfield': USA, 'SuperMaker AI': USA,
         'Cuzi AI': USA, 'MusicAI': USA, 'PlayHop': USA, 'Deep Cogito': USA, 'Dolphin (dphn.ai)': USA,
-        'LongCat': USA, 'ZenMux': USA, 'Qoder': USA, 'OpenCode': USA, 'Kilo': USA, 'Roo Code': USA,
+        'LongCat': USA, 'ZenMux': USA, 'Qoder': USA, 'OpenCode': USA, 'OpenCode Desktop': USA, 'OpenCode Zen': USA, 'Kilo': USA, 'Roo Code': USA,
         'Quests': USA, 'Ollama': USA, 'LM Studio': USA,
         'Sora 2': USA, 'Luma Dream Machine': USA, 'Google Flow': USA, 'Veo 3': USA, 'Sparkify': USA,
         'SuperMaker': USA, 'DALL-E 3': USA, 'Grok Imagine': USA, 'Firefly': USA, 'Stable Diffusion': UK,
