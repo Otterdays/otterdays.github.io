@@ -1,5 +1,12 @@
 # SUMMARY
 
+## Recent update — 2026-03-12 (content batch)
+
+- **Inspirations:** Low Level (reverse engineering, low-level, cybersecurity); TechLinked (tech news).
+- **Tools:** SpacetimeDB, vinext, OpenCode Desktop, OpenCode Zen, Bun, Vite, Svelte added.
+- **Companies:** Clockwork Labs (SpacetimeDB), Cloudflare (vinext), OpenCode (Desktop, Zen), Bun, Vite, Svelte.
+- **Search & badges:** All new entries indexed; country badges updated.
+
 ## Recent update — 2026-03-09 (page-load effect)
 
 - **Page-load UX:** Added a shared site-wide load/reload transition with a blurred panel, accent pulse, and moving progress bar.
@@ -27,7 +34,7 @@
 - **Scroll progress:** Thin bar at top fills left-to-right as you scroll (`js/theme.js`, `css/style.css`).
 - **A11y & QoL:** Reduced motion mode, skip-to-content link, :focus-visible ring, auto dark/light (system preference), print-friendly CSS, sitemap.xml, footer Source link.
 - **Gradient titles:** Home and profile page titles use theme-aware gradient text (fg→accent).
-- **Pages (15):** Home, Programs (~60+ projects), AI Chats, AI Museum, Media Gen, Companies (78+ companies, collapsible), Tools (CLI/IDE/Web builders/Browser, alphabetical), Specials, Skills/Tools, Updates, Explore, Inspirations, Posts (archived articles), About, 404.
+- **Pages (15):** Home, Programs (~60+ projects), AI Chats, AI Museum, Media Gen, Companies (80+ companies, collapsible), Tools (CLI/IDE/Web builders/Browser, alphabetical), Specials, Skills/Tools, Updates, Explore, Inspirations (Brackeys, theo gg, Low Level, TechLinked), Posts (archived articles), About, 404.
 
 **Recent (2026-02-16):**
 - **Patch 2 (1–10):** Reduced motion, skip link, focus-visible, auto dark/light, print CSS, sitemap.xml, footer Source, About Updates, Inspirations dedup, stagger on About.
@@ -41,7 +48,7 @@
 - **Skills:** Antigravity agentic tools (capabilities list), SkillBox, Skills directory (React, Testing, Git).
 - **Search:** Index updated for all new links (chats, media, companies, tools, skills).
 
-**Docs:** `DOCS/journal/` — dated journal entries (e.g. 2026-02-25, 2026-03-02). Tools Reference: 11 AI research/papers sites + AI Tools Directory, Marketer Milk, Read AI, Saner.AI, Gamma, Grammarly. Tools IDE: RexIDE, T3 Code, Theia IDE, PearAI, Blackbox AI, Devin. Inspirations: Brackeys, theo gg (full cards). Posts: archive page for saved articles (e.g. SMH ROME AI bot). Current version v1.8.5.
+**Docs:** `DOCS/journal/` — dated journal entries (e.g. 2026-02-25, 2026-03-02). Tools: SpacetimeDB, vinext, Bun, Vite, Svelte, OpenCode (Desktop, Zen). Inspirations: Brackeys, theo gg, Low Level, TechLinked. Companies: Clockwork Labs, Bun, Vite, Svelte; OpenCode expanded. Current version v1.8.5.
 
 **Quick links:**
 - [SCRATCHPAD](SCRATCHPAD.md) — active tasks, blockers, last 5 actions

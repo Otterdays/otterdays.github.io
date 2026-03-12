@@ -10,6 +10,10 @@ const UPDATES_DATA = [
       {
         type: "added",
         items: [
+          "Inspirations: Low Level (YouTube; reverse engineering, low-level, cybersecurity); TechLinked (YouTube; tech news).",
+          "Tools: SpacetimeDB, vinext (Cloudflare Next.js on Vite), OpenCode Desktop, OpenCode Zen, Bun, Vite, Svelte.",
+          "Companies: Clockwork Labs (SpacetimeDB), Cloudflare (vinext), OpenCode (Desktop, Zen), Bun, Vite, Svelte.",
+          "Search & badges: search-data.js, badges.js updated for all new entries.",
           "Page-load transition: Added a shared loading veil with a blurred panel, accent pulse, and animated progress sweep for reloads and initial UI load.",
           "Theme picker: Added Atelier, a warmer editorial-style colorway with paper tones, teal accents, and softer mesh lighting.",
           "Light theme refresh: Default white/ink direction now uses cleaner neutrals, restrained blue accents, and calmer surface styling."

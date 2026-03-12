@@ -5,6 +5,10 @@ All notable changes to this project are documented in this file. Format: [Keep a
 ## [Unreleased]
 
 ### Added
+- **Inspirations:** Low Level (YouTube; reverse engineering, low-level, cybersecurity); TechLinked (YouTube; tech news, 1.99M subs).
+- **Tools:** SpacetimeDB (real-time backend + DB; Clockwork Labs); vinext (Cloudflare Next.js on Vite); OpenCode Desktop, OpenCode Zen; Bun (JS runtime); Vite (frontend build tool); Svelte (UI framework).
+- **Companies:** Clockwork Labs (SpacetimeDB), Cloudflare (vinext), OpenCode (Desktop, Zen), Bun, Vite, Svelte.
+- **Search & badges:** search-data.js, badges.js updated for all new entries.
 - **Page-load transition:** Added a shared site-wide loading veil with a blurred panel, accent pulse, and animated progress sweep for page reloads and initial UI load.
 - **Theme:** New `Atelier` colorway added to the theme picker; warmer editorial palette alongside the refreshed `Light` theme.
 - **Design system:** `Light` theme retuned toward a cleaner white/ink baseline with calmer blue accents and more professional neutral surfaces.

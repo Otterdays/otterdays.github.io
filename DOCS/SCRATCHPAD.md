@@ -1,5 +1,25 @@
 # SCRATCHPAD
 
+## 2026-03-12 — Content batch: inspirations, tools, companies
+
+**Active:** None.  
+**Blockers:** None.
+
+**What changed:**
+1. **Inspirations:** Low Level (YouTube; reverse engineering, low-level, cybersecurity); TechLinked (YouTube; tech news, 1.99M subs).
+2. **Tools & Companies:** SpacetimeDB (real-time backend + DB; Clockwork Labs); vinext (Cloudflare Next.js on Vite); OpenCode Desktop, OpenCode Zen; Bun (JS runtime); Vite (frontend build tool); Svelte (UI framework).
+3. **Search & badges:** search-data.js, badges.js updated for all new entries.
+4. **Docs:** SCRATCHPAD, SUMMARY, CHANGELOG, updates-data.js updated.
+
+**Last 5 actions:**
+1. Content batch (2026-03-12): Inspirations (Low Level, TechLinked); Tools/Companies (SpacetimeDB, vinext, OpenCode Desktop/Zen, Bun, Vite, Svelte); docs updated.
+2. Page-load effect (2026-03-09): Loader veil, accent pulse, progress sweep; qol.js, style.css.
+3. Search + FX engineering (2026-03-09): Same-page hash re-highlight, Cmd+K ignores inputs, per-card pointer handlers.
+4. Posts archive; Inspirations theo gg; T3 Code merge.
+5. Tools Reference, Gemini CLI dual-link, Z Code, Ghostty, A-Z filter.
+
+---
+
 ## 2026-03-09 — Sleek page-load effect
 
 **Active:** Added a shared page-load / reload transition.  
