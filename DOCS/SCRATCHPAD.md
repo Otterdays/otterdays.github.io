@@ -1,5 +1,34 @@
 # SCRATCHPAD
 
+## 2026-03-21 — Inspirations: The PrimeTime
+
+**What changed:** [The PrimeTime](https://www.youtube.com/@ThePrimeTimeagen) (@ThePrimeTimeagen) — `inspirations.html` card; `search-data.js`; `about.html`; `DOCS/SUMMARY.md` inspirations list.
+
+---
+
+## 2026-03-21 — Obsidian
+
+**What changed:** [Obsidian](https://obsidian.md/) — `tools.html` Reference; `companies.html` section; `search-data.js`; `badges.js` (Canada).
+
+---
+
+## 2026-03-21 — cmux (Manaflow)
+
+**What changed:** [cmux](https://cmux.com/) — Terminal section in `tools.html` (before Ghostty, A–Z); `companies.html` section **Manaflow**; `search-data.js` (tool + company); `badges.js` (`cmux`, `Manaflow`).
+
+---
+
+## 2026-03-21 — OpenCode Desktop on Tools IDE
+
+**Active:** None.  
+**Blockers:** None.
+
+**What changed:** `tools.html` IDE section: card for [OpenCode Desktop](https://opencode.ai/download) (beta IDE; macOS/Windows/Linux, Homebrew cask). `search-data.js`: tool index entry + company blurb/tags. `companies.html`: OpenCode Desktop description notes IDE.
+
+**Last action:** OpenCode Desktop IDE card + search alignment.
+
+---
+
 ## 2026-03-12 — Content batch: inspirations, tools, companies
 
 **Active:** None.  
