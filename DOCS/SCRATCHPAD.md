@@ -1,5 +1,29 @@
 # SCRATCHPAD
 
+## 2026-03-21 — Agent/MCP infra batch (homie follow-up)
+
+**What changed:** **companies.html** — **Block** section (**Goose**). **search-data.js** — company Block; tools: CLIProxyAPI, Context7, Firecrawl, Glama MCP, Playwright MCP, Smithery, Tavily, Goose, Cline, Daytona, e2b, OpenRouter (tools). **badges.js** — country badges for those `.chat-link-name` keys plus **Block** / **Goose** for companies.
+
+---
+
+## 2026-03-21 — Agent tools batch (Amp CLI, Junie, Gemini Code Assist)
+
+**What changed:** Web-informed additions: **Amp CLI** (tools CLI + companies Amp), **Junie** + **Junie CLI** (Coding Assistants, CLI, JetBrains companies), **Gemini Code Assist** (Coding Assistants + Google companies). `search-data.js`, `badges.js` updated.
+
+---
+
+## 2026-03-21 — OpenClaw / NemoClaw / Moltbook expansion
+
+**What changed:** Richer **OpenClaw** + **Moltbook** on `chats.html`; **OpenClaw** + **NemoClaw** in `tools.html` CLI; **companies.html**: OpenClaw section (site, GitHub, Docs), **Moltbook** section, **NVIDIA** (NemoClaw, ChatRTX); `search-data.js` + `badges.js` (NVIDIA, NemoClaw, OpenClaw GitHub/Docs).
+
+---
+
+## 2026-03-21 — Bind AI (getbind.co)
+
+**What changed:** [Bind AI](https://www.getbind.co/) — `tools.html` IDE (A–Z after Augment Code); `companies.html` section; `search-data.js`; `badges.js`.
+
+---
+
 ## 2026-03-21 — Inspirations: The PrimeTime
 
 **What changed:** [The PrimeTime](https://www.youtube.com/@ThePrimeTimeagen) (@ThePrimeTimeagen) — `inspirations.html` card; `search-data.js`; `about.html`; `DOCS/SUMMARY.md` inspirations list.
