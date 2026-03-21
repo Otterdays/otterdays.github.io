@@ -68,7 +68,7 @@
 | **chats**      | **Assistants** & **Provider hubs**: Bento grid layout with featured cards (e.g. OpenAI, Anthropic). |
 | **media**      | **Video**, **Image**, **Audio**, **Platforms**: Collapsible sections. Bento grid layout with emoji accents. |
 | **companies**  | One section per company (80+); collapsible; country badges on h2. |
-| **tools**      | **CLI**, **Browser based builder**, **IDE**, **Web builders**, **Browser Tools**, **DevOps**, **Reference**, etc.; collapsible + A–Z filter bar. |
+| **tools**      | **CLI** (incl. AI agents, **Fresh** / **Orbiton** TUI editors), **Browser based builder**, **IDE**, **Web builders**, **Browser Tools**, **DevOps**, **Reference** (e.g. Awesome TUIs), etc.; collapsible + A–Z filter bar. |
 | **specials**   | **Free domains**, **Learning**, **Games**: Collapsible sections. |
 | **skills**     | **Agentic tools**, **MCPs**, **Skills**: Collapsible sections. |
 | **404**        | Error code, title, back link. Centered layout. |

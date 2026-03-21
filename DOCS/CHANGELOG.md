@@ -14,9 +14,11 @@ Consolidated **minor** release: rolls up the previously unpublished **Unreleased
 ### Added
 - **Tools (Reference):** [Product Hunt](https://www.producthunt.com/) — launch board for new products (already listed in Reference A–Z and called out on **About** with Futurepedia and There's An AI For That).
 - **Tools (Reference / MCP & agents):** CLIProxyAPI, Context7, Firecrawl, Glama MCP, Playwright MCP, Smithery, Tavily; OpenRouter (Reference); **Cline** (Coding Assistants); **Goose** (CLI); **Daytona** & **e2b** (DevOps).
-- **Tools (IDE):** **Chad IDE** ([Clad Labs](https://www.cladlabs.ai/), YC) — multi-agent macOS IDE (Claude Code, Cursor CLI, OpenAI Codex). **OpenCode Desktop**, **Bind AI**. New **Browser based builder** section (before IDE): **Devin**, **Genspark**, **Manus**, **Replit** — consolidated; removed duplicate cards from IDE / Browser Tools / Web builders.
+- **Tools (IDE):** **Chad IDE** ([Clad Labs](https://www.cladlabs.ai/), YC) — multi-agent macOS IDE (Claude Code, Cursor CLI, OpenAI Codex). **OpenCode Desktop**, **Bind AI** (card links to [app.getbind.co/ide](https://app.getbind.co/ide); copy notes full **desktop IDE coming soon**). New **Browser based builder** section (before IDE): **Devin**, **Genspark**, **Manus**, **Replit**, **Repaint** ([repaint.com](https://repaint.com/), YC AI site builder) — consolidated where applicable; removed duplicate cards from IDE / Browser Tools / Web builders.
+- **Tools (Reference):** [Awesome TUIs](https://github.com/rothgar/awesome-tuis) — curated GitHub list of terminal UIs (dashboards, dev, K8s/Docker, editors, file managers, games, libraries).
+- **Tools (CLI):** **Fresh** ([getfresh.dev](https://getfresh.dev/)) — terminal text editor with GUI-like UX, LSP, large files; **Orbiton** ([github.com/xyproto/orbiton](https://github.com/xyproto/orbiton)) — minimal config-free TUI editor (`o`).
 - **Chats:** Richer **OpenClaw**, **NemoClaw**, **Moltbook** entries.
-- **Companies:** **Clad Labs** (Chad IDE), **Block** (Goose); **NVIDIA** (NemoClaw, ChatRTX); **Bind AI**, **cmux** / **Manaflow**, **Obsidian**; **Amp** (Amp CLI), **JetBrains** (Junie, Junie CLI), **Gemini Code Assist**.
+- **Companies:** **Clad Labs** (Chad IDE), **Block** (Goose), **Repaint**; **NVIDIA** (NemoClaw, ChatRTX); **Bind AI**, **cmux** / **Manaflow**, **Obsidian**; **Amp** (Amp CLI), **JetBrains** (Junie, Junie CLI), **Gemini Code Assist**.
 - **Inspirations:** **The PrimeTime** (@ThePrimeTimeagen).
 - **Earlier in 1.9 window:** SpacetimeDB, vinext, Bun, Vite, Svelte, OpenCode Zen; **Low Level** & **TechLinked** inspirations; site-wide **page-load veil**; **Atelier** theme; **Light** theme refresh.
 - **Search & badges:** `search-data.js`, `badges.js` updated for all new entries.

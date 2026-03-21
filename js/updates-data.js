@@ -20,9 +20,11 @@ const UPDATES_DATA = [
           "Release 1.9.0: Consolidated documentation and site version bump; prior patch train 1.8.0–1.8.5 remains below for history.",
           "Tools (Reference): Product Hunt (producthunt.com) — product board for launches; indexed; also linked from About product boards with Futurepedia and There's An AI For That.",
           "Tools (Reference / MCP & agents): CLIProxyAPI, Context7, Firecrawl, Glama MCP, Playwright MCP, Smithery, Tavily; OpenRouter in Reference; Cline (Coding Assistants); Goose (CLI); Daytona & e2b (DevOps).",
-          "Tools (IDE): Chad IDE (Clad Labs, YC; cladlabs.ai); OpenCode Desktop; Bind AI. New section Browser based builder (before IDE): Devin, Genspark, Manus, Replit — deduped from IDE / Browser Tools / Web builders.",
+          "Tools (IDE): Chad IDE (Clad Labs); OpenCode Desktop; Bind AI — tools card → app.getbind.co/ide; desktop IDE coming soon in copy. Browser based builder: Devin, Genspark, Manus, Replit, Repaint (YC; repaint.com).",
+          "Tools (Reference): Awesome TUIs — github.com/rothgar/awesome-tuis (curated TUI apps by category).",
+          "Tools (CLI): Fresh (getfresh.dev; terminal editor, LSP, GUI-like UX); Orbiton (xyproto/orbiton; minimal TUI editor, o).",
           "Chats: OpenClaw, NemoClaw, Moltbook — expanded copy and links.",
-          "Companies: Clad Labs (Chad IDE), Block (Goose); NVIDIA (NemoClaw, ChatRTX); Bind AI, cmux/Manaflow, Obsidian; Amp (Amp CLI), JetBrains (Junie, Junie CLI), Gemini Code Assist.",
+          "Companies: Clad Labs, Block (Goose), Repaint; NVIDIA; Bind AI, cmux/Manaflow, Obsidian; Amp, JetBrains (Junie, Junie CLI), Gemini Code Assist.",
           "Inspirations: The PrimeTime (@ThePrimeTimeagen).",
           "Earlier in this release window (content + UX): SpacetimeDB, vinext, Bun, Vite, Svelte, OpenCode Zen; Low Level & TechLinked inspirations; page-load veil; Atelier theme; Light theme refresh.",
           "Search & badges: search-data.js and badges.js updated for all new cards and company headers."

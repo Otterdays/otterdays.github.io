@@ -1,5 +1,11 @@
 # SCRATCHPAD
 
+## 2026-03-21 — v1.9.0 ship (docs + git push)
+
+**What changed:** Final **1.9.0** notes in `CHANGELOG.md` and `js/updates-data.js` (Repaint, Awesome TUIs, Fresh, Orbiton, Bind IDE link/copy); `SUMMARY.md` + `journal/2026-03-21.md`. **Git:** commit `chore(release): v1.9.0` (or `docs(release): v1.9.0`) and **push `main`**.
+
+---
+
 ## 2026-03-21 — Fresh + Orbiton (TUI editors, CLI section)
 
 **What changed:** **Fresh** ([getfresh.dev](https://getfresh.dev/), [sinelaw/fresh](https://github.com/sinelaw/fresh)) and **Orbiton** ([xyproto/orbiton](https://github.com/xyproto/orbiton)) — `tools.html` CLI (A–Z: Fresh after Crush; Orbiton after Open Interpreter); `search-data.js`; `badges.js` (Fresh US, Orbiton Norway).

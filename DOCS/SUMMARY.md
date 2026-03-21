@@ -2,12 +2,12 @@
 
 ## Release v1.9.0 — 2026-03-21
 
-- **Version:** Site badge, updates timeline, and docs aligned on **v1.9.0**. Prior **Unreleased** changelog items (loader, Atelier, Light refresh, search/card/footer QoL) are now part of this release.
-- **Reference / discovery:** [Product Hunt](https://www.producthunt.com/) is in **Tools → Reference** (A–Z), the search index, and **About** (product boards with Futurepedia and There's An AI For That).
-- **Tools:** MCP/agent stack (CLIProxyAPI, Context7, Firecrawl, Glama MCP, Playwright MCP, Smithery, Tavily, OpenRouter, Cline, Goose, Daytona, e2b); **Chad IDE** / Clad Labs; **Browser based builder** (Devin, Genspark, Manus, Replit); OpenCode Desktop, Bind AI; prior adds (SpacetimeDB, vinext, Bun, Vite, Svelte, OpenCode Zen).
-- **Chats / companies:** OpenClaw, NemoClaw, Moltbook; Clad Labs, Block (Goose), NVIDIA updates, Bind, cmux/Manaflow, Obsidian, Amp/Junie/Gemini Code Assist.
-- **Inspirations:** The PrimeTime; plus Low Level, TechLinked, Brackeys, theo gg.
-- **Docs:** `DOCS/CHANGELOG.md` **[1.9.0]**; `js/updates-data.js`; `DOCS/journal/2026-03-21.md`; `DOCS/SBOM.md` refreshed date.
+- **Version:** Site badge, `updates.html`, and docs on **v1.9.0** — shipped to `main` (GitHub Pages). Includes loader/search/card/footer QoL from the former Unreleased bucket plus March 2026 content.
+- **Reference / discovery:** [Product Hunt](https://www.producthunt.com/); [Awesome TUIs](https://github.com/rothgar/awesome-tuis) (curated TUI list); search + **About** product boards.
+- **Tools:** MCP/agent stack; **Chad IDE** / Clad Labs; **Browser based builder** (Devin, Genspark, Manus, Replit, **Repaint**); **Bind AI** → [app.getbind.co/ide](https://app.getbind.co/ide) + desktop IDE soon; **CLI:** **Fresh**, **Orbiton**; OpenCode Desktop; SpacetimeDB, vinext, Bun, Vite, Svelte, OpenCode Zen, etc.
+- **Chats / companies:** OpenClaw, NemoClaw, Moltbook; Clad Labs, Block, **Repaint**, NVIDIA, Bind, cmux/Manaflow, Obsidian, Amp/Junie/Gemini Code Assist.
+- **Inspirations:** The PrimeTime; Low Level, TechLinked, Brackeys, theo gg.
+- **Docs:** `DOCS/CHANGELOG.md` **[1.9.0]**; `js/updates-data.js`; `DOCS/journal/2026-03-21.md`; `DOCS/SBOM.md`; `README.md` / `ARCHITECTURE.md` where refreshed.
 
 ## Recent update — 2026-03-12 (content batch)
 
