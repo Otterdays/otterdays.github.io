@@ -20,6 +20,7 @@
     var RU = { flag: '\uD83C\uDDF7\uD83C\uDDFA', label: 'Russia' };
     var CH = { flag: '\uD83C\uDDE8\uD83C\uDDF4', label: 'Switzerland' };
     var IN = { flag: '\uD83C\uDDEE\uD83C\uDDF3', label: 'India' };
+    var NO = { flag: '\uD83C\uDDF3\uD83C\uDDF4', label: 'Norway' };
 
     var COUNTRY_MAP = {
         'Google': USA, 'OpenAI': USA, 'Anthropic': USA, 'Meta': USA, 'Microsoft': USA, 'xAI': USA,
@@ -28,7 +29,7 @@
         'Zhipu AI': CN, 'Quora': USA, 'Character.AI': USA, 'Inflection': USA, 'Cohere': CA,
         'Abacus.AI': USA, 'Allen Institute for AI': USA, 'DuckDuckGo': USA, 'QuillBot': USA,
         'OpenRouter': USA, 'Groq': USA, 'GitHub': USA, 'SambaNova': USA, 'Cerebras': USA,
-        'Hugging Face': FR, 'Bun': USA, 'Vite': USA, 'Svelte': USA, 'Docker': USA, 'StackBlitz': USA, 'Replit': USA, 'Railway': USA, 'Render': USA, 'Fly.io': USA, 'Heroku': USA, 'DigitalOcean': USA,
+        'Hugging Face': FR, 'Bun': USA, 'Vite': USA, 'Svelte': USA, 'Docker': USA, 'StackBlitz': USA, 'Replit': USA, 'Repaint': USA, 'Railway': USA, 'Render': USA, 'Fly.io': USA, 'Heroku': USA, 'DigitalOcean': USA,
         'Warp': USA, 'Factory': USA, 'Charm Bracelet': USA, 'Netlify': USA, 'Cloudflare': USA,
         'Vercel': USA, 'Supabase': SG, 'MongoDB': USA, 'Adobe': USA, 'Figma': USA,
         'Stability AI': UK, 'Black Forest Labs': DE, 'Runway': USA, 'DeepAI': USA, 'Midjourney': USA,
@@ -38,7 +39,7 @@
         'StepFun': CN, 'TII (Falcon)': UAE, 'K2 Think (MBZUAI)': UAE, 'Tencent Hunyuan': CN,
         'vLLM': USA, 'Yandex': RU, 'Snyk': IL, 'Tabnine': IL, 'Sourcegraph': USA, 'Mintlify': USA,
         'Descript': USA, 'Canva': AU, 'You.com': USA, 'Wix': IL, 'Hostinger': { flag: '\uD83C\uDDF1\uD83C\uDDF9', label: 'Lithuania' },
-        'Lumio AI': IN, 'Jabali': USA, 'Agent Opus': USA, 'Arena': USA, 'Anything (Create.xyz)': USA,
+        'Lumio AI': IN, 'Jabali': USA, 'Agent Opus': USA, 'Arena': USA, 'Awesome TUIs': USA, 'Anything (Create.xyz)': USA,
         'Builder': USA, 'Biela': USA, 'Emergent': USA, 'Squarespace': USA, 'Sup AI': USA,
         'Arcee AI': USA, 'Rocket': USA, 'JDoodle': SG, 'Jam': USA, 'JetBrains': { flag: '\uD83C\uDDE8\uD83C\uDDFF', label: 'Czech Republic' }, 'Amp': USA, 'TRAE': USA, 'Wispr': USA,
         'Vibecode': USA, 'Pika': USA, 'Design Arena': USA, 'Higgsfield': USA, 'SuperMaker AI': USA,
@@ -75,9 +76,10 @@
         /* OpenAI / Microsoft (US) */
         'OpenAI Codex': USA, 'OpenAI Codex CLI': USA,
         /* Other products by company */
-        'Zencoder': USA, 'Augment Code': USA, 'Augment CLI': USA, 'Bind AI': USA, 'Block': USA, 'Goose': USA,
+        'Zencoder': USA, 'Augment Code': USA, 'Augment CLI': USA, 'Bind AI': USA, 'Block': USA, 'Chad IDE': USA,
+        'Clad Labs': USA, 'Goose': USA,
         'IBM Project Bob': USA, 'IntelliJ IDEA': { flag: '\uD83C\uDDE8\uD83C\uDDFF', label: 'Czech Republic' },
-        'Windsurf': USA, 'Z Code': USA, 'cmux': USA, 'Ghostty': USA, 'Manaflow': USA, 'Amazon Q Developer': USA, 'CodeGPT': USA, 'Sourcegraph Cody': USA,
+        'Windsurf': USA, 'Z Code': USA, 'cmux': USA, 'Ghostty': USA, 'Fresh': USA, 'Orbiton': NO, 'Manaflow': USA, 'Amazon Q Developer': USA, 'CodeGPT': USA, 'Sourcegraph Cody': USA,
         'Cline': USA, 'Cline CLI': USA, 'CLIProxyAPI': USA, 'Context7': USA, 'Firecrawl': USA, 'Glama MCP': USA,
         'Playwright MCP': USA, 'Smithery': USA, 'Tavily': USA, 'Daytona': USA, 'e2b': USA,
         'Hostinger Horizons': { flag: '\uD83C\uDDF1\uD83C\uDDF9', label: 'Lithuania' },

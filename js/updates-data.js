@@ -7,33 +7,41 @@ const UPDATES_DATA = [
     version: "Unreleased",
     date: "TBD",
     sections: [
+      { type: "added", items: ["(Future updates.)"] }
+    ]
+  },
+  {
+    version: "1.9.0",
+    date: "2026-03-21",
+    sections: [
       {
         type: "added",
         items: [
-          "Inspirations: Low Level (YouTube; reverse engineering, low-level, cybersecurity); TechLinked (YouTube; tech news).",
-          "Tools: SpacetimeDB, vinext (Cloudflare Next.js on Vite), OpenCode Desktop, OpenCode Zen, Bun, Vite, Svelte.",
-          "Companies: Clockwork Labs (SpacetimeDB), Cloudflare (vinext), OpenCode (Desktop, Zen), Bun, Vite, Svelte.",
-          "Search & badges: search-data.js, badges.js updated for all new entries.",
-          "Page-load transition: Added a shared loading veil with a blurred panel, accent pulse, and animated progress sweep for reloads and initial UI load.",
-          "Theme picker: Added Atelier, a warmer editorial-style colorway with paper tones, teal accents, and softer mesh lighting.",
-          "Light theme refresh: Default white/ink direction now uses cleaner neutrals, restrained blue accents, and calmer surface styling."
+          "Release 1.9.0: Consolidated documentation and site version bump; prior patch train 1.8.0–1.8.5 remains below for history.",
+          "Tools (Reference): Product Hunt (producthunt.com) — product board for launches; indexed; also linked from About product boards with Futurepedia and There's An AI For That.",
+          "Tools (Reference / MCP & agents): CLIProxyAPI, Context7, Firecrawl, Glama MCP, Playwright MCP, Smithery, Tavily; OpenRouter in Reference; Cline (Coding Assistants); Goose (CLI); Daytona & e2b (DevOps).",
+          "Tools (IDE): Chad IDE (Clad Labs, YC; cladlabs.ai); OpenCode Desktop; Bind AI. New section Browser based builder (before IDE): Devin, Genspark, Manus, Replit — deduped from IDE / Browser Tools / Web builders.",
+          "Chats: OpenClaw, NemoClaw, Moltbook — expanded copy and links.",
+          "Companies: Clad Labs (Chad IDE), Block (Goose); NVIDIA (NemoClaw, ChatRTX); Bind AI, cmux/Manaflow, Obsidian; Amp (Amp CLI), JetBrains (Junie, Junie CLI), Gemini Code Assist.",
+          "Inspirations: The PrimeTime (@ThePrimeTimeagen).",
+          "Earlier in this release window (content + UX): SpacetimeDB, vinext, Bun, Vite, Svelte, OpenCode Zen; Low Level & TechLinked inspirations; page-load veil; Atelier theme; Light theme refresh.",
+          "Search & badges: search-data.js and badges.js updated for all new cards and company headers."
         ]
       },
       {
         type: "changed",
         items: [
-          "Loader behavior: The new page-load effect fades out on window load, respects reduced motion, has a timeout fallback, and now hides the app shell earlier to prevent pre-loader styling flashes.",
-          "Search: Same-page result jumps now re-run highlight and collapsible-section expansion on hash changes.",
-          "Search shortcut: Cmd/Ctrl+K now ignores focused inputs, textareas, selects, and contenteditable targets.",
-          "Search results: Hover selection no longer triggers repeated smooth scrolling inside the result list.",
-          "Card effects: theme.js now uses per-card pointer handlers for spotlight + tilt instead of document-wide mousemove scans."
+          "Loader: Fades on window load, reduced motion, timeout fallback, earlier app-shell reveal to avoid pre-loader flashes.",
+          "Search: Hashchange re-runs highlight + collapsible expansion; Cmd/Ctrl+K ignores focused editables; result-list hover avoids extra smooth-scroll.",
+          "Cards: Per-card pointer handlers for spotlight/tilt (theme.js).",
+          "Footer: Eastern clock updates less often; not a live region per tick."
         ]
       },
       {
         type: "fixed",
         items: [
-          "Search reliability: Repeated in-page searches no longer silently fail after the first hash-based jump.",
-          "Footer accessibility: The live Eastern clock no longer behaves like a constantly updating live region."
+          "Search: Repeated same-page hash jumps stay reliable.",
+          "Footer: Clock accessibility (no constant live-region chatter)."
         ]
       }
     ]

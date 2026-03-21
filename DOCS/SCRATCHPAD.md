@@ -1,5 +1,41 @@
 # SCRATCHPAD
 
+## 2026-03-21 — Fresh + Orbiton (TUI editors, CLI section)
+
+**What changed:** **Fresh** ([getfresh.dev](https://getfresh.dev/), [sinelaw/fresh](https://github.com/sinelaw/fresh)) and **Orbiton** ([xyproto/orbiton](https://github.com/xyproto/orbiton)) — `tools.html` CLI (A–Z: Fresh after Crush; Orbiton after Open Interpreter); `search-data.js`; `badges.js` (Fresh US, Orbiton Norway).
+
+---
+
+## 2026-03-21 — Awesome TUIs (rothgar/awesome-tuis)
+
+**What changed:** [awesome-tuis](https://github.com/rothgar/awesome-tuis) — `tools.html` Reference (after Arena); `search-data.js`; `badges.js` (US). Curated TUI directory: editors, dev tools, K8s/Docker, file managers, games, libraries.
+
+---
+
+## 2026-03-21 — Repaint (repaint.com)
+
+**What changed:** [Repaint](https://repaint.com/) — **Browser based builder** on `tools.html`; **companies.html** section; `search-data.js` (company + tool); `badges.js` (United States). YC AI website builder: chat-to-build, design inspiration.
+
+---
+
+## 2026-03-21 — Bind AI: browser IDE + desktop (soon)
+
+**What changed:** Copy + links: **Bind AI** — browser IDE at [app.getbind.co/ide](https://app.getbind.co/ide); **full desktop IDE coming soon**. `tools.html` IDE card links to `/ide`; `companies.html` stays getbind.co with same narrative; `search-data.js` updated.
+
+---
+
+## 2026-03-21 — Release v1.9.0 + docs sweep
+
+**What changed:** Unified **v1.9.0** — all HTML version badges, `js/updates-data.js` (new **1.9.0** entry; prior Unreleased cleared to placeholder), `DOCS/CHANGELOG.md` **[1.9.0]** + Unreleased trimmed; restored **1.8.4** bullets (IntelliJ, Jam, Explore, Mintlify, etc.) into the long 1.8.4 section after duplicate removal. **SUMMARY.md**, **SBOM.md**, **CONTENT_GUIDE.md** (release checklist), **DOCS/journal/2026-03-21.md**. **Product Hunt:** confirmed in tools Reference, search, About — called out in 1.9.0 notes.
+
+---
+
+## 2026-03-21 — Chad IDE (Clad Labs) + Browser based builder section
+
+**What changed:** **Chad IDE** ([cladlabs.ai](https://www.cladlabs.ai/)) — `tools.html` IDE + `companies.html` **Clad Labs**; `search-data.js` + `badges.js`. New **Browser based builder** on `tools.html` (before IDE): **Devin**, **Genspark**, **Manus**, **Replit** — removed duplicates from IDE / Browser Tools / Web builders.
+
+---
+
 ## 2026-03-21 — Agent/MCP infra batch (homie follow-up)
 
 **What changed:** **companies.html** — **Block** section (**Goose**). **search-data.js** — company Block; tools: CLIProxyAPI, Context7, Firecrawl, Glama MCP, Playwright MCP, Smithery, Tavily, Goose, Cline, Daytona, e2b, OpenRouter (tools). **badges.js** — country badges for those `.chat-link-name` keys plus **Block** / **Goose** for companies.

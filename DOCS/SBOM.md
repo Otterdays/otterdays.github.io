@@ -1,6 +1,6 @@
 # SBOM — Software Bill of Materials
 
-**Updated:** 2026-02-04
+**Updated:** 2026-03-21
 
 ## Runtime / site
 

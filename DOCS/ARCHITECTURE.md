@@ -1,5 +1,7 @@
 # ARCHITECTURE
 
+**Current release:** v1.9.0 (version badge in top bar → `updates.html`).
+
 ## Site structure
 
 ```
@@ -7,35 +9,44 @@
 ├── index.html              # Home: profile, social links
 ├── programs.html           # Projects grid with badges (~60+ projects)
 ├── chats.html              # AI Chats: Assistants + Provider hubs & playgrounds
+├── museum.html             # AI Model Museum (landmark LLMs)
 ├── media.html              # AI Media Gen: Video, Image, Audio
-├── companies.html          # AI & dev tools by company (56+ companies); collapsible sections
-├── tools.html              # Desktop Tools: CLI, IDE, Browser (A–Z), Tunneling, Reference
-├── specials.html           # Specials: Free domains, Learning
-├── skills.html             # Skills/Tools: Cursor & Antigravity agentic tools, MCPs, SkillBox, Skills directory
-├── 404.html                # Custom 404 error page
+├── companies.html          # AI & dev tools by company (80+); collapsible sections
+├── tools.html              # CLI, IDE, Browser based builder, Browser Tools, Web builders, DevOps, Reference, etc. (A–Z within sections)
+├── specials.html           # Specials: Free domains, Learning, Games
+├── skills.html             # Skills/Tools: agentic tools, MCPs, SkillBox, Skills directory
+├── explore.html            # Explore: charts / tag viz
+├── updates.html            # Site changelog timeline (js/updates-data.js)
+├── inspirations.html       # YouTube / creator inspirations
+├── posts.html              # Archived article links
+├── about.html              # About, pages at a glance
+├── 404.html                # Custom 404
 ├── css/
-│   └── style.css           # Themes, badges, layout, chat-link cards, search modal, companies collapsible, scroll progress, QoL/footer
+│   ├── style.css           # Layout, glass cards, search, collapsible, filter bar, footer, loader
+│   └── themes/             # Per-theme CSS fragments
 ├── js/
-│   ├── theme.js            # Theme switcher (shared; all pages)
-│   ├── badges.js           # Project badge injection (programs.html only)
-│   ├── collapsible.js      # Collapsible sections (companies, tools, specials, skills, media; body.collapsible-pages)
-│   ├── companies.js        # Country badges (companies.html only; body.companies-page)
-│   ├── search-data.js      # Search index with all searchable items
-│   └── search.js           # Search modal logic, fuzzy matching, keyboard nav
+│   ├── theme.js            # Themes, dropdown, scroll progress, card tilt/spotlight
+│   ├── badges.js           # Project badges (programs); BADGE_COUNTRY_MAP (all card pages + companies h2)
+│   ├── collapsible.js      # Collapsible sections (body.collapsible-pages)
+│   ├── companies.js        # Company section header badges (companies-page)
+│   ├── filter.js           # A–Z section filter (collapsible pages)
+│   ├── qol.js              # Page-load veil, scroll-to-top, shared QoL
+│   ├── search-data.js      # Search index
+│   ├── search.js           # Search modal, fuzzy match, keyboard nav
+│   ├── updates-data.js     # Changelog entries for updates.html
+│   └── updates.js          # Renders updates timeline
 ├── images/
-│   ├── favicon.svg         # Site favicon
-│   └── placeholder.svg     # Profile placeholder image
-├── fetch-github-repos.js   # Optional: fetch GitHub repos → repos.md (local)
-├── DOCS/                   # Project documentation (not public-facing)
+│   ├── favicon.svg
+│   └── placeholder.svg
+├── fetch-github-repos.js   # Optional local: repos → repos.md
+├── DOCS/
 │   ├── ARCHITECTURE.md
 │   ├── CHANGELOG.md
-│   ├── CONTENT_GUIDE.md    # How to add content and update search
-│   ├── My_Thoughts.md
-│   ├── SBOM.md
-│   ├── SCRATCHPAD.md
-│   ├── STYLE_GUIDE.md
+│   ├── CONTENT_GUIDE.md
+│   ├── journal/            # Dated release notes (e.g. 2026-03-21.md)
 │   ├── SUMMARY.md
-│   └── debugs/
+│   ├── SBOM.md
+│   └── …
 ├── README.md
 └── .gitignore
 ```
@@ -46,7 +57,7 @@
 - **Collapsed (64px):** Shows icons only.
 - **Expanded (240px):** Expands on hover to show text labels.
 - **Mobile:** Fixed bottom navigation bar (icons only).
-- **Links:** Home, Programs, AI Chats, Media Gen, Companies, Tools, Specials, Skills/Tools, About.
+- **Links:** Home, Programs, AI Chats, Museum, Media Gen, Companies, Tools, Specials, Skills/Tools, Updates, Explore, Inspirations, Posts, About.
 
 ## Page breakdown
 
@@ -56,8 +67,8 @@
 | **programs**   | Profile header + projects grid; `js/badges.js` adds badges by title. **Glassmorphic cards.** |
 | **chats**      | **Assistants** & **Provider hubs**: Bento grid layout with featured cards (e.g. OpenAI, Anthropic). |
 | **media**      | **Video**, **Image**, **Audio**, **Platforms**: Collapsible sections. Bento grid layout with emoji accents. |
-| **companies**  | One section per company (56+); collapsible sections (toggle at top center). **Sidebar layout.** |
-| **tools**      | **CLI**, **IDE**, **Web builders**, **Browser**, **Tunneling**, **Reference**: Collapsible sections. |
+| **companies**  | One section per company (80+); collapsible; country badges on h2. |
+| **tools**      | **CLI**, **Browser based builder**, **IDE**, **Web builders**, **Browser Tools**, **DevOps**, **Reference**, etc.; collapsible + A–Z filter bar. |
 | **specials**   | **Free domains**, **Learning**, **Games**: Collapsible sections. |
 | **skills**     | **Agentic tools**, **MCPs**, **Skills**: Collapsible sections. |
 | **404**        | Error code, title, back link. Centered layout. |
@@ -65,12 +76,12 @@
 ## Themes
 
 - **data-theme** on `body`.
-- **Categories:**
+- **Categories (see `js/theme.js`):**
     - **Core:** Dark, Light.
-    - **Brands:** Google, OpenAI, Anthropic, Otterdays (Lorenz), GitHub.
-    - **Editors:** VS Code, Dracula, Nord, Monokai, Solarized, Gruvbox, Synthwave.
-    - **Creative:** Forest, Coffee, Cyber, Aqua, Luxury.
-- **Total:** 19 themes.
+    - **Brands:** Anthropic, GitHub, Google, OpenAI.
+    - **Editors:** Dracula, Gruvbox, Monokai, Nord, Solarized, VS Code.
+    - **Creative:** Atelier, Aqua, Coffee, Cyber, Forest, Luxury, Otterdays (Lorenz), Synthwave.
+- **Total:** 20 themes in the picker.
 - Stored in localStorage as `dev-profile-theme`.
 - CSS variables: `--bg`, `--fg`, `--muted`, `--accent`, `--card`, `--border`, `--glass`, `--accent-glow`.
 
@@ -80,19 +91,18 @@
 - `body { display: grid; grid-template-columns: 64px 1fr; }`
 - **Sidebar:** Fixed width (64px -> 240px hover).
 - **Content:** `1fr` area (`.content`).
-- **Top Bar:** Floating flex container inside `.content` for Version Badge, Search, and Theme Switcher.
+- **Top Bar:** Version badge (v1.9.0 → `updates.html`), Search, Theme switcher.
 
 ## Glassmorphism & Motion
 
 - **Cards:** `.project-card`, `.chat-link-card` use `backdrop-filter: blur(12px)` and `rgba(..., 0.4)` backgrounds.
-- **3D Tilt:** `js/theme.js` adds mousemove event listeners to cards to apply `rotateX`/`rotateY` transforms based on cursor position.
+- **3D Tilt / spotlight:** `js/theme.js` uses **per-card** pointer handlers for tilt and spotlight (not document-wide mousemove).
 - **Entrance:** Content slides in from right (`slideInRight` keyframe).
 
 ## Badges
 
-- **Types:** Game, Software, Minecraft, Music, Android.
-- Injected by `js/badges.js` on `programs.html`; project title → badge mapping in JS.
-- Cards can show multiple badges.
+- **Project types:** Game, Software, Minecraft, Music, Android — `programs.html` via `js/badges.js`.
+- **Country / origin:** `js/badges.js` → `BADGE_COUNTRY_MAP` for `.chat-link-name` on tools/chats/media/etc. and company `h2` on `companies.html`.
 
 ## GitHub Pages
 
@@ -103,13 +113,16 @@
 
 ## Data flow
 
-- All content is static HTML; no CMS or API at runtime.
-- `js/theme.js` runs on every page (theme dropdown, scroll-to-top, scroll progress bar, localStorage).
-- `js/badges.js` runs only on `programs.html` (badge injection).
-- `js/collapsible.js` runs when `body` has class `collapsible-pages` (companies, tools, specials, skills, media); injects toggle + collapsible wrapper.
-- `js/companies.js` runs only when `body` has class `companies-page` (country badge injection).
-- `js/search-data.js` and `js/search.js` run on all pages (unified search).
-- `fetch-github-repos.js` is for local use only; output `repos.md` is optional and not required for the site.
+- Static HTML only; no CMS at runtime.
+- `js/theme.js` — every page (theme, scroll progress, card effects).
+- `js/badges.js` — every page (country badges on cards); plus project badges on `programs.html`.
+- `js/collapsible.js` — `body.collapsible-pages`.
+- `js/companies.js` — `body.companies-page` (section h2 country badges).
+- `js/filter.js` — A–Z section filter on collapsible pages.
+- `js/qol.js` — load veil, scroll-to-top, shared QoL.
+- `js/search-data.js` + `js/search.js` — unified search.
+- `js/updates-data.js` + `js/updates.js` — `updates.html` only.
+- `fetch-github-repos.js` — local optional; `repos.md` not required for the live site.
 
 ## Search System
 

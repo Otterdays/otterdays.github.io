@@ -1,5 +1,14 @@
 # SUMMARY
 
+## Release v1.9.0 — 2026-03-21
+
+- **Version:** Site badge, updates timeline, and docs aligned on **v1.9.0**. Prior **Unreleased** changelog items (loader, Atelier, Light refresh, search/card/footer QoL) are now part of this release.
+- **Reference / discovery:** [Product Hunt](https://www.producthunt.com/) is in **Tools → Reference** (A–Z), the search index, and **About** (product boards with Futurepedia and There's An AI For That).
+- **Tools:** MCP/agent stack (CLIProxyAPI, Context7, Firecrawl, Glama MCP, Playwright MCP, Smithery, Tavily, OpenRouter, Cline, Goose, Daytona, e2b); **Chad IDE** / Clad Labs; **Browser based builder** (Devin, Genspark, Manus, Replit); OpenCode Desktop, Bind AI; prior adds (SpacetimeDB, vinext, Bun, Vite, Svelte, OpenCode Zen).
+- **Chats / companies:** OpenClaw, NemoClaw, Moltbook; Clad Labs, Block (Goose), NVIDIA updates, Bind, cmux/Manaflow, Obsidian, Amp/Junie/Gemini Code Assist.
+- **Inspirations:** The PrimeTime; plus Low Level, TechLinked, Brackeys, theo gg.
+- **Docs:** `DOCS/CHANGELOG.md` **[1.9.0]**; `js/updates-data.js`; `DOCS/journal/2026-03-21.md`; `DOCS/SBOM.md` refreshed date.
+
 ## Recent update — 2026-03-12 (content batch)
 
 - **Inspirations:** Low Level (reverse engineering, low-level, cybersecurity); TechLinked (tech news).
@@ -25,7 +34,7 @@
 **Status:** Ready to serve. Static HTML/CSS/JS; small shared scripts for theme, badges, search, companies minimization. No build step.
 
 **Features:**
-- **13 themes:** Dark, Light, Google, OpenAI, Anthropic, Otterdays, GitHub, Dracula, Nord, VS Code, Synthwave, Monokai, Solarized, Gruvbox (localStorage).
+- **20 themes** (theme picker): Core (Dark, Light); Brands (Anthropic, GitHub, Google, OpenAI); Editors (Dracula, Gruvbox, Monokai, Nord, Solarized, VS Code); Creative (Atelier, Aqua, Coffee, Cyber, Forest, Luxury, Otterdays, Synthwave) — `localStorage`.
 - **Project badges:** Game, Software, Minecraft, Music, Android (multi-badge; `js/badges.js` on programs).
 - **Country badges:** Origin (full country name) on all card pages and company section headers; shared map in `js/badges.js`; company = country for products.
 - **Unified search:** Site-wide search with Cmd/Ctrl+K, fuzzy matching, keyboard navigation (`js/search.js`, `js/search-data.js`).
@@ -48,7 +57,7 @@
 - **Skills:** Antigravity agentic tools (capabilities list), SkillBox, Skills directory (React, Testing, Git).
 - **Search:** Index updated for all new links (chats, media, companies, tools, skills).
 
-**Docs:** `DOCS/journal/` — dated journal entries (e.g. 2026-02-25, 2026-03-02). Tools: SpacetimeDB, vinext, Bun, Vite, Svelte, OpenCode (Desktop, Zen). Inspirations: Brackeys, theo gg, Low Level, TechLinked, The PrimeTime. Companies: Clockwork Labs, Bun, Vite, Svelte; OpenCode expanded. Current version v1.8.5.
+**Docs:** `DOCS/journal/` — dated entries (e.g. 2026-02-25, 2026-03-02, **2026-03-21** for v1.9.0). **Current version: v1.9.0** (`updates.html`, footer badge on all pages).
 
 **Quick links:**
 - [SCRATCHPAD](SCRATCHPAD.md) — active tasks, blockers, last 5 actions

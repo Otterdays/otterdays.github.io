@@ -5,22 +5,32 @@ All notable changes to this project are documented in this file. Format: [Keep a
 ## [Unreleased]
 
 ### Added
-- **Inspirations:** Low Level (YouTube; reverse engineering, low-level, cybersecurity); TechLinked (YouTube; tech news, 1.99M subs).
-- **Tools:** SpacetimeDB (real-time backend + DB; Clockwork Labs); vinext (Cloudflare Next.js on Vite); OpenCode Desktop, OpenCode Zen; Bun (JS runtime); Vite (frontend build tool); Svelte (UI framework).
-- **Companies:** Clockwork Labs (SpacetimeDB), Cloudflare (vinext), OpenCode (Desktop, Zen), Bun, Vite, Svelte.
-- **Search & badges:** search-data.js, badges.js updated for all new entries.
-- **Page-load transition:** Added a shared site-wide loading veil with a blurred panel, accent pulse, and animated progress sweep for page reloads and initial UI load.
-- **Theme:** New `Atelier` colorway added to the theme picker; warmer editorial palette alongside the refreshed `Light` theme.
-- **Design system:** `Light` theme retuned toward a cleaner white/ink baseline with calmer blue accents and more professional neutral surfaces.
-- (Future updates.)
+- (Planning: future changes.)
+
+## [1.9.0] - 2026-03-21
+
+Consolidated **minor** release: rolls up the previously unpublished **Unreleased** UX/theme/content items with the **March 2026** tools/companies/chats work. Patch history **1.8.0–1.8.5** remains below for detail.
+
+### Added
+- **Tools (Reference):** [Product Hunt](https://www.producthunt.com/) — launch board for new products (already listed in Reference A–Z and called out on **About** with Futurepedia and There's An AI For That).
+- **Tools (Reference / MCP & agents):** CLIProxyAPI, Context7, Firecrawl, Glama MCP, Playwright MCP, Smithery, Tavily; OpenRouter (Reference); **Cline** (Coding Assistants); **Goose** (CLI); **Daytona** & **e2b** (DevOps).
+- **Tools (IDE):** **Chad IDE** ([Clad Labs](https://www.cladlabs.ai/), YC) — multi-agent macOS IDE (Claude Code, Cursor CLI, OpenAI Codex). **OpenCode Desktop**, **Bind AI**. New **Browser based builder** section (before IDE): **Devin**, **Genspark**, **Manus**, **Replit** — consolidated; removed duplicate cards from IDE / Browser Tools / Web builders.
+- **Chats:** Richer **OpenClaw**, **NemoClaw**, **Moltbook** entries.
+- **Companies:** **Clad Labs** (Chad IDE), **Block** (Goose); **NVIDIA** (NemoClaw, ChatRTX); **Bind AI**, **cmux** / **Manaflow**, **Obsidian**; **Amp** (Amp CLI), **JetBrains** (Junie, Junie CLI), **Gemini Code Assist**.
+- **Inspirations:** **The PrimeTime** (@ThePrimeTimeagen).
+- **Earlier in 1.9 window:** SpacetimeDB, vinext, Bun, Vite, Svelte, OpenCode Zen; **Low Level** & **TechLinked** inspirations; site-wide **page-load veil**; **Atelier** theme; **Light** theme refresh.
+- **Search & badges:** `search-data.js`, `badges.js` updated for all new entries.
+- **Version:** Site badge and docs unified to **v1.9.0**.
 
 ### Changed
-- **Loader behavior:** The new page-load effect now fades out on `window.load`, respects reduced motion, includes a timeout fallback, and hides the app shell earlier to prevent pre-loader styling flashes.
-- **Search:** Same-page result navigation now re-runs highlight/expand behavior on `hashchange`, so repeated in-page searches stay reliable.
-- **Search:** `Cmd/Ctrl+K` ignores focused editable fields instead of hijacking form input behavior.
-- **Search results:** Hover selection no longer forces smooth scrolling on every mouse move in the result list.
-- **Theme interactions:** Card spotlight/tilt effects now use per-card pointer handlers rather than document-wide mousemove scans, reducing work on content-heavy pages.
-- **Footer clock:** Eastern time footer clock refreshes less aggressively and no longer uses a live region for every tick.
+- **Loader:** Fades on `window.load`, respects reduced motion, timeout fallback, earlier app-shell reveal.
+- **Search:** `hashchange` re-runs highlight/collapsible expansion; `Cmd/Ctrl+K` ignores focused editables; result-list hover avoids redundant smooth-scroll.
+- **Cards:** Per-card pointer handlers for spotlight/tilt (`theme.js`).
+- **Footer clock:** Less aggressive updates; not a live region per tick.
+
+### Fixed
+- **Search:** Repeated same-page hash jumps remain reliable.
+- **Footer:** Clock no longer behaves like a constantly updating live region.
 
 ## [1.8.5] - 2026-02-25
 
@@ -29,7 +39,7 @@ All notable changes to this project are documented in this file. Format: [Keep a
 - **Companies:** Render, Fly.io, Coolify, DigitalOcean, Heroku, and Zeabur added.
 - **Search index & Badges:** Updated `search-data.js` and `badges.js` to include the new hosting platforms.
 - **Tools (Reference):** AI research & papers — Connected Papers, Consensus, Elicit, Georgetown Library AI Tools, Ithaka S+R GenAI Tracker, Keenious, Research Rabbit, scite, Scholarcy, Semantic Scholar, Undermind; AI Tools Directory, Marketer Milk (26 best AI marketing tools), Read AI, Saner.AI, Gamma, Grammarly; all in Reference section A–Z.
-- **Tools (IDE):** RexIDE (command center for AI agents), T3 Code (minimal web GUI for coding agents; Codex-first, Claude Code soon; by theo gg; npx t3 or desktop app), Theia IDE (Eclipse Theia; AI-native, open-source), PearAI (AI code editor; Roo Code/Cline, Continue, PearAI Router), Blackbox AI (unifies Claude Code, Codex, Gemini; multi-agent), Devin (AI software engineer; autonomous tickets, plan, test, PR; Slack, Linear, Jira, GitHub).
+- **Tools (IDE):** RexIDE (command center for AI agents), T3 Code (minimal web GUI for coding agents; Codex-first, Claude Code soon; by theo gg; npx t3 or desktop app), Theia IDE (Eclipse Theia; AI-native, open-source), PearAI (AI code editor; Roo Code/Cline, Continue, PearAI Router), Blackbox AI (unifies Claude Code, Codex, Gemini; multi-agent), Devin (later moved to **Browser based builder** in v1.9.0).
 - **Companies (T3 theo gg):** t3.gg (main site), YouTube @t3dotgg, T3 Code added to T3 (theo gg) section.
 - **Inspirations:** theo gg card added — Developer & Creator; t3.gg, shoo, T3 Chat, T3 Canvas, T3 Code, create-t3-app; Visit t3.gg link.
 - **Posts:** New archive page (`posts.html`) for saved articles; first entry: Sydney Morning Herald — Alibaba ROME AI bot went rogue, cryptomining; sidebar 📰 Posts link; 15 pages site-wide.
@@ -45,6 +55,14 @@ All notable changes to this project are documented in this file. Format: [Keep a
 - **Specials:** New section Free AI coding — Gemini Code Assist (free), p5js AI.
 - **Chats:** Llama 4 (Meta open-source multimodal).
 - **Companies:** Codeium (Codeium + Windsurf), Continue, Kuaishou (Kling), Lightricks (LTX Video).
+- **Tools (IDE):** IntelliJ IDEA (jetbrains.com/idea) — Java/Kotlin; JetBrains AI built-in.
+- **Tools (Debug & QA):** Jam (jam.dev) — one-click bug reports; console/network capture; MCP.
+- **Tools (Web builders):** Builder.io GitHub (github.com/BuilderIO/builder) — SDKs, Figma to code.
+- **Companies:** Jam; JetBrains (IntelliJ IDEA).
+- **Explore page:** Data viz (donut, bar, tag cloud); sidebar nav, search index, sitemap.
+- **QoL:** URL tooltips on cards; search hint on hover (⌘K); footer stats link to search/updates/companies.
+- **Footer:** 13 pages (includes Explore); Mintlify description (llms.txt, MCP, intelligent docs).
+- **Coverage:** LogRocket/JetBrains-style 2025–2026 AI dev tool landscape (Cursor, Windsurf, Copilot, v0, Bolt, etc.).
 - **AI Model Museum:** New page `museum.html` — a curated museum of landmark AI language models presented as display-case exhibits; featured exhibit: Claude Sonnet 4.6 (newest, spotlight glow, pulsing badge); 2025 gallery (Claude 3.7 Sonnet, Grok 3, o3, DeepSeek R1, Gemini 2.0 Flash); 2024 gallery (GPT-4o, o1, Claude 3.5 Sonnet, DeepSeek V3, Llama 3.3 70B, Gemini 1.5 Pro); museum CSS (spotlight animation, company accent borders, era badges, trait pills, section dividers) appended to style.css; 🏛️ sidebar link added to all 12 pages between AI Chats and Media Gen.
 - **A-Z Filter Bar:** Sticky filter bar on collapsible pages (companies, tools, specials, skills, media); filter sections by first letter; All | # | A–Z pills; glassmorphism styling; sessionStorage persistence; `js/filter.js`, `.filter-bar` in style.css.
 - **Tools:** New section “Coding plans” — subscription/API plans that plug into existing IDEs & CLIs; first entry: Z.ai GLM Coding Plan (z.ai/subscribe; GLM-5 & GLM-4.7 for Cursor, Claude Code, Cline, Kilo Code, Roo Code, Crush, Gemini CLI, etc.; Lite/Pro/Max, MCP); tools.html, companies.html Zhipu AI, search-data.js, badges.js.
@@ -59,32 +77,12 @@ All notable changes to this project are documented in this file. Format: [Keep a
 ### Changed
 - **A-Z Filter Bar:** Click the active letter again to clear the filter and show all sections (QoL).
 - **Tools:** Desktop Tools sections sorted A–Z (Auth, Browser AI, Browser Tools, CLI, Codebase & research, Coding Assistants, Coding plans, DevOps & containers, Game development, IDE, Local LLM runtimes, Reference, Terminal, Tunneling, Voice & speech-to-text, Web builders).
+- **Mintlify:** Description updated — intelligent docs; llms.txt, MCP.
+- **Sitemap:** explore.html, museum.html added.
+- **Version badge:** v1.8.4 site-wide (13 pages).
 
 ### Fixed
 - **A-Z Filter Bar:** Filtered-out sections now hide correctly on collapsible pages (CSS specificity: `.collapsible-pages .profile-section.filter-hidden` overrides grid display).
-
-## [1.8.4] - 2026-02-25
-
-### Added
-- **Tools (Coding Assistants):** Codeium (forever-free AI coding), Continue (open-source; VS Code, JetBrains; model-agnostic).
-- **Tools (Reference):** MCP Directory (10,000+ MCP servers).
-- **Media (Video):** Kling (Kuaishou), LTX Video (Lightricks).
-- **Specials:** New section Free AI coding — Gemini Code Assist (free), p5js AI.
-- **Chats:** Llama 4 (Meta open-source multimodal).
-- **Companies:** Codeium (Codeium + Windsurf), Continue, Kuaishou (Kling), Lightricks (LTX Video).
-- **Tools (IDE):** IntelliJ IDEA (jetbrains.com/idea) — leading IDE for Java & Kotlin; JetBrains AI built-in.
-- **Tools (Debug & QA):** Jam (jam.dev) — one-click bug reports; auto-capture console, network, repro steps; instant replay; MCP.
-- **Tools (Web builders):** Builder.io GitHub (github.com/BuilderIO/builder) — SDKs, Figma to code, visual dev platform.
-- **Companies:** Jam, JetBrains (IntelliJ IDEA).
-- **Explore page:** Data viz (donut chart, bar chart, tag cloud); sidebar nav, search index, sitemap.
-- **QoL:** URL tooltips on chat cards; search hint on hover (⌘K); footer stats as links (items→search, pages→updates, companies→companies).
-- **Footer:** 13 pages (includes Explore); Mintlify link/description updated (llms.txt, MCP, intelligent docs).
-- **Coverage:** Aligns with LogRocket/JetBrains 2025-2026 AI dev rankings (Cursor, Windsurf, Copilot, v0, Bolt, JetBrains AI, Kimi Code, Claude Code, Antigravity).
-
-### Changed
-- **Mintlify:** Description updated to Intelligent docs platform; built for humans & AI; llms.txt, MCP.
-- **Sitemap:** explore.html, museum.html added.
-- **Version badge:** v1.8.4 site-wide (13 pages).
 
 ## [1.8.3] - 2026-02-25
 

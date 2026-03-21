@@ -5,7 +5,7 @@
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-success?style=flat-square&logo=github)](https://otterdays.github.io/)
 [![Static Site](https://img.shields.io/badge/Static-HTML%20%7C%20CSS%20%7C%20JS-blue?style=flat-square)](https://github.com/Otterdays/otterdays.github.io)
 
-**Live site:** [https://otterdays.github.io/](https://otterdays.github.io/)
+**Live site:** [https://otterdays.github.io/](https://otterdays.github.io/) · **Current version:** [v1.9.0](https://otterdays.github.io/updates.html) (see `DOCS/CHANGELOG.md`)
 
 ---
 
@@ -13,7 +13,7 @@
 
 | | |
 |---|---|
-| 🎨 **14 Themes** | Dark, Light, Google, OpenAI, Anthropic, Otterdays, GitHub, Dracula, Nord, VS Code, Synthwave, Monokai, Solarized, Gruvbox |
+| 🎨 **20 Themes** | Core, Brands, Editors, Creative groups — including Atelier, Aqua, Coffee, Cyber, Forest, Luxury, Otterdays, Synthwave, VS Code, Dracula, Nord, Monokai, Solarized, Gruvbox, GitHub, Google, OpenAI, Anthropic |
 | 🏷️ **Project Badges** | Game, Software, Minecraft, Music, Android (multi-badge support) |
 | 📂 **Companies Page** | Collapsible sections with top-center toggle and smooth open/close animation |
 | 🔍 **Unified Search** | Cmd/Ctrl+K, fuzzy matching, keyboard navigation |
@@ -31,12 +31,16 @@
 | `index.html` | Home profile page |
 | `programs.html` | 60+ projects with auto-badges |
 | `chats.html` | Links to AI chat platforms |
+| `museum.html` | AI Model Museum (landmark LLMs) |
 | `media.html` | AI media gen (video/image tools) |
-| `companies.html` | AI & dev tools by company |
-| `tools.html` | Developer tools (CLI, IDE, browser) |
+| `companies.html` | AI & dev tools by company (80+ sections) |
+| `tools.html` | Developer tools (CLI, browser builders, IDE, Reference, MCP, etc.) |
 | `specials.html` | Free & special services (e.g. free domains) |
 | `skills.html` | Skills/Tools: Cursor & Antigravity agentic tools, MCPs, SkillBox, Skills directory |
-| `updates.html` | Version history, new features, fixes, and changes |
+| `updates.html` | Version history (e.g. v1.9.0), timeline UI |
+| `explore.html` | Charts / exploration |
+| `inspirations.html` | YouTube & creator inspirations |
+| `posts.html` | Archived articles |
 | `about.html` | About this site: projects, tools, and link policy |
 | `404.html` | Custom error page |
 
@@ -45,17 +49,21 @@
 ## Project Structure
 
 ```
-├── css/style.css           # Themes, layout, chat-link cards, search, companies collapsible, QoL/footer
-├── js/theme.js             # Theme switcher (all pages)
-├── js/badges.js            # Project badge logic (programs only)
-├── js/companies.js         # Section minimization (companies page only)
+├── css/style.css           # Layout, themes, search, collapsible, filter bar, loader
+├── css/themes/             # Per-theme CSS
+├── js/theme.js             # Themes, card effects, scroll progress
+├── js/badges.js            # Project + country badges (BADGE_COUNTRY_MAP)
+├── js/collapsible.js       # Collapsible sections
+├── js/companies.js         # Company section header badges
+├── js/filter.js            # A–Z section filter
+├── js/qol.js               # Page-load veil, scroll-to-top
 ├── js/search-data.js       # Search index
-├── js/search.js            # Search modal, fuzzy match, keyboard nav
-├── js/updates-data.js      # Update log data
+├── js/search.js            # Search modal
+├── js/updates-data.js      # Changelog entries (v1.9.0, …)
 ├── js/updates.js           # Updates page renderer
-├── fetch-github-repos.js   # Optional: fetch repos → repos.md
-├── images/                 # Favicon & images
-└── DOCS/                   # Documentation (SCRATCHPAD, SUMMARY, CHANGELOG, etc.)
+├── fetch-github-repos.js   # Optional: repos → repos.md
+├── images/
+└── DOCS/                   # SUMMARY, CHANGELOG, journal/, …
 ```
 
 ---

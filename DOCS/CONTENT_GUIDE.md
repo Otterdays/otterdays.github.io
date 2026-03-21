@@ -14,6 +14,7 @@ When adding **any** new item:
 4. ✅ Add company entry to `companies.html` if it's a new organization
 5. ✅ **Tools page:** Keep CLI, IDE, and Browser Tools in **alphabetical order** by card name (`.chat-link-name`)
 6. ✅ Update `DOCS/SCRATCHPAD.md` and `DOCS/CHANGELOG.md`
+7. ✅ On a **numbered release**: bump `js/updates-data.js`, `DOCS/CHANGELOG.md`, `DOCS/SUMMARY.md`, version badge (`v1.x.x` + title) on **all** `.html` pages, and add `DOCS/journal/YYYY-MM-DD.md` if significant
 
 ---
 
