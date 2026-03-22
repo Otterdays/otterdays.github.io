@@ -1,0 +1,10 @@
+This is a math-heavy incremental idle RPG for Android (Melvor Idle-inspired) built with React Native/Expo. It has 24+ skills, auto-battler combat, companions, offline progression, and a clean headless engine architecture.
+
+Here are some interesting things I could do:
+
+Cross-Skill Synergy System — Bonus when combining skill levels (e.g., Mining 50 + Smithing 50 = +10% ore yield)
+Advanced Companion AI — Trait trees, equipment, personality/mood states that affect efficiency
+Achievement System Expansion — Badges, milestones, unlock animations for stats like "1M ore mined"
+Seasonal Event System — Limited-time content with exclusive cosmetics and theme changes
+Statistics Dashboard — XP/hour graphs, progress pie charts, lifetime milestones
+Which would you like me to tackle?
