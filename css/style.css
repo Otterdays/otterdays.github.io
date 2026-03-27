@@ -821,12 +821,34 @@ body::after {
   box-shadow: 0 8px 24px color-mix(in srgb, var(--accent) 60%, transparent);
 }
 
+/* Friend site (Nate's Space) — teal accent, matches Nates-Space branding */
+.home-link--friend {
+  --friend-teal: #2dd4bf;
+  color: color-mix(in srgb, var(--friend-teal) 92%, white);
+  border-color: color-mix(in srgb, var(--friend-teal) 45%, var(--border));
+  background: color-mix(in srgb, var(--friend-teal) 12%, var(--glass));
+}
+
+.home-link--friend:hover {
+  background: color-mix(in srgb, var(--friend-teal) 22%, var(--glass));
+  border-color: color-mix(in srgb, var(--friend-teal) 65%, var(--border));
+  box-shadow: 0 6px 22px color-mix(in srgb, var(--friend-teal) 28%, transparent);
+}
+
 .home-link:hover:not(.disabled) {
   background: var(--accent-glow);
   border-color: var(--accent);
   text-decoration: none;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px var(--accent-glow);
+}
+
+.home-link.home-link--friend:hover:not(.disabled) {
+  --friend-teal: #2dd4bf;
+  color: color-mix(in srgb, var(--friend-teal) 95%, white);
+  background: color-mix(in srgb, var(--friend-teal) 24%, var(--glass));
+  border-color: color-mix(in srgb, var(--friend-teal) 65%, var(--border));
+  box-shadow: 0 6px 22px color-mix(in srgb, var(--friend-teal) 30%, transparent);
 }
 
 .home-link.disabled {
@@ -949,6 +971,30 @@ body::after {
 
 .feature-card:focus-visible {
   outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.feature-card--nates {
+  --friend-teal: #2dd4bf;
+  border-color: color-mix(in srgb, var(--friend-teal) 35%, var(--border));
+  background: linear-gradient(
+    160deg,
+    color-mix(in srgb, var(--friend-teal) 10%, transparent) 0%,
+    color-mix(in srgb, var(--fg), transparent 96%) 55%
+  );
+}
+
+.feature-card--nates:hover {
+  border-color: color-mix(in srgb, var(--friend-teal) 55%, var(--border));
+  box-shadow: 0 12px 32px color-mix(in srgb, var(--friend-teal) 22%, transparent);
+}
+
+.feature-card--nates .feature-card-icon {
+  filter: drop-shadow(0 0 10px color-mix(in srgb, var(--friend-teal) 45%, transparent));
+}
+
+.feature-card--nates:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--friend-teal) 75%, var(--border));
   outline-offset: 3px;
 }
 

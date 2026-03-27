@@ -1,5 +1,13 @@
 # SCRATCHPAD
 
+## 2026-03-28 — index: Nate's Space (friend site)
+
+**What changed:** `index.html` — hero link + Explore card for [Nate's Space](https://otterdays.github.io/Nates-Space/) (natee.vercel.app); `css/style.css` teal `.home-link--friend` / `.feature-card--nates`; `search-data.js` Home entry/tags.
+
+[AMENDED 2026-03-28]: Meta/OG/Twitter descriptions; dedicated search row for Nate's Space (external URL); `.feature-card--nates:focus-visible` teal outline.
+
+---
+
 ## 2026-03-26 — home page polish pass (unstyled text fix)
 
 **What changed:** `index.html` + `css/style.css` — added a compact server callout card under hero; tightened home layout widths; upgraded feature grid sizing/spacing; forced `.feature-card` link states (`:visited/:hover/:active`) and descendants to inherit text color with no underlines to remove default-link appearance; improved typography and keyboard focus ring.
