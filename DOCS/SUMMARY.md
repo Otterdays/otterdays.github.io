@@ -1,5 +1,17 @@
 # SUMMARY
 
+## Version modality
+
+- **v1.9.1** through **v1.9.5** are **consolidated under** the planned minor **v1.10.0** (one bucket for the museum / informational-links / Gemini / multi-provider catalog work). The **per-patch log** stays in **`updates.html`** (`js/updates-data.js`) and **`DOCS/CHANGELOG.md`** sections **[1.9.1]–[1.9.5]**; site badge remains **v1.9.5** until **v1.10.0** ships.
+
+## Recent update — 2026-03-26 (navigation + museum + informational links)
+
+- **Sidebar (all pages):** **A–Z** labels; **no** per-provider nav items (Google Gemini, OpenAI, Anthropic, xAI, Arcee AI removed from the bar — use **AI Museum**, **Companies**, or premium chips on `museum.html`). Helper: `tools/replace_sidebar_nav.py`.
+- **CSS:** Sidebar hover overlay fix (no gradient banding); model makers **registry** (muted `v1.0`) vs **linked** green badges for the five premium catalogs (six tiles: Google + Google DeepMind share `google-gemini.html`); `.museum-picker-snapshot-pair` for IDE + Qwen Code side-by-side.
+- **museum.html:** **Qwen Code**, **Warp**, **Cursor** picker snapshots separated; **Model makers checklist** lede + linked badges only for shipped premium catalog pages.
+- **informational-links.html:** Wikipedia **navigation template** links (Generative AI, OpenAI template, NLP, AI navbox, sister projects); Wikipedia-first ordering where applicable.
+- **Docs:** `DOCS/CHANGELOG.md` **[Unreleased]**; `DOCS/MODEL_MAKERS_CHECKLIST.md`; `DOCS/ARCHITECTURE.md`; `DOCS/SCRATCHPAD.md`.
+
 ## Recent update — 2026-03-28 (site + docs sync)
 
 - **OpenAI (`openai.html`):** `#openai-versions` — **ChatGPT lineup** table (release date, discontinued / legacy / active) + **API & completion** chronological table; `#openai-wall` March 2026 snapshot tables; `#openai-chat-completion-ids` — model ids + aliases. CSS: `.openai-version-exhibit`, `.gemini-status--legacy`.

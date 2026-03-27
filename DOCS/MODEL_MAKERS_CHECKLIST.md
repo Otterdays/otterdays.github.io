@@ -57,6 +57,11 @@
 3. **Append** a dated note under [Maintenance log](#maintenance-log) below (do not delete prior log lines).
 4. Optional: run `python tools/extract_museum_devs.py` from repo root to print sorted unique `Developer` values from the catalog and diff against this list.
 
+**Badge semantics (on-site registry tiles, [AMENDED 2026-03-26]):**
+
+- **Registry-only** — Most makers: muted **`v1.0`** span (`.museum-maker-ver--registry`) = listed in the master catalog / exhibit set, **no** full-line premium museum page yet.
+- **Completed / linked** — Only the **five shipped premium catalogs** (six tiles): **Google** & **Google DeepMind** → `google-gemini.html`; **OpenAI** → `openai.html`; **Anthropic** → `anthropic.html`; **xAI** → `xai.html`; **Arcee AI** → `arcee.html`. Green clickable **`v1.0`** (`a.museum-maker-ver--linked`). Matches **Premium provider catalogs** chips on `museum.html`.
+
 **Related pages:**
 
 - Public mirror of this doc: `museum.html` (Model makers checklist section).
@@ -72,8 +77,11 @@
 
 [AMENDED 2026-03-28]: Exhibit-only tile **Xiaomi** added (MiMo-V2-Pro flagship card); checklist total **38** tiles = **35** catalog developers + **3** exhibit rows (**Arcee AI**, **HKChat OmniServe Limited**, **Xiaomi**).
 
+[AMENDED 2026-03-26]: On **museum.html** tiles, **v1.0** is either **registry-only** (muted) or **linked** to a premium catalog page for the five shipped full-line museum pages — see **Badge semantics** above (supplements the 2026-03-28 “registry v1.0” layout note).
+
 ## Maintenance log
 
+- **2026-03-26:** **Linked vs registry badges** — Documented in **Badge semantics** above; `museum.html` + `css/style.css` (`.museum-maker-ver--registry`, `a.museum-maker-ver--linked`, `.museum-maker-tile--catalog-linked`). Only premium catalog pages get clickable **v1.0**.
 - **2026-03-28:** **Museum registry v1.0** — `museum.html` model makers section redesigned as a plaque + grid tiles (gold frame, per-maker **v1.0** + date); `css/style.css` registry styles. Checklist count **37** makers (35 catalog + 2 exhibit); dates = earliest `Released` in `RAW_ROWS` per `Developer`.
 - **2026-03-28:** **Xiaomi** added as **exhibit-only** registry tile (MiMo-V2-Pro premium flagship); total **38** tiles.
 - **2026-03-28:** Initial checklist aligned with master catalog developers plus **Arcee AI** and **HKChat OmniServe Limited**; `openai.html` wall of models section added (`#openai-wall`).

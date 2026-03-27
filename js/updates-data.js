@@ -1,13 +1,33 @@
 /**
  * Site update log data. Add new entries at top.
- * Format: { version, date, sections: [{ type: "added"|"changed"|"fixed"|"removed", items: [...] }] }
+ * Format: { version, date, skipLatest?: boolean, sections: [{ type, items }] }
+ * — skipLatest: set true for placeholder/planning rows so the real shipped tag keeps the “Latest” badge.
  */
 const UPDATES_DATA = [
   {
     version: "Unreleased",
     date: "TBD",
     sections: [
-      { type: "added", items: ["(Future updates.)"] }
+      {
+        type: "added",
+        items: [
+          "(Future updates.)",
+          "**Version modality:** Patch releases **v1.9.1** through **v1.9.5** are **rolled into** the **v1.10.0** minor line (see card below). Per-patch sections under those tags stay as the dated audit trail."
+        ]
+      }
+    ]
+  },
+  {
+    version: "1.10.0",
+    date: "TBD",
+    skipLatest: true,
+    sections: [
+      {
+        type: "changed",
+        items: [
+          "**Consolidated minor (planned):** **v1.10.0** **pulls in** everything from **v1.9.1** onward through **v1.9.5** — **informational-links.html**, alphabetized sidebar + museum cross-links, **google-gemini.html** premium catalog + depth passes, premium provider pages (**openai.html**, **anthropic.html**, **xai.html**, **arcee.html**), **museum.html** gateway/registry work, themed **css/style.css** provider strips, sitemap/search/explore/footer counts, and related docs — under one **1.10.x** bucket. **Cards for v1.9.1–v1.9.5 below** remain the patch-by-patch history."
+        ]
+      }
     ]
   },
   {

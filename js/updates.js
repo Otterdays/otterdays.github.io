@@ -9,7 +9,9 @@
 
   const TYPE_LABELS = { added: 'Added', changed: 'Changed', fixed: 'Fixed', removed: 'Removed' };
 
-  const firstReleasedIdx = UPDATES_DATA.findIndex(e => e.version !== 'Unreleased');
+  const firstReleasedIdx = UPDATES_DATA.findIndex(
+    (e) => e.version !== 'Unreleased' && !e.skipLatest
+  );
   const html = UPDATES_DATA.map((entry, i) => {
     const isLatest = firstReleasedIdx >= 0 && i === firstReleasedIdx;
     const cardClass = 'update-card' + (isLatest ? ' update-card--latest' : '');

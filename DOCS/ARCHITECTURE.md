@@ -9,13 +9,13 @@
 ├── index.html              # Home: profile, social links
 ├── programs.html           # Projects grid with badges (~60+ projects)
 ├── chats.html              # AI Chats: Assistants + Provider hubs & playgrounds
-├── museum.html             # AI Model Museum (landmark LLMs); premium provider catalog chips; master catalog; model makers registry
+├── museum.html             # AI Model Museum (landmark LLMs); premium provider catalog chips; master catalog; model makers registry (registry vs linked v1.0 badges)
 ├── google-gemini.html      # Premium provider catalog: full Gemini / Gemma / Nano Banana tables (museum expansion template)
 ├── openai.html             # Premium provider catalog: OpenAI GPT / o-series
 ├── anthropic.html          # Premium provider catalog: Anthropic Claude
 ├── xai.html                # Premium provider catalog: xAI Grok
 ├── arcee.html              # Premium provider catalog: Arcee AI models & merge stack
-├── informational-links.html  # Wikipedia / reference links for museum models
+├── informational-links.html  # Wikipedia / reference links + Wikipedia navbox template hub for museum context
 ├── media.html              # AI Media Gen: Video, Image, Audio
 ├── companies.html          # AI & dev tools by company (80+); collapsible sections
 ├── tools.html              # CLI, IDE, Browser based builder, Browser Tools, Web builders, DevOps, Reference, etc. (A–Z within sections)
@@ -59,13 +59,15 @@
 
 [AMENDED 2026-03-28]: **`museum.html`** in the tree above: previously described as gateway primarily to Google Gemini; entry now reflects premium provider chips, master catalog, and model makers registry.
 
+[AMENDED 2026-03-26]: **Sidebar** link order corrected to **A–Z** (About first). **museum.html** model makers: **linked** `v1.0` only for the five premium catalog pages (six tiles; Google + Google DeepMind → `google-gemini.html`). **informational-links** includes Wikipedia template hub section.
+
 ## Navigation (all pages)
 
 **Sidebar Navigation:** A sticky, collapsible sidebar on the left (`.sidebar`).
 - **Collapsed (64px):** Shows icons only.
 - **Expanded (240px):** Expands on hover to show text labels.
 - **Mobile:** Fixed bottom navigation bar (icons only).
-- **Links (A–Z by label):** AI Chats, AI Museum, About, Companies, Explore, Home, Informational Links, Inspirations, Media Gen, Posts, Programs, Skills, Specials, Tools, Updates.
+- **Links (A–Z by label):** About, AI Chats, AI Museum, Companies, Explore, Home, Informational Links, Inspirations, Media Gen, Posts, Programs, Skills, Specials, Tools, Updates. *(Per-provider shortcuts are not in the sidebar; use museum gateway chips or Companies.)*
 
 ## Page breakdown
 
@@ -79,7 +81,7 @@
 | **tools**      | **CLI** (incl. AI agents, **Fresh** / **Orbiton** TUI editors), **Browser based builder**, **IDE**, **Web builders**, **Browser Tools**, **DevOps**, **Reference** (e.g. Awesome TUIs), etc.; collapsible + A–Z filter bar. |
 | **specials**   | **Free domains**, **Learning**, **Games**: Collapsible sections. |
 | **skills**     | **Agentic tools**, **MCPs**, **Skills**: Collapsible sections. |
-| **informational-links** | Wikipedia & reference articles for museum models (flagships + GPT/Claude/Codex/Gemini families). |
+| **informational-links** | Wikipedia & reference articles for museum models; **Wikipedia navigation templates** section (Generative AI, OpenAI, NLP, AI navbox, sister projects). |
 | **404**        | Error code, title, back link. Centered layout. |
 
 ## Themes

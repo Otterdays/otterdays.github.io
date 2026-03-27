@@ -1,5 +1,23 @@
 # SCRATCHPAD
 
+## 2026-03-26 — docs: CHANGELOG Unreleased + SUMMARY + MODEL_MAKERS_CHECKLIST + ARCHITECTURE (nav, museum, informational links)
+
+**What changed:** `DOCS/CHANGELOG.md` **[Unreleased]** — batch entry (sidebar A–Z, CSS, informational-links templates, museum snapshots + linked registry badges); `DOCS/SUMMARY.md` — **Recent update — 2026-03-26**; `DOCS/MODEL_MAKERS_CHECKLIST.md` — **Badge semantics**, maintenance log, [AMENDED] note; `DOCS/ARCHITECTURE.md` — museum tree, informational-links, sidebar A–Z order, amended notes.
+
+---
+
+## 2026-03-26 — docs: v1.10.0 modality (1.9.1–1.9.5 consolidation)
+
+**What changed:** `js/updates-data.js` — **v1.10.0 (TBD)** card + Unreleased bullets; **`skipLatest`** on that row so **v1.9.5** keeps **Latest** on `updates.html`. `js/updates.js` — honors `skipLatest`. `DOCS/CHANGELOG.md` Unreleased — version modality line. `DOCS/SUMMARY.md` — **Version modality** section.
+
+---
+
+## 2026-03-26 — museum: model makers checklist — linked “done” badges (5 premium catalogs only)
+
+**What changed:** `museum.html` — registry lede explains registry vs completed catalog; **Google**, **Google DeepMind** → `google-gemini.html`; **OpenAI**, **Anthropic**, **xAI**, **Arcee AI** → respective catalog pages; `<a class="museum-maker-ver museum-maker-ver--linked">` for those six tiles only; others **`.museum-maker-ver--registry`** (muted). `css/style.css` — registry vs linked styles, `.museum-maker-tile--catalog-linked` border tint.
+
+---
+
 ## 2026-03-26 — museum.html: IDE menu + Qwen Code snapshots side by side
 
 **What changed:** `museum.html` — wrap `#museum-picker-snapshot` + `#museum-picker-snapshot-qwen-code` in `.museum-picker-snapshot-pair`. `css/style.css` — 2-col grid ≤72rem; stacks at `max-width: 52rem`.
