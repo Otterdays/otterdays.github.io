@@ -1,5 +1,11 @@
 # SCRATCHPAD
 
+## 2026-03-26 — arcee.html: Trinity + full docs catalog
+
+**What changed:** `arcee.html` — aligned with **docs.arcee.ai**: **Trinity** Nano/Mini/Large MoE table, foundation vs post-train lists (SuperNova Medius/Lite, Spark, Virtuoso, Caller, &hellip;), AFM-4.5B, capabilities, context I/O, and training bullets, MergeKit + Fusion + Cloud; `search-data.js` Arcee row + tags.
+
+---
+
 ## 2026-03-26 — v1.9.5 OpenAI, Anthropic, xAI, Arcee premium museum pages
 
 **What changed:** New `openai.html`, `anthropic.html`, `xai.html`, `arcee.html` (provider catalogs, Wikipedia-forward); sidebar 🤖🦉🌌🏬 after 🔷 on all HTML + 404; `museum.html` gateway chips; provider CSS themes; site **v1.9.5**, footer **21 pages**; `sitemap.xml`, `search-data.js`, About list; `CHANGELOG` **[1.9.5]**, `SUMMARY`, `ARCHITECTURE`, `README`, `updates-data.js`.

@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Arcee AI — models &amp; merge stack | Otterdays</title>
   <meta name="description"
-    content="Premium museum catalog of Arcee AI: SuperNova, AFM, Caller, MergeKit, Arcee Fusion, open weights, and Arcee Cloud.">
-  <meta name="keywords" content="Arcee AI, MergeKit, SuperNova, Arcee Fusion, open weights, LLM">
+    content="Arcee AI museum catalog: Trinity Nano/Mini/Large MoE, AFM-4.5B, SuperNova Medius/Lite, post-train line, MergeKit, docs.arcee.ai.">
+  <meta name="keywords"
+    content="Arcee AI, Trinity, AFM, SuperNova, MergeKit, Arcee Fusion, MoE, open weights, LLM">
   <meta name="author" content="Ryan Otterdays">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://otterdays.github.io/arcee.html">
@@ -132,83 +133,180 @@
     <header class="profile-header stagger-1 gemini-premium-hero">
       <p class="gemini-premium-kicker">Premium museum expansion · Provider catalog</p>
       <h1 class="profile-title gemini-premium-title">Arcee AI</h1>
-      <p class="profile-handle gemini-premium-sub">Open-weights <strong>LLM</strong> vendor and <strong>model merging</strong>
-        stack — <strong>MergeKit</strong>, <strong>Arcee Fusion</strong> method, and families such as
-        <strong>SuperNova</strong>, <strong>Caller</strong>, and <strong>AFM</strong>. Strong focus on <strong>Arcee
-          Cloud</strong> for training/merge/deploy. Less mainstream than OpenAI/Anthropic; important for merge research
-        and enterprise customization (March 2026 snapshot).</p>
+      <p class="profile-handle gemini-premium-sub"><strong>Trinity</strong> sparse MoE foundation line (Nano / Mini /
+        Large), <strong>AFM</strong> compact foundation models, a broad <strong>post-train</strong> catalog (SuperNova,
+        Virtuoso, &hellip;), plus <strong>MergeKit</strong>, <strong>Arcee Fusion</strong>, and <strong>Arcee Cloud</strong>.
+        Catalog below mirrors <a href="https://docs.arcee.ai/" rel="noopener noreferrer" target="_blank">docs.arcee.ai</a>
+        structure (March 2026 snapshot); product names and preview SKUs change faster than this page.</p>
       <p class="gemini-premium-back"><a href="museum.html">&larr; AI Model Museum</a></p>
     </header>
 
     <section class="profile-section stagger-2" aria-labelledby="arcee-arch">
       <h2 id="arcee-arch">Architecture &amp; stack (overview)</h2>
-      <p><strong>Arcee Fusion</strong> is a selective merging technique (importance scoring + dynamic thresholds + fusion
-        masks) used to build merged models like SuperNova without blunt full-parameter averaging. <strong>MergeKit</strong>
-        is the open tooling ecosystem Arcee maintains for community merges. Base architectures often trace to
-        <strong>Llama</strong>-class and <strong>Qwen</strong>-class open weights.</p>
-      <p>Official: <a href="https://arcee.ai/" rel="noopener noreferrer" target="_blank">arcee.ai</a> · Hugging Face org:
-        <a href="https://huggingface.co/arcee-ai" rel="noopener noreferrer" target="_blank">arcee-ai</a></p>
+      <p><strong>Trinity</strong> models use a <strong>sparse mixture-of-experts (MoE)</strong> design with
+        <strong>efficient attention</strong> for lower latency and cost at long context. Public docs cite
+        <code>AfmoeForCausalLM</code> for Trinity MoE checkpoints; <strong>AFM-4.5B</strong> uses a dense decoder
+        (<code>ArceeForCausalLM</code>) with <strong>GQA</strong> and <strong>ReLU²</strong> activations.</p>
+      <p><strong>Arcee Fusion</strong> + <strong>MergeKit</strong> remain the open merge stack for composing models (e.g.
+        SuperNova family). Post-train lines often distill or merge from <strong>Llama</strong>-class and
+        <strong>Qwen</strong>-class teachers.</p>
+      <p>Official: <a href="https://arcee.ai/" rel="noopener noreferrer" target="_blank">arcee.ai</a> · Docs:
+        <a href="https://docs.arcee.ai/" rel="noopener noreferrer" target="_blank">docs.arcee.ai</a> · Hugging Face:
+        <a href="https://huggingface.co/arcee-ai" rel="noopener noreferrer" target="_blank">arcee-ai</a> · Chat:
+        <a href="https://chat.arcee.ai" rel="noopener noreferrer" target="_blank">chat.arcee.ai</a></p>
     </section>
 
-    <section class="profile-section stagger-3" aria-labelledby="arcee-tiers">
-      <h2 id="arcee-tiers">Lines &amp; naming</h2>
+    <section class="profile-section stagger-3" aria-labelledby="arcee-catalog">
+      <h2 id="arcee-catalog">Model catalog (docs sidebar)</h2>
+      <p class="profile-handle">Foundation vs post-train groupings as listed in Arcee&rsquo;s documentation.</p>
+      <h3 class="gemini-subheading">Foundation models</h3>
       <ul class="gemini-bullet-list">
-        <li><strong>SuperNova</strong> — merged high-capability models (e.g. 70B class in press).</li>
-        <li><strong>Medius / Virtuoso</strong> — internal merge families used in Arcee Fusion blog posts.</li>
-        <li><strong>Caller</strong> — tool-use / API orchestration focused model (Qwen-derived lineage in releases).</li>
-        <li><strong>AFM (Arcee Foundation Model)</strong> — compact decoder-only (e.g. 4.5B) with ReLU² activations in
-          research docs.</li>
-        <li><strong>Convo</strong> — appears in Arcee&rsquo;s naming for conversational/merge experiments; verify
-          specific checkpoints on Hugging Face.</li>
+        <li><strong>Trinity Nano 6B Preview</strong> — smallest Trinity MoE; edge / local.</li>
+        <li><strong>Trinity Mini 26B</strong> — mid MoE; cloud &amp; on-prem.</li>
+        <li><strong>AFM 4.5B</strong> — dense Arcee Foundation Model (non-Trinity).</li>
+      </ul>
+      <h3 class="gemini-subheading">Post-train models</h3>
+      <ul class="gemini-bullet-list">
+        <li><strong>Arcee-SuperNova Medius</strong>, <strong>Arcee-SuperNova-Lite</strong>, <strong>Arcee-SuperNova</strong>
+          (70B-class releases on HF)</li>
+        <li><strong>Arcee-Spark</strong>, <strong>Arcee-Miraj-Mini</strong>, <strong>Arcee-Agent</strong>,
+          <strong>Arcee-Lite</strong>, <strong>Arcee-Nova</strong>, <strong>Arcee-Scribe</strong>,
+          <strong>Arcee-SEC</strong></li>
+        <li><strong>Virtuoso-Lite</strong>, <strong>Virtuoso-Medium-v2</strong></li>
+        <li><strong>Caller (32B)</strong> — tool-use / orchestration (separate release track)</li>
       </ul>
     </section>
 
-    <section class="profile-section stagger-3" aria-labelledby="arcee-versions">
-      <h2 id="arcee-versions">Notable models &amp; artifacts</h2>
-      <div class="museum-table-wrap gemini-table-wide" role="region" aria-label="Arcee models" tabindex="0">
+    <section class="profile-section stagger-3" aria-labelledby="arcee-trinity">
+      <h2 id="arcee-trinity">Trinity family (MoE)</h2>
+      <p>All Trinity variants share the same <strong>capability profile</strong> in Arcee messaging; footprint (total vs
+        active parameters) scales for edge vs cloud. Architecture: <strong>sparse MoE</strong> + efficient attention;
+        Nano/Mini public specs: <strong>128 experts</strong>, <strong>8 active</strong>, <strong>1 shared</strong> —
+        training on large curated mixes (e.g. <strong>10T tokens</strong> for Nano/Mini with math/code emphasis) on
+        clusters such as <strong>512× H200</strong> (per docs).</p>
+      <div class="museum-table-wrap gemini-table-wide" role="region" aria-label="Trinity variants" tabindex="0">
         <table class="museum-table gemini-table">
           <thead>
             <tr>
-              <th scope="col">Name</th>
-              <th scope="col">Era</th>
-              <th scope="col">Status</th>
-              <th scope="col">Notes</th>
+              <th scope="col">Variant</th>
+              <th scope="col">Total / active</th>
+              <th scope="col">Context</th>
+              <th scope="col">Role</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <th scope="row">AFM-4.5B</th>
-              <td>2024</td>
-              <td><span class="gemini-status gemini-status--ga">Open</span></td>
-              <td>Small foundation model; ReLU² vs SiLU in technical write-ups.</td>
+              <th scope="row">Trinity Nano</th>
+              <td>6B / 1B active</td>
+              <td>128K</td>
+              <td>Edge, on-device, offline, low-latency voice/UI loops.</td>
             </tr>
             <tr>
-              <th scope="row">Arcee-SuperNova-v1 (70B)</th>
-              <td>2024–2025</td>
-              <td><span class="gemini-status gemini-status--ga">Open</span></td>
-              <td>Merge of distilled Llama-405B + instruction + DPO paths (per Arcee releases).</td>
+              <th scope="row">Trinity Mini</th>
+              <td>26B / 3B active</td>
+              <td>128K</td>
+              <td>Cloud &amp; on-prem (AWS, GCP, Azure, vLLM, SGLang, llama.cpp).</td>
             </tr>
             <tr>
-              <th scope="row">Caller (32B)</th>
-              <td>2025</td>
-              <td><span class="gemini-status gemini-status--ga">Open</span></td>
-              <td>Tool-calling / API orchestration emphasis.</td>
-            </tr>
-            <tr>
-              <th scope="row">MergeKit + Arcee Fusion</th>
-              <td>2024+</td>
-              <td><span class="gemini-status gemini-status--ga">OSS</span></td>
-              <td>Public merge tooling; Fusion method documented on Arcee blog.</td>
-            </tr>
-            <tr>
-              <th scope="row">Arcee Cloud</th>
-              <td>2024+</td>
-              <td><span class="gemini-status gemini-status--ga">SaaS</span></td>
-              <td>Train, merge, deploy custom LLMs for enterprises.</td>
+              <th scope="row">Trinity Large Preview</th>
+              <td>400B / 13B active</td>
+              <td>512K (frontier); preview API notes 128K @ 8-bit</td>
+              <td>Agent harnesses, toolchains, creative workloads; preview API / download flows.</td>
             </tr>
           </tbody>
         </table>
       </div>
+      <p class="gemini-table-note"><strong>License (Nano/Mini):</strong> Apache 2.0 in public docs. <strong>Inference:</strong>
+        Transformers (main branch), vLLM, llama.cpp, LM Studio where supported.</p>
+    </section>
+
+    <section class="profile-section stagger-4" aria-labelledby="arcee-afm">
+      <h2 id="arcee-afm">AFM-4.5B (dense foundation)</h2>
+      <p>Instruction-tuned <strong>4.5B</strong> decoder-only model for enterprise and edge: <strong>~8T tokens</strong>
+        pretrain + midtraining (math/code), SFT + RL on preferences; data curation with <strong>Datology</strong> (per
+        Arcee docs). Architecture: GQA, ReLU², <code>ArceeForCausalLM</code>. License: Apache 2.0.</p>
+    </section>
+
+    <section class="profile-section stagger-4" aria-labelledby="arcee-posttrain">
+      <h2 id="arcee-posttrain">Post-train highlights (selected)</h2>
+      <div class="museum-table-wrap gemini-table-wide" role="region" aria-label="Arcee post-train models" tabindex="0">
+        <table class="museum-table gemini-table">
+          <thead>
+            <tr>
+              <th scope="col">Model</th>
+              <th scope="col">Notes (from Arcee docs)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Arcee-SuperNova Medius</th>
+              <td>~14B; Qwen2.5-14B lineage; multi-teacher distillation (e.g. Qwen2.5-72B-Instruct +
+                Llama-3.1-405B-Instruct narratives).</td>
+            </tr>
+            <tr>
+              <th scope="row">Arcee-SuperNova-Lite</th>
+              <td>8B; Llama-3.1-8B-class; distilled from Llama-3.1-405B logits; EvolKit-style instruction data.</td>
+            </tr>
+            <tr>
+              <th scope="row">Arcee-SuperNova-v1 (70B)</th>
+              <td>Open merge / distillation flagship (earlier release wave).</td>
+            </tr>
+            <tr>
+              <th scope="row">Spark, Miraj-Mini, Agent, Lite, Nova, Scribe, SEC</th>
+              <td>Task-tuned and domain-specialized post-train SKUs — see per-model pages on docs.</td>
+            </tr>
+            <tr>
+              <th scope="row">Virtuoso-Lite, Virtuoso-Medium-v2</th>
+              <td>Virtuoso merge line; medium/lite footprints.</td>
+            </tr>
+            <tr>
+              <th scope="row">Caller (32B)</th>
+              <td>Qwen-2.5-32B–class tooling / API orchestration focus.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="profile-section stagger-4" aria-labelledby="arcee-cap">
+      <h2 id="arcee-cap">Capabilities (product)</h2>
+      <ul class="gemini-bullet-list">
+        <li><strong>Agent reliability</strong> — function selection, valid parameters, schema-true JSON, recovery when
+          tools fail.</li>
+        <li><strong>Coherent multi-turn</strong> — long sessions without re-explaining context.</li>
+        <li><strong>Structured outputs</strong> — JSON schema adherence; native function calling and tool orchestration.</li>
+        <li><strong>Same skills across sizes</strong> — move workloads edge ↔ cloud without rebuilding prompts.</li>
+        <li><strong>Efficient attention</strong> — lower cost at long context vs dense baselines (Arcee messaging).</li>
+        <li><strong>Context utilization</strong> — use large inputs for grounded answers.</li>
+      </ul>
+    </section>
+
+    <section class="profile-section stagger-4" aria-labelledby="arcee-ctx">
+      <h2 id="arcee-ctx">Context &amp; I/O</h2>
+      <ul class="gemini-bullet-list">
+        <li><strong>128K</strong> token context for Nano/Mini (and related API surfaces).</li>
+        <li><strong>Structured outputs</strong> with JSON schema adherence.</li>
+        <li><strong>Native function calling</strong> and tool orchestration.</li>
+      </ul>
+    </section>
+
+    <section class="profile-section stagger-4" aria-labelledby="arcee-train">
+      <h2 id="arcee-train">Training philosophy (docs)</h2>
+      <ul class="gemini-bullet-list">
+        <li><strong>Curated data</strong> — quality filtering and classification pipelines.</li>
+        <li><strong>Synthetic augmentation</strong> — tool calling, schema adherence, error recovery, preferences,
+          voice-friendly styles.</li>
+        <li><strong>Evaluation</strong> — tool reliability, long-turn coherence, structured-output accuracy.</li>
+      </ul>
+    </section>
+
+    <section class="profile-section stagger-4" aria-labelledby="arcee-merge">
+      <h2 id="arcee-merge">Merge stack &amp; cloud</h2>
+      <ul class="gemini-bullet-list">
+        <li><strong>MergeKit</strong> — open merge tooling; multi-GPU acceleration.</li>
+        <li><strong>Arcee Fusion</strong> — selective fusion masks (importance scoring + thresholds).</li>
+        <li><strong>Arcee Cloud</strong> — train, merge, deploy custom LLMs (SaaS).</li>
+      </ul>
     </section>
 
     <section class="profile-section stagger-4" aria-labelledby="arcee-tech">
@@ -224,15 +322,15 @@
           <tbody>
             <tr>
               <td>MergeKit</td>
-              <td>Multi-GPU merge acceleration; expanded model support in v0.1+ blog posts.</td>
+              <td>Community merges; blog: MergeKit v0.1+ (Arcee Fusion + multi-GPU).</td>
             </tr>
             <tr>
               <td>Licensing</td>
-              <td>Per-model on Hugging Face (often Apache 2.0 or derivative of base licenses).</td>
+              <td>Many open weights under Apache 2.0 — confirm per checkpoint on Hugging Face.</td>
             </tr>
             <tr>
-              <td>Transformers</td>
-              <td><code>arcee</code> model type documented in Hugging Face Transformers for some checkpoints.</td>
+              <td>Inference stacks</td>
+              <td>vLLM, SGLang, llama.cpp, LM Studio, Transformers (per model).</td>
             </tr>
           </tbody>
         </table>
@@ -242,20 +340,21 @@
     <section class="profile-section stagger-5" aria-labelledby="arcee-timeline">
       <h2 id="arcee-timeline">Selected timeline (2024–2026)</h2>
       <ul class="gemini-bullet-list">
-        <li><strong>2024:</strong> MergeKit + Arcee Fusion public; SuperNova-class merges; AFM releases.</li>
-        <li><strong>2025:</strong> Five new open-weights models (Arcee blog); Caller; Arcee Cloud expansion.</li>
-        <li><strong>2026:</strong> Continued enterprise merge + deploy; ecosystem alongside frontier closed APIs.</li>
+        <li><strong>2024:</strong> MergeKit + Arcee Fusion; AFM-4.5B; SuperNova / Virtuoso waves.</li>
+        <li><strong>2025:</strong> Trinity Nano/Mini; expanded post-train; Caller; Arcee Cloud.</li>
+        <li><strong>2026:</strong> Trinity Large preview tier; frontier MoE + agent positioning in market.</li>
       </ul>
     </section>
 
     <section class="profile-section stagger-5" aria-labelledby="arcee-refs">
       <h2 id="arcee-refs">References</h2>
-      <p><a href="https://arcee.ai/blog" rel="noopener noreferrer" target="_blank">Arcee blog</a> ·
+      <p><a href="https://docs.arcee.ai/" rel="noopener noreferrer" target="_blank">docs.arcee.ai</a> (per-model pages:
+        Trinity, AFM, SuperNova, &hellip;) ·
+        <a href="https://arcee.ai/blog" rel="noopener noreferrer" target="_blank">Arcee blog</a> ·
         <a href="https://huggingface.co/arcee-ai" rel="noopener noreferrer" target="_blank">Hugging Face · arcee-ai</a>
-        · <a href="https://en.wikipedia.org/wiki/Ensemble_learning" rel="noopener noreferrer"
-          target="_blank">Ensemble learning</a> (related ML concept)</p>
-      <p class="gemini-disclaimer"><em>Arcee moves quickly; verify checkpoints and licenses on Hugging Face before
-          production use.</em></p>
+      </p>
+      <p class="gemini-disclaimer"><em>Compiled from Arcee public docs and blog; not an official Arcee product sheet.
+          Verify live model IDs, API limits, and licenses before production.</em></p>
     </section>
 
     <footer class="site-footer">
