@@ -5,7 +5,7 @@
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-success?style=flat-square&logo=github)](https://otterdays.github.io/)
 [![Static Site](https://img.shields.io/badge/Static-HTML%20%7C%20CSS%20%7C%20JS-blue?style=flat-square)](https://github.com/Otterdays/otterdays.github.io)
 
-**Live site:** [https://otterdays.github.io/](https://otterdays.github.io/) · **Current version:** [v1.9.1](https://otterdays.github.io/updates.html) (see `DOCS/CHANGELOG.md`)
+**Live site:** [https://otterdays.github.io/](https://otterdays.github.io/) · **Current version:** [v1.9.4](https://otterdays.github.io/updates.html) (see `DOCS/CHANGELOG.md`)
 
 ---
 
@@ -39,7 +39,7 @@
 | `tools.html` | Developer tools (CLI, browser builders, IDE, Reference, MCP, etc.) |
 | `specials.html` | Free & special services (e.g. free domains) |
 | `skills.html` | Skills/Tools: Cursor & Antigravity agentic tools, MCPs, SkillBox, Skills directory |
-| `updates.html` | Version history (e.g. v1.9.1), timeline UI |
+| `updates.html` | Version history (e.g. v1.9.4), timeline UI |
 | `explore.html` | Charts / exploration |
 | `inspirations.html` | YouTube & creator inspirations |
 | `posts.html` | Archived articles |
@@ -61,7 +61,7 @@
 ├── js/qol.js               # Page-load veil, scroll-to-top
 ├── js/search-data.js       # Search index
 ├── js/search.js            # Search modal
-├── js/updates-data.js      # Changelog entries (v1.9.1, …)
+├── js/updates-data.js      # Changelog entries (v1.9.4, …)
 ├── js/updates.js           # Updates page renderer
 ├── fetch-github-repos.js   # Optional: repos → repos.md
 ├── images/

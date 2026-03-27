@@ -7,6 +7,11 @@ All notable changes to this project are documented in this file. Format: [Keep a
 ### Added
 - (Planning: future changes.)
 
+## [1.9.4] - 2026-03-26
+
+### Changed
+- **Site:** Version badge **v1.9.4**; `DOCS/SUMMARY.md`, `ARCHITECTURE.md`, `js/updates-data.js` aligned with patch release.
+
 ## [1.9.3] - 2026-03-26
 
 ### Changed

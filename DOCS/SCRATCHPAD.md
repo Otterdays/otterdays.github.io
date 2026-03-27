@@ -1,5 +1,11 @@
 # SCRATCHPAD
 
+## 2026-03-26 — v1.9.4 version sync (patch bump)
+
+**What changed:** All HTML version badges **v1.9.4**; `js/updates-data.js` **[1.9.4]**; `CHANGELOG` **[1.9.4]**; `SUMMARY`, `ARCHITECTURE`, `SCRATCHPAD`.
+
+---
+
 ## 2026-03-26 — v1.9.3 Google Gemini + Gemma catalog refinement; Antigravity picker note
 
 **What changed:** `google-gemini.html` — LaMDA/PaLM 2, launch/benchmarks, tier names, Gemma full table + variants, refs; **Cursor** + **Google Antigravity** in IDE picker section; `museum.html` snapshot copy; `.gemini-subheading` in `css/style.css`; `search-data.js` Antigravity tag; site **v1.9.3**; `CHANGELOG` **[1.9.3]**, `SUMMARY`, `ARCHITECTURE`, `updates-data.js`. Git: commit + push `main`.

@@ -11,6 +11,18 @@ const UPDATES_DATA = [
     ]
   },
   {
+    version: "1.9.4",
+    date: "2026-03-26",
+    sections: [
+      {
+        type: "changed",
+        items: [
+          "Site version bump: badges, `updates.html`, and docs aligned to **v1.9.4**."
+        ]
+      }
+    ]
+  },
+  {
     version: "1.9.3",
     date: "2026-03-26",
     sections: [

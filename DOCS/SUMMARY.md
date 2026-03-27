@@ -1,15 +1,20 @@
 # SUMMARY
 
+## Release v1.9.4 — 2026-03-26
+
+- **Version:** Site badge, `updates.html`, and docs on **v1.9.4** (patch: version sync only).
+- **Docs:** `DOCS/CHANGELOG.md` **[1.9.4]**; `js/updates-data.js`; `DOCS/SCRATCHPAD.md`; `DOCS/ARCHITECTURE.md`.
+
 ## Release v1.9.3 — 2026-03-26
 
-- **Version:** Site badge, `updates.html`, and docs on **v1.9.3**.
+- **Version:** Site badge, `updates.html`, and docs on **v1.9.3** (superseded by 1.9.4 for badge).
 - **Google Gemini page:** Content pass — LaMDA / PaLM 2 lineage, Gemini launch & benchmarks, tier naming, Wikipedia + DeepMind refs; full **Gemma** specs table + variants; IDE picker note for **Cursor** & **Google Antigravity**; `.gemini-subheading` in CSS; search-data tweak.
 - **museum.html:** Picker snapshot labels Cursor + Antigravity (`#museum-picker-snapshot`).
 - **Docs:** `DOCS/CHANGELOG.md` **[1.9.3]**; `js/updates-data.js`; `DOCS/SCRATCHPAD.md`; `DOCS/ARCHITECTURE.md` release line.
 
 ## Release v1.9.2 — 2026-03-26
 
-- **Version:** Site badge, `updates.html`, and docs on **v1.9.2** (superseded by 1.9.3 for badge).
+- **Version:** Site badge, `updates.html`, and docs on **v1.9.2** (superseded by 1.9.4 for badge).
 - **Google Gemini (premium museum page):** New `google-gemini.html` — full catalog of Google / DeepMind Gemini-era models (versions table, 1.x technical specs, Nano Banana / Gemma sections, timeline); CSS premium hero + status pills; **museum gateway** aside on `museum.html` positions this as the template for future provider pages.
 - **Wiring:** Sidebar **Google Gemini** (🔷) after **AI Museum** on all pages + 404; `sitemap.xml`, `js/search-data.js`, `js/explore.js`; About “Pages at a glance”; footer **17 pages**.
 - **Docs:** `DOCS/CHANGELOG.md` **[1.9.2]**; `js/updates-data.js`; `DOCS/SCRATCHPAD.md`.
@@ -78,7 +83,7 @@
 - **Skills:** Antigravity agentic tools (capabilities list), SkillBox, Skills directory (React, Testing, Git).
 - **Search:** Index updated for all new links (chats, media, companies, tools, skills).
 
-**Docs:** `DOCS/journal/` — dated entries (e.g. 2026-02-25, 2026-03-02, **2026-03-21** for v1.9.0, **2026-03-26** for v1.9.1+). **Current version: v1.9.3** (`updates.html`, footer badge on all pages).
+**Docs:** `DOCS/journal/` — dated entries (e.g. 2026-02-25, 2026-03-02, **2026-03-21** for v1.9.0, **2026-03-26** for v1.9.1+). **Current version: v1.9.4** (`updates.html`, footer badge on all pages).
 
 **Quick links:**
 - [SCRATCHPAD](SCRATCHPAD.md) — active tasks, blockers, last 5 actions
