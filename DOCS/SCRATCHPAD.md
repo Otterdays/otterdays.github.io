@@ -1,5 +1,11 @@
 # SCRATCHPAD
 
+## 2026-03-26 — js/updates-data.js: v1.10.0 card filled out (timeline)
+
+**What changed:** `js/updates-data.js` — **v1.10.0** — **Changed** (release scope), **Added** (informational-links templates, museum snapshots + side-by-side + model makers linked badges, `replace_sidebar_nav.py`), **Changed** (sidebar A–Z, CSS, search-data, DOCS). **Unreleased** single placeholder line. **`skipLatest: true`** on 1.10.0 so **Latest** stays **v1.9.5**. `DOCS/CHANGELOG.md` Unreleased bullet.
+
+---
+
 ## 2026-03-26 — docs: CHANGELOG Unreleased + SUMMARY + MODEL_MAKERS_CHECKLIST + ARCHITECTURE (nav, museum, informational links)
 
 **What changed:** `DOCS/CHANGELOG.md` **[Unreleased]** — batch entry (sidebar A–Z, CSS, informational-links templates, museum snapshots + linked registry badges); `DOCS/SUMMARY.md` — **Recent update — 2026-03-26**; `DOCS/MODEL_MAKERS_CHECKLIST.md` — **Badge semantics**, maintenance log, [AMENDED] note; `DOCS/ARCHITECTURE.md` — museum tree, informational-links, sidebar A–Z order, amended notes.
