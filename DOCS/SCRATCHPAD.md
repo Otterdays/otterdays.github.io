@@ -1,5 +1,35 @@
 # SCRATCHPAD
 
+## 2026-03-26 — museum.html: IDE menu + Qwen Code snapshots side by side
+
+**What changed:** `museum.html` — wrap `#museum-picker-snapshot` + `#museum-picker-snapshot-qwen-code` in `.museum-picker-snapshot-pair`. `css/style.css` — 2-col grid ≤72rem; stacks at `max-width: 52rem`.
+
+---
+
+## 2026-03-26 — museum.html: Qwen Code add-ons in own card (not Cursor-titled)
+
+**What changed:** `museum.html` — `#museum-picker-snapshot-qwen-code` + class `museum-picker-snapshot--qwen-code`; title **Qwen Code — add-on relative cost** (no “Cursor —”); roster + section heading list Qwen Code first. `css/style.css` — subtle accent border for that card.
+
+---
+
+## 2026-03-26 — museum.html: Warp long model selector split out from Cursor block
+
+**What changed:** `museum.html` — new `#museum-picker-snapshot-warp` card (long model selector A–Z); Qwen Code → `#museum-picker-snapshot-cursor-qwen`; context/comparison tables → `#museum-picker-snapshot-cursor-tables`. Section title **Cursor, Warp & frontier lineup**; roster note names Cursor vs Warp.
+
+---
+
+## 2026-03-26 — museum.html: Qwen Code add-on cost row (Cursor snapshot)
+
+**What changed:** `museum.html` — Cursor extended snapshot: copy + `aria-label` state the relative-cost list is the **Qwen Code** add-on row; group title **Qwen Code — add-on models (relative cost)**; five models A–Z (GLM-5 … Qwen3.5-Plus).
+
+---
+
+## 2026-03-26 — informational-links: Wikipedia navbox templates + sister projects
+
+**What changed:** `informational-links.html` — new section **Wikipedia navigation templates** (A–Z): Template:Artificial_intelligence_navbox, Template:Generative_AI, Template:Natural_language_processing, Template:OpenAI, Wikipedia:Wikimedia_sister_projects. Stagger classes renumbered. `js/search-data.js` — Informational Links desc/tags.
+
+---
+
 ## 2026-03-26 — nav: A–Z sidebar (no company shortcuts); informational links Wikipedia-first; sidebar CSS banding fix
 
 **What changed:** All pages with `<nav class="sidebar">` — removed per-company items (Google Gemini, OpenAI, Anthropic, xAI, Arcee AI); links sorted A–Z (About → Updates). Museum/provider HTML pages have no `active` nav item. `css/style.css` — uniform hover tint on `.sidebar::before` (replaces vertical gradient that banded with scroll); `.sidebar a.active:hover` keeps inset bar without slide. `informational-links.html` — intro leads with Wikipedia for Gemini; flagship cards + “More Wikipedia context” A–Z; HKChat lists Wikipedia before official URLs. `tools/replace_sidebar_nav.py` — script to regenerate nav blocks.
