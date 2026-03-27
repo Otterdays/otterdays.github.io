@@ -1,5 +1,11 @@
 # SCRATCHPAD
 
+## 2026-03-26 — home page polish pass (unstyled text fix)
+
+**What changed:** `index.html` + `css/style.css` — added a compact server callout card under hero; tightened home layout widths; upgraded feature grid sizing/spacing; forced `.feature-card` link states (`:visited/:hover/:active`) and descendants to inherit text color with no underlines to remove default-link appearance; improved typography and keyboard focus ring.
+
+---
+
 ## 2026-03-26 — arcee.html: Trinity + full docs catalog
 
 **What changed:** `arcee.html` — aligned with **docs.arcee.ai**: **Trinity** Nano/Mini/Large MoE table, foundation vs post-train lists (SuperNova Medius/Lite, Spark, Virtuoso, Caller, &hellip;), AFM-4.5B, capabilities, context I/O, and training bullets, MergeKit + Fusion + Cloud; `search-data.js` Arcee row + tags.

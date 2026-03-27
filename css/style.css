@@ -692,6 +692,7 @@ body::after {
   align-items: center;
   text-align: center;
   padding: 2rem 1rem 3rem;
+  width: 100%;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -701,8 +702,8 @@ body::after {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 2.5rem 1rem;
-  max-width: 48rem;
+  padding: 2.5rem 1.25rem;
+  width: min(100%, 48rem);
   position: relative;
   z-index: 1;
 }
@@ -772,9 +773,10 @@ body::after {
 
 .home-info {
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 1rem;
   margin: 0 0 1.75rem;
-  max-width: 24rem;
+  max-width: 34ch;
+  text-wrap: balance;
 }
 
 .home-links {
@@ -813,6 +815,8 @@ body::after {
 }
 
 .home-link--primary:hover {
+  background: linear-gradient(135deg, var(--accent) 0%, color-mix(in srgb, var(--accent) 85%, black) 100%);
+  color: var(--bg);
   transform: translateY(-3px);
   box-shadow: 0 8px 24px color-mix(in srgb, var(--accent) 60%, transparent);
 }
@@ -832,10 +836,51 @@ body::after {
   opacity: 0.6;
 }
 
+.home-server-callout {
+  margin-top: 1rem;
+  width: min(100%, 36rem);
+  padding: 0.95rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--fg), transparent 95%);
+  box-shadow: 0 10px 30px color-mix(in srgb, var(--bg) 75%, black 25%);
+}
+
+.home-server-kicker {
+  margin: 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.home-server-desc {
+  margin: 0.35rem 0 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.home-server-link {
+  margin-top: 0.55rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--fg);
+  text-decoration: none;
+  font-size: 0.87rem;
+  font-weight: 600;
+}
+
+.home-server-link:hover {
+  color: var(--accent);
+}
+
 /* Home Features Grid */
 .home-features {
-  width: 100%;
-  padding: 2rem 1rem;
+  width: min(100%, 70rem);
+  align-self: stretch;
+  padding: 2rem 0.75rem;
   margin-top: 1rem;
 }
 
@@ -850,11 +895,11 @@ body::after {
 
 .home-features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.25rem;
-  max-width: 64rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.95rem;
+  max-width: 70rem;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0;
 }
 
 .feature-card {
@@ -862,14 +907,28 @@ body::after {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 1.75rem 1.25rem;
+  justify-content: center;
+  min-height: 11rem;
+  padding: 1.15rem 1.15rem;
   background: color-mix(in srgb, var(--fg), transparent 96%);
   border: 1px solid var(--border);
   border-radius: 14px;
-  text-decoration: none;
+  color: inherit;
+  text-decoration: none !important;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
+}
+
+.feature-card:visited,
+.feature-card:hover,
+.feature-card:active {
+  color: inherit;
+  text-decoration: none !important;
+}
+
+.feature-card * {
+  text-decoration: none !important;
 }
 
 .feature-card::before {
@@ -888,6 +947,11 @@ body::after {
   box-shadow: 0 12px 32px color-mix(in srgb, var(--accent) 20%, transparent);
 }
 
+.feature-card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
 .feature-card:hover::before {
   opacity: 0.08;
 }
@@ -899,17 +963,20 @@ body::after {
 }
 
 .feature-card h3 {
-  font-size: 1.05rem;
+  font-size: 1.08rem;
   font-weight: 600;
   margin: 0 0 0.4rem;
   color: var(--fg);
+  line-height: 1.28;
+  text-wrap: balance;
 }
 
 .feature-card p {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: var(--muted);
   margin: 0;
-  line-height: 1.4;
+  line-height: 1.45;
+  text-wrap: pretty;
 }
 
 @media (max-width: 42rem) {
@@ -923,6 +990,10 @@ body::after {
 
   .home-hero {
     padding: 1.5rem 1rem;
+  }
+
+  .home-link {
+    padding: 0.55rem 1rem;
   }
 }
 
