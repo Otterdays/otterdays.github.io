@@ -1,5 +1,20 @@
 # SUMMARY
 
+## Recent update — 2026-03-28 (site + docs sync)
+
+- **OpenAI (`openai.html`):** `#openai-versions` — **ChatGPT lineup** table (release date, discontinued / legacy / active) + **API & completion** chronological table; `#openai-wall` March 2026 snapshot tables; `#openai-chat-completion-ids` — model ids + aliases. CSS: `.openai-version-exhibit`, `.gemini-status--legacy`.
+- **Anthropic (`anthropic.html`):** Frontier comparison (Opus/Sonnet 4.6, Haiku 4.5 — API, Bedrock, Vertex, pricing, thinking modes), platform snapshot, release chronology, expanded architecture & technical notes; `body.provider-anthropic .museum-table code` in `css/style.css`.
+- **Museum (`museum.html`):** Premium flagship **FF-01–FF-10** (Composer 2, Claude, GPT-5.4, Grok, Kimi, Gemini, GLM-5, DeepSeek-V3.2, MiMo-V2-Pro, Qwen3-Max-Thinking); **model makers registry v1.0** — **38** tiles (35 catalog developers + **Arcee AI**, **HKChat OmniServe Limited**, **Xiaomi** exhibit); gateway aside uses provider chips only (no separate Gemini CTA button). `DOCS/MODEL_MAKERS_CHECKLIST.md` — maintenance log + amended counts.
+- **Home (`index.html`):** Hero mesh/aurora on `.home`; **Minecraft** → [Otters-Den-Server](https://otterdays.github.io/Otters-Den-Server/) + **Server repository** → [Otters-Den-Server repo](https://github.com/Otterdays/Otters-Den-Server); **Arteria** + **Nate's Space** links/cards; `meta theme-color`; search hardening (`js/search.js`, `js/search-data.js`, `js/qol.js`); scroll progress single-source CSS.
+- **Programs:** `programs.html` — **Arteria** card + repo link. **Search:** index entries aligned with new pages and counts.
+- **Docs trail:** `DOCS/CHANGELOG.md` **[Unreleased]** (gateway CTA removal, **anthropic.html** depth, flagship + registry); `DOCS/ARCHITECTURE.md` (museum line = chips + catalog + registry); `DOCS/MODEL_MAKERS_CHECKLIST.md`; `DOCS/SCRATCHPAD.md` (dated entries); this file.
+
+[AMENDED 2026-03-28]: Anthropic bullet; expanded docs trail.
+
+## Recent update — 2026-03-28 (Arteria on home)
+
+- **Arteria** ([GAME-Arteria](https://github.com/Otterdays/GAME-Arteria)) — mobile idle RPG: [GitHub Pages](https://otterdays.github.io/GAME-Arteria/), hero + Explore on `index.html`, `programs.html` entry, search + `DOCS/CHANGELOG` Unreleased, `DOCS/SCRATCHPAD.md`.
+
 ## Release v1.9.5 — 2026-03-26
 
 - **Version:** Site badge, `updates.html`, and docs on **v1.9.5**.
@@ -93,6 +108,7 @@
 **Docs:** `DOCS/journal/` — dated entries (e.g. 2026-02-25, 2026-03-02, **2026-03-21** for v1.9.0, **2026-03-26** for v1.9.1+). **Current version: v1.9.5** (`updates.html`, footer badge on all pages).
 
 **Quick links:**
+- [MODEL_MAKERS_CHECKLIST](MODEL_MAKERS_CHECKLIST.md) — labs/model makers visible on the museum checklist + agent maintenance notes
 - [SCRATCHPAD](SCRATCHPAD.md) — active tasks, blockers, last 5 actions
 - [CONTENT_GUIDE](CONTENT_GUIDE.md) — how to add content and update search
 - [CURSOR_IDE_SETUP](CURSOR_IDE_SETUP.md) — Cursor IDE: MCPs, agent skills, SkillBox, Skills directory

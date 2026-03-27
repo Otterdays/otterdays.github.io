@@ -55,6 +55,28 @@
         page: 'Page'
     };
 
+    // === URL SAFETY (static index; validate at use) ===
+    function isAllowedSearchUrl(url) {
+        if (!url || typeof url !== 'string') return false;
+        var u = url.trim();
+        if (!u) return false;
+        var lower = u.toLowerCase();
+        if (lower.indexOf('javascript:') === 0 || lower.indexOf('data:') === 0 || lower.indexOf('vbscript:') === 0) {
+            return false;
+        }
+        if (u.indexOf('//') === 0) return false;
+        if (/^https?:\/\//i.test(u)) {
+            return /^https:\/\//i.test(u);
+        }
+        if (u.indexOf(':') !== -1) return false;
+        if (u.indexOf('\\') !== -1) return false;
+        return true;
+    }
+
+    function sanitizeSearchUrl(url) {
+        return isAllowedSearchUrl(url) ? url.trim() : '#';
+    }
+
     // === TEXT NORMALIZATION ===
     // Strips special characters for better fuzzy matching
     // e.g., "there's" becomes "theres", "DALL-E" becomes "dalle"
@@ -78,6 +100,7 @@
         var scored = [];
 
         SEARCH_DATA.forEach(function (item) {
+            if (!isAllowedSearchUrl(item.url)) return;
             var score = 0;
             var titleLower = item.title.toLowerCase();
             var titleNorm = normalizeText(item.title);
@@ -137,14 +160,21 @@
 
     // === BUILD URL WITH SEARCH HIGHLIGHT ===
     function buildSearchUrl(item, query) {
-        var url = item.url;
+        var url = sanitizeSearchUrl(item.url);
+        if (url === '#') return '#';
         if (query && query.trim()) {
-            // Add search query as hash param for highlight-jump
             var encodedQuery = encodeURIComponent(query.trim());
             var encodedTitle = encodeURIComponent(item.title);
             url += '#search=' + encodedQuery + '&target=' + encodedTitle;
         }
         return url;
+    }
+
+    function escapeHtmlAttr(s) {
+        return String(s)
+            .replace(/&/g, '&amp;')
+            .replace(/"/g, '&quot;')
+            .replace(/</g, '&lt;');
     }
 
     // === RENDER RESULTS ===
@@ -178,7 +208,7 @@
             var isSelected = index === selectedIndex ? ' selected' : '';
             var itemUrl = buildSearchUrl(item, currentQuery);
             var categoryLabel = categoryLabels[item.category] || '';
-            return '<a href="' + itemUrl + '" class="search-result-item' + isSelected + '" data-index="' + index + '">' +
+            return '<a href="' + escapeHtmlAttr(itemUrl) + '" class="search-result-item' + isSelected + '" data-index="' + index + '">' +
                 '<span class="search-result-icon" style="background:' + (categoryColors[item.category] || '#888') + '">' + icon + '</span>' +
                 '<div class="search-result-content">' +
                 '<div class="search-result-title">' +
@@ -401,12 +431,17 @@
         var hash = window.location.hash;
         if (!hash || !hash.includes('search=')) return;
 
-        // Parse hash params
+        // Parse hash params (split key on first '=' so values may contain '=')
         var params = {};
         hash.slice(1).split('&').forEach(function (part) {
-            var kv = part.split('=');
-            if (kv.length === 2) {
-                params[kv[0]] = decodeURIComponent(kv[1]);
+            var eq = part.indexOf('=');
+            if (eq === -1) return;
+            var key = part.slice(0, eq);
+            var rawVal = part.slice(eq + 1);
+            try {
+                params[key] = decodeURIComponent(rawVal);
+            } catch (err) {
+                params[key] = rawVal;
             }
         });
 

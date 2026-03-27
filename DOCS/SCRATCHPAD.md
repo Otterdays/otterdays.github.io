@@ -1,5 +1,81 @@
 # SCRATCHPAD
 
+## 2026-03-26 — nav: A–Z sidebar (no company shortcuts); informational links Wikipedia-first; sidebar CSS banding fix
+
+**What changed:** All pages with `<nav class="sidebar">` — removed per-company items (Google Gemini, OpenAI, Anthropic, xAI, Arcee AI); links sorted A–Z (About → Updates). Museum/provider HTML pages have no `active` nav item. `css/style.css` — uniform hover tint on `.sidebar::before` (replaces vertical gradient that banded with scroll); `.sidebar a.active:hover` keeps inset bar without slide. `informational-links.html` — intro leads with Wikipedia for Gemini; flagship cards + “More Wikipedia context” A–Z; HKChat lists Wikipedia before official URLs. `tools/replace_sidebar_nav.py` — script to regenerate nav blocks.
+
+---
+
+## 2026-03-28 — docs: CHANGELOG + SUMMARY + ARCHITECTURE + MODEL_MAKERS_CHECKLIST
+
+**What changed:** `DOCS/CHANGELOG.md` [Unreleased] — museum **CTA removal** (`museum-gemini-gateway-btn`), **anthropic.html** catalog depth; `DOCS/SUMMARY.md` — Anthropic bullet + docs trail (CHANGELOG, ARCHITECTURE, checklist); `DOCS/ARCHITECTURE.md` — `museum.html` tree line + [AMENDED] note outside code fence; `DOCS/MODEL_MAKERS_CHECKLIST.md` — related link `#openai-versions`.
+
+---
+
+## 2026-03-28 — openai.html: ChatGPT lineup + API tables (`#openai-versions`)
+
+**What changed:** `openai.html` — **ChatGPT lineup** table (Version / Release date / Status in ChatGPT / Notes) chronological through **GPT-5.4**; **API & completion** table (API status) unchanged rows; intro explains product vs API churn; `.openai-version-exhibit` + `.gemini-status--legacy` in `css/style.css`; `js/search-data.js` OpenAI blurb.
+
+[AMENDED 2026-03-28]: Prior pass: API-only chronological table (Codex Aug 2021 → GPT-5.4 Mar 2026).
+
+---
+
+## 2026-03-28 — museum: premium flagship +4 (GLM-5, DeepSeek-V3.2, MiMo-V2-Pro, Qwen3-Max-Thinking)
+
+**What changed:** `museum.html` — **Exhibit FF-07–FF-10** in Premium flagship · Q1 2026: **GLM-5** (Zhipu AI / Z.AI), **DeepSeek-V3.2**, **MiMo-V2-Pro** (Xiaomi), **Qwen3-Max-Thinking** (Alibaba); roster note updated; **model makers registry** +1 exhibit tile **Xiaomi** (38 tiles). `css/style.css` — `data-company` accents **zhipu**, **xiaomi**, **alibaba**. `js/search-data.js` — AI Museum desc/tags. **Docs:** `DOCS/MODEL_MAKERS_CHECKLIST.md` amended count; `DOCS/CHANGELOG.md` Unreleased.
+
+---
+
+## 2026-03-28 — museum: model makers registry v1.0 (plaque + tiles)
+
+**What changed:** `museum.html` — full **37** makers (35 `RAW_ROWS` developers + **Arcee AI** + **HKChat OmniServe Limited**): registry ribbon **Collection · Museum registry v1.0** + **Updated 28 Mar 2026**; per-tile **v1.0** badge + **earliest catalog** `<time>` (exhibit rows: **Exhibit** pill, Mar 2026). `css/style.css` — gold plaque frame, grid, hover lift, exhibit lavender accent. `DOCS/MODEL_MAKERS_CHECKLIST.md` — amended count + date rules; `js/search-data.js` AI Museum desc.
+
+[AMENDED 2026-03-28]: **+1 exhibit tile** — **Xiaomi** (MiMo-V2-Pro flagship); checklist total **38** tiles. See `DOCS/SUMMARY.md` Recent update.
+
+---
+
+## 2026-03-27 — anthropic.html museum catalog expansion
+
+**What changed:** `anthropic.html` — frontier comparison table (Opus/Sonnet 4.6, Haiku 4.5: API, Bedrock, Vertex IDs, list pricing, extended/adaptive thinking); platform snapshot (latency, context/output, cutoffs); release chronology table; expanded architecture (Constitutional AI / RLAIF), tiers guidance, lifecycle table rows, technical notes (thinking, MCP), timeline bullets, refs + disclaimer. `css/style.css` — `body.provider-anthropic .museum-table code` monospace styling. `js/search-data.js` — Anthropic entry tags/desc.
+
+---
+
+## 2026-03-28 — Arteria (GAME-Arteria) on home + programs
+
+**What changed:** `index.html` — hero link + Explore card → [otterdays.github.io/GAME-Arteria/](https://otterdays.github.io/GAME-Arteria/) (cosmic idle RPG); meta/OG/Twitter mention Arteria. `css/style.css` — `.home-link--arteria`, `.feature-card--arteria` (lavender `#a78bfa`). `programs.html` — A–Z card after Aethereal Hymns, inline link to [Otterdays/GAME-Arteria](https://github.com/Otterdays/GAME-Arteria). `js/search-data.js` — Arteria project row (external URL) + Home tag/desc. **Docs:** `DOCS/CHANGELOG.md` Unreleased; `DOCS/SUMMARY.md` quick link.
+
+---
+
+## 2026-03-28 — OpenAI Chat & Completion model ID table
+
+**What changed:** `openai.html` — new subsection `#openai-chat-completion-ids`: full **OpenAI Chat** + **Completion** model id list with **aliases** (gpt-4o through gpt-5.4 dated SKUs, o-series, gpt-3.5-turbo-instruct). **Docs:** `DOCS/MODEL_MAKERS_CHECKLIST.md` related link + maintenance log; `DOCS/CHANGELOG.md` Unreleased; `js/search-data.js` OpenAI tags.
+
+---
+
+## 2026-03-28 — OpenAI wall + model makers checklist
+
+**What changed:** `openai.html` — **OpenAI wall of models** (`#openai-wall`): March 2026 snapshot tables (ChatGPT tiers, frontier, image, video, realtime/audio, Codex, deep research, GPT-OSS, more SKUs, ChatGPT API labels). `museum.html` — **Model makers checklist** chip list (catalog developers + Arcee AI, HKChat OmniServe Limited). `css/style.css` — `.museum-makers-checklist`, `.museum-makers-list`, `.museum-maker-chip`. **Docs:** `DOCS/MODEL_MAKERS_CHECKLIST.md` (preservation header, maintenance log); `DOCS/SUMMARY.md` quick link; `DOCS/CHANGELOG.md` Unreleased note; `js/search-data.js` Museum + OpenAI entries. **Tool:** `tools/extract_museum_devs.py` — optional diff of catalog `Developer` column vs checklist.
+
+---
+
+## 2026-03-26 — index: Otter's Den Server repo link
+
+**What changed:** `index.html` — server callout link now points to [Otterdays/Otters-Den-Server](https://github.com/Otterdays/Otters-Den-Server) (“Server repository”); primary **Minecraft Server** button still opens the [GitHub Pages site](https://otterdays.github.io/Otters-Den-Server/).
+
+---
+
+## 2026-03-26 — home: mesh / aurora background pattern
+
+**What changed:** `css/style.css` — `.home` isolation + `::before` layered dot grid, diagonal hatch, accent radial (soft ellipse mask); `::after` blurred conic “aurora”; `home-pattern-drift` / `home-aurora-pulse` animations disabled under `prefers-reduced-motion`; `.home > *` raised above pattern layers.
+
+---
+
+## 2026-03-26 — site search: hardening, dedupe, CSS, platform hint
+
+**What changed:** `js/search.js` — allowlist/sanitize `item.url`, hash parse (first `=`), try/catch `decodeURIComponent`, `escapeHtmlAttr` on result `href`; `js/search-data.js` — merge duplicate T3 Canvas / shoo / Squoosh rows, Companies page blurb **78+**; `css/style.css` — single `.scroll-progress` / `.scroll-progress-fill` (gradient + scroll-driven animation, z-index 9999), `.skip-link:focus-visible`; `js/qol.js` — `addSearchHint` sets title + `.search-trigger-kbd` for **⌘** vs **Ctrl** by platform; `index.html` — `meta name="theme-color" content="#0a0d12"`.
+
+---
+
 ## 2026-03-28 — index: Nate's Space (friend site)
 
 **What changed:** `index.html` — hero link + Explore card for [Nate's Space](https://otterdays.github.io/Nates-Space/) (natee.vercel.app); `css/style.css` teal `.home-link--friend` / `.feature-card--nates`; `search-data.js` Home entry/tags.

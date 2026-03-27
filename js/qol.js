@@ -97,6 +97,21 @@
     setInterval(tick, 30000);
   }
 
+  /** Mac: ⌘+K; Windows/Linux: Ctrl+K — matches search.js shortcut */
+  function addSearchHint() {
+    var trigger = document.getElementById('search-trigger');
+    if (!trigger) return;
+    var ua = typeof navigator !== 'undefined' ? navigator.userAgent || '' : '';
+    var platform = typeof navigator !== 'undefined' && navigator.platform ? navigator.platform : '';
+    var isMac = /Mac|iPhone|iPod|iPad/i.test(platform) || /Mac OS/.test(ua);
+    var modLabel = isMac ? '⌘' : 'Ctrl';
+    trigger.setAttribute('title', 'Search site (' + modLabel + '+K)');
+    var kbdWrap = trigger.querySelector('.search-trigger-kbd');
+    if (kbdWrap) {
+      kbdWrap.innerHTML = '<kbd>' + escapeHtml(modLabel) + '</kbd><kbd>K</kbd>';
+    }
+  }
+
   /** Add title="Open [Name] in new tab → domain.com" to external link cards */
   function injectCardTooltips() {
     var cards = document.querySelectorAll('a.chat-link-card[href^="http"]');
@@ -125,14 +140,6 @@
     var div = document.createElement('div');
     div.textContent = text;
     return div.innerHTML;
-  }
-
-  /** Add "Search site (⌘K)" tooltip to search trigger */
-  function addSearchHint() {
-    var trigger = document.getElementById('search-trigger');
-    if (trigger) {
-      trigger.setAttribute('title', 'Search site (⌘K)');
-    }
   }
 
   /** Make footer stats clickable: items → search, pages → updates, companies → companies */

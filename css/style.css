@@ -85,6 +85,8 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   transform-origin: 0 0;
+  isolation: isolate;
+  /* Stacking context for ::before; avoids banding vs. page background */
   transition:
     width 0.5s cubic-bezier(0.34, 1.2, 0.64, 1),
     min-width 0.5s cubic-bezier(0.34, 1.2, 0.64, 1),
@@ -105,13 +107,8 @@ body {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: linear-gradient(
-    180deg,
-    color-mix(in srgb, var(--accent) 8%, transparent) 0%,
-    transparent 28%,
-    transparent 72%,
-    color-mix(in srgb, var(--accent) 6%, transparent) 100%
-  );
+  /* Uniform tint on hover (old vertical gradient caused visible banding with scroll) */
+  background: color-mix(in srgb, var(--accent) 7%, transparent);
   opacity: 0;
   transition: opacity 0.35s ease;
 }
@@ -150,8 +147,15 @@ body {
   background: var(--accent-glow);
   color: var(--accent);
   font-weight: 600;
-  box-shadow: inset 2px 0 0 0 var(--accent);
+  box-shadow: inset 3px 0 0 0 var(--accent);
   /* Left border indicator */
+}
+
+.sidebar a.active:hover {
+  transform: none;
+  box-shadow:
+    inset 3px 0 0 0 var(--accent),
+    inset 0 0 0 1px color-mix(in srgb, var(--accent) 28%, transparent);
 }
 
 .sidebar-icon {
@@ -695,6 +699,125 @@ body::after {
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
+  position: relative;
+  isolation: isolate;
+}
+
+/* Layered mesh + dot grid + diagonal hatch (home only) */
+.home::before {
+  content: '';
+  position: absolute;
+  inset: -1.5rem -0.5rem -0.5rem;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: 0;
+  opacity: 0.72;
+  background:
+    radial-gradient(ellipse 95% 55% at 50% -8%, color-mix(in srgb, var(--accent) 26%, transparent), transparent 58%),
+    radial-gradient(circle at 1px 1px, color-mix(in srgb, var(--fg) 16%, transparent) 0.5px, transparent 0),
+    repeating-linear-gradient(
+      118deg,
+      transparent 0 14px,
+      color-mix(in srgb, var(--accent) 7%, transparent) 14px,
+      color-mix(in srgb, var(--accent) 7%, transparent) 15px
+    ),
+    repeating-linear-gradient(
+      -32deg,
+      transparent 0 18px,
+      color-mix(in srgb, var(--fg) 5%, transparent) 18px,
+      color-mix(in srgb, var(--fg) 5%, transparent) 19px
+    ),
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--accent-glow) 8%, transparent),
+      transparent 42%
+    );
+  background-size:
+    100% 100%,
+    20px 20px,
+    auto,
+    auto,
+    100% 100%;
+  background-position:
+    center top,
+    0 0,
+    center,
+    center,
+    center;
+  mask-image: radial-gradient(ellipse 92% 75% at 50% 28%, black 0%, black 45%, transparent 78%);
+  -webkit-mask-image: radial-gradient(ellipse 92% 75% at 50% 28%, black 0%, black 45%, transparent 78%);
+}
+
+.home::after {
+  content: '';
+  position: absolute;
+  inset: -20% -15% 35%;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.22;
+  background: conic-gradient(
+    from 210deg at 50% 100%,
+    color-mix(in srgb, var(--accent) 35%, transparent),
+    transparent 28%,
+    color-mix(in srgb, var(--accent-glow) 28%, transparent) 52%,
+    transparent 78%,
+    color-mix(in srgb, var(--accent) 22%, transparent) 100%
+  );
+  filter: blur(48px);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .home::before {
+    animation: home-pattern-drift 32s linear infinite;
+  }
+
+  .home::after {
+    animation: home-aurora-pulse 14s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes home-pattern-drift {
+  0% {
+    background-position:
+      center top,
+      0 0,
+      center,
+      center,
+      center;
+  }
+
+  100% {
+    background-position:
+      center top,
+      20px 20px,
+      center,
+      center,
+      center;
+  }
+}
+
+@keyframes home-aurora-pulse {
+  from {
+    opacity: 0.16;
+    transform: translate3d(-2%, -1%, 0) scale(1.02);
+  }
+
+  to {
+    opacity: 0.28;
+    transform: translate3d(2%, 1%, 0) scale(1.06);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home::before,
+  .home::after {
+    animation: none;
+  }
+}
+
+.home > * {
+  position: relative;
+  z-index: 1;
 }
 
 .home-hero {
@@ -851,6 +974,28 @@ body::after {
   box-shadow: 0 6px 22px color-mix(in srgb, var(--friend-teal) 30%, transparent);
 }
 
+/* Arteria (GAME-Arteria) — purple accent, matches otterdays.github.io/GAME-Arteria/ */
+.home-link--arteria {
+  --arteria-purple: #a78bfa;
+  color: color-mix(in srgb, var(--arteria-purple) 92%, white);
+  border-color: color-mix(in srgb, var(--arteria-purple) 42%, var(--border));
+  background: color-mix(in srgb, var(--arteria-purple) 14%, var(--glass));
+}
+
+.home-link--arteria:hover {
+  background: color-mix(in srgb, var(--arteria-purple) 24%, var(--glass));
+  border-color: color-mix(in srgb, var(--arteria-purple) 62%, var(--border));
+  box-shadow: 0 6px 22px color-mix(in srgb, var(--arteria-purple) 28%, transparent);
+}
+
+.home-link.home-link--arteria:hover:not(.disabled) {
+  --arteria-purple: #a78bfa;
+  color: color-mix(in srgb, var(--arteria-purple) 96%, white);
+  background: color-mix(in srgb, var(--arteria-purple) 26%, var(--glass));
+  border-color: color-mix(in srgb, var(--arteria-purple) 65%, var(--border));
+  box-shadow: 0 6px 24px color-mix(in srgb, var(--arteria-purple) 32%, transparent);
+}
+
 .home-link.disabled {
   color: var(--muted);
   cursor: not-allowed;
@@ -995,6 +1140,30 @@ body::after {
 
 .feature-card--nates:focus-visible {
   outline: 2px solid color-mix(in srgb, var(--friend-teal) 75%, var(--border));
+  outline-offset: 3px;
+}
+
+.feature-card--arteria {
+  --arteria-purple: #a78bfa;
+  border-color: color-mix(in srgb, var(--arteria-purple) 38%, var(--border));
+  background: linear-gradient(
+    155deg,
+    color-mix(in srgb, var(--arteria-purple) 12%, transparent) 0%,
+    color-mix(in srgb, var(--fg), transparent 96%) 58%
+  );
+}
+
+.feature-card--arteria:hover {
+  border-color: color-mix(in srgb, var(--arteria-purple) 52%, var(--border));
+  box-shadow: 0 12px 32px color-mix(in srgb, var(--arteria-purple) 22%, transparent);
+}
+
+.feature-card--arteria .feature-card-icon {
+  filter: drop-shadow(0 0 10px color-mix(in srgb, var(--arteria-purple) 45%, transparent));
+}
+
+.feature-card--arteria:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--arteria-purple) 72%, var(--border));
   outline-offset: 3px;
 }
 
@@ -2024,15 +2193,14 @@ html.ui-ready body > *:not(script):not(.page-loader) {
   border-bottom: 1px solid var(--border);
 }
 
-/* === MODERN SCROLL PROGRESS (2025) === */
+/* === MODERN SCROLL PROGRESS (2025) — single source (theme.js injects bar) === */
 .scroll-progress {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 3px;
-  z-index: 1001;
-  /* Above navbar */
+  z-index: 9999;
   pointer-events: none;
   background: transparent;
 }
@@ -2040,12 +2208,11 @@ html.ui-ready body > *:not(script):not(.page-loader) {
 .scroll-progress-fill {
   width: 100%;
   height: 100%;
-  background: var(--accent);
+  background: linear-gradient(90deg, var(--accent), var(--accent-glow));
   transform-origin: 0 50%;
   transform: scaleX(0);
   animation: grow-progress auto linear;
   animation-timeline: scroll();
-  /* CSS native scroll animation */
 }
 
 @keyframes grow-progress {
@@ -2356,24 +2523,6 @@ html.ui-ready body > *:not(script):not(.page-loader) {
 }
 
 /* === QoL ADDITIONS === */
-
-/* Scroll Progress Indicator [TRACE: improvement.plans.md] */
-.scroll-progress {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: transparent;
-  z-index: 9999;
-  pointer-events: none;
-}
-
-.scroll-progress-fill {
-  height: 100%;
-  background: linear-gradient(90deg, var(--accent), var(--accent-glow));
-  transition: width 0.1s ease-out;
-}
 
 /* Scroll to Top Button */
 .scroll-top-btn {
@@ -2875,7 +3024,7 @@ body {
   transition: top 0.2s ease;
 }
 
-.skip-link:focus {
+.skip-link:focus-visible {
   top: 1rem;
 }
 
@@ -3098,6 +3247,9 @@ button:focus-visible,
 .exhibit-card[data-company="cursor"]    { --exhibit-accent: #a78bfa; }
 .exhibit-card[data-company="moonshot"]  { --exhibit-accent: #f59e0b; }
 .exhibit-card[data-company="hkchat"]    { --exhibit-accent: #7c3aed; }
+.exhibit-card[data-company="zhipu"]     { --exhibit-accent: #e11d48; }
+.exhibit-card[data-company="xiaomi"]    { --exhibit-accent: #ff6900; }
+.exhibit-card[data-company="alibaba"]   { --exhibit-accent: #ff6a00; }
 
 /* Cursor picker snapshot (menu labels) */
 .museum-picker-snapshot {
@@ -3349,29 +3501,6 @@ button:focus-visible,
   line-height: 1.6;
   margin: 0 0 0.85rem;
   max-width: 62ch;
-}
-
-.museum-gemini-gateway-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  font-size: 0.88rem;
-  font-weight: 600;
-  text-decoration: none;
-  color: var(--bg);
-  background: linear-gradient(120deg, #1a73e8, #4285f4);
-  border: 1px solid color-mix(in srgb, #1a73e8, transparent 30%);
-}
-
-.museum-gemini-gateway-btn:hover {
-  filter: brightness(1.08);
-}
-
-.museum-gemini-gateway-btn:focus-visible {
-  outline: 2px solid color-mix(in srgb, #4285f4, transparent 25%);
-  outline-offset: 2px;
 }
 
 /* Master catalog: Wikipedia-style table + filter */
@@ -3635,6 +3764,45 @@ button:focus-visible,
   border: 1px solid color-mix(in srgb, #a855f7, transparent 40%);
 }
 
+/* ChatGPT product column (Wikipedia-style: legacy = amber) */
+.gemini-status--legacy {
+  background: color-mix(in srgb, #eab308, transparent 78%);
+  color: color-mix(in srgb, #854d0e, var(--fg) 20%);
+  border: 1px solid color-mix(in srgb, #eab308, transparent 42%);
+}
+
+/* OpenAI page: model version “exhibit” frame */
+.openai-version-exhibit {
+  position: relative;
+  margin: 1rem 0 1.75rem;
+  padding: 1rem 1rem 0.25rem;
+  border-radius: 14px;
+  border: 1px solid color-mix(in srgb, var(--accent) 28%, var(--border));
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent) 6%, transparent) 0%, transparent 45%),
+    color-mix(in srgb, var(--fg), transparent 94%);
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--accent) 12%, transparent);
+}
+
+.openai-version-exhibit::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0.06;
+  background: repeating-linear-gradient(
+    -18deg,
+    transparent 0 9px,
+    color-mix(in srgb, var(--fg), transparent 88%) 9px 10px
+  );
+}
+
+.openai-version-exhibit > :first-child {
+  position: relative;
+  z-index: 1;
+}
+
 .gemini-bullet-list {
   margin: 0.5rem 0 0;
   padding-left: 1.25rem;
@@ -3719,6 +3887,18 @@ body.provider-anthropic .gemini-premium-sub a {
   color: #ea580c;
 }
 
+/* Anthropic catalog: monospace API / cloud IDs in tables */
+body.provider-anthropic .museum-table code {
+  font-family: ui-monospace, "Cascadia Code", "Segoe UI Mono", monospace;
+  font-size: 0.78em;
+  font-weight: 500;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--fg), transparent 94%);
+  color: var(--fg);
+  white-space: nowrap;
+}
+
 body.provider-xai .gemini-premium-hero {
   background: linear-gradient(
     135deg,
@@ -3801,6 +3981,257 @@ body.provider-arcee .gemini-premium-sub a {
 .museum-provider-catalog-chip:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
+}
+
+/* Model makers checklist — registry plaque + v1.0 tiles (museum.html) */
+.museum-makers-registry {
+  margin: 1.25rem 0 1.75rem;
+  padding: 0;
+  border-radius: 16px;
+  position: relative;
+  isolation: isolate;
+  background:
+    linear-gradient(145deg, color-mix(in srgb, #c9a227 12%, transparent) 0%, transparent 42%),
+    linear-gradient(145deg, color-mix(in srgb, var(--accent) 8%, transparent) 0%, transparent 55%),
+    color-mix(in srgb, var(--fg), transparent 93%);
+  border: 1px solid color-mix(in srgb, #c9a227 28%, var(--border));
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--bg) 75%, transparent),
+    0 18px 48px color-mix(in srgb, var(--bg) 55%, black 45%),
+    inset 0 1px 0 color-mix(in srgb, #c9a227 12%, transparent);
+}
+
+.museum-makers-registry::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0.09;
+  background:
+    repeating-linear-gradient(-12deg, transparent 0 2px, color-mix(in srgb, var(--fg), transparent 88%) 2px 3px);
+  z-index: 0;
+}
+
+.museum-makers-registry-head {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.75rem 1rem;
+  padding: 1.15rem 1.15rem 0.85rem;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 42rem) {
+  .museum-makers-registry-head {
+    grid-template-columns: 1fr;
+  }
+}
+
+.museum-makers-registry-plaque {
+  width: 3.25rem;
+  height: 3.25rem;
+  border: 2px solid color-mix(in srgb, #c9a227 55%, var(--border));
+  border-radius: 10px;
+  background:
+    /* corner brackets */
+    linear-gradient(#c9a227, #c9a227) 0 0 / 10px 2px no-repeat,
+    linear-gradient(#c9a227, #c9a227) 0 0 / 2px 10px no-repeat,
+    linear-gradient(#c9a227, #c9a227) 100% 0 / 10px 2px no-repeat,
+    linear-gradient(#c9a227, #c9a227) 100% 0 / 2px 10px no-repeat,
+    linear-gradient(#c9a227, #c9a227) 0 100% / 10px 2px no-repeat,
+    linear-gradient(#c9a227, #c9a227) 0 100% / 2px 10px no-repeat,
+    linear-gradient(#c9a227, #c9a227) 100% 100% / 10px 2px no-repeat,
+    linear-gradient(#c9a227, #c9a227) 100% 100% / 2px 10px no-repeat,
+    radial-gradient(circle at 50% 50%, color-mix(in srgb, var(--accent) 15%, transparent), transparent 70%);
+  box-shadow: inset 0 0 20px color-mix(in srgb, #c9a227 12%, transparent);
+}
+
+.museum-makers-registry-intro {
+  min-width: 0;
+}
+
+.museum-makers-registry-ribbon {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.5rem;
+  margin: 0 0 0.35rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: color-mix(in srgb, #c9a227 85%, var(--muted));
+}
+
+.museum-makers-registry-kicker {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.museum-makers-registry-sep {
+  color: color-mix(in srgb, var(--border), transparent 35%);
+  font-weight: 400;
+}
+
+.museum-makers-registry-label {
+  color: var(--fg);
+}
+
+.museum-makers-registry-ver {
+  padding: 0.12rem 0.45rem;
+  border-radius: 6px;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: color-mix(in srgb, var(--bg) 92%, black);
+  background: linear-gradient(
+    160deg,
+    color-mix(in srgb, #c9a227 88%, white) 0%,
+    color-mix(in srgb, #c9a227 55%, #b45309) 100%
+  );
+  box-shadow: 0 1px 0 color-mix(in srgb, #fef3c7 40%, transparent);
+}
+
+.museum-makers-registry-updated {
+  margin-inline-start: auto;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+
+.museum-makers-registry-title {
+  margin-top: 0.15rem;
+  margin-bottom: 0.45rem;
+}
+
+.museum-makers-registry-lede {
+  margin-bottom: 0;
+}
+
+.museum-makers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11.5rem, 1fr));
+  gap: 0.55rem;
+  list-style: none;
+  padding: 0.6rem 1rem 1.15rem;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 52rem) {
+  .museum-makers-grid {
+    grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr));
+  }
+}
+
+.museum-maker-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.35rem;
+  padding: 0.6rem 0.65rem 0.55rem;
+  border-radius: 12px;
+  border: 1px solid color-mix(in srgb, var(--border), transparent 35%);
+  background:
+    linear-gradient(145deg, color-mix(in srgb, var(--fg), transparent 88%) 0%, color-mix(in srgb, var(--bg) 70%, black) 120%);
+  box-shadow:
+    0 1px 0 color-mix(in srgb, var(--fg), transparent 92%),
+    inset 0 1px 0 color-mix(in srgb, #c9a227 6%, transparent);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .museum-maker-tile {
+    transition: none;
+  }
+}
+
+.museum-maker-tile:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--accent) 35%, var(--border));
+  box-shadow:
+    0 10px 30px color-mix(in srgb, var(--bg) 75%, black 25%),
+    0 0 0 1px color-mix(in srgb, var(--accent) 22%, transparent);
+}
+
+.museum-maker-tile--exhibit {
+  border-color: color-mix(in srgb, #a78bfa 38%, var(--border));
+  background: linear-gradient(
+    155deg,
+    color-mix(in srgb, #a78bfa 10%, transparent) 0%,
+    color-mix(in srgb, var(--fg), transparent 88%) 100%
+  );
+  box-shadow:
+    0 1px 0 color-mix(in srgb, #a78bfa 25%, transparent),
+    inset 0 0 0 1px color-mix(in srgb, #a78bfa 12%, transparent);
+}
+
+.museum-maker-tile--exhibit:hover {
+  border-color: color-mix(in srgb, #a78bfa 55%, var(--border));
+  box-shadow: 0 10px 28px color-mix(in srgb, #a78bfa 18%, transparent);
+}
+
+.museum-maker-name {
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--fg);
+  text-wrap: balance;
+}
+
+.museum-maker-kind {
+  align-self: flex-start;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
+  color: color-mix(in srgb, #a78bfa 90%, white);
+  background: color-mix(in srgb, #a78bfa 18%, transparent);
+  border: 1px solid color-mix(in srgb, #a78bfa 35%, transparent);
+}
+
+.museum-maker-tile--catalog .museum-maker-kind {
+  display: none;
+}
+
+.museum-maker-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: auto;
+  padding-top: 0.1rem;
+  border-top: 1px solid color-mix(in srgb, var(--border), transparent 35%);
+}
+
+.museum-maker-ver {
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
+  color: color-mix(in srgb, var(--accent) 90%, white);
+  background: color-mix(in srgb, var(--accent) 14%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+}
+
+.museum-maker-date {
+  font-size: 0.68rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+}
+
+.museum-maker-tile--exhibit .museum-maker-ver {
+  color: color-mix(in srgb, #a78bfa 90%, white);
+  background: color-mix(in srgb, #a78bfa 14%, transparent);
+  border-color: color-mix(in srgb, #a78bfa 38%, transparent);
 }
 
 /* Print exclusion */

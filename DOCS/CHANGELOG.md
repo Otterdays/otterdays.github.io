@@ -7,6 +7,17 @@ All notable changes to this project are documented in this file. Format: [Keep a
 ### Added
 - (Planning: future changes.)
 
+### Changed
+- [2026-03-28]: **Museum UI** — Removed redundant **“Open Google Gemini catalog →”** control (`museum-gemini-gateway-btn`) under premium provider chips (`museum.html`, `css/style.css`); chips remain the CTAs.
+- [2026-03-28]: **anthropic.html (catalog depth)** — Frontier comparison (API / Bedrock / Vertex IDs, pricing, thinking modes), platform snapshot, release chronology, architecture & technical notes; `body.provider-anthropic .museum-table code`; `js/search-data.js`.
+- [2026-03-28]: **Documentation** — `DOCS/SUMMARY.md` **Recent update — 2026-03-28 (site + docs sync)** (OpenAI tables, museum flagship + 38-tile makers registry, home/QoL/search, programs Arteria, docs trail); `DOCS/ARCHITECTURE.md` museum tree line + amended note; `DOCS/MODEL_MAKERS_CHECKLIST.md` related link `#openai-versions`.
+- [2026-03-28]: **Museum — premium flagship row** — `museum.html` exhibits **FF-07–FF-10**: **GLM-5** (Zhipu AI), **DeepSeek-V3.2**, **MiMo-V2-Pro** (Xiaomi), **Qwen3-Max-Thinking** (Alibaba); intro copy + `css/style.css` accents (`zhipu`, `xiaomi`, `alibaba`); registry **+1** exhibit tile **Xiaomi** (38 tiles). `js/search-data.js` AI Museum blurb. `DOCS/MODEL_MAKERS_CHECKLIST.md` amended.
+- [2026-03-28]: **Museum — model makers registry v1.0** — `museum.html` checklist as **37** plaque tiles (35 catalog developers + **Arcee AI** + **HKChat** exhibit); each tile **v1.0** + earliest catalog `Released` month; gold **Museum registry** header (`Updated 28 Mar 2026`). `css/style.css` `.museum-makers-registry`, `.museum-makers-grid`, `.museum-maker-tile`. **Docs:** `DOCS/MODEL_MAKERS_CHECKLIST.md` amended; `js/search-data.js` Museum blurb.
+- [2026-03-28]: **Arteria** — home hero link + Explore card (`index.html`); purple `.home-link--arteria` / `.feature-card--arteria` (`css/style.css`); `programs.html` catalog card + repo link; `js/search-data.js` (Arteria project + Home blurb). **Docs:** `DOCS/SCRATCHPAD.md`; `DOCS/SUMMARY.md` quick link.
+- [2026-03-28]: **OpenAI wall** (`openai.html` `#openai-wall`) — March 2026 snapshot tables (frontier, image, video, realtime/audio, Codex, deep research, GPT-OSS, ChatGPT SKUs). **Museum:** model makers checklist section + `museum-maker-chip` styles. **Docs:** `DOCS/MODEL_MAKERS_CHECKLIST.md`; `SUMMARY.md` quick link; `js/search-data.js`; `DOCS/SCRATCHPAD.md`.
+- [2026-03-28]: **OpenAI Chat & Completion IDs** — `openai.html#openai-chat-completion-ids`: full table of `gpt-*` / `o*` chat model ids with aliases plus `gpt-3.5-turbo-instruct` (completion); `DOCS/MODEL_MAKERS_CHECKLIST.md` related link; search-data OpenAI blurb.
+- [2026-03-28]: **OpenAI model versions** — `openai.html#openai-versions`: **ChatGPT lineup** table (release dates + discontinued / legacy / active) + separate **API & completion** chronological table; `.openai-version-exhibit`, `.gemini-status--legacy`; `js/search-data.js`.
+
 ## [1.9.5] - 2026-03-26
 
 ### Added

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Anthropic — Claude catalog | Otterdays</title>
   <meta name="description"
-    content="Premium museum catalog of Anthropic Claude models: Opus, Sonnet, Haiku, 3.5, 4.x, constitutional AI context, Wikipedia sources.">
+    content="Anthropic Claude museum catalog: Opus, Sonnet, Haiku, 4.5–4.6 API & cloud IDs, pricing snapshot, thinking modes, release chronology, constitutional AI, Wikipedia sources.">
   <meta name="keywords" content="Anthropic, Claude, Opus, Sonnet, Haiku, Claude 3, Claude 4, AI safety">
   <meta name="author" content="Ryan Otterdays">
   <meta property="og:type" content="website">
@@ -25,6 +25,10 @@
 <body data-theme="dark" class="gemini-premium-page provider-premium-page provider-anthropic" data-provider="anthropic">
   <a href="#main" class="skip-link">Skip to content</a>
   <nav class="sidebar">
+    <a href="about.html" title="About">
+      <span class="sidebar-icon">👤</span>
+      <span class="sidebar-text">About</span>
+    </a>
     <a href="chats.html" title="AI Chats">
       <span class="sidebar-icon">💬</span>
       <span class="sidebar-text">AI Chats</span>
@@ -32,30 +36,6 @@
     <a href="museum.html" title="AI Museum">
       <span class="sidebar-icon">🏛️</span>
       <span class="sidebar-text">AI Museum</span>
-    </a>
-    <a href="google-gemini.html" title="Google Gemini">
-      <span class="sidebar-icon">🔷</span>
-      <span class="sidebar-text">Google Gemini</span>
-    </a>
-    <a href="openai.html" title="OpenAI">
-      <span class="sidebar-icon">🤖</span>
-      <span class="sidebar-text">OpenAI</span>
-    </a>
-    <a href="anthropic.html" class="active" title="Anthropic">
-      <span class="sidebar-icon">🦉</span>
-      <span class="sidebar-text">Anthropic</span>
-    </a>
-    <a href="xai.html" title="xAI">
-      <span class="sidebar-icon">🌌</span>
-      <span class="sidebar-text">xAI</span>
-    </a>
-    <a href="arcee.html" title="Arcee AI">
-      <span class="sidebar-icon">🏬</span>
-      <span class="sidebar-text">Arcee AI</span>
-    </a>
-    <a href="about.html" title="About">
-      <span class="sidebar-icon">👤</span>
-      <span class="sidebar-text">About</span>
     </a>
     <a href="companies.html" title="Companies">
       <span class="sidebar-icon">🏢</span>
@@ -134,7 +114,9 @@
       <h1 class="profile-title gemini-premium-title">Anthropic</h1>
       <p class="profile-handle gemini-premium-sub"><strong>Claude</strong> — assistant and API models built with
         <strong>Constitutional AI</strong> and safety research narratives. Tiers <strong>Opus</strong> (depth),
-        <strong>Sonnet</strong> (balanced), <strong>Haiku</strong> (speed) persist across generations. See
+        <strong>Sonnet</strong> (balanced), <strong>Haiku</strong> (speed) persist across generations. Current
+        frontier SKUs ship on the <strong>Claude API</strong>, <strong>AWS Bedrock</strong>, and
+        <strong>Google Vertex AI</strong> with parallel model IDs. See
         <a href="https://en.wikipedia.org/wiki/Anthropic" rel="noopener noreferrer" target="_blank">Anthropic</a> and
         <a href="https://en.wikipedia.org/wiki/Claude_(language_model)" rel="noopener noreferrer" target="_blank">Claude
           (language model)</a>, March 2026 snapshot.</p>
@@ -144,21 +126,29 @@
     <section class="profile-section stagger-2" aria-labelledby="anthropic-arch">
       <h2 id="anthropic-arch">Architecture &amp; training (overview)</h2>
       <p>Claude models are <strong>decoder-only transformers</strong> with long-context design (100K+ token class
-        in Claude 2 era; later 200K+ product claims). Training emphasizes <strong>RLHF</strong>-style alignment and
-        Anthropic&rsquo;s <strong>constitutional</strong> preference modeling — exact data mixes and parameter counts
-        are largely undisclosed for frontier models.</p>
+        in Claude 2 era; later 200K+ and 1M-class claims on select SKUs). Training emphasizes <strong>RLHF</strong>-style
+        alignment and Anthropic&rsquo;s <strong>Constitutional AI</strong>: a written set of principles used in
+        <strong>supervised</strong> revision rounds and <strong>RLAIF</strong> (reinforcement learning from AI feedback)
+        so preferences can be steered without relying only on human labels — exact data mixes and parameter counts for
+        frontier weights remain undisclosed.</p>
       <p>Official: <a href="https://www.anthropic.com/" rel="noopener noreferrer" target="_blank">anthropic.com</a> ·
-        <a href="https://docs.anthropic.com/" rel="noopener noreferrer" target="_blank">Claude API docs</a>.</p>
+        <a href="https://docs.anthropic.com/" rel="noopener noreferrer" target="_blank">Claude API docs</a> ·
+        <a href="https://docs.anthropic.com/en/docs/about-claude/models" rel="noopener noreferrer" target="_blank">Models
+          overview</a>.</p>
     </section>
 
     <section class="profile-section stagger-3" aria-labelledby="anthropic-tiers">
       <h2 id="anthropic-tiers">Tiers &amp; naming</h2>
+      <p>For complex coding and long-horizon agents, product docs often recommend starting from the strongest tier
+        (<strong>Opus</strong>) and scaling down for latency or cost. Current Claude SKUs commonly accept
+        <strong>text and image</strong> input and return <strong>text</strong>; multilingual use and
+        <strong>vision</strong> are standard across the frontier line — always confirm per model card.</p>
       <ul class="gemini-bullet-list">
         <li><strong>Opus</strong> — maximum capability / coding depth; flagship for agents.</li>
         <li><strong>Sonnet</strong> — daily-driver balance; <em>Thinking</em> variants in IDEs add reasoning budget.</li>
         <li><strong>Haiku</strong> — fastest / lowest cost; summaries and high-volume tasks.</li>
         <li><strong>Generations</strong> — <strong>Claude 3</strong>, <strong>3.5</strong>, <strong>4</strong>,
-          <strong>4.5</strong> denote major capability jumps in product naming.</li>
+          <strong>4.5</strong>, <strong>4.6</strong> denote major capability jumps in product naming.</li>
       </ul>
     </section>
 
@@ -166,12 +156,145 @@
       <h2 id="anthropic-launch">Launch &amp; benchmarks (selected)</h2>
       <p><strong>Claude 3</strong> (March 2024) introduced Opus / Sonnet / Haiku with strong multimodal benchmarks.
         <strong>Claude 3.5 Sonnet</strong> (mid-2024) often matched or exceeded prior Opus-class tasks at lower cost.
-        <strong>Claude 4</strong> and <strong>4.5</strong> (2025–2026) continue the Opus/Sonnet/Haiku structure with
-        extended reasoning and coding focus.</p>
+        <strong>Claude 4</strong> and <strong>4.5</strong> (2025) added agentic tooling narratives (e.g. code execution,
+        connectors, files API in industry coverage). <strong>4.6</strong> (2026) continues the same tier names with
+        heavier IDE and long-task framing — verify scores on Anthropic&rsquo;s announcements and third-party leaderboards;
+        numbers move every quarter.</p>
+    </section>
+
+    <section class="profile-section stagger-3" aria-labelledby="anthropic-frontier">
+      <h2 id="anthropic-frontier">Frontier lineup — Opus 4.6, Sonnet 4.6, Haiku 4.5</h2>
+      <p class="profile-handle">Side-by-side snapshot of the latest three-tier stack: roles, API strings, major cloud IDs,
+        list pricing, and reasoning flags. IDs and prices change — use this as a museum bookmark, not a billing source.</p>
+      <div class="museum-table-wrap gemini-table-wide" role="region" aria-label="Claude frontier model comparison"
+        tabindex="0">
+        <table class="museum-table gemini-table">
+          <thead>
+            <tr>
+              <th scope="col">Feature</th>
+              <th scope="col">Claude Opus 4.6</th>
+              <th scope="col">Claude Sonnet 4.6</th>
+              <th scope="col">Claude Haiku 4.5</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Role</th>
+              <td>Most capable for agents &amp; coding</td>
+              <td>Best mix of speed &amp; intelligence</td>
+              <td>Fastest; near-frontier quality</td>
+            </tr>
+            <tr>
+              <th scope="row">Claude API model ID</th>
+              <td><code>claude-opus-4-6</code></td>
+              <td><code>claude-sonnet-4-6</code></td>
+              <td><code>claude-haiku-4-5-20251001</code></td>
+            </tr>
+            <tr>
+              <th scope="row">API alias (when applicable)</th>
+              <td><code>claude-opus-4-6</code></td>
+              <td><code>claude-sonnet-4-6</code></td>
+              <td><code>claude-haiku-4-5</code></td>
+            </tr>
+            <tr>
+              <th scope="row">AWS Bedrock ID</th>
+              <td><code>anthropic.claude-opus-4-6-v1</code></td>
+              <td><code>anthropic.claude-sonnet-4-6</code></td>
+              <td><code>anthropic.claude-haiku-4-5-20251001-v1:0</code></td>
+            </tr>
+            <tr>
+              <th scope="row">Vertex AI model ID</th>
+              <td><code>claude-opus-4-6</code></td>
+              <td><code>claude-sonnet-4-6</code></td>
+              <td><code>claude-haiku-4-5@20251001</code></td>
+            </tr>
+            <tr>
+              <th scope="row">List pricing (API, USD / MTok)</th>
+              <td>$5 in · $25 out</td>
+              <td>$3 in · $15 out</td>
+              <td>$1 in · $5 out</td>
+            </tr>
+            <tr>
+              <th scope="row">Extended thinking</th>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <th scope="row">Adaptive thinking</th>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="gemini-table-note">Pricing is the public list tier from provider docs (per million tokens). Discounts,
+        batch, and priority classes are omitted. <a href="https://docs.anthropic.com/en/docs/about-claude/pricing"
+          rel="noopener noreferrer" target="_blank">Anthropic pricing</a></p>
+    </section>
+
+    <section class="profile-section stagger-3" aria-labelledby="anthropic-platform">
+      <h2 id="anthropic-platform">Platform snapshot (Vertex-style fields)</h2>
+      <p class="profile-handle">Operational differentiators often called out next to cloud consoles: latency band,
+        context/output ceilings, and stated cutoffs. Values vary by region and SKU — confirm in-console.</p>
+      <div class="museum-table-wrap gemini-table-wide" role="region" aria-label="Claude platform comparison"
+        tabindex="0">
+        <table class="museum-table gemini-table">
+          <thead>
+            <tr>
+              <th scope="col">Field</th>
+              <th scope="col">Opus 4.6</th>
+              <th scope="col">Sonnet 4.6</th>
+              <th scope="col">Haiku 4.5</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Priority tier eligible</th>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <th scope="row">Comparative latency</th>
+              <td>Moderate</td>
+              <td>Fast</td>
+              <td>Fastest</td>
+            </tr>
+            <tr>
+              <th scope="row">Context window (advertised)</th>
+              <td>Up to ~1M tokens</td>
+              <td>Up to ~1M tokens</td>
+              <td>~200K tokens</td>
+            </tr>
+            <tr>
+              <th scope="row">Max output (advertised)</th>
+              <td>~128K tokens</td>
+              <td>~64K tokens</td>
+              <td>~64K tokens</td>
+            </tr>
+            <tr>
+              <th scope="row">Reliable knowledge cutoff (stated)</th>
+              <td>May 2025</td>
+              <td>Aug 2025</td>
+              <td>Feb 2025</td>
+            </tr>
+            <tr>
+              <th scope="row">Training data cutoff (stated)</th>
+              <td>Aug 2025</td>
+              <td>Jan 2026</td>
+              <td>Jul 2025</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
     <section class="profile-section stagger-3" aria-labelledby="anthropic-versions">
       <h2 id="anthropic-versions">Model versions (consumer / API line)</h2>
+      <p class="profile-handle">High-level lifecycle labels — use the frontier and release tables above for exact version
+        strings.</p>
       <div class="museum-table-wrap gemini-table-wide" role="region" aria-label="Claude model versions" tabindex="0">
         <table class="museum-table gemini-table">
           <thead>
@@ -193,7 +316,7 @@
               <th scope="row">Claude 2</th>
               <td>Jul 2023</td>
               <td><span class="gemini-status gemini-status--dc">Discontinued</span></td>
-              <td>100K context class; public chatbot.</td>
+              <td>100K context class; first widely public chatbot.</td>
             </tr>
             <tr>
               <th scope="row">Claude 3 Opus / Sonnet / Haiku</th>
@@ -204,26 +327,130 @@
             <tr>
               <th scope="row">Claude 3.5 Sonnet / Haiku</th>
               <td>2024</td>
-              <td><span class="gemini-status gemini-status--ga">GA</span></td>
-              <td>Strong coding gains; Haiku efficiency tier.</td>
+              <td><span class="gemini-status gemini-status--ga">GA / legacy</span></td>
+              <td>Artifacts-era chat; strong coding; some SKUs retired per provider schedule.</td>
             </tr>
             <tr>
               <th scope="row">Claude 3.5 Opus (where offered)</th>
               <td>2024–2025</td>
-              <td><span class="gemini-status gemini-status--ga">GA</span></td>
+              <td><span class="gemini-status gemini-status--ga">GA / legacy</span></td>
               <td>Regional / product rollouts vary; check API IDs.</td>
             </tr>
             <tr>
-              <th scope="row">Claude 4 Opus / Sonnet / Haiku</th>
-              <td>2025</td>
+              <th scope="row">Claude 4 Opus / Sonnet</th>
+              <td>May 2025</td>
               <td><span class="gemini-status gemini-status--ga">GA</span></td>
-              <td>Next-gen numbering; agentic &amp; coding emphasis.</td>
+              <td>Gen-4 numbering; agentic APIs and tool ecosystem push.</td>
             </tr>
             <tr>
-              <th scope="row">Claude 4.5 Opus / Sonnet (Thinking)</th>
-              <td>2025–2026</td>
+              <th scope="row">Claude Opus 4.1</th>
+              <td>Aug 2025</td>
               <td><span class="gemini-status gemini-status--ga">GA</span></td>
-              <td>Q1 2026 IDE pickers (e.g. Cursor) list <em>Thinking</em> variants.</td>
+              <td>Incremental Opus track; safety / conversation features in release notes.</td>
+            </tr>
+            <tr>
+              <th scope="row">Claude 4.5 Opus / Sonnet / Haiku</th>
+              <td>Sep–Nov 2025</td>
+              <td><span class="gemini-status gemini-status--ga">GA</span></td>
+              <td>4.5 wave; Haiku 4.5 for speed tier.</td>
+            </tr>
+            <tr>
+              <th scope="row">Claude 4.6 Opus / Sonnet</th>
+              <td>Feb 2026</td>
+              <td><span class="gemini-status gemini-status--ga">GA</span></td>
+              <td>Current frontier; extended / adaptive thinking where listed above.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="profile-section stagger-3" aria-labelledby="anthropic-releases">
+      <h2 id="anthropic-releases">Release chronology (major SKUs)</h2>
+      <p class="profile-handle">Reverse-chronological museum index — dates align with public announcements and doc
+        rollouts. <a href="https://docs.anthropic.com/en/docs/about-claude/models" rel="noopener noreferrer"
+          target="_blank">Anthropic model docs</a> are the source of truth for IDs and deprecation.</p>
+      <div class="museum-table-wrap gemini-table-wide" role="region" aria-label="Claude release dates" tabindex="0">
+        <table class="museum-table gemini-table">
+          <thead>
+            <tr>
+              <th scope="col">Model</th>
+              <th scope="col">Release</th>
+              <th scope="col">Docs</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Claude Sonnet 4.6</th>
+              <td>February 2026</td>
+              <td><a href="https://docs.anthropic.com/en/docs/about-claude/models" rel="noopener noreferrer"
+                  target="_blank">Models</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Claude Opus 4.6</th>
+              <td>February 2026</td>
+              <td><a href="https://docs.anthropic.com/en/docs/about-claude/models" rel="noopener noreferrer"
+                  target="_blank">Models</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Claude Opus 4.5</th>
+              <td>November 2025</td>
+              <td><a href="https://docs.anthropic.com/en/docs/about-claude/models" rel="noopener noreferrer"
+                  target="_blank">Models</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Claude Haiku 4.5</th>
+              <td>October 2025</td>
+              <td><a href="https://docs.anthropic.com/en/docs/about-claude/models" rel="noopener noreferrer"
+                  target="_blank">Models</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Claude Sonnet 4.5</th>
+              <td>September 2025</td>
+              <td><a href="https://docs.anthropic.com/en/docs/about-claude/models" rel="noopener noreferrer"
+                  target="_blank">Models</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Claude Opus 4.1</th>
+              <td>August 2025</td>
+              <td><a href="https://docs.anthropic.com/en/docs/about-claude/models" rel="noopener noreferrer"
+                  target="_blank">Models</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Claude Sonnet 4 &amp; Opus 4</th>
+              <td>May 2025</td>
+              <td><a href="https://docs.anthropic.com/en/docs/about-claude/models" rel="noopener noreferrer"
+                  target="_blank">Models</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Claude Sonnet 3.7</th>
+              <td>February 2025</td>
+              <td><a href="https://docs.anthropic.com/en/docs/about-claude/models" rel="noopener noreferrer"
+                  target="_blank">Models</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Claude Haiku 3.5 &amp; Sonnet 3.5 (refresh)</th>
+              <td>October 2024</td>
+              <td><a href="https://docs.anthropic.com/en/docs/about-claude/models" rel="noopener noreferrer"
+                  target="_blank">Models</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Claude Sonnet 3.5</th>
+              <td>June 2024</td>
+              <td><a href="https://docs.anthropic.com/en/docs/about-claude/models" rel="noopener noreferrer"
+                  target="_blank">Models</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Claude 3 family</th>
+              <td>March 2024</td>
+              <td><a href="https://docs.anthropic.com/en/docs/about-claude/models" rel="noopener noreferrer"
+                  target="_blank">Models</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Claude 2</th>
+              <td>July 2023</td>
+              <td><a href="https://docs.anthropic.com/en/docs/about-claude/models" rel="noopener noreferrer"
+                  target="_blank">Models</a></td>
             </tr>
           </tbody>
         </table>
@@ -242,8 +469,14 @@
           </thead>
           <tbody>
             <tr>
-              <td>Context (Claude 3 era)</td>
-              <td>200K tokens advertised for several SKUs; verify per model card.</td>
+              <td>Context windows</td>
+              <td>200K-class tokens remain common; frontier 4.x SKUs may advertise 1M-class contexts on
+                select platforms — always read the card for the ID you deploy.</td>
+            </tr>
+            <tr>
+              <td>Extended vs adaptive thinking</td>
+              <td><strong>Extended thinking</strong> exposes longer reasoning chains; <strong>adaptive thinking</strong>
+                adjusts depth dynamically — Haiku 4.5 may omit adaptive per docs.</td>
             </tr>
             <tr>
               <td>Vision</td>
@@ -251,7 +484,14 @@
             </tr>
             <tr>
               <td>Computer use</td>
-              <td>Agentic / desktop control features (product-specific) in 2024–2025.</td>
+              <td>Agentic / desktop control features (product-specific) in 2024–2025; paired with MCP-style tool
+                ecosystems in industry coverage.</td>
+            </tr>
+            <tr>
+              <td>MCP</td>
+              <td><strong>Model Context Protocol</strong> (open connectors for tools and data) is widely used with
+                Claude in IDEs; see <a href="https://modelcontextprotocol.io/" rel="noopener noreferrer"
+                  target="_blank">modelcontextprotocol.io</a>.</td>
             </tr>
           </tbody>
         </table>
@@ -261,9 +501,14 @@
     <section class="profile-section stagger-5" aria-labelledby="anthropic-timeline">
       <h2 id="anthropic-timeline">Selected timeline (2024–2026)</h2>
       <ul class="gemini-bullet-list">
-        <li><strong>2024:</strong> Claude 3 family; 3.5 Sonnet leap; enterprise API growth.</li>
-        <li><strong>2025:</strong> Claude 4; coding &amp; agent benchmarks vs OpenAI / Google.</li>
-        <li><strong>2026:</strong> Claude 4.5 in frontier IDEs; <em>Thinking</em> reasoning modes mainstream.</li>
+        <li><strong>Mar 2024:</strong> Claude 3 Opus / Sonnet / Haiku — multimodal benchmark story.</li>
+        <li><strong>Mid–late 2024:</strong> Claude 3.5 Sonnet (June) and Haiku/Sonnet refresh (Oct); Artifacts and
+          computer-use betas in product.</li>
+        <li><strong>Feb 2025:</strong> Claude Sonnet 3.7 — long reasoning &amp; IDE narratives.</li>
+        <li><strong>May 2025:</strong> Claude 4 Sonnet &amp; Opus — gen-4 numbering and tool ecosystem.</li>
+        <li><strong>Aug 2025 → Feb 2026:</strong> Opus 4.1 → 4.5 wave (including Haiku 4.5) → Opus / Sonnet 4.6.</li>
+        <li><strong>Ongoing:</strong> <em>Thinking</em> and extended-reasoning modes in Cursor-class IDEs; pricing and
+          IDs tracked in docs.</li>
       </ul>
     </section>
 
@@ -272,8 +517,13 @@
       <p><a href="https://en.wikipedia.org/wiki/Anthropic" rel="noopener noreferrer" target="_blank">Anthropic</a> ·
         <a href="https://en.wikipedia.org/wiki/Claude_(language_model)" rel="noopener noreferrer" target="_blank">Claude
           (language model)</a> · <a href="https://www.anthropic.com/claude" rel="noopener noreferrer"
-          target="_blank">Claude product</a></p>
-      <p class="gemini-disclaimer"><em>Museum compilation — not an official Anthropic model sheet.</em></p>
+          target="_blank">Claude product</a> ·
+        <a href="https://docs.anthropic.com/en/docs/about-claude/models" rel="noopener noreferrer" target="_blank">Models
+          overview (docs)</a> ·
+        <a href="https://docs.anthropic.com/en/docs/about-claude/pricing" rel="noopener noreferrer"
+          target="_blank">Pricing</a></p>
+      <p class="gemini-disclaimer"><em>Museum compilation — not an official Anthropic model sheet. IDs, prices, and
+          cutoffs change; confirm in Anthropic&rsquo;s documentation before production use.</em></p>
     </section>
 
     <footer class="site-footer">

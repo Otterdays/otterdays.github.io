@@ -9,7 +9,7 @@
 ├── index.html              # Home: profile, social links
 ├── programs.html           # Projects grid with badges (~60+ projects)
 ├── chats.html              # AI Chats: Assistants + Provider hubs & playgrounds
-├── museum.html             # AI Model Museum (landmark LLMs); gateway to Google Gemini page
+├── museum.html             # AI Model Museum (landmark LLMs); premium provider catalog chips; master catalog; model makers registry
 ├── google-gemini.html      # Premium provider catalog: full Gemini / Gemma / Nano Banana tables (museum expansion template)
 ├── openai.html             # Premium provider catalog: OpenAI GPT / o-series
 ├── anthropic.html          # Premium provider catalog: Anthropic Claude
@@ -56,6 +56,8 @@
 ├── README.md
 └── .gitignore
 ```
+
+[AMENDED 2026-03-28]: **`museum.html`** in the tree above: previously described as gateway primarily to Google Gemini; entry now reflects premium provider chips, master catalog, and model makers registry.
 
 ## Navigation (all pages)
 

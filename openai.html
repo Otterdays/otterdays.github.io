@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>OpenAI — GPT &amp; o-series catalog | Otterdays</title>
   <meta name="description"
-    content="Premium museum catalog of OpenAI models: GPT-4, GPT-4o, o-series reasoning, GPT-5.x, product context, and Wikipedia sources.">
-  <meta name="keywords" content="OpenAI, GPT-4, GPT-4o, o1, o3, GPT-5, ChatGPT, Codex, AI models">
+    content="Premium OpenAI museum catalog: ChatGPT lineup by release date and status, API model version timeline, GPT-5.x wall (March 2026), Codex, image/video/realtime, Chat/Completion model IDs, Wikipedia sources.">
+  <meta name="keywords"
+    content="OpenAI, GPT-4, GPT-4o, o1, o3, GPT-5, GPT-5.4, Codex, ChatGPT, DALL-E, Sora, Realtime, GPT-OSS, AI models">
   <meta name="author" content="Ryan Otterdays">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://otterdays.github.io/openai.html">
@@ -25,6 +26,10 @@
 <body data-theme="dark" class="gemini-premium-page provider-premium-page provider-openai" data-provider="openai">
   <a href="#main" class="skip-link">Skip to content</a>
   <nav class="sidebar">
+    <a href="about.html" title="About">
+      <span class="sidebar-icon">👤</span>
+      <span class="sidebar-text">About</span>
+    </a>
     <a href="chats.html" title="AI Chats">
       <span class="sidebar-icon">💬</span>
       <span class="sidebar-text">AI Chats</span>
@@ -32,30 +37,6 @@
     <a href="museum.html" title="AI Museum">
       <span class="sidebar-icon">🏛️</span>
       <span class="sidebar-text">AI Museum</span>
-    </a>
-    <a href="google-gemini.html" title="Google Gemini">
-      <span class="sidebar-icon">🔷</span>
-      <span class="sidebar-text">Google Gemini</span>
-    </a>
-    <a href="openai.html" class="active" title="OpenAI">
-      <span class="sidebar-icon">🤖</span>
-      <span class="sidebar-text">OpenAI</span>
-    </a>
-    <a href="anthropic.html" title="Anthropic">
-      <span class="sidebar-icon">🦉</span>
-      <span class="sidebar-text">Anthropic</span>
-    </a>
-    <a href="xai.html" title="xAI">
-      <span class="sidebar-icon">🌌</span>
-      <span class="sidebar-text">xAI</span>
-    </a>
-    <a href="arcee.html" title="Arcee AI">
-      <span class="sidebar-icon">🏬</span>
-      <span class="sidebar-text">Arcee AI</span>
-    </a>
-    <a href="about.html" title="About">
-      <span class="sidebar-icon">👤</span>
-      <span class="sidebar-text">About</span>
     </a>
     <a href="companies.html" title="Companies">
       <span class="sidebar-icon">🏢</span>
@@ -177,78 +158,307 @@
     </section>
 
     <section class="profile-section stagger-3" aria-labelledby="openai-versions">
-      <h2 id="openai-versions">Model versions (product / API line)</h2>
-      <p class="profile-handle">Representative SKUs and eras — not an exhaustive API model list.</p>
-      <div class="museum-table-wrap gemini-table-wide" role="region" aria-label="OpenAI model versions" tabindex="0">
+      <h2 id="openai-versions">Model versions</h2>
+      <p class="profile-handle"><strong>ChatGPT</strong> consumer lineup and <strong>API / completion</strong> lineage are
+        different retirement schedules — both tables below are chronological (oldest &rarr; newest). Verify live access in
+        <a href="https://platform.openai.com/docs/models" rel="noopener noreferrer" target="_blank">API models</a> and
+        ChatGPT settings.</p>
+
+      <div class="openai-version-exhibit">
+        <div>
+          <h3 id="openai-chatgpt-lineup" class="gemini-subheading">ChatGPT lineup (product tiers)</h3>
+          <p class="gemini-table-note">Museum snapshot aligned with public <strong>ChatGPT model version</strong> tables
+            (release dates and &ldquo;status in ChatGPT&rdquo; churn — not API availability). Red = discontinued in
+            product, amber = legacy support, green = active default path.</p>
+          <div class="museum-table-wrap gemini-table-wide" role="region" aria-label="ChatGPT model versions by release"
+            tabindex="0">
+            <table class="museum-table gemini-table">
+              <thead>
+                <tr>
+                  <th scope="col">Version</th>
+                  <th scope="col">Release date</th>
+                  <th scope="col">Status in ChatGPT</th>
+                  <th scope="col">Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">GPT-3.5</th>
+                  <td>Nov 2022</td>
+                  <td><span class="gemini-status gemini-status--dc">Discontinued</span></td>
+                  <td>Original fast chat tier before GPT-4-class defaults.</td>
+                </tr>
+                <tr>
+                  <th scope="row">GPT-4</th>
+                  <td>Mar 2023</td>
+                  <td><span class="gemini-status gemini-status--dc">Discontinued</span></td>
+                  <td>First GPT-4 in ChatGPT; superseded by 4o / later lines.</td>
+                </tr>
+                <tr>
+                  <th scope="row">GPT-4o</th>
+                  <td>May 2024</td>
+                  <td><span class="gemini-status gemini-status--dc">Discontinued</span></td>
+                  <td>Omni default era; cleared as GPT-5.x becomes frontline.</td>
+                </tr>
+                <tr>
+                  <th scope="row">GPT-4o mini</th>
+                  <td>Jul 2024</td>
+                  <td><span class="gemini-status gemini-status--dc">Discontinued</span></td>
+                  <td>Cost-focused 4o; rotated out with GPT-5 stack.</td>
+                </tr>
+                <tr>
+                  <th scope="row">o1-preview / o1-mini</th>
+                  <td>Sep 2024</td>
+                  <td><span class="gemini-status gemini-status--dc">Discontinued</span></td>
+                  <td>Early reasoning previews; replaced by later o / GPT-5 routing.</td>
+                </tr>
+                <tr>
+                  <th scope="row">o1 / o1-pro</th>
+                  <td>Dec 2024</td>
+                  <td><span class="gemini-status gemini-status--dc">Discontinued</span></td>
+                  <td>Full o1 + pro tier; succeeded by o3 / GPT-5 reasoning paths.</td>
+                </tr>
+                <tr>
+                  <th scope="row">o3-mini / o3-mini-high</th>
+                  <td>Jan 2025</td>
+                  <td><span class="gemini-status gemini-status--dc">Discontinued</span></td>
+                  <td>Fast o3-class; folded into newer menus.</td>
+                </tr>
+                <tr>
+                  <th scope="row">GPT-4.5</th>
+                  <td>Feb 2025</td>
+                  <td><span class="gemini-status gemini-status--dc">Discontinued</span></td>
+                  <td>Large preview / bridge model; retired from picker.</td>
+                </tr>
+                <tr>
+                  <th scope="row">GPT-4.1 / GPT-4.1 mini</th>
+                  <td>Apr 2025</td>
+                  <td><span class="gemini-status gemini-status--dc">Discontinued</span></td>
+                  <td>4.x refresh; superseded by GPT-5 generation.</td>
+                </tr>
+                <tr>
+                  <th scope="row">o3</th>
+                  <td>Apr 2025</td>
+                  <td><span class="gemini-status gemini-status--legacy">Legacy support</span></td>
+                  <td>Reasoning tier still reachable for some accounts while GPT-5.x rolls out.</td>
+                </tr>
+                <tr>
+                  <th scope="row">o4-mini / o4-mini-high</th>
+                  <td>Apr 2025</td>
+                  <td><span class="gemini-status gemini-status--dc">Discontinued</span></td>
+                  <td>Fast reasoning mini; cleared in favor of GPT-5 mini / nano.</td>
+                </tr>
+                <tr>
+                  <th scope="row">o3-pro</th>
+                  <td>Jun 2025</td>
+                  <td><span class="gemini-status gemini-status--dc">Discontinued</span></td>
+                  <td>High-budget reasoning; replaced in default paths.</td>
+                </tr>
+                <tr>
+                  <th scope="row">GPT-5</th>
+                  <td>7 Aug 2025</td>
+                  <td><span class="gemini-status gemini-status--dc">Discontinued</span></td>
+                  <td>Unified GPT-5 flagship; consumer default moved to 5.2+ wave.</td>
+                </tr>
+                <tr>
+                  <th scope="row">GPT-5 mini</th>
+                  <td>7 Aug 2025</td>
+                  <td><span class="gemini-status gemini-status--legacy">Legacy support</span></td>
+                  <td>Faster, cheaper GPT-5-class; still offered while 5.2+ is primary.</td>
+                </tr>
+                <tr>
+                  <th scope="row">GPT-5.1</th>
+                  <td>12 Nov 2025</td>
+                  <td><span class="gemini-status gemini-status--legacy">Legacy support</span></td>
+                  <td>Personality / style options; prior to 5.2 default.</td>
+                </tr>
+                <tr>
+                  <th scope="row">GPT-5.2</th>
+                  <td>11 Dec 2025</td>
+                  <td><span class="gemini-status gemini-status--ga">Active</span></td>
+                  <td>Frontier consumer tier before 5.3/5.4 wave.</td>
+                </tr>
+                <tr>
+                  <th scope="row">GPT-5.3-Codex</th>
+                  <td>5 Feb 2026</td>
+                  <td><span class="gemini-status gemini-status--ga">Active</span></td>
+                  <td>Codex-integrated coding / agent experiences in product.</td>
+                </tr>
+                <tr>
+                  <th scope="row">GPT-5.3-Instant</th>
+                  <td>3 Mar 2026</td>
+                  <td><span class="gemini-status gemini-status--ga">Active</span></td>
+                  <td>Low-latency instant path alongside frontier tiers.</td>
+                </tr>
+                <tr>
+                  <th scope="row">GPT-5.4</th>
+                  <td>5 Mar 2026</td>
+                  <td><span class="gemini-status gemini-status--ga">Active</span></td>
+                  <td>Current professional / computer-use focused wave (March 2026 snapshot).</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <h3 id="openai-api-line" class="gemini-subheading">API &amp; completion line (chronological)</h3>
+      <p class="gemini-table-note">Developer-facing SKUs and eras — many models stay on the <strong>API</strong> after
+        ChatGPT rotation. Ordered by first public generation.</p>
+      <div class="museum-table-wrap gemini-table-wide" role="region" aria-label="OpenAI API model versions" tabindex="0">
         <table class="museum-table gemini-table">
           <thead>
             <tr>
               <th scope="col">Name</th>
-              <th scope="col">Era</th>
-              <th scope="col">Status</th>
+              <th scope="col">Era (approx.)</th>
+              <th scope="col">API status</th>
               <th scope="col">Notes</th>
             </tr>
           </thead>
           <tbody>
             <tr>
+              <th scope="row">Codex (code completion)</th>
+              <td>Aug 2021</td>
+              <td><span class="gemini-status gemini-status--dc">Legacy</span></td>
+              <td>Early code-specialized API model; superseded by later GPT stacks.</td>
+            </tr>
+            <tr>
+              <th scope="row">InstructGPT / RLHF path</th>
+              <td>Jan 2022</td>
+              <td><span class="gemini-status gemini-status--dc">Superseded</span></td>
+              <td>Instruction-tuned GPT-3 class; precursor to ChatGPT / Turbo lineage.</td>
+            </tr>
+            <tr>
               <th scope="row">GPT-3.5 Turbo</th>
-              <td>2022–</td>
+              <td>Mar 2022 &rarr; ongoing</td>
               <td><span class="gemini-status gemini-status--ga">GA / legacy</span></td>
-              <td>Workhorse chat class; many snapshots superseded.</td>
+              <td>Fast chat class; many dated snapshots retired over time.</td>
             </tr>
             <tr>
               <th scope="row">GPT-4 (base)</th>
               <td>Mar 2023</td>
               <td><span class="gemini-status gemini-status--dc">Superseded</span></td>
-              <td>First GPT-4 API era; benchmarked vs prior SOTA.</td>
+              <td>First GPT-4 API generation; multimodal follow-ups in same era.</td>
             </tr>
             <tr>
               <th scope="row">GPT-4 Turbo</th>
               <td>Nov 2023</td>
               <td><span class="gemini-status gemini-status--dc">Superseded</span></td>
-              <td>128K context class; vision path.</td>
+              <td>128K context; vision-capable path.</td>
             </tr>
             <tr>
               <th scope="row">GPT-4o</th>
               <td>May 2024</td>
               <td><span class="gemini-status gemini-status--ga">GA</span></td>
-              <td>Omni multimodal; default in many ChatGPT flows.</td>
+              <td>&ldquo;Omni&rdquo; multimodal (text / image / audio) at lower latency than prior GPT-4 variants.</td>
             </tr>
             <tr>
-              <th scope="row">GPT-4.1 (family)</th>
+              <th scope="row">GPT-4o mini</th>
+              <td>Jul 2024</td>
+              <td><span class="gemini-status gemini-status--ga">GA</span></td>
+              <td>Cost- and latency-optimized 4o-class.</td>
+            </tr>
+            <tr>
+              <th scope="row">o1-preview / o1</th>
+              <td>Sep&ndash;Dec 2024</td>
+              <td><span class="gemini-status gemini-status--ga">GA</span></td>
+              <td>First broad o-series; explicit reasoning-time compute in product UX.</td>
+            </tr>
+            <tr>
+              <th scope="row">o1-mini</th>
+              <td>Sep 2024</td>
+              <td><span class="gemini-status gemini-status--ga">GA</span></td>
+              <td>Smaller reasoning tier.</td>
+            </tr>
+            <tr>
+              <th scope="row">o3</th>
+              <td>Dec 2024 &rarr; 2025</td>
+              <td><span class="gemini-status gemini-status--ga">GA</span></td>
+              <td>Next o-series reasoning generation; STEM / agent use cases.</td>
+            </tr>
+            <tr>
+              <th scope="row">o3-mini</th>
+              <td>Early 2025</td>
+              <td><span class="gemini-status gemini-status--ga">GA</span></td>
+              <td>Faster, cheaper o3-class.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-4.5 (Preview)</th>
+              <td>Feb 2025</td>
+              <td><span class="gemini-status gemini-status--dc-pre">Deprecated</span></td>
+              <td>Large preview; retired from menus in favor of later lines.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-4.1 / GPT-4.1 mini / nano</th>
               <td>Apr 2025</td>
               <td><span class="gemini-status gemini-status--ga">GA</span></td>
-              <td>Incremental GPT-4-class refresh in API naming.</td>
+              <td>GPT-4-class refresh in API naming; smaller tiers for cost.</td>
             </tr>
             <tr>
-              <th scope="row">o1 / o1-mini</th>
-              <td>2024</td>
+              <th scope="row">o4-mini</th>
+              <td>Apr 2025</td>
               <td><span class="gemini-status gemini-status--ga">GA</span></td>
-              <td>Reasoning-first; &ldquo;thinking&rdquo; budget in product UX.</td>
+              <td>Fast reasoning tier; some copy positions GPT-5 mini as successor in workflows.</td>
             </tr>
             <tr>
-              <th scope="row">o3 / o3-mini</th>
-              <td>2024–2025</td>
-              <td><span class="gemini-status gemini-status--ga">GA</span></td>
-              <td>Successors in o-series for STEM and agents.</td>
+              <th scope="row">o3-pro</th>
+              <td>2025</td>
+              <td><span class="gemini-status gemini-status--pv">Prior</span></td>
+              <td>Higher reasoning budget o3 variant where offered.</td>
             </tr>
             <tr>
               <th scope="row">GPT-5</th>
               <td>Aug 2025</td>
               <td><span class="gemini-status gemini-status--ga">GA</span></td>
-              <td>Next-gen unified flagship in OpenAI numbering.</td>
+              <td>Unified GPT-5 generation flagship; configurable reasoning effort.</td>
             </tr>
             <tr>
-              <th scope="row">GPT-5.1 / 5.2 / 5.3 / 5.4</th>
-              <td>2025–2026</td>
-              <td><span class="gemini-status gemini-status--ga">GA / rolling</span></td>
-              <td>Iterative releases; IDE pickers (e.g. Cursor) may show sub-variants.</td>
+              <th scope="row">GPT-5 mini / nano</th>
+              <td>Aug 2025</td>
+              <td><span class="gemini-status gemini-status--ga">GA</span></td>
+              <td>Cost- and latency-optimized GPT-5-class tiers.</td>
             </tr>
             <tr>
-              <th scope="row">GPT-OSS (open weights)</th>
-              <td>2025</td>
+              <th scope="row">GPT-OSS (gpt-oss-20b / 120b)</th>
+              <td>Aug 2025</td>
               <td><span class="gemini-status gemini-status--ga">Open</span></td>
-              <td>Open-weight line for local / partner inference (e.g. 120B class in menus).</td>
+              <td>Open-weight line for local and partner inference.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-5.1 / GPT-5 pro</th>
+              <td>Late 2025</td>
+              <td><span class="gemini-status gemini-status--ga">GA</span></td>
+              <td>Iterative GPT-5.x; pro / chat-tuned variants in menus.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-5.1 Codex / Codex mini / Codex Max</th>
+              <td>Late 2025</td>
+              <td><span class="gemini-status gemini-status--pv">Prior</span></td>
+              <td>Agentic Codex tiers before GPT-5.2-Codex in menus.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-5.2 / GPT-5.2 pro</th>
+              <td>Dec 2025</td>
+              <td><span class="gemini-status gemini-status--ga">GA</span></td>
+              <td>Frontier + pro before 5.3/5.4 wave.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-5.2-Codex</th>
+              <td>Dec 2025 &rarr; Feb 2026</td>
+              <td><span class="gemini-status gemini-status--ga">GA</span></td>
+              <td>Agentic coding line; long context in tool menus.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-5.3-Codex</th>
+              <td>Feb 2026</td>
+              <td><span class="gemini-status gemini-status--ga">GA</span></td>
+              <td>Successor Codex-class in agentic coding pickers.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-5.4 / GPT-5.4 pro / mini / nano</th>
+              <td>Mar 2026</td>
+              <td><span class="gemini-status gemini-status--ga">GA / rolling</span></td>
+              <td>Current frontier wave in March 2026 snapshot; sub-tiers in IDE/API lists.</td>
             </tr>
           </tbody>
         </table>
@@ -290,6 +500,701 @@
         <li><strong>2025:</strong> GPT-5 launch; GPT-4.1; continued o-series; open-weight GPT-OSS narrative.</li>
         <li><strong>2026:</strong> GPT-5.x point releases; tight integration with coding agents and partner IDEs.</li>
       </ul>
+    </section>
+
+    <section class="profile-section stagger-4" aria-labelledby="openai-wall">
+      <h2 id="openai-wall">OpenAI wall of models (March 2026 snapshot)</h2>
+      <p class="profile-handle">Condensed from public <strong>ChatGPT</strong> / <strong>API</strong> model picker groupings
+        (frontier, multimodal, Codex, research). Labels and availability change — verify in
+        <a href="https://platform.openai.com/docs/models" rel="noopener noreferrer" target="_blank">API model docs</a>.</p>
+
+      <h3 class="gemini-subheading" id="openai-wall-chatgpt-status">ChatGPT lineup (high level)</h3>
+      <p>Active frontline SKUs commonly described as <strong>GPT-5.2</strong>, <strong>GPT-5.3-Codex</strong>, and
+        <strong>GPT-5.4</strong>, with <strong>GPT-5</strong> and <strong>GPT-5 mini</strong> in legacy support. Earlier
+        <strong>GPT-4.1</strong> / <strong>o3-pro</strong> / <strong>o4-mini</strong> tiers roll into legacy or sunset
+        paths as GPT-5.x and refined o-series ship.</p>
+      <div class="museum-table-wrap gemini-table-wide" role="region" aria-label="ChatGPT tier snapshot March 2026"
+        tabindex="0">
+        <table class="museum-table gemini-table">
+          <thead>
+            <tr>
+              <th scope="col">Model</th>
+              <th scope="col">Status</th>
+              <th scope="col">Primary focus</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">GPT-5.4</th>
+              <td><span class="gemini-status gemini-status--ga">Active</span></td>
+              <td>Professional work, computer use (Mar 5, 2026 narrative).</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-5.3-Codex</th>
+              <td><span class="gemini-status gemini-status--ga">Active</span></td>
+              <td>Software development; Codex (Feb 5, 2026 narrative).</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-5.2</th>
+              <td><span class="gemini-status gemini-status--ga">Active</span></td>
+              <td>General-purpose flagship (Dec 11, 2025 narrative).</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-5.1</th>
+              <td><span class="gemini-status gemini-status--pv">Legacy</span></td>
+              <td>Alternative personalities / prior GPT-5.1-era UX.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-5 / GPT-5 mini</th>
+              <td><span class="gemini-status gemini-status--pv">Legacy</span></td>
+              <td>General purpose; fast / cost-efficient (Aug 7, 2025 GPT-5 narrative).</td>
+            </tr>
+            <tr>
+              <th scope="row">o3 / o3-pro</th>
+              <td><span class="gemini-status gemini-status--pv">Legacy</span></td>
+              <td>Advanced reasoning; superseded in menus by newer GPT-5.x + o-series.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-4.1 series</th>
+              <td><span class="gemini-status gemini-status--dc">Discontinued / legacy</span></td>
+              <td>Code and analysis era; cleared as GPT-5.x becomes default.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="gemini-subheading" id="openai-wall-frontier">Frontier models</h3>
+      <p class="gemini-table-note">&ldquo;OpenAI&rsquo;s most advanced models&rdquo; bucket in product docs.</p>
+      <div class="museum-table-wrap gemini-table-wide" role="region" aria-label="OpenAI frontier models" tabindex="0">
+        <table class="museum-table gemini-table">
+          <thead>
+            <tr>
+              <th scope="col">Model</th>
+              <th scope="col">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">GPT-5.4</th>
+              <td>Agentic, coding, professional workflows at scale.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-5.4 pro</th>
+              <td>Smarter, more precise variant of GPT-5.4.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-5.4 mini</th>
+              <td>Strong mini for coding, computer use, subagents.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-5.4 nano</th>
+              <td>Cheapest GPT-5.4-class tier for high-volume simple tasks.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-5 mini</th>
+              <td>Near-frontier; cost-sensitive, low-latency, high volume.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-5 nano</th>
+              <td>Fastest, most cost-efficient GPT-5-class.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-5</th>
+              <td>Prior reasoning flagship; configurable reasoning effort.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-4.1</th>
+              <td>Smartest non-reasoning GPT-4.x-class in this menu.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="gemini-subheading" id="openai-wall-image">Image</h3>
+      <div class="museum-table-wrap gemini-table-wide" role="region" aria-label="OpenAI image models" tabindex="0">
+        <table class="museum-table gemini-table">
+          <thead>
+            <tr>
+              <th scope="col">Model</th>
+              <th scope="col">Status</th>
+              <th scope="col">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">GPT Image 1.5</th>
+              <td><span class="gemini-status gemini-status--ga">Current</span></td>
+              <td>State-of-the-art image generation.</td>
+            </tr>
+            <tr>
+              <th scope="row">chatgpt-image-latest</th>
+              <td><span class="gemini-status gemini-status--ga">Current</span></td>
+              <td>Image model used in ChatGPT.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT Image 1</th>
+              <td><span class="gemini-status gemini-status--ga">Current</span></td>
+              <td>Previous-generation image stack.</td>
+            </tr>
+            <tr>
+              <th scope="row">gpt-image-1-mini</th>
+              <td><span class="gemini-status gemini-status--ga">Current</span></td>
+              <td>Cost-efficient GPT Image 1.</td>
+            </tr>
+            <tr>
+              <th scope="row">DALL·E 3</th>
+              <td><span class="gemini-status gemini-status--dc-pre">Deprecated</span></td>
+              <td>Prior generation image model.</td>
+            </tr>
+            <tr>
+              <th scope="row">DALL·E 2</th>
+              <td><span class="gemini-status gemini-status--dc-pre">Deprecated</span></td>
+              <td>First DALL·E generation.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="gemini-subheading" id="openai-wall-video">Video</h3>
+      <div class="museum-table-wrap gemini-table-wide" role="region" aria-label="OpenAI video models" tabindex="0">
+        <table class="museum-table gemini-table">
+          <thead>
+            <tr>
+              <th scope="col">Model</th>
+              <th scope="col">Status</th>
+              <th scope="col">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Sora 2</th>
+              <td><span class="gemini-status gemini-status--dc-pre">Deprecated</span></td>
+              <td>Flagship video with synced audio (menu label).</td>
+            </tr>
+            <tr>
+              <th scope="row">Sora 2 Pro</th>
+              <td><span class="gemini-status gemini-status--dc-pre">Deprecated</span></td>
+              <td>Most advanced synced-audio video (menu label).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="gemini-subheading" id="openai-wall-realtime">Realtime &amp; audio</h3>
+      <div class="museum-table-wrap gemini-table-wide" role="region" aria-label="OpenAI realtime and audio models"
+        tabindex="0">
+        <table class="museum-table gemini-table">
+          <thead>
+            <tr>
+              <th scope="col">Model</th>
+              <th scope="col">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">gpt-realtime-1.5</th>
+              <td>Voice: audio in / audio out (realtime).</td>
+            </tr>
+            <tr>
+              <th scope="row">gpt-realtime</th>
+              <td>Realtime text + audio I/O.</td>
+            </tr>
+            <tr>
+              <th scope="row">gpt-realtime-mini</th>
+              <td>Cost-efficient GPT Realtime.</td>
+            </tr>
+            <tr>
+              <th scope="row">gpt-audio</th>
+              <td>Audio I/O via Chat Completions API.</td>
+            </tr>
+            <tr>
+              <th scope="row">gpt-audio-1.5</th>
+              <td>Best voice model for Chat Completions audio path.</td>
+            </tr>
+            <tr>
+              <th scope="row">gpt-audio-mini</th>
+              <td>Cost-efficient GPT Audio.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-4o Audio</th>
+              <td>GPT-4o with audio inputs and outputs.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-4o mini Audio</th>
+              <td>Smaller audio-capable 4o.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-4o Realtime / GPT-4o mini Realtime</th>
+              <td>Realtime text + audio.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-4o Transcribe / GPT-4o mini Transcribe</th>
+              <td>Speech-to-text (4o / 4o mini).</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-4o Transcribe Diarize</th>
+              <td>Transcription with speaker diarization.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-4o mini TTS</th>
+              <td>Text-to-speech via 4o mini.</td>
+            </tr>
+            <tr>
+              <th scope="row">TTS-1 / TTS-1 HD</th>
+              <td>Fast vs quality text-to-speech.</td>
+            </tr>
+            <tr>
+              <th scope="row">Whisper</th>
+              <td>General speech recognition.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="gemini-subheading" id="openai-wall-coding">Coding</h3>
+      <div class="museum-table-wrap gemini-table-wide" role="region" aria-label="OpenAI coding models" tabindex="0">
+        <table class="museum-table gemini-table">
+          <thead>
+            <tr>
+              <th scope="col">Model</th>
+              <th scope="col">Status</th>
+              <th scope="col">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">GPT-5.3-Codex</th>
+              <td><span class="gemini-status gemini-status--ga">Current</span></td>
+              <td>Most capable agentic Codex model (menu copy).</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-5.2-Codex</th>
+              <td><span class="gemini-status gemini-status--ga">Current</span></td>
+              <td>Long-horizon agentic coding.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-5-Codex</th>
+              <td><span class="gemini-status gemini-status--ga">Current</span></td>
+              <td>GPT-5 optimized for Codex.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-5.1 Codex / GPT-5.1-Codex-Max / GPT-5.1 Codex mini</th>
+              <td><span class="gemini-status gemini-status--pv">Prior tiers</span></td>
+              <td>Agentic Codex variants; mini is cost-focused.</td>
+            </tr>
+            <tr>
+              <th scope="row">codex-mini-latest</th>
+              <td><span class="gemini-status gemini-status--dc-pre">Deprecated</span></td>
+              <td>Fast Codex CLI-oriented model (superseded in menus).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="gemini-subheading" id="openai-wall-research">Deep research</h3>
+      <div class="museum-table-wrap" role="region" aria-label="OpenAI deep research models" tabindex="0">
+        <table class="museum-table gemini-table">
+          <thead>
+            <tr>
+              <th scope="col">Model</th>
+              <th scope="col">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">o3-deep-research</th>
+              <td>Most powerful deep-research SKU.</td>
+            </tr>
+            <tr>
+              <th scope="row">o4-mini-deep-research</th>
+              <td>Faster, more affordable deep research.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="gemini-subheading" id="openai-wall-oss">Open-weight models</h3>
+      <div class="museum-table-wrap" role="region" aria-label="OpenAI open weight models" tabindex="0">
+        <table class="museum-table gemini-table">
+          <thead>
+            <tr>
+              <th scope="col">Model</th>
+              <th scope="col">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">gpt-oss-120b</th>
+              <td>Largest open-weight; H100-class single-GPU framing in docs.</td>
+            </tr>
+            <tr>
+              <th scope="row">gpt-oss-20b</th>
+              <td>Medium open-weight; low-latency use.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="gemini-subheading" id="openai-wall-more">More models (mixed API SKUs)</h3>
+      <div class="museum-table-wrap gemini-table-wide" role="region" aria-label="OpenAI additional API models"
+        tabindex="0">
+        <table class="museum-table gemini-table">
+          <thead>
+            <tr>
+              <th scope="col">Model</th>
+              <th scope="col">Status</th>
+              <th scope="col">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">GPT-5.2 / GPT-5.2 pro</th>
+              <td><span class="gemini-status gemini-status--pv">Prior</span></td>
+              <td>Earlier GPT-5.2-era frontier + pro.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-5.1 / GPT-5 pro</th>
+              <td><span class="gemini-status gemini-status--pv">Prior</span></td>
+              <td>Coding / agentic GPT-5 generation.</td>
+            </tr>
+            <tr>
+              <th scope="row">o3 / o3-pro / o3-mini</th>
+              <td><span class="gemini-status gemini-status--pv">Prior</span></td>
+              <td>Reasoning; o4-mini noted as succeeded by GPT-5 mini in some copy.</td>
+            </tr>
+            <tr>
+              <th scope="row">o4-mini</th>
+              <td><span class="gemini-status gemini-status--pv">Prior</span></td>
+              <td>Fast reasoning tier.</td>
+            </tr>
+            <tr>
+              <th scope="row">o1 / o1-pro / o1-mini / o1 Preview</th>
+              <td><span class="gemini-status gemini-status--dc-pre">Deprecated</span></td>
+              <td>First o-series; previews retired.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-4.1 nano / mini</th>
+              <td><span class="gemini-status gemini-status--pv">Prior</span></td>
+              <td>Smaller GPT-4.1 variants.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-4o / GPT-4o mini</th>
+              <td><span class="gemini-status gemini-status--ga">API</span></td>
+              <td>Omni multimodal workhorses.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-4o Search Preview / GPT-4o mini Search Preview</th>
+              <td><span class="gemini-status gemini-status--ga">Preview</span></td>
+              <td>Web search oriented completions.</td>
+            </tr>
+            <tr>
+              <th scope="row">computer-use-preview</th>
+              <td><span class="gemini-status gemini-status--pv">Preview</span></td>
+              <td>Computer-use tool specialization.</td>
+            </tr>
+            <tr>
+              <th scope="row">omni-moderation</th>
+              <td><span class="gemini-status gemini-status--ga">Current</span></td>
+              <td>Text + image safety classification.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-4.5 Preview</th>
+              <td><span class="gemini-status gemini-status--dc-pre">Deprecated</span></td>
+              <td>Large preview model (retired in menus).</td>
+            </tr>
+            <tr>
+              <th scope="row">babbage-002 / davinci-002</th>
+              <td><span class="gemini-status gemini-status--dc-pre">Deprecated</span></td>
+              <td>GPT-3 base-class replacements.</td>
+            </tr>
+            <tr>
+              <th scope="row">text-embedding-3-large / small, text-embedding-ada-002</th>
+              <td><span class="gemini-status gemini-status--ga">Embeddings</span></td>
+              <td>Embedding API SKUs.</td>
+            </tr>
+            <tr>
+              <th scope="row">text-moderation / text-moderation-stable</th>
+              <td><span class="gemini-status gemini-status--dc-pre">Deprecated</span></td>
+              <td>Legacy moderation classifiers.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="gemini-subheading" id="openai-wall-chatgpt-api">ChatGPT-branded API SKUs</h3>
+      <p class="gemini-table-note">Marked &ldquo;for ChatGPT, not recommended for API use&rdquo; in docs — listed for parity
+        with menus.</p>
+      <div class="museum-table-wrap" role="region" aria-label="ChatGPT specific model names" tabindex="0">
+        <table class="museum-table gemini-table">
+          <thead>
+            <tr>
+              <th scope="col">Model</th>
+              <th scope="col">Status</th>
+              <th scope="col">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">GPT-5 Chat / GPT-5.1 Chat / GPT-5.2 Chat / GPT-5.3 Chat</th>
+              <td><span class="gemini-status gemini-status--ga">ChatGPT</span></td>
+              <td>Instant / chat-tuned variants inside ChatGPT.</td>
+            </tr>
+            <tr>
+              <th scope="row">ChatGPT-4o</th>
+              <td><span class="gemini-status gemini-status--dc-pre">Deprecated</span></td>
+              <td>GPT-4o flavor used in legacy ChatGPT flows.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="gemini-subheading" id="openai-chat-completion-ids">Chat &amp; Completion model IDs (with aliases)</h3>
+      <p class="gemini-table-note">Canonical <strong>model id</strong> strings and common <strong>aliases</strong> used by
+        tooling (IDEs, routers). Aliases are shorthand — resolve to the full id in your client. Availability changes;
+        confirm in <a href="https://platform.openai.com/docs/models" rel="noopener noreferrer" target="_blank">API model
+          docs</a>.</p>
+      <div class="museum-table-wrap gemini-table-wide" role="region" aria-label="OpenAI Chat and Completion model IDs"
+        tabindex="0">
+        <table class="museum-table gemini-table">
+          <thead>
+            <tr>
+              <th scope="col">Kind</th>
+              <th scope="col">Model ID</th>
+              <th scope="col">Aliases</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-4o</code></td>
+              <td><code>4o</code></td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>chatgpt-4o-latest</code></td>
+              <td><code>chatgpt-4o</code></td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-4o-mini</code></td>
+              <td><code>4o-mini</code></td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-4o-audio-preview</code></td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-4o-audio-preview-2024-12-17</code></td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-4o-audio-preview-2024-10-01</code></td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-4o-mini-audio-preview</code></td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-4o-mini-audio-preview-2024-12-17</code></td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-4.1</code></td>
+              <td><code>4.1</code></td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-4.1-mini</code></td>
+              <td><code>4.1-mini</code></td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-4.1-nano</code></td>
+              <td><code>4.1-nano</code></td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-3.5-turbo</code></td>
+              <td><code>3.5</code>, <code>chatgpt</code></td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-3.5-turbo-16k</code></td>
+              <td><code>chatgpt-16k</code>, <code>3.5-16k</code></td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-4</code></td>
+              <td><code>4</code>, <code>gpt4</code></td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-4-32k</code></td>
+              <td><code>4-32k</code></td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-4-1106-preview</code></td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-4-0125-preview</code></td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-4-turbo-2024-04-09</code></td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-4-turbo</code></td>
+              <td><code>gpt-4-turbo-preview</code>, <code>4-turbo</code>, <code>4t</code></td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-4.5-preview-2025-02-27</code></td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-4.5-preview</code></td>
+              <td><code>gpt-4.5</code></td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>o1</code></td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>o1-2024-12-17</code></td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>o1-preview</code></td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>o1-mini</code></td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>o3-mini</code></td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>o3</code></td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>o4-mini</code></td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-5</code></td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-5-mini</code></td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-5-nano</code></td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-5-2025-08-07</code></td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-5-mini-2025-08-07</code></td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-5-nano-2025-08-07</code></td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-5.1</code></td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-5.1-chat-latest</code></td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-5.2</code></td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-5.2-chat-latest</code></td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-5.4</code></td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-5.4-2026-03-05</code></td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-5.4-mini</code></td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-5.4-mini-2026-03-17</code></td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-5.4-nano</code></td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Chat</th>
+              <td><code>gpt-5.4-nano-2026-03-17</code></td>
+              <td>&mdash;</td>
+            </tr>
+            <tr>
+              <th scope="row">OpenAI Completion</th>
+              <td><code>gpt-3.5-turbo-instruct</code></td>
+              <td><code>3.5-instruct</code>, <code>chatgpt-instruct</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="gemini-disclaimer"><em>Wall rows mirror example OpenAI model picker screenshots (Q1 2026 museum snapshot);
+          not a live API guarantee.</em></p>
     </section>
 
     <section class="profile-section stagger-5" aria-labelledby="openai-refs">
