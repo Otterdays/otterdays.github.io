@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arcee AI — models &amp; merge stack | Otterdays</title>
+  <meta name="description"
+    content="Premium museum catalog of Arcee AI: SuperNova, AFM, Caller, MergeKit, Arcee Fusion, open weights, and Arcee Cloud.">
+  <meta name="keywords" content="Arcee AI, MergeKit, SuperNova, Arcee Fusion, open weights, LLM">
+  <meta name="author" content="Ryan Otterdays">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://otterdays.github.io/arcee.html">
+  <meta property="og:title" content="Arcee AI — models &amp; merge stack | Otterdays">
+  <meta property="og:description" content="Arcee models, merging tools, and cloud platform — catalog and references.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://otterdays.github.io/arcee.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-theme="dark" class="gemini-premium-page provider-premium-page provider-arcee" data-provider="arcee">
+  <a href="#main" class="skip-link">Skip to content</a>
+  <nav class="sidebar">
+    <a href="chats.html" title="AI Chats">
+      <span class="sidebar-icon">💬</span>
+      <span class="sidebar-text">AI Chats</span>
+    </a>
+    <a href="museum.html" title="AI Museum">
+      <span class="sidebar-icon">🏛️</span>
+      <span class="sidebar-text">AI Museum</span>
+    </a>
+    <a href="google-gemini.html" title="Google Gemini">
+      <span class="sidebar-icon">🔷</span>
+      <span class="sidebar-text">Google Gemini</span>
+    </a>
+    <a href="openai.html" title="OpenAI">
+      <span class="sidebar-icon">🤖</span>
+      <span class="sidebar-text">OpenAI</span>
+    </a>
+    <a href="anthropic.html" title="Anthropic">
+      <span class="sidebar-icon">🦉</span>
+      <span class="sidebar-text">Anthropic</span>
+    </a>
+    <a href="xai.html" title="xAI">
+      <span class="sidebar-icon">🌌</span>
+      <span class="sidebar-text">xAI</span>
+    </a>
+    <a href="arcee.html" class="active" title="Arcee AI">
+      <span class="sidebar-icon">🏬</span>
+      <span class="sidebar-text">Arcee AI</span>
+    </a>
+    <a href="about.html" title="About">
+      <span class="sidebar-icon">👤</span>
+      <span class="sidebar-text">About</span>
+    </a>
+    <a href="companies.html" title="Companies">
+      <span class="sidebar-icon">🏢</span>
+      <span class="sidebar-text">Companies</span>
+    </a>
+    <a href="explore.html" title="Explore Data">
+      <span class="sidebar-icon">📊</span>
+      <span class="sidebar-text">Explore</span>
+    </a>
+    <a href="index.html" title="Home">
+      <span class="sidebar-icon">🏠</span>
+      <span class="sidebar-text">Home</span>
+    </a>
+    <a href="informational-links.html" title="Informational Links">
+      <span class="sidebar-icon">🔗</span>
+      <span class="sidebar-text">Informational Links</span>
+    </a>
+    <a href="inspirations.html" title="Inspirations">
+      <span class="sidebar-icon">✨</span>
+      <span class="sidebar-text">Inspirations</span>
+    </a>
+    <a href="media.html" title="Media Gen">
+      <span class="sidebar-icon">🎨</span>
+      <span class="sidebar-text">Media Gen</span>
+    </a>
+    <a href="posts.html" title="Posts">
+      <span class="sidebar-icon">📰</span>
+      <span class="sidebar-text">Posts</span>
+    </a>
+    <a href="programs.html" title="Programs">
+      <span class="sidebar-icon">🎮</span>
+      <span class="sidebar-text">Programs</span>
+    </a>
+    <a href="skills.html" title="Skills">
+      <span class="sidebar-icon">🧠</span>
+      <span class="sidebar-text">Skills</span>
+    </a>
+    <a href="specials.html" title="Specials">
+      <span class="sidebar-icon">⭐</span>
+      <span class="sidebar-text">Specials</span>
+    </a>
+    <a href="tools.html" title="Tools">
+      <span class="sidebar-icon">🛠️</span>
+      <span class="sidebar-text">Tools</span>
+    </a>
+    <a href="updates.html" title="Updates">
+      <span class="sidebar-icon">📋</span>
+      <span class="sidebar-text">Updates</span>
+    </a>
+  </nav>
+
+  <main class="content" id="main">
+    <div class="top-bar">
+      <a href="updates.html" class="version-badge" title="Version 1.9.5 – Click for details">
+        <span class="version-badge-icon">🎮</span>
+        <span class="version-badge-text">v1.9.5</span>
+      </a>
+      <button type="button" class="search-trigger" id="search-trigger" aria-label="Search site">
+        <span class="search-trigger-icon" aria-hidden="true">🔍</span>
+        <span class="search-trigger-text">Search</span>
+        <span class="search-trigger-kbd"><kbd>⌘</kbd><kbd>K</kbd></span>
+      </button>
+      <div class="theme-switcher">
+        <button type="button" class="theme-btn" id="theme-btn" aria-label="Change theme" aria-expanded="false"
+          aria-haspopup="true">
+          <span class="theme-btn-icon" aria-hidden="true">◐</span>
+          <span class="theme-btn-label" id="theme-label">Dark</span>
+          <span class="theme-btn-arrow">▼</span>
+        </button>
+        <div class="theme-dropdown" id="theme-dropdown" role="menu" hidden></div>
+      </div>
+    </div>
+
+    <header class="profile-header stagger-1 gemini-premium-hero">
+      <p class="gemini-premium-kicker">Premium museum expansion · Provider catalog</p>
+      <h1 class="profile-title gemini-premium-title">Arcee AI</h1>
+      <p class="profile-handle gemini-premium-sub">Open-weights <strong>LLM</strong> vendor and <strong>model merging</strong>
+        stack — <strong>MergeKit</strong>, <strong>Arcee Fusion</strong> method, and families such as
+        <strong>SuperNova</strong>, <strong>Caller</strong>, and <strong>AFM</strong>. Strong focus on <strong>Arcee
+          Cloud</strong> for training/merge/deploy. Less mainstream than OpenAI/Anthropic; important for merge research
+        and enterprise customization (March 2026 snapshot).</p>
+      <p class="gemini-premium-back"><a href="museum.html">&larr; AI Model Museum</a></p>
+    </header>
+
+    <section class="profile-section stagger-2" aria-labelledby="arcee-arch">
+      <h2 id="arcee-arch">Architecture &amp; stack (overview)</h2>
+      <p><strong>Arcee Fusion</strong> is a selective merging technique (importance scoring + dynamic thresholds + fusion
+        masks) used to build merged models like SuperNova without blunt full-parameter averaging. <strong>MergeKit</strong>
+        is the open tooling ecosystem Arcee maintains for community merges. Base architectures often trace to
+        <strong>Llama</strong>-class and <strong>Qwen</strong>-class open weights.</p>
+      <p>Official: <a href="https://arcee.ai/" rel="noopener noreferrer" target="_blank">arcee.ai</a> · Hugging Face org:
+        <a href="https://huggingface.co/arcee-ai" rel="noopener noreferrer" target="_blank">arcee-ai</a></p>
+    </section>
+
+    <section class="profile-section stagger-3" aria-labelledby="arcee-tiers">
+      <h2 id="arcee-tiers">Lines &amp; naming</h2>
+      <ul class="gemini-bullet-list">
+        <li><strong>SuperNova</strong> — merged high-capability models (e.g. 70B class in press).</li>
+        <li><strong>Medius / Virtuoso</strong> — internal merge families used in Arcee Fusion blog posts.</li>
+        <li><strong>Caller</strong> — tool-use / API orchestration focused model (Qwen-derived lineage in releases).</li>
+        <li><strong>AFM (Arcee Foundation Model)</strong> — compact decoder-only (e.g. 4.5B) with ReLU² activations in
+          research docs.</li>
+        <li><strong>Convo</strong> — appears in Arcee&rsquo;s naming for conversational/merge experiments; verify
+          specific checkpoints on Hugging Face.</li>
+      </ul>
+    </section>
+
+    <section class="profile-section stagger-3" aria-labelledby="arcee-versions">
+      <h2 id="arcee-versions">Notable models &amp; artifacts</h2>
+      <div class="museum-table-wrap gemini-table-wide" role="region" aria-label="Arcee models" tabindex="0">
+        <table class="museum-table gemini-table">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Era</th>
+              <th scope="col">Status</th>
+              <th scope="col">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">AFM-4.5B</th>
+              <td>2024</td>
+              <td><span class="gemini-status gemini-status--ga">Open</span></td>
+              <td>Small foundation model; ReLU² vs SiLU in technical write-ups.</td>
+            </tr>
+            <tr>
+              <th scope="row">Arcee-SuperNova-v1 (70B)</th>
+              <td>2024–2025</td>
+              <td><span class="gemini-status gemini-status--ga">Open</span></td>
+              <td>Merge of distilled Llama-405B + instruction + DPO paths (per Arcee releases).</td>
+            </tr>
+            <tr>
+              <th scope="row">Caller (32B)</th>
+              <td>2025</td>
+              <td><span class="gemini-status gemini-status--ga">Open</span></td>
+              <td>Tool-calling / API orchestration emphasis.</td>
+            </tr>
+            <tr>
+              <th scope="row">MergeKit + Arcee Fusion</th>
+              <td>2024+</td>
+              <td><span class="gemini-status gemini-status--ga">OSS</span></td>
+              <td>Public merge tooling; Fusion method documented on Arcee blog.</td>
+            </tr>
+            <tr>
+              <th scope="row">Arcee Cloud</th>
+              <td>2024+</td>
+              <td><span class="gemini-status gemini-status--ga">SaaS</span></td>
+              <td>Train, merge, deploy custom LLMs for enterprises.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="profile-section stagger-4" aria-labelledby="arcee-tech">
+      <h2 id="arcee-tech">Technical notes</h2>
+      <div class="museum-table-wrap" role="region" aria-label="Arcee technical notes" tabindex="0">
+        <table class="museum-table gemini-table">
+          <thead>
+            <tr>
+              <th scope="col">Topic</th>
+              <th scope="col">Detail</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>MergeKit</td>
+              <td>Multi-GPU merge acceleration; expanded model support in v0.1+ blog posts.</td>
+            </tr>
+            <tr>
+              <td>Licensing</td>
+              <td>Per-model on Hugging Face (often Apache 2.0 or derivative of base licenses).</td>
+            </tr>
+            <tr>
+              <td>Transformers</td>
+              <td><code>arcee</code> model type documented in Hugging Face Transformers for some checkpoints.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="profile-section stagger-5" aria-labelledby="arcee-timeline">
+      <h2 id="arcee-timeline">Selected timeline (2024–2026)</h2>
+      <ul class="gemini-bullet-list">
+        <li><strong>2024:</strong> MergeKit + Arcee Fusion public; SuperNova-class merges; AFM releases.</li>
+        <li><strong>2025:</strong> Five new open-weights models (Arcee blog); Caller; Arcee Cloud expansion.</li>
+        <li><strong>2026:</strong> Continued enterprise merge + deploy; ecosystem alongside frontier closed APIs.</li>
+      </ul>
+    </section>
+
+    <section class="profile-section stagger-5" aria-labelledby="arcee-refs">
+      <h2 id="arcee-refs">References</h2>
+      <p><a href="https://arcee.ai/blog" rel="noopener noreferrer" target="_blank">Arcee blog</a> ·
+        <a href="https://huggingface.co/arcee-ai" rel="noopener noreferrer" target="_blank">Hugging Face · arcee-ai</a>
+        · <a href="https://en.wikipedia.org/wiki/Ensemble_learning" rel="noopener noreferrer"
+          target="_blank">Ensemble learning</a> (related ML concept)</p>
+      <p class="gemini-disclaimer"><em>Arcee moves quickly; verify checkpoints and licenses on Hugging Face before
+          production use.</em></p>
+    </section>
+
+    <footer class="site-footer">
+      <div class="site-stats">
+        <div class="stat-item" title="Indexed items"><span class="stat-icon">🔍</span> 100+ items</div>
+        <div class="stat-item" title="Pages"><span class="stat-icon">📄</span> 21 pages</div>
+        <div class="stat-item" title="Companies listed"><span class="stat-icon">🏢</span> 78+ companies</div>
+      </div>
+      <div class="site-copy">
+        &copy; 2026 Ryan Otterdays. Maintained with ❤️.
+        <a href="https://github.com/Otterdays/otterdays.github.io" rel="noopener noreferrer" target="_blank">Source</a>
+      </div>
+    </footer>
+  </main>
+
+  <button type="button" class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top">↑</button>
+
+  <div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Site search" hidden>
+    <div class="search-modal" id="search-modal">
+      <div class="search-header">
+        <span class="search-icon">🔍</span>
+        <input type="text" class="search-input" id="search-input" placeholder="Search projects, tools, companies..."
+          autocomplete="off" autocapitalize="off" spellcheck="false">
+        <button type="button" class="search-close" id="search-close" aria-label="Close search">ESC</button>
+      </div>
+      <div class="search-meta">
+        <span class="search-count" id="search-count"></span>
+        <div class="search-hints">
+          <span class="search-hint"><kbd>↑↓</kbd> Navigate</span>
+          <span class="search-hint"><kbd>↵</kbd> Select</span>
+          <span class="search-hint"><kbd>ESC</kbd> Close</span>
+        </div>
+      </div>
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+
+  <script src="js/theme.js"></script>
+  <script src="js/qol.js"></script>
+  <script src="js/search-data.js" defer></script>
+  <script src="js/search.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>xAI — Grok catalog | Otterdays</title>
+  <meta name="description"
+    content="Premium museum catalog of xAI Grok models: Grok-1 through Grok-4, open-source milestones, X/Twitter integration, Wikipedia sources.">
+  <meta name="keywords" content="xAI, Grok, Elon Musk, Grok-2, Grok-3, Grok-4, open source AI">
+  <meta name="author" content="Ryan Otterdays">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://otterdays.github.io/xai.html">
+  <meta property="og:title" content="xAI — Grok catalog | Otterdays">
+  <meta property="og:description" content="Grok model line — releases, tiers, and references.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://otterdays.github.io/xai.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-theme="dark" class="gemini-premium-page provider-premium-page provider-xai" data-provider="xai">
+  <a href="#main" class="skip-link">Skip to content</a>
+  <nav class="sidebar">
+    <a href="chats.html" title="AI Chats">
+      <span class="sidebar-icon">💬</span>
+      <span class="sidebar-text">AI Chats</span>
+    </a>
+    <a href="museum.html" title="AI Museum">
+      <span class="sidebar-icon">🏛️</span>
+      <span class="sidebar-text">AI Museum</span>
+    </a>
+    <a href="google-gemini.html" title="Google Gemini">
+      <span class="sidebar-icon">🔷</span>
+      <span class="sidebar-text">Google Gemini</span>
+    </a>
+    <a href="openai.html" title="OpenAI">
+      <span class="sidebar-icon">🤖</span>
+      <span class="sidebar-text">OpenAI</span>
+    </a>
+    <a href="anthropic.html" title="Anthropic">
+      <span class="sidebar-icon">🦉</span>
+      <span class="sidebar-text">Anthropic</span>
+    </a>
+    <a href="xai.html" class="active" title="xAI">
+      <span class="sidebar-icon">🌌</span>
+      <span class="sidebar-text">xAI</span>
+    </a>
+    <a href="arcee.html" title="Arcee AI">
+      <span class="sidebar-icon">🏬</span>
+      <span class="sidebar-text">Arcee AI</span>
+    </a>
+    <a href="about.html" title="About">
+      <span class="sidebar-icon">👤</span>
+      <span class="sidebar-text">About</span>
+    </a>
+    <a href="companies.html" title="Companies">
+      <span class="sidebar-icon">🏢</span>
+      <span class="sidebar-text">Companies</span>
+    </a>
+    <a href="explore.html" title="Explore Data">
+      <span class="sidebar-icon">📊</span>
+      <span class="sidebar-text">Explore</span>
+    </a>
+    <a href="index.html" title="Home">
+      <span class="sidebar-icon">🏠</span>
+      <span class="sidebar-text">Home</span>
+    </a>
+    <a href="informational-links.html" title="Informational Links">
+      <span class="sidebar-icon">🔗</span>
+      <span class="sidebar-text">Informational Links</span>
+    </a>
+    <a href="inspirations.html" title="Inspirations">
+      <span class="sidebar-icon">✨</span>
+      <span class="sidebar-text">Inspirations</span>
+    </a>
+    <a href="media.html" title="Media Gen">
+      <span class="sidebar-icon">🎨</span>
+      <span class="sidebar-text">Media Gen</span>
+    </a>
+    <a href="posts.html" title="Posts">
+      <span class="sidebar-icon">📰</span>
+      <span class="sidebar-text">Posts</span>
+    </a>
+    <a href="programs.html" title="Programs">
+      <span class="sidebar-icon">🎮</span>
+      <span class="sidebar-text">Programs</span>
+    </a>
+    <a href="skills.html" title="Skills">
+      <span class="sidebar-icon">🧠</span>
+      <span class="sidebar-text">Skills</span>
+    </a>
+    <a href="specials.html" title="Specials">
+      <span class="sidebar-icon">⭐</span>
+      <span class="sidebar-text">Specials</span>
+    </a>
+    <a href="tools.html" title="Tools">
+      <span class="sidebar-icon">🛠️</span>
+      <span class="sidebar-text">Tools</span>
+    </a>
+    <a href="updates.html" title="Updates">
+      <span class="sidebar-icon">📋</span>
+      <span class="sidebar-text">Updates</span>
+    </a>
+  </nav>
+
+  <main class="content" id="main">
+    <div class="top-bar">
+      <a href="updates.html" class="version-badge" title="Version 1.9.5 – Click for details">
+        <span class="version-badge-icon">🎮</span>
+        <span class="version-badge-text">v1.9.5</span>
+      </a>
+      <button type="button" class="search-trigger" id="search-trigger" aria-label="Search site">
+        <span class="search-trigger-icon" aria-hidden="true">🔍</span>
+        <span class="search-trigger-text">Search</span>
+        <span class="search-trigger-kbd"><kbd>⌘</kbd><kbd>K</kbd></span>
+      </button>
+      <div class="theme-switcher">
+        <button type="button" class="theme-btn" id="theme-btn" aria-label="Change theme" aria-expanded="false"
+          aria-haspopup="true">
+          <span class="theme-btn-icon" aria-hidden="true">◐</span>
+          <span class="theme-btn-label" id="theme-label">Dark</span>
+          <span class="theme-btn-arrow">▼</span>
+        </button>
+        <div class="theme-dropdown" id="theme-dropdown" role="menu" hidden></div>
+      </div>
+    </div>
+
+    <header class="profile-header stagger-1 gemini-premium-hero">
+      <p class="gemini-premium-kicker">Premium museum expansion · Provider catalog</p>
+      <h1 class="profile-title gemini-premium-title">xAI</h1>
+      <p class="profile-handle gemini-premium-sub"><strong>Grok</strong> — chat and API models from xAI, integrated with
+        <strong>X (Twitter)</strong> for subscribers in many regions. Known for &ldquo;spicy&rdquo; branding and rapid
+        iteration; <strong>Grok-2</strong> open-weight releases made headlines. See
+        <a href="https://en.wikipedia.org/wiki/XAI_(company)" rel="noopener noreferrer" target="_blank">xAI (company)</a>
+        and <a href="https://en.wikipedia.org/wiki/Grok_(chatbot)" rel="noopener noreferrer" target="_blank">Grok
+          (chatbot)</a>, March 2026 snapshot.</p>
+      <p class="gemini-premium-back"><a href="museum.html">&larr; AI Model Museum</a></p>
+    </header>
+
+    <section class="profile-section stagger-2" aria-labelledby="xai-arch">
+      <h2 id="xai-arch">Architecture &amp; training (overview)</h2>
+      <p>Public technical detail is sparse vs OpenAI/Google. Grok models are large-scale <strong>Transformer</strong>
+        stacks; <strong>Grok-1</strong> weights were open-sourced (Apache 2.0) in 2024 as a 314B-parameter MoE
+        (per announcement). Later generations emphasize <strong>real-time X</strong> data access and
+        <strong>multimodal</strong> features in product.</p>
+      <p>Official: <a href="https://x.ai/" rel="noopener noreferrer" target="_blank">x.ai</a></p>
+    </section>
+
+    <section class="profile-section stagger-3" aria-labelledby="xai-tiers">
+      <h2 id="xai-tiers">Tiers &amp; naming</h2>
+      <ul class="gemini-bullet-list">
+        <li><strong>Grok-1</strong> — first open-weights milestone (MoE).</li>
+        <li><strong>Grok-1.5 / 2 / 3 / 4</strong> — sequential generations; higher numbers = frontier capability in xAI
+          messaging.</li>
+        <li><strong>Modes</strong> — <em>Normal</em> vs <em>Fun</em> / persona toggles in consumer UI (not separate models).</li>
+        <li><strong>Heavy</strong> — some menus expose a higher-compute / reasoning path (product naming varies).</li>
+      </ul>
+    </section>
+
+    <section class="profile-section stagger-3" aria-labelledby="xai-launch">
+      <h2 id="xai-launch">Launch &amp; benchmarks (selected)</h2>
+      <p><strong>Grok-1</strong> (2023) launched as a ChatGPT competitor for X Premium+.
+        <strong>Grok-2</strong> (2024) added image generation and stronger benchmarks; portions released as open
+        weights. <strong>Grok-3</strong> (early 2025) claimed SOTA narratives in public demos. <strong>Grok-4</strong>
+        (2025–2026) appears in frontier IDE pickers alongside GPT-5.x and Claude 4.x.</p>
+    </section>
+
+    <section class="profile-section stagger-3" aria-labelledby="xai-versions">
+      <h2 id="xai-versions">Model versions</h2>
+      <div class="museum-table-wrap gemini-table-wide" role="region" aria-label="Grok model versions" tabindex="0">
+        <table class="museum-table gemini-table">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Era</th>
+              <th scope="col">Status</th>
+              <th scope="col">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Grok-1</th>
+              <td>2023</td>
+              <td><span class="gemini-status gemini-status--dc">Superseded</span></td>
+              <td>314B MoE open release (2024); Grok-1 open weights.</td>
+            </tr>
+            <tr>
+              <th scope="row">Grok-1.5</th>
+              <td>2024</td>
+              <td><span class="gemini-status gemini-status--dc">Superseded</span></td>
+              <td>Longer context; faster iteration.</td>
+            </tr>
+            <tr>
+              <th scope="row">Grok-2</th>
+              <td>Aug 2024</td>
+              <td><span class="gemini-status gemini-status--ga">GA</span></td>
+              <td>Multimodal + image gen; open-weight components.</td>
+            </tr>
+            <tr>
+              <th scope="row">Grok-3</th>
+              <td>Feb 2025</td>
+              <td><span class="gemini-status gemini-status--ga">GA</span></td>
+              <td>Reasoning demos; &ldquo;DeepSearch&rdquo; agentic features in press.</td>
+            </tr>
+            <tr>
+              <th scope="row">Grok-4</th>
+              <td>2025–2026</td>
+              <td><span class="gemini-status gemini-status--ga">GA</span></td>
+              <td>Q1 2026 flagship tier in frontier tool menus.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="profile-section stagger-4" aria-labelledby="xai-tech">
+      <h2 id="xai-tech">Technical notes</h2>
+      <div class="museum-table-wrap" role="region" aria-label="xAI technical notes" tabindex="0">
+        <table class="museum-table gemini-table">
+          <thead>
+            <tr>
+              <th scope="col">Topic</th>
+              <th scope="col">Public detail</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Grok-1 open</td>
+              <td>314B MoE, Apache 2.0 — enables community forks and research.</td>
+            </tr>
+            <tr>
+              <td>Real-time data</td>
+              <td>X integration for current events (subject to product policy).</td>
+            </tr>
+            <tr>
+              <td>Parameters (Grok-3+)</td>
+              <td>Mostly undisclosed; rely on xAI marketing and third-party benchmarks.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="profile-section stagger-5" aria-labelledby="xai-timeline">
+      <h2 id="xai-timeline">Selected timeline (2024–2026)</h2>
+      <ul class="gemini-bullet-list">
+        <li><strong>2024:</strong> Grok-2; open-weights story; image capabilities.</li>
+        <li><strong>2025:</strong> Grok-3; agentic search narratives.</li>
+        <li><strong>2026:</strong> Grok-4 in premium IDE lineups; competition with GPT-5.x, Claude 4.5, Gemini 3.x.</li>
+      </ul>
+    </section>
+
+    <section class="profile-section stagger-5" aria-labelledby="xai-refs">
+      <h2 id="xai-refs">References</h2>
+      <p><a href="https://en.wikipedia.org/wiki/XAI_(company)" rel="noopener noreferrer" target="_blank">xAI
+          (company)</a> · <a href="https://en.wikipedia.org/wiki/Grok_(chatbot)" rel="noopener noreferrer"
+          target="_blank">Grok (chatbot)</a> · <a href="https://x.ai/" rel="noopener noreferrer" target="_blank">x.ai</a>
+      </p>
+      <p class="gemini-disclaimer"><em>Museum compilation — not an official xAI model sheet.</em></p>
+    </section>
+
+    <footer class="site-footer">
+      <div class="site-stats">
+        <div class="stat-item" title="Indexed items"><span class="stat-icon">🔍</span> 100+ items</div>
+        <div class="stat-item" title="Pages"><span class="stat-icon">📄</span> 21 pages</div>
+        <div class="stat-item" title="Companies listed"><span class="stat-icon">🏢</span> 78+ companies</div>
+      </div>
+      <div class="site-copy">
+        &copy; 2026 Ryan Otterdays. Maintained with ❤️.
+        <a href="https://github.com/Otterdays/otterdays.github.io" rel="noopener noreferrer" target="_blank">Source</a>
+      </div>
+    </footer>
+  </main>
+
+  <button type="button" class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top">↑</button>
+
+  <div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Site search" hidden>
+    <div class="search-modal" id="search-modal">
+      <div class="search-header">
+        <span class="search-icon">🔍</span>
+        <input type="text" class="search-input" id="search-input" placeholder="Search projects, tools, companies..."
+          autocomplete="off" autocapitalize="off" spellcheck="false">
+        <button type="button" class="search-close" id="search-close" aria-label="Close search">ESC</button>
+      </div>
+      <div class="search-meta">
+        <span class="search-count" id="search-count"></span>
+        <div class="search-hints">
+          <span class="search-hint"><kbd>↑↓</kbd> Navigate</span>
+          <span class="search-hint"><kbd>↵</kbd> Select</span>
+          <span class="search-hint"><kbd>ESC</kbd> Close</span>
+        </div>
+      </div>
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+
+  <script src="js/theme.js"></script>
+  <script src="js/qol.js"></script>
+  <script src="js/search-data.js" defer></script>
+  <script src="js/search.js" defer></script>
+</body>
+
+</html>

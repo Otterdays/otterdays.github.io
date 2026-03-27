@@ -1,5 +1,12 @@
 # SUMMARY
 
+## Release v1.9.5 — 2026-03-26
+
+- **Version:** Site badge, `updates.html`, and docs on **v1.9.5**.
+- **Premium provider pages:** `openai.html`, `anthropic.html`, `xai.html`, `arcee.html` — full catalogs parallel to `google-gemini.html`; sidebar icons 🤖 🦉 🌌 🏬; museum gateway chips; themed CSS.
+- **Wiring:** `sitemap.xml`, `js/search-data.js`; footer **21 pages**; About “Pages at a glance” updated.
+- **Docs:** `DOCS/CHANGELOG.md` **[1.9.5]**; `js/updates-data.js`; `DOCS/SCRATCHPAD.md`; `DOCS/ARCHITECTURE.md`; `README.md`.
+
 ## Release v1.9.4 — 2026-03-26
 
 - **Version:** Site badge, `updates.html`, and docs on **v1.9.4** (patch: version sync only).
@@ -69,7 +76,7 @@
 - **Scroll progress:** Thin bar at top fills left-to-right as you scroll (`js/theme.js`, `css/style.css`).
 - **A11y & QoL:** Reduced motion mode, skip-to-content link, :focus-visible ring, auto dark/light (system preference), print-friendly CSS, sitemap.xml, footer Source link.
 - **Gradient titles:** Home and profile page titles use theme-aware gradient text (fg→accent).
-- **Pages (17):** Home, Programs (~60+ projects), AI Chats, AI Museum, **Google Gemini** (premium full Google catalog), **Informational Links** (Wikipedia refs for museum models), Media Gen, Companies (80+ companies, collapsible), Tools (CLI/IDE/Web builders/Browser, alphabetical), Specials, Skills/Tools, Updates, Explore, Inspirations (Brackeys, theo gg, Low Level, TechLinked, The PrimeTime), Posts (archived articles), About, 404.
+- **Pages (21):** Home, Programs (~60+ projects), AI Chats, AI Museum, **Google Gemini**, **OpenAI**, **Anthropic**, **xAI**, **Arcee AI** (premium provider catalogs), **Informational Links** (Wikipedia refs for museum models), Media Gen, Companies (80+ companies, collapsible), Tools (CLI/IDE/Web builders/Browser, alphabetical), Specials, Skills/Tools, Updates, Explore, Inspirations (Brackeys, theo gg, Low Level, TechLinked, The PrimeTime), Posts (archived articles), About, 404.
 
 **Recent (2026-02-16):**
 - **Patch 2 (1–10):** Reduced motion, skip link, focus-visible, auto dark/light, print CSS, sitemap.xml, footer Source, About Updates, Inspirations dedup, stagger on About.
@@ -83,7 +90,7 @@
 - **Skills:** Antigravity agentic tools (capabilities list), SkillBox, Skills directory (React, Testing, Git).
 - **Search:** Index updated for all new links (chats, media, companies, tools, skills).
 
-**Docs:** `DOCS/journal/` — dated entries (e.g. 2026-02-25, 2026-03-02, **2026-03-21** for v1.9.0, **2026-03-26** for v1.9.1+). **Current version: v1.9.4** (`updates.html`, footer badge on all pages).
+**Docs:** `DOCS/journal/` — dated entries (e.g. 2026-02-25, 2026-03-02, **2026-03-21** for v1.9.0, **2026-03-26** for v1.9.1+). **Current version: v1.9.5** (`updates.html`, footer badge on all pages).
 
 **Quick links:**
 - [SCRATCHPAD](SCRATCHPAD.md) — active tasks, blockers, last 5 actions

@@ -7,6 +7,15 @@ All notable changes to this project are documented in this file. Format: [Keep a
 ### Added
 - (Planning: future changes.)
 
+## [1.9.5] - 2026-03-26
+
+### Added
+- **openai.html**, **anthropic.html**, **xai.html**, **arcee.html** — Premium **museum provider** pages (same structure as `google-gemini.html`): architecture, tiers, launch/benchmarks, model version tables, technical notes, 2024–2026 timeline, Wikipedia/API references. Per-provider hero styling via `body.provider-openai` / `provider-anthropic` / `provider-xai` / `provider-arcee`.
+- **Navigation:** Sidebar entries (🤖 🦉 🌌 🏬) after **Google Gemini** on all HTML pages + 404; compact-nav pages updated.
+- **museum.html:** Gateway aside lists chip links to all five provider catalogs.
+- **css/style.css:** Provider theme overrides; `.museum-provider-catalog-nav` / `.museum-provider-catalog-chip`.
+- **Site:** Version **v1.9.5**; footer **21 pages**; `sitemap.xml`, `js/search-data.js`.
+
 ## [1.9.4] - 2026-03-26
 
 ### Changed

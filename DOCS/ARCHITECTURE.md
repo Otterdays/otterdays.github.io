@@ -1,6 +1,6 @@
 # ARCHITECTURE
 
-**Current release:** v1.9.4 (version badge in top bar → `updates.html`).
+**Current release:** v1.9.5 (version badge in top bar → `updates.html`).
 
 ## Site structure
 
@@ -11,6 +11,10 @@
 ├── chats.html              # AI Chats: Assistants + Provider hubs & playgrounds
 ├── museum.html             # AI Model Museum (landmark LLMs); gateway to Google Gemini page
 ├── google-gemini.html      # Premium provider catalog: full Gemini / Gemma / Nano Banana tables (museum expansion template)
+├── openai.html             # Premium provider catalog: OpenAI GPT / o-series
+├── anthropic.html          # Premium provider catalog: Anthropic Claude
+├── xai.html                # Premium provider catalog: xAI Grok
+├── arcee.html              # Premium provider catalog: Arcee AI models & merge stack
 ├── informational-links.html  # Wikipedia / reference links for museum models
 ├── media.html              # AI Media Gen: Video, Image, Audio
 ├── companies.html          # AI & dev tools by company (80+); collapsible sections
@@ -94,7 +98,7 @@
 - `body { display: grid; grid-template-columns: 64px 1fr; }`
 - **Sidebar:** Fixed width (64px -> 240px hover).
 - **Content:** `1fr` area (`.content`).
-- **Top Bar:** Version badge (v1.9.4 → `updates.html`), Search, Theme switcher.
+- **Top Bar:** Version badge (v1.9.5 → `updates.html`), Search, Theme switcher.
 
 ## Glassmorphism & Motion
 

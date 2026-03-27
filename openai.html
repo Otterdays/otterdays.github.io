@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OpenAI — GPT &amp; o-series catalog | Otterdays</title>
+  <meta name="description"
+    content="Premium museum catalog of OpenAI models: GPT-4, GPT-4o, o-series reasoning, GPT-5.x, product context, and Wikipedia sources.">
+  <meta name="keywords" content="OpenAI, GPT-4, GPT-4o, o1, o3, GPT-5, ChatGPT, Codex, AI models">
+  <meta name="author" content="Ryan Otterdays">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://otterdays.github.io/openai.html">
+  <meta property="og:title" content="OpenAI — GPT &amp; o-series catalog | Otterdays">
+  <meta property="og:description" content="Chronological OpenAI frontier models — tiers, launches, and references.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://otterdays.github.io/openai.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-theme="dark" class="gemini-premium-page provider-premium-page provider-openai" data-provider="openai">
+  <a href="#main" class="skip-link">Skip to content</a>
+  <nav class="sidebar">
+    <a href="chats.html" title="AI Chats">
+      <span class="sidebar-icon">💬</span>
+      <span class="sidebar-text">AI Chats</span>
+    </a>
+    <a href="museum.html" title="AI Museum">
+      <span class="sidebar-icon">🏛️</span>
+      <span class="sidebar-text">AI Museum</span>
+    </a>
+    <a href="google-gemini.html" title="Google Gemini">
+      <span class="sidebar-icon">🔷</span>
+      <span class="sidebar-text">Google Gemini</span>
+    </a>
+    <a href="openai.html" class="active" title="OpenAI">
+      <span class="sidebar-icon">🤖</span>
+      <span class="sidebar-text">OpenAI</span>
+    </a>
+    <a href="anthropic.html" title="Anthropic">
+      <span class="sidebar-icon">🦉</span>
+      <span class="sidebar-text">Anthropic</span>
+    </a>
+    <a href="xai.html" title="xAI">
+      <span class="sidebar-icon">🌌</span>
+      <span class="sidebar-text">xAI</span>
+    </a>
+    <a href="arcee.html" title="Arcee AI">
+      <span class="sidebar-icon">🏬</span>
+      <span class="sidebar-text">Arcee AI</span>
+    </a>
+    <a href="about.html" title="About">
+      <span class="sidebar-icon">👤</span>
+      <span class="sidebar-text">About</span>
+    </a>
+    <a href="companies.html" title="Companies">
+      <span class="sidebar-icon">🏢</span>
+      <span class="sidebar-text">Companies</span>
+    </a>
+    <a href="explore.html" title="Explore Data">
+      <span class="sidebar-icon">📊</span>
+      <span class="sidebar-text">Explore</span>
+    </a>
+    <a href="index.html" title="Home">
+      <span class="sidebar-icon">🏠</span>
+      <span class="sidebar-text">Home</span>
+    </a>
+    <a href="informational-links.html" title="Informational Links">
+      <span class="sidebar-icon">🔗</span>
+      <span class="sidebar-text">Informational Links</span>
+    </a>
+    <a href="inspirations.html" title="Inspirations">
+      <span class="sidebar-icon">✨</span>
+      <span class="sidebar-text">Inspirations</span>
+    </a>
+    <a href="media.html" title="Media Gen">
+      <span class="sidebar-icon">🎨</span>
+      <span class="sidebar-text">Media Gen</span>
+    </a>
+    <a href="posts.html" title="Posts">
+      <span class="sidebar-icon">📰</span>
+      <span class="sidebar-text">Posts</span>
+    </a>
+    <a href="programs.html" title="Programs">
+      <span class="sidebar-icon">🎮</span>
+      <span class="sidebar-text">Programs</span>
+    </a>
+    <a href="skills.html" title="Skills">
+      <span class="sidebar-icon">🧠</span>
+      <span class="sidebar-text">Skills</span>
+    </a>
+    <a href="specials.html" title="Specials">
+      <span class="sidebar-icon">⭐</span>
+      <span class="sidebar-text">Specials</span>
+    </a>
+    <a href="tools.html" title="Tools">
+      <span class="sidebar-icon">🛠️</span>
+      <span class="sidebar-text">Tools</span>
+    </a>
+    <a href="updates.html" title="Updates">
+      <span class="sidebar-icon">📋</span>
+      <span class="sidebar-text">Updates</span>
+    </a>
+  </nav>
+
+  <main class="content" id="main">
+    <div class="top-bar">
+      <a href="updates.html" class="version-badge" title="Version 1.9.5 – Click for details">
+        <span class="version-badge-icon">🎮</span>
+        <span class="version-badge-text">v1.9.5</span>
+      </a>
+      <button type="button" class="search-trigger" id="search-trigger" aria-label="Search site">
+        <span class="search-trigger-icon" aria-hidden="true">🔍</span>
+        <span class="search-trigger-text">Search</span>
+        <span class="search-trigger-kbd"><kbd>⌘</kbd><kbd>K</kbd></span>
+      </button>
+      <div class="theme-switcher">
+        <button type="button" class="theme-btn" id="theme-btn" aria-label="Change theme" aria-expanded="false"
+          aria-haspopup="true">
+          <span class="theme-btn-icon" aria-hidden="true">◐</span>
+          <span class="theme-btn-label" id="theme-label">Dark</span>
+          <span class="theme-btn-arrow">▼</span>
+        </button>
+        <div class="theme-dropdown" id="theme-dropdown" role="menu" hidden></div>
+      </div>
+    </div>
+
+    <header class="profile-header stagger-1 gemini-premium-hero">
+      <p class="gemini-premium-kicker">Premium museum expansion · Provider catalog</p>
+      <h1 class="profile-title gemini-premium-title">OpenAI</h1>
+      <p class="profile-handle gemini-premium-sub">Frontier <strong>GPT</strong> and <strong>o-series</strong> models behind
+        <strong>ChatGPT</strong>, the <strong>API</strong>, and <strong>Codex</strong>-class coding agents. This page
+        summarizes public product lines and release narratives (March 2026 snapshot); see
+        <a href="https://en.wikipedia.org/wiki/OpenAI" rel="noopener noreferrer" target="_blank">OpenAI</a>,
+        <a href="https://en.wikipedia.org/wiki/GPT-4" rel="noopener noreferrer" target="_blank">GPT-4</a>, and
+        <a href="https://en.wikipedia.org/wiki/ChatGPT" rel="noopener noreferrer" target="_blank">ChatGPT</a> for
+        encyclopedic detail.</p>
+      <p class="gemini-premium-back"><a href="museum.html">&larr; AI Model Museum</a></p>
+    </header>
+
+    <section class="profile-section stagger-2" aria-labelledby="openai-arch">
+      <h2 id="openai-arch">Architecture &amp; training (overview)</h2>
+      <p>Consumer models are typically <strong>decoder-only transformers</strong> trained on broad internet, licensed data,
+        and human feedback — with later generations adding <strong>multimodal</strong> inputs (vision, audio),
+        <strong>tool use</strong>, and <strong>reasoning-time compute</strong> for the <strong>o-series</strong> (chain-of-thought
+        style inference, not one giant frozen CoT in the weights). Exact parameter counts for GPT-4 and GPT-5-class models
+        are often undisclosed; treat tables as directional.</p>
+      <p>Official hub: <a href="https://openai.com/" rel="noopener noreferrer" target="_blank">openai.com</a> · API docs:
+        <a href="https://platform.openai.com/docs/models" rel="noopener noreferrer" target="_blank">Models</a>.</p>
+    </section>
+
+    <section class="profile-section stagger-3" aria-labelledby="openai-tiers">
+      <h2 id="openai-tiers">Tiers &amp; naming</h2>
+      <ul class="gemini-bullet-list">
+        <li><strong>GPT-3.5</strong> — fast, economical chat class; many SKUs retired over time.</li>
+        <li><strong>GPT-4</strong> — flagship multimodal era (vision in <strong>GPT-4 Turbo / 4o</strong> paths).</li>
+        <li><strong>GPT-4o</strong> (&ldquo;omni&rdquo;) — unified multimodal model family (text/image/audio) at lower
+          latency than prior GPT-4 variants in OpenAI messaging.</li>
+        <li><strong>o-series (o1, o3, …)</strong> — reasoning-optimized; emphasizes test-time compute and structured
+          problem solving.</li>
+        <li><strong>GPT-5.x</strong> — successor generation in product naming (exact versioning follows OpenAI&rsquo;s
+          marketing and API IDs).</li>
+      </ul>
+    </section>
+
+    <section class="profile-section stagger-3" aria-labelledby="openai-launch">
+      <h2 id="openai-launch">Launch &amp; benchmarks (selected)</h2>
+      <p><strong>GPT-4</strong> (March 2023) set a new bar for general capability vs GPT-3.5; multimodal and larger-context
+        variants followed through 2023–2024. <strong>GPT-4o</strong> (May 2024) emphasized omnimodal interaction and
+        latency. <strong>o1</strong> (2024) introduced explicit reasoning-time scaling for math and code benchmarks.</p>
+      <p>Competitive framing in industry coverage often references <strong>Anthropic Claude</strong>, <strong>Google
+          Gemini</strong>, and <strong>xAI Grok</strong> in the same cohort by era.</p>
+    </section>
+
+    <section class="profile-section stagger-3" aria-labelledby="openai-versions">
+      <h2 id="openai-versions">Model versions (product / API line)</h2>
+      <p class="profile-handle">Representative SKUs and eras — not an exhaustive API model list.</p>
+      <div class="museum-table-wrap gemini-table-wide" role="region" aria-label="OpenAI model versions" tabindex="0">
+        <table class="museum-table gemini-table">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Era</th>
+              <th scope="col">Status</th>
+              <th scope="col">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">GPT-3.5 Turbo</th>
+              <td>2022–</td>
+              <td><span class="gemini-status gemini-status--ga">GA / legacy</span></td>
+              <td>Workhorse chat class; many snapshots superseded.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-4 (base)</th>
+              <td>Mar 2023</td>
+              <td><span class="gemini-status gemini-status--dc">Superseded</span></td>
+              <td>First GPT-4 API era; benchmarked vs prior SOTA.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-4 Turbo</th>
+              <td>Nov 2023</td>
+              <td><span class="gemini-status gemini-status--dc">Superseded</span></td>
+              <td>128K context class; vision path.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-4o</th>
+              <td>May 2024</td>
+              <td><span class="gemini-status gemini-status--ga">GA</span></td>
+              <td>Omni multimodal; default in many ChatGPT flows.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-4.1 (family)</th>
+              <td>Apr 2025</td>
+              <td><span class="gemini-status gemini-status--ga">GA</span></td>
+              <td>Incremental GPT-4-class refresh in API naming.</td>
+            </tr>
+            <tr>
+              <th scope="row">o1 / o1-mini</th>
+              <td>2024</td>
+              <td><span class="gemini-status gemini-status--ga">GA</span></td>
+              <td>Reasoning-first; &ldquo;thinking&rdquo; budget in product UX.</td>
+            </tr>
+            <tr>
+              <th scope="row">o3 / o3-mini</th>
+              <td>2024–2025</td>
+              <td><span class="gemini-status gemini-status--ga">GA</span></td>
+              <td>Successors in o-series for STEM and agents.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-5</th>
+              <td>Aug 2025</td>
+              <td><span class="gemini-status gemini-status--ga">GA</span></td>
+              <td>Next-gen unified flagship in OpenAI numbering.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-5.1 / 5.2 / 5.3 / 5.4</th>
+              <td>2025–2026</td>
+              <td><span class="gemini-status gemini-status--ga">GA / rolling</span></td>
+              <td>Iterative releases; IDE pickers (e.g. Cursor) may show sub-variants.</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-OSS (open weights)</th>
+              <td>2025</td>
+              <td><span class="gemini-status gemini-status--ga">Open</span></td>
+              <td>Open-weight line for local / partner inference (e.g. 120B class in menus).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="profile-section stagger-4" aria-labelledby="openai-tech">
+      <h2 id="openai-tech">Technical notes (where public)</h2>
+      <div class="museum-table-wrap" role="region" aria-label="OpenAI technical notes" tabindex="0">
+        <table class="museum-table gemini-table">
+          <thead>
+            <tr>
+              <th scope="col">Topic</th>
+              <th scope="col">Public detail</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Parameters (GPT-4)</td>
+              <td>Not officially disclosed; rumors span wide ranges — omit from authoritative claims.</td>
+            </tr>
+            <tr>
+              <td>Context (GPT-4 Turbo class)</td>
+              <td>128K tokens (product era; check current API docs for exact model IDs).</td>
+            </tr>
+            <tr>
+              <td>Modalities</td>
+              <td>GPT-4o and later omnimodal paths: text, image, audio in unified stacks.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="profile-section stagger-5" aria-labelledby="openai-timeline">
+      <h2 id="openai-timeline">Selected timeline (2024–2026)</h2>
+      <ul class="gemini-bullet-list">
+        <li><strong>2024:</strong> GPT-4o; o1 reasoning line; broad ChatGPT UI refresh.</li>
+        <li><strong>2025:</strong> GPT-5 launch; GPT-4.1; continued o-series; open-weight GPT-OSS narrative.</li>
+        <li><strong>2026:</strong> GPT-5.x point releases; tight integration with coding agents and partner IDEs.</li>
+      </ul>
+    </section>
+
+    <section class="profile-section stagger-5" aria-labelledby="openai-refs">
+      <h2 id="openai-refs">References</h2>
+      <p><a href="https://en.wikipedia.org/wiki/OpenAI" rel="noopener noreferrer" target="_blank">OpenAI</a> ·
+        <a href="https://en.wikipedia.org/wiki/GPT-4" rel="noopener noreferrer" target="_blank">GPT-4</a> ·
+        <a href="https://en.wikipedia.org/wiki/ChatGPT" rel="noopener noreferrer" target="_blank">ChatGPT</a> ·
+        <a href="https://en.wikipedia.org/wiki/GPT-4o" rel="noopener noreferrer" target="_blank">GPT-4o</a> (if available)
+        · <a href="https://platform.openai.com/docs/models" rel="noopener noreferrer" target="_blank">API model docs</a>
+      </p>
+      <p class="gemini-disclaimer"><em>Compiled for the museum from Wikipedia and OpenAI public posts; not an official
+          OpenAI model sheet.</em></p>
+    </section>
+
+    <footer class="site-footer">
+      <div class="site-stats">
+        <div class="stat-item" title="Indexed items"><span class="stat-icon">🔍</span> 100+ items</div>
+        <div class="stat-item" title="Pages"><span class="stat-icon">📄</span> 21 pages</div>
+        <div class="stat-item" title="Companies listed"><span class="stat-icon">🏢</span> 78+ companies</div>
+      </div>
+      <div class="site-copy">
+        &copy; 2026 Ryan Otterdays. Maintained with ❤️.
+        <a href="https://github.com/Otterdays/otterdays.github.io" rel="noopener noreferrer" target="_blank">Source</a>
+      </div>
+    </footer>
+  </main>
+
+  <button type="button" class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top">↑</button>
+
+  <div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Site search" hidden>
+    <div class="search-modal" id="search-modal">
+      <div class="search-header">
+        <span class="search-icon">🔍</span>
+        <input type="text" class="search-input" id="search-input" placeholder="Search projects, tools, companies..."
+          autocomplete="off" autocapitalize="off" spellcheck="false">
+        <button type="button" class="search-close" id="search-close" aria-label="Close search">ESC</button>
+      </div>
+      <div class="search-meta">
+        <span class="search-count" id="search-count"></span>
+        <div class="search-hints">
+          <span class="search-hint"><kbd>↑↓</kbd> Navigate</span>
+          <span class="search-hint"><kbd>↵</kbd> Select</span>
+          <span class="search-hint"><kbd>ESC</kbd> Close</span>
+        </div>
+      </div>
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+
+  <script src="js/theme.js"></script>
+  <script src="js/qol.js"></script>
+  <script src="js/search-data.js" defer></script>
+  <script src="js/search.js" defer></script>
+</body>
+
+</html>

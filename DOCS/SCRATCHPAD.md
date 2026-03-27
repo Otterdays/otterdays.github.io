@@ -1,5 +1,11 @@
 # SCRATCHPAD
 
+## 2026-03-26 — v1.9.5 OpenAI, Anthropic, xAI, Arcee premium museum pages
+
+**What changed:** New `openai.html`, `anthropic.html`, `xai.html`, `arcee.html` (provider catalogs, Wikipedia-forward); sidebar 🤖🦉🌌🏬 after 🔷 on all HTML + 404; `museum.html` gateway chips; provider CSS themes; site **v1.9.5**, footer **21 pages**; `sitemap.xml`, `search-data.js`, About list; `CHANGELOG` **[1.9.5]**, `SUMMARY`, `ARCHITECTURE`, `README`, `updates-data.js`.
+
+---
+
 ## 2026-03-26 — v1.9.4 version sync (patch bump)
 
 **What changed:** All HTML version badges **v1.9.4**; `js/updates-data.js` **[1.9.4]**; `CHANGELOG` **[1.9.4]**; `SUMMARY`, `ARCHITECTURE`, `SCRATCHPAD`.

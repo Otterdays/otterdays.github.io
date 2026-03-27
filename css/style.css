@@ -2874,6 +2874,19 @@ button:focus-visible,
   line-height: 1.55;
 }
 
+.museum-picker-group-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--fg);
+  margin: 0.65rem 0 0.35rem;
+  line-height: 1.4;
+}
+
+.museum-picker-snapshot-desc + .museum-picker-group-title {
+  margin-top: 0.35rem;
+}
+
 .museum-picker-list {
   margin: 0;
   padding-left: 1.25rem;
@@ -2884,6 +2897,40 @@ button:focus-visible,
 
 .museum-picker-list li {
   margin-bottom: 0.25rem;
+}
+
+.museum-picker-list--columns {
+  column-count: 2;
+  column-gap: 1.75rem;
+}
+
+@media (max-width: 42rem) {
+  .museum-picker-list--columns {
+    column-count: 1;
+  }
+}
+
+.museum-picker-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+  margin: 0.35rem 0 0.5rem;
+}
+
+.museum-picker-table th,
+.museum-picker-table td {
+  padding: 0.35rem 0.5rem;
+  text-align: start;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.museum-picker-table th {
+  font-weight: 600;
+  color: var(--muted);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 .museum-picker-badge {
@@ -3361,6 +3408,147 @@ button:focus-visible,
   font-weight: 600;
   color: var(--fg);
   margin: 1.35rem 0 0.6rem;
+}
+
+/* Premium provider pages — theme variants (reuse .gemini-premium-* chrome) */
+.provider-premium-page {
+  container-type: inline-size;
+}
+
+body.provider-openai .gemini-premium-hero {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, #10a37f, transparent 88%) 0%,
+    color-mix(in srgb, var(--bg), transparent 10%) 50%,
+    color-mix(in srgb, #000000, transparent 90%) 100%
+  );
+  border-color: color-mix(in srgb, #10a37f, transparent 50%);
+  box-shadow: 0 12px 40px color-mix(in srgb, #10a37f, transparent 88%);
+}
+
+body.provider-openai .gemini-premium-kicker {
+  color: color-mix(in srgb, #10a37f, var(--fg) 35%);
+}
+
+body.provider-openai .gemini-premium-title {
+  background: linear-gradient(120deg, #10a37f 0%, #74aa9c 50%, var(--fg) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body.provider-openai .gemini-premium-sub a {
+  color: #10a37f;
+}
+
+body.provider-anthropic .gemini-premium-hero {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, #d97757, transparent 86%) 0%,
+    color-mix(in srgb, var(--bg), transparent 12%) 55%,
+    color-mix(in srgb, #7c2d12, transparent 92%) 100%
+  );
+  border-color: color-mix(in srgb, #d97757, transparent 45%);
+  box-shadow: 0 12px 40px color-mix(in srgb, #d97757, transparent 86%);
+}
+
+body.provider-anthropic .gemini-premium-kicker {
+  color: color-mix(in srgb, #c2410c, var(--fg) 30%);
+}
+
+body.provider-anthropic .gemini-premium-title {
+  background: linear-gradient(120deg, #ea580c 0%, #fbbf24 45%, var(--fg) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body.provider-anthropic .gemini-premium-sub a {
+  color: #ea580c;
+}
+
+body.provider-xai .gemini-premium-hero {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, #7c3aed, transparent 84%) 0%,
+    color-mix(in srgb, #1e1b4b, transparent 20%) 45%,
+    color-mix(in srgb, #0f172a, transparent 15%) 100%
+  );
+  border-color: color-mix(in srgb, #a78bfa, transparent 40%);
+  box-shadow: 0 12px 40px color-mix(in srgb, #7c3aed, transparent 85%);
+}
+
+body.provider-xai .gemini-premium-kicker {
+  color: color-mix(in srgb, #c4b5fd, var(--fg) 25%);
+}
+
+body.provider-xai .gemini-premium-title {
+  background: linear-gradient(120deg, #a78bfa 0%, #38bdf8 40%, #f472b6 85%, var(--fg) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body.provider-xai .gemini-premium-sub a {
+  color: #c4b5fd;
+}
+
+body.provider-arcee .gemini-premium-hero {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, #64748b, transparent 82%) 0%,
+    color-mix(in srgb, var(--bg), transparent 10%) 50%,
+    color-mix(in srgb, #334155, transparent 88%) 100%
+  );
+  border-color: color-mix(in srgb, #94a3b8, transparent 35%);
+  box-shadow: 0 12px 40px color-mix(in srgb, #64748b, transparent 88%);
+}
+
+body.provider-arcee .gemini-premium-kicker {
+  color: color-mix(in srgb, #94a3b8, var(--fg) 35%);
+}
+
+body.provider-arcee .gemini-premium-title {
+  background: linear-gradient(120deg, #64748b 0%, #cbd5e1 55%, var(--fg) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body.provider-arcee .gemini-premium-sub a {
+  color: #94a3b8;
+}
+
+/* Museum: multi-provider catalog chips */
+.museum-provider-catalog-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.65rem;
+  margin: 0.75rem 0 0;
+  max-width: 52rem;
+}
+
+.museum-provider-catalog-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--fg);
+  background: color-mix(in srgb, var(--fg), transparent 92%);
+  border: 1px solid var(--border);
+}
+
+.museum-provider-catalog-chip:hover {
+  filter: brightness(1.06);
+}
+
+.museum-provider-catalog-chip:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 /* Print exclusion */

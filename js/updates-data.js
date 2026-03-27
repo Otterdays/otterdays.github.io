@@ -11,6 +11,21 @@ const UPDATES_DATA = [
     ]
   },
   {
+    version: "1.9.5",
+    date: "2026-03-26",
+    sections: [
+      {
+        type: "added",
+        items: [
+          "Premium provider catalogs: **openai.html**, **anthropic.html**, **xai.html**, **arcee.html** — same museum template as Google Gemini (hero, architecture, tiers, versions table, timeline, refs).",
+          "Sidebar: 🤖 OpenAI, 🦉 Anthropic, 🌌 xAI, 🏬 Arcee AI after Google Gemini on all pages; **museum.html** gateway chips for all five providers.",
+          "css/style.css — provider theme gradients (OpenAI green, Anthropic orange, xAI purple galaxy, Arcee slate) + `.museum-provider-catalog-nav` chips.",
+          "Site **v1.9.5**; footer **21 pages**; `sitemap.xml`, `js/search-data.js`."
+        ]
+      }
+    ]
+  },
+  {
     version: "1.9.4",
     date: "2026-03-26",
     sections: [

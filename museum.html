@@ -8,7 +8,7 @@
 
   <!-- SEO Meta Tags -->
   <meta name="description"
-    content="The AI Model Museum — landmark LLMs, Cursor picker snapshot (Gemini 3.1 Pro High/Low, Thinking Claude, GPT-OSS 120B), HKChat (Hong Kong), plus Q1 2026 flagship roster and master catalog.">
+    content="The AI Model Museum — landmark LLMs; Cursor/Antigravity (Gemini 3.1, Claude, GPT-OSS), Cursor extended menus (add-on costs, GLM/MiniMax/OpenAI context, score tables), and OpenCode Desktop (Big Pickle, MiMo V2, Nemotron 3 Super, MiniMax M2.5, Zen/Go); HKChat (Hong Kong); Q1 2026 roster and master catalog (139 rows).">
   <meta name="keywords"
     content="AI models, Claude, GPT-4o, Gemini, DeepSeek, Llama, o3, AI history, language models, LLM">
   <meta name="author" content="Ryan Otterdays">
@@ -54,6 +54,22 @@
     <a href="google-gemini.html" title="Google Gemini">
       <span class="sidebar-icon">🔷</span>
       <span class="sidebar-text">Google Gemini</span>
+    </a>
+    <a href="openai.html" title="OpenAI">
+      <span class="sidebar-icon">🤖</span>
+      <span class="sidebar-text">OpenAI</span>
+    </a>
+    <a href="anthropic.html" title="Anthropic">
+      <span class="sidebar-icon">🦉</span>
+      <span class="sidebar-text">Anthropic</span>
+    </a>
+    <a href="xai.html" title="xAI">
+      <span class="sidebar-icon">🌌</span>
+      <span class="sidebar-text">xAI</span>
+    </a>
+    <a href="arcee.html" title="Arcee AI">
+      <span class="sidebar-icon">🏬</span>
+      <span class="sidebar-text">Arcee AI</span>
     </a>
     <a href="about.html" title="About">
       <span class="sidebar-icon">👤</span>
@@ -113,9 +129,9 @@
     <!-- Top Bar: Search & Theme (Floating) -->
     <div class="top-bar">
       <!-- Version Badge -->
-      <a href="updates.html" class="version-badge" title="Version 1.9.4 – Click for details">
+      <a href="updates.html" class="version-badge" title="Version 1.9.5 – Click for details">
         <span class="version-badge-icon">🎮</span>
-        <span class="version-badge-text">v1.9.4</span>
+        <span class="version-badge-text">v1.9.5</span>
       </a>
 
       <button type="button" class="search-trigger" id="search-trigger" aria-label="Search site">
@@ -154,11 +170,16 @@
     </div>
 
     <aside class="museum-gemini-gateway stagger-2" aria-labelledby="museum-gemini-gateway-heading">
-      <h2 id="museum-gemini-gateway-heading" class="museum-gemini-gateway-title">Premium provider catalog</h2>
-      <p class="museum-gemini-gateway-desc">Google's full Gemini line — Bard through 3.1, Gemma, Nano Banana image
-        models, technical specs, and release timeline — lives on the dedicated <a href="google-gemini.html"><strong>Google
-          Gemini</strong></a> page. That layout is the <strong>new standard</strong> for future museum provider
-        expansions.</p>
+      <h2 id="museum-gemini-gateway-heading" class="museum-gemini-gateway-title">Premium provider catalogs</h2>
+      <p class="museum-gemini-gateway-desc">Full-line museum pages for frontier labs — same layout as
+        <a href="google-gemini.html"><strong>Google Gemini</strong></a> (the original template). Pick a provider:</p>
+      <nav class="museum-provider-catalog-nav" aria-label="Premium provider catalog pages">
+        <a class="museum-provider-catalog-chip" href="google-gemini.html">🔷 Google Gemini</a>
+        <a class="museum-provider-catalog-chip" href="openai.html">🤖 OpenAI</a>
+        <a class="museum-provider-catalog-chip" href="anthropic.html">🦉 Anthropic</a>
+        <a class="museum-provider-catalog-chip" href="xai.html">🌌 xAI</a>
+        <a class="museum-provider-catalog-chip" href="arcee.html">🏬 Arcee AI</a>
+      </nav>
       <a class="museum-gemini-gateway-btn" href="google-gemini.html">Open Google Gemini catalog &rarr;</a>
     </aside>
 
@@ -334,6 +355,237 @@
             aria-hidden="true">⚠</span></li>
         <li><strong>GPT-OSS 120B (Medium)</strong> <span class="museum-picker-warn" title="Caution in UI"
             aria-hidden="true">⚠</span></li>
+      </ul>
+    </div>
+
+    <div id="museum-picker-snapshot-cursor-extended" class="museum-picker-snapshot stagger-2"
+      aria-label="Example Cursor extended model list, add-on cost multipliers, and context or score tables">
+      <p class="museum-picker-snapshot-title">Cursor — extended menu, add-on costs &amp; tables (example snapshot)</p>
+      <p class="museum-picker-snapshot-desc">Additional labels seen in Q1 2026 <strong>Cursor</strong> workflows:
+        <strong>relative cost</strong> multipliers are billing weights for add-on models (not vendor-published specs);
+        <strong>US-hosted</strong> denotes regional API endpoints. Context and score figures come from in-app
+        comparison UIs and change as products update.</p>
+      <p class="museum-picker-group-title">Add-on models — relative cost</p>
+      <ul class="museum-picker-list">
+        <li><strong>Qwen-Coder-Qoder-1.0</strong> <span class="museum-picker-badge">0.2×</span></li>
+        <li><strong>Qwen3.5-Plus</strong> <span class="museum-picker-badge">0.2×</span></li>
+        <li><strong>GLM-5</strong> <span class="museum-picker-badge">0.5×</span></li>
+        <li><strong>Kimi-K2.5</strong> <span class="museum-picker-badge">0.3×</span></li>
+        <li><strong>MiniMax-M2.7</strong> <span class="museum-picker-badge">0.2×</span></li>
+      </ul>
+      <p class="museum-picker-group-title">Long model selector (typical labels)</p>
+      <ul class="museum-picker-list museum-picker-list--columns">
+        <li><strong>auto</strong></li>
+        <li><strong>claude 4 sonnet</strong></li>
+        <li><strong>claude 4.1 opus</strong></li>
+        <li><strong>claude 4.5 haiku</strong></li>
+        <li><strong>claude 4.5 opus</strong></li>
+        <li><strong>claude 4.5 sonnet</strong></li>
+        <li><strong>claude 4.6 opus</strong></li>
+        <li><strong>claude 4.6 sonnet</strong></li>
+        <li><strong>gemini 2.5 pro</strong></li>
+        <li><strong>gemini 3 pro</strong></li>
+        <li><strong>gemini 3.1 pro</strong></li>
+        <li><strong>glm 4.7 (us-hosted)</strong></li>
+        <li><strong>glm 5 (us-hosted)</strong></li>
+        <li><strong>gpt-5</strong></li>
+        <li><strong>gpt-5.1</strong></li>
+        <li><strong>gpt-5.1 codex</strong></li>
+        <li><strong>gpt-5.1 codex max</strong></li>
+        <li><strong>gpt-5.2</strong></li>
+        <li><strong>gpt-5.2 codex</strong></li>
+        <li><strong>gpt-5.3 codex</strong></li>
+        <li><strong>gpt-5.4</strong></li>
+        <li><strong>kimi k2.5 (us-hosted)</strong></li>
+      </ul>
+      <p class="museum-picker-group-title">Context windows (Z.AI · MiniMax · OpenAI) — example</p>
+      <div class="museum-table-wrap" role="region" aria-label="Example context window table" tabindex="0">
+        <table class="museum-picker-table">
+          <thead>
+            <tr>
+              <th scope="col">Model</th>
+              <th scope="col">Provider</th>
+              <th scope="col">Context (approx.)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">GLM 4.6</th>
+              <td>Z.AI</td>
+              <td>200.0K</td>
+            </tr>
+            <tr>
+              <th scope="row">MiniMax M2.5</th>
+              <td>MiniMax</td>
+              <td>204.8K</td>
+            </tr>
+            <tr>
+              <th scope="row">MiniMax M2.1</th>
+              <td>MiniMax</td>
+              <td>204.8K</td>
+            </tr>
+            <tr>
+              <th scope="row">MiniMax M2.1 Lightning</th>
+              <td>MiniMax</td>
+              <td>204.8K</td>
+            </tr>
+            <tr>
+              <th scope="row">GLM 4.7</th>
+              <td>Z.AI</td>
+              <td>200.0K</td>
+            </tr>
+            <tr>
+              <th scope="row">GLM 5</th>
+              <td>Z.AI</td>
+              <td>202.8K</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-5.3-Codex</th>
+              <td>OpenAI</td>
+              <td>400.0K</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-5.2-Codex</th>
+              <td>OpenAI</td>
+              <td>400.0K</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="museum-picker-group-title">In-app comparison scores (example)</p>
+      <div class="museum-table-wrap" role="region" aria-label="Example model comparison scores" tabindex="0">
+        <table class="museum-picker-table">
+          <thead>
+            <tr>
+              <th scope="col">Model</th>
+              <th scope="col">Score</th>
+              <th scope="col">Org</th>
+              <th scope="col">Context</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Claude Opus 4.6</th>
+              <td>10</td>
+              <td>Anthropic</td>
+              <td>1.0M</td>
+            </tr>
+            <tr>
+              <th scope="row">Claude Opus 4.5</th>
+              <td>10</td>
+              <td>Anthropic</td>
+              <td>200.0K</td>
+            </tr>
+            <tr>
+              <th scope="row">Claude Sonnet 4.6</th>
+              <td>10</td>
+              <td>Anthropic</td>
+              <td>1.0M</td>
+            </tr>
+            <tr>
+              <th scope="row">Claude Sonnet 4.5</th>
+              <td>10</td>
+              <td>Anthropic</td>
+              <td>1.0M</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-5.4</th>
+              <td>10</td>
+              <td>OpenAI</td>
+              <td>1.0M</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-5.4 Pro</th>
+              <td>10</td>
+              <td>OpenAI</td>
+              <td>1.0M</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-5.2</th>
+              <td>10</td>
+              <td>OpenAI</td>
+              <td>400.0K</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-5.1</th>
+              <td>10</td>
+              <td>OpenAI</td>
+              <td>400.0K</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-5.1-Codex-Max</th>
+              <td>10</td>
+              <td>OpenAI</td>
+              <td>400.0K</td>
+            </tr>
+            <tr>
+              <th scope="row">Gemini 3 Pro Preview</th>
+              <td>10</td>
+              <td>Google</td>
+              <td>1.0M</td>
+            </tr>
+            <tr>
+              <th scope="row">Gemini 3.1 Pro Preview</th>
+              <td>10</td>
+              <td>Google</td>
+              <td>1.0M</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-5 mini</th>
+              <td>9.9</td>
+              <td>OpenAI</td>
+              <td>400.0K</td>
+            </tr>
+            <tr>
+              <th scope="row">Claude Opus 4.1</th>
+              <td>9.8</td>
+              <td>Anthropic</td>
+              <td>200.0K</td>
+            </tr>
+            <tr>
+              <th scope="row">GPT-5</th>
+              <td>9.8</td>
+              <td>OpenAI</td>
+              <td>400.0K</td>
+            </tr>
+            <tr>
+              <th scope="row">Gemini 2.5 Pro (partial)</th>
+              <td>9.6</td>
+              <td>Google</td>
+              <td>1.0M</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="museum-picker-snapshot-opencode" class="museum-picker-snapshot stagger-2"
+      aria-label="Example OpenCode Select model menu (January 2026)">
+      <p class="museum-picker-snapshot-title">OpenCode — Select model (example snapshot)</p>
+      <p class="museum-picker-snapshot-desc">From the <strong>OpenCode</strong> desktop app’s model picker (Jan
+        2026). <strong>Big Pickle</strong> is OpenCode’s free Zen-tier coding model (often the default). <strong>Free</strong>
+        = bundled no-cost rows; <span class="museum-picker-badge">Recommended</span> matches in-app hints for add-on
+        providers. Official products:
+        <a href="https://opencode.ai/zen" rel="noopener noreferrer" target="_blank">OpenCode Zen</a> (curated agent
+        models) and <a href="https://opencode.ai/go" rel="noopener noreferrer" target="_blank">OpenCode Go</a>
+        (low-cost subscription).</p>
+      <p class="museum-picker-group-title">Free models provided by OpenCode</p>
+      <ul class="museum-picker-list">
+        <li><strong>Big Pickle</strong> <span class="museum-picker-badge">Free</span></li>
+        <li><strong>MiMo V2 Omni Free</strong> <span class="museum-picker-badge">Free</span></li>
+        <li><strong>GPT-5 Nano</strong> <span class="museum-picker-badge">Free</span></li>
+        <li><strong>Nemotron 3 Super Free</strong> <span class="museum-picker-badge">Free</span></li>
+        <li><strong>MiniMax M2.5 Free</strong> <span class="museum-picker-badge">Free</span></li>
+        <li><strong>MiMo V2 Pro Free</strong> <span class="museum-picker-badge">Free</span></li>
+      </ul>
+      <p class="museum-picker-group-title">Add more models from popular providers</p>
+      <ul class="museum-picker-list">
+        <li><strong>OpenCode Zen</strong> — reliable optimized models <span
+            class="museum-picker-badge">Recommended</span></li>
+        <li><strong>OpenCode Go</strong> — low-cost subscription for everyone <span
+            class="museum-picker-badge">Recommended</span></li>
+        <li><strong>Anthropic</strong> — Claude models, including Pro and Max</li>
+        <li><strong>GitHub Copilot</strong></li>
       </ul>
     </div>
 
@@ -935,7 +1187,7 @@
           placeholder="Name, developer, year, license..." autocomplete="off" spellcheck="false">
         <span class="museum-catalog-count" id="museum-catalog-count" aria-live="polite"></span>
       </div>
-<!-- AUTO-GENERATED: 126 rows (+ HKChat row, hand-edited) -->
+<!-- AUTO-GENERATED: 139 rows -->
 <div id="museum-master-catalog" class="museum-table-wrap" role="region" aria-label="LLM index table" tabindex="0">
 <table class="museum-table">
 <thead><tr>
@@ -1919,6 +2171,16 @@
 <td>Agentic coding line.</td>
 </tr>
 <tr>
+<th scope='row'>GPT-5.2-Codex</th>
+<td>Feb 2026</td>
+<td>OpenAI</td>
+<td>Unknown</td>
+<td>-</td>
+<td>-</td>
+<td><span class='license-pill license-pill--prop'>Proprietary</span></td>
+<td>Codex family; large context in tools.</td>
+</tr>
+<tr>
 <th scope='row'>GLM-5</th>
 <td>Feb 2026</td>
 <td>Zhipu AI</td>
@@ -1927,6 +2189,66 @@
 <td>-</td>
 <td><span class='license-pill license-pill--open'>MIT</span></td>
 <td>DSA; 200K context.</td>
+</tr>
+<tr>
+<th scope='row'>Qwen-Coder-Qoder-1.0</th>
+<td>2026</td>
+<td>Alibaba</td>
+<td>Unknown</td>
+<td>-</td>
+<td>-</td>
+<td><span class='license-pill license-pill--prop'>Proprietary</span></td>
+<td>IDE add-on label; Qwen coding line.</td>
+</tr>
+<tr>
+<th scope='row'>Qwen3.5-Plus</th>
+<td>2026</td>
+<td>Alibaba</td>
+<td>Unknown</td>
+<td>-</td>
+<td>-</td>
+<td><span class='license-pill license-pill--prop'>Proprietary</span></td>
+<td>Plus tier in model pickers.</td>
+</tr>
+<tr>
+<th scope='row'>MiniMax M2.1</th>
+<td>2025</td>
+<td>MiniMax</td>
+<td>Unknown</td>
+<td>-</td>
+<td>-</td>
+<td><span class='license-pill license-pill--prop'>Proprietary</span></td>
+<td>M2 API family; ~205K context.</td>
+</tr>
+<tr>
+<th scope='row'>MiniMax M2.1 Lightning</th>
+<td>2025</td>
+<td>MiniMax</td>
+<td>Unknown</td>
+<td>-</td>
+<td>-</td>
+<td><span class='license-pill license-pill--prop'>Proprietary</span></td>
+<td>Speed-focused M2.1 variant.</td>
+</tr>
+<tr>
+<th scope='row'>MiniMax M2.5</th>
+<td>2025</td>
+<td>MiniMax</td>
+<td>Unknown</td>
+<td>-</td>
+<td>-</td>
+<td><span class='license-pill license-pill--prop'>Proprietary</span></td>
+<td>Long-context M2 line; ~205K.</td>
+</tr>
+<tr>
+<th scope='row'>MiniMax-M2.7</th>
+<td>2026</td>
+<td>MiniMax</td>
+<td>Unknown</td>
+<td>-</td>
+<td>-</td>
+<td><span class='license-pill license-pill--prop'>Proprietary</span></td>
+<td>Add-on tier in Cursor-style menus.</td>
 </tr>
 <tr>
 <th scope='row'>Param-2</th>
@@ -1959,6 +2281,36 @@
 <td>Thinking + Pro variants.</td>
 </tr>
 <tr>
+<th scope='row'>GPT-5.4 Pro</th>
+<td>Mar 2026</td>
+<td>OpenAI</td>
+<td>Unknown</td>
+<td>-</td>
+<td>-</td>
+<td><span class='license-pill license-pill--prop'>Proprietary</span></td>
+<td>Pro tier; ~1M context in pickers.</td>
+</tr>
+<tr>
+<th scope='row'>GPT-5.1 Codex</th>
+<td>2026</td>
+<td>OpenAI</td>
+<td>Unknown</td>
+<td>-</td>
+<td>-</td>
+<td><span class='license-pill license-pill--prop'>Proprietary</span></td>
+<td>Codex line in IDE menus.</td>
+</tr>
+<tr>
+<th scope='row'>GPT-5.1 Codex Max</th>
+<td>2026</td>
+<td>OpenAI</td>
+<td>Unknown</td>
+<td>-</td>
+<td>-</td>
+<td><span class='license-pill license-pill--prop'>Proprietary</span></td>
+<td>Top Codex tier in pickers.</td>
+</tr>
+<tr>
 <th scope='row'>Grok 4.20</th>
 <td>2026</td>
 <td>xAI</td>
@@ -1977,6 +2329,46 @@
 <td>-</td>
 <td><span class='license-pill license-pill--prop'>Proprietary</span></td>
 <td>Pro tier naming in tools.</td>
+</tr>
+<tr>
+<th scope='row'>Gemini 3 Pro Preview</th>
+<td>2026</td>
+<td>Google DeepMind</td>
+<td>Unknown</td>
+<td>-</td>
+<td>-</td>
+<td><span class='license-pill license-pill--prop'>Proprietary</span></td>
+<td>Preview label in model lists.</td>
+</tr>
+<tr>
+<th scope='row'>Gemini 3.1 Pro Preview</th>
+<td>2026</td>
+<td>Google DeepMind</td>
+<td>Unknown</td>
+<td>-</td>
+<td>-</td>
+<td><span class='license-pill license-pill--prop'>Proprietary</span></td>
+<td>Preview label in model lists.</td>
+</tr>
+<tr>
+<th scope='row'>Gemini 2.5 Pro (partial)</th>
+<td>2025</td>
+<td>Google DeepMind</td>
+<td>Unknown</td>
+<td>-</td>
+<td>-</td>
+<td><span class='license-pill license-pill--prop'>Proprietary</span></td>
+<td>Pro tier; partial availability.</td>
+</tr>
+<tr>
+<th scope='row'>Claude Opus 4.1</th>
+<td>Aug 2025</td>
+<td>Anthropic</td>
+<td>Unknown</td>
+<td>-</td>
+<td>-</td>
+<td><span class='license-pill license-pill--prop'>Proprietary</span></td>
+<td>Opus tier naming in pickers.</td>
 </tr>
 <tr>
 <th scope='row'>Composer 2</th>
@@ -2196,17 +2588,7 @@
 <td>-</td>
 <td>-</td>
 <td><span class='license-pill license-pill--prop'>Proprietary</span></td>
-    <td>Fast Claude tier (companion lineup).</td>
-</tr>
-<tr>
-<th scope='row'>HKChat</th>
-<td>Nov 2025</td>
-<td>HKChat OmniServe Ltd.</td>
-<td>Unknown</td>
-<td>HK-local corpus</td>
-<td>-</td>
-<td><span class='license-pill license-pill--prop'>Proprietary</span></td>
-<td>HK assistant (港話通); HK-GNN V1 lineage; apps + <a href="https://chat.hkchat.app/" rel="noopener noreferrer" target="_blank">chat.hkchat.app</a>.</td>
+<td>Fast Claude tier (companion lineup).</td>
 </tr>
 </tbody></table></div>
     </section>
@@ -2215,7 +2597,7 @@
     <footer class="site-footer">
       <div class="site-stats">
         <div class="stat-item" title="Indexed items"><span class="stat-icon">🔍</span> 100+ items</div>
-        <div class="stat-item" title="Pages"><span class="stat-icon">📄</span> 17 pages</div>
+        <div class="stat-item" title="Pages"><span class="stat-icon">📄</span> 21 pages</div>
         <div class="stat-item" title="Companies listed"><span class="stat-icon">🏢</span> 78+ companies</div>
       </div>
       <div class="site-copy">

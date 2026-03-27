@@ -394,8 +394,12 @@ var SEARCH_DATA = [
 
     // === PAGES ===
     { title: "Informational Links", desc: "Wikipedia and reference articles for AI models in the museum — Cursor, Claude, GPT, Grok, Kimi, Gemini, HKChat links.", category: "page", tags: ["Wikipedia", "AI", "Museum", "Links", "HKChat"], url: "informational-links.html" },
-    { title: "AI Museum", desc: "Landmark LLMs, Cursor picker snapshot, HKChat regional exhibit, and master catalog.", category: "page", tags: ["Museum", "AI", "Models", "LLM", "HKChat", "Cursor"], url: "museum.html" },
+    { title: "AI Museum", desc: "Landmark LLMs; Cursor/Antigravity, Cursor extended (Qwen/GLM/Kimi/MiniMax costs, context tables), OpenCode Desktop (Big Pickle, MiMo, Nemotron, MiniMax, Zen/Go). HKChat exhibit; master catalog.", category: "page", tags: ["Museum", "AI", "Models", "LLM", "HKChat", "Cursor", "OpenCode", "Qwen", "GLM"], url: "museum.html" },
     { title: "Google Gemini", desc: "Premium full catalog: Gemini & Gemma lines, Nano Banana, launch context, specs tables — museum expansion standard. IDE menus: Cursor, Google Antigravity.", category: "page", tags: ["Google", "Gemini", "Gemma", "DeepMind", "Antigravity", "Cursor", "Bard", "Nano Banana", "AI", "Museum"], url: "google-gemini.html" },
+    { title: "OpenAI", desc: "Premium museum catalog: GPT-4, GPT-4o, o-series reasoning, GPT-5.x, GPT-OSS — tiers, timeline, Wikipedia refs.", category: "page", tags: ["OpenAI", "GPT", "ChatGPT", "o1", "GPT-5", "Museum", "AI"], url: "openai.html" },
+    { title: "Anthropic", desc: "Premium museum catalog: Claude Opus, Sonnet, Haiku, 3.5, 4.x — constitutional AI, tiers, timeline.", category: "page", tags: ["Anthropic", "Claude", "Opus", "Sonnet", "Haiku", "Museum", "AI"], url: "anthropic.html" },
+    { title: "xAI", desc: "Premium museum catalog: Grok-1 through Grok-4, open weights, X integration — timeline and refs.", category: "page", tags: ["xAI", "Grok", "Museum", "AI", "Twitter"], url: "xai.html" },
+    { title: "Arcee AI", desc: "Premium museum catalog: SuperNova, Caller, AFM, MergeKit, Arcee Fusion, Arcee Cloud — open merge stack.", category: "page", tags: ["Arcee", "MergeKit", "Open weights", "Museum", "AI"], url: "arcee.html" },
     { title: "Home", desc: "Ryan Otterdays developer profile and overview.", category: "page", tags: ["Profile", "Home", "About"], url: "index.html" },
     { title: "Programs", desc: "Browse 60+ projects including games, tools, and AI projects.", category: "page", tags: ["Projects", "Portfolio", "Code"], url: "programs.html" },
     { title: "AI Chats", desc: "Links to AI chat platforms and assistants.", category: "page", tags: ["AI", "Chat", "Assistants"], url: "chats.html" },
