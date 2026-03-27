@@ -393,6 +393,9 @@ var SEARCH_DATA = [
     { title: "Yandex Games", desc: "Yandex game portal: play in browser.", category: "special", tags: ["Games", "Browser", "Yandex"], url: "specials.html" },
 
     // === PAGES ===
+    { title: "Informational Links", desc: "Wikipedia and reference articles for AI models in the museum — Cursor, Claude, GPT, Grok, Kimi, Gemini, HKChat links.", category: "page", tags: ["Wikipedia", "AI", "Museum", "Links", "HKChat"], url: "informational-links.html" },
+    { title: "AI Museum", desc: "Landmark LLMs, Cursor picker snapshot, HKChat regional exhibit, and master catalog.", category: "page", tags: ["Museum", "AI", "Models", "LLM", "HKChat", "Cursor"], url: "museum.html" },
+    { title: "Google Gemini", desc: "Premium full catalog: Gemini & Gemma lines, Nano Banana, launch context, specs tables — museum expansion standard. IDE menus: Cursor, Google Antigravity.", category: "page", tags: ["Google", "Gemini", "Gemma", "DeepMind", "Antigravity", "Cursor", "Bard", "Nano Banana", "AI", "Museum"], url: "google-gemini.html" },
     { title: "Home", desc: "Ryan Otterdays developer profile and overview.", category: "page", tags: ["Profile", "Home", "About"], url: "index.html" },
     { title: "Programs", desc: "Browse 60+ projects including games, tools, and AI projects.", category: "page", tags: ["Projects", "Portfolio", "Code"], url: "programs.html" },
     { title: "AI Chats", desc: "Links to AI chat platforms and assistants.", category: "page", tags: ["AI", "Chat", "Assistants"], url: "chats.html" },

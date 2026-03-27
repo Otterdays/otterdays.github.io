@@ -1,6 +1,6 @@
 # ARCHITECTURE
 
-**Current release:** v1.9.0 (version badge in top bar → `updates.html`).
+**Current release:** v1.9.3 (version badge in top bar → `updates.html`).
 
 ## Site structure
 
@@ -9,7 +9,9 @@
 ├── index.html              # Home: profile, social links
 ├── programs.html           # Projects grid with badges (~60+ projects)
 ├── chats.html              # AI Chats: Assistants + Provider hubs & playgrounds
-├── museum.html             # AI Model Museum (landmark LLMs)
+├── museum.html             # AI Model Museum (landmark LLMs); gateway to Google Gemini page
+├── google-gemini.html      # Premium provider catalog: full Gemini / Gemma / Nano Banana tables (museum expansion template)
+├── informational-links.html  # Wikipedia / reference links for museum models
 ├── media.html              # AI Media Gen: Video, Image, Audio
 ├── companies.html          # AI & dev tools by company (80+); collapsible sections
 ├── tools.html              # CLI, IDE, Browser based builder, Browser Tools, Web builders, DevOps, Reference, etc. (A–Z within sections)
@@ -57,7 +59,7 @@
 - **Collapsed (64px):** Shows icons only.
 - **Expanded (240px):** Expands on hover to show text labels.
 - **Mobile:** Fixed bottom navigation bar (icons only).
-- **Links:** Home, Programs, AI Chats, Museum, Media Gen, Companies, Tools, Specials, Skills/Tools, Updates, Explore, Inspirations, Posts, About.
+- **Links (A–Z by label):** AI Chats, AI Museum, About, Companies, Explore, Home, Informational Links, Inspirations, Media Gen, Posts, Programs, Skills, Specials, Tools, Updates.
 
 ## Page breakdown
 
@@ -71,6 +73,7 @@
 | **tools**      | **CLI** (incl. AI agents, **Fresh** / **Orbiton** TUI editors), **Browser based builder**, **IDE**, **Web builders**, **Browser Tools**, **DevOps**, **Reference** (e.g. Awesome TUIs), etc.; collapsible + A–Z filter bar. |
 | **specials**   | **Free domains**, **Learning**, **Games**: Collapsible sections. |
 | **skills**     | **Agentic tools**, **MCPs**, **Skills**: Collapsible sections. |
+| **informational-links** | Wikipedia & reference articles for museum models (flagships + GPT/Claude/Codex/Gemini families). |
 | **404**        | Error code, title, back link. Centered layout. |
 
 ## Themes
@@ -91,7 +94,7 @@
 - `body { display: grid; grid-template-columns: 64px 1fr; }`
 - **Sidebar:** Fixed width (64px -> 240px hover).
 - **Content:** `1fr` area (`.content`).
-- **Top Bar:** Version badge (v1.9.0 → `updates.html`), Search, Theme switcher.
+- **Top Bar:** Version badge (v1.9.3 → `updates.html`), Search, Theme switcher.
 
 ## Glassmorphism & Motion
 

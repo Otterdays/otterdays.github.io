@@ -11,6 +11,49 @@ const UPDATES_DATA = [
     ]
   },
   {
+    version: "1.9.3",
+    date: "2026-03-26",
+    sections: [
+      {
+        type: "changed",
+        items: [
+          "google-gemini.html — Deeper catalog pass: LaMDA / PaLM 2 lineage, Gemini 1.0 launch & benchmarks (MMLU 90%), tier naming (Ultra / Pro / Nano / Deep Think / Flash / Flash Lite), Wikipedia + DeepMind technology links, full **Gemma** table (Gemma 1–3, CodeGemma, RecurrentGemma, PaliGemma 1–2) with context/KV notes and specialized variants (ShieldGemma 2, MedGemma, CodeGemma, DolphinGemma, etc.); IDE model menu section references **Cursor** and **Google Antigravity**.",
+          "museum.html — Example Q1 2026 model-picker snapshot: labels **Cursor** and **Google Antigravity** (`#museum-picker-snapshot`).",
+          "css/style.css — `.gemini-subheading` for subsection titles on the Google page.",
+          "Search index: Google Gemini page entry mentions Antigravity for discoverability."
+        ]
+      }
+    ]
+  },
+  {
+    version: "1.9.2",
+    date: "2026-03-26",
+    sections: [
+      {
+        type: "added",
+        items: [
+          "google-gemini.html — Premium Google / DeepMind museum page: full Gemini version table (Bard, 1.0–1.5, 2.0–2.5, 3.x, 3.1 previews), technical specs (1.x), Nano Banana / image codenames, Gemma, ecosystem timeline; Wikipedia + gemini.google.com refs. Intended as the template for future provider expansions.",
+          "Navigation: sidebar **Google Gemini** (🔷) after AI Museum on all pages (including compact-nav explore/posts/inspirations); museum gateway aside + About pages list; sitemap, search-data, explore.js.",
+          "Site badge **v1.9.2**; footer **17 pages** site-wide."
+        ]
+      }
+    ]
+  },
+  {
+    version: "1.9.1",
+    date: "2026-03-26",
+    sections: [
+      {
+        type: "added",
+        items: [
+          "informational-links.html — Wikipedia & reference links for Q1 2026 museum flagships (Composer 2, Opus 4.6, GPT-5.4, Grok, Kimi K2.5, Gemini) plus family articles (Claude, GPT-5.x, Codex, Grok, Gemini, Moonshot AI, Cursor IDE).",
+          "Sidebar navigation alphabetized by label on all pages; new Informational Links (🔗). Museum intro links to this page.",
+          "Search index (Informational Links, AI Museum page entries), sitemap, explore.js page label, footer 16 pages site-wide, v1.9.1 badge."
+        ]
+      }
+    ]
+  },
+  {
     version: "1.9.0",
     date: "2026-03-21",
     sections: [

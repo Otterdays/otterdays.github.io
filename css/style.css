@@ -2843,6 +2843,108 @@ button:focus-visible,
 .exhibit-card[data-company="deepseek"]  { --exhibit-accent: #2db0a8; }
 .exhibit-card[data-company="meta"]      { --exhibit-accent: #0082fb; }
 .exhibit-card[data-company="mistral"]   { --exhibit-accent: #ff7000; }
+.exhibit-card[data-company="cursor"]    { --exhibit-accent: #a78bfa; }
+.exhibit-card[data-company="moonshot"]  { --exhibit-accent: #f59e0b; }
+.exhibit-card[data-company="hkchat"]    { --exhibit-accent: #7c3aed; }
+
+/* Cursor picker snapshot (menu labels) */
+.museum-picker-snapshot {
+  background: color-mix(in srgb, var(--fg), transparent 94%);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem 1.25rem 1.1rem;
+  margin: 0 0 1.35rem;
+  max-width: 56rem;
+}
+
+.museum-picker-snapshot-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  margin: 0 0 0.5rem;
+}
+
+.museum-picker-snapshot-desc {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0 0 0.75rem;
+  line-height: 1.55;
+}
+
+.museum-picker-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  font-size: 0.9rem;
+  color: var(--fg);
+  line-height: 1.65;
+}
+
+.museum-picker-list li {
+  margin-bottom: 0.25rem;
+}
+
+.museum-picker-badge {
+  display: inline-block;
+  margin-inline-start: 0.35rem;
+  padding: 0.1rem 0.45rem;
+  border-radius: 6px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: color-mix(in srgb, var(--muted), transparent 78%);
+  color: var(--fg);
+  border: 1px solid var(--border);
+}
+
+.museum-picker-warn {
+  margin-inline-start: 0.25rem;
+  color: #eab308;
+  font-size: 0.95em;
+}
+
+/* Q1 2026 roster: flagship row + dense companion grid */
+.museum-roster-note {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.55;
+  margin: -0.5rem 0 1.25rem;
+  max-width: 72ch;
+}
+
+.museum-gallery--flagship {
+  margin-bottom: 0.5rem;
+}
+
+.museum-gallery--roster {
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.museum-gallery--roster .exhibit-desc {
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.exhibit-card--flagship {
+  border-left-width: 4px;
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, #fbbf24, transparent 75%),
+    0 8px 28px color-mix(in srgb, var(--exhibit-accent, var(--accent)), transparent 72%);
+}
+
+.exhibit-era--flagship {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, #fbbf24, transparent 20%),
+    color-mix(in srgb, #f59e0b, transparent 35%)
+  );
+  color: var(--bg);
+  border-color: color-mix(in srgb, #f59e0b, transparent 40%);
+}
 
 /* Card header row: exhibit number + era badge */
 .exhibit-card-header {
@@ -2916,6 +3018,349 @@ button:focus-visible,
   color: var(--fg);
   font-style: normal;
   font-weight: 500;
+}
+
+/* Gateway to premium Google Gemini provider page */
+.museum-gemini-gateway {
+  margin: 0 0 2rem;
+  padding: 1.25rem 1.35rem;
+  border-radius: 12px;
+  border: 1px solid color-mix(in srgb, #4285f4, transparent 55%);
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, #4285f4, transparent 90%) 0%,
+    color-mix(in srgb, var(--accent), transparent 94%) 100%
+  );
+  max-width: 52rem;
+}
+
+.museum-gemini-gateway-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, #1a73e8, var(--fg) 35%);
+  margin: 0 0 0.5rem;
+}
+
+.museum-gemini-gateway-desc {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 0 0 0.85rem;
+  max-width: 62ch;
+}
+
+.museum-gemini-gateway-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--bg);
+  background: linear-gradient(120deg, #1a73e8, #4285f4);
+  border: 1px solid color-mix(in srgb, #1a73e8, transparent 30%);
+}
+
+.museum-gemini-gateway-btn:hover {
+  filter: brightness(1.08);
+}
+
+.museum-gemini-gateway-btn:focus-visible {
+  outline: 2px solid color-mix(in srgb, #4285f4, transparent 25%);
+  outline-offset: 2px;
+}
+
+/* Master catalog: Wikipedia-style table + filter */
+.museum-catalog-section {
+  margin-block: 2rem 2.5rem;
+  content-visibility: auto;
+  contain-intrinsic-size: 0 1200px;
+}
+
+.museum-catalog-lede {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.6;
+  max-width: 72ch;
+  margin: 0 0 1rem;
+}
+
+.museum-catalog-lede a {
+  color: var(--accent);
+}
+
+.museum-catalog-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  margin-bottom: 0.85rem;
+}
+
+.museum-catalog-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.museum-catalog-filter {
+  flex: 1 1 220px;
+  min-width: 0;
+  max-width: 28rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--glass);
+  color: var(--fg);
+  font: inherit;
+  font-size: 0.9rem;
+}
+
+.museum-catalog-filter:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--accent), transparent 35%);
+  outline-offset: 2px;
+}
+
+.museum-catalog-count {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.museum-table-wrap {
+  overflow-x: auto;
+  overflow-y: visible;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--bg), transparent 5%);
+  -webkit-overflow-scrolling: touch;
+}
+
+.museum-table-wrap:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--accent), transparent 40%);
+  outline-offset: 2px;
+}
+
+.museum-table {
+  width: 100%;
+  min-width: 920px;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.museum-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  text-align: left;
+  padding: 0.65rem 0.75rem;
+  background: color-mix(in srgb, var(--bg), transparent 8%);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  font-weight: 600;
+  color: var(--fg);
+  white-space: nowrap;
+}
+
+.museum-table tbody th {
+  text-align: left;
+  font-weight: 600;
+  color: var(--fg);
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--border), transparent 40%);
+  white-space: nowrap;
+}
+
+.museum-table td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--border), transparent 55%);
+  color: var(--muted);
+  vertical-align: top;
+}
+
+.museum-table tbody tr:nth-child(even) {
+  background: color-mix(in srgb, var(--fg), transparent 97%);
+}
+
+.museum-table tbody tr[hidden] {
+  display: none;
+}
+
+.museum-table tbody td:last-child {
+  max-width: 32rem;
+}
+
+.license-pill {
+  display: inline-block;
+  padding: 0.12rem 0.45rem;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  border: 1px solid transparent;
+}
+
+.license-pill--open {
+  background: color-mix(in srgb, #22c55e, transparent 82%);
+  color: color-mix(in srgb, #166534, var(--fg) 40%);
+  border-color: color-mix(in srgb, #22c55e, transparent 55%);
+}
+
+.license-pill--prop {
+  background: color-mix(in srgb, #6366f1, transparent 82%);
+  color: color-mix(in srgb, #312e81, var(--fg) 35%);
+  border-color: color-mix(in srgb, #6366f1, transparent 50%);
+}
+
+.license-pill--restricted {
+  background: color-mix(in srgb, #eab308, transparent 78%);
+  color: color-mix(in srgb, #713f12, var(--fg) 30%);
+  border-color: color-mix(in srgb, #ca8a04, transparent 45%);
+}
+
+.license-pill--unrel {
+  background: color-mix(in srgb, var(--muted), transparent 75%);
+  color: var(--fg);
+  border-color: color-mix(in srgb, var(--border), transparent 20%);
+}
+
+/* Google Gemini premium provider page */
+.gemini-premium-page {
+  container-type: inline-size;
+}
+
+.gemini-premium-hero {
+  text-align: start;
+  padding: 1.35rem 1.5rem 1.5rem;
+  margin-bottom: 0.25rem;
+  border-radius: 14px;
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, #4285f4, transparent 86%) 0%,
+    color-mix(in srgb, var(--bg), transparent 12%) 55%,
+    color-mix(in srgb, #34a853, transparent 92%) 100%
+  );
+  border: 1px solid color-mix(in srgb, #4285f4, transparent 55%);
+  box-shadow: 0 12px 40px color-mix(in srgb, #4285f4, transparent 88%);
+}
+
+.gemini-premium-kicker {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, #1a73e8, var(--fg) 40%);
+  margin: 0 0 0.5rem;
+}
+
+.gemini-premium-title {
+  text-wrap: balance;
+  background: linear-gradient(120deg, #1a73e8 0%, #34a853 55%, var(--fg) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: clamp(1.65rem, 4vw, 2.15rem);
+}
+
+.gemini-premium-sub {
+  max-width: 68ch;
+  line-height: 1.65;
+}
+
+.gemini-premium-sub a {
+  color: #1a73e8;
+}
+
+.gemini-premium-back {
+  margin: 1rem 0 0;
+  font-size: 0.9rem;
+}
+
+.gemini-premium-back a {
+  color: var(--accent);
+}
+
+.gemini-table-wide {
+  margin-top: 0.75rem;
+}
+
+.gemini-table td:last-child {
+  min-width: 12rem;
+}
+
+.gemini-table-note {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.75rem;
+}
+
+.gemini-status {
+  display: inline-block;
+  padding: 0.12rem 0.45rem;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.gemini-status--dc {
+  background: color-mix(in srgb, #ef4444, transparent 82%);
+  color: color-mix(in srgb, #991b1b, var(--fg) 25%);
+  border: 1px solid color-mix(in srgb, #ef4444, transparent 45%);
+}
+
+.gemini-status--dc-pre {
+  background: color-mix(in srgb, #f97316, transparent 78%);
+  color: color-mix(in srgb, #9a3412, var(--fg) 20%);
+  border: 1px solid color-mix(in srgb, #f97316, transparent 40%);
+}
+
+.gemini-status--ga {
+  background: color-mix(in srgb, #22c55e, transparent 82%);
+  color: color-mix(in srgb, #166534, var(--fg) 30%);
+  border: 1px solid color-mix(in srgb, #22c55e, transparent 45%);
+}
+
+.gemini-status--pv {
+  background: color-mix(in srgb, #a855f7, transparent 78%);
+  color: color-mix(in srgb, #581c87, var(--fg) 25%);
+  border: 1px solid color-mix(in srgb, #a855f7, transparent 40%);
+}
+
+.gemini-bullet-list {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: var(--muted);
+  max-width: 72ch;
+}
+
+.gemini-bullet-list li {
+  margin-bottom: 0.45rem;
+}
+
+.gemini-disclaimer {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 1rem;
+}
+
+.gemini-subheading {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--fg);
+  margin: 1.35rem 0 0.6rem;
 }
 
 /* Print exclusion */

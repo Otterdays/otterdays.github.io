@@ -1,5 +1,23 @@
 # SCRATCHPAD
 
+## 2026-03-26 — v1.9.3 Google Gemini + Gemma catalog refinement; Antigravity picker note
+
+**What changed:** `google-gemini.html` — LaMDA/PaLM 2, launch/benchmarks, tier names, Gemma full table + variants, refs; **Cursor** + **Google Antigravity** in IDE picker section; `museum.html` snapshot copy; `.gemini-subheading` in `css/style.css`; `search-data.js` Antigravity tag; site **v1.9.3**; `CHANGELOG` **[1.9.3]**, `SUMMARY`, `ARCHITECTURE`, `updates-data.js`. Git: commit + push `main`.
+
+---
+
+## 2026-03-26 — v1.9.2 Google Gemini premium museum page
+
+**What changed:** New `google-gemini.html` — full Gemini / Gemma / Nano Banana catalog (tables, timeline, architecture); premium CSS; `museum-gemini-gateway` aside on `museum.html`; sidebar 🔷 after 🏛️ on all HTML + 404; compact nav fixed for explore/inspirations/posts; `sitemap.xml`, `search-data.js`, `explore.js`; site **v1.9.2**, footer **17 pages**; `DOCS/CHANGELOG` **[1.9.2]**, `SUMMARY`, `updates-data.js`.
+
+---
+
+## 2026-03-26 — v1.9.1 Informational Links + alphabetical sidebar
+
+**What changed:** New `informational-links.html` (Wikipedia links for museum Q1 2026 flagships + families); sidebar A–Z by label on all HTML + 404; `sitemap.xml`, `search-data.js`, `explore.js`, museum cross-link; footer 16 pages; docs SUMMARY/CHANGELOG/ARCHITECTURE/README; `js/updates-data.js` 1.9.1 entry.
+
+---
+
 ## 2026-03-21 — v1.9.0 ship (docs + git push)
 
 **What changed:** Final **1.9.0** notes in `CHANGELOG.md` and `js/updates-data.js` (Repaint, Awesome TUIs, Fresh, Orbiton, Bind IDE link/copy); `SUMMARY.md` + `journal/2026-03-21.md`. **Git:** commit `chore(release): v1.9.0` (or `docs(release): v1.9.0`) and **push `main`**.

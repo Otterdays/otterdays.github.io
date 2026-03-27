@@ -1,5 +1,26 @@
 # SUMMARY
 
+## Release v1.9.3 — 2026-03-26
+
+- **Version:** Site badge, `updates.html`, and docs on **v1.9.3**.
+- **Google Gemini page:** Content pass — LaMDA / PaLM 2 lineage, Gemini launch & benchmarks, tier naming, Wikipedia + DeepMind refs; full **Gemma** specs table + variants; IDE picker note for **Cursor** & **Google Antigravity**; `.gemini-subheading` in CSS; search-data tweak.
+- **museum.html:** Picker snapshot labels Cursor + Antigravity (`#museum-picker-snapshot`).
+- **Docs:** `DOCS/CHANGELOG.md` **[1.9.3]**; `js/updates-data.js`; `DOCS/SCRATCHPAD.md`; `DOCS/ARCHITECTURE.md` release line.
+
+## Release v1.9.2 — 2026-03-26
+
+- **Version:** Site badge, `updates.html`, and docs on **v1.9.2** (superseded by 1.9.3 for badge).
+- **Google Gemini (premium museum page):** New `google-gemini.html` — full catalog of Google / DeepMind Gemini-era models (versions table, 1.x technical specs, Nano Banana / Gemma sections, timeline); CSS premium hero + status pills; **museum gateway** aside on `museum.html` positions this as the template for future provider pages.
+- **Wiring:** Sidebar **Google Gemini** (🔷) after **AI Museum** on all pages + 404; `sitemap.xml`, `js/search-data.js`, `js/explore.js`; About “Pages at a glance”; footer **17 pages**.
+- **Docs:** `DOCS/CHANGELOG.md` **[1.9.2]**; `js/updates-data.js`; `DOCS/SCRATCHPAD.md`.
+
+## Release v1.9.1 — 2026-03-26
+
+- **Version:** Site badge, `updates.html`, and docs on **v1.9.1**.
+- **Informational Links:** New page `informational-links.html` — English Wikipedia (and related) articles for Q1 2026 museum flagships and model families; disclaimer for third-party lag vs product names. **Sidebar** alphabetized by label site-wide; new 🔗 nav item.
+- **Wiring:** `sitemap.xml`, `js/search-data.js`, `js/explore.js`, museum intro cross-link; footer **16 pages** (superseded by 1.9.2 count).
+- **Docs:** `DOCS/CHANGELOG.md` **[1.9.1]**; `js/updates-data.js`; `DOCS/ARCHITECTURE.md`, `README.md`; About “Pages at a glance” updated.
+
 ## Release v1.9.0 — 2026-03-21
 
 - **Version:** Site badge, `updates.html`, and docs on **v1.9.0** — shipped to `main` (GitHub Pages). Includes loader/search/card/footer QoL from the former Unreleased bucket plus March 2026 content.
@@ -43,7 +64,7 @@
 - **Scroll progress:** Thin bar at top fills left-to-right as you scroll (`js/theme.js`, `css/style.css`).
 - **A11y & QoL:** Reduced motion mode, skip-to-content link, :focus-visible ring, auto dark/light (system preference), print-friendly CSS, sitemap.xml, footer Source link.
 - **Gradient titles:** Home and profile page titles use theme-aware gradient text (fg→accent).
-- **Pages (15):** Home, Programs (~60+ projects), AI Chats, AI Museum, Media Gen, Companies (80+ companies, collapsible), Tools (CLI/IDE/Web builders/Browser, alphabetical), Specials, Skills/Tools, Updates, Explore, Inspirations (Brackeys, theo gg, Low Level, TechLinked, The PrimeTime), Posts (archived articles), About, 404.
+- **Pages (17):** Home, Programs (~60+ projects), AI Chats, AI Museum, **Google Gemini** (premium full Google catalog), **Informational Links** (Wikipedia refs for museum models), Media Gen, Companies (80+ companies, collapsible), Tools (CLI/IDE/Web builders/Browser, alphabetical), Specials, Skills/Tools, Updates, Explore, Inspirations (Brackeys, theo gg, Low Level, TechLinked, The PrimeTime), Posts (archived articles), About, 404.
 
 **Recent (2026-02-16):**
 - **Patch 2 (1–10):** Reduced motion, skip link, focus-visible, auto dark/light, print CSS, sitemap.xml, footer Source, About Updates, Inspirations dedup, stagger on About.
@@ -57,7 +78,7 @@
 - **Skills:** Antigravity agentic tools (capabilities list), SkillBox, Skills directory (React, Testing, Git).
 - **Search:** Index updated for all new links (chats, media, companies, tools, skills).
 
-**Docs:** `DOCS/journal/` — dated entries (e.g. 2026-02-25, 2026-03-02, **2026-03-21** for v1.9.0). **Current version: v1.9.0** (`updates.html`, footer badge on all pages).
+**Docs:** `DOCS/journal/` — dated entries (e.g. 2026-02-25, 2026-03-02, **2026-03-21** for v1.9.0, **2026-03-26** for v1.9.1+). **Current version: v1.9.3** (`updates.html`, footer badge on all pages).
 
 **Quick links:**
 - [SCRATCHPAD](SCRATCHPAD.md) — active tasks, blockers, last 5 actions

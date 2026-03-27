@@ -108,6 +108,8 @@
       'programs.html': 'Programs',
       'chats.html': 'AI Chats',
       'museum.html': 'AI Museum',
+      'google-gemini.html': 'Google Gemini',
+      'informational-links.html': 'Informational Links',
       'media.html': 'Media Gen',
       'companies.html': 'Companies',
       'tools.html': 'Tools',

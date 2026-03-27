@@ -7,6 +7,29 @@ All notable changes to this project are documented in this file. Format: [Keep a
 ### Added
 - (Planning: future changes.)
 
+## [1.9.3] - 2026-03-26
+
+### Changed
+- **google-gemini.html** — Refined **Google / DeepMind** museum catalog: **LaMDA** and **PaLM 2** as predecessors; Gemini **1.0** launch narrative, **MMLU** benchmark framing, tier names (**Ultra / Pro / Nano / Deep Think / Flash / Flash Lite**); encyclopedic links (**Gemini (language model)**, DeepMind technology pages); expanded **Gemma** coverage with a **technical specifications** table (Gemma 1–3, CodeGemma, RecurrentGemma, PaliGemma 1–2), KV/context notes, and specialized lines (**ShieldGemma 2**, **MedGemma**, **CodeGemma**, **DolphinGemma**, etc.); **IDE model menus** copy names **Cursor** and **Google Antigravity**.
+- **museum.html** — Q1 2026 **example model-picker snapshot** documents labels for **Cursor** and **Google Antigravity** (anchor `#museum-picker-snapshot`).
+- **css/style.css** — `.gemini-subheading` styles for subsection headings on the premium Google page.
+- **js/search-data.js** — Google Gemini page row tags/description updated for **Antigravity** discoverability.
+- **Site:** Version badge **v1.9.3** (footer stat unchanged at **17 pages**).
+
+## [1.9.2] - 2026-03-26
+
+### Added
+- **google-gemini.html** — Premium **Google Gemini** provider catalog for the AI museum expansion: model versions (Bard through Gemini 3.1 previews), lifecycle status, technical specifications (Gemini 1.x where published), **Nano Banana** image lineage (2.5 Flash Image → 3 Pro Image → 3.1 Flash Image), **Gemma** open family, selected 2024–2026 timeline, architecture overview (multimodal, decoder-only, TPUs). Styling: `gemini-premium-hero`, status pills, wide tables. **New standard** for future single-provider museum pages.
+- **Navigation & discoverability:** Sidebar **Google Gemini** (🔷) after **AI Museum** on all HTML + 404; compact sidebar pages (explore, posts, inspirations) updated manually. **museum.html** gateway aside (`museum-gemini-gateway`) linking to the new page. **About** “Pages at a glance” entry. `sitemap.xml`, `js/search-data.js`, `js/explore.js` page label.
+- **Site:** Version badge **v1.9.2**; footer stat **17 pages** on all pages.
+
+## [1.9.1] - 2026-03-26
+
+### Added
+- **informational-links.html** — Wikipedia and reference articles for AI models aligned with the AI Model Museum (`museum.html`) (Q1 2026 flagships: Composer 2 / Cursor, Claude Opus 4.6, GPT-5.4, Grok 4.x, Kimi K2.5 / Moonshot AI, Gemini 3 Pro); secondary links for GPT-5.x, Codex, Claude family, xAI, Google Gemini. Disclaimer for third-party encyclopedia lag vs product names.
+- **Navigation:** Site sidebar alphabetized by visible label; new **Informational Links** entry (🔗) on all HTML pages including 404.
+- **Discoverability:** `js/search-data.js` (Informational Links, AI Museum page rows), `sitemap.xml`, `js/explore.js` page label; museum intro cross-link; footer stat **16 pages**; version badge **v1.9.1**.
+
 ## [1.9.0] - 2026-03-21
 
 Consolidated **minor** release: rolls up the previously unpublished **Unreleased** UX/theme/content items with the **March 2026** tools/companies/chats work. Patch history **1.8.0–1.8.5** remains below for detail.

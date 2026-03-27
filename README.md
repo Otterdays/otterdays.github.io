@@ -5,7 +5,7 @@
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-success?style=flat-square&logo=github)](https://otterdays.github.io/)
 [![Static Site](https://img.shields.io/badge/Static-HTML%20%7C%20CSS%20%7C%20JS-blue?style=flat-square)](https://github.com/Otterdays/otterdays.github.io)
 
-**Live site:** [https://otterdays.github.io/](https://otterdays.github.io/) · **Current version:** [v1.9.0](https://otterdays.github.io/updates.html) (see `DOCS/CHANGELOG.md`)
+**Live site:** [https://otterdays.github.io/](https://otterdays.github.io/) · **Current version:** [v1.9.1](https://otterdays.github.io/updates.html) (see `DOCS/CHANGELOG.md`)
 
 ---
 
@@ -32,12 +32,14 @@
 | `programs.html` | 60+ projects with auto-badges |
 | `chats.html` | Links to AI chat platforms |
 | `museum.html` | AI Model Museum (landmark LLMs) |
+| `google-gemini.html` | Google Gemini — full catalog (Gemini / Gemma / Nano Banana); premium museum provider template |
+| `informational-links.html` | Wikipedia / reference links for museum models |
 | `media.html` | AI media gen (video/image tools) |
 | `companies.html` | AI & dev tools by company (80+ sections) |
 | `tools.html` | Developer tools (CLI, browser builders, IDE, Reference, MCP, etc.) |
 | `specials.html` | Free & special services (e.g. free domains) |
 | `skills.html` | Skills/Tools: Cursor & Antigravity agentic tools, MCPs, SkillBox, Skills directory |
-| `updates.html` | Version history (e.g. v1.9.0), timeline UI |
+| `updates.html` | Version history (e.g. v1.9.1), timeline UI |
 | `explore.html` | Charts / exploration |
 | `inspirations.html` | YouTube & creator inspirations |
 | `posts.html` | Archived articles |
@@ -59,7 +61,7 @@
 ├── js/qol.js               # Page-load veil, scroll-to-top
 ├── js/search-data.js       # Search index
 ├── js/search.js            # Search modal
-├── js/updates-data.js      # Changelog entries (v1.9.0, …)
+├── js/updates-data.js      # Changelog entries (v1.9.1, …)
 ├── js/updates.js           # Updates page renderer
 ├── fetch-github-repos.js   # Optional: repos → repos.md
 ├── images/
