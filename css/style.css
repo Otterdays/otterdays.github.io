@@ -187,10 +187,13 @@ body {
 
 /* === MAIN CONTENT AREA === */
 .content {
-  padding: 2rem 3rem;
+  --content-pad-x: 3rem;
+  --content-pad-y: 2rem;
+  padding: var(--content-pad-y) var(--content-pad-x);
   max-width: 1600px;
   margin: 0 auto;
   width: 100%;
+  animation: slideInRight 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
 }
 
 /* Top bar: version badge, search, theme switcher */
@@ -333,10 +336,6 @@ body {
   }
 }
 
-.content {
-  animation: slideInRight 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
-}
-
 /* Hide old top-nav and adjust responsive */
 .top-nav {
   display: none !important;
@@ -372,7 +371,9 @@ body {
   }
 
   .content {
-    padding: 1rem;
+    --content-pad-x: 1rem;
+    --content-pad-y: 1rem;
+    padding: var(--content-pad-y) var(--content-pad-x);
   }
 
   .col-span-2 {
@@ -690,89 +691,59 @@ body::after {
   padding: 1.75rem 1.25rem;
 }
 
+/* Bleed past .content padding so one backdrop layer fills the main column (no inset “card”) */
 .home {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   text-align: center;
-  padding: 2rem 1rem 3rem;
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
+  box-sizing: border-box;
+  margin-inline: calc(-1 * var(--content-pad-x, 3rem));
+  width: calc(100% + 2 * var(--content-pad-x, 3rem));
+  max-width: none;
+  padding: 2rem calc(var(--content-pad-x, 3rem) + 1rem) 3rem;
   position: relative;
   isolation: isolate;
 }
 
-/* Layered mesh + dot grid + diagonal hatch (home only) */
+/* Single ::before: top glow + dot grid + one hatch + vertical wash (no ::after / extra div) */
 .home::before {
   content: '';
   position: absolute;
-  inset: -1.5rem -0.5rem -0.5rem;
+  inset: 0;
   z-index: 0;
   pointer-events: none;
   border-radius: 0;
-  opacity: 0.72;
+  opacity: 0.68;
   background:
-    radial-gradient(ellipse 95% 55% at 50% -8%, color-mix(in srgb, var(--accent) 26%, transparent), transparent 58%),
-    radial-gradient(circle at 1px 1px, color-mix(in srgb, var(--fg) 16%, transparent) 0.5px, transparent 0),
+    radial-gradient(ellipse 120% 70% at 50% 0%, color-mix(in srgb, var(--accent) 22%, transparent), transparent 58%),
+    radial-gradient(circle at 1px 1px, color-mix(in srgb, var(--fg) 14%, transparent) 0.5px, transparent 0),
     repeating-linear-gradient(
       118deg,
       transparent 0 14px,
-      color-mix(in srgb, var(--accent) 7%, transparent) 14px,
-      color-mix(in srgb, var(--accent) 7%, transparent) 15px
-    ),
-    repeating-linear-gradient(
-      -32deg,
-      transparent 0 18px,
-      color-mix(in srgb, var(--fg) 5%, transparent) 18px,
-      color-mix(in srgb, var(--fg) 5%, transparent) 19px
+      color-mix(in srgb, var(--accent) 6%, transparent) 14px,
+      color-mix(in srgb, var(--accent) 6%, transparent) 15px
     ),
     linear-gradient(
       180deg,
-      color-mix(in srgb, var(--accent-glow) 8%, transparent),
-      transparent 42%
+      color-mix(in srgb, var(--accent-glow) 7%, transparent),
+      transparent 48%
     );
   background-size:
     100% 100%,
     20px 20px,
-    auto,
     auto,
     100% 100%;
   background-position:
     center top,
     0 0,
     center,
-    center,
     center;
-  mask-image: radial-gradient(ellipse 92% 75% at 50% 28%, black 0%, black 45%, transparent 78%);
-  -webkit-mask-image: radial-gradient(ellipse 92% 75% at 50% 28%, black 0%, black 45%, transparent 78%);
-}
-
-.home::after {
-  content: '';
-  position: absolute;
-  inset: -20% -15% 35%;
-  z-index: 0;
-  pointer-events: none;
-  opacity: 0.22;
-  background: conic-gradient(
-    from 210deg at 50% 100%,
-    color-mix(in srgb, var(--accent) 35%, transparent),
-    transparent 28%,
-    color-mix(in srgb, var(--accent-glow) 28%, transparent) 52%,
-    transparent 78%,
-    color-mix(in srgb, var(--accent) 22%, transparent) 100%
-  );
-  filter: blur(48px);
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .home::before {
     animation: home-pattern-drift 32s linear infinite;
-  }
-
-  .home::after {
-    animation: home-aurora-pulse 14s ease-in-out infinite alternate;
   }
 }
 
@@ -782,7 +753,6 @@ body::after {
       center top,
       0 0,
       center,
-      center,
       center;
   }
 
@@ -791,26 +761,12 @@ body::after {
       center top,
       20px 20px,
       center,
-      center,
       center;
   }
 }
 
-@keyframes home-aurora-pulse {
-  from {
-    opacity: 0.16;
-    transform: translate3d(-2%, -1%, 0) scale(1.02);
-  }
-
-  to {
-    opacity: 0.28;
-    transform: translate3d(2%, 1%, 0) scale(1.06);
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
-  .home::before,
-  .home::after {
+  .home::before {
     animation: none;
   }
 }
@@ -827,16 +783,9 @@ body::after {
   text-align: center;
   padding: 2.5rem 1.25rem;
   width: min(100%, 48rem);
+  align-self: center;
   position: relative;
   z-index: 1;
-}
-
-.home-hero-bg {
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at center, color-mix(in srgb, var(--accent) 8%, transparent) 0%, transparent 70%);
-  border-radius: 24px;
-  z-index: -1;
 }
 
 .home-image {
@@ -1046,6 +995,8 @@ body::after {
 /* Home Features Grid */
 .home-features {
   width: min(100%, 70rem);
+  max-width: 100%;
+  margin-inline: auto;
   align-self: stretch;
   padding: 2rem 0.75rem;
   margin-top: 1rem;
@@ -2918,7 +2869,11 @@ body {
 }
 
 .update-section {
-  margin-bottom: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
 }
 
 .update-section:last-child {
@@ -2927,45 +2882,60 @@ body {
 
 .update-badge {
   display: inline-block;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.7rem;
+  padding: 0.3rem 0.55rem;
+  font-size: 0.72rem;
   font-weight: 600;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   border-radius: 6px;
-  margin-right: 0.5rem;
-  margin-bottom: 0.35rem;
+  line-height: 1.2;
+  border: 1px solid transparent;
 }
 
 .update-badge--added {
-  background: color-mix(in srgb, #22c55e 25%, transparent);
-  color: color-mix(in srgb, #22c55e 90%, var(--fg));
+  background: color-mix(in srgb, #22c55e 22%, var(--bg));
+  border-color: color-mix(in srgb, #22c55e 35%, transparent);
+  color: color-mix(in srgb, #22c55e 95%, var(--fg));
 }
 
 .update-badge--changed {
-  background: color-mix(in srgb, var(--accent) 25%, transparent);
-  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 20%, var(--bg));
+  border-color: color-mix(in srgb, var(--accent) 35%, transparent);
+  color: color-mix(in srgb, var(--accent) 85%, var(--fg));
 }
 
 .update-badge--fixed {
-  background: color-mix(in srgb, #f59e0b 25%, transparent);
-  color: color-mix(in srgb, #f59e0b 90%, var(--fg));
+  background: color-mix(in srgb, #f59e0b 20%, var(--bg));
+  border-color: color-mix(in srgb, #f59e0b 35%, transparent);
+  color: color-mix(in srgb, #f59e0b 92%, var(--fg));
 }
 
 .update-badge--removed {
-  background: color-mix(in srgb, #ef4444 25%, transparent);
+  background: color-mix(in srgb, #ef4444 18%, var(--bg));
+  border-color: color-mix(in srgb, #ef4444 32%, transparent);
   color: color-mix(in srgb, #ef4444 90%, var(--fg));
 }
 
 .update-badge--latest {
-  background: var(--accent-glow);
-  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 24%, var(--bg));
+  border-color: color-mix(in srgb, var(--accent) 50%, transparent);
+  color: var(--fg);
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: 0.03em;
 }
 
 .update-list {
-  margin: 0.5rem 0 0;
-  padding-inline-start: 1.25rem;
-  color: var(--muted);
-  line-height: 1.6;
+  margin: 0;
+  width: 100%;
+  padding-inline-start: 1.35rem;
+  color: color-mix(in srgb, var(--fg) 88%, var(--muted));
+  line-height: 1.65;
+}
+
+.update-list strong {
+  color: var(--fg);
+  font-weight: 600;
 }
 
 .update-list li {

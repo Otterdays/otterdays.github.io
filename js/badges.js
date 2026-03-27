@@ -85,6 +85,8 @@
         'Hostinger Horizons': { flag: '\uD83C\uDDF1\uD83C\uDDF9', label: 'Lithuania' },
         'Lovable': USA, 'v0': USA, 'Jan': USA, 'Msty': USA, 'NVIDIA': USA, 'NemoClaw': USA, 'NVIDIA ChatRTX': USA,
         'OpenClaw (GitHub)': USA, 'OpenClaw Docs': USA,
+        'Playwright': USA, 'MaxClaw': CN, 'Kimi Claw': CN, 'NanoClaw': USA, 'NanoClaw (GitHub)': USA,
+        'PicoClaw': CN, 'NullClaw': USA,
         'Open WebUI': USA, 'Brave Leo': USA, 'Dia Browser': USA, 'Abacus AI Deep Agent': USA,
         'Base44': USA, 'LLMChat': USA, 'Localtunnel': USA, 'reTunnel': USA,
         'Tunnelmole': UK, 'itch.io (game dev)': USA, 'Algolia': FR, 'Discord Developers': USA,

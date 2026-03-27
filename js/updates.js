@@ -18,7 +18,7 @@
     const sectionsHtml = entry.sections
       .filter(s => s.items && s.items.length > 0)
       .map(s => {
-        const itemsHtml = s.items.map(item => `<li>${escapeHtml(item)}</li>`).join('');
+        const itemsHtml = s.items.map(item => `<li>${formatUpdateItem(item)}</li>`).join('');
         return `
           <div class="update-section">
             <span class="update-badge update-badge--${s.type}">${TYPE_LABELS[s.type] || s.type}</span>
@@ -61,5 +61,20 @@
     const div = document.createElement('div');
     div.textContent = str;
     return div.innerHTML;
+  }
+
+  /** Renders `**bold**` as <strong>; escapes everything else (safe for user-facing changelog text). */
+  function formatUpdateItem(text) {
+    const out = [];
+    let pos = 0;
+    const re = /\*\*(.+?)\*\*/gs;
+    let m;
+    while ((m = re.exec(text)) !== null) {
+      if (m.index > pos) out.push(escapeHtml(text.slice(pos, m.index)));
+      out.push('<strong>' + escapeHtml(m[1]) + '</strong>');
+      pos = m.index + m[0].length;
+    }
+    if (pos < text.length) out.push(escapeHtml(text.slice(pos)));
+    return out.join('');
   }
 })();

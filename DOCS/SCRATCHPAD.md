@@ -1,5 +1,11 @@
 # SCRATCHPAD
 
+## 2026-03-27 — ship v1.10.0 (badges, timeline Latest, update modalities)
+
+**What changed:** All `*.html` version badges **v1.10.0**; `js/updates-data.js` — removed **`skipLatest`** on **1.10.0**, date **2026-03-27**, **Changed** bullet for badges; `js/updates.js` — **`formatUpdateItem`** (`**bold**` → `<strong>`); `css/style.css` — update section badges + list contrast. `README.md`, `DOCS/CHANGELOG.md` **[1.10.0]**, `SUMMARY.md`, `ARCHITECTURE.md`, `SCRATCHPAD` (this line).
+
+---
+
 ## 2026-03-26 — js/updates-data.js: v1.10.0 card filled out (timeline)
 
 **What changed:** `js/updates-data.js` — **v1.10.0** — **Changed** (release scope), **Added** (informational-links templates, museum snapshots + side-by-side + model makers linked badges, `replace_sidebar_nav.py`), **Changed** (sidebar A–Z, CSS, search-data, DOCS). **Unreleased** single placeholder line. **`skipLatest: true`** on 1.10.0 so **Latest** stays **v1.9.5**. `DOCS/CHANGELOG.md` Unreleased bullet.

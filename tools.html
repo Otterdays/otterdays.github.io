@@ -8,7 +8,7 @@
 
   <!-- SEO Meta Tags -->
   <meta name="description"
-    content="CLI, IDE, and browser tools: Cursor, Warp, Factory, TRAE, Gemini CLI, Kimi/Mistral Vibe/Crush/Qwen Code, Docker, Wispr Flow speech-to-text, Claude download.">
+    content="CLI, IDE, and browser tools: Cursor, Warp, Factory, TRAE, Gemini CLI, computer-automation agents (OpenClaw, Playwright, MaxClaw, Kimi Claw, NanoClaw, PicoClaw, NullClaw), Docker, Wispr Flow speech-to-text, Claude download.">
   <meta name="keywords"
     content="developer tools, CLI, IDE, Cursor, Warp, Gemini CLI, Bun, Vite, Svelte, Docker, SpacetimeDB, vinext, OpenCode Desktop, speech-to-text, Wispr Flow, coding">
   <meta name="author" content="Ryan Otterdays">
@@ -17,7 +17,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://otterdays.github.io/tools.html">
   <meta property="og:title" content="Desktop Tools | Otterdays">
-  <meta property="og:description" content="CLI, IDE, and browser-based coding tools.">
+  <meta property="og:description" content="CLI, IDE, browser tools, and computer-automation agents (OpenClaw ecosystem, Playwright).">
 
   <!-- Favicon -->
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
@@ -106,9 +106,9 @@
     <!-- Top Bar: Search & Theme (Floating) -->
     <div class="top-bar">
       <!-- Version Badge -->
-      <a href="updates.html" class="version-badge" title="Version 1.9.5 – Click for details">
+      <a href="updates.html" class="version-badge" title="Version 1.10.0 – Click for details">
         <span class="version-badge-icon">🎮</span>
-        <span class="version-badge-text">v1.9.5</span>
+        <span class="version-badge-text">v1.10.0</span>
       </a>
 
       <button type="button" class="search-trigger" id="search-trigger" aria-label="Search site">
@@ -168,6 +168,67 @@
           <span class="chat-link-name">Dia Browser</span>
           <span class="chat-link-desc">AI browser from Arc makers; chat with your tabs, in-line copy editor, tutor in
             every tab</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+      </div>
+    </section>
+    <section class="profile-section" id="computer-automation">
+      <h2>Computer automation (agents)</h2>
+      <p>These systems run <strong>personal AI agents</strong> that can operate apps, shells, and browsers on your behalf.
+        <strong>OpenClaw</strong> is the de facto pioneer: a full-featured, self-hosted stack where real UI control often
+        goes through <strong>Playwright</strong> (Chromium automation &mdash; clicks, navigation, screenshots). Newer
+        &ldquo;claw&rdquo; projects fork, slim down, or reimplement that idea for edge devices, Zig, Go, or hosted
+        wrappers.</p>
+      <p>For agent integrations, Microsoft&rsquo;s <a href="https://github.com/microsoft/playwright-mcp"
+          rel="noopener noreferrer" target="_blank">Playwright MCP</a> exposes the same class of browser tools over MCP;
+        the core library lives at <a href="https://playwright.dev/" rel="noopener noreferrer"
+          target="_blank">playwright.dev</a>.</p>
+      <div class="chat-links">
+        <a href="https://openclaw.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">OpenClaw</span>
+          <span class="chat-link-desc">Pioneer self-hosted agent: messaging channels, skills/plugins, workspace tools;
+            browser automation built on Playwright in the reference stack &mdash; MIT, openclaw/openclaw</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://playwright.dev/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Playwright</span>
+          <span class="chat-link-desc">Browser automation library (Chromium, Firefox, WebKit); the usual dependency for
+            agent-driven computer and web control in Node/TypeScript stacks</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://agent.minimax.io/max-claw" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">MaxClaw</span>
+          <span class="chat-link-desc">MiniMax: 24/7 cloud assistant (M2.7); Telegram, Discord, Slack &mdash; MiniMax Lab</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://www.kimi.com/bot" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Kimi Claw</span>
+          <span class="chat-link-desc">Moonshot: one-click hosted OpenClaw; Kimi K2.5 Thinking, skills, link existing
+            OpenClaw</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://nanoclaw.dev/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">NanoClaw</span>
+          <span class="chat-link-desc">Lightweight alternative: agents in containers, Claude Agent SDK, skills; site &amp;
+            docs</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://github.com/qwibitai/nanoclaw" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">NanoClaw (GitHub)</span>
+          <span class="chat-link-desc">Source repo: qwibitai/nanoclaw &mdash; WhatsApp, Telegram, Slack, Discord, Gmail,
+            scheduled jobs</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://github.com/sipeed/picoclaw" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">PicoClaw</span>
+          <span class="chat-link-desc">Sipeed: Go, ultra-low RAM (&lt;10MB target), $10-class boards; MCP, many channels;
+            official site picoclaw.io</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://github.com/nullclaw/nullclaw" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">NullClaw</span>
+          <span class="chat-link-desc">Zig static binary (~678KB), ~1MB RAM, OpenClaw-compatible config; migrate from
+            OpenClaw; nullclaw.io</span>
           <span class="chat-link-arrow">→</span>
         </a>
       </div>

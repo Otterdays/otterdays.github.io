@@ -8,13 +8,13 @@ All notable changes to this project are documented in this file. Format: [Keep a
 - (Planning: future changes.)
 
 ### Changed
-- **Version modality (site + `js/updates-data.js`):** Patch line **1.9.1–1.9.5** is **consolidated under** the planned minor **v1.10.0**; per-patch **[1.9.1]–[1.9.5]** sections stay below for history. See **`js/updates-data.js`** **v1.10.0** card on `updates.html`.
+- **Version modality (site + `js/updates-data.js`):** Patch line **1.9.1–1.9.5** is **consolidated under** the minor **v1.10.0**; per-patch **[1.9.1]–[1.9.5]** sections stay below for history. See **`js/updates-data.js`** **v1.10.0** card on `updates.html`.
 - [2026-03-26]: **Site navigation** — Sidebar **A–Z** by label; **removed** per-provider shortcuts (Google Gemini, OpenAI, Anthropic, xAI, Arcee AI) so the nav lists only site pages. Regenerator: `tools/replace_sidebar_nav.py`. Provider museum pages have **no** `active` nav item.
 - [2026-03-26]: **CSS** — `.sidebar::before` hover overlay is a **flat tint** (replaces vertical gradient banding with scroll); `.sidebar a.active:hover` avoids stray translate; `.museum-picker-snapshot-pair` two-column grid for IDE menu + Qwen Code cards; **`.museum-maker-ver--registry`** vs **`a.museum-maker-ver--linked`** (model makers checklist).
 - [2026-03-26]: **informational-links.html** — Section **Wikipedia navigation templates** (Template:Artificial_intelligence_navbox, Generative_AI, Natural_language_processing, OpenAI, Wikimedia sister projects); flagship / HKChat / “More Wikipedia” ordering favors Wikipedia; `js/search-data.js` blurb + **Templates** tag.
 - [2026-03-26]: **museum.html** — Picker snapshots split: **Qwen Code** add-on costs (own card, `.museum-picker-snapshot--qwen-code`), **Warp** long model selector, **Cursor** context/comparison tables; section title **Qwen Code, Cursor, Warp & frontier**; **Model makers checklist** — only **Google**, **Google DeepMind** (→ `google-gemini.html`), **OpenAI**, **Anthropic**, **xAI**, **Arcee AI** use **clickable “completed” v1.0** links; all other makers show **registry-only** muted `v1.0` badge. `js/search-data.js` AI Museum mentions Warp.
 - [2026-03-26]: **Documentation** — `DOCS/SUMMARY.md`, `DOCS/MODEL_MAKERS_CHECKLIST.md`, `DOCS/ARCHITECTURE.md` (nav + museum registry semantics); this file **[Unreleased]** batch above.
-- [2026-03-26]: **Site updates timeline** — `js/updates-data.js` **v1.10.0** card expanded (Added / Changed: informational-links templates, museum Qwen/Warp/Cursor + picker pair + registry badges, sidebar A–Z, CSS, search-data, docs, `replace_sidebar_nav.py`); **Unreleased** trimmed; **`skipLatest: true`** on 1.10.0 so **v1.9.5** remains **Latest** until a formal 1.10.0 ship bumps the badge.
+- [2026-03-26]: **Site updates timeline** — `js/updates-data.js` **v1.10.0** card expanded (Added / Changed: informational-links templates, museum Qwen/Warp/Cursor + picker pair + registry badges, sidebar A–Z, CSS, search-data, docs, `replace_sidebar_nav.py`); **Unreleased** trimmed. [AMENDED 2026-03-27]: Formal **v1.10.0** ship — site badges **v1.10.0**; **`skipLatest`** removed from **1.10.0** so **Latest** follows **v1.10.0**; **`**bold**`** rendering + modality CSS on `updates.html` — see **[1.10.0]**.
 - [2026-03-28]: **Museum UI** — Removed redundant **“Open Google Gemini catalog →”** control (`museum-gemini-gateway-btn`) under premium provider chips (`museum.html`, `css/style.css`); chips remain the CTAs.
 - [2026-03-28]: **anthropic.html (catalog depth)** — Frontier comparison (API / Bedrock / Vertex IDs, pricing, thinking modes), platform snapshot, release chronology, architecture & technical notes; `body.provider-anthropic .museum-table code`; `js/search-data.js`.
 - [2026-03-28]: **Documentation** — `DOCS/SUMMARY.md` **Recent update — 2026-03-28 (site + docs sync)** (OpenAI tables, museum flagship + 38-tile makers registry, home/QoL/search, programs Arteria, docs trail); `DOCS/ARCHITECTURE.md` museum tree line + amended note; `DOCS/MODEL_MAKERS_CHECKLIST.md` related link `#openai-versions`.
@@ -24,6 +24,13 @@ All notable changes to this project are documented in this file. Format: [Keep a
 - [2026-03-28]: **OpenAI wall** (`openai.html` `#openai-wall`) — March 2026 snapshot tables (frontier, image, video, realtime/audio, Codex, deep research, GPT-OSS, ChatGPT SKUs). **Museum:** model makers checklist section + `museum-maker-chip` styles. **Docs:** `DOCS/MODEL_MAKERS_CHECKLIST.md`; `SUMMARY.md` quick link; `js/search-data.js`; `DOCS/SCRATCHPAD.md`.
 - [2026-03-28]: **OpenAI Chat & Completion IDs** — `openai.html#openai-chat-completion-ids`: full table of `gpt-*` / `o*` chat model ids with aliases plus `gpt-3.5-turbo-instruct` (completion); `DOCS/MODEL_MAKERS_CHECKLIST.md` related link; search-data OpenAI blurb.
 - [2026-03-28]: **OpenAI model versions** — `openai.html#openai-versions`: **ChatGPT lineup** table (release dates + discontinued / legacy / active) + separate **API & completion** chronological table; `.openai-version-exhibit`, `.gemini-status--legacy`; `js/search-data.js`.
+
+## [1.10.0] - 2026-03-27
+
+### Changed
+- **Site:** Version badge **v1.10.0** on all HTML pages; `updates.html` **Latest** ribbon on **v1.10.0** (`js/updates-data.js` — removed `skipLatest` from that entry; date **2026-03-27**).
+- **`js/updates.js`:** Changelog list items render **`**markdown bold**`** as `<strong>` (escaped HTML elsewhere).
+- **`css/style.css`:** Update timeline modality badges (**Added** / **Changed** / **Fixed** / **Removed** / **Latest**) — borders, contrast, uppercase labels; list typography and `<strong>` color for readability.
 
 ## [1.9.5] - 2026-03-26
 

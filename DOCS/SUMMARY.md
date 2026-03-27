@@ -2,7 +2,13 @@
 
 ## Version modality
 
-- **v1.9.1** through **v1.9.5** are **consolidated under** the planned minor **v1.10.0** (one bucket for the museum / informational-links / Gemini / multi-provider catalog work). The **per-patch log** stays in **`updates.html`** (`js/updates-data.js`) and **`DOCS/CHANGELOG.md`** sections **[1.9.1]–[1.9.5]**; site badge remains **v1.9.5** until **v1.10.0** ships.
+- **v1.9.1** through **v1.9.5** are **consolidated under** the minor **v1.10.0** (one bucket for the museum / informational-links / Gemini / multi-provider catalog work). The **per-patch log** stays in **`updates.html`** (`js/updates-data.js`) and **`DOCS/CHANGELOG.md`** sections **[1.9.1]–[1.9.5]**.
+- [AMENDED 2026-03-27]: Site badge is **v1.10.0**; **Latest** on `updates.html` follows **v1.10.0** (see **[1.10.0]** in `CHANGELOG.md`).
+
+## Release v1.10.0 — 2026-03-27
+
+- **Version:** Site badge **v1.10.0** everywhere; **`updates.html`** **Latest** ribbon on **v1.10.0**; **`**bold**`** in changelog lines (`js/updates.js`); modality badge + list legibility (`css/style.css`).
+- **Docs:** `DOCS/CHANGELOG.md` **[1.10.0]**; `README.md`, `ARCHITECTURE.md`, this file; `js/updates-data.js` (date + ship note).
 
 ## Recent update — 2026-03-26 (navigation + museum + informational links)
 
@@ -117,7 +123,7 @@
 - **Skills:** Antigravity agentic tools (capabilities list), SkillBox, Skills directory (React, Testing, Git).
 - **Search:** Index updated for all new links (chats, media, companies, tools, skills).
 
-**Docs:** `DOCS/journal/` — dated entries (e.g. 2026-02-25, 2026-03-02, **2026-03-21** for v1.9.0, **2026-03-26** for v1.9.1+). **Current version: v1.9.5** (`updates.html`, footer badge on all pages).
+**Docs:** `DOCS/journal/` — dated entries (e.g. 2026-02-25, 2026-03-02, **2026-03-21** for v1.9.0, **2026-03-26** for v1.9.1+). **Current version: v1.10.0** (`updates.html`, top-bar badge on all pages).
 
 **Quick links:**
 - [MODEL_MAKERS_CHECKLIST](MODEL_MAKERS_CHECKLIST.md) — labs/model makers visible on the museum checklist + agent maintenance notes

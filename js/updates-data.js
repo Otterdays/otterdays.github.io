@@ -18,8 +18,7 @@ const UPDATES_DATA = [
   },
   {
     version: "1.10.0",
-    date: "2026-03-26",
-    skipLatest: true,
+    date: "2026-03-27",
     sections: [
       {
         type: "changed",
@@ -39,6 +38,7 @@ const UPDATES_DATA = [
       {
         type: "changed",
         items: [
+          "**Version & badges** — Top-bar **v1.10.0** site-wide; **Updates** timeline shows **Latest** on this release (minor ship).",
           "**Site-wide sidebar** — Labels **A–Z** (**About** first). **Removed** per-provider shortcuts (🔷 Google Gemini, 🤖 OpenAI, 🦉 Anthropic, 🌌 xAI, 🏬 Arcee AI); discovery is via **museum.html** premium chips, **Companies**, and search. Provider catalog pages **no longer** set a matching **`active`** nav item.",
           "**css/style.css** — **`.sidebar::before`** hover overlay is a **flat accent tint** (fixes **banding** from the old vertical gradient + scroll). **`.sidebar a.active:hover`** keeps the inset bar without sideways **translate**. **`.museum-maker-tile--catalog-linked`**, linked vs registry badge colors; exhibit tiles use **`:not(a)`** so **Arcee**’s linked badge stays **green** “catalog done”.",
           "**js/search-data.js** — **AI Museum** description mentions **Warp** long selector; **Informational Links** mentions Wikipedia **templates** + **Templates** search tag.",
