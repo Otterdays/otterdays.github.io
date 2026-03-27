@@ -10,6 +10,14 @@
 - **Version:** Site badge **v1.10.0** everywhere; **`updates.html`** **Latest** ribbon on **v1.10.0**; **`**bold**`** in changelog lines (`js/updates.js`); modality badge + list legibility (`css/style.css`).
 - **Docs:** `DOCS/CHANGELOG.md` **[1.10.0]**; `README.md`, `ARCHITECTURE.md`, this file; `js/updates-data.js` (date + ship note).
 
+## Recent update — 2026-03-27 (docs/log + updates modal cue)
+
+- **Docs/logs:** `DOCS/SCRATCHPAD.md` + `DOCS/CHANGELOG.md` updated with current-release maintenance note and curated upkeep links (model catalogs, benchmarks, provider status pages, Wikipedia templates).
+- **updates.html:** Search modal placeholder now references **v1.10.0** context so release baseline is obvious while searching from the updates page.
+- **Linking workflow:** `DOCS/CONTENT_GUIDE.md` now includes a **Trusted External Sources** section for quick copy/link/verify when adding museum/provider content.
+- **Informational links page:** `informational-links.html` now includes a matching **Trusted external sources** section (OpenRouter models, Artificial Analysis, OpenAI/Anthropic/Google/xAI status dashboards); `js/search-data.js` page entry updated.
+- **Refinement:** `informational-links.html` section was tightened to **Wikipedia-first** references (LLM/projects lists, citation/disambiguation guidance, Wikidata pages) to keep the page focused on encyclopedia-style context.
+
 ## Recent update — 2026-03-26 (navigation + museum + informational links)
 
 - **Sidebar (all pages):** **A–Z** labels; **no** per-provider nav items (Google Gemini, OpenAI, Anthropic, xAI, Arcee AI removed from the bar — use **AI Museum**, **Companies**, or premium chips on `museum.html`). Helper: `tools/replace_sidebar_nav.py`.

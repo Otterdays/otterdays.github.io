@@ -1,5 +1,46 @@
 # SCRATCHPAD
 
+## 2026-03-27 — informational-links: tightened to wiki-first focus
+
+**What changed:** Replaced the broad external verification block on `informational-links.html` with **Wikipedia research and verification** links (LLM list, AI projects list, citing sources, disambiguation, Wikidata main page, Wikidata Query Service). Updated `js/search-data.js` informational-links desc/tags to match wiki-first scope.
+
+---
+
+## 2026-03-27 — informational-links: trusted external sources block
+
+**What changed:** `informational-links.html` — added **Trusted external sources** section with verification links for **OpenRouter models**, **Artificial Analysis**, and provider status pages (**OpenAI**, **Anthropic**, **Google Cloud**, **xAI**). `js/search-data.js` informational-links page description/tags expanded for discoverability.
+
+---
+
+## 2026-03-27 — docs: linked source-of-truth block (CONTENT_GUIDE)
+
+**What changed:** `DOCS/CONTENT_GUIDE.md` — added **Trusted External Sources** section with direct links for model catalogs, benchmarks, provider status pages, and Wikipedia templates, plus a 3-step usage flow for future content/link updates.
+
+---
+
+## 2026-03-27 — docs/log sweep + v1.10.0 modal cue + next-link ideas
+
+**What changed:** Docs/status sweep for current release context; confirmed all page badges are **v1.10.0**; updated `updates.html` search modal placeholder to mention **v1.10.0** context.
+
+**Useful next additions (linked):**
+- **Model cards metadata source:** [OpenRouter models](https://openrouter.ai/models) for quick release/status cross-checks.
+- **Benchmark snapshots:** [Artificial Analysis](https://artificialanalysis.ai/) for model capability trends.
+- **Provider status pages:** [OpenAI status](https://status.openai.com/), [Anthropic status](https://status.anthropic.com/), [Google Cloud status](https://status.cloud.google.com/), [xAI status](https://status.x.ai/).
+- **Museum reference quality pass:** [Wikipedia AI navbox](https://en.wikipedia.org/wiki/Template:Artificial_intelligence_navbox) and [NLP template](https://en.wikipedia.org/wiki/Template:Natural_language_processing) for category consistency.
+
+---
+
+## 2026-03-27 — specials: FreeWebHosting + Neocities
+
+**What changed:** `specials.html` — added **FreeWebHosting** ([miten5/FreeWebHosting](https://github.com/miten5/FreeWebHosting)) + **Neocities** ([neocities.org](https://neocities.org/)) to Free domains section, alphabetically after FreeDomain (GitHub); `js/search-data.js` — both entries.
+
+**Research findings:**
+- **FreeWebHosting:** 71 ⭐, 15 forks, 1 contributor (miten5). 40+ providers: Neocities, Netlify, Vercel, GitHub Pages, GitLab Pages, Render, InfinityFree, 000WebHost, Alwaysdata, Awardspace, Freehostia, etc.
+- **Neocities:** Missing from site — perfect complement (free static hosting, 1 GB storage, 200 GB bandwidth, no ads).
+- Related providers already on site: Netlify ✓, Vercel ✓, GitHub Pages ✓, Render ✓.
+
+---
+
 ## 2026-03-27 — ship v1.10.0 (badges, timeline Latest, update modalities)
 
 **What changed:** All `*.html` version badges **v1.10.0**; `js/updates-data.js` — removed **`skipLatest`** on **1.10.0**, date **2026-03-27**, **Changed** bullet for badges; `js/updates.js` — **`formatUpdateItem`** (`**bold**` → `<strong>`); `css/style.css` — update section badges + list contrast. `README.md`, `DOCS/CHANGELOG.md` **[1.10.0]**, `SUMMARY.md`, `ARCHITECTURE.md`, `SCRATCHPAD` (this line).

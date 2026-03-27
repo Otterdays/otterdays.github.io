@@ -29,10 +29,14 @@ const UPDATES_DATA = [
       {
         type: "added",
         items: [
-          "**informational-links.html** — Wikipedia **navigation templates** section: Template:Artificial_intelligence_navbox, Template:Generative_AI, Template:Natural_language_processing, Template:OpenAI, Wikipedia:Wikimedia_sister projects. Flagship / HKChat / “More Wikipedia” blocks **prioritize Wikipedia** URLs first where it makes sense.",
-          "**museum.html** — **Cursor / Warp / Qwen Code** picker snapshots **split into separate cards**: Qwen Code **add-on relative cost** row (own panel + `.museum-picker-snapshot--qwen-code`), **Warp** long model selector (terminal agent labels, A–Z), **Cursor** context-window + in-app **comparison score** tables. **IDE model menu** + **Qwen Code** cards in a **side-by-side** grid (`.museum-picker-snapshot-pair`, stacks on narrow viewports). Section title **Qwen Code, Cursor, Warp & frontier · Q1 2026**.",
-          "**Model makers checklist** — **Completed** state only for **shipped premium catalogs**: **Google** & **Google DeepMind** → **google-gemini.html**; **OpenAI**, **Anthropic**, **xAI**, **Arcee AI** → their museum pages. **Green clickable `v1.0`** (`a.museum-maker-ver--linked`); everyone else gets **registry-only** muted **`v1.0`** (`.museum-maker-ver--registry`). Copy explains registry vs catalog.",
-          "**tools/replace_sidebar_nav.py** — Regenerate alphabetized **`<nav class=\"sidebar\">`** across all HTML pages (optional maintenance)."
+          "**informational-links.html** — Wikipedia **navigation templates** section: Template:Artificial_intelligence_navbox, Template:Generative_AI, Template:Natural_language_processing, Template:OpenAI, Wikipedia:Wikimedia_sister projects. Flagship / HKChat / 'More Wikipedia' blocks **prioritize Wikipedia** URLs first where it makes sense.",
+          "**museum.html** — **Cursor / Warp / Qwen Code** picker snapshots **split into separate cards**: Qwen Code **add-on relative cost** row (own panel), **Warp** long model selector (terminal agent labels, A–Z), **Cursor** context-window + in-app **comparison score** tables. Side-by-side grid (`.museum-picker-snapshot-pair`). Section title **Qwen Code, Cursor, Warp & frontier · Q1 2026**.",
+          "**Model makers checklist** — **Completed** state only for **shipped premium catalogs**: **Google** & **Google DeepMind** → `google-gemini.html`; **OpenAI**, **Anthropic**, **xAI**, **Arcee AI** → their museum pages. Green clickable `v1.0` for linked catalogs; everyone else gets registry-only muted `v1.0`.",
+          "**Museum — premium flagship FF-07–FF-10**: **GLM-5** (Zhipu AI), **DeepSeek-V3.2**, **MiMo-V2-Pro** (Xiaomi), **Qwen3-Max-Thinking** (Alibaba). Model makers registry **v1.0** — **38** plaque tiles with `Released` dates.",
+          "**OpenAI (`openai.html`)** — Wall of models snapshot tables; **ChatGPT lineup** version table + **API & completion** chronological table; full **model ID list** with aliases (`gpt-*` / `o*`).",
+          "**Arteria** ([GAME-Arteria](https://github.com/Otterdays/GAME-Arteria)) — mobile idle RPG: hero + Explore card on `index.html`, `programs.html` entry.",
+          "**specials.html** — **FreeWebHosting** (40+ free host list) + **Neocities** (free static hosting) in Free domains section.",
+          "**tools/replace_sidebar_nav.py** — Regenerate alphabetized sidebar across all HTML pages."
         ]
       },
       {
@@ -42,7 +46,9 @@ const UPDATES_DATA = [
           "**Site-wide sidebar** — Labels **A–Z** (**About** first). **Removed** per-provider shortcuts (🔷 Google Gemini, 🤖 OpenAI, 🦉 Anthropic, 🌌 xAI, 🏬 Arcee AI); discovery is via **museum.html** premium chips, **Companies**, and search. Provider catalog pages **no longer** set a matching **`active`** nav item.",
           "**css/style.css** — **`.sidebar::before`** hover overlay is a **flat accent tint** (fixes **banding** from the old vertical gradient + scroll). **`.sidebar a.active:hover`** keeps the inset bar without sideways **translate**. **`.museum-maker-tile--catalog-linked`**, linked vs registry badge colors; exhibit tiles use **`:not(a)`** so **Arcee**’s linked badge stays **green** “catalog done”.",
           "**js/search-data.js** — **AI Museum** description mentions **Warp** long selector; **Informational Links** mentions Wikipedia **templates** + **Templates** search tag.",
-          "**DOCS** — `CHANGELOG` **[Unreleased]**, `SUMMARY` (2026-03-26 block), `MODEL_MAKERS_CHECKLIST` (**badge semantics** + maintenance log), `ARCHITECTURE` (nav order, museum registry, informational-links hub)."
+          "**DOCS** — `CHANGELOG` **[1.10.0]**, `SUMMARY` (release block), `MODEL_MAKERS_CHECKLIST` (badge semantics + registry), `ARCHITECTURE` (nav order, museum registry, informational-links hub), `SBOM` date, `journal/2026-03-27.md`.",
+          "**anthropic.html** — Frontier comparison table (Opus/Sonnet 4.6, Haiku 4.5: API, Bedrock, Vertex IDs, pricing, thinking modes); platform snapshot; release chronology; expanded architecture & technical notes.",
+          "**Museum UI** — Removed redundant Gemini CTA button under premium provider chips; chips remain the CTAs."
         ]
       }
     ]

@@ -18,6 +18,22 @@ When adding **any** new item:
 
 ---
 
+## Trusted External Sources (for linking and verification)
+
+Use these when adding/updating museum or provider content so links stay consistent and easy to verify:
+
+- **Model catalogs:** [OpenRouter models](https://openrouter.ai/models)
+- **Benchmark snapshots:** [Artificial Analysis](https://artificialanalysis.ai/)
+- **Provider status pages:** [OpenAI](https://status.openai.com/), [Anthropic](https://status.anthropic.com/), [Google Cloud](https://status.cloud.google.com/), [xAI](https://status.x.ai/)
+- **Wikipedia structure templates:** [AI navbox](https://en.wikipedia.org/wiki/Template:Artificial_intelligence_navbox), [NLP template](https://en.wikipedia.org/wiki/Template:Natural_language_processing)
+
+Quick use:
+1. Verify naming/version/date against catalog or provider docs.
+2. Prefer primary source links first; keep Wikipedia as context links.
+3. Add matching search tags/desc in `js/search-data.js` when introducing new references.
+
+---
+
 ## 1. Adding to HTML Pages
 
 ### Page → Content Type Mapping
