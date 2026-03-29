@@ -9,6 +9,17 @@ All notable changes to this project are documented in this file. Format: [Keep a
 - **informational-links.html** — New **Trusted external sources** section with cards for OpenRouter models, Artificial Analysis, and provider status dashboards (OpenAI, Anthropic, Google Cloud, xAI).
 - **informational-links.html** — Refined that section into a **Wikipedia-first research and verification** block: model/project indexes, citation guidance, disambiguation guidance, and Wikidata resources.
 
+## [1.10.1] - 2026-03-29
+
+### Added
+- **Hermes Agent** (Nous Research) — **`tools.html`** computer-automation card ([hermes-agent.nousresearch.com](https://hermes-agent.nousresearch.com/), MIT, Linux/macOS/WSL 2); **`companies.html`** link under Nous Research; **`js/search-data.js`** tool row + expanded **Nous Research** company entry; **`js/badges.js`** (`Hermes Agent` → USA); **`tools.html`** meta/og description strings.
+- **Documentation** — `DOCS/SUMMARY.md`, `DOCS/SCRATCHPAD.md`, `DOCS/SBOM.md`, `DOCS/ARCHITECTURE.md` (tools line + current release), `DOCS/CONTENT_GUIDE.md` (computer-automation curated-order note), `DOCS/journal/2026-03-29.md`.
+
+### Changed
+- **Site:** Version badge **v1.10.1** on all HTML pages; **`updates.html`** **Latest** ribbon on **v1.10.1** (`js/updates-data.js`).
+- **`updates.html`:** Search modal placeholder references **v1.10.1**.
+- **`README.md`:** Current version link **v1.10.1**.
+
 ## [1.10.0] - 2026-03-27
 
 ### Added

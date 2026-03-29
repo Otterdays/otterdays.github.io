@@ -4,6 +4,18 @@
 
 - **v1.9.1** through **v1.9.5** are **consolidated under** the minor **v1.10.0** (one bucket for the museum / informational-links / Gemini / multi-provider catalog work). The **per-patch log** stays in **`updates.html`** (`js/updates-data.js`) and **`DOCS/CHANGELOG.md`** sections **[1.9.1]–[1.9.5]**.
 - [AMENDED 2026-03-27]: Site badge is **v1.10.0**; **Latest** on `updates.html` follows **v1.10.0** (see **[1.10.0]** in `CHANGELOG.md`).
+- [AMENDED 2026-03-29]: Site badge is **v1.10.1**; **Latest** on `updates.html` follows **v1.10.1** (see **[1.10.1]** in `CHANGELOG.md`).
+
+## Release v1.10.1 — 2026-03-29
+
+- **Version:** Site badge **v1.10.1** everywhere; **`updates.html`** **Latest** on **v1.10.1**; **`js/updates-data.js`** patch card (Hermes Agent + docs).
+- **Docs:** `DOCS/CHANGELOG.md` **[1.10.1]**; this file; `README.md`; `DOCS/ARCHITECTURE.md`; `DOCS/SCRATCHPAD.md`; `DOCS/SBOM.md`; `DOCS/journal/2026-03-29.md`.
+
+## Recent update — 2026-03-29 (Hermes Agent + documentation)
+
+- **Content:** **Hermes Agent** (Nous Research) — `tools.html` **Computer automation (agents)** card + `companies.html` under **Nous Research**; `js/search-data.js` (tool index + **Nous Research** blurb/tags); `js/badges.js` (USA); `tools.html` SEO meta/OG text.
+- **Release:** Shipped as patch **v1.10.1** (badges, `updates.html` **Latest**, `js/updates-data.js` card, search placeholder).
+- **Docs:** `DOCS/CHANGELOG.md` **[1.10.1]**; this file; `DOCS/SCRATCHPAD.md`; `DOCS/SBOM.md`; `DOCS/ARCHITECTURE.md`; `DOCS/CONTENT_GUIDE.md`; `DOCS/journal/2026-03-29.md`; `README.md`. [AMENDED 2026-03-29]: post-ship doc trail.
 
 ## Release v1.10.0 — 2026-03-27
 
@@ -131,7 +143,7 @@
 - **Skills:** Antigravity agentic tools (capabilities list), SkillBox, Skills directory (React, Testing, Git).
 - **Search:** Index updated for all new links (chats, media, companies, tools, skills).
 
-**Docs:** `DOCS/journal/` — dated entries (e.g. 2026-02-25, 2026-03-02, **2026-03-21** for v1.9.0, **2026-03-26** for v1.9.1+). **Current version: v1.10.0** (`updates.html`, top-bar badge on all pages).
+**Docs:** `DOCS/journal/` — dated entries (e.g. 2026-02-25, 2026-03-02, **2026-03-21** for v1.9.0, **2026-03-26** for v1.9.1+). **Current version: v1.10.1** (`updates.html`, top-bar badge on all pages). [AMENDED 2026-03-29]
 
 **Quick links:**
 - [MODEL_MAKERS_CHECKLIST](MODEL_MAKERS_CHECKLIST.md) — labs/model makers visible on the museum checklist + agent maintenance notes

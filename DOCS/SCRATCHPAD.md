@@ -1,5 +1,19 @@
 # SCRATCHPAD
 
+## 2026-03-29 — ship v1.10.1 (badges, timeline Latest, patch card)
+
+**What changed:** All `*.html` version badges **v1.10.1**; `js/updates-data.js` — **1.10.1** card (Hermes Agent + DOCS), **Unreleased** placeholder restored; `updates.html` search placeholder **v1.10.1**; `README.md`; `DOCS/CHANGELOG.md` **[1.10.1]**; `DOCS/SUMMARY.md`, `DOCS/ARCHITECTURE.md`, `DOCS/SBOM.md`; `DOCS/journal/2026-03-29.md` — patch ship line.
+
+---
+
+## 2026-03-29 — Hermes Agent + documentation sync
+
+**What changed:** **Hermes Agent** (Nous Research) already on `tools.html`, `companies.html`, `js/search-data.js`, `js/badges.js`, `js/updates-data.js`. **Docs trail:** `DOCS/CHANGELOG.md` **[Unreleased]**, `DOCS/SUMMARY.md`, `DOCS/SBOM.md`, `DOCS/ARCHITECTURE.md`, `DOCS/CONTENT_GUIDE.md` (curated-order note for computer-automation subsection), `DOCS/journal/2026-03-29.md`.
+
+**Out-of-scope observations:** None.
+
+---
+
 ## 2026-03-27 — informational-links: tightened to wiki-first focus
 
 **What changed:** Replaced the broad external verification block on `informational-links.html` with **Wikipedia research and verification** links (LLM list, AI projects list, citing sources, disambiguation, Wikidata main page, Wikidata Query Service). Updated `js/search-data.js` informational-links desc/tags to match wiki-first scope.

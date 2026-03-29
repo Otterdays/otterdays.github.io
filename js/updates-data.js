@@ -17,6 +17,26 @@ const UPDATES_DATA = [
     ]
   },
   {
+    version: "1.10.1",
+    date: "2026-03-29",
+    sections: [
+      {
+        type: "added",
+        items: [
+          "**Hermes Agent** (Nous Research) — **`tools.html`** computer-automation card + **`companies.html`** under Nous Research; **`js/search-data.js`** (tool row + Nous company blurb); **`js/badges.js`**; **`tools.html`** meta/OG descriptions.",
+          "**DOCS** — `CHANGELOG` **[1.10.1]**; `SUMMARY`, `SCRATCHPAD`, `SBOM`, `ARCHITECTURE`, `CONTENT_GUIDE` (computer-automation ordering), `journal/2026-03-29.md`."
+        ]
+      },
+      {
+        type: "changed",
+        items: [
+          "**Version & badges** — Top-bar **v1.10.1** site-wide; **`updates.html`** **Latest** on this patch; search modal placeholder **v1.10.1**.",
+          "**README.md** — Current version link **v1.10.1**."
+        ]
+      }
+    ]
+  },
+  {
     version: "1.10.0",
     date: "2026-03-27",
     sections: [

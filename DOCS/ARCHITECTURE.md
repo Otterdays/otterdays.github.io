@@ -1,6 +1,6 @@
 # ARCHITECTURE
 
-**Current release:** v1.10.0 (version badge in top bar → `updates.html`).
+**Current release:** v1.10.1 (version badge in top bar → `updates.html`). [AMENDED 2026-03-29]
 
 ## Site structure
 
@@ -18,7 +18,7 @@
 ├── informational-links.html  # Wikipedia / reference links + Wikipedia navbox template hub for museum context
 ├── media.html              # AI Media Gen: Video, Image, Audio
 ├── companies.html          # AI & dev tools by company (80+); collapsible sections
-├── tools.html              # CLI, IDE, Browser based builder, Browser Tools, Web builders, DevOps, Reference, etc. (A–Z within sections)
+├── tools.html              # CLI, IDE, Browser based builder, Browser Tools, Web builders, DevOps, Reference, etc. (A–Z within sections). [AMENDED 2026-03-29]: **Computer automation (agents)** — curated order (OpenClaw, Playwright, Hermes Agent, claw ecosystem); not strict A–Z.
 ├── specials.html           # Specials: Free domains, Learning, Games
 ├── skills.html             # Skills/Tools: agentic tools, MCPs, SkillBox, Skills directory
 ├── explore.html            # Explore: charts / tag viz
@@ -102,7 +102,7 @@
 - `body { display: grid; grid-template-columns: 64px 1fr; }`
 - **Sidebar:** Fixed width (64px -> 240px hover).
 - **Content:** `1fr` area (`.content`).
-- **Top Bar:** Version badge (v1.10.0 → `updates.html`), Search, Theme switcher.
+- **Top Bar:** Version badge (v1.10.1 → `updates.html`), Search, Theme switcher. [AMENDED 2026-03-29]
 
 ## Glassmorphism & Motion
 

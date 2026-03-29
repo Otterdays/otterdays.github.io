@@ -72,7 +72,7 @@ Quick use:
 ### Page-specific notes
 
 - **Companies page** (`companies.html`): Has body class `companies-page` and loads `js/companies.js`. Sections are collapsible (toggle at top center). Minimization styles live under `.companies-page` in `css/style.css`; other pages are unaffected.
-- **Tools page** (`tools.html`): CLI, IDE, and Browser Tools sections are kept **alphabetically** by card name (`.chat-link-name`). When adding a new card, insert it in A–Z order within its section. Canonical list of AI IDEs/CLIs/coding assistants: tools.html (sections IDE, CLI, Coding Assistants) plus `js/search-data.js` for search.
+- **Tools page** (`tools.html`): CLI, IDE, and Browser Tools sections are kept **alphabetically** by card name (`.chat-link-name`). When adding a new card, insert it in A–Z order within its section. [AMENDED 2026-03-29]: The **Computer automation (agents)** section (`#computer-automation`) uses **curated narrative order** (pioneer stack, Playwright, cross-vendor agents like Hermes Agent, then OpenClaw-adjacent “claw” projects) — do **not** re-sort that block to strict A–Z without updating this note. Canonical list of AI IDEs/CLIs/coding assistants: tools.html (sections IDE, CLI, Coding Assistants) plus `js/search-data.js` for search.
 
 ---
 
