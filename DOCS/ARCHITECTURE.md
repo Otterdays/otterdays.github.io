@@ -21,7 +21,7 @@
 ├── tools.html              # CLI, IDE, Browser based builder, Browser Tools, Web builders, DevOps, Reference, etc. (A–Z within sections). [AMENDED 2026-03-29]: **Computer automation (agents)** — curated order (OpenClaw, Playwright, Hermes Agent, claw ecosystem); not strict A–Z.
 ├── specials.html           # Specials: Free domains, Learning, Games
 ├── skills.html             # Skills/Tools: agentic tools, MCPs, SkillBox, Skills directory
-├── explore.html            # Explore: charts / tag viz
+├── explore.html            # Explore: premium metrics dashboard (SVG donut, animated stats, podium)
 ├── updates.html            # Site changelog timeline (js/updates-data.js)
 ├── inspirations.html       # YouTube / creator inspirations
 ├── posts.html              # Archived article links

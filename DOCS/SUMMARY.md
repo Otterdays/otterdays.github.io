@@ -6,6 +6,17 @@
 - [AMENDED 2026-03-27]: Site badge is **v1.10.0**; **Latest** on `updates.html` follows **v1.10.0** (see **[1.10.0]** in `CHANGELOG.md`).
 - [AMENDED 2026-03-29]: Site badge is **v1.10.1**; **Latest** on `updates.html` follows **v1.10.1** (see **[1.10.1]** in `CHANGELOG.md`).
 
+## Recent update — 2026-03-29 (Explore metrics redesign)
+
+- **Feature:** Major redesign of `explore.html` with premium data visualization:
+  - **SVG Donut:** Category distribution with interactive hover highlights and synchronized legend.
+  - **Animated Stats:** 8-count grid (total items, tags, avg lengths, internal/external ratios) with count-up animations.
+  - **Podium & Bars:** Top 3 internal pages displayed on a podium (🥇🥈🥉) with animated bar charts for the rest.
+  - **Link Ratio:** Animated split-bar showing internal vs external resource distribution.
+  - **Tag Cloud:** Dynamic 80-tag cloud with frequency-based sizing and count badges that reveal on hover.
+- **Logic:** `js/explore.js` refactored for URL normalization (base site grouping), SVG rendering, and `rAF` animation loops.
+- **Docs:** `DOCS/CHANGELOG.md` [Unreleased]; `DOCS/SCRATCHPAD.md`; `DOCS/ARCHITECTURE.md`; `DOCS/journal/2026-03-29.md`.
+
 ## Release v1.10.1 — 2026-03-29
 
 - **Version:** Site badge **v1.10.1** everywhere; **`updates.html`** **Latest** on **v1.10.1**; **`js/updates-data.js`** patch card (Hermes Agent + docs).

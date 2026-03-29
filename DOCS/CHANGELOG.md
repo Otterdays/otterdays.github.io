@@ -5,9 +5,11 @@ All notable changes to this project are documented in this file. Format: [Keep a
 ## [Unreleased]
 
 ### Added
+- **`explore.html`** — Premium metrics redesign: SVG-based donut chart with interactive hover highlights and legend; animated 8-count statistics grid with count-up effects; top-pages podium (🥇🥈🥉); multi-color bar charts for page and tag distributions; interactive tag cloud with frequency-based sizing and count badges.
+- **`js/explore.js`** — Complete refactor to support SVG rendering, `requestAnimationFrame` counters, and dynamic CSS bar width transitions.
+
+### Changed
 - **`DOCS/CONTENT_GUIDE.md`** — New **Trusted External Sources** block linking model catalogs, benchmark snapshots, provider status pages, and Wikipedia templates for consistent future content linking and verification.
-- **informational-links.html** — New **Trusted external sources** section with cards for OpenRouter models, Artificial Analysis, and provider status dashboards (OpenAI, Anthropic, Google Cloud, xAI).
-- **informational-links.html** — Refined that section into a **Wikipedia-first research and verification** block: model/project indexes, citation guidance, disambiguation guidance, and Wikidata resources.
 
 ## [1.10.1] - 2026-03-29
 

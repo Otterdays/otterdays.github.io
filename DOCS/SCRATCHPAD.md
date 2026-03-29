@@ -1,4 +1,14 @@
+<!-- PRESERVATION RULE: Never delete or replace content. Append or annotate only. -->
+
 # SCRATCHPAD
+
+## 2026-03-29 — explore.html: premium metrics redesign
+
+**What changed:** `explore.html` — new inline CSS: 2-col grid, card entrance animation (`exploreCardIn`), `ex-stat` icon+counter grid (4-col), SVG donut with hover highlight & interactive legend, flat slim bar charts, link-ratio split bar, top-pages podium (🥇🥈🥉), tag cloud with count badges that fade in on hover. `js/explore.js` — full rewrite: `makeStatsSummaryCard` (8 stats with animated counters), `makeDonutCard` (SVG `<circle>` segments, mouseenter/leave handlers), `makePageBreakdownCard` (podium + 15 bars), `makeLinkRatioCard`, `makeTopTagsCard` (20 tags, hue-shifted fill), `makeTagCloudCard` (80 tags, size/alpha by frequency). Bars animate width from 0% via `activateBars()` with rAF settle.
+
+**Out-of-scope observations:** None.
+
+---
 
 ## 2026-03-29 — ship v1.10.1 (badges, timeline Latest, patch card)
 
