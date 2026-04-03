@@ -2,6 +2,14 @@
 
 # SCRATCHPAD
 
+## 2026-04-03 — OpenClaw ecosystem: site map + tools.html + search + docs
+
+**What changed:** **`tools.html`** `#computer-automation` — **Playwright MCP**; claw-family and adjacent frameworks (ZeroClaw through TrustClaw); **Awesome OpenClaw alternatives**; card to **`Openclaw_variations.md`** on GitHub; meta/OG strings. **`js/search-data.js`** — parallel index rows + **OpenClaw variations (repo)** + **OpenClaw ecosystem map** (→ GitHub blob for `DOCS/OPENCLAW_ECOSYSTEM.md`). **`js/badges.js`** — `COUNTRY_MAP` keys for new card titles. **`DOCS/OPENCLAW_ECOSYSTEM.md`** (new) — table: project → `tools.html` / `companies.html` / `chats.html` / repo-only. **`Openclaw_variations.md`** — cross-ref to ecosystem map. **`DOCS/CONTENT_GUIDE.md`**, **`DOCS/ARCHITECTURE.md`**, **`about.html`** (Tools bullet). **`DOCS/CHANGELOG.md`** [Unreleased], **`DOCS/SUMMARY.md`**, **`DOCS/journal/2026-04-03.md`**, **`README.md`** structure line.
+
+**Out-of-scope observations:** No version bump (still **v1.10.1**); **`js/updates-data.js`** unchanged.
+
+---
+
 ## 2026-03-29 — explore.html: premium metrics redesign
 
 **What changed:** `explore.html` — new inline CSS: 2-col grid, card entrance animation (`exploreCardIn`), `ex-stat` icon+counter grid (4-col), SVG donut with hover highlight & interactive legend, flat slim bar charts, link-ratio split bar, top-pages podium (🥇🥈🥉), tag cloud with count badges that fade in on hover. `js/explore.js` — full rewrite: `makeStatsSummaryCard` (8 stats with animated counters), `makeDonutCard` (SVG `<circle>` segments, mouseenter/leave handlers), `makePageBreakdownCard` (podium + 15 bars), `makeLinkRatioCard`, `makeTopTagsCard` (20 tags, hue-shifted fill), `makeTagCloudCard` (80 tags, size/alpha by frequency). Bars animate width from 0% via `activateBars()` with rAF settle.

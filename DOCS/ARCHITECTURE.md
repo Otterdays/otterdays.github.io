@@ -18,7 +18,8 @@
 ├── informational-links.html  # Wikipedia / reference links + Wikipedia navbox template hub for museum context
 ├── media.html              # AI Media Gen: Video, Image, Audio
 ├── companies.html          # AI & dev tools by company (80+); collapsible sections
-├── tools.html              # CLI, IDE, Browser based builder, Browser Tools, Web builders, DevOps, Reference, etc. (A–Z within sections). [AMENDED 2026-03-29]: **Computer automation (agents)** — curated order (OpenClaw, Playwright, Hermes Agent, claw ecosystem); not strict A–Z.
+├── tools.html              # CLI, IDE, Browser based builder, Browser Tools, Web builders, DevOps, Reference, etc. (A–Z within sections). [AMENDED 2026-03-29]: **Computer automation (agents)** — curated order (OpenClaw, Playwright, Hermes Agent, claw ecosystem); not strict A–Z. [AMENDED 2026-04-03]: Extended claw alts, Playwright MCP, awesome list, link to **Openclaw_variations.md** on GitHub.
+├── Openclaw_variations.md  # Repo-only: OpenClaw alternatives, decision guide (linked from tools.html).
 ├── specials.html           # Specials: Free domains, Learning, Games
 ├── skills.html             # Skills/Tools: agentic tools, MCPs, SkillBox, Skills directory
 ├── explore.html            # Explore: premium metrics dashboard (SVG donut, animated stats, podium)
@@ -49,6 +50,7 @@
 │   ├── ARCHITECTURE.md
 │   ├── CHANGELOG.md
 │   ├── CONTENT_GUIDE.md
+│   ├── OPENCLAW_ECOSYSTEM.md  # [2026-04-03] Map: OpenClaw-related projects → site pages
 │   ├── journal/            # Dated release notes (e.g. 2026-03-21.md)
 │   ├── SUMMARY.md
 │   ├── SBOM.md

@@ -73,6 +73,7 @@ Quick use:
 
 - **Companies page** (`companies.html`): Has body class `companies-page` and loads `js/companies.js`. Sections are collapsible (toggle at top center). Minimization styles live under `.companies-page` in `css/style.css`; other pages are unaffected.
 - **Tools page** (`tools.html`): CLI, IDE, and Browser Tools sections are kept **alphabetically** by card name (`.chat-link-name`). When adding a new card, insert it in A–Z order within its section. [AMENDED 2026-03-29]: The **Computer automation (agents)** section (`#computer-automation`) uses **curated narrative order** (pioneer stack, Playwright, cross-vendor agents like Hermes Agent, then OpenClaw-adjacent “claw” projects) — do **not** re-sort that block to strict A–Z without updating this note. Canonical list of AI IDEs/CLIs/coding assistants: tools.html (sections IDE, CLI, Coding Assistants) plus `js/search-data.js` for search.
+- **OpenClaw ecosystem** [AMENDED 2026-04-03]: Long-form notes and decision guide live in repo-root **`Openclaw_variations.md`** (not built for GitHub Pages). **Site map** (project → `tools.html` / `companies.html` / `chats.html`): **`DOCS/OPENCLAW_ECOSYSTEM.md`**. When adding a new claw-class or adjacent agent: (1) card in **`#computer-automation`** (preserve narrative order), (2) row in **`DOCS/OPENCLAW_ECOSYSTEM.md`**, (3) **`js/search-data.js`**, (4) optional bullet in **`Openclaw_variations.md`**, (5) country badge in **`js/badges.js`** if the card should show a flag (match `.chat-link-name` exactly).
 
 ---
 

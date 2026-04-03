@@ -6,6 +6,13 @@
 - [AMENDED 2026-03-27]: Site badge is **v1.10.0**; **Latest** on `updates.html` follows **v1.10.0** (see **[1.10.0]** in `CHANGELOG.md`).
 - [AMENDED 2026-03-29]: Site badge is **v1.10.1**; **Latest** on `updates.html` follows **v1.10.1** (see **[1.10.1]** in `CHANGELOG.md`).
 
+## Recent update — 2026-04-03 (OpenClaw ecosystem map + extended tools cards)
+
+- **Content:** **`tools.html`** computer-automation section expanded (Playwright MCP, ZeroClaw → TrustClaw, awesome list, link to repo **`Openclaw_variations.md`**). **`js/search-data.js`** and **`js/badges.js`** updated. **`DOCS/OPENCLAW_ECOSYSTEM.md`** documents where each project appears on the static site vs repo-only notes.
+- **UX copy:** **`about.html`** Tools bullet points to **`tools.html#computer-automation`**, ecosystem map, and variations markdown on GitHub.
+- **Docs:** `DOCS/CHANGELOG.md` [Unreleased]; `DOCS/CONTENT_GUIDE.md` (OpenClaw maintainer checklist); `DOCS/ARCHITECTURE.md`; `DOCS/SCRATCHPAD.md`; `DOCS/journal/2026-04-03.md`; `README.md` project structure.
+- **Release:** No new site version badge (content/docs trail only).
+
 ## Recent update — 2026-03-29 (Explore metrics redesign)
 
 - **Feature:** Major redesign of `explore.html` with premium data visualization:

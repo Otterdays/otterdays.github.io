@@ -68,8 +68,9 @@
 ├── js/updates-data.js      # Changelog entries (v1.10.1, …)
 ├── js/updates.js           # Updates page renderer
 ├── fetch-github-repos.js   # Optional: repos → repos.md
+├── Openclaw_variations.md  # Repo-only: OpenClaw alternatives (linked from tools.html)
 ├── images/
-└── DOCS/                   # SUMMARY, CHANGELOG, journal/, …
+└── DOCS/                   # SUMMARY, CHANGELOG, OPENCLAW_ECOSYSTEM.md, journal/, …
 ```
 
 ---
