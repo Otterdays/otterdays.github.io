@@ -2,6 +2,14 @@
 
 # SCRATCHPAD
 
+## 2026-04-04 — Offline survival page (Project NOMAD)
+
+**What changed:** New **`offline-survival.html`** (featured [Project NOMAD](https://www.projectnomad.us/), GitHub install, Kiwix / Ollama / OSM / Kolibri / IIAB). Sidebar link **Offline survival** 🛡️ inserted after **Media Gen** on all main `*.html` (21 files, excl. `museum_catalog_fragment.html`). **`specials.html`** — **Offline resilience** section. **`js/search-data.js`**, **`js/explore.js`**, **`js/badges.js`**, **`sitemap.xml`**, **`README.md`**, **`DOCS/ARCHITECTURE.md`**, **`DOCS/CONTENT_GUIDE.md`**, **`DOCS/CHANGELOG.md`** [Unreleased], **`about.html`** (pages list, **22 pages**).
+
+**Out-of-scope observations:** No site version bump.
+
+---
+
 ## 2026-04-03 — OpenClaw ecosystem: site map + tools.html + search + docs
 
 **What changed:** **`tools.html`** `#computer-automation` — **Playwright MCP**; claw-family and adjacent frameworks (ZeroClaw through TrustClaw); **Awesome OpenClaw alternatives**; card to **`Openclaw_variations.md`** on GitHub; meta/OG strings. **`js/search-data.js`** — parallel index rows + **OpenClaw variations (repo)** + **OpenClaw ecosystem map** (→ GitHub blob for `DOCS/OPENCLAW_ECOSYSTEM.md`). **`js/badges.js`** — `COUNTRY_MAP` keys for new card titles. **`DOCS/OPENCLAW_ECOSYSTEM.md`** (new) — table: project → `tools.html` / `companies.html` / `chats.html` / repo-only. **`Openclaw_variations.md`** — cross-ref to ecosystem map. **`DOCS/CONTENT_GUIDE.md`**, **`DOCS/ARCHITECTURE.md`**, **`about.html`** (Tools bullet). **`DOCS/CHANGELOG.md`** [Unreleased], **`DOCS/SUMMARY.md`**, **`DOCS/journal/2026-04-03.md`**, **`README.md`** structure line.

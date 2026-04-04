@@ -6,6 +6,13 @@
 - [AMENDED 2026-03-27]: Site badge is **v1.10.0**; **Latest** on `updates.html` follows **v1.10.0** (see **[1.10.0]** in `CHANGELOG.md`).
 - [AMENDED 2026-03-29]: Site badge is **v1.10.1**; **Latest** on `updates.html` follows **v1.10.1** (see **[1.10.1]** in `CHANGELOG.md`).
 
+## Recent update — 2026-04-04 (Offline survival / Project NOMAD)
+
+- **Page:** **`offline-survival.html`** — resilient offline knowledge hub; lead [Project NOMAD](https://www.projectnomad.us/) (Wikipedia via Kiwix, Ollama, maps, Kolibri); IIAB; cross-links.
+- **Nav:** Sidebar **Offline survival** (🛡️) on all main pages; **`specials.html`** points readers to the new page.
+- **Indexing:** **`js/search-data.js`**, **`js/explore.js`**, **`sitemap.xml`**; **`js/badges.js`** for NOMAD / Kiwix / IIAB cards.
+- **Docs:** `README.md`, `DOCS/ARCHITECTURE.md`, `DOCS/CONTENT_GUIDE.md`, `DOCS/CHANGELOG.md` [Unreleased], `DOCS/SCRATCHPAD.md`, `DOCS/journal/2026-04-04.md`; **`about.html`** page count **22**.
+
 ## Recent update — 2026-04-03 (OpenClaw ecosystem map + extended tools cards)
 
 - **Content:** **`tools.html`** computer-automation section expanded (Playwright MCP, ZeroClaw → TrustClaw, awesome list, link to repo **`Openclaw_variations.md`**). **`js/search-data.js`** and **`js/badges.js`** updated. **`DOCS/OPENCLAW_ECOSYSTEM.md`** documents where each project appears on the static site vs repo-only notes.

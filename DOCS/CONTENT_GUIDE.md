@@ -46,6 +46,7 @@ Quick use:
 | `tools.html` | Developer tools | CLI, IDE, browser, tunneling, DevOps |
 | `companies.html` | Organizations/companies | Every company with products on the site |
 | `specials.html` | Free resources, learning | Domains, courses, unique offers |
+| `offline-survival.html` | Offline / resilience knowledge | Project NOMAD, Kiwix, local AI, maps, prep stacks; [AMENDED 2026-04-04] |
 | `skills.html` | Agent skills & tools | Cursor/Antigravity agentic tools, MCPs, SkillBox, Skills directory (React/Testing/Git) |
 
 ### HTML Template (link card)

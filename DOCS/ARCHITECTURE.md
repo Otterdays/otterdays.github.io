@@ -20,7 +20,8 @@
 ├── companies.html          # AI & dev tools by company (80+); collapsible sections
 ├── tools.html              # CLI, IDE, Browser based builder, Browser Tools, Web builders, DevOps, Reference, etc. (A–Z within sections). [AMENDED 2026-03-29]: **Computer automation (agents)** — curated order (OpenClaw, Playwright, Hermes Agent, claw ecosystem); not strict A–Z. [AMENDED 2026-04-03]: Extended claw alts, Playwright MCP, awesome list, link to **Openclaw_variations.md** on GitHub.
 ├── Openclaw_variations.md  # Repo-only: OpenClaw alternatives, decision guide (linked from tools.html).
-├── specials.html           # Specials: Free domains, Learning, Games
+├── offline-survival.html   # Offline resilience: Project NOMAD, Kiwix, IIAB, building blocks
+├── specials.html           # Specials: Free domains, Learning, Games; link hub to offline-survival
 ├── skills.html             # Skills/Tools: agentic tools, MCPs, SkillBox, Skills directory
 ├── explore.html            # Explore: premium metrics dashboard (SVG donut, animated stats, podium)
 ├── updates.html            # Site changelog timeline (js/updates-data.js)
@@ -69,7 +70,7 @@
 - **Collapsed (64px):** Shows icons only.
 - **Expanded (240px):** Expands on hover to show text labels.
 - **Mobile:** Fixed bottom navigation bar (icons only).
-- **Links (A–Z by label):** About, AI Chats, AI Museum, Companies, Explore, Home, Informational Links, Inspirations, Media Gen, Posts, Programs, Skills, Specials, Tools, Updates. *(Per-provider shortcuts are not in the sidebar; use museum gateway chips or Companies.)*
+- **Links (A–Z by label):** About, AI Chats, AI Museum, Companies, Explore, Home, Informational Links, Inspirations, Media Gen, **Offline survival**, Posts, Programs, Skills, Specials, Tools, Updates. *(Per-provider shortcuts are not in the sidebar; use museum gateway chips or Companies.)* [AMENDED 2026-04-04]: **Offline survival** → `offline-survival.html`.
 
 ## Page breakdown
 
@@ -81,7 +82,8 @@
 | **media**      | **Video**, **Image**, **Audio**, **Platforms**: Collapsible sections. Bento grid layout with emoji accents. |
 | **companies**  | One section per company (80+); collapsible; country badges on h2. |
 | **tools**      | **CLI** (incl. AI agents, **Fresh** / **Orbiton** TUI editors), **Browser based builder**, **IDE**, **Web builders**, **Browser Tools**, **DevOps**, **Reference** (e.g. Awesome TUIs), etc.; collapsible + A–Z filter bar. |
-| **specials**   | **Free domains**, **Learning**, **Games**: Collapsible sections. |
+| **specials**   | **Free domains**, **Learning**, **Games**: Collapsible sections; **Offline resilience** intro + card → `offline-survival.html`. |
+| **offline-survival** | **Project NOMAD** (featured), building blocks (Kiwix, Ollama, OSM, Kolibri), **Internet in a Box**; install snippet; cross-links to Tools / Specials / Museum. |
 | **skills**     | **Agentic tools**, **MCPs**, **Skills**: Collapsible sections. |
 | **informational-links** | Wikipedia & reference articles for museum models; **Wikipedia navigation templates** section (Generative AI, OpenAI, NLP, AI navbox, sister projects). |
 | **404**        | Error code, title, back link. Centered layout. |

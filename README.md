@@ -39,6 +39,7 @@
 | `arcee.html` | Arcee AI — open models, MergeKit, Fusion, Caller |
 | `informational-links.html` | Wikipedia / reference links for museum models |
 | `media.html` | AI media gen (video/image tools) |
+| `offline-survival.html` | Offline resilience — Project NOMAD, Kiwix, local AI, maps, education |
 | `companies.html` | AI & dev tools by company (80+ sections) |
 | `tools.html` | Developer tools (CLI, browser builders, IDE, Reference, MCP, etc.) |
 | `specials.html` | Free & special services (e.g. free domains) |

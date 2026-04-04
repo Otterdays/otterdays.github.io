@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Offline survival | Otterdays</title>
+
+  <meta name="description"
+    content="Resilient offline knowledge: Project NOMAD, Wikipedia without internet, local AI, maps, and education — for emergencies, travel, and off-grid life.">
+  <meta name="keywords"
+    content="offline survival, Project NOMAD, prepper tech, Kiwix, Ollama, OpenStreetMap, Internet in a Box, emergency preparedness, off-grid">
+  <meta name="author" content="Ryan Otterdays">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://otterdays.github.io/offline-survival.html">
+  <meta property="og:title" content="Offline survival | Otterdays">
+  <meta property="og:description"
+    content="Knowledge that stays available without the internet — led by Project NOMAD (Wikipedia, AI, maps, education on your hardware).">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicon.svg">
+  <link rel="canonical" href="https://otterdays.github.io/offline-survival.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-theme="dark">
+  <a href="#main" class="skip-link">Skip to content</a>
+  <nav class="sidebar">
+    <a href="about.html" title="About">
+      <span class="sidebar-icon">👤</span>
+      <span class="sidebar-text">About</span>
+    </a>
+    <a href="chats.html" title="AI Chats">
+      <span class="sidebar-icon">💬</span>
+      <span class="sidebar-text">AI Chats</span>
+    </a>
+    <a href="museum.html" title="AI Museum">
+      <span class="sidebar-icon">🏛️</span>
+      <span class="sidebar-text">AI Museum</span>
+    </a>
+    <a href="companies.html" title="Companies">
+      <span class="sidebar-icon">🏢</span>
+      <span class="sidebar-text">Companies</span>
+    </a>
+    <a href="explore.html" title="Explore Data">
+      <span class="sidebar-icon">📊</span>
+      <span class="sidebar-text">Explore</span>
+    </a>
+    <a href="index.html" title="Home">
+      <span class="sidebar-icon">🏠</span>
+      <span class="sidebar-text">Home</span>
+    </a>
+    <a href="informational-links.html" title="Informational Links">
+      <span class="sidebar-icon">🔗</span>
+      <span class="sidebar-text">Informational Links</span>
+    </a>
+    <a href="inspirations.html" title="Inspirations">
+      <span class="sidebar-icon">✨</span>
+      <span class="sidebar-text">Inspirations</span>
+    </a>
+    <a href="media.html" title="Media Gen">
+      <span class="sidebar-icon">🎨</span>
+      <span class="sidebar-text">Media Gen</span>
+    </a>
+    <a href="offline-survival.html" class="active" title="Offline survival">
+      <span class="sidebar-icon">🛡️</span>
+      <span class="sidebar-text">Offline survival</span>
+    </a>
+    <a href="posts.html" title="Posts">
+      <span class="sidebar-icon">📰</span>
+      <span class="sidebar-text">Posts</span>
+    </a>
+    <a href="programs.html" title="Programs">
+      <span class="sidebar-icon">🎮</span>
+      <span class="sidebar-text">Programs</span>
+    </a>
+    <a href="skills.html" title="Skills">
+      <span class="sidebar-icon">🧠</span>
+      <span class="sidebar-text">Skills</span>
+    </a>
+    <a href="specials.html" title="Specials">
+      <span class="sidebar-icon">⭐</span>
+      <span class="sidebar-text">Specials</span>
+    </a>
+    <a href="tools.html" title="Tools">
+      <span class="sidebar-icon">🛠️</span>
+      <span class="sidebar-text">Tools</span>
+    </a>
+    <a href="updates.html" title="Updates">
+      <span class="sidebar-icon">📋</span>
+      <span class="sidebar-text">Updates</span>
+    </a>
+  </nav>
+
+  <main class="content" id="main">
+    <div class="top-bar">
+      <a href="updates.html" class="version-badge" title="Version 1.10.1 – Click for details">
+        <span class="version-badge-icon">🎮</span>
+        <span class="version-badge-text">v1.10.1</span>
+      </a>
+
+      <button type="button" class="search-trigger" id="search-trigger" aria-label="Search site">
+        <span class="search-trigger-icon" aria-hidden="true">🔍</span>
+        <span class="search-trigger-text">Search</span>
+        <span class="search-trigger-kbd"><kbd>⌘</kbd><kbd>K</kbd></span>
+      </button>
+
+      <div class="theme-switcher">
+        <button type="button" class="theme-btn" id="theme-btn" aria-label="Change theme" aria-expanded="false"
+          aria-haspopup="true">
+          <span class="theme-btn-icon" aria-hidden="true">◐</span>
+          <span class="theme-btn-label" id="theme-label">Dark</span>
+          <span class="theme-btn-arrow">▼</span>
+        </button>
+        <div class="theme-dropdown" id="theme-dropdown" role="menu" hidden>
+        </div>
+      </div>
+    </div>
+
+    <header class="profile-header">
+      <h1 class="profile-title">Offline survival</h1>
+      <p class="profile-handle">When the network drops, the library shouldn&rsquo;t &mdash; Wikipedia, local AI, maps, and learning on <em>your</em> hardware</p>
+    </header>
+
+    <section class="profile-section stagger-1">
+      <h2>Why this page</h2>
+      <p>This is a small curated corner for <strong>resilient knowledge</strong>: tools that keep reference material,
+        assistants, and maps usable without relying on live internet. Think emergency preparedness, van life, cabins,
+        sailboats, or anywhere connectivity is expensive or unreliable. Nothing here is financial or medical advice;
+        verify critical procedures with official sources.</p>
+    </section>
+
+    <section class="profile-section stagger-2" id="project-nomad">
+      <h2>Featured: Project NOMAD</h2>
+      <p><strong>Project NOMAD</strong> (<em>Node for Offline Media, Archives, and Data</em>) is a free, open-source
+        offline server from <a href="https://www.crosstalksolutions.com/" rel="noopener noreferrer" target="_blank">Crosstalk Solutions</a>.
+        Install on a PC you control, download the content packs you want, and run Wikipedia-scale knowledge, local LLMs
+        via <strong>Ollama</strong>, <strong>OpenStreetMap</strong> offline maps, and education (e.g. Khan Academy
+        style content via <strong>Kolibri</strong>) &mdash; all without phoning home. Licensed <strong>Apache 2.0</strong>.</p>
+      <div class="chat-links">
+        <a href="https://www.projectnomad.us/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Project NOMAD</span>
+          <span class="chat-link-desc">Official site: &ldquo;Knowledge that never goes offline&rdquo; &mdash; features, hardware, press</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://github.com/Crosstalk-Solutions/project-nomad" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Project NOMAD (GitHub)</span>
+          <span class="chat-link-desc">Source, install script, issues &mdash; Crosstalk-Solutions/project-nomad</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+      </div>
+      <p class="profile-handle" style="margin-top: 1rem;">Quick install (Ubuntu / Debian, from project docs):</p>
+      <pre style="margin-top: 0.75rem; padding: 1rem 1.25rem; overflow-x: auto; font-size: 0.85rem; line-height: 1.45; background: var(--glass); border: 1px solid var(--border); border-radius: 12px;"><code>curl -fsSL https://raw.githubusercontent.com/Crosstalk-Solutions/project-nomad/main/install/install_nomad.sh -o install_nomad.sh
+sudo bash install_nomad.sh</code></pre>
+    </section>
+
+    <section class="profile-section stagger-3">
+      <h2>Building blocks (also inside NOMAD)</h2>
+      <p>These projects are the usual engines behind offline stacks; NOMAD bundles several of them with a single dashboard.</p>
+      <div class="chat-links">
+        <a href="https://www.kiwix.org/en/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Kiwix</span>
+          <span class="chat-link-desc">Offline Wikipedia, Gutenberg, TED, and ZIM content packs &mdash; read without the web</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://ollama.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Ollama</span>
+          <span class="chat-link-desc">Run LLMs locally; NOMAD uses this for private, air-gapped AI chat</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://www.openstreetmap.org/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">OpenStreetMap</span>
+          <span class="chat-link-desc">Community maps; offline tiles power navigation without cell service</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://learningequality.org/kolibri/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Kolibri</span>
+          <span class="chat-link-desc">Learning Equality: offline-first education platform (used in NOMAD&rsquo;s education layer)</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="profile-section stagger-4">
+      <h2>Related offline stacks</h2>
+      <div class="chat-links">
+        <a href="https://internet-in-a-box.org/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Internet in a Box</span>
+          <span class="chat-link-desc">Lightweight Wi‑Fi knowledge box; good when you want a Pi-class footprint (NOMAD targets beefier PCs + GPU AI)</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="profile-section stagger-5">
+      <h2>Also on this site</h2>
+      <p><a href="tools.html">Tools</a> lists <strong>Ollama</strong> and other local-LLM helpers. <a href="specials.html">Specials</a> has free learning and hosting picks. For frontier-model context (not offline), see the <a href="museum.html">AI Museum</a>.</p>
+    </section>
+
+    <footer class="site-footer">
+      <div class="site-stats">
+        <div class="stat-item" title="Focus"><span class="stat-icon">🛡️</span> Offline-first</div>
+        <div class="stat-item" title="Lead project"><span class="stat-icon">📦</span> Project NOMAD</div>
+      </div>
+      <div class="site-copy">
+        &copy; 2026 Ryan Otterdays. Curated links only &mdash; see each project for licenses and safety.
+      </div>
+    </footer>
+  </main>
+
+  <button type="button" class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top">↑</button>
+
+  <div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Site search" hidden>
+    <div class="search-modal" id="search-modal">
+      <div class="search-header">
+        <span class="search-icon">🔍</span>
+        <input type="text" class="search-input" id="search-input" placeholder="Search projects, tools, companies..."
+          autocomplete="off" autocapitalize="off" spellcheck="false">
+        <button type="button" class="search-close" id="search-close" aria-label="Close search">ESC</button>
+      </div>
+      <div class="search-meta">
+        <span class="search-count" id="search-count"></span>
+        <div class="search-hints">
+          <span class="search-hint"><kbd>↑↓</kbd> Navigate</span>
+          <span class="search-hint"><kbd>↵</kbd> Select</span>
+          <span class="search-hint"><kbd>ESC</kbd> Close</span>
+        </div>
+      </div>
+      <div class="search-results" id="search-results"></div>
+    </div>
+  </div>
+
+  <script src="js/badges.js" defer></script>
+  <script src="js/theme.js"></script>
+  <script src="js/qol.js"></script>
+  <script src="js/search-data.js" defer></script>
+  <script src="js/search.js" defer></script>
+</body>
+
+</html>

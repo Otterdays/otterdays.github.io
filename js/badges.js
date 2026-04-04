@@ -91,6 +91,7 @@
         'SafeClaw': USA, 'TinyClaw': USA, 'HermitClaw': USA, 'zclaw': USA, 'MimiClaw': USA,
         'OpenFang': USA, 'SuperAGI': IN, 'Anything LLM': USA, 'n8n': DE, 'TrustClaw': USA,
         'Awesome OpenClaw alternatives': USA, 'OpenClaw variations (repo notes)': USA,
+        'Project NOMAD': USA, 'Kiwix': CH, 'Internet in a Box': USA,
         'Open WebUI': USA, 'Brave Leo': USA, 'Dia Browser': USA, 'Abacus AI Deep Agent': USA,
         'Base44': USA, 'LLMChat': USA, 'Localtunnel': USA, 'reTunnel': USA,
         'Tunnelmole': UK, 'itch.io (game dev)': USA, 'Algolia': FR, 'Discord Developers': USA,

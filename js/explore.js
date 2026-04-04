@@ -50,6 +50,7 @@
     'posts.html':               'Posts',
     'informational-links.html': 'Info Links',
     'museum.html':              'AI Museum',
+    'offline-survival.html':    'Offline survival',
     'google-gemini.html':       'Gemini',
     'openai.html':              'OpenAI',
     'anthropic.html':           'Anthropic',

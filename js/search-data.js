@@ -418,6 +418,9 @@ var SEARCH_DATA = [
     { title: "PlayHop", desc: "Free browser games platform.", category: "special", tags: ["Games", "Browser", "Free"], url: "specials.html" },
     { title: "Newgrounds", desc: "Classic portal: games, art, audio; Flash legacy, indie dev.", category: "special", tags: ["Games", "Indie", "Portal"], url: "specials.html" },
     { title: "Yandex Games", desc: "Yandex game portal: play in browser.", category: "special", tags: ["Games", "Browser", "Yandex"], url: "specials.html" },
+    { title: "Project NOMAD", desc: "Free Apache-2.0 offline server: Wikipedia (Kiwix), Ollama AI, OpenStreetMap, Kolibri education on your PC.", category: "special", tags: ["Offline", "NOMAD", "Prep", "Ollama", "Kiwix", "Survival"], url: "offline-survival.html" },
+    { title: "Kiwix", desc: "Offline Wikipedia and ZIM libraries; core of many resilience knowledge stacks.", category: "special", tags: ["Offline", "Wikipedia", "Kiwix", "ZIM"], url: "offline-survival.html" },
+    { title: "Internet in a Box", desc: "Lightweight Wi‑Fi knowledge box; Pi-class offline library (complements heavier NOMAD rigs).", category: "special", tags: ["Offline", "IIAB", "Raspberry Pi", "Prep"], url: "offline-survival.html" },
 
     // === PAGES ===
     { title: "Informational Links", desc: "Wikipedia-first reference hub for museum model lines, naming/disambiguation, citations, and Wikidata lookups.", category: "page", tags: ["Wikipedia", "AI", "Museum", "Links", "HKChat", "Templates", "Wikidata", "Disambiguation", "Citations"], url: "informational-links.html" },
@@ -432,6 +435,7 @@ var SEARCH_DATA = [
     { title: "Programs", desc: "Browse 60+ projects including games, tools, and AI projects.", category: "page", tags: ["Projects", "Portfolio", "Code"], url: "programs.html" },
     { title: "AI Chats", desc: "Links to AI chat platforms and assistants.", category: "page", tags: ["AI", "Chat", "Assistants"], url: "chats.html" },
     { title: "Media Gen", desc: "AI media generation tools for video, image, and audio.", category: "page", tags: ["Media", "Generation", "AI"], url: "media.html" },
+    { title: "Offline survival", desc: "Resilient knowledge without internet — Project NOMAD, Kiwix, Ollama, maps, education, IIAB.", category: "page", tags: ["Offline", "Survival", "Prep", "NOMAD", "Emergency"], url: "offline-survival.html" },
     { title: "Companies", desc: "78+ AI and tech companies directory.", category: "page", tags: ["Companies", "Directory", "AI"], url: "companies.html" },
     { title: "Tools", desc: "Developer tools including CLI, IDE, and browser tools.", category: "page", tags: ["Tools", "Developer", "IDE"], url: "tools.html" },
     { title: "Specials", desc: "Free resources, domains, learning, and games (itch.io, Armor Games, PlayHop, Newgrounds, Yandex Games).", category: "page", tags: ["Free", "Resources", "Learning", "Games"], url: "specials.html" },
