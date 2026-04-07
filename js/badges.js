@@ -21,6 +21,7 @@
     var CH = { flag: '\uD83C\uDDE8\uD83C\uDDF4', label: 'Switzerland' };
     var IN = { flag: '\uD83C\uDDEE\uD83C\uDDF3', label: 'India' };
     var NO = { flag: '\uD83C\uDDF3\uD83C\uDDF4', label: 'Norway' };
+    var AT = { flag: '\uD83C\uDDE6\uD83C\uDDF9', label: 'Austria' };
 
     var COUNTRY_MAP = {
         'Google': USA, 'OpenAI': USA, 'Anthropic': USA, 'Meta': USA, 'Microsoft': USA, 'xAI': USA,
@@ -74,12 +75,14 @@
         'NotebookLM': USA, 'Opal': USA, 'Pomelli': USA, 'Google Antigravity': USA,
         'Google AI Studio': USA, 'Google Flow': USA, 'Firebase Studio': USA,
         /* OpenAI / Microsoft (US) */
-        'OpenAI Codex': USA, 'OpenAI Codex CLI': USA,
+        'OpenAI Codex': USA, 'OpenAI Codex (ChatGPT)': USA, 'OpenAI Codex CLI': USA,
         /* Other products by company */
         'Zencoder': USA, 'Augment Code': USA, 'Augment CLI': USA, 'Bind AI': USA, 'Block': USA, 'Chad IDE': USA,
         'Clad Labs': USA, 'Goose': USA,
         'IBM Project Bob': USA, 'IntelliJ IDEA': { flag: '\uD83C\uDDE8\uD83C\uDDFF', label: 'Czech Republic' },
-        'Windsurf': USA, 'Z Code': USA, 'cmux': USA, 'Ghostty': USA, 'Fresh': USA, 'Orbiton': NO, 'Manaflow': USA, 'Amazon Q Developer': USA, 'CodeGPT': USA, 'Sourcegraph Cody': USA,
+        'Windsurf': USA, 'Z Code': USA, 'cmux': USA, 'Ghostty': USA, 'Fresh': USA, 'Orbiton': NO, 'Pi coding agent': AT,
+        'Visual Studio Code': USA, 'Void': USA,
+        'Manaflow': USA, 'Amazon Q Developer': USA, 'CodeGPT': USA, 'Sourcegraph Cody': USA,
         'Cline': USA, 'Cline CLI': USA, 'CLIProxyAPI': USA, 'Context7': USA, 'Firecrawl': USA, 'Glama MCP': USA,
         'Playwright MCP': USA, 'Smithery': USA, 'Tavily': USA, 'Daytona': USA, 'e2b': USA,
         'Hostinger Horizons': { flag: '\uD83C\uDDF1\uD83C\uDDF9', label: 'Lithuania' },
