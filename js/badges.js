@@ -22,6 +22,8 @@
     var IN = { flag: '\uD83C\uDDEE\uD83C\uDDF3', label: 'India' };
     var NO = { flag: '\uD83C\uDDF3\uD83C\uDDF4', label: 'Norway' };
     var AT = { flag: '\uD83C\uDDE6\uD83C\uDDF9', label: 'Austria' };
+    var BE = { flag: '\uD83C\uDDE7\uD83C\uDDEA', label: 'Belgium' };
+    var NL = { flag: '\uD83C\uDDF3\uD83C\uDDF1', label: 'Netherlands' };
 
     var COUNTRY_MAP = {
         'Google': USA, 'OpenAI': USA, 'Anthropic': USA, 'Meta': USA, 'Microsoft': USA, 'xAI': USA,
@@ -80,6 +82,11 @@
         'Zencoder': USA, 'Augment Code': USA, 'Augment CLI': USA, 'Bind AI': USA, 'Block': USA, 'Chad IDE': USA,
         'Clad Labs': USA, 'Goose': USA,
         'IBM Project Bob': USA, 'IntelliJ IDEA': { flag: '\uD83C\uDDE8\uD83C\uDDFF', label: 'Czech Republic' },
+        'JetBrains Fleet': { flag: '\uD83C\uDDE8\uD83C\uDDFF', label: 'Czech Republic' }, 'JetBrains AI': { flag: '\uD83C\uDDE8\uD83C\uDDFF', label: 'Czech Republic' },
+        'PyCharm': { flag: '\uD83C\uDDE8\uD83C\uDDFF', label: 'Czech Republic' }, 'WebStorm': { flag: '\uD83C\uDDE8\uD83C\uDDFF', label: 'Czech Republic' },
+        'Rider': { flag: '\uD83C\uDDE8\uD83C\uDDFF', label: 'Czech Republic' },
+        'Visual Studio': USA, 'Xcode': USA, 'Eclipse IDE': BE,
+        'GitHub Codespaces': USA, 'Gitpod': DE, 'CodeSandbox': NL, 'Supermaven': USA,
         'Windsurf': USA, 'Z Code': USA, 'cmux': USA, 'Ghostty': USA, 'Fresh': USA, 'Orbiton': NO, 'Pi coding agent': AT,
         'Visual Studio Code': USA, 'Void': USA,
         'Manaflow': USA, 'Amazon Q Developer': USA, 'CodeGPT': USA, 'Sourcegraph Cody': USA,
