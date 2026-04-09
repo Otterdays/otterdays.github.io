@@ -8,7 +8,7 @@
 
   <!-- SEO Meta Tags -->
   <meta name="description"
-    content="CLI, IDE, and browser tools: Cursor, VS Code, Visual Studio, JetBrains (Fleet, PyCharm, WebStorm, Rider), Xcode, Eclipse, Codespaces, Gitpod, OpenAI Codex, Pi agent, Warp, Gemini CLI, OpenClaw-class agents, Docker, Wispr Flow, Claude.">
+    content="CLI, IDE, and browser tools: Cursor, VS Code, Visual Studio, JetBrains (Fleet, PyCharm, WebStorm, Rider), Xcode, Eclipse, Codespaces, Gitpod, ChatGPT Codex (chatgpt.com/codex), Pi agent, Warp, Gemini CLI, OpenClaw-class agents, Docker, Wispr Flow, Claude.">
   <meta name="keywords"
     content="developer tools, CLI, IDE, Cursor, Visual Studio Code, Void, Codex, ChatGPT, Pi coding agent, Warp, Gemini CLI, Bun, Vite, Svelte, Docker, SpacetimeDB, vinext, OpenCode Desktop, Wispr Flow, coding">
   <meta name="author" content="Ryan Otterdays">
@@ -514,9 +514,8 @@
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://www.augmentcode.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">Augment CLI</span>
-          <span class="chat-link-desc">AI-powered coding in the terminal; same Context Engine as IDE; #1 on SWE-Bench
-            Pro</span>
+          <span class="chat-link-name">Augment</span>
+          <span class="chat-link-desc">Context Engine: terminal CLI, IDE agents, code review; #1 on SWE-Bench Pro</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://ampcode.com/install" rel="noopener noreferrer" target="_blank" class="chat-link-card">
@@ -614,6 +613,16 @@
           <span class="chat-link-desc">OpenAI&rsquo;s AI-assisted terminal with slash commands</span>
           <span class="chat-link-arrow">→</span>
         </a>
+        <a href="https://developers.openai.com/codex" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">OpenAI Codex (developer hub)</span>
+          <span class="chat-link-desc">Official Codex docs: setup, CLI, SDK, and how Codex fits with ChatGPT</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://chatgpt.com/codex" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">ChatGPT Codex</span>
+          <span class="chat-link-desc">Start here: official Codex landing (download Windows/macOS app, sign in, or use in browser); worktrees, Skills, Automations — same entry as IDE list</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
         <a href="https://openclaw.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">OpenClaw</span>
           <span class="chat-link-desc">Self-hosted personal AI agent; chat apps (Slack, Discord, Telegram, WhatsApp, etc.),
@@ -632,9 +641,13 @@
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://shittycodingagent.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">Pi coding agent</span>
-          <span class="chat-link-desc">Minimal terminal coding harness (Mario Zechner); 15+ providers, tree sessions, TypeScript extensions &amp; skills;
-            <code>npm install -g @mariozechner/pi-coding-agent</code> — landing at shittycodingagent.ai</span>
+          <span class="chat-link-name">Pi</span>
+          <span class="chat-link-desc">Minimal terminal coding harness (Mario Zechner, MIT / Earendil): 15+ providers, tree-structured sessions, TypeScript extensions, skills &amp; pi packages; interactive, print/JSON, RPC, SDK modes; marketing site shittycodingagent.ai (also known as pi.dev)</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://www.npmjs.com/package/@mariozechner/pi-coding-agent" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Pi coding agent (npm)</span>
+          <span class="chat-link-desc">Official package: <code>npm install -g @mariozechner/pi-coding-agent</code> — versions, readme, repository link</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://qoder.com/cli" rel="noopener noreferrer" target="_blank" class="chat-link-card">
@@ -675,7 +688,7 @@
       </div>
     </section>
     <section class="profile-section">
-      <h2>Coding Assistants</h2>
+      <h2 id="coding-assistants">Coding Assistants</h2>
       <p>AI plugins and extensions for your existing IDE.</p>
       <div class="chat-links">
         <a href="https://aws.amazon.com/q/developer/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
@@ -826,7 +839,7 @@
       </div>
     </section>
     <section class="profile-section">
-      <h2>Browser based builder</h2>
+      <h2 id="browser-based-builder">Browser based builder</h2>
       <p><strong>Build and ship in the browser</strong> — no install: AI workspaces, autonomous engineers, and product
         builders that run in your tab (or a hosted cloud IDE).</p>
       <div class="chat-links">
@@ -880,16 +893,13 @@
       <p><strong>IDE = Integrated Development Environment.</strong> Think of it as Microsoft Word, but for writing code
         instead of documents. These are full programs you install on your computer. Many now have AI assistants built in
         that can suggest code, fix errors, or even write entire functions for you.</p>
+      <p><strong>Cloud &amp; browser IDEs</strong> (GitHub Codespaces, Gitpod, Replit, CodeSandbox, and similar) are listed
+        under <a href="#browser-based-builder">Browser based builder</a> above, with AI-native and agentic editors in this
+        section and under <a href="#coding-assistants">Coding Assistants</a>.</p>
       <div class="chat-links">
         <a href="https://developer.android.com/studio" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Android Studio</span>
           <span class="chat-link-desc">Official Android IDE; Gemini in Android Studio, Cloud</span>
-          <span class="chat-link-arrow">→</span>
-        </a>
-        <a href="https://www.augmentcode.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">Augment Code</span>
-          <span class="chat-link-desc">Context Engine for AI coding; IDE agents, code review, CLI; #1 on SWE-Bench
-            Pro</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://app.getbind.co/ide" rel="noopener noreferrer" target="_blank" class="chat-link-card">
@@ -929,6 +939,21 @@
           <span class="chat-link-desc">Lightweight polyglot editor &amp; IDE from JetBrains; AI Assistant, remote &amp; Docker dev, collaboration, plugins</span>
           <span class="chat-link-arrow">→</span>
         </a>
+        <a href="https://www.jetbrains.com/go/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">GoLand</span>
+          <span class="chat-link-desc">JetBrains Go IDE; AI Assistant, Junie agent, profiling, tests, Docker</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://www.jetbrains.com/rust/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">RustRover</span>
+          <span class="chat-link-desc">JetBrains Rust IDE; AI Assistant, Junie, Cargo, embedded tooling</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://www.jetbrains.com/clion/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">CLion</span>
+          <span class="chat-link-desc">JetBrains C/C++ IDE; AI Assistant, Junie, CMake, embedded &amp; remote debug</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
         <a href="https://antigravity.google/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Google Antigravity</span>
           <span class="chat-link-desc">Google&rsquo;s agentic IDE; autonomous agents, editor/terminal/browser</span>
@@ -956,9 +981,8 @@
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://chatgpt.com/codex" rel="noopener noreferrer" target="_blank" class="chat-link-card">
-          <span class="chat-link-name">OpenAI Codex (ChatGPT)</span>
-          <span class="chat-link-desc">ChatGPT-powered coding agent: desktop command center, parallel worktrees &amp; cloud envs, Skills, Automations,
-            PR review; same ChatGPT account in app, VS Code-style editor, and terminal — see Codex CLI on this page &amp; developers.openai.com/codex</span>
+          <span class="chat-link-name">ChatGPT Codex</span>
+          <span class="chat-link-desc">Official landing at <strong>chatgpt.com/codex</strong> &mdash; coding agent powered by ChatGPT; desktop download (e.g. Windows), in-browser product, threads &amp; Skills. Native app details: <strong>developers.openai.com/codex/app</strong>. Pairs with <strong>Codex CLI</strong> and <strong>OpenAI Codex (developer hub)</strong> in the CLI section</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://opencode.ai/download" rel="noopener noreferrer" target="_blank" class="chat-link-card">

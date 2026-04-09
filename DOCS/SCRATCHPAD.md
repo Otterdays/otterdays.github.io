@@ -2,6 +2,22 @@
 
 # SCRATCHPAD
 
+## 2026-04-03 — tools.html: Augment → CLI only
+
+**What changed:** **`tools.html`** — **Augment** (augmentcode.com) listed only under **CLI**; removed duplicate **Augment Code** from IDE. **`js/search-data.js`** — one **Augment** row; **`js/badges.js`** — `Augment` key. **`DOCS/CHANGELOG.md`** [Unreleased] Changed.
+
+**Out-of-scope observations:** None.
+
+---
+
+## 2026-04-04 — tools.html: Pi, ChatGPT Codex, JetBrains IDEs
+
+**What changed:** **`tools.html`** — **Pi** + **Pi coding agent (npm)**; **OpenAI Codex (developer hub)** + **ChatGPT Codex** in CLI; IDE: **ChatGPT Codex** only (chatgpt.com/codex landing; developers.openai.com/codex/app in copy); anchors `#browser-based-builder`, `#coding-assistants`; IDE blurb → cloud IDEs; **GoLand**, **RustRover**, **CLion**. **`js/search-data.js`**, **`js/badges.js`**. **`DOCS/CHANGELOG.md`** [Unreleased].
+
+**Out-of-scope observations:** None.
+
+---
+
 ## 2026-04-04 — Offline survival page (Project NOMAD)
 
 **What changed:** New **`offline-survival.html`** (featured [Project NOMAD](https://www.projectnomad.us/), GitHub install, Kiwix / Ollama / OSM / Kolibri / IIAB). Sidebar link **Offline survival** 🛡️ inserted after **Media Gen** on all main `*.html` (21 files, excl. `museum_catalog_fragment.html`). **`specials.html`** — **Offline resilience** section. **`js/search-data.js`**, **`js/explore.js`**, **`js/badges.js`**, **`sitemap.xml`**, **`README.md`**, **`DOCS/ARCHITECTURE.md`**, **`DOCS/CONTENT_GUIDE.md`**, **`DOCS/CHANGELOG.md`** [Unreleased], **`about.html`** (pages list, **22 pages**).
@@ -329,7 +345,7 @@
 
 ## 2026-03-21 — Bind AI (getbind.co)
 
-**What changed:** [Bind AI](https://www.getbind.co/) — `tools.html` IDE (A–Z after Augment Code); `companies.html` section; `search-data.js`; `badges.js`.
+**What changed:** [Bind AI](https://www.getbind.co/) — `tools.html` IDE (A–Z after Augment Code); `companies.html` section; `search-data.js`; `badges.js`. [AMENDED 2026-04-03]: **Augment** removed from IDE list; Bind AI now follows **Android Studio** A–Z.
 
 ---
 
