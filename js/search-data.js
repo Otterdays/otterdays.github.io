@@ -470,5 +470,5 @@ var SEARCH_DATA = [
     { title: "Posts", desc: "Archived articles and links I want to keep — AI, tech, and beyond.", category: "page", tags: ["Posts", "Archive", "Articles"], url: "posts.html" },
     { title: "Brackeys", desc: "Game dev tutorials on Godot, Unity, 3D, VFX; 1.92M subs, 470 videos; free assets.", category: "page", tags: ["Game Dev", "Tutorials", "Godot", "Unity", "YouTube"], url: "inspirations.html" },
     { title: "The PrimeTime", desc: "ThePrimeagen: software engineering, Vim, Rust, architecture, dev culture; YouTube @ThePrimeTimeagen.", category: "page", tags: ["YouTube", "Vim", "Rust", "Streaming", "ThePrimeagen"], url: "inspirations.html" },
-    { title: "Dev tips", desc: "Trigger mobile view in Chrome: F12 (or Cmd+Option+I on Mac), then Toggle Device Toolbar.", category: "page", tags: ["Dev", "Chrome", "F12", "Mobile", "Debug"], url: "about.html" }
+    { title: "Samtime", desc: "Sam Tucker: Australian YouTuber; tech satire, parodies of Apple/Google/Samsung, comedic skits; @SAMTIME.", category: "page", tags: ["Inspirations", "Samtime", "YouTube", "Satire", "Australian"], url: "inspirations.html" }
 ];

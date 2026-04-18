@@ -12,6 +12,7 @@
 - **Nav:** Sidebar **Offline survival** (🛡️) on all main pages; **`specials.html`** points readers to the new page.
 - **Indexing:** **`js/search-data.js`**, **`js/explore.js`**, **`sitemap.xml`**; **`js/badges.js`** for NOMAD / Kiwix / IIAB cards.
 - **Docs:** `README.md`, `DOCS/ARCHITECTURE.md`, `DOCS/CONTENT_GUIDE.md`, `DOCS/CHANGELOG.md` [Unreleased], `DOCS/SCRATCHPAD.md`, `DOCS/journal/2026-04-04.md`; **`about.html`** page count **22**.
+- **Inspirations:** Added **Samtime** to **`inspirations.html`**, search-data, and `about.html`.
 
 ## Recent update — 2026-04-03 (OpenClaw ecosystem map + extended tools cards)
 

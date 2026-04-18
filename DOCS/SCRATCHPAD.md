@@ -2,6 +2,22 @@
 
 # SCRATCHPAD
 
+## 2026-04-18 — Samtime (Inspiration)
+
+**What changed:** **`inspirations.html`** — added **Samtime** card (tech satire/YouTube); **`js/search-data.js`** — indexed Samtime; **`about.html`** — updated inspirations list/blurb. **`DOCS/CHANGELOG.md`** [Unreleased]; **`DOCS/SUMMARY.md`**.
+
+**Out-of-scope observations:** None.
+
+---
+
+## 2026-04-18 — Git sync
+
+**What changed:** Performed `git pull`. Repository was already up to date.
+
+**Out-of-scope observations:** None.
+
+---
+
 ## 2026-04-03 — tools.html: Augment → CLI only
 
 **What changed:** **`tools.html`** — **Augment** (augmentcode.com) listed only under **CLI**; removed duplicate **Augment Code** from IDE. **`js/search-data.js`** — one **Augment** row; **`js/badges.js`** — `Augment` key. **`DOCS/CHANGELOG.md`** [Unreleased] Changed.
