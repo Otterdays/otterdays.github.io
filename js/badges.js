@@ -14,6 +14,7 @@
     var CN = { flag: '\uD83C\uDDE8\uD83C\uDDF3', label: 'China' };
     var CA = { flag: '\uD83C\uDDE8\uD83C\uDDE6', label: 'Canada' };
     var IL = { flag: '\uD83C\uDDEE\uD83C\uDDF1', label: 'Israel' };
+    var IT = { flag: '\uD83C\uDDEE\uD83C\uDDF9', label: 'Italy' };
     var UAE = { flag: '\uD83C\uDDE6\uD83C\uDDEA', label: 'UAE' };
     var AU = { flag: '\uD83C\uDDE6\uD83C\uDDFA', label: 'Australia' };
     var SG = { flag: '\uD83C\uDDF8\uD83C\uDDEC', label: 'Singapore' };
@@ -66,7 +67,7 @@
         'Project Mariner': USA, 'Stitch': USA, 'Vertex AI': USA, 'API Platform': USA,
         'ChatGPT Images': USA, 'Codex CLI': USA, 'Codex IDE': USA, 'Sora': USA, 'API Console': USA,
         'Claude (desktop & mobile)': USA, 'Model Context Protocol (MCP)': USA,
-        'Llama': USA, 'Manus': USA, 'Meta AI': USA, 'Azure OpenAI': USA, 'Copilot': USA,
+        'Llama': USA, 'Manus': USA, 'Mobbin': UK, 'Meta AI': USA, 'Azure OpenAI': USA, 'Copilot': USA,
         'GitHub Copilot': USA, 'Grok': USA, 'Le Chat': FR, 'Mistral Vibe': FR, 'Amazon Nova': USA,
         'AWS Bedrock': USA, 'Qwen': CN, 'Qwen Code': CN, 'DeepSeek Chat': CN, 'Kimi': CN,
         'Kimi Code CLI': CN, 'IBM Granite': USA, 'Project Bob': USA, 'Z.ai': CN, 'Z.ai GLM Coding Plan': CN, 'GLM Coding Plan': CN, 'Poe': USA,
@@ -81,7 +82,8 @@
         'OpenAI Codex (developer hub)': USA, 'ChatGPT Codex': USA,
         'Pi': AT, 'Pi coding agent (npm)': AT,
         /* Other products by company */
-        'Zencoder': USA, 'Augment': USA, 'Bind AI': USA, 'Block': USA, 'Chad IDE': USA,
+        'Zencoder': USA, 'Augment': USA, 'Awesome DESIGN.md': USA, 'Bind AI': USA, 'Block': USA,
+        'Button Stealer': USA, 'Chad IDE': USA, 'Coolors': IT,
         'Clad Labs': USA, 'Goose': USA,
         'IBM Project Bob': USA, 'IntelliJ IDEA': { flag: '\uD83C\uDDE8\uD83C\uDDFF', label: 'Czech Republic' },
         'JetBrains Fleet': { flag: '\uD83C\uDDE8\uD83C\uDDFF', label: 'Czech Republic' }, 'JetBrains AI': { flag: '\uD83C\uDDE8\uD83C\uDDFF', label: 'Czech Republic' },
@@ -104,7 +106,7 @@
         'SafeClaw': USA, 'TinyClaw': USA, 'HermitClaw': USA, 'zclaw': USA, 'MimiClaw': USA,
         'OpenFang': USA, 'SuperAGI': IN, 'Anything LLM': USA, 'n8n': DE, 'TrustClaw': USA,
         'Awesome OpenClaw alternatives': USA, 'OpenClaw variations (repo notes)': USA,
-        'Project NOMAD': USA, 'Kiwix': CH, 'Internet in a Box': USA,
+        'Project NOMAD': USA, 'Kiwix': CH, 'Internet in a Box': USA, 'MC Tools': USA,
         'Open WebUI': USA, 'Brave Leo': USA, 'Dia Browser': USA, 'Abacus AI Deep Agent': USA,
         'Base44': USA, 'LLMChat': USA, 'Localtunnel': USA, 'reTunnel': USA,
         'Tunnelmole': UK, 'itch.io (game dev)': USA, 'Algolia': FR, 'Discord Developers': USA,

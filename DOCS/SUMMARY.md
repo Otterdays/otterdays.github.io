@@ -6,6 +6,12 @@
 - [AMENDED 2026-03-27]: Site badge is **v1.10.0**; **Latest** on `updates.html` follows **v1.10.0** (see **[1.10.0]** in `CHANGELOG.md`).
 - [AMENDED 2026-03-29]: Site badge is **v1.10.1**; **Latest** on `updates.html` follows **v1.10.1** (see **[1.10.1]** in `CHANGELOG.md`).
 
+## Recent update — 2026-04-27 (Tools: Design & UI)
+
+- **`tools.html`** — New **`#design-ui`** section: [Coolors](https://coolors.co/), [Mobbin](https://mobbin.com/), [Awesome DESIGN.md repo](https://github.com/VoltAgent/awesome-design-md), [Button Stealer](https://chromewebstore.google.com/detail/button-stealer/iiikidmnimlpahbeknmkeonmemajpccj) (Chrome Web Store).
+- **Indexing / flags:** **`js/search-data.js`**, **`js/badges.js`** (Italy + UK where applicable).
+- **Docs:** **`DOCS/CHANGELOG.md`** [Unreleased], **`DOCS/SCRATCHPAD.md`**, **`DOCS/ARCHITECTURE.md`** (tools line).
+
 ## Recent update — 2026-04-04 (Offline survival / Project NOMAD)
 
 - **Page:** **`offline-survival.html`** — resilient offline knowledge hub; lead [Project NOMAD](https://www.projectnomad.us/) (Wikipedia via Kiwix, Ollama, maps, Kolibri); IIAB; cross-links.

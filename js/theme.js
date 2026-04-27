@@ -153,6 +153,27 @@
   apply(localStorage.getItem(KEY) || savedTheme);
 
   /**
+   * Insert Favorites nav item on all pages.
+   * Keeps sidebar updates centralized without touching every HTML file.
+   */
+  (function ensureFavoritesNavItem() {
+    var sidebar = document.querySelector('.sidebar');
+    if (!sidebar || sidebar.querySelector('a[href="favorites.html"]')) return;
+
+    var homeLink = sidebar.querySelector('a[href="index.html"]');
+    if (!homeLink) return;
+
+    var link = document.createElement('a');
+    link.setAttribute('href', 'favorites.html');
+    link.setAttribute('title', 'Favorites');
+    if (window.location.pathname.toLowerCase().endsWith('/favorites.html')) {
+      link.classList.add('active');
+    }
+    link.innerHTML = '<span class="sidebar-icon">❤️</span><span class="sidebar-text">Favorites</span>';
+    sidebar.insertBefore(link, homeLink);
+  })();
+
+  /**
    * Unified Card Effects (Spotlight + 3D Tilt)
    * Uses per-card pointer handlers to avoid scanning large pages.
    */

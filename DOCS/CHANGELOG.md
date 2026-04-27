@@ -5,6 +5,7 @@ All notable changes to this project are documented in this file. Format: [Keep a
 ## [Unreleased]
 
 ### Added
+- **Design & UI (tools)** — **`tools.html`** `#design-ui`: **Coolors** ([coolors.co](https://coolors.co/)), **Mobbin** ([mobbin.com](https://mobbin.com/)), **Awesome DESIGN.md** ([VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md)), **Button Stealer** (Chrome Web Store). **`js/search-data.js`**, **`js/badges.js`** (incl. Italy flag for Coolors).
 - **`explore.html`** — Premium metrics redesign: SVG-based donut chart with interactive hover highlights and legend; animated 8-count statistics grid with count-up effects; top-pages podium (🥇🥈🥉); multi-color bar charts for page and tag distributions; interactive tag cloud with frequency-based sizing and count badges.
 - **`js/explore.js`** — Complete refactor to support SVG rendering, `requestAnimationFrame` counters, and dynamic CSS bar width transitions.
 - **OpenClaw ecosystem (2026-04-03)** — **`tools.html`** `#computer-automation`: **Playwright MCP** card; extended alternatives (ZeroClaw, IronClaw, ZeptoClaw, Nanobot, Moltis, SafeClaw, TinyClaw, HermitClaw, zclaw, MimiClaw, OpenFang, SuperAGI, Anything LLM, n8n, TrustClaw, Awesome OpenClaw alternatives, link to **`Openclaw_variations.md`** on GitHub); updated meta/OG descriptions. **`js/search-data.js`** matching tool + page rows (repo doc + **`DOCS/OPENCLAW_ECOSYSTEM.md`**). **`js/badges.js`** country flags for new `.chat-link-name` values. **`DOCS/OPENCLAW_ECOSYSTEM.md`** — site placement map. **`about.html`** — Tools bullet links to `#computer-automation`, ecosystem map, and repo notes.
@@ -13,6 +14,7 @@ All notable changes to this project are documented in this file. Format: [Keep a
 - **Samtime (Inspiration)** — Added **Samtime** to **`inspirations.html`** (comedic tech parody), **`js/search-data.js`**, and **`about.html`**.
 
 ### Changed
+- **`tools.html`** — renamed **Game development** section to **Games tools** and added **MC Tools** ([mc.tools](https://mc.tools/)) as a dedicated Minecraft browser toolkit card; synced **`js/search-data.js`** and **`js/badges.js`**.
 - **`tools.html`** — **Augment**: single listing under **CLI** only (was also **Augment Code** under IDE); **`js/search-data.js`**, **`js/badges.js`** (`Augment` title / flag key).
 - **`DOCS/CONTENT_GUIDE.md`** — New **Trusted External Sources** block linking model catalogs, benchmark snapshots, provider status pages, and Wikipedia templates for consistent future content linking and verification.
 - **`DOCS/CONTENT_GUIDE.md`** [2026-04-03] — **OpenClaw ecosystem** maintainer checklist (variations file, ecosystem map, search, badges).

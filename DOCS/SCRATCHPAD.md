@@ -2,6 +2,22 @@
 
 # SCRATCHPAD
 
+## 2026-04-27 — tools.html: Design & UI (Coolors, Mobbin, Awesome DESIGN.md, Button Stealer)
+
+**What changed:** **`tools.html`** — new **`#design-ui`** section: **Awesome DESIGN.md** (VoltAgent repo), **Button Stealer** (Chrome Web Store), **Coolors**, **Mobbin**. **`js/search-data.js`** — four tool rows (hash links). **`js/badges.js`** — `IT` country + map keys; **Mobbin** → UK. **`DOCS/CHANGELOG.md`** [Unreleased] Added; **`DOCS/SUMMARY.md`**; **`DOCS/ARCHITECTURE.md`** tools line amended.
+
+**Out-of-scope observations:** None.
+
+---
+
+## 2026-04-27 — tools.html: Games tools + MC Tools
+
+**What changed:** **`tools.html`** — section renamed from **Game development** to **Games tools** and added **MC Tools** ([mc.tools](https://mc.tools/)) as a dedicated Minecraft browser toolkit card. **`js/search-data.js`** indexed **MC Tools**. **`js/badges.js`** added `MC Tools` country key.
+
+**Out-of-scope observations:** None.
+
+---
+
 ## 2026-04-18 — Samtime (Inspiration)
 
 **What changed:** **`inspirations.html`** — added **Samtime** card (tech satire/YouTube); **`js/search-data.js`** — indexed Samtime; **`about.html`** — updated inspirations list/blurb. **`DOCS/CHANGELOG.md`** [Unreleased]; **`DOCS/SUMMARY.md`**.

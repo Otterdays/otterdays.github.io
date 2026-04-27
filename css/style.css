@@ -73,9 +73,8 @@ body {
   height: 100vh;
   width: 64px;
   min-width: 64px;
-  background: var(--glass);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  /* Use a stable solid-glass surface to prevent scroll seam artifacts. */
+  background: color-mix(in srgb, var(--card-solid) 92%, var(--bg));
   border-right: 1px solid var(--border);
   padding: 1rem 0.5rem;
   display: flex;
@@ -98,6 +97,7 @@ body {
 .sidebar:hover {
   width: 240px;
   min-width: 240px;
+  background: color-mix(in srgb, var(--card-solid) 96%, var(--bg));
   box-shadow: 12px 0 32px color-mix(in srgb, var(--bg) 65%, black 35%),
     4px 0 16px color-mix(in srgb, var(--accent) 12%, transparent);
 }
