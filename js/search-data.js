@@ -111,6 +111,7 @@ var SEARCH_DATA = [
     { title: "Continue", desc: "Open-source AI coding; VS Code, JetBrains; model-agnostic; free.", category: "company", tags: ["AI Coding", "Open Source", "Free"], url: "companies.html" },
     { title: "Cohere", desc: "Enterprise NLP and embedding models.", category: "company", tags: ["NLP", "Enterprise", "Embeddings"], url: "companies.html" },
     { title: "Perplexity", desc: "AI-powered search engine with citations.", category: "company", tags: ["Search", "AI", "Citations"], url: "companies.html" },
+    { title: "Poolside", desc: "Foundation models & enterprise agents; platform and docs at docs.poolside.ai.", category: "company", tags: ["Agents", "Foundation models", "Enterprise", "Docs"], url: "companies.html" },
     { title: "Hugging Face", desc: "Models (2M+), datasets (500k+), Spaces (1M+ apps), HuggingChat.", category: "company", tags: ["Open Source", "Models", "Hub"], url: "companies.html" },
     { title: "MongoDB", desc: "Atlas: document DB, vector search, stream processing; AI-ready.", category: "company", tags: ["Database", "Atlas", "Vector Search"], url: "companies.html" },
     { title: "NVIDIA", desc: "GPU AI stack; ChatRTX local LLM; NemoClaw sandboxed OpenClaw + OpenShell (alpha).", category: "company", tags: ["GPU", "NemoClaw", "ChatRTX", "OpenClaw"], url: "companies.html" },

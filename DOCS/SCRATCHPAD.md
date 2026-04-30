@@ -2,6 +2,16 @@
 
 # SCRATCHPAD
 
+## 2026-04-29 — Added caveman Cursor skill
+**What changed:** Added `caveman` Cursor agent skill under `~/.cursor/skills/caveman/` (`SKILL.md`, `reference.md`, `examples.md`).
+**Out-of-scope observations:** None.
+---
+
+## 2026-04-29 — Poolside added to Companies
+**What changed:** `companies.html` — new **Poolside** company section (platform + docs cards). `js/search-data.js` — indexed **Poolside** for site search. `js/badges.js` — added country badge keys for **Poolside** and **Poolside Docs**.
+**Out-of-scope observations:** None.
+---
+
 ## 2026-04-27 — tools.html: Design & UI (Coolors, Mobbin, Awesome DESIGN.md, Button Stealer)
 
 **What changed:** **`tools.html`** — new **`#design-ui`** section: **Awesome DESIGN.md** (VoltAgent repo), **Button Stealer** (Chrome Web Store), **Coolors**, **Mobbin**. **`js/search-data.js`** — four tool rows (hash links). **`js/badges.js`** — `IT` country + map keys; **Mobbin** → UK. **`DOCS/CHANGELOG.md`** [Unreleased] Added; **`DOCS/SUMMARY.md`**; **`DOCS/ARCHITECTURE.md`** tools line amended.

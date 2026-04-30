@@ -29,7 +29,7 @@
     var COUNTRY_MAP = {
         'Google': USA, 'OpenAI': USA, 'Anthropic': USA, 'Meta': USA, 'Microsoft': USA, 'xAI': USA,
         'Cursor': USA, 'Mistral': FR, 'Amazon': USA, 'Alibaba / QwenLM': CN, 'DeepSeek': CN,
-        'Perplexity': USA, 'Genspark': USA, 'Moonshot AI': CN, 'Minimax': CN, 'GDevelop': CH, 'IBM': USA,
+        'Perplexity': USA, 'Poolside': USA, 'Poolside Docs': USA, 'Genspark': USA, 'Moonshot AI': CN, 'Minimax': CN, 'GDevelop': CH, 'IBM': USA,
         'Zhipu AI': CN, 'Quora': USA, 'Character.AI': USA, 'Inflection': USA, 'Cohere': CA,
         'Abacus.AI': USA, 'Allen Institute for AI': USA, 'DuckDuckGo': USA, 'QuillBot': USA,
         'OpenRouter': USA, 'Groq': USA, 'GitHub': USA, 'SambaNova': USA, 'Cerebras': USA,
