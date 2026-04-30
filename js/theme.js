@@ -207,18 +207,29 @@
   }
 
   /**
-   * Scroll to Top Button Logic
+   * Scroll to Top Button Logic (Optimized with rAF throttling)
    */
   var scrollBtn = document.getElementById('scroll-top-btn');
 
   if (scrollBtn) {
+    var ticking = false;
+    var lastScrollY = 0;
+
     window.addEventListener('scroll', function () {
-      if (window.scrollY > 300) {
-        scrollBtn.classList.add('visible');
-      } else {
-        scrollBtn.classList.remove('visible');
+      lastScrollY = window.scrollY;
+      
+      if (!ticking) {
+        window.requestAnimationFrame(function () {
+          if (lastScrollY > 300) {
+            scrollBtn.classList.add('visible');
+          } else {
+            scrollBtn.classList.remove('visible');
+          }
+          ticking = false;
+        });
+        ticking = true;
       }
-    });
+    }, { passive: true });
 
     scrollBtn.addEventListener('click', function () {
       window.scrollTo({

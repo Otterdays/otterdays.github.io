@@ -37,13 +37,21 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" as="style">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+  
+  <!-- DNS Prefetch for External Resources -->
+  <link rel="dns-prefetch" href="https://github.com">
+  <link rel="dns-prefetch" href="https://otterdays.github.io">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body data-theme="dark">
+  <!-- Background Gradient Layer -->
+  <div class="bg-gradient-layer" aria-hidden="true"></div>
+  
   <a href="#main" class="skip-link">Skip to content</a>
   <!-- Sidebar Navigation -->
   <nav class="sidebar">
@@ -146,7 +154,7 @@
     <div class="home">
       <div class="home-hero stagger-1">
         <div class="home-image stagger-2">
-          <img src="images/profile.png" alt="Ryan Otterdays profile" width="240" height="240">
+          <img src="images/profile.png" alt="Ryan Otterdays profile" width="240" height="240" loading="eager" fetchpriority="high">
         </div>
         <h1 class="home-title stagger-3">Ryan</h1>
         <p class="home-handle stagger-3">Otterdays &middot; Developer</p>
@@ -250,8 +258,8 @@
     </div>
   </div>
 
-  <script src="js/theme.js"></script>
-  <script src="js/qol.js"></script>
+  <script src="js/theme.js" defer></script>
+  <script src="js/qol.js" defer></script>
   <script src="js/search-data.js" defer></script>
   <script src="js/search.js" defer></script>
 </body>

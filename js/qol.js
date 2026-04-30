@@ -5,13 +5,33 @@
 (function () {
   'use strict';
 
+  // Mark document as JS-enabled for progressive enhancement
+  document.documentElement.classList.add('js-enabled');
+
+  // Inject background gradient layer to prevent cutoff
+  injectGradientLayer();
+
   initPageLoader();
+
+  /** Inject background gradient layer to prevent cutoff */
+  function injectGradientLayer() {
+    // Check if already exists (in case it's hardcoded in HTML)
+    if (document.querySelector('.bg-gradient-layer')) return;
+
+    var gradientLayer = document.createElement('div');
+    gradientLayer.className = 'bg-gradient-layer';
+    gradientLayer.setAttribute('aria-hidden', 'true');
+    document.body.insertBefore(gradientLayer, document.body.firstChild);
+  }
 
   function init() {
     injectCardTooltips();
     addSearchHint();
     enhanceFooterStats();
     initLiveClock();
+    initScrollAnimations();
+    addKeyboardHints();
+    logPerformanceMetrics();
   }
 
   function initPageLoader() {
@@ -179,6 +199,86 @@
     a.innerHTML = el.innerHTML;
     el.textContent = '';
     el.appendChild(a);
+  }
+
+  /** Intersection Observer for scroll-triggered animations */
+  function initScrollAnimations() {
+    var prefersReducedMotion = window.matchMedia &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    
+    if (prefersReducedMotion) return;
+
+    // Check if IntersectionObserver is supported
+    if (!('IntersectionObserver' in window)) return;
+
+    var animatedElements = document.querySelectorAll('.feature-card');
+    if (!animatedElements.length) return;
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    });
+
+    animatedElements.forEach(function (el) {
+      observer.observe(el);
+    });
+  }
+
+  /** Add keyboard navigation hints to sidebar */
+  function addKeyboardHints() {
+    var sidebar = document.querySelector('.sidebar');
+    if (!sidebar) return;
+
+    var links = sidebar.querySelectorAll('a');
+    if (!links.length) return;
+
+    // Add title attributes with keyboard hints
+    links.forEach(function (link, index) {
+      var existingTitle = link.getAttribute('title') || '';
+      var linkText = link.querySelector('.sidebar-text');
+      var text = linkText ? linkText.textContent.trim() : '';
+      
+      // Only add hint if not already present
+      if (existingTitle && existingTitle.includes('Tab')) return;
+      
+      var hint = 'Press Tab ' + (index + 1) + ' to focus ' + text;
+      if (existingTitle) {
+        link.setAttribute('title', existingTitle + ' | ' + hint);
+      } else {
+        link.setAttribute('title', hint);
+      }
+    });
+  }
+
+  /** Log page load performance metrics (dev only, non-intrusive) */
+  function logPerformanceMetrics() {
+    if (!('performance' in window) || !('getEntriesByType' in window.performance)) return;
+    
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        try {
+          var nav = performance.getEntriesByType('navigation')[0];
+          if (!nav) return;
+          
+          var loadTime = Math.round(nav.loadEventEnd - nav.startTime);
+          var domReady = Math.round(nav.domContentLoadedEventEnd - nav.startTime);
+          
+          // Only log if load time is significant (>1s) for debugging
+          if (loadTime > 1000) {
+            console.log('[Performance] Page loaded in ' + loadTime + 'ms (DOM: ' + domReady + 'ms)');
+          }
+        } catch (e) {
+          // Silently fail
+        }
+      }, 0);
+    });
   }
 
   if (document.readyState === 'loading') {
