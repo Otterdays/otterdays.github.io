@@ -843,6 +843,125 @@ html {
   z-index: 2;
 }
 
+/* Hero portraits — side-by-side on wide viewports; crossfade cycle on narrow */
+.home-portrait {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+  width: min(100%, 22rem);
+  margin: 0 auto 1.75rem;
+  position: relative;
+  z-index: 2;
+}
+
+.home-portrait::before {
+  content: '';
+  position: absolute;
+  inset: -8px;
+  background: var(--accent-glow);
+  border-radius: 16px;
+  filter: blur(24px);
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.home-portrait__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 519px) {
+  .home-portrait {
+    grid-template-columns: 1fr;
+    width: min(100%, 12rem);
+    aspect-ratio: 1;
+  }
+
+  .home-portrait__img {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .home-portrait__img--profile {
+    animation: home-portrait-cycle 12s ease-in-out infinite;
+  }
+
+  .home-portrait__img--ai {
+    animation: home-portrait-cycle 12s ease-in-out infinite;
+    animation-delay: -6s;
+  }
+}
+
+@media (max-width: 519px) and (prefers-reduced-motion: reduce) {
+  .home-portrait {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: min(100%, 22rem);
+    aspect-ratio: auto;
+  }
+
+  .home-portrait__img {
+    animation: none;
+  }
+}
+
+@keyframes home-portrait-cycle {
+  0%,
+  45% {
+    opacity: 1;
+  }
+
+  50%,
+  95% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.home-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  max-width: 36rem;
+  margin: 0 auto 1.25rem;
+}
+
+.home-social__link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--accent) 38%, var(--border));
+  background: color-mix(in srgb, var(--accent) 10%, var(--glass));
+  color: color-mix(in srgb, var(--accent) 88%, white);
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home-social__link:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--accent) 58%, var(--border));
+  box-shadow: 0 6px 20px color-mix(in srgb, var(--accent) 22%, transparent);
+  text-decoration: none;
+}
+
+.home-social__link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
 .home-image::before {
   content: '';
   position: absolute;
@@ -1109,6 +1228,30 @@ html {
   background: color-mix(in srgb, var(--cluster-accent) 11%, var(--glass));
 }
 
+.link-cluster--social {
+  --cluster-accent: #58a6ff;
+  border-color: color-mix(in srgb, var(--cluster-accent) 36%, var(--border));
+  background: color-mix(in srgb, var(--cluster-accent) 9%, var(--glass));
+}
+
+.link-cluster--codeblox {
+  --cluster-accent: #818cf8;
+  border-color: color-mix(in srgb, var(--cluster-accent) 42%, var(--border));
+  background: color-mix(in srgb, var(--cluster-accent) 12%, var(--glass));
+}
+
+.link-cluster--nebula {
+  --cluster-accent: #38bdf8;
+  border-color: color-mix(in srgb, var(--cluster-accent) 40%, var(--border));
+  background: color-mix(in srgb, var(--cluster-accent) 11%, var(--glass));
+}
+
+.link-cluster--spacetime {
+  --cluster-accent: #f97316;
+  border-color: color-mix(in srgb, var(--cluster-accent) 40%, var(--border));
+  background: color-mix(in srgb, var(--cluster-accent) 11%, var(--glass));
+}
+
 .link-cluster--arteria {
   --cluster-accent: #a78bfa;
   border-color: color-mix(in srgb, var(--cluster-accent) 42%, var(--border));
@@ -1150,6 +1293,26 @@ html {
   padding: 0.05rem 0.25rem;
   border-radius: 4px;
   background: color-mix(in srgb, var(--fg) 8%, transparent);
+}
+
+.feature-card--nebula {
+  --cluster-accent: #38bdf8;
+  border-color: color-mix(in srgb, var(--cluster-accent) 38%, var(--border));
+  background: linear-gradient(
+    155deg,
+    color-mix(in srgb, var(--cluster-accent) 12%, transparent) 0%,
+    color-mix(in srgb, var(--fg), transparent 96%) 58%
+  );
+}
+
+.feature-card--nebula:hover {
+  border-color: color-mix(in srgb, var(--cluster-accent) 52%, var(--border));
+  box-shadow: 0 12px 32px color-mix(in srgb, var(--cluster-accent) 22%, transparent);
+}
+
+.feature-card--nebula:focus-within {
+  outline: 2px solid color-mix(in srgb, var(--cluster-accent) 72%, var(--border));
+  outline-offset: 3px;
 }
 
 .feature-card__version {

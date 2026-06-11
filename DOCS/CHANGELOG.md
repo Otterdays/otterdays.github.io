@@ -7,6 +7,11 @@ All notable changes to this project are documented in this file. Format: [Keep a
 - **Homepage GitHub repos pill (2026-06-10)** — Stacked **157** + **122** repository count screenshots (`images/github-repositories-pill-122.png`); **`.home-github-pill--stack`** on **`index.html`**, **`css/style.css`**.
 - **Homepage Modrinth + Ryan's Realm (2026-06-10)** — [Modrinth profile](https://modrinth.com/user/OtterDays) link-cluster + Den callout; [Ryan's Realm](https://otterdays.vercel.app/) hero link (**`.home-link--realm`**). **`js/search-data.js`**.
 - **Minecraft-Stuffs hub (2026-06-10)** — [Otters MC Studios](https://otterdays.github.io/Minecraft-Stuffs/) + [GitHub](https://github.com/Otterdays/Minecraft-Stuffs) on **`index.html`** hero, Explore, Den callout; **`programs.html`**, **`js/search-data.js`**, **`js/badges.js`**, **`css/style.css`**.
+- **CodeBlox AI + SpacetimeDB + social (2026-06-10)** — [Codeblox-AIV4](https://github.com/Otterdays/Codeblox-AIV4), [SpacetimeDB-Stuff](https://github.com/Otterdays/SpacetimeDB-Stuff) hero clusters; **Social** cluster ([GitHub](https://github.com/Otterdays), [Modrinth](https://modrinth.com/user/OtterDays), [itch.io](https://itch.io/profile/otterdays), [Linktree](https://linktr.ee/RyTheGuy95)); removed placeholder X/Bluesky. **`programs.html`**, **`js/search-data.js`**, **`css/style.css`**.
+- **Indeed profile (2026-06-10)** — [profile.indeed.com/p/ryanl-2gr7g8r](https://profile.indeed.com/p/ryanl-2gr7g8r) in homepage **Social** cluster; **`js/search-data.js`**.
+- **Hero portrait + social bar (2026-06-10)** — **`images/ai-image-1.png`** split duo with **`profile.png`** (crossfade cycle on narrow viewports); **`.home-social`** pill row under bio (GitHub, Indeed, Modrinth, itch.io, Linktree). **`index.html`**, **`css/style.css`**.
+- **Which AI Made This? (2026-06-10)** — [ui-design-bench.vercel.app](https://ui-design-bench.vercel.app/) on **`informational-links.html`** (benchmarks) + **`tools.html`** Reference; **`js/search-data.js`**.
+- **Nebula-Chat (2026-06-10)** — [Nebula-Chat](https://github.com/Otterdays/Nebula-Chat) personal browser AI workspace on **`index.html`** hero + Explore; **`programs.html`**, **`js/search-data.js`**, **`css/style.css`**.
 
 ## [1.12.0] - 2026-06-10
 

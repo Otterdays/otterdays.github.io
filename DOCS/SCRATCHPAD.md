@@ -2,6 +2,26 @@
 
 # SCRATCHPAD
 
+## 2026-06-10 — Nebula-Chat (browser AI workspace)
+**What changed:** [Nebula-Chat](https://github.com/Otterdays/Nebula-Chat) — hero **`.link-cluster--nebula`**, Explore card, **`programs.html`** card + **`js/search-data.js`**, **`css/style.css`**, **`DOCS/CHANGELOG.md`** Unreleased.
+---
+
+## 2026-06-10 — Which AI Made This? (UI design bench)
+**What changed:** [ui-design-bench.vercel.app](https://ui-design-bench.vercel.app/) on **`informational-links.html`** benchmarks + **`tools.html`** Reference; **`js/search-data.js`**, **`DOCS/CHANGELOG.md`** Unreleased.
+---
+
+## 2026-06-10 — Hero AI portrait + social bar
+**What changed:** **`images/ai-image-1.png`** — **`.home-portrait`** split/cycle with **`profile.png`**; **`.home-social`** under bio (moved from project link grid). **`index.html`**, **`css/style.css`**, **`DOCS/CHANGELOG.md`** Unreleased.
+---
+
+## 2026-06-10 — Indeed profile (Social cluster)
+**What changed:** [Indeed profile](https://profile.indeed.com/p/ryanl-2gr7g8r) on **`index.html`** Social cluster; **`js/search-data.js`**, **`DOCS/CHANGELOG.md`** Unreleased.
+---
+
+## 2026-06-10 — CodeBlox, SpacetimeDB, social cluster
+**What changed:** [Codeblox-AIV4](https://github.com/Otterdays/Codeblox-AIV4), [SpacetimeDB-Stuff](https://github.com/Otterdays/SpacetimeDB-Stuff) hero clusters; **Social** (GitHub, Modrinth, itch.io, Linktree). **`programs.html`**, **`js/search-data.js`**, **`css/style.css`**, **`DOCS/CHANGELOG.md`** Unreleased.
+---
+
 ## 2026-06-10 — Minecraft-Stuffs (Otters MC Studios)
 **What changed:** [Minecraft-Stuffs](https://otterdays.github.io/Minecraft-Stuffs/) + [GitHub](https://github.com/Otterdays/Minecraft-Stuffs) — hero **`.link-cluster--minecraft-stuffs`**, Explore card, Den callout. **`programs.html`**, **`js/search-data.js`**, **`js/badges.js`**, **`css/style.css`**, **`DOCS/CHANGELOG.md`** Unreleased.
 ---

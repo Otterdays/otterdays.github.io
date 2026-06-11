@@ -38,6 +38,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" href="images/otterdays-wordmark.png" as="image">
+  <link rel="preload" href="images/profile.png" as="image">
+  <link rel="preload" href="images/ai-image-1.png" as="image">
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" as="style">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
   
@@ -162,14 +164,30 @@
 
     <div class="home">
       <div class="home-hero stagger-1">
-        <div class="home-image stagger-2">
-          <img src="images/profile.png" alt="Ryan Otterdays profile" width="240" height="240" loading="eager" fetchpriority="high">
-        </div>
+        <figure class="home-portrait stagger-2" aria-label="Ryan Otterdays portraits">
+          <img class="home-portrait__img home-portrait__img--profile" src="images/profile.png"
+            alt="Ryan Otterdays profile" width="180" height="180" loading="eager" fetchpriority="high"
+            decoding="async">
+          <img class="home-portrait__img home-portrait__img--ai" src="images/ai-image-1.png"
+            alt="Ryan Otterdays — AI portrait" width="180" height="180" loading="eager" decoding="async">
+        </figure>
         <h1 class="home-title stagger-3">Ryan</h1>
         <img src="images/otterdays-wordmark.png" alt="Otterdays" class="home-wordmark stagger-3" width="200"
           height="48" loading="eager" decoding="async">
         <p class="home-handle stagger-3">Developer</p>
         <p class="home-info stagger-4">Short dev profile. 1+ year AI coding &amp; engineering.</p>
+        <nav class="home-social stagger-4" aria-label="Social profiles">
+          <a href="https://github.com/Otterdays" rel="noopener noreferrer" target="_blank" class="home-social__link"
+            title="Otterdays on GitHub">GitHub</a>
+          <a href="https://profile.indeed.com/p/ryanl-2gr7g8r" rel="noopener noreferrer" target="_blank"
+            class="home-social__link" title="Ryan on Indeed">Indeed</a>
+          <a href="https://modrinth.com/user/OtterDays" rel="noopener noreferrer" target="_blank"
+            class="home-social__link" title="OtterDays on Modrinth">Modrinth</a>
+          <a href="https://itch.io/profile/otterdays" rel="noopener noreferrer" target="_blank"
+            class="home-social__link" title="OtterDays on itch.io">itch.io</a>
+          <a href="https://linktr.ee/RyTheGuy95" rel="noopener noreferrer" target="_blank" class="home-social__link"
+            title="RyTheGuy95 on Linktree">Linktree</a>
+        </nav>
         <nav class="home-links stagger-5">
           <a href="https://otterdays.github.io/Otters-Den-Server/" class="home-link home-link--primary" title="Join Otterdays Minecraft Server">
             <span class="home-link-icon">⛏️</span>
@@ -188,17 +206,6 @@
                 target="_blank" class="link-cluster__btn" title="Clone, mix setup, phx.server">Quick start</a>
             </div>
           </div>
-          <div class="link-cluster link-cluster--modrinth" role="group" aria-label="Modrinth — Minecraft mods">
-            <div class="link-cluster__head">
-              <span class="link-cluster__icon" aria-hidden="true">📦</span>
-              <span class="link-cluster__title">Modrinth</span>
-              <span class="link-cluster__tag">Fabric mods</span>
-            </div>
-            <div class="link-cluster__actions">
-              <a href="https://modrinth.com/user/OtterDays" rel="noopener noreferrer" target="_blank"
-                class="link-cluster__btn" title="OtterDays on Modrinth">Profile</a>
-            </div>
-          </div>
           <div class="link-cluster link-cluster--minecraft-stuffs" role="group"
             aria-label="Minecraft-Stuffs — Otters MC Studios hub">
             <div class="link-cluster__head">
@@ -213,8 +220,6 @@
                 class="link-cluster__btn" title="Minecraft-Stuffs on GitHub">GitHub</a>
             </div>
           </div>
-          <a href="#" class="home-link disabled" aria-disabled="true" title="Coming soon">X</a>
-          <a href="#" class="home-link disabled" aria-disabled="true" title="Coming soon">Bluesky</a>
           <a href="https://github.com/Otterdays?tab=repositories" rel="noopener noreferrer" target="_blank"
             class="home-github-pill home-github-pill--stack" title="Otterdays repositories on GitHub">
             <img src="images/github-repositories-pill.png" alt="" width="168" height="32" decoding="async"
@@ -274,6 +279,41 @@
                 target="_blank" class="link-cluster__btn" title="Arteria V2 chronicle site">Site</a>
               <a href="https://github.com/Otterdays/Arteria-V2-Gradle-Edition-Reloaded" rel="noopener noreferrer"
                 target="_blank" class="link-cluster__btn" title="Arteria V2 on GitHub">GitHub</a>
+            </div>
+          </div>
+          <div class="link-cluster link-cluster--codeblox" role="group" aria-label="CodeBlox AI v4 — desktop IDE">
+            <div class="link-cluster__head">
+              <span class="link-cluster__icon" aria-hidden="true">💻</span>
+              <span class="link-cluster__title">CodeBlox AI</span>
+              <span class="link-cluster__tag">v4 IDE</span>
+            </div>
+            <div class="link-cluster__actions">
+              <a href="https://github.com/Otterdays/Codeblox-AIV4" rel="noopener noreferrer" target="_blank"
+                class="link-cluster__btn" title="Codeblox-AIV4 on GitHub">GitHub</a>
+            </div>
+          </div>
+          <div class="link-cluster link-cluster--nebula" role="group"
+            aria-label="Nebula Chat — browser AI workspace">
+            <div class="link-cluster__head">
+              <span class="link-cluster__icon" aria-hidden="true">🌌</span>
+              <span class="link-cluster__title">Nebula Chat</span>
+              <span class="link-cluster__tag">AI workspace</span>
+            </div>
+            <div class="link-cluster__actions">
+              <a href="https://github.com/Otterdays/Nebula-Chat" rel="noopener noreferrer" target="_blank"
+                class="link-cluster__btn" title="Nebula-Chat on GitHub">GitHub</a>
+            </div>
+          </div>
+          <div class="link-cluster link-cluster--spacetime" role="group"
+            aria-label="SpacetimeDB-Stuff — real-time backend experiments">
+            <div class="link-cluster__head">
+              <span class="link-cluster__icon" aria-hidden="true">⚡</span>
+              <span class="link-cluster__title">SpacetimeDB</span>
+              <span class="link-cluster__tag">experiments</span>
+            </div>
+            <div class="link-cluster__actions">
+              <a href="https://github.com/Otterdays/SpacetimeDB-Stuff" rel="noopener noreferrer" target="_blank"
+                class="link-cluster__btn" title="SpacetimeDB-Stuff on GitHub">GitHub</a>
             </div>
           </div>
           <a href="https://otterdays.vercel.app/" rel="noopener noreferrer" target="_blank"
@@ -385,6 +425,15 @@
                 target="_blank" class="link-cluster__btn" title="Arteria V2 chronicle site">Site</a>
               <a href="https://github.com/Otterdays/Arteria-V2-Gradle-Edition-Reloaded" rel="noopener noreferrer"
                 target="_blank" class="link-cluster__btn" title="Arteria V2 on GitHub">GitHub</a>
+            </div>
+          </article>
+          <article class="feature-card feature-card--nebula feature-card--cluster">
+            <div class="feature-card-icon" aria-hidden="true">🌌</div>
+            <h3>Nebula Chat</h3>
+            <p>Personal browser AI workspace &mdash; Gemini thinking models, personas, core memory, artifacts, Redis durable streaming.</p>
+            <div class="link-cluster__actions link-cluster__actions--card" role="group" aria-label="Nebula Chat links">
+              <a href="https://github.com/Otterdays/Nebula-Chat" rel="noopener noreferrer" target="_blank"
+                class="link-cluster__btn" title="Nebula-Chat on GitHub">GitHub</a>
             </div>
           </article>
           <a href="https://otterdays.github.io/Nates-Space/" rel="noopener noreferrer" target="_blank"
