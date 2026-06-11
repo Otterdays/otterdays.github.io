@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -15,7 +15,7 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
   <link rel="stylesheet" href="css/style.css">
   <style>
-    /* ── Layout ── */
+    /* -- Layout -- */
     .explore-page .explore-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -26,7 +26,7 @@
       .explore-card.span-2 { grid-column: span 1 !important; }
     }
 
-    /* ── Card base ── */
+    /* -- Card base -- */
     .explore-card {
       background: var(--glass);
       backdrop-filter: blur(14px);
@@ -50,7 +50,7 @@
       to   { opacity: 1; transform: translateY(0) scale(1); }
     }
 
-    /* ── Hero total ── */
+    /* -- Hero total -- */
     .explore-total {
       font-size: 3.5rem;
       font-weight: 800;
@@ -61,7 +61,7 @@
       line-height: 1;
     }
 
-    /* ── Card heading ── */
+    /* -- Card heading -- */
     .ex-card-title {
       margin: 0 0 1.1rem;
       font-size: 1rem;
@@ -69,7 +69,7 @@
       color: var(--fg);
     }
 
-    /* ── Stats grid ── */
+    /* -- Stats grid -- */
     .ex-stats-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -105,7 +105,7 @@
     }
     .ex-stat-label { font-size: 0.72rem; color: var(--muted); line-height: 1.3; }
 
-    /* ── SVG Donut ── */
+    /* -- SVG Donut -- */
     .ex-donut-wrap {
       display: flex;
       gap: 1.5rem;
@@ -149,7 +149,7 @@
     .ex-legend-n    { font-weight: 700; color: var(--fg); }
     .ex-legend-pct  { font-size: 0.75rem; color: var(--muted); min-width: 3ch; text-align: right; }
 
-    /* ── Bars ── */
+    /* -- Bars -- */
     .ex-bars { display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.25rem; }
     .ex-bar-row {
       display: flex;
@@ -169,7 +169,7 @@
     .ex-bar-val  { font-weight: 700; min-width: 2.5ch; text-align: right; color: var(--fg); }
     .ex-bar-pct  { font-size: 0.72rem; color: var(--muted); min-width: 3ch; text-align: right; }
 
-    /* ── Podium ── */
+    /* -- Podium -- */
     .ex-podium {
       display: flex;
       align-items: flex-end;
@@ -192,7 +192,7 @@
     .ex-podium-rank  { font-size: 0.7rem; font-weight: 700; color: var(--accent); }
     .ex-podium-label { font-size: 0.72rem; color: var(--muted); text-align: center; max-width: 60px; }
 
-    /* ── Link ratio ── */
+    /* -- Link ratio -- */
     .ex-ratio-wrap {
       display: flex;
       align-items: center;
@@ -208,7 +208,7 @@
     .ex-splitbar-fill { height: 100%; transition: width 1s cubic-bezier(0.2, 0.8, 0.2, 1); will-change: width; }
     .ex-ratio-labels { display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--muted); margin-top: 0.4rem; }
 
-    /* ── Tag cloud ── */
+    /* -- Tag cloud -- */
     .ex-tag-cloud { display: flex; flex-wrap: wrap; gap: 0.45rem; align-items: center; }
     .ex-tag {
       position: relative;
@@ -248,7 +248,7 @@
     }
     .ex-tag:hover .ex-tag-badge { opacity: 1; transform: scale(1); }
 
-    /* ── Hero section ── */
+    /* -- Hero section -- */
     .explore-hero { text-align: center; padding: 2rem 0 1rem; }
 
     @media (max-width: 600px) {
@@ -266,7 +266,7 @@
   <nav class="sidebar" id="site-sidebar" aria-label="Site navigation">
   <div class="sidebar-block sidebar-block--home">
     <a href="index.html" title="Home">
-      <span class="sidebar-icon">🏠</span>
+      <span class="sidebar-icon">??</span>
       <span class="sidebar-text">Home</span>
     </a>
   </div>
@@ -274,35 +274,35 @@
   <div class="sidebar-block sidebar-block--main">
     <p class="sidebar-group-label">Main</p>
     <a href="about.html" title="About">
-      <span class="sidebar-icon">👤</span>
+      <span class="sidebar-icon">??</span>
       <span class="sidebar-text">About</span>
     </a>
     <a href="chats.html" title="AI Chats">
-      <span class="sidebar-icon">💬</span>
+      <span class="sidebar-icon">??</span>
       <span class="sidebar-text">AI Chats</span>
     </a>
     <a href="inspirations.html" title="Inspirations">
-      <span class="sidebar-icon">✨</span>
+      <span class="sidebar-icon">?</span>
       <span class="sidebar-text">Inspirations</span>
     </a>
     <a href="media.html" title="Media Gen">
-      <span class="sidebar-icon">🎨</span>
+      <span class="sidebar-icon">??</span>
       <span class="sidebar-text">Media Gen</span>
     </a>
     <a href="offline-survival.html" title="Offline survival">
-      <span class="sidebar-icon">🛡️</span>
+      <span class="sidebar-icon">???</span>
       <span class="sidebar-text">Offline survival</span>
     </a>
     <a href="other-assistants.html" title="Other Assistants">
-      <span class="sidebar-icon">🌐</span>
+      <span class="sidebar-icon">??</span>
       <span class="sidebar-text">Other Assistants</span>
     </a>
     <a href="specials.html" title="Specials">
-      <span class="sidebar-icon">⭐</span>
+      <span class="sidebar-icon">?</span>
       <span class="sidebar-text">Specials</span>
     </a>
     <a href="tools.html" title="Tools">
-      <span class="sidebar-icon">🛠️</span>
+      <span class="sidebar-icon">???</span>
       <span class="sidebar-text">Tools</span>
     </a>
   </div>
@@ -310,27 +310,27 @@
   <div class="sidebar-block sidebar-block--more">
     <p class="sidebar-group-label">More</p>
     <a href="museum.html" title="AI Museum">
-      <span class="sidebar-icon">🏛️</span>
+      <span class="sidebar-icon">???</span>
       <span class="sidebar-text">AI Museum</span>
     </a>
     <a href="my-creations.html" title="My Creations">
-      <span class="sidebar-icon">🎮</span>
+      <span class="sidebar-icon">??</span>
       <span class="sidebar-text">My Creations</span>
     </a>
     <a href="companies.html" title="Companies">
-      <span class="sidebar-icon">🏢</span>
+      <span class="sidebar-icon">??</span>
       <span class="sidebar-text">Companies</span>
     </a>
     <a href="explore.html" class="active" title="Explore Data">
-      <span class="sidebar-icon">📊</span>
+      <span class="sidebar-icon">??</span>
       <span class="sidebar-text">Explore</span>
     </a>
     <a href="posts.html" title="Posts">
-      <span class="sidebar-icon">📰</span>
+      <span class="sidebar-icon">??</span>
       <span class="sidebar-text">Posts</span>
     </a>
     <a href="updates.html" title="Updates">
-      <span class="sidebar-icon">📋</span>
+      <span class="sidebar-icon">??</span>
       <span class="sidebar-text">Updates</span>
     </a>
   </div>
@@ -343,20 +343,20 @@
 
   <main class="content" id="main">
     <div class="top-bar">
-      <a href="updates.html" class="version-badge" title="Version 1.12.0 – Click for details">
-        <span class="version-badge-icon">🎮</span>
-        <span class="version-badge-text">v1.12.0</span>
+      <a href="updates.html" class="version-badge" title="Version 1.13.0 � Click for details">
+        <span class="version-badge-icon">??</span>
+        <span class="version-badge-text">v1.13.0</span>
       </a>
       <button type="button" class="search-trigger" id="search-trigger" aria-label="Search site">
-        <span class="search-trigger-icon" aria-hidden="true">🔍</span>
+        <span class="search-trigger-icon" aria-hidden="true">??</span>
         <span class="search-trigger-text">Search</span>
-        <span class="search-trigger-kbd"><kbd>⌘</kbd><kbd>K</kbd></span>
+        <span class="search-trigger-kbd"><kbd>?</kbd><kbd>K</kbd></span>
       </button>
       <div class="theme-switcher">
         <button type="button" class="theme-btn" id="theme-btn" aria-label="Change theme" aria-expanded="false" aria-haspopup="true">
-          <span class="theme-btn-icon" aria-hidden="true">◐</span>
+          <span class="theme-btn-icon" aria-hidden="true">?</span>
           <span class="theme-btn-label" id="theme-label">Dark</span>
-          <span class="theme-btn-arrow">▼</span>
+          <span class="theme-btn-arrow">?</span>
         </button>
         <div class="theme-dropdown" id="theme-dropdown" role="menu" hidden></div>
       </div>
@@ -375,30 +375,30 @@
 
     <footer class="site-footer">
       <div class="site-stats">
-        <div class="stat-item" title="Indexed items"><span class="stat-icon">🔍</span> 100+ items</div>
-        <div class="stat-item" title="Pages"><span class="stat-icon">📄</span> 19 pages</div>
-        <div class="stat-item" title="Companies listed"><span class="stat-icon">🏢</span> 78+ companies</div>
+        <div class="stat-item" title="Indexed items"><span class="stat-icon">??</span> 100+ items</div>
+        <div class="stat-item" title="Pages"><span class="stat-icon">??</span> 19 pages</div>
+        <div class="stat-item" title="Companies listed"><span class="stat-icon">??</span> 78+ companies</div>
       </div>
       <div class="site-copy">
-        &copy; 2026 Ryan Otterdays. Maintained with ❤️. <a href="https://github.com/Otterdays/otterdays.github.io" rel="noopener noreferrer" target="_blank">Source</a>
+        &copy; 2026 Ryan Otterdays. Maintained with ??. <a href="https://github.com/Otterdays/otterdays.github.io" rel="noopener noreferrer" target="_blank">Source</a>
       </div>
     </footer>
   </main>
 
-  <button type="button" class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top">↑</button>
+  <button type="button" class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top">?</button>
 
   <div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Site search" hidden>
     <div class="search-modal" id="search-modal">
       <div class="search-header">
-        <span class="search-icon">🔍</span>
+        <span class="search-icon">??</span>
         <input type="text" class="search-input" id="search-input" placeholder="Search projects, tools, companies..." autocomplete="off" autocapitalize="off" spellcheck="false">
         <button type="button" class="search-close" id="search-close" aria-label="Close search">ESC</button>
       </div>
       <div class="search-meta">
         <span class="search-count" id="search-count"></span>
         <div class="search-hints">
-          <span class="search-hint"><kbd>↑↓</kbd> Navigate</span>
-          <span class="search-hint"><kbd>↵</kbd> Select</span>
+          <span class="search-hint"><kbd>??</kbd> Navigate</span>
+          <span class="search-hint"><kbd>?</kbd> Select</span>
           <span class="search-hint"><kbd>ESC</kbd> Close</span>
         </div>
       </div>

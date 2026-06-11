@@ -2,6 +2,10 @@
 
 # SCRATCHPAD
 
+## 2026-06-11 — ship v1.13.0
+**What changed:** **`js/updates-data.js`** — **1.13.0** card. All `*.html` badges **v1.13.0**; `updates.html` search placeholder; `DOCS/CHANGELOG.md` **[1.13.0]**; `DOCS/journal/2026-06-11.md`; `README.md`, `ARCHITECTURE`, `SUMMARY`, `AGENTS.md`, `otterdays-agents.mdc`.
+---
+
 ## 2026-06-11 — Cursor rule: git push, never pull
 **What changed:** **`.cursor/rules/git-push-never-pull.mdc`** — always push when user ships; hard ban on `git pull`/fetch-merge; stop and notify user if pull would be needed. **`AGENTS.md`** rules map.
 ---

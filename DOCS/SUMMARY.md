@@ -1,5 +1,11 @@
 # SUMMARY
 
+## Release v1.13.0 — 2026-06-11
+
+- **Version:** Site badge **v1.13.0** everywhere; **`updates.html`** **Latest** on **v1.13.0**; **`js/updates-data.js`** release card.
+- **Headline:** Homepage **Daily drivers** + favicons; inspirations overhaul (Late-night, Music, ultrawide grid, 12+ creators); sidebar **Home/Main/More**; **My Creations** rename; removed favorites/skills/informational-links pages; mobile nav sheet; **git-push-never-pull** Cursor rule.
+- **Docs:** `DOCS/CHANGELOG.md` **[1.13.0]**; `DOCS/journal/2026-06-11.md`; this file; `README.md`; `AGENTS.md`; `DOCS/ARCHITECTURE.md`.
+
 ## Recent update — 2026-06-11 (Inspirations expansion + layout)
 
 - **`inspirations.html`** — Ultrawide grid (1→5 section columns); new sections **Late-night talk shows**, **Music**; **Culture & long-form** trimmed to gaming/podcasts/long-form.

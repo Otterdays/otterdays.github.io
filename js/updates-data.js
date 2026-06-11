@@ -11,7 +11,37 @@ const UPDATES_DATA = [
       {
         type: "added",
         items: [
-          "(Future updates.)"
+          "(Nothing yet.)"
+        ]
+      }
+    ]
+  },
+  {
+    version: "1.13.0",
+    date: "2026-06-11",
+    sections: [
+      {
+        type: "added",
+        items: [
+          "**Homepage Daily drivers** — Replaced Explore feature grid with Cursor, Docker, Inno Setup, Wispr Flow; cached `favicon.show` favicon images + **`css/style.css`** slot styling; **`tools.html#packaging-installers`** Inno Setup.",
+          "**Inspirations** — **Late-night talk shows** + **Music** sections; ultrawide grid (1→5 columns, 2800px max-width); **UFD Tech**, **KasaiSora**, **ThioJoe**, **Connor Price**, **Nic D**, **PRESIDENT**, **PROF**, **Veritasium**, **Reckless Ben**, **Fallon**, **Colbert**; ryan3000 copy fix (Ryan Trahan MC side channel).",
+          "**Git sync rule** — **`.cursor/rules/git-push-never-pull.mdc`** (`alwaysApply`): push when shipping; never `git pull`.",
+          "**Mobile nav** — Chevron expand handle; labeled sheet + backdrop (`js/qol.js`, **`css/style.css`**).",
+          "**Agent skills on Tools** — SkillBox / skills.sh on **`tools.html#agent-skills`** (from removed **`skills.html`**).",
+          "**Homepage** — GitHub repos pill stack, Modrinth + Ryan's Realm, Minecraft-Stuffs hub, CodeBlox AI + SpacetimeDB, Social cluster, hero portrait + social bar, Nebula-Chat, Which AI Made This? benchmark link.",
+          "**Inspirations — nature & hobbies** — Ants Canada, Dr Plants, Terrarium Designs, Worcester Terrariums; **John Hammond**, **Vaush**."
+        ]
+      },
+      {
+        type: "changed",
+        items: [
+          "**Sidebar** — Grouped **Home** / **Main** / **More** with dividers + labels; icon centering polish (`tools/replace_sidebar_nav.py`, **`css/style.css`**).",
+          "**Programs → My Creations** — **`my-creations.html`** + **`programs.html`** redirect; sidebar label site-wide.",
+          "**Pages removed** — **`favorites.html`**, **`skills.html`**, **`informational-links.html`** (content → museum + tools); footer **19 pages**.",
+          "**About** — Pages at a glance regrouped to match sidebar.",
+          "**Bio** — Plumber tenure + 2-year AI coding note on homepage / My Creations / About.",
+          "**Version & badges** — Top-bar **v1.13.0** site-wide; **`updates.html`** **Latest** on **1.13.0**; search modal placeholder **v1.13.0**.",
+          "**DOCS** — `CHANGELOG` **[1.13.0]**, `SUMMARY`, `SCRATCHPAD`, `journal/2026-06-11.md`, `README`, `AGENTS.md`, `ARCHITECTURE`, `CONTENT_GUIDE`."
         ]
       }
     ]

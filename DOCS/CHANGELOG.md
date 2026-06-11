@@ -6,38 +6,26 @@ All notable changes to this project are documented in this file. Format: [Keep a
 
 ## [Unreleased]
 
-- **Git push / never pull Cursor rule (2026-06-11)** — **`.cursor/rules/git-push-never-pull.mdc`** (`alwaysApply`); push when user ships; hard ban on `git pull` and fetch-merge; agent stops and notifies user if pull would be needed; **`AGENTS.md`** rules map.
-- **Inspirations Music section (2026-06-11)** — New **Music** section on **`inspirations.html`**; **Connor Price**, **Nic D**, **PRESIDENT**, **PROF** moved from Culture & long-form; **`DOCS/CONTENT_GUIDE.md`**.
-- **PROF on Inspirations (2026-06-11)** — **PROF** (Minneapolis rapper; profgampo.com) in Culture & long-form on **`inspirations.html`**; **`js/search-data.js`**.
-- **Colbert on Inspirations (2026-06-11)** — **The Late Show with Stephen Colbert** (`@ColbertLateShow`) in Late-night talk shows on **`inspirations.html`**; **`js/search-data.js`**.
-- **Inspirations late-night section (2026-06-11)** — New **Late-night talk shows** section: **The Tonight Show** (@fallontonight), **Jimmy Kimmel Live**, **Late Night with Seth Meyers**, **The Daily Show** (moved from Culture). **Veritasium**, **Reckless Ben** in News & commentary; **`js/search-data.js`**, **`DOCS/CONTENT_GUIDE.md`**.
-- **Inspirations ultrawide grid (2026-06-11)** — Section grid scales to 4–5 columns on wide viewports (`@container` 86rem / 108rem); `main.content` max-width 2800px on **`inspirations.html`**; **`DOCS/CONTENT_GUIDE.md`** layout note.
-- **Connor Price, Nic D, PRESIDENT on Inspirations (2026-06-11)** — Music artists in Culture & long-form on **`inspirations.html`**; **`js/search-data.js`**.
-- **ThioJoe on Inspirations (2026-06-11)** — **ThioJoe** (`@ThioJoe`, thiojoe.com) in News & commentary on **`inspirations.html`**; **`js/search-data.js`**.
-- **ryan3000 copy fix (2026-06-11)** — **`inspirations.html`**: ryan3000 = Ryan Trahan Minecraft gameplay side channel; moved from Game development to Culture & long-form; **`js/search-data.js`**.
-- **KasaiSora on Inspirations (2026-06-11)** — **KasaiSora** (`@KasaiSora`, kasai.gg) in Game development on **`inspirations.html`**; **`js/search-data.js`**.
-- **UFD Tech on Inspirations (2026-06-11)** — **UFD Tech** (`@UFDTech`) in Hardware & PC on **`inspirations.html`**; **`js/search-data.js`**.
-- **Homepage Daily drivers favicons (2026-06-11)** — Replaced broken placeholder glyphs with cached `favicon.show` favicon images; restored corrupted punctuation (`—`, `→`, `·`, `&amp;`); **`css/style.css`** favicon slot styling; **`DOCS/SBOM.md`** external image CDN note.
-- **Homepage Daily drivers (2026-06-11)** — Replaced Explore feature grid with **Daily drivers** (Cursor, Docker, Inno Setup, Wispr Flow); **`css/style.css`** card layout; **`tools.html#packaging-installers`** + search/badges for Inno Setup; Wispr Flow desc adds Android.
-- **About — Pages at a glance (2026-06-11)** — Regrouped Home / Main / More to match sidebar; concise linked bullets; removed duplicate Inspirations block; **`css/style.css`**, **`js/search-data.js`**.
-- **Mobile nav sheet (2026-06-11)** — Chevron **Open menu** handle on mobile; tap expands labeled nav sheet; backdrop + Escape to close; **`js/qol.js`**, **`css/style.css`**.
-- **Sidebar grouped layout (2026-06-11)** — Home standalone; **Main** block (About, AI Chats, Inspirations, Media Gen, Offline survival, Other Assistants, Specials, Tools); **More** block (AI Museum, My Creations, Companies, Explore, Posts, Updates); **`css/style.css`** dividers + labels; **`tools/replace_sidebar_nav.py`**, **`AGENTS.md`**.
-- **Remove favorites page (2026-06-11)** — Deleted empty **`favorites.html`** placeholder; removed sidebar entry (`tools/replace_sidebar_nav.py`); dropped **`ensureFavoritesNavItem`** from **`js/theme.js`**; footer **19 pages**.
-- **Rename Programs → My Creations (2026-06-11)** — **`my-creations.html`** (nav label **My Creations**); **`programs.html`** redirect stub; sidebar, **`js/search-data.js`**, **`js/explore.js`**, **`sitemap.xml`**, **`index.html`**, **`about.html`**, **`AGENTS.md`**, **`DOCS/CONTENT_GUIDE.md`**.
-- **Remove skills page (2026-06-11)** — Agent skills cards + SkillBox + skills.sh on **`tools.html#agent-skills`**; Cursor/Antigravity tool reference in **`DOCS/CURSOR_IDE_SETUP.md`**; deleted **`skills.html`**; sidebar, **`js/search-data.js`**, **`js/explore.js`**, **`sitemap.xml`**, **`about.html`**; footer **20 pages**.
-- **Remove informational-links page (2026-06-11)** — Distributed Wikipedia flagship/family cards to **`museum.html`**; wiki templates, Wikidata, research tools, and **Artificial Analysis** to **`tools.html`** Reference; removed sidebar nav entry on all pages; **`js/search-data.js`**, **`js/explore.js`**, **`sitemap.xml`**, **`about.html`**, **`tools/replace_sidebar_nav.py`**; footer **21 pages**.
-- **Homepage GitHub repos pill (2026-06-10)** — Stacked **157** + **122** repository count screenshots (`images/github-repositories-pill-122.png`); **`.home-github-pill--stack`** on **`index.html`**, **`css/style.css`**.
-- **Homepage Modrinth + Ryan's Realm (2026-06-10)** — [Modrinth profile](https://modrinth.com/user/OtterDays) link-cluster + Den callout; [Ryan's Realm](https://otterdays.vercel.app/) hero link (**`.home-link--realm`**). **`js/search-data.js`**.
-- **Minecraft-Stuffs hub (2026-06-10)** — [Otters MC Studios](https://otterdays.github.io/Minecraft-Stuffs/) + [GitHub](https://github.com/Otterdays/Minecraft-Stuffs) on **`index.html`** hero, Explore, Den callout; **`programs.html`**, **`js/search-data.js`**, **`js/badges.js`**, **`css/style.css`**.
-- **CodeBlox AI + SpacetimeDB + social (2026-06-10)** — [Codeblox-AIV4](https://github.com/Otterdays/Codeblox-AIV4), [SpacetimeDB-Stuff](https://github.com/Otterdays/SpacetimeDB-Stuff) hero clusters; **Social** cluster ([GitHub](https://github.com/Otterdays), [Modrinth](https://modrinth.com/user/OtterDays), [itch.io](https://itch.io/profile/otterdays), [Linktree](https://linktr.ee/RyTheGuy95)); removed placeholder X/Bluesky. **`programs.html`**, **`js/search-data.js`**, **`css/style.css`**.
-- **Indeed profile (2026-06-10)** — [profile.indeed.com/p/ryanl-2gr7g8r](https://profile.indeed.com/p/ryanl-2gr7g8r) in homepage **Social** cluster; **`js/search-data.js`**.
-- **Hero portrait + social bar (2026-06-10)** — **`images/ai-image-1.png`** split duo with **`profile.png`** (crossfade cycle on narrow viewports); **`.home-social`** pill row under bio (GitHub, Indeed, Modrinth, itch.io, Linktree). **`index.html`**, **`css/style.css`**.
-- **Which AI Made This? (2026-06-10)** — [ui-design-bench.vercel.app](https://ui-design-bench.vercel.app/) on **`informational-links.html`** (benchmarks) + **`tools.html`** Reference; **`js/search-data.js`**.
-- **Nebula-Chat (2026-06-10)** — [Nebula-Chat](https://github.com/Otterdays/Nebula-Chat) personal browser AI workspace on **`index.html`** hero + Explore; **`programs.html`**, **`js/search-data.js`**, **`css/style.css`**.
-- **Plumber bio + inspirations (2026-06-10)** — Homepage/programs bio: 12+ years plumbing, second-generation plumber. **John Hammond**, **Vaush** on **`inspirations.html`** (**Gamers Nexus**, **Jimmy Kimmel Live** already listed); **`about.html`**, **`js/search-data.js`**.
-- **Bio update (2026-06-10)** — AI coding tenure **2 years** on **`index.html`**, **`programs.html`**, **`about.html`**, **`js/search-data.js`**.
-- **Inspirations — nature & hobbies (2026-06-10)** — **Ants Canada**, **Dr Plants**, **Terrarium Designs**, **Worcester Terrariums** on **`inspirations.html`** (new **Nature & hobbies** section); **`js/search-data.js`**.
-- **Sidebar icon centering (2026-06-10)** — Collapsed nav: **`justify-content: center`**, label **`max-width: 0`** (no layout shift); icon **`inline-flex`** centering in **`css/style.css`**.
+(Nothing yet.)
+
+## [1.13.0] - 2026-06-11
+
+### Added
+- **Homepage Daily drivers (2026-06-11)** — Replaced Explore feature grid with **Daily drivers** (Cursor, Docker, Inno Setup, Wispr Flow); cached `favicon.show` favicon images; **`css/style.css`** card + favicon slot styling; **`tools.html#packaging-installers`** Inno Setup; **`DOCS/SBOM.md`** CDN note.
+- **Inspirations (2026-06-11)** — **Late-night talk shows** + **Music** sections; ultrawide grid (1→5 columns, 2800px max-width); **UFD Tech**, **KasaiSora**, **ThioJoe**, **Connor Price**, **Nic D**, **PRESIDENT**, **PROF**, **Veritasium**, **Reckless Ben**, **The Tonight Show** (@fallontonight), **The Late Show with Stephen Colbert**; ryan3000 copy fix; **`js/search-data.js`**, **`DOCS/CONTENT_GUIDE.md`**.
+- **Git push / never pull (2026-06-11)** — **`.cursor/rules/git-push-never-pull.mdc`** (`alwaysApply`); **`AGENTS.md`** rules map.
+- **Mobile nav sheet (2026-06-11)** — Chevron **Open menu** handle; labeled sheet + backdrop + Escape (`js/qol.js`, **`css/style.css`**).
+- **Agent skills on Tools (2026-06-11)** — SkillBox / skills.sh on **`tools.html#agent-skills`**; **`DOCS/CURSOR_IDE_SETUP.md`**; deleted **`skills.html`**.
+- **Homepage clusters (2026-06-10)** — GitHub repos pill stack, Modrinth + Ryan's Realm, Minecraft-Stuffs hub, CodeBlox AI + SpacetimeDB, Social cluster, hero portrait + social bar, Nebula-Chat, Which AI Made This? benchmark.
+- **Inspirations — nature & hobbies (2026-06-10)** — **Ants Canada**, **Dr Plants**, **Terrarium Designs**, **Worcester Terrariums**; **John Hammond**, **Vaush**.
+
+### Changed
+- **Sidebar (2026-06-11)** — Grouped **Home** / **Main** / **More** with dividers + labels (`tools/replace_sidebar_nav.py`, **`css/style.css`**); icon centering polish (2026-06-10).
+- **Programs → My Creations (2026-06-11)** — **`my-creations.html`** + **`programs.html`** redirect; sidebar, **`js/search-data.js`**, **`js/explore.js`**, **`sitemap.xml`**, **`index.html`**, **`about.html`**, **`AGENTS.md`**, **`DOCS/CONTENT_GUIDE.md`**.
+- **Pages removed (2026-06-11)** — **`favorites.html`**, **`skills.html`**, **`informational-links.html`** (Wikipedia cards → **`museum.html`**; wiki tools + **Artificial Analysis** → **`tools.html`** Reference); footer **19 pages**.
+- **About (2026-06-11)** — Pages at a glance regrouped (Home / Main / More); **`css/style.css`**, **`js/search-data.js`**.
+- **Bio (2026-06-10)** — Plumber tenure + **2 years** AI coding on homepage / My Creations / About.
+- **Site:** Version badge **v1.13.0** on all HTML pages; **`updates.html`** **Latest** on **v1.13.0** (`js/updates-data.js`); search modal placeholder **v1.13.0**; **`README.md`**, **`AGENTS.md`**, **`DOCS/SUMMARY.md`**, **`DOCS/ARCHITECTURE.md`**, **`DOCS/journal/2026-06-11.md`**.
 
 ## [1.12.0] - 2026-06-10
 

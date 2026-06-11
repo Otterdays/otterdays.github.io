@@ -38,4 +38,4 @@ Bump `js/updates-data.js`, all HTML `vX.Y.Z` badges, `DOCS/CHANGELOG.md` — onl
 - Windows shell: `;` not `&&`
 - Sidebar nav must stay identical across all `*.html` (🌐 for Other Assistants — never `??`)
 - Minimize scope; read files before editing
-- Current version: **v1.12.0**
+- Current version: **v1.13.0**
