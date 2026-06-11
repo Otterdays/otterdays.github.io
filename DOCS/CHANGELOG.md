@@ -6,6 +6,7 @@ All notable changes to this project are documented in this file. Format: [Keep a
 
 ## [Unreleased]
 
+- **Inspirations Music section (2026-06-11)** — New **Music** section on **`inspirations.html`**; **Connor Price**, **Nic D**, **PRESIDENT**, **PROF** moved from Culture & long-form; **`DOCS/CONTENT_GUIDE.md`**.
 - **PROF on Inspirations (2026-06-11)** — **PROF** (Minneapolis rapper; profgampo.com) in Culture & long-form on **`inspirations.html`**; **`js/search-data.js`**.
 - **Colbert on Inspirations (2026-06-11)** — **The Late Show with Stephen Colbert** (`@ColbertLateShow`) in Late-night talk shows on **`inspirations.html`**; **`js/search-data.js`**.
 - **Inspirations late-night section (2026-06-11)** — New **Late-night talk shows** section: **The Tonight Show** (@fallontonight), **Jimmy Kimmel Live**, **Late Night with Seth Meyers**, **The Daily Show** (moved from Culture). **Veritasium**, **Reckless Ben** in News & commentary; **`js/search-data.js`**, **`DOCS/CONTENT_GUIDE.md`**.

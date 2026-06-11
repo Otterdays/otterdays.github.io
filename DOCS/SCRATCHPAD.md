@@ -2,6 +2,10 @@
 
 # SCRATCHPAD
 
+## 2026-06-11 — Inspirations Music section
+**What changed:** **`inspirations.html`** — new **Music** section; moved **Connor Price**, **Nic D**, **PRESIDENT**, **PROF** from Culture & long-form. Culture keeps PewDiePie, ryan3000, DOAC. **`DOCS/CONTENT_GUIDE.md`**, **`DOCS/CHANGELOG.md`** Unreleased.
+---
+
 ## 2026-06-11 — PROF on Inspirations
 **What changed:** **`inspirations.html`** Culture & long-form — **PROF** (Minneapolis rapper; user channel URL). **`js/search-data.js`**, **`DOCS/CHANGELOG.md`** Unreleased.
 ---
