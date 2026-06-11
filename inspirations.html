@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Inspirations | Otterdays</title>
-  <meta name="description" content="People and creators who influence what I build and share — game dev, tools, and beyond.">
-  <meta name="keywords" content="inspirations, Brackeys, theo gg, AICodeKing, Bijan Bowen, ryan3000, Fireship, Diary Of A CEO, Gamers Nexus, PewDiePie, Daily Show, Jimmy Kimmel, In the World of AI, Otterdays">
+  <meta name="description" content="Directory of creators and channels: game dev, software engineering, AI, hardware, news, and culture. Factual reference list with primary links.">
+  <meta name="keywords" content="inspirations, Bringus Studios, Philip DeFranco, Brackeys, theo gg, AICodeKing, Fireship, Gamers Nexus, TechLinked, Otterdays">
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="canonical" href="https://otterdays.github.io/inspirations.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,129 +14,109 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
   <link rel="stylesheet" href="css/style.css">
+  <!--
+    AGENT NOTE — inspirations.html
+    Purpose: factual directory of creators Ryan follows — not a promotional gallery.
+    Tone: informative, neutral third person. No catchphrases, meme quotes, or emoji stats.
+    Layout: section headings (h2) + flat .inspiration-list rows. No gradient banners, avatars, or CTA buttons.
+    New entry: pick the best section, copy .inspiration-entry markup, A–Z within section, add js/search-data.js (category: page).
+  -->
   <style>
-    .inspirations-page .inspiration-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-      gap: 1.5rem;
+    .inspirations-page .inspirations-lede {
+      max-width: 52ch;
+      margin: 0 auto 2rem;
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.55;
+      text-align: center;
     }
-    .inspiration-card {
-      background: var(--glass);
-      backdrop-filter: blur(12px);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      overflow: hidden;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      animation: slideInRight 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+
+    .inspirations-page .inspiration-section {
+      margin-bottom: 2rem;
     }
-    .inspiration-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
-    }
-    .inspiration-banner {
-      height: 100px;
-      background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 40%, #ec4899 70%, #f97316 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-    }
-    .inspiration-banner span {
-      font-family: var(--font-heading, 'Space Grotesk', sans-serif);
-      font-weight: 700;
-      font-size: 1.1rem;
-      letter-spacing: 0.08em;
-      color: rgba(255, 255, 255, 0.95);
-      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-    }
-    .inspiration-body {
-      padding: 1.25rem 1.5rem;
-    }
-    .inspiration-avatar {
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
-      margin: -36px auto 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 3px solid var(--glass);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-      background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
-      font-family: var(--font-heading, 'Space Grotesk', sans-serif);
-      font-weight: 700;
-      font-size: 1.5rem;
-      color: #fff;
-    }
-    .inspiration-avatar--fallback {
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .inspiration-name {
-      font-size: 1.35rem;
-      font-weight: 700;
-      margin: 0.75rem 0 0.25rem;
-      color: var(--fg);
-    }
-    .inspiration-role {
-      font-size: 0.8rem;
-      color: var(--accent);
+
+    .inspirations-page .inspiration-section h2 {
+      font-size: 0.78rem;
       font-weight: 600;
+      letter-spacing: 0.07em;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    .inspiration-desc {
-      font-size: 0.9rem;
       color: var(--muted);
-      line-height: 1.5;
-      margin: 0.75rem 0 1rem;
+      margin: 0 0 0.65rem;
+      padding-bottom: 0.45rem;
+      border-bottom: 1px solid var(--border);
     }
-    .inspiration-stats {
+
+    .inspirations-page .inspiration-list {
       display: flex;
-      gap: 1rem;
-      font-size: 0.8rem;
-      color: var(--muted);
-      margin-bottom: 1rem;
+      flex-direction: column;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      background: color-mix(in srgb, var(--fg) 3%, transparent);
     }
-    .inspiration-stats span {
-      display: flex;
-      align-items: center;
-      gap: 0.35rem;
+
+    .inspirations-page .inspiration-entry {
+      padding: 0.95rem 1.1rem;
+      border-bottom: 1px solid var(--border);
     }
-    .inspiration-tags {
+
+    .inspirations-page .inspiration-entry:last-child {
+      border-bottom: none;
+    }
+
+    .inspirations-page .inspiration-entry__head {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.4rem;
+      align-items: baseline;
+      gap: 0.35rem 0.75rem;
+      margin-bottom: 0.3rem;
     }
-    .inspiration-tag {
-      padding: 0.2rem 0.5rem;
-      font-size: 0.7rem;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 999px;
+
+    .inspirations-page .inspiration-entry__name {
+      font-size: 1.02rem;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .inspirations-page .inspiration-entry__name a {
+      color: var(--fg);
+      text-decoration: none;
+    }
+
+    .inspirations-page .inspiration-entry__name a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    .inspirations-page .inspiration-entry__platform {
+      font-size: 0.76rem;
       color: var(--muted);
     }
-    .inspiration-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      margin-top: 1rem;
-      padding: 0.5rem 1rem;
-      background: var(--accent);
-      color: #fff;
-      text-decoration: none;
-      border-radius: 8px;
-      font-size: 0.9rem;
-      font-weight: 600;
-      transition: opacity 0.2s, transform 0.2s;
+
+    .inspirations-page .inspiration-entry__desc {
+      font-size: 0.86rem;
+      color: var(--muted);
+      line-height: 1.5;
+      margin: 0 0 0.45rem;
+      max-width: 68ch;
     }
-    .inspiration-link:hover {
-      opacity: 0.9;
-      transform: scale(1.02);
+
+    .inspirations-page .inspiration-entry__topics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
     }
-    .inspiration-link:focus-visible {
-      outline: 2px solid var(--accent);
-      outline-offset: 2px;
+
+    .inspirations-page .inspiration-entry__topics li {
+      font-size: 0.7rem;
+      color: var(--muted);
+      padding: 0.12rem 0.4rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      background: color-mix(in srgb, var(--fg) 4%, transparent);
     }
   </style>
 </head>
@@ -241,499 +221,251 @@
 
     <header class="profile-header">
       <h1 class="profile-title">Inspirations</h1>
-      <p class="profile-handle">People and creators who influence what I build and share</p>
+      <p class="inspirations-lede">Creators and channels referenced for game dev, engineering, AI, hardware, and news. Entries are brief factual summaries with primary links.</p>
     </header>
 
-    <section class="profile-section">
-      <div class="inspiration-grid">
-        <article class="inspiration-card">
-          <div class="inspiration-banner">
-            <span>GAME DEV TUTORIALS</span>
-          </div>
-          <div class="inspiration-avatar inspiration-avatar--fallback" aria-hidden="true">B</div>
-          <div class="inspiration-body">
-            <h2 class="inspiration-name">Brackeys</h2>
-            <p class="inspiration-role">Game Developer</p>
-            <p class="inspiration-desc">Learn how to make video games. Tutorials on Godot, Unity, 3D, VFX, lighting, GDScript — and free assets. &ldquo;Hello everyone!&rdquo;</p>
-            <div class="inspiration-stats">
-              <span>📺 1.92M subscribers</span>
-              <span>🎬 470 videos</span>
-            </div>
-            <div class="inspiration-tags">
-              <span class="inspiration-tag">Godot</span>
-              <span class="inspiration-tag">Unity</span>
-              <span class="inspiration-tag">Tutorials</span>
-              <span class="inspiration-tag">Free Assets</span>
-              <span class="inspiration-tag">Game Jam</span>
-            </div>
-            <a href="https://www.youtube.com/@Brackeys" rel="noopener noreferrer" target="_blank" class="inspiration-link">
-              Watch on YouTube →
-            </a>
-          </div>
+    <section class="profile-section inspiration-section" aria-labelledby="insp-game-dev">
+      <h2 id="insp-game-dev">Game development</h2>
+      <div class="inspiration-list">
+        <article class="inspiration-entry">
+          <header class="inspiration-entry__head">
+            <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/@Brackeys" rel="noopener noreferrer" target="_blank">Brackeys</a></h3>
+            <span class="inspiration-entry__platform">YouTube</span>
+          </header>
+          <p class="inspiration-entry__desc">Game development tutorials for Godot and Unity: 2D/3D, scripting, VFX, lighting, and free asset releases.</p>
+          <ul class="inspiration-entry__topics">
+            <li>Godot</li><li>Unity</li><li>Tutorials</li><li>Game jam</li>
+          </ul>
         </article>
-        <article class="inspiration-card">
-          <div class="inspiration-banner">
-            <span>WEB DEV &amp; TOOLS</span>
-          </div>
-          <div class="inspiration-avatar inspiration-avatar--fallback" aria-hidden="true">T</div>
-          <div class="inspiration-body">
-            <h2 class="inspiration-name">theo gg</h2>
-            <p class="inspiration-role">Developer &amp; Creator</p>
-            <p class="inspiration-desc">Builds things. Creator of t3.gg, shoo (auth in 2 lines), T3 Chat, T3 Canvas, T3 Code; create-t3-app; YouTube streams and dev content.</p>
-            <div class="inspiration-stats">
-              <span>🌐 t3.gg</span>
-              <span>📺 YouTube @t3dotgg</span>
-            </div>
-            <div class="inspiration-tags">
-              <span class="inspiration-tag">T3</span>
-              <span class="inspiration-tag">shoo</span>
-              <span class="inspiration-tag">T3 Chat</span>
-              <span class="inspiration-tag">T3 Canvas</span>
-              <span class="inspiration-tag">T3 Code</span>
-              <span class="inspiration-tag">create-t3-app</span>
-            </div>
-            <a href="https://t3.gg/" rel="noopener noreferrer" target="_blank" class="inspiration-link">
-              Visit t3.gg →
-            </a>
-          </div>
+        <article class="inspiration-entry">
+          <header class="inspiration-entry__head">
+            <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/@ryanthreethousand" rel="noopener noreferrer" target="_blank">ryan3000</a></h3>
+            <span class="inspiration-entry__platform">YouTube</span>
+          </header>
+          <p class="inspiration-entry__desc">Minecraft survival and building series; creator of the world3000 project. Long-form playthroughs and community-driven worlds.</p>
+          <ul class="inspiration-entry__topics">
+            <li>Minecraft</li><li>Survival</li><li>Building</li><li>world3000</li>
+          </ul>
         </article>
-        <article class="inspiration-card">
-          <div class="inspiration-banner">
-            <span>LOW-LEVEL &amp; REVERSE ENGINEERING</span>
-          </div>
-          <div class="inspiration-avatar inspiration-avatar--fallback" aria-hidden="true">L</div>
-          <div class="inspiration-body">
-            <h2 class="inspiration-name">Low Level</h2>
-            <p class="inspiration-role">YouTube Creator</p>
-            <p class="inspiration-desc">Low-level programming, reverse engineering, and cybersecurity. Pointers, assembly, hacking, and deep dives into how computers really work.</p>
-            <div class="inspiration-stats">
-              <span>📺 281K subscribers</span>
-              <span>🎬 201 videos</span>
-            </div>
-            <div class="inspiration-tags">
-              <span class="inspiration-tag">Reverse Engineering</span>
-              <span class="inspiration-tag">Low-Level</span>
-              <span class="inspiration-tag">Cybersecurity</span>
-              <span class="inspiration-tag">Pointers</span>
-              <span class="inspiration-tag">Assembly</span>
-            </div>
-            <a href="https://www.youtube.com/@LowLevelTV" rel="noopener noreferrer" target="_blank" class="inspiration-link">
-              Watch on YouTube →
-            </a>
-          </div>
+      </div>
+    </section>
+
+    <section class="profile-section inspiration-section" aria-labelledby="insp-software">
+      <h2 id="insp-software">Software engineering</h2>
+      <div class="inspiration-list">
+        <article class="inspiration-entry">
+          <header class="inspiration-entry__head">
+            <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/@Fireship" rel="noopener noreferrer" target="_blank">Fireship</a></h3>
+            <span class="inspiration-entry__platform">YouTube · fireship.dev</span>
+          </header>
+          <p class="inspiration-entry__desc">Short-form developer education and technology news. Covers languages, frameworks, AI tooling, and open-source projects in concise episodes.</p>
+          <ul class="inspiration-entry__topics">
+            <li>Tutorials</li><li>Tech news</li><li>JavaScript</li><li>AI</li>
+          </ul>
         </article>
-        <article class="inspiration-card">
-          <div class="inspiration-banner">
-            <span>TECH NEWS</span>
-          </div>
-          <div class="inspiration-avatar inspiration-avatar--fallback" aria-hidden="true">T</div>
-          <div class="inspiration-body">
-            <h2 class="inspiration-name">TechLinked</h2>
-            <p class="inspiration-role">YouTube Creator</p>
-            <p class="inspiration-desc">Keeps you up to date with the latest tech news. Fast, witty commentary on hardware, software, and the industry.</p>
-            <div class="inspiration-stats">
-              <span>📺 1.99M subscribers</span>
-              <span>🎬 1.2K videos</span>
-            </div>
-            <div class="inspiration-tags">
-              <span class="inspiration-tag">Tech News</span>
-              <span class="inspiration-tag">Hardware</span>
-              <span class="inspiration-tag">Commentary</span>
-              <span class="inspiration-tag">Linus Media Group</span>
-            </div>
-            <a href="https://www.youtube.com/@techlinked" rel="noopener noreferrer" target="_blank" class="inspiration-link">
-              Watch on YouTube →
-            </a>
-          </div>
+        <article class="inspiration-entry">
+          <header class="inspiration-entry__head">
+            <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/@LowLevelTV" rel="noopener noreferrer" target="_blank">Low Level</a></h3>
+            <span class="inspiration-entry__platform">YouTube</span>
+          </header>
+          <p class="inspiration-entry__desc">Low-level programming, reverse engineering, and security topics. Assembly, memory, pointers, and analysis of how systems work under the hood.</p>
+          <ul class="inspiration-entry__topics">
+            <li>Reverse engineering</li><li>Assembly</li><li>Security</li><li>C/C++</li>
+          </ul>
         </article>
-        <article class="inspiration-card">
-          <div class="inspiration-banner">
-            <span>DEV CULTURE &amp; ENGINEERING</span>
-          </div>
-          <div class="inspiration-avatar inspiration-avatar--fallback" aria-hidden="true">P</div>
-          <div class="inspiration-body">
-            <h2 class="inspiration-name">The PrimeTime</h2>
-            <p class="inspiration-role">Software Engineer &amp; Streamer</p>
-            <p class="inspiration-desc">High-energy takes on software engineering, languages, and architecture — Vim/Neovim,
-              performance, and tech industry culture. Stream clips and long-form on YouTube; @ThePrimeTimeagen.</p>
-            <div class="inspiration-stats">
-              <span>📺 1.88M subscribers</span>
-              <span>🎬 1.8K videos</span>
-            </div>
-            <div class="inspiration-tags">
-              <span class="inspiration-tag">Vim</span>
-              <span class="inspiration-tag">Rust</span>
-              <span class="inspiration-tag">Architecture</span>
-              <span class="inspiration-tag">Streaming</span>
-              <span class="inspiration-tag">Dev Culture</span>
-            </div>
-            <a href="https://www.youtube.com/@ThePrimeTimeagen" rel="noopener noreferrer" target="_blank" class="inspiration-link">
-              Watch on YouTube →
-            </a>
-          </div>
+        <article class="inspiration-entry">
+          <header class="inspiration-entry__head">
+            <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/@ThePrimeTimeagen" rel="noopener noreferrer" target="_blank">The PrimeTime</a></h3>
+            <span class="inspiration-entry__platform">YouTube · ThePrimeagen</span>
+          </header>
+          <p class="inspiration-entry__desc">Software engineering commentary: languages, architecture, performance, and editor tooling (Vim/Neovim). Stream clips and long-form technical discussion.</p>
+          <ul class="inspiration-entry__topics">
+            <li>Rust</li><li>Vim</li><li>Architecture</li><li>Performance</li>
+          </ul>
         </article>
-        <article class="inspiration-card">
-          <div class="inspiration-banner">
-            <span>TECH SATIRE &amp; COMMENTARY</span>
-          </div>
-          <div class="inspiration-avatar inspiration-avatar--fallback" aria-hidden="true">S</div>
-          <div class="inspiration-body">
-            <h2 class="inspiration-name">Samtime</h2>
-            <p class="inspiration-role">YouTube Creator</p>
-            <p class="inspiration-desc">Australian YouTuber known for his comedic takes on technology. Satirical tech news, comedic skits, and parodies of major tech companies. &ldquo;G'day guys, Samtime here!&rdquo;</p>
-            <div class="inspiration-stats">
-              <span>📺 YouTube @SAMTIME</span>
-              <span>🌍 Australia</span>
-            </div>
-            <div class="inspiration-tags">
-              <span class="inspiration-tag">Tech Satire</span>
-              <span class="inspiration-tag">Commentary</span>
-              <span class="inspiration-tag">Skits</span>
-              <span class="inspiration-tag">Parody</span>
-              <span class="inspiration-tag">Australian</span>
-            </div>
-            <a href="https://www.youtube.com/@SAMTIME" rel="noopener noreferrer" target="_blank" class="inspiration-link">
-              Watch on YouTube →
-            </a>
-          </div>
+        <article class="inspiration-entry">
+          <header class="inspiration-entry__head">
+            <h3 class="inspiration-entry__name"><a href="https://t3.gg/" rel="noopener noreferrer" target="_blank">theo gg</a></h3>
+            <span class="inspiration-entry__platform">Web · YouTube @t3dotgg</span>
+          </header>
+          <p class="inspiration-entry__desc">Developer and product builder. Projects include T3 Chat, T3 Canvas, T3 Code, create-t3-app, and shoo (authentication library).</p>
+          <ul class="inspiration-entry__topics">
+            <li>TypeScript</li><li>T3 stack</li><li>Auth</li><li>Dev tools</li>
+          </ul>
         </article>
-        <article class="inspiration-card">
-          <div class="inspiration-banner">
-            <span>AI CODING &amp; LOCAL LLMS</span>
-          </div>
-          <div class="inspiration-avatar inspiration-avatar--fallback" aria-hidden="true">A</div>
-          <div class="inspiration-body">
-            <h2 class="inspiration-name">AICodeKing</h2>
-            <p class="inspiration-role">YouTube Creator</p>
-            <p class="inspiration-desc">Hands-on AI coding, local LLMs, and model benchmarks. First looks at frontier coders,
-              agent stacks, and 100% local AI workflows. &ldquo;Let&rsquo;s face the future.&rdquo;</p>
-            <div class="inspiration-stats">
-              <span>📺 120K subscribers</span>
-              <span>🎬 588 videos</span>
-            </div>
-            <div class="inspiration-tags">
-              <span class="inspiration-tag">AI Coding</span>
-              <span class="inspiration-tag">Local LLMs</span>
-              <span class="inspiration-tag">Benchmarks</span>
-              <span class="inspiration-tag">Agents</span>
-              <span class="inspiration-tag">YouTube</span>
-            </div>
-            <a href="https://www.youtube.com/@AICodeKing" rel="noopener noreferrer" target="_blank" class="inspiration-link">
-              Watch on YouTube →
-            </a>
-          </div>
+      </div>
+    </section>
+
+    <section class="profile-section inspiration-section" aria-labelledby="insp-ai">
+      <h2 id="insp-ai">AI &amp; machine learning</h2>
+      <div class="inspiration-list">
+        <article class="inspiration-entry">
+          <header class="inspiration-entry__head">
+            <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/@AICodeKing" rel="noopener noreferrer" target="_blank">AICodeKing</a></h3>
+            <span class="inspiration-entry__platform">YouTube</span>
+          </header>
+          <p class="inspiration-entry__desc">AI-assisted coding workflows, local LLM setups, coding-agent tools, and model comparison content for developers.</p>
+          <ul class="inspiration-entry__topics">
+            <li>AI coding</li><li>Local LLMs</li><li>Agents</li><li>Benchmarks</li>
+          </ul>
         </article>
-        <article class="inspiration-card">
-          <div class="inspiration-banner">
-            <span>AI MODELS &amp; HARDWARE</span>
-          </div>
-          <div class="inspiration-avatar inspiration-avatar--fallback" aria-hidden="true">B</div>
-          <div class="inspiration-body">
-            <h2 class="inspiration-name">Bijan Bowen</h2>
-            <p class="inspiration-role">YouTube Creator</p>
-            <p class="inspiration-desc">Deep dives on new AI models and dev tools &mdash; Claude, Gemma, Nemotron, Kombai,
-              and local LLM rigs. Jetson, Ollama, Open WebUI, and GPU builds for on-device AI.</p>
-            <div class="inspiration-stats">
-              <span>📺 60.3K subscribers</span>
-              <span>🌐 bijanbowen.com</span>
-            </div>
-            <div class="inspiration-tags">
-              <span class="inspiration-tag">AI Models</span>
-              <span class="inspiration-tag">Local AI</span>
-              <span class="inspiration-tag">Hardware</span>
-              <span class="inspiration-tag">Ollama</span>
-              <span class="inspiration-tag">Benchmarks</span>
-            </div>
-            <a href="https://www.youtube.com/@Bijanbowen" rel="noopener noreferrer" target="_blank" class="inspiration-link">
-              Watch on YouTube →
-            </a>
-          </div>
+        <article class="inspiration-entry">
+          <header class="inspiration-entry__head">
+            <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/@Bijanbowen" rel="noopener noreferrer" target="_blank">Bijan Bowen</a></h3>
+            <span class="inspiration-entry__platform">YouTube · bijanbowen.com</span>
+          </header>
+          <p class="inspiration-entry__desc">Coverage of new AI models and developer tools. Local inference stacks: Ollama, Open WebUI, Jetson, and consumer GPU builds.</p>
+          <ul class="inspiration-entry__topics">
+            <li>AI models</li><li>Local AI</li><li>Hardware</li><li>Ollama</li>
+          </ul>
         </article>
-        <article class="inspiration-card">
-          <div class="inspiration-banner">
-            <span>MINECRAFT &amp; WORLD3000</span>
-          </div>
-          <div class="inspiration-avatar inspiration-avatar--fallback" aria-hidden="true">R</div>
-          <div class="inspiration-body">
-            <h2 class="inspiration-name">ryan3000</h2>
-            <p class="inspiration-role">YouTube Creator</p>
-            <p class="inspiration-desc">Creator of world3000. Minecraft survival, builds, and long-form series &mdash;
-              End journeys, memorial builds, and community-driven playthroughs. @ryanthreethousand.</p>
-            <div class="inspiration-stats">
-              <span>📺 647K subscribers</span>
-              <span>🎬 161 videos</span>
-            </div>
-            <div class="inspiration-tags">
-              <span class="inspiration-tag">Minecraft</span>
-              <span class="inspiration-tag">world3000</span>
-              <span class="inspiration-tag">Survival</span>
-              <span class="inspiration-tag">Building</span>
-              <span class="inspiration-tag">YouTube</span>
-            </div>
-            <a href="https://www.youtube.com/@ryanthreethousand" rel="noopener noreferrer" target="_blank" class="inspiration-link">
-              Watch on YouTube →
-            </a>
-          </div>
+        <article class="inspiration-entry">
+          <header class="inspiration-entry__head">
+            <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/@intheworldofai" rel="noopener noreferrer" target="_blank">In the World of AI</a></h3>
+            <span class="inspiration-entry__platform">YouTube</span>
+          </header>
+          <p class="inspiration-entry__desc">AI product updates, tool walkthroughs, and practical notes on the generative-AI ecosystem for builders and observers.</p>
+          <ul class="inspiration-entry__topics">
+            <li>AI tools</li><li>Generative AI</li><li>News</li><li>Tutorials</li>
+          </ul>
         </article>
-        <article class="inspiration-card">
-          <div class="inspiration-banner">
-            <span>COMEDY &amp; CULTURE</span>
-          </div>
-          <div class="inspiration-avatar inspiration-avatar--fallback" aria-hidden="true">A</div>
-          <div class="inspiration-body">
-            <h2 class="inspiration-name">Adam Conover</h2>
-            <p class="inspiration-role">Comedian &amp; Host</p>
-            <p class="inspiration-desc">Standup comedian and television host. Long-form interviews and commentary on tech,
-              politics, and culture &mdash; including sharp takes on AI hype and industry power. @TheAdamConover.</p>
-            <div class="inspiration-stats">
-              <span>📺 942K subscribers</span>
-              <span>🎬 359 videos</span>
-            </div>
-            <div class="inspiration-tags">
-              <span class="inspiration-tag">Comedy</span>
-              <span class="inspiration-tag">Commentary</span>
-              <span class="inspiration-tag">AI</span>
-              <span class="inspiration-tag">Politics</span>
-              <span class="inspiration-tag">Interviews</span>
-            </div>
-            <a href="https://www.youtube.com/@TheAdamConover" rel="noopener noreferrer" target="_blank" class="inspiration-link">
-              Watch on YouTube →
-            </a>
-          </div>
+      </div>
+    </section>
+
+    <section class="profile-section inspiration-section" aria-labelledby="insp-hardware">
+      <h2 id="insp-hardware">Hardware &amp; PC</h2>
+      <div class="inspiration-list">
+        <article class="inspiration-entry">
+          <header class="inspiration-entry__head">
+            <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/@BringusStudios" rel="noopener noreferrer" target="_blank">Bringus Studios</a></h3>
+            <span class="inspiration-entry__platform">YouTube</span>
+          </header>
+          <p class="inspiration-entry__desc">Hardware experimentation and gaming on unconventional systems. DIY mods, handheld and console repair, and long-form projects porting or running PC games on atypical devices.</p>
+          <ul class="inspiration-entry__topics">
+            <li>DIY</li><li>Hardware mods</li><li>Retro gaming</li><li>PC gaming</li>
+          </ul>
         </article>
-        <article class="inspiration-card">
-          <div class="inspiration-banner">
-            <span>ANIMATED EXPLAINERS</span>
-          </div>
-          <div class="inspiration-avatar inspiration-avatar--fallback" aria-hidden="true">I</div>
-          <div class="inspiration-body">
-            <h2 class="inspiration-name">The Infographics Show</h2>
-            <p class="inspiration-role">YouTube Creator</p>
-            <p class="inspiration-desc">Animated motion-infographic videos that make facts entertaining. Deep dives on AI
-              bubbles, Nvidia, tech economics, and wild what-if scenarios &mdash; United States.</p>
-            <div class="inspiration-stats">
-              <span>📺 15.4M subscribers</span>
-              <span>🎬 6.1K videos</span>
-            </div>
-            <div class="inspiration-tags">
-              <span class="inspiration-tag">Infographics</span>
-              <span class="inspiration-tag">Animation</span>
-              <span class="inspiration-tag">Tech</span>
-              <span class="inspiration-tag">AI</span>
-              <span class="inspiration-tag">Explainers</span>
-            </div>
-            <a href="https://www.youtube.com/@TheInfographicsShow" rel="noopener noreferrer" target="_blank" class="inspiration-link">
-              Watch on YouTube →
-            </a>
-          </div>
+        <article class="inspiration-entry">
+          <header class="inspiration-entry__head">
+            <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/@GamersNexus" rel="noopener noreferrer" target="_blank">Gamers Nexus</a></h3>
+            <span class="inspiration-entry__platform">YouTube</span>
+          </header>
+          <p class="inspiration-entry__desc">PC hardware testing and investigative reporting. GPU/CPU reviews, thermals, benchmarks, supply-chain analysis, and industry accountability pieces.</p>
+          <ul class="inspiration-entry__topics">
+            <li>GPUs</li><li>Benchmarks</li><li>Thermals</li><li>Investigations</li>
+          </ul>
         </article>
-        <article class="inspiration-card">
-          <div class="inspiration-banner">
-            <span>TECH &amp; SECURITY</span>
-          </div>
-          <div class="inspiration-avatar inspiration-avatar--fallback" aria-hidden="true">S</div>
-          <div class="inspiration-body">
-            <h2 class="inspiration-name">SomeOrdinaryGamers</h2>
-            <p class="inspiration-role">YouTube Creator</p>
-            <p class="inspiration-desc">Mutahar&rsquo;s channel: tech news, malware deep dives, internet drama, and gaming
-              commentary. Security-minded takes on AI tools, platforms, and the weirder corners of the web.</p>
-            <div class="inspiration-stats">
-              <span>📺 3.82M subscribers</span>
-              <span>🎬 3.7K videos</span>
-            </div>
-            <div class="inspiration-tags">
-              <span class="inspiration-tag">Security</span>
-              <span class="inspiration-tag">Tech News</span>
-              <span class="inspiration-tag">Malware</span>
-              <span class="inspiration-tag">Gaming</span>
-              <span class="inspiration-tag">Commentary</span>
-            </div>
-            <a href="https://www.youtube.com/@SomeOrdinaryGamers" rel="noopener noreferrer" target="_blank" class="inspiration-link">
-              Watch on YouTube →
-            </a>
-          </div>
+        <article class="inspiration-entry">
+          <header class="inspiration-entry__head">
+            <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/@techlinked" rel="noopener noreferrer" target="_blank">TechLinked</a></h3>
+            <span class="inspiration-entry__platform">YouTube · Linus Media Group</span>
+          </header>
+          <p class="inspiration-entry__desc">Daily technology news in short episodes. Hardware launches, software industry moves, and general tech headlines.</p>
+          <ul class="inspiration-entry__topics">
+            <li>Tech news</li><li>Hardware</li><li>Industry</li>
+          </ul>
         </article>
-        <article class="inspiration-card">
-          <div class="inspiration-banner">
-            <span>BRAIN FOOD FOR DEVS</span>
-          </div>
-          <div class="inspiration-avatar inspiration-avatar--fallback" aria-hidden="true">F</div>
-          <div class="inspiration-body">
-            <h2 class="inspiration-name">Fireship</h2>
-            <p class="inspiration-role">Developer Educator</p>
-            <p class="inspiration-desc">High-intensity code tutorials and tech news in ~100 seconds. Ships fast explainers
-              on AI, JavaScript, OSS, and whatever is breaking on the internet. fireship.dev.</p>
-            <div class="inspiration-stats">
-              <span>📺 4.21M subscribers</span>
-              <span>🌐 fireship.dev</span>
-            </div>
-            <div class="inspiration-tags">
-              <span class="inspiration-tag">Tutorials</span>
-              <span class="inspiration-tag">Tech News</span>
-              <span class="inspiration-tag">AI</span>
-              <span class="inspiration-tag">JavaScript</span>
-              <span class="inspiration-tag">OSS</span>
-            </div>
-            <a href="https://www.youtube.com/@Fireship" rel="noopener noreferrer" target="_blank" class="inspiration-link">
-              Watch on YouTube →
-            </a>
-          </div>
+      </div>
+    </section>
+
+    <section class="profile-section inspiration-section" aria-labelledby="insp-news">
+      <h2 id="insp-news">News &amp; commentary</h2>
+      <div class="inspiration-list">
+        <article class="inspiration-entry">
+          <header class="inspiration-entry__head">
+            <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/@TheAdamConover" rel="noopener noreferrer" target="_blank">Adam Conover</a></h3>
+            <span class="inspiration-entry__platform">YouTube</span>
+          </header>
+          <p class="inspiration-entry__desc">Comedian and host. Long-form interviews and explanatory commentary on technology, policy, labor, and media literacy.</p>
+          <ul class="inspiration-entry__topics">
+            <li>Commentary</li><li>Interviews</li><li>Policy</li><li>Tech</li>
+          </ul>
         </article>
-        <article class="inspiration-card">
-          <div class="inspiration-banner">
-            <span>BUSINESS &amp; LEADERSHIP</span>
-          </div>
-          <div class="inspiration-avatar inspiration-avatar--fallback" aria-hidden="true">D</div>
-          <div class="inspiration-body">
-            <h2 class="inspiration-name">The Diary Of A CEO</h2>
-            <p class="inspiration-role">Podcast &amp; Interviews</p>
-            <p class="inspiration-desc">Steven Bartlett&rsquo;s long-form conversations with founders, scientists, and
-              thinkers. Business, psychology, and urgent debates on AI, economics, and where culture is headed.</p>
-            <div class="inspiration-stats">
-              <span>📺 17.3M subscribers</span>
-              <span>🌐 stevenbartlett.com</span>
-            </div>
-            <div class="inspiration-tags">
-              <span class="inspiration-tag">Podcast</span>
-              <span class="inspiration-tag">Interviews</span>
-              <span class="inspiration-tag">Business</span>
-              <span class="inspiration-tag">AI</span>
-              <span class="inspiration-tag">Culture</span>
-            </div>
-            <a href="https://www.youtube.com/@TheDiaryOfACEO" rel="noopener noreferrer" target="_blank" class="inspiration-link">
-              Watch on YouTube →
-            </a>
-          </div>
+        <article class="inspiration-entry">
+          <header class="inspiration-entry__head">
+            <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/@PhilipDeFranco" rel="noopener noreferrer" target="_blank">Philip DeFranco</a></h3>
+            <span class="inspiration-entry__platform">YouTube</span>
+          </header>
+          <p class="inspiration-entry__desc">Independent news show (The Philip DeFranco Show). Daily coverage of politics, current events, internet culture, and mainstream news stories.</p>
+          <ul class="inspiration-entry__topics">
+            <li>News</li><li>Politics</li><li>Internet culture</li><li>Commentary</li>
+          </ul>
         </article>
-        <article class="inspiration-card">
-          <div class="inspiration-banner">
-            <span>PC HARDWARE &amp; BENCHMARKS</span>
-          </div>
-          <div class="inspiration-avatar inspiration-avatar--fallback" aria-hidden="true">G</div>
-          <div class="inspiration-body">
-            <h2 class="inspiration-name">Gamers Nexus</h2>
-            <p class="inspiration-role">Hardware Analyst</p>
-            <p class="inspiration-desc">Steve Burke&rsquo;s lab: PC hardware reviews, thermals, game benchmarks, and
-              investigative reporting on GPUs, AI silicon supply chains, and industry accountability.</p>
-            <div class="inspiration-stats">
-              <span>📺 2.62M subscribers</span>
-              <span>🎬 3.2K videos</span>
-            </div>
-            <div class="inspiration-tags">
-              <span class="inspiration-tag">Hardware</span>
-              <span class="inspiration-tag">Benchmarks</span>
-              <span class="inspiration-tag">GPUs</span>
-              <span class="inspiration-tag">AI Silicon</span>
-              <span class="inspiration-tag">Investigations</span>
-            </div>
-            <a href="https://www.youtube.com/@GamersNexus" rel="noopener noreferrer" target="_blank" class="inspiration-link">
-              Watch on YouTube →
-            </a>
-          </div>
+        <article class="inspiration-entry">
+          <header class="inspiration-entry__head">
+            <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/@SAMTIME" rel="noopener noreferrer" target="_blank">Samtime</a></h3>
+            <span class="inspiration-entry__platform">YouTube · Australia</span>
+          </header>
+          <p class="inspiration-entry__desc">Technology satire and comedic commentary on consumer tech, corporate announcements, and industry trends.</p>
+          <ul class="inspiration-entry__topics">
+            <li>Satire</li><li>Consumer tech</li><li>Commentary</li>
+          </ul>
         </article>
-        <article class="inspiration-card">
-          <div class="inspiration-banner">
-            <span>LATE NIGHT &amp; COMEDY</span>
-          </div>
-          <div class="inspiration-avatar inspiration-avatar--fallback" aria-hidden="true">J</div>
-          <div class="inspiration-body">
-            <h2 class="inspiration-name">Jimmy Kimmel Live</h2>
-            <p class="inspiration-role">Late-Night Talk Show</p>
-            <p class="inspiration-desc">ABC late-night: monologues, celebrity interviews, and comedy sketches. Pop-culture
-              and political commentary with a mainstream late-show lens.</p>
-            <div class="inspiration-stats">
-              <span>📺 YouTube @JimmyKimmelLive</span>
-              <span>🇺🇸 United States</span>
-            </div>
-            <div class="inspiration-tags">
-              <span class="inspiration-tag">Late Night</span>
-              <span class="inspiration-tag">Comedy</span>
-              <span class="inspiration-tag">Interviews</span>
-              <span class="inspiration-tag">Pop Culture</span>
-              <span class="inspiration-tag">Politics</span>
-            </div>
-            <a href="https://www.youtube.com/@JimmyKimmelLive" rel="noopener noreferrer" target="_blank" class="inspiration-link">
-              Watch on YouTube →
-            </a>
-          </div>
+        <article class="inspiration-entry">
+          <header class="inspiration-entry__head">
+            <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/@SomeOrdinaryGamers" rel="noopener noreferrer" target="_blank">SomeOrdinaryGamers</a></h3>
+            <span class="inspiration-entry__platform">YouTube</span>
+          </header>
+          <p class="inspiration-entry__desc">Technology and security commentary (Mutahar Anas). Malware analysis, platform news, gaming industry topics, and internet-culture reporting.</p>
+          <ul class="inspiration-entry__topics">
+            <li>Security</li><li>Malware</li><li>Tech news</li><li>Gaming</li>
+          </ul>
         </article>
-        <article class="inspiration-card">
-          <div class="inspiration-banner">
-            <span>NEWS SATIRE</span>
-          </div>
-          <div class="inspiration-avatar inspiration-avatar--fallback" aria-hidden="true">D</div>
-          <div class="inspiration-body">
-            <h2 class="inspiration-name">The Daily Show</h2>
-            <p class="inspiration-role">Comedy News</p>
-            <p class="inspiration-desc">Sharp political satire and news commentary. Monologues, field pieces, and guest
-              interviews that unpack current events with humor and bite.</p>
-            <div class="inspiration-stats">
-              <span>📺 YouTube @TheDailyShow</span>
-              <span>🇺🇸 United States</span>
-            </div>
-            <div class="inspiration-tags">
-              <span class="inspiration-tag">Satire</span>
-              <span class="inspiration-tag">News</span>
-              <span class="inspiration-tag">Politics</span>
-              <span class="inspiration-tag">Comedy</span>
-              <span class="inspiration-tag">Commentary</span>
-            </div>
-            <a href="https://www.youtube.com/@TheDailyShow" rel="noopener noreferrer" target="_blank" class="inspiration-link">
-              Watch on YouTube →
-            </a>
-          </div>
+        <article class="inspiration-entry">
+          <header class="inspiration-entry__head">
+            <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/@TheInfographicsShow" rel="noopener noreferrer" target="_blank">The Infographics Show</a></h3>
+            <span class="inspiration-entry__platform">YouTube</span>
+          </header>
+          <p class="inspiration-entry__desc">Animated explainer videos on science, economics, geopolitics, and technology topics. Fact-forward motion graphics format.</p>
+          <ul class="inspiration-entry__topics">
+            <li>Explainers</li><li>Animation</li><li>Economics</li><li>Tech</li>
+          </ul>
         </article>
-        <article class="inspiration-card">
-          <div class="inspiration-banner">
-            <span>GAMING &amp; INTERNET CULTURE</span>
-          </div>
-          <div class="inspiration-avatar inspiration-avatar--fallback" aria-hidden="true">P</div>
-          <div class="inspiration-body">
-            <h2 class="inspiration-name">PewDiePie</h2>
-            <p class="inspiration-role">YouTube Creator</p>
-            <p class="inspiration-desc">Felix Kjellberg &mdash; one of YouTube&rsquo;s biggest creators. Gaming playthroughs,
-              meme reviews, commentary, and internet culture with a distinctive comedic voice.</p>
-            <div class="inspiration-stats">
-              <span>📺 YouTube @PewDiePie</span>
-              <span>🌍 Sweden / Global</span>
-            </div>
-            <div class="inspiration-tags">
-              <span class="inspiration-tag">Gaming</span>
-              <span class="inspiration-tag">Commentary</span>
-              <span class="inspiration-tag">Memes</span>
-              <span class="inspiration-tag">Internet Culture</span>
-              <span class="inspiration-tag">YouTube</span>
-            </div>
-            <a href="https://www.youtube.com/@PewDiePie" rel="noopener noreferrer" target="_blank" class="inspiration-link">
-              Watch on YouTube →
-            </a>
-          </div>
+      </div>
+    </section>
+
+    <section class="profile-section inspiration-section" aria-labelledby="insp-culture">
+      <h2 id="insp-culture">Culture &amp; long-form</h2>
+      <div class="inspiration-list">
+        <article class="inspiration-entry">
+          <header class="inspiration-entry__head">
+            <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/@JimmyKimmelLive" rel="noopener noreferrer" target="_blank">Jimmy Kimmel Live</a></h3>
+            <span class="inspiration-entry__platform">YouTube · ABC</span>
+          </header>
+          <p class="inspiration-entry__desc">Late-night talk show. Monologues, celebrity interviews, and comedy segments on current events and pop culture.</p>
+          <ul class="inspiration-entry__topics">
+            <li>Late night</li><li>Comedy</li><li>Interviews</li>
+          </ul>
         </article>
-        <article class="inspiration-card">
-          <div class="inspiration-banner">
-            <span>AI TOOLS &amp; NEWS</span>
-          </div>
-          <div class="inspiration-avatar inspiration-avatar--fallback" aria-hidden="true">W</div>
-          <div class="inspiration-body">
-            <h2 class="inspiration-name">In the World of AI</h2>
-            <p class="inspiration-role">YouTube Creator</p>
-            <p class="inspiration-desc">AI tools, model updates, and practical walkthroughs for builders and curious
-              viewers. Keeps pace with the fast-moving generative-AI landscape. @intheworldofai.</p>
-            <div class="inspiration-stats">
-              <span>📺 YouTube @intheworldofai</span>
-              <span>🤖 AI</span>
-            </div>
-            <div class="inspiration-tags">
-              <span class="inspiration-tag">AI Tools</span>
-              <span class="inspiration-tag">Generative AI</span>
-              <span class="inspiration-tag">Tutorials</span>
-              <span class="inspiration-tag">News</span>
-              <span class="inspiration-tag">YouTube</span>
-            </div>
-            <a href="https://www.youtube.com/@intheworldofai" rel="noopener noreferrer" target="_blank" class="inspiration-link">
-              Watch on YouTube →
-            </a>
-          </div>
+        <article class="inspiration-entry">
+          <header class="inspiration-entry__head">
+            <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/@PewDiePie" rel="noopener noreferrer" target="_blank">PewDiePie</a></h3>
+            <span class="inspiration-entry__platform">YouTube</span>
+          </header>
+          <p class="inspiration-entry__desc">Felix Kjellberg. Gaming playthroughs, commentary, and internet-culture content; one of YouTube&rsquo;s longest-running large channels.</p>
+          <ul class="inspiration-entry__topics">
+            <li>Gaming</li><li>Commentary</li><li>Internet culture</li>
+          </ul>
+        </article>
+        <article class="inspiration-entry">
+          <header class="inspiration-entry__head">
+            <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/@TheDailyShow" rel="noopener noreferrer" target="_blank">The Daily Show</a></h3>
+            <span class="inspiration-entry__platform">YouTube</span>
+          </header>
+          <p class="inspiration-entry__desc">Political satire and news commentary. Monologues, field segments, and guest interviews on U.S. and world current events.</p>
+          <ul class="inspiration-entry__topics">
+            <li>Satire</li><li>News</li><li>Politics</li>
+          </ul>
+        </article>
+        <article class="inspiration-entry">
+          <header class="inspiration-entry__head">
+            <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/@TheDiaryOfACEO" rel="noopener noreferrer" target="_blank">The Diary Of A CEO</a></h3>
+            <span class="inspiration-entry__platform">YouTube · Podcast</span>
+          </header>
+          <p class="inspiration-entry__desc">Interview series hosted by Steven Bartlett. Founders, scientists, and public figures on business, psychology, health, and technology.</p>
+          <ul class="inspiration-entry__topics">
+            <li>Podcast</li><li>Business</li><li>Interviews</li><li>Leadership</li>
+          </ul>
         </article>
       </div>
     </section>

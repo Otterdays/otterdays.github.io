@@ -2,6 +2,15 @@
 
 # SCRATCHPAD
 
+## 2026-06-10 — Bringus Studios (inspirations)
+**What changed:** **`inspirations.html`** Hardware &amp; PC — [Bringus Studios](https://www.youtube.com/@BringusStudios). **`js/search-data.js`**, **`DOCS/CHANGELOG.md`** Unreleased.
+**Next:** Committed + pushed with inspirations redesign batch.
+---
+
+## 2026-06-10 — Inspirations redesign + Philip DeFranco
+**What changed:** **`inspirations.html`** — sectioned directory layout, informative tone, agent HTML comment at top. **Philip DeFranco** (@PhilipDeFranco) in News & commentary. **`js/search-data.js`**, **`DOCS/CHANGELOG.md`** Unreleased.
+---
+
 ## 2026-06-10 — Terraria World Config link-cluster UI
 **What changed:** **`index.html`** — `.link-cluster` (title + Docs / Quick start / GitHub segmented buttons) in hero + Explore card; docs URL [otterdays.github.io/Terraria-World-Config-Mod](https://otterdays.github.io/Terraria-World-Config-Mod/#home). **`css/style.css`**, **`js/search-data.js`**, **`programs.html`** docs link.
 ---

@@ -1,5 +1,17 @@
 # SUMMARY
 
+## Recent update — 2026-06-10 (Inspirations directory redesign)
+
+- **`inspirations.html`** — Factual sectioned layout (no gradient cards). Agent HTML comment defines tone: informative, not promotional. Sections: Game dev · Software · AI · Hardware · News · Culture.
+- **New entries:** **Philip DeFranco** (News & commentary), **Bringus Studios** (Hardware & PC).
+- **`js/search-data.js`** — Philip DeFranco, Bringus Studios, theo gg, Low Level, TechLinked rows; toned-down copy on page index.
+- **`DOCS/CONTENT_GUIDE.md`** — Inspirations page placement + style note for agents.
+
+## Recent update — 2026-06-10 (Homepage projects + sidebar)
+
+- **`index.html`** — **Android-Stuffs**, **Terraria World Config** (`.link-cluster`: Docs / Quick start / GitHub); **`programs.html`**, **`js/badges.js`**, **`css/style.css`**.
+- **Sidebar** — Home first; full-ring active state; **Favorites** on all main pages (`tools/replace_sidebar_nav.py`).
+
 ## Release v1.11.0 — 2026-06-10
 
 - **Version:** Site badge **v1.11.0** everywhere; **`updates.html`** **Latest** on **v1.11.0**; **`js/updates-data.js`** minor release card.

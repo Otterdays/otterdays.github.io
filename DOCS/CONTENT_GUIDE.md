@@ -50,6 +50,7 @@ Quick use:
 | `specials.html` | Free resources, learning | Domains, courses, unique offers |
 | `offline-survival.html` | Offline / resilience knowledge | Project NOMAD, Kiwix, local AI, maps, prep stacks; [AMENDED 2026-04-04] |
 | `skills.html` | Agent skills & tools | Cursor/Antigravity agentic tools, MCPs, SkillBox, Skills directory (React/Testing/Git) |
+| `inspirations.html` | YouTube / creators Ryan follows | One row per creator; grouped by topic section — not tools or companies [AMENDED 2026-06-10] |
 
 ### HTML Template (link card)
 
@@ -80,6 +81,7 @@ Quick use:
 - **Other Assistants** (`other-assistants.html`) [AMENDED 2026-06-10]: Perplexity, **OpenRouter**, **Duck.ai**, Poe, **T3 Chat**, NotebookLM, Character.AI, Copilot, HuggingChat, Cohere, Pi — grouped by country. Cross-link from **`chats.html`**. Hubs/providers (not labs): **OpenRouter**, **Duck.ai**, **T3 Chat**, Poe.
 - **Placement** [AMENDED 2026-06-10]: Local PC agent tools (**OpenClaw**, **NanoClaw**, **NemoClaw**) → **`tools.html`** (`#computer-automation` / CLI). Agent-first social (**Moltbook**) → **`specials.html`**.
 - **OpenClaw ecosystem** [AMENDED 2026-04-03]: Long-form notes and decision guide live in repo-root **`Openclaw_variations.md`** (not built for GitHub Pages). **Site map** (project → `tools.html` / `companies.html` / `specials.html`): **`DOCS/OPENCLAW_ECOSYSTEM.md`**. When adding a new claw-class or adjacent agent: (1) card in **`#computer-automation`** (preserve narrative order), (2) row in **`DOCS/OPENCLAW_ECOSYSTEM.md`**, (3) **`js/search-data.js`**, (4) optional bullet in **`Openclaw_variations.md`**, (5) country badge in **`js/badges.js`** if the card should show a flag (match `.chat-link-name` exactly).
+- **Inspirations** (`inspirations.html`) [AMENDED 2026-06-10]: **Informative directory** — factual third-person blurbs; no catchphrases, emoji stats, gradient banners, or CTA buttons. Read the **AGENT NOTE** HTML comment at top of the file. Layout: `h2` topic sections + `.inspiration-list` / `.inspiration-entry` rows; **A–Z within each section**. Pick section: Game development · Software engineering · AI & machine learning · Hardware & PC · News & commentary · Culture & long-form. Also add **`js/search-data.js`** (`category: page`).
 
 ---
 

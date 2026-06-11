@@ -4,6 +4,10 @@ All notable changes to this project are documented in this file. Format: [Keep a
 
 ## [Unreleased]
 
+### Changed
+- **Inspirations page (2026-06-10)** — Reorganized into factual sections; subdued list layout (no gradient cards). **Philip DeFranco** added. Agent comment in **`inspirations.html`**; **`js/search-data.js`** updated.
+- **Bringus Studios (2026-06-10)** — [@BringusStudios](https://www.youtube.com/@BringusStudios) on **`inspirations.html`** (Hardware &amp; PC); **`js/search-data.js`**.
+
 ### Added
 - **Terraria World Config (2026-06-10)** — [docs site](https://otterdays.github.io/Terraria-World-Config-Mod/#home) + [GitHub](https://github.com/Otterdays/Terraria-World-Config-Mod) on **`index.html`** (`.link-cluster` hero + Explore card), **`programs.html`**, **`css/style.css`**, **`js/search-data.js`**, **`js/badges.js`** (Game badge).
 - **Android-Stuffs (2026-06-10)** — [Otterdays/Android-Stuffs](https://github.com/Otterdays/Android-Stuffs) on **`index.html`** (hero link + Explore card), **`programs.html`**, **`js/search-data.js`**, **`js/badges.js`** (Android badge).
