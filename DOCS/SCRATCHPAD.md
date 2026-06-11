@@ -2,6 +2,11 @@
 
 # SCRATCHPAD
 
+## 2026-06-10 — T3 Chat → Other Assistants (hub, not lab)
+**What changed:** **`chats.html`** — removed **T3 Chat** from Provider Chats. **`other-assistants.html`** — added beside **Poe**. **`js/search-data.js`**, **`about.html`**, **`DOCS/CONTENT_GUIDE.md`**, **`DOCS/CHANGELOG.md`**, **`DOCS/SUMMARY.md`**.
+**Out-of-scope observations:** **T3 (theo gg)** company card on **`companies.html`** unchanged.
+---
+
 ## 2026-06-10 — MAI Playground + Microsoft AI
 **What changed:** **`chats.html`** — **MAI Playground** (US). **`companies.html`** — **Microsoft AI**, **MAI Playground** under Microsoft. **`js/search-data.js`**, **`js/badges.js`**. **`DOCS/CHANGELOG.md`**, **`DOCS/SUMMARY.md`**.
 **Out-of-scope observations:** Copilot stays on **`other-assistants.html`**; MAI is separate Microsoft AI division product line.

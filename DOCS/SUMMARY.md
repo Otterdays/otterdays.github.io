@@ -1,5 +1,11 @@
 # SUMMARY
 
+## Recent update — 2026-06-10 (T3 Chat → Other Assistants)
+
+- **`chats.html`** — **T3 Chat** removed from Provider Chats (hub, not lab).
+- **`other-assistants.html`** — **T3 Chat** with **Poe** (US multi-model hubs).
+- **`js/search-data.js`**, **`about.html`**, **`DOCS/CONTENT_GUIDE.md`**.
+
 ## Recent update — 2026-06-10 (MAI Playground + Microsoft AI)
 
 - **`chats.html`** — **MAI Playground** (US provider chats).

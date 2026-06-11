@@ -15,6 +15,7 @@ All notable changes to this project are documented in this file. Format: [Keep a
 - **Other Assistants page (2026-06-10)** — New **`other-assistants.html`**; sidebar link on main pages; **`sitemap.xml`**, **`js/explore.js`**, **`js/search-data.js`**; **`about.html`**; page count **22**.
 
 ### Changed
+- **T3 Chat placement (2026-06-10)** — Moved from **`chats.html`** Provider Chats to **`other-assistants.html`** (multi-model hub like Poe, not a first-party lab). **`js/search-data.js`**, **`about.html`**, **`DOCS/CONTENT_GUIDE.md`**.
 - **Hermes Agent (2026-06-10)** — Refreshed copy (v0.16, channels, sandbox); **GitHub** card [nousresearch/hermes-agent](https://github.com/nousresearch/hermes-agent) on **`tools.html`** and **`companies.html`**; **`js/search-data.js`**, **`js/badges.js`**, **`Openclaw_variations.md`**.
 - **Llama link (2026-06-10)** — Removed **Llama 4** from **`chats.html`** (not a chat). **`companies.html`** Meta section → [llama.com](https://llama.com/) (download models &amp; docs). **`js/search-data.js`**, **`js/badges.js`**.
 - **AI Museum (2026-06-10)** — **`museum.html`** Q2 2026: flagships **Composer 2.5**, **Claude Fable 5**, **GPT-5.5**; Cursor Jun 2026 model menu snapshot (effort tiers High/Medium/None/Edit); roster + master catalog (**Fable 5**, **Opus 4.8**, **GPT-5.3**, etc.); **Sonnet 4.6** labeled **Medium**. **`js/search-data.js`**, **`informational-links.html`**.
