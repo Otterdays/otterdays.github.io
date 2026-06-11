@@ -1,12 +1,24 @@
 # Cursor IDE setup — Tools & MCPs
 
-Concise reference for tools and MCPs in this Cursor IDE setup. Use for the Skills/Tools page and handoff.
+Concise reference for tools and MCPs in this Cursor IDE setup. Canonical doc for agent skills (formerly `skills.html`); surfaced on **`tools.html#agent-skills`**.
 
 ---
 
 ## Built-in agent tools (Cursor)
 
-Standard tools the agent has without MCP: `read_file`, `write`, `search_replace`, `delete_file`, `edit_notebook`, `codebase_search`, `grep`, `list_dir`, `glob_file_search`, `run_terminal_cmd`, `read_lints`, `todo_write`, `web_search`, `mcp_web_fetch`, `update_memory`, `generate_image`, `call_mcp_tool`, `list_mcp_resources`, `fetch_mcp_resource`. Full list on `skills.html`.
+Standard tools the agent has without MCP:
+
+| Group | Tools |
+|-------|-------|
+| **File & code** | `read_file`, `write`, `search_replace`, `delete_file`, `edit_notebook` |
+| **Search & discovery** | `codebase_search`, `grep`, `list_dir`, `glob_file_search` |
+| **Terminal** | `run_terminal_cmd` |
+| **Quality** | `read_lints` |
+| **Task management** | `todo_write` |
+| **Web & research** | `web_search`, `mcp_web_fetch` |
+| **Memory** | `update_memory` |
+| **Image** | `generate_image` |
+| **MCP** | `call_mcp_tool`, `list_mcp_resources`, `fetch_mcp_resource` |
 
 ---
 
@@ -24,6 +36,21 @@ MCPs expose tools the agent can call (browser, Docker, etc.).
 - **Location:** `mcps/cursor-ide-browser/` (SERVER_METADATA.json, INSTRUCTIONS.md).
 - **Workflow:** `browser_navigate` → `browser_lock` → interactions → `browser_unlock`. Use `browser_tabs` (list) and `browser_snapshot` before clicks/typing.
 - **Tools (conceptual):** browser_navigate, browser_tabs, browser_snapshot, browser_lock/unlock, browser_click, browser_type, browser_fill, browser_scroll, browser_handle_dialog, browser_profile_start/stop (CPU profiling).
+
+---
+
+## Antigravity agentic tools
+
+Tools available to the Google Antigravity agent (built-in + connected MCP servers).
+
+| Group | Tools |
+|-------|-------|
+| **File & code navigation** | `view_file`, `view_file_outline`, `view_code_item`, `list_dir`, `find_by_name`, `grep_search` |
+| **Editing & creation** | `write_to_file`, `replace_file_content`, `multi_replace_file_content` |
+| **Terminal** | `run_command`, `send_command_input`, `command_status`, `read_terminal` |
+| **Web & browser** | `search_web`, `browser_subagent`, `read_url_content`, `view_content_chunk` |
+| **Intelligence & creativity** | `generate_image`, `sequential_thinking` |
+| **Connected MCPs** | Arize Tracing, Genkit, System Resources |
 
 ---
 
@@ -51,8 +78,9 @@ Skills are Cursor Agent Skills (SKILL.md) under `~/.cursor/skills-cursor/`. The 
 
 ## Summary
 
-- **Built-in tools:** File, search, terminal, lint, todo, web, memory, image, MCP. Full list on `skills.html`.
+- **Built-in tools:** File, search, terminal, lint, todo, web, memory, image, MCP (see tables above).
+- **Antigravity:** view_file, write_to_file, browser_subagent, sequential_thinking, etc.
 - **MCPs:** Docker (user), cursor-ide-browser (project).
 - **Agent skills:** create-rule, create-skill, update-cursor-settings, create-subagent, migrate-to-skills.
-- **SkillBox:** antjanus/skillbox. **Skills directory:** npx skills find, skills.sh, /find-skills.
-- **Doc:** Keep this file updated when you add/remove MCPs or skills. Skills/Tools page in the site nav summarizes and links here.
+- **SkillBox:** antjanus/skillbox. **Skills directory:** npx skills find, skills.sh, /find-skills — cards on **`tools.html#agent-skills`**.
+- **Doc:** Keep this file updated when you add/remove MCPs or skills.

@@ -1,4 +1,4 @@
-# Sync site sidebar: Home first, remaining links A–Z.
+# Sync site sidebar: Home standalone, Main pages group, More group.
 # Run from repo root: python tools/replace_sidebar_nav.py
 
 import re
@@ -6,39 +6,66 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 
-# Home pinned first; rest alphabetical by label.
-LINKS = [
-    ("index.html", "Home", "🏠", "Home"),
+# (href, title attr, icon, visible label)
+HOME = ("index.html", "Home", "🏠", "Home")
+
+MAIN_PAGES = [
     ("about.html", "About", "👤", "About"),
     ("chats.html", "AI Chats", "💬", "AI Chats"),
-    ("museum.html", "AI Museum", "🏛️", "AI Museum"),
-    ("companies.html", "Companies", "🏢", "Companies"),
-    ("explore.html", "Explore Data", "📊", "Explore"),
-    ("favorites.html", "Favorites", "❤️", "Favorites"),
-    ("informational-links.html", "Informational Links", "🔗", "Informational Links"),
     ("inspirations.html", "Inspirations", "✨", "Inspirations"),
     ("media.html", "Media Gen", "🎨", "Media Gen"),
     ("offline-survival.html", "Offline survival", "🛡️", "Offline survival"),
     ("other-assistants.html", "Other Assistants", "🌐", "Other Assistants"),
-    ("posts.html", "Posts", "📰", "Posts"),
-    ("programs.html", "Programs", "🎮", "Programs"),
-    ("skills.html", "Skills", "🧠", "Skills"),
     ("specials.html", "Specials", "⭐", "Specials"),
     ("tools.html", "Tools", "🛠️", "Tools"),
+]
+
+MORE_PAGES = [
+    ("museum.html", "AI Museum", "🏛️", "AI Museum"),
+    ("my-creations.html", "My Creations", "🎮", "My Creations"),
+    ("companies.html", "Companies", "🏢", "Companies"),
+    ("explore.html", "Explore Data", "📊", "Explore"),
+    ("posts.html", "Posts", "📰", "Posts"),
     ("updates.html", "Updates", "📋", "Updates"),
 ]
 
 COMPANY_PAGES = {"openai.html", "anthropic.html", "google-gemini.html", "xai.html", "arcee.html"}
 
 
+def link_line(href: str, title: str, icon: str, text: str, active_href: str | None) -> list[str]:
+    active = ' class="active"' if active_href and href == active_href else ""
+    return [
+        f'    <a href="{href}"{active} title="{title}">',
+        f'      <span class="sidebar-icon">{icon}</span>',
+        f'      <span class="sidebar-text">{text}</span>',
+        "    </a>",
+    ]
+
+
+def block_lines(links: list[tuple[str, str, str, str]], active_href: str | None, modifier: str = "") -> list[str]:
+    cls = f"sidebar-block {modifier}".strip()
+    lines = [f'  <div class="{cls}">']
+    for href, title, icon, text in links:
+        lines.extend(link_line(href, title, icon, text, active_href))
+    lines.append("  </div>")
+    return lines
+
+
 def build_nav(active_href: str | None) -> str:
     lines = ['  <nav class="sidebar">']
-    for href, title, icon, text in LINKS:
-        active = ' class="active"' if active_href and href == active_href else ""
-        lines.append(f'    <a href="{href}"{active} title="{title}">')
-        lines.append(f'      <span class="sidebar-icon">{icon}</span>')
-        lines.append(f'      <span class="sidebar-text">{text}</span>')
-        lines.append("    </a>")
+    lines.extend(block_lines([HOME], active_href, "sidebar-block--home"))
+    lines.append('  <div class="sidebar-divider" role="presentation"></div>')
+    lines.append('  <div class="sidebar-block sidebar-block--main">')
+    lines.append('    <p class="sidebar-group-label">Main</p>')
+    for href, title, icon, text in MAIN_PAGES:
+        lines.extend(link_line(href, title, icon, text, active_href))
+    lines.append("  </div>")
+    lines.append('  <div class="sidebar-divider" role="presentation"></div>')
+    lines.append('  <div class="sidebar-block sidebar-block--more">')
+    lines.append('    <p class="sidebar-group-label">More</p>')
+    for href, title, icon, text in MORE_PAGES:
+        lines.extend(link_line(href, title, icon, text, active_href))
+    lines.append("  </div>")
     lines.append("  </nav>")
     return "\n".join(lines)
 

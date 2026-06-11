@@ -1,5 +1,27 @@
 # SUMMARY
 
+## Recent update — 2026-06-11 (Sidebar grouped layout)
+
+- **Home** standalone; **Main** (About → Tools) and **More** (Museum → Updates) sections with dividers; labels on sidebar expand.
+
+## Recent update — 2026-06-11 (Remove favorites page)
+
+- **`favorites.html` deleted** — was empty placeholder; sidebar + **`js/theme.js`** inject removed; **19 pages**.
+
+## Recent update — 2026-06-11 (Programs → My Creations)
+
+- **`programs.html`** → **`my-creations.html`**; sidebar label **My Creations**; legacy URL redirects.
+
+## Recent update — 2026-06-11 (Remove skills page)
+
+- **`skills.html` deleted** — Agent skills ecosystem on **`tools.html#agent-skills`**; Cursor/Antigravity/MCP reference in **`DOCS/CURSOR_IDE_SETUP.md`**.
+- **Nav** — Sidebar entry removed site-wide; footer **20 pages**.
+
+## Recent update — 2026-06-11 (Remove informational-links page)
+
+- **`informational-links.html` deleted** — Wikipedia flagship/family cards on **`museum.html`**; wiki templates, Wikidata, **Artificial Analysis** on **`tools.html`** Reference.
+- **Nav** — Sidebar entry removed site-wide (`tools/replace_sidebar_nav.py`); **`js/search-data.js`**, **`js/explore.js`**, **`sitemap.xml`**, **`about.html`**; footer **21 pages**.
+
 ## Release v1.12.0 — 2026-06-10
 
 - **Version:** Site badge **v1.12.0** everywhere; **`updates.html`** **Latest** on **v1.12.0**; **`js/updates-data.js`** release card.

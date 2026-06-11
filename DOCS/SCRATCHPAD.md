@@ -2,6 +2,26 @@
 
 # SCRATCHPAD
 
+## 2026-06-11 — Sidebar grouped layout (Home / Main / More)
+**What changed:** **`tools/replace_sidebar_nav.py`** — Home standalone; **Main** + **More** sections with dividers; **`css/style.css`** `.sidebar-block`, `.sidebar-divider`, `.sidebar-group-label`; all `*.html` sidebars; **`AGENTS.md`**, **`DOCS/CHANGELOG.md`** Unreleased.
+---
+
+## 2026-06-11 — Remove favorites page
+**What changed:** Deleted empty **`favorites.html`**; removed **`ensureFavoritesNavItem`** from **`js/theme.js`**; sidebar sync (`tools/replace_sidebar_nav.py`); footer **19 pages**; **`DOCS/CHANGELOG.md`**, **`DOCS/ARCHITECTURE.md`**.
+---
+
+## 2026-06-11 — Rename Programs → My Creations
+**What changed:** **`my-creations.html`** (from programs); nav **My Creations**; **`programs.html`** redirect; **`tools/replace_sidebar_nav.py`**, **`js/search-data.js`**, **`js/explore.js`**, **`sitemap.xml`**, **`index.html`**, **`about.html`**, **`AGENTS.md`**, **`DOCS/CONTENT_GUIDE.md`**, **`DOCS/CHANGELOG.md`** Unreleased.
+---
+
+## 2026-06-11 — Remove skills page (distribute content)
+**What changed:** **`tools.html#agent-skills`** — SkillBox, skills.sh, skills directory cards; **`DOCS/CURSOR_IDE_SETUP.md`** — full Cursor + Antigravity tool tables; deleted **`skills.html`**; sidebar sync (`tools/replace_sidebar_nav.py`); **`js/search-data.js`**, **`js/explore.js`**, **`sitemap.xml`**, **`about.html`**, **`DOCS/CONTENT_GUIDE.md`**; footer **20 pages**; **`DOCS/CHANGELOG.md`** Unreleased.
+---
+
+## 2026-06-11 — Remove informational-links page (distribute content)
+**What changed:** Wikipedia flagship/family sections on **`museum.html`**; wiki templates, Wikidata, **Artificial Analysis** on **`tools.html`** Reference; deleted **`informational-links.html`**; sidebar sync via **`tools/replace_sidebar_nav.py`**; **`js/search-data.js`**, **`js/explore.js`**, **`sitemap.xml`**, **`about.html`**; footer **21 pages**; **`DOCS/CHANGELOG.md`** Unreleased.
+---
+
 ## 2026-06-10 — Inspirations: terrariums, ants, plants
 **What changed:** **Ants Canada**, **Dr Plants**, **Terrarium Designs**, **Worcester Terrariums** — new **Nature & hobbies** section on **`inspirations.html`**; **`js/search-data.js`**, **`DOCS/CHANGELOG.md`** Unreleased.
 ---

@@ -39,11 +39,16 @@
 <body data-theme="dark">
   <a href="#main" class="skip-link">Skip to content</a>
   <!-- Sidebar Navigation -->
-    <nav class="sidebar">
+              <nav class="sidebar">
+  <div class="sidebar-block sidebar-block--home">
     <a href="index.html" title="Home">
       <span class="sidebar-icon">🏠</span>
       <span class="sidebar-text">Home</span>
     </a>
+  </div>
+  <div class="sidebar-divider" role="presentation"></div>
+  <div class="sidebar-block sidebar-block--main">
+    <p class="sidebar-group-label">Main</p>
     <a href="about.html" class="active" title="About">
       <span class="sidebar-icon">👤</span>
       <span class="sidebar-text">About</span>
@@ -51,26 +56,6 @@
     <a href="chats.html" title="AI Chats">
       <span class="sidebar-icon">💬</span>
       <span class="sidebar-text">AI Chats</span>
-    </a>
-    <a href="museum.html" title="AI Museum">
-      <span class="sidebar-icon">🏛️</span>
-      <span class="sidebar-text">AI Museum</span>
-    </a>
-    <a href="companies.html" title="Companies">
-      <span class="sidebar-icon">🏢</span>
-      <span class="sidebar-text">Companies</span>
-    </a>
-    <a href="explore.html" title="Explore Data">
-      <span class="sidebar-icon">📊</span>
-      <span class="sidebar-text">Explore</span>
-    </a>
-    <a href="favorites.html" title="Favorites">
-      <span class="sidebar-icon">❤️</span>
-      <span class="sidebar-text">Favorites</span>
-    </a>
-    <a href="informational-links.html" title="Informational Links">
-      <span class="sidebar-icon">🔗</span>
-      <span class="sidebar-text">Informational Links</span>
     </a>
     <a href="inspirations.html" title="Inspirations">
       <span class="sidebar-icon">✨</span>
@@ -88,18 +73,6 @@
       <span class="sidebar-icon">🌐</span>
       <span class="sidebar-text">Other Assistants</span>
     </a>
-    <a href="posts.html" title="Posts">
-      <span class="sidebar-icon">📰</span>
-      <span class="sidebar-text">Posts</span>
-    </a>
-    <a href="programs.html" title="Programs">
-      <span class="sidebar-icon">🎮</span>
-      <span class="sidebar-text">Programs</span>
-    </a>
-    <a href="skills.html" title="Skills">
-      <span class="sidebar-icon">🧠</span>
-      <span class="sidebar-text">Skills</span>
-    </a>
     <a href="specials.html" title="Specials">
       <span class="sidebar-icon">⭐</span>
       <span class="sidebar-text">Specials</span>
@@ -108,10 +81,35 @@
       <span class="sidebar-icon">🛠️</span>
       <span class="sidebar-text">Tools</span>
     </a>
+  </div>
+  <div class="sidebar-divider" role="presentation"></div>
+  <div class="sidebar-block sidebar-block--more">
+    <p class="sidebar-group-label">More</p>
+    <a href="museum.html" title="AI Museum">
+      <span class="sidebar-icon">🏛️</span>
+      <span class="sidebar-text">AI Museum</span>
+    </a>
+    <a href="my-creations.html" title="My Creations">
+      <span class="sidebar-icon">🎮</span>
+      <span class="sidebar-text">My Creations</span>
+    </a>
+    <a href="companies.html" title="Companies">
+      <span class="sidebar-icon">🏢</span>
+      <span class="sidebar-text">Companies</span>
+    </a>
+    <a href="explore.html" title="Explore Data">
+      <span class="sidebar-icon">📊</span>
+      <span class="sidebar-text">Explore</span>
+    </a>
+    <a href="posts.html" title="Posts">
+      <span class="sidebar-icon">📰</span>
+      <span class="sidebar-text">Posts</span>
+    </a>
     <a href="updates.html" title="Updates">
       <span class="sidebar-icon">📋</span>
       <span class="sidebar-text">Updates</span>
     </a>
+  </div>
   </nav>
 
   <main class="content" id="main">
@@ -150,7 +148,7 @@
     <section class="profile-section stagger-1">
       <h2>What this is</h2>
       <p>This site is a mix of <strong>my projects</strong> and <strong>tools I&rsquo;ve found, tried, or looked
-          at</strong> at some point and want to share. It&rsquo;s a personal hub: part portfolio (Programs), part link
+          at</strong> at some point and want to share. It&rsquo;s a personal hub: part portfolio (<a href="my-creations.html">My Creations</a>), part link
         collection (AI Chats, Media Gen, Companies, Tools, Specials).</p>
     </section>
 
@@ -165,20 +163,18 @@
       <h2>Pages at a glance</h2>
       <ul class="about-list">
         <li><strong>Home</strong> — Short intro and profile.</li>
-        <li><strong>Programs</strong> — My projects (games, tools, experiments).</li>
+        <li><strong>My Creations</strong> — Personal projects (games, tools, experiments) on <a href="my-creations.html">my-creations.html</a>.</li>
         <li><strong>AI Chats</strong> — First-party lab model chats (ChatGPT, Claude, Gemini, Lumo, etc.) by country.</li>
         <li><strong>Other Assistants</strong> — Answer engines, multi-model hubs, and specialty chats (<a href="other-assistants.html">other-assistants.html</a>): Perplexity, OpenRouter, Duck.ai, Poe, T3 Chat, NotebookLM, Character.AI, and more.</li>
-        <li><strong>AI Museum</strong> — Landmark language models and Q2 2026 roster (Cursor Jun 2026 menu); see <a href="informational-links.html">Informational Links</a> for Wikipedia references.</li>
+        <li><strong>AI Museum</strong> — Landmark language models and Q2 2026 roster (Cursor Jun 2026 menu); Wikipedia articles for flagships and families on <a href="museum.html">museum.html</a>.</li>
         <li><strong>Google Gemini</strong> — Premium provider catalog: every major Gemini / Gemma / Nano Banana model, specs, and timeline (<a href="google-gemini.html">google-gemini.html</a>).</li>
         <li><strong>OpenAI</strong>, <strong>Anthropic</strong>, <strong>xAI</strong>, <strong>Arcee AI</strong> — Same museum layout for GPT/Claude/Grok and Arcee open/merge models — <a href="openai.html">openai.html</a>, <a href="anthropic.html">anthropic.html</a>, <a href="xai.html">xai.html</a>, <a href="arcee.html">arcee.html</a>.</li>
         <li><strong>Explore</strong> — Charts and tag visualization of indexed site data.</li>
-        <li><strong>Informational Links</strong> — Wikipedia and encyclopedia links for frontier models (museum context).</li>
         <li><strong>Media Gen</strong> — AI tools for video, image, and audio generation.</li>
         <li><strong>Offline survival</strong> — Resilient offline knowledge (<a href="offline-survival.html">offline-survival.html</a>): Project NOMAD, Kiwix, local AI, maps, education.</li>
         <li><strong>Companies</strong> — Companies and products, grouped by brand.</li>
-        <li><strong>Tools</strong> — CLI, IDE, browser tools, tunneling, voice, DevOps, reference. <strong>Computer automation (agents)</strong> on <a href="tools.html#computer-automation">tools.html#computer-automation</a> lists OpenClaw-style stacks; repo map: <a href="https://github.com/Otterdays/otterdays.github.io/blob/main/DOCS/OPENCLAW_ECOSYSTEM.md" rel="noopener noreferrer" target="_blank">DOCS/OPENCLAW_ECOSYSTEM.md</a>, notes: <a href="https://github.com/Otterdays/otterdays.github.io/blob/main/Openclaw_variations.md" rel="noopener noreferrer" target="_blank">Openclaw_variations.md</a>.</li>
+        <li><strong>Tools</strong> — CLI, IDE, browser tools, tunneling, voice, DevOps, reference; <a href="tools.html#agent-skills">agent skills</a> (SkillBox, skills.sh, <a href="https://github.com/Otterdays/otterdays.github.io/blob/main/DOCS/CURSOR_IDE_SETUP.md" rel="noopener noreferrer" target="_blank">CURSOR_IDE_SETUP.md</a>). <strong>Computer automation (agents)</strong> on <a href="tools.html#computer-automation">tools.html#computer-automation</a> lists OpenClaw-style stacks; repo map: <a href="https://github.com/Otterdays/otterdays.github.io/blob/main/DOCS/OPENCLAW_ECOSYSTEM.md" rel="noopener noreferrer" target="_blank">DOCS/OPENCLAW_ECOSYSTEM.md</a>, notes: <a href="https://github.com/Otterdays/otterdays.github.io/blob/main/Openclaw_variations.md" rel="noopener noreferrer" target="_blank">Openclaw_variations.md</a>.</li>
         <li><strong>Specials</strong> — Free and special services (e.g. free domains, learning).</li>
-        <li><strong>Skills/Tools</strong> — IDE skills, agentic tools, and MCPs for my Cursor setup.</li>
         <li><strong>Updates</strong> — Version history, new features, fixes, and changes.</li>
         <li><strong>Inspirations</strong> — People and creators who influence what I build (Brackeys, theo gg, AICodeKing, Bijan Bowen, ryan3000, Fireship, The Diary Of A CEO, Gamers Nexus, PewDiePie, In the World of AI, and more on <a href="inspirations.html">inspirations.html</a>).</li>
         <li><strong>Posts</strong> — Archived articles and links I want to keep.</li>
@@ -211,7 +207,7 @@
     <footer class="site-footer">
       <div class="site-stats">
         <div class="stat-item" title="Indexed items"><span class="stat-icon">🔍</span> 100+ items</div>
-        <div class="stat-item" title="Pages"><span class="stat-icon">📄</span> 22 pages</div>
+        <div class="stat-item" title="Pages"><span class="stat-icon">📄</span> 19 pages</div>
         <div class="stat-item" title="Companies listed"><span class="stat-icon">🏢</span> 78+ companies</div>
       </div>
       <div class="site-copy">

@@ -9,7 +9,8 @@
 ```
 /
 ├── index.html              # Home: profile, social links
-├── programs.html           # Projects grid with badges (~60+ projects)
+├── my-creations.html       # Personal creations grid with badges (~60+ projects); nav label **My Creations**
+├── programs.html           # Redirect → my-creations.html (legacy URL)
 ├── chats.html              # AI Chats: Provider model chats by country
 ├── other-assistants.html   # Answer engines & specialty assistants (Perplexity, Poe, etc.)
 ├── museum.html             # AI Model Museum (landmark LLMs); premium provider catalog chips; master catalog; model makers registry (registry vs linked v1.0 badges)
@@ -18,14 +19,12 @@
 ├── anthropic.html          # Premium provider catalog: Anthropic Claude
 ├── xai.html                # Premium provider catalog: xAI Grok
 ├── arcee.html              # Premium provider catalog: Arcee AI models & merge stack
-├── informational-links.html  # Wikipedia / reference links + Wikipedia navbox template hub for museum context
 ├── media.html              # AI Media Gen: Video, Image, Audio
 ├── companies.html          # AI & dev tools by company (80+); collapsible sections
 ├── tools.html              # CLI, IDE, Browser based builder, Browser Tools, Web builders, DevOps, Reference, etc. (A–Z within sections). [AMENDED 2026-03-29]: **Computer automation (agents)** — curated order (OpenClaw, Playwright, Hermes Agent, claw ecosystem); not strict A–Z. [AMENDED 2026-04-03]: Extended claw alts, Playwright MCP, awesome list, link to **Openclaw_variations.md** on GitHub. [AMENDED 2026-04-27]: **Design & UI** (`#design-ui`) — Coolors, Mobbin, Awesome DESIGN.md (VoltAgent), Button Stealer; **Games tools** section — MC Tools card (section renamed from Game development).
 ├── Openclaw_variations.md  # Repo-only: OpenClaw alternatives, decision guide (linked from tools.html).
 ├── offline-survival.html   # Offline resilience: Project NOMAD, Kiwix, IIAB, building blocks
 ├── specials.html           # Specials: Free domains, Learning, Games; link hub to offline-survival
-├── skills.html             # Skills/Tools: agentic tools, MCPs, SkillBox, Skills directory
 ├── explore.html            # Explore: premium metrics dashboard (SVG donut, animated stats, podium)
 ├── updates.html            # Site changelog timeline (js/updates-data.js)
 ├── inspirations.html       # YouTube / creator inspirations
@@ -67,28 +66,33 @@
 
 [AMENDED 2026-03-26]: **Sidebar** link order corrected to **A–Z** (About first). **museum.html** model makers: **linked** `v1.0` only for the five premium catalog pages (six tiles; Google + Google DeepMind → `google-gemini.html`). **informational-links** includes Wikipedia template hub section.
 
+[AMENDED 2026-06-11]: **`informational-links.html` removed** — Wikipedia flagship/family cards live on **`museum.html`**; wiki templates, Wikidata, benchmarks, and research tools on **`tools.html`** Reference. Sidebar no longer lists Informational Links.
+
+[AMENDED 2026-06-11]: **`skills.html` removed** — Agent skills cards on **`tools.html#agent-skills`**; Cursor/Antigravity/MCP tables in **`DOCS/CURSOR_IDE_SETUP.md`**.
+
 ## Navigation (all pages)
 
 **Sidebar Navigation:** A sticky, collapsible sidebar on the left (`.sidebar`).
 - **Collapsed (64px):** Shows icons only.
 - **Expanded (240px):** Expands on hover to show text labels.
 - **Mobile:** Fixed bottom navigation bar (icons only).
-- **Links (A–Z by label):** About, AI Chats, AI Museum, Companies, Explore, Home, Informational Links, Inspirations, Media Gen, **Offline survival**, Posts, Programs, Skills, Specials, Tools, Updates. *(Per-provider shortcuts are not in the sidebar; use museum gateway chips or Companies.)* [AMENDED 2026-04-04]: **Offline survival** → `offline-survival.html`.
+- **Sidebar groups** [AMENDED 2026-06-11]: **Home** (standalone) → **Main** (About, AI Chats, Inspirations, Media Gen, Offline survival, Other Assistants, Specials, Tools) → **More** (AI Museum, My Creations, Companies, Explore, Posts, Updates). See `tools/replace_sidebar_nav.py`. [AMENDED 2026-06-11]: **Programs** renamed **My Creations** (`my-creations.html`). [AMENDED 2026-06-11]: **Favorites** removed (empty placeholder). *(Per-provider shortcuts are not in the sidebar; use museum gateway chips or Companies.)* [AMENDED 2026-04-04]: **Offline survival** → `offline-survival.html`. [AMENDED 2026-06-11]: **Informational Links** removed from sidebar (content distributed to museum + tools).
 
 ## Page breakdown
 
 | Page           | Sections / content |
 |----------------|--------------------|
 | **index**      | Profile, image, home links (X, Bluesky, GitHub). **Bento layout:** Image (col-span-2 on mobile), profile text. |
-| **programs**   | Profile header + projects grid; `js/badges.js` adds badges by title. **Glassmorphic cards.** |
+| **my-creations** | Profile header + creations grid; `js/badges.js` adds badges by title. **Glassmorphic cards.** |
 | **chats**      | **Assistants** & **Provider hubs**: Bento grid layout with featured cards (e.g. OpenAI, Anthropic). |
 | **media**      | **Video**, **Image**, **Audio**, **Platforms**: Collapsible sections. Bento grid layout with emoji accents. |
 | **companies**  | One section per company (80+); collapsible; country badges on h2. |
 | **tools**      | **CLI** (incl. AI agents, **Fresh** / **Orbiton** TUI editors), **Browser based builder**, **IDE**, **Web builders**, **Browser Tools**, **DevOps**, **Reference** (e.g. Awesome TUIs), etc.; collapsible + A–Z filter bar. |
 | **specials**   | **Free domains**, **Learning**, **Games**: Collapsible sections; **Offline resilience** intro + card → `offline-survival.html`. |
 | **offline-survival** | **Project NOMAD** (featured), building blocks (Kiwix, Ollama, OSM, Kolibri), **Internet in a Box**; install snippet; cross-links to Tools / Specials / Museum. |
-| **skills**     | **Agentic tools**, **MCPs**, **Skills**: Collapsible sections. |
-| **informational-links** | Wikipedia & reference articles for museum models; **Wikipedia navigation templates** section (Generative AI, OpenAI, NLP, AI navbox, sister projects). |
+| **tools** (`#agent-skills`) | [AMENDED 2026-06-11] SkillBox, skills.sh, skills directory cards; links **`DOCS/CURSOR_IDE_SETUP.md`**. |
+| **museum** (Wikipedia) | [AMENDED 2026-06-11] **Wikipedia — flagship models** and **families & companies** sections before master catalog (formerly on informational-links). |
+| **tools** (Reference) | [AMENDED 2026-06-11] Wiki nav templates, Wikidata, citing/disambiguation guides, **Artificial Analysis** (formerly on informational-links). |
 | **404**        | Error code, title, back link. Centered layout. |
 
 ## Themes

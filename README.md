@@ -29,7 +29,7 @@
 | Page | Description |
 |------|-------------|
 | `index.html` | Home profile page |
-| `programs.html` | 60+ projects with auto-badges |
+| `my-creations.html` | 60+ personal creations with auto-badges (`programs.html` redirects) |
 | `chats.html` | Links to AI chat platforms |
 | `museum.html` | AI Model Museum (landmark LLMs) |
 | `google-gemini.html` | Google Gemini — full catalog (Gemini / Gemma / Nano Banana); premium museum provider template |
@@ -37,13 +37,11 @@
 | `anthropic.html` | Anthropic — Claude (Opus / Sonnet / Haiku) catalog |
 | `xai.html` | xAI — Grok catalog |
 | `arcee.html` | Arcee AI — open models, MergeKit, Fusion, Caller |
-| `informational-links.html` | Wikipedia / reference links for museum models |
 | `media.html` | AI media gen (video/image tools) |
 | `offline-survival.html` | Offline resilience — Project NOMAD, Kiwix, local AI, maps, education |
 | `companies.html` | AI & dev tools by company (80+ sections) |
 | `tools.html` | Developer tools (CLI, browser builders, IDE, Reference, MCP, etc.) |
 | `specials.html` | Free & special services (e.g. free domains) |
-| `skills.html` | Skills/Tools: Cursor & Antigravity agentic tools, MCPs, SkillBox, Skills directory |
 | `updates.html` | Version history (e.g. v1.12.0), timeline UI |
 | `explore.html` | Charts / exploration |
 | `inspirations.html` | YouTube & creator inspirations |

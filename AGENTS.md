@@ -49,7 +49,7 @@ Getting placement wrong is the most common mistake. Use this table first:
 | **`specials.html`** | Agent-first social (Moltbook), free domains, learning, games | Provider chats |
 | **`museum.html`** | Model history, catalogs, picker snapshots | Random tool links |
 | **`inspirations.html`** | YouTube / creators | Tools or companies |
-| **`programs.html`** | Ryan's own projects | External links |
+| **`my-creations.html`** | Ryan's own projects (sidebar: **My Creations**) | External links; `programs.html` redirects here |
 
 **Quick rules**
 
@@ -131,9 +131,13 @@ Do **not** edit `README.md`, `ARCHITECTURE.md`, or `STYLE_GUIDE.md` unless the t
 
 ## 9. Sidebar nav
 
-Every main page shares the same `<nav class="sidebar">` block. Labels are **A–Z**; include **Other Assistants** (`other-assistants.html`, icon **🌐**).
+Every main page shares the same grouped `<nav class="sidebar">` block (see `tools/replace_sidebar_nav.py`):
 
-When editing sidebar on one page, check whether the same block exists on all pages — they must stay in sync. Optional helper: `tools/replace_sidebar_nav.py`.
+1. **Home** — standalone block
+2. **Main** — About, AI Chats, Inspirations, Media Gen, Offline survival, Other Assistants (**🌐**), Specials, Tools
+3. **More** — AI Museum, My Creations, Companies, Explore, Posts, Updates
+
+When editing sidebar on one page, sync all pages or run `python tools/replace_sidebar_nav.py`.
 
 ---
 

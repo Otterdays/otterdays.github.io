@@ -41,11 +41,16 @@
   <a href="#main" class="skip-link">Skip to content</a>
 
   <!-- Sidebar Navigation -->
-    <nav class="sidebar">
+              <nav class="sidebar">
+  <div class="sidebar-block sidebar-block--home">
     <a href="index.html" title="Home">
       <span class="sidebar-icon">🏠</span>
       <span class="sidebar-text">Home</span>
     </a>
+  </div>
+  <div class="sidebar-divider" role="presentation"></div>
+  <div class="sidebar-block sidebar-block--main">
+    <p class="sidebar-group-label">Main</p>
     <a href="about.html" title="About">
       <span class="sidebar-icon">👤</span>
       <span class="sidebar-text">About</span>
@@ -53,26 +58,6 @@
     <a href="chats.html" title="AI Chats">
       <span class="sidebar-icon">💬</span>
       <span class="sidebar-text">AI Chats</span>
-    </a>
-    <a href="museum.html" class="active" title="AI Museum">
-      <span class="sidebar-icon">🏛️</span>
-      <span class="sidebar-text">AI Museum</span>
-    </a>
-    <a href="companies.html" title="Companies">
-      <span class="sidebar-icon">🏢</span>
-      <span class="sidebar-text">Companies</span>
-    </a>
-    <a href="explore.html" title="Explore Data">
-      <span class="sidebar-icon">📊</span>
-      <span class="sidebar-text">Explore</span>
-    </a>
-    <a href="favorites.html" title="Favorites">
-      <span class="sidebar-icon">❤️</span>
-      <span class="sidebar-text">Favorites</span>
-    </a>
-    <a href="informational-links.html" title="Informational Links">
-      <span class="sidebar-icon">🔗</span>
-      <span class="sidebar-text">Informational Links</span>
     </a>
     <a href="inspirations.html" title="Inspirations">
       <span class="sidebar-icon">✨</span>
@@ -90,18 +75,6 @@
       <span class="sidebar-icon">🌐</span>
       <span class="sidebar-text">Other Assistants</span>
     </a>
-    <a href="posts.html" title="Posts">
-      <span class="sidebar-icon">📰</span>
-      <span class="sidebar-text">Posts</span>
-    </a>
-    <a href="programs.html" title="Programs">
-      <span class="sidebar-icon">🎮</span>
-      <span class="sidebar-text">Programs</span>
-    </a>
-    <a href="skills.html" title="Skills">
-      <span class="sidebar-icon">🧠</span>
-      <span class="sidebar-text">Skills</span>
-    </a>
     <a href="specials.html" title="Specials">
       <span class="sidebar-icon">⭐</span>
       <span class="sidebar-text">Specials</span>
@@ -110,10 +83,35 @@
       <span class="sidebar-icon">🛠️</span>
       <span class="sidebar-text">Tools</span>
     </a>
+  </div>
+  <div class="sidebar-divider" role="presentation"></div>
+  <div class="sidebar-block sidebar-block--more">
+    <p class="sidebar-group-label">More</p>
+    <a href="museum.html" class="active" title="AI Museum">
+      <span class="sidebar-icon">🏛️</span>
+      <span class="sidebar-text">AI Museum</span>
+    </a>
+    <a href="my-creations.html" title="My Creations">
+      <span class="sidebar-icon">🎮</span>
+      <span class="sidebar-text">My Creations</span>
+    </a>
+    <a href="companies.html" title="Companies">
+      <span class="sidebar-icon">🏢</span>
+      <span class="sidebar-text">Companies</span>
+    </a>
+    <a href="explore.html" title="Explore Data">
+      <span class="sidebar-icon">📊</span>
+      <span class="sidebar-text">Explore</span>
+    </a>
+    <a href="posts.html" title="Posts">
+      <span class="sidebar-icon">📰</span>
+      <span class="sidebar-text">Posts</span>
+    </a>
     <a href="updates.html" title="Updates">
       <span class="sidebar-icon">📋</span>
       <span class="sidebar-text">Updates</span>
     </a>
+  </div>
   </nav>
 
   <main class="content" id="main">
@@ -156,8 +154,9 @@
       why they mattered. Below you'll find a <strong>Q2 2026 roster</strong> aligned with current IDE model pickers
       (Cursor-class tooling), a featured spotlight, historical galleries by year, and a searchable
       <strong>master catalog</strong> table (parameters, training data, license, notes).
-      <a href="informational-links.html">Wikipedia &amp; reference links</a> for flagship models live on the
-      Informational Links page. No flash photography. Don't touch the weights.
+      Wikipedia articles for flagship models and families are in the sections below; wiki templates, Wikidata, and
+      benchmark leaderboards are on <a href="tools.html">Tools</a> &rarr; Reference. No flash photography. Don't touch
+      the weights.
     </div>
 
     <aside class="museum-gemini-gateway stagger-2" aria-labelledby="museum-gemini-gateway-heading">
@@ -1325,7 +1324,8 @@
         <p class="exhibit-desc">Public-facing chatbot positioned as a localized assistant: Cantonese, English, and
           Mandarin; Hong Kong&ndash;specific knowledge; Android, iOS, Windows, and HarmonyOS clients. Described in
           sources as built on HK-GNN V1 (Hong Kong Generative AI R&amp;D Center) with Hong Kong data and values.
-          Official entry points: <a href="https://hkchat.org/" rel="noopener noreferrer" target="_blank">hkchat.org</a>,
+          <a href="https://en.wikipedia.org/wiki/HKChat" rel="noopener noreferrer" target="_blank">Wikipedia</a>;
+          official entry points: <a href="https://hkchat.org/" rel="noopener noreferrer" target="_blank">hkchat.org</a>,
           <a href="https://hkchat.org/ai-service" rel="noopener noreferrer" target="_blank">hkchat.org/ai-service</a>,
           web app <a href="https://chat.hkchat.app/" rel="noopener noreferrer" target="_blank">chat.hkchat.app</a>.
         </p>
@@ -1648,6 +1648,122 @@
       </article>
 
     </div><!-- /museum-gallery 2024 -->
+
+    <section class="profile-section stagger-2" aria-labelledby="museum-wiki-flagships-heading">
+      <h2 id="museum-wiki-flagships-heading" class="museum-section-title">Wikipedia &mdash; flagship models</h2>
+      <p class="museum-catalog-lede"><em>Disclaimer:</em> Wikipedia is a third-party encyclopedia; articles may lag
+        product names and version numbers in IDE pickers. Do not confuse <a href="https://en.wikipedia.org/wiki/Gemini_3"
+          rel="noopener noreferrer" target="_blank">Gemini 3</a> (NASA mission) with Google&rsquo;s Gemini 3 family
+        &mdash; use <a href="https://en.wikipedia.org/wiki/Google_Gemini" rel="noopener noreferrer"
+          target="_blank">Google Gemini</a> or the provider catalog on <a href="google-gemini.html">google-gemini.html</a>.</p>
+      <div class="chat-links">
+        <a href="https://en.wikipedia.org/wiki/Claude_Opus_4.6" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">Claude Opus 4.6</span>
+          <span class="chat-link-desc">Anthropic Opus line &mdash; prior flagship; Fable 5 / Opus 4.8 in Cursor menus.</span>
+          <span class="chat-link-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Cursor_(code_editor)" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">Composer 2.5 (Cursor)</span>
+          <span class="chat-link-desc">Cursor (code editor) &mdash; Anysphere IDE context for Composer agent features.</span>
+          <span class="chat-link-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/GPT-5" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">GPT-5.5 (OpenAI)</span>
+          <span class="chat-link-desc">GPT-5 family &mdash; closest article for GPT-5.5 naming in pickers.</span>
+          <span class="chat-link-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Gemini_3_Pro" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">Gemini 3.1 Pro</span>
+          <span class="chat-link-desc">Gemini 3 Pro &mdash; closest article for &ldquo;3.1 Pro&rdquo; picker labels.</span>
+          <span class="chat-link-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/GPT-5.4" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">GPT-5.4</span>
+          <span class="chat-link-desc">OpenAI GPT-5.4 (March 2026).</span>
+          <span class="chat-link-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Grok_4" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Grok 4.20 (xAI)</span>
+          <span class="chat-link-desc">Grok 4 family &mdash; use for Grok 4.20 picker naming.</span>
+          <span class="chat-link-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Moonshot_AI" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">Kimi K2.5 (Moonshot AI)</span>
+          <span class="chat-link-desc">Moonshot AI &mdash; Kimi / K2.5 line and company context.</span>
+          <span class="chat-link-arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="profile-section stagger-2" aria-labelledby="museum-wiki-families-heading">
+      <h2 id="museum-wiki-families-heading" class="museum-section-title">Wikipedia &mdash; families &amp; companies</h2>
+      <p class="museum-catalog-lede">Family- and company-level articles for the full <a href="#museum-catalog-heading">master
+          catalog</a> (Codex, GPT-5.x, Claude, Gemini, Grok, etc.).</p>
+      <div class="chat-links">
+        <a href="https://en.wikipedia.org/wiki/Anthropic" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">Anthropic</span>
+          <span class="chat-link-desc">Company behind Claude.</span>
+          <span class="chat-link-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/ChatGPT" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">ChatGPT</span>
+          <span class="chat-link-desc">OpenAI consumer product context.</span>
+          <span class="chat-link-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Claude_(language_model)" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">Claude (language model)</span>
+          <span class="chat-link-desc">Anthropic Claude family overview.</span>
+          <span class="chat-link-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Google_Gemini" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">Google Gemini</span>
+          <span class="chat-link-desc">Gemini family overview (Flash, Pro tiers).</span>
+          <span class="chat-link-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/GPT-5" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">GPT-5</span>
+          <span class="chat-link-desc">OpenAI GPT-5 series.</span>
+          <span class="chat-link-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/GPT-5.1" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">GPT-5.1</span>
+          <span class="chat-link-desc">GPT-5.1 family (Instant, Thinking, Codex-Max).</span>
+          <span class="chat-link-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/GPT-5.2" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">GPT-5.2</span>
+          <span class="chat-link-desc">Successor wave before GPT-5.4 in the documented line.</span>
+          <span class="chat-link-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Grok_(chatbot)" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">Grok (chatbot)</span>
+          <span class="chat-link-desc">xAI Grok product line (broader than Grok 4 alone).</span>
+          <span class="chat-link-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/OpenAI_Codex_(language_model)" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">OpenAI Codex (language model)</span>
+          <span class="chat-link-desc">Coding-oriented models (Codex 5.x naming in tools).</span>
+          <span class="chat-link-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/XAI_(company)" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">xAI (company)</span>
+          <span class="chat-link-desc">xAI corporate context.</span>
+          <span class="chat-link-arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
 
     <!-- Master catalog (Wikipedia-style index) -->
     <section class="museum-catalog-section stagger-2" aria-labelledby="museum-catalog-heading">
@@ -3124,7 +3240,7 @@
     <footer class="site-footer">
       <div class="site-stats">
         <div class="stat-item" title="Indexed items"><span class="stat-icon">🔍</span> 100+ items</div>
-        <div class="stat-item" title="Pages"><span class="stat-icon">📄</span> 22 pages</div>
+        <div class="stat-item" title="Pages"><span class="stat-icon">📄</span> 19 pages</div>
         <div class="stat-item" title="Companies listed"><span class="stat-icon">🏢</span> 78+ companies</div>
       </div>
       <div class="site-copy">

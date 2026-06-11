@@ -2,14 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://otterdays.github.io/</loc></url>
   <url><loc>https://otterdays.github.io/index.html</loc></url>
-  <url><loc>https://otterdays.github.io/programs.html</loc></url>
+  <url><loc>https://otterdays.github.io/my-creations.html</loc></url>
   <url><loc>https://otterdays.github.io/chats.html</loc></url>
   <url><loc>https://otterdays.github.io/other-assistants.html</loc></url>
   <url><loc>https://otterdays.github.io/media.html</loc></url>
   <url><loc>https://otterdays.github.io/companies.html</loc></url>
   <url><loc>https://otterdays.github.io/tools.html</loc></url>
   <url><loc>https://otterdays.github.io/specials.html</loc></url>
-  <url><loc>https://otterdays.github.io/skills.html</loc></url>
   <url><loc>https://otterdays.github.io/updates.html</loc></url>
   <url><loc>https://otterdays.github.io/explore.html</loc></url>
   <url><loc>https://otterdays.github.io/inspirations.html</loc></url>
@@ -22,5 +21,4 @@
   <url><loc>https://otterdays.github.io/anthropic.html</loc></url>
   <url><loc>https://otterdays.github.io/xai.html</loc></url>
   <url><loc>https://otterdays.github.io/arcee.html</loc></url>
-  <url><loc>https://otterdays.github.io/informational-links.html</loc></url>
 </urlset>

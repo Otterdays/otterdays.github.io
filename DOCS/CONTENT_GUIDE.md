@@ -40,7 +40,7 @@ Quick use:
 
 | Page | What to add | When to use |
 |------|-------------|-------------|
-| `programs.html` | Your own projects | Personal creations, repos, apps |
+| `my-creations.html` | Your own projects (nav: **My Creations**) | Personal creations, repos, apps; `programs.html` redirects |
 | `chats.html` | Provider model chats | First-party lab LLM chats (ChatGPT, Claude, Gemini, Duck.ai, Lumo, etc.) grouped by country [AMENDED 2026-06-10] |
 | `other-assistants.html` | Other assistants | Answer engines, multi-model hubs, specialty chats (Perplexity, Poe, T3 Chat, NotebookLM, etc.) grouped by country [AMENDED 2026-06-10] |
 | `specials.html` | AI social networks (agent-first) | Moltbook and similar agent-only social platforms [AMENDED 2026-06-10] |
@@ -49,7 +49,7 @@ Quick use:
 | `companies.html` | Organizations/companies | Every company with products on the site |
 | `specials.html` | Free resources, learning | Domains, courses, unique offers |
 | `offline-survival.html` | Offline / resilience knowledge | Project NOMAD, Kiwix, local AI, maps, prep stacks; [AMENDED 2026-04-04] |
-| `skills.html` | Agent skills & tools | Cursor/Antigravity agentic tools, MCPs, SkillBox, Skills directory (React/Testing/Git) |
+| ~~`skills.html`~~ | *(deprecated 2026-06-11)* | Moved to **`tools.html#agent-skills`** + **`DOCS/CURSOR_IDE_SETUP.md`** |
 | `inspirations.html` | YouTube / creators Ryan follows | One row per creator; grouped by topic section — not tools or companies [AMENDED 2026-06-10] |
 
 ### HTML Template (link card)
@@ -109,7 +109,7 @@ Quick use:
 
 | Category | Icon | Color | Used for |
 |----------|------|-------|----------|
-| `project` | 📦 | Blue | Personal projects (programs.html) |
+| `project` | 📦 | Blue | Personal projects (my-creations.html) |
 | `chat` | 💬 | Green | AI chat assistants (chats.html) |
 | `media` | 🎨 | Orange | Media generation (media.html) |
 | `company` | 🏢 | Purple | Organizations (companies.html) |
@@ -126,7 +126,7 @@ If you add new link cards to any page (e.g. GitHub, Railway, Lovable, v0, Base44
 Add entries in the appropriate section (look for comment headers):
 
 ```javascript
-// === PROJECTS (programs.html) ===
+// === PROJECTS (my-creations.html) ===
 // === AI CHATS (chats.html) ===
 // === MEDIA GENERATION (media.html) ===
 // === COMPANIES (companies.html) ===

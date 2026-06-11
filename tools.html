@@ -39,11 +39,16 @@
 <body data-theme="dark" class="tools-page collapsible-pages">
   <a href="#main" class="skip-link">Skip to content</a>
   <!-- Sidebar Navigation -->
-    <nav class="sidebar">
+              <nav class="sidebar">
+  <div class="sidebar-block sidebar-block--home">
     <a href="index.html" title="Home">
       <span class="sidebar-icon">🏠</span>
       <span class="sidebar-text">Home</span>
     </a>
+  </div>
+  <div class="sidebar-divider" role="presentation"></div>
+  <div class="sidebar-block sidebar-block--main">
+    <p class="sidebar-group-label">Main</p>
     <a href="about.html" title="About">
       <span class="sidebar-icon">👤</span>
       <span class="sidebar-text">About</span>
@@ -51,26 +56,6 @@
     <a href="chats.html" title="AI Chats">
       <span class="sidebar-icon">💬</span>
       <span class="sidebar-text">AI Chats</span>
-    </a>
-    <a href="museum.html" title="AI Museum">
-      <span class="sidebar-icon">🏛️</span>
-      <span class="sidebar-text">AI Museum</span>
-    </a>
-    <a href="companies.html" title="Companies">
-      <span class="sidebar-icon">🏢</span>
-      <span class="sidebar-text">Companies</span>
-    </a>
-    <a href="explore.html" title="Explore Data">
-      <span class="sidebar-icon">📊</span>
-      <span class="sidebar-text">Explore</span>
-    </a>
-    <a href="favorites.html" title="Favorites">
-      <span class="sidebar-icon">❤️</span>
-      <span class="sidebar-text">Favorites</span>
-    </a>
-    <a href="informational-links.html" title="Informational Links">
-      <span class="sidebar-icon">🔗</span>
-      <span class="sidebar-text">Informational Links</span>
     </a>
     <a href="inspirations.html" title="Inspirations">
       <span class="sidebar-icon">✨</span>
@@ -88,18 +73,6 @@
       <span class="sidebar-icon">🌐</span>
       <span class="sidebar-text">Other Assistants</span>
     </a>
-    <a href="posts.html" title="Posts">
-      <span class="sidebar-icon">📰</span>
-      <span class="sidebar-text">Posts</span>
-    </a>
-    <a href="programs.html" title="Programs">
-      <span class="sidebar-icon">🎮</span>
-      <span class="sidebar-text">Programs</span>
-    </a>
-    <a href="skills.html" title="Skills">
-      <span class="sidebar-icon">🧠</span>
-      <span class="sidebar-text">Skills</span>
-    </a>
     <a href="specials.html" title="Specials">
       <span class="sidebar-icon">⭐</span>
       <span class="sidebar-text">Specials</span>
@@ -108,10 +81,35 @@
       <span class="sidebar-icon">🛠️</span>
       <span class="sidebar-text">Tools</span>
     </a>
+  </div>
+  <div class="sidebar-divider" role="presentation"></div>
+  <div class="sidebar-block sidebar-block--more">
+    <p class="sidebar-group-label">More</p>
+    <a href="museum.html" title="AI Museum">
+      <span class="sidebar-icon">🏛️</span>
+      <span class="sidebar-text">AI Museum</span>
+    </a>
+    <a href="my-creations.html" title="My Creations">
+      <span class="sidebar-icon">🎮</span>
+      <span class="sidebar-text">My Creations</span>
+    </a>
+    <a href="companies.html" title="Companies">
+      <span class="sidebar-icon">🏢</span>
+      <span class="sidebar-text">Companies</span>
+    </a>
+    <a href="explore.html" title="Explore Data">
+      <span class="sidebar-icon">📊</span>
+      <span class="sidebar-text">Explore</span>
+    </a>
+    <a href="posts.html" title="Posts">
+      <span class="sidebar-icon">📰</span>
+      <span class="sidebar-text">Posts</span>
+    </a>
     <a href="updates.html" title="Updates">
       <span class="sidebar-icon">📋</span>
       <span class="sidebar-text">Updates</span>
     </a>
+  </div>
   </nav>
 
   <main class="content" id="main">
@@ -1222,6 +1220,18 @@
             leaderboard, file upload</span>
           <span class="chat-link-arrow">→</span>
         </a>
+        <a href="https://artificialanalysis.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Artificial Analysis</span>
+          <span class="chat-link-desc">Model capability, speed, and price comparisons across frontier LLMs</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Template:Artificial_intelligence_navbox" rel="noopener noreferrer"
+          target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Artificial intelligence navbox</span>
+          <span class="chat-link-desc">Wikipedia template &mdash; concepts, applications, architectures, people, and
+            social/political rows</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
         <a href="https://github.com/rothgar/awesome-tuis" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Awesome TUIs</span>
           <span class="chat-link-desc">Community list of terminal user interface (TUI) apps: dashboards, dev tools, Docker/K8s,
@@ -1292,6 +1302,13 @@
           <span class="chat-link-desc">AI design for presentations, documents &amp; websites from text prompts; card-based layouts; pitch decks, slides</span>
           <span class="chat-link-arrow">→</span>
         </a>
+        <a href="https://en.wikipedia.org/wiki/Template:Generative_AI" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">Generative AI (Wikipedia template)</span>
+          <span class="chat-link-desc">Wikipedia navbox &mdash; model families (text/image/video/speech/music), agents,
+            controversies</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
         <a href="https://glama.ai/mcp/servers" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Glama MCP</span>
           <span class="chat-link-desc">Discover &amp; inspect MCP servers; manifests, security signals, hosted MCP gateway</span>
@@ -1332,6 +1349,12 @@
           <span class="chat-link-desc">Open standard (Anthropic) for AI ↔ tools &amp; data; Cursor, Xcode use it</span>
           <span class="chat-link-arrow">→</span>
         </a>
+        <a href="https://en.wikipedia.org/wiki/Template:Natural_language_processing" rel="noopener noreferrer"
+          target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Natural language processing (Wikipedia template)</span>
+          <span class="chat-link-desc">Wikipedia navbox &mdash; NLP tasks, segmentation, MT, semantics, corpora</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
         <a href="https://github.com/microsoft/playwright-mcp" rel="noopener noreferrer" target="_blank" class="chat-link-card">
           <span class="chat-link-name">Playwright MCP</span>
           <span class="chat-link-desc">Microsoft: browser automation MCP for agents — navigate, click, screenshot, test UIs</span>
@@ -1346,6 +1369,12 @@
           <span class="chat-link-name">Obsidian</span>
           <span class="chat-link-desc">Local-first Markdown notes &amp; knowledge base; graph, Canvas, plugins; optional Sync
             &amp; Publish; free for personal use</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Template:OpenAI" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">OpenAI (Wikipedia template)</span>
+          <span class="chat-link-desc">Wikipedia navbox &mdash; products, GPT/o-series lines, people, board</span>
           <span class="chat-link-arrow">→</span>
         </a>
         <a href="https://openrouter.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
@@ -1437,16 +1466,206 @@
           <span class="chat-link-desc">UI design bench: same &ldquo;second brain&rdquo; landing prompt across models &mdash; with/without design skill; preview grid, guess-which, rankings</span>
           <span class="chat-link-arrow">→</span>
         </a>
+        <a href="https://en.wikipedia.org/wiki/Wikipedia:Citing_sources" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">Wikipedia: Citing sources</span>
+          <span class="chat-link-desc">Citation rules for verifiability and source quality in article claims</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Wikipedia:Disambiguation" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">Wikipedia: Disambiguation</span>
+          <span class="chat-link-desc">Guidance for ambiguous names (for example, Gemini naming collisions)</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
         <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" rel="noopener noreferrer" target="_blank"
           class="chat-link-card">
           <span class="chat-link-name">Wikipedia Artificial Intelligence</span>
           <span class="chat-link-desc">Overview of AI: goals, techniques, applications, ethics, history</span>
           <span class="chat-link-arrow">→</span>
         </a>
+        <a href="https://en.wikipedia.org/wiki/List_of_artificial_intelligence_projects" rel="noopener noreferrer"
+          target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Wikipedia List of AI projects</span>
+          <span class="chat-link-desc">Wikipedia index for broader ecosystem context beyond model-only pages</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
         <a href="https://en.wikipedia.org/wiki/List_of_large_language_models" rel="noopener noreferrer" target="_blank"
           class="chat-link-card">
           <span class="chat-link-name">Wikipedia List of LLMs</span>
           <span class="chat-link-desc">Reference list of large language models with parameters, licenses, notes</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">Wikidata main page</span>
+          <span class="chat-link-desc">Structured entity data for organizations, models, and related metadata</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://query.wikidata.org/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Wikidata Query Service</span>
+          <span class="chat-link-desc">Run SPARQL queries to audit model-maker entities and relationships</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Wikipedia:Wikimedia_sister_projects" rel="noopener noreferrer"
+          target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Wikimedia sister projects</span>
+          <span class="chat-link-desc">Commons, Wikidata, Wiktionary, Wikibooks, and other sister sites</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+      </div>
+    </section>
+    <section class="profile-section" id="agent-skills">
+      <h2>Agent skills</h2>
+      <p>Cursor &amp; Antigravity agentic tools, MCPs, and installable SKILL.md packs. Full tool reference:
+        <a href="https://github.com/Otterdays/otterdays.github.io/blob/main/DOCS/CURSOR_IDE_SETUP.md"
+          rel="noopener noreferrer" target="_blank">DOCS/CURSOR_IDE_SETUP.md</a>. Discover:
+        <code>npx skills find [query]</code> or <a href="https://skills.sh/" rel="noopener noreferrer"
+          target="_blank">skills.sh</a>; use <code>/find-skills</code> in Cursor.</p>
+      <div class="chat-links">
+        <a href="https://github.com/Otterdays/otterdays.github.io/blob/main/DOCS/CURSOR_IDE_SETUP.md"
+          rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Cursor IDE setup (docs)</span>
+          <span class="chat-link-desc">Built-in Cursor &amp; Antigravity tools, MCP servers, agent skills, SkillBox
+            install notes</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://skills.sh/wshobson/agents/e2e-testing-patterns" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">e2e-testing-patterns</span>
+          <span class="chat-link-desc">End-to-end testing patterns.
+            <code>npx skills add wshobson/agents@e2e-testing-patterns</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://skills.sh/wshobson/agents/git-advanced-workflows" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">git-advanced-workflows</span>
+          <span class="chat-link-desc">Advanced git workflows.
+            <code>npx skills add wshobson/agents@git-advanced-workflows</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://skills.sh/github/awesome-copilot/git-commit" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">git-commit</span>
+          <span class="chat-link-desc">GitHub: conventional commit messages.
+            <code>npx skills add github/awesome-copilot@git-commit</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://skills.sh/wshobson/agents/github-actions-templates" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">github-actions-templates</span>
+          <span class="chat-link-desc">GitHub Actions templates and patterns.
+            <code>npx skills add wshobson/agents@github-actions-templates</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://skills.sh/wshobson/agents/gitlab-ci-patterns" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">gitlab-ci-patterns</span>
+          <span class="chat-link-desc">GitLab CI patterns.
+            <code>npx skills add wshobson/agents@gitlab-ci-patterns</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://skills.sh/wshobson/agents/gitops-workflow" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">gitops-workflow</span>
+          <span class="chat-link-desc">GitOps workflow patterns.
+            <code>npx skills add wshobson/agents@gitops-workflow</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://skills.sh/wshobson/agents/javascript-testing-patterns" rel="noopener noreferrer"
+          target="_blank" class="chat-link-card">
+          <span class="chat-link-name">javascript-testing-patterns</span>
+          <span class="chat-link-desc">JavaScript testing patterns.
+            <code>npx skills add wshobson/agents@javascript-testing-patterns</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://skills.sh/wshobson/agents/python-testing-patterns" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">python-testing-patterns</span>
+          <span class="chat-link-desc">Python testing patterns.
+            <code>npx skills add wshobson/agents@python-testing-patterns</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://skills.sh/google-labs-code/stitch-skills/react-components" rel="noopener noreferrer"
+          target="_blank" class="chat-link-card">
+          <span class="chat-link-name">react:components</span>
+          <span class="chat-link-desc">Google Stitch: React component patterns.
+            <code>npx skills add google-labs-code/stitch-skills@react:components</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://skills.sh/softaworks/agent-toolkit/react-dev" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">react-dev</span>
+          <span class="chat-link-desc">React development toolkit.
+            <code>npx skills add softaworks/agent-toolkit@react-dev</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://skills.sh/callstackincubator/agent-skills/react-native-best-practices"
+          rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">react-native-best-practices</span>
+          <span class="chat-link-desc">Callstack React Native best practices.
+            <code>npx skills add callstackincubator/agent-skills@react-native-best-practices</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://skills.sh/softaworks/agent-toolkit/react-useeffect" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">react-useeffect</span>
+          <span class="chat-link-desc">React useEffect patterns and debugging.
+            <code>npx skills add softaworks/agent-toolkit@react-useeffect</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://skills.sh/wshobson/agents/screen-reader-testing" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">screen-reader-testing</span>
+          <span class="chat-link-desc">Screen reader and accessibility testing.
+            <code>npx skills add wshobson/agents@screen-reader-testing</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://github.com/antjanus/skillbox" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">SkillBox (antjanus/skillbox)</span>
+          <span class="chat-link-desc">Utility skills: track-session, git-worktree, generate-skill, ideal-react-component,
+            rate-skill. <code>npx skills add antjanus/skillbox</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://skills.sh/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">skills.sh</span>
+          <span class="chat-link-desc">Open skills directory &mdash; browse and install SKILL.md packs for Cursor, Codex,
+            Gemini CLI, OpenCode, 40+ agents</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://skills.sh/wshobson/agents/temporal-python-testing" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">temporal-python-testing</span>
+          <span class="chat-link-desc">Temporal workflow testing in Python.
+            <code>npx skills add wshobson/agents@temporal-python-testing</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://skills.sh/obra/superpowers/using-git-worktrees" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">using-git-worktrees</span>
+          <span class="chat-link-desc">Obra: git worktrees for parallel work.
+            <code>npx skills add obra/superpowers@using-git-worktrees</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://skills.sh/vercel-labs/agent-skills/vercel-react-best-practices" rel="noopener noreferrer"
+          target="_blank" class="chat-link-card">
+          <span class="chat-link-name">vercel-react-best-practices</span>
+          <span class="chat-link-desc">Vercel React &amp; Next.js best practices.
+            <code>npx skills add vercel-labs/agent-skills@vercel-react-best-practices</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://skills.sh/vercel-labs/agent-skills/vercel-react-native-skills" rel="noopener noreferrer"
+          target="_blank" class="chat-link-card">
+          <span class="chat-link-name">vercel-react-native-skills</span>
+          <span class="chat-link-desc">React Native development skills from Vercel.
+            <code>npx skills add vercel-labs/agent-skills@vercel-react-native-skills</code></span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://skills.sh/anthropics/skills/webapp-testing" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card">
+          <span class="chat-link-name">webapp-testing</span>
+          <span class="chat-link-desc">Anthropic: web app testing patterns.
+            <code>npx skills add anthropics/skills@webapp-testing</code></span>
           <span class="chat-link-arrow">→</span>
         </a>
       </div>
@@ -1631,7 +1850,7 @@
     <footer class="site-footer">
       <div class="site-stats">
         <div class="stat-item" title="Indexed items"><span class="stat-icon">🔍</span> 100+ items</div>
-        <div class="stat-item" title="Pages"><span class="stat-icon">📄</span> 22 pages</div>
+        <div class="stat-item" title="Pages"><span class="stat-icon">📄</span> 19 pages</div>
         <div class="stat-item" title="Companies listed"><span class="stat-icon">🏢</span> 78+ companies</div>
       </div>
       <div class="site-copy">
