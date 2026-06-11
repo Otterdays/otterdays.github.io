@@ -15,7 +15,14 @@ All notable changes to this project are documented in this file. Format: [Keep a
 - **Specials — AI social networks (2026-06-10)** — **`specials.html`** section for agent-first platforms; **Moltbook** moved from **`chats.html`**. **`js/search-data.js`** (`special`), **`js/badges.js`**.
 - **Other Assistants page (2026-06-10)** — New **`other-assistants.html`**; sidebar link on main pages; **`sitemap.xml`**, **`js/explore.js`**, **`js/search-data.js`**; **`about.html`**; page count **22**.
 
+### Added
+- **AIRI / Moeru AI (2026-06-10)** — **`tools.html`** computer-automation + **`companies.html`** Moeru AI ([airi.moeru.ai](https://airi.moeru.ai/)); open VTuber companion research.
+- **Yandex AI (2026-06-10)** — **`chats.html`** Russia section ([ai.yandex.com/eng](https://ai.yandex.com/eng)); **`companies.html`** Yandex AI card.
+- **Kyutai (2026-06-10)** — Paris open-science lab on **`chats.html`** (France) and **`companies.html`** (Moshi, Unmute, GitHub, Hugging Face).
+
 ### Changed
+- **OpenRouter placement (2026-06-10)** — **`other-assistants.html`** card; **`js/search-data.js`** chat index → `other-assistants.html` (provider hub, not lab). **`companies.html`** model count.
+- **Duck.ai placement (2026-06-10)** — Moved from **`chats.html`** Provider Chats to **`other-assistants.html`** (DuckDuckGo chat provider, not a first-party model lab). **`js/search-data.js`**, **`about.html`**, **`DOCS/CONTENT_GUIDE.md`**.
 - **T3 Chat placement (2026-06-10)** — Moved from **`chats.html`** Provider Chats to **`other-assistants.html`** (multi-model hub like Poe, not a first-party lab). **`js/search-data.js`**, **`about.html`**, **`DOCS/CONTENT_GUIDE.md`**.
 - **Hermes Agent (2026-06-10)** — Refreshed copy (v0.16, channels, sandbox); **GitHub** card [nousresearch/hermes-agent](https://github.com/nousresearch/hermes-agent) on **`tools.html`** and **`companies.html`**; **`js/search-data.js`**, **`js/badges.js`**, **`Openclaw_variations.md`**.
 - **Llama link (2026-06-10)** — Removed **Llama 4** from **`chats.html`** (not a chat). **`companies.html`** Meta section → [llama.com](https://llama.com/) (download models &amp; docs). **`js/search-data.js`**, **`js/badges.js`**.

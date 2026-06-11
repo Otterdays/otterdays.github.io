@@ -1,5 +1,31 @@
 # SUMMARY
 
+## Recent update — 2026-06-10 (AIRI / Moeru AI)
+
+- **`tools.html`** — **AIRI** ([airi.moeru.ai](https://airi.moeru.ai/)) in computer-automation; GitHub + docs.
+- **`companies.html`** — **Moeru AI** org section.
+
+## Recent update — 2026-06-10 (Yandex AI)
+
+- **`chats.html`** — **Russia** section with **Yandex** ([ai.yandex.com/eng](https://ai.yandex.com/eng)).
+- **`companies.html`** — **Yandex AI** card alongside Yandex Games.
+
+## Recent update — 2026-06-10 (Kyutai)
+
+- **`chats.html`** — **Kyutai** ([kyutai.org](https://kyutai.org/)) under France (open-science lab; Moshi & Unmute).
+- **`companies.html`** — Moshi, Unmute, GitHub, Hugging Face cards.
+
+## Recent update — 2026-06-10 (OpenRouter → Other Assistants)
+
+- **`other-assistants.html`** — **OpenRouter** ([openrouter.ai](https://openrouter.ai/)) with Poe, T3 Chat, Duck.ai.
+- **`js/search-data.js`** — chat row points to Other Assistants (was `chats.html`).
+
+## Recent update — 2026-06-10 (Duck.ai → Other Assistants)
+
+- **`chats.html`** — **Duck.ai** removed from Provider Chats (not a model lab).
+- **`other-assistants.html`** — **Duck.ai** with Poe, T3 Chat (US hubs/providers).
+- **`js/search-data.js`**, **`about.html`**, **`DOCS/CONTENT_GUIDE.md`**.
+
 ## Recent update — 2026-06-10 (Nex-AGI)
 
 - **`chats.html`** — **Nex-AGI** (China; Nex-N2 agent models).

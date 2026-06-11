@@ -2,6 +2,28 @@
 
 # SCRATCHPAD
 
+## 2026-06-10 — AIRI / Moeru AI (open research companion)
+**What changed:** **`tools.html`** `#computer-automation` — **AIRI**, GitHub, Docs ([airi.moeru.ai](https://airi.moeru.ai/)). **`companies.html`** — **Moeru AI** section. **`js/search-data.js`**. Not Provider Chats (research / VTuber companion stack).
+---
+
+## 2026-06-10 — Yandex AI (Russia provider chat)
+**What changed:** **`chats.html`** — new **Russia** section, **Yandex** ([ai.yandex.com/eng](https://ai.yandex.com/eng)). **`companies.html`** — **Yandex AI** card (Games unchanged). **`js/search-data.js`**, **`js/badges.js`**.
+---
+
+## 2026-06-10 — Kyutai (Paris open-science lab)
+**What changed:** **`chats.html`** France — **Kyutai** ([kyutai.org](https://kyutai.org/)). **`companies.html`** — Moshi, Unmute, GitHub, Hugging Face. **`js/search-data.js`**, **`js/badges.js`** (FR).
+**Out-of-scope observations:** Speech-native demos (moshi.chat, unmute.sh) linked from companies; Provider Chats card points to lab home.
+---
+
+## 2026-06-10 — OpenRouter → Other Assistants (provider hub)
+**What changed:** **`other-assistants.html`** — **OpenRouter** card ([openrouter.ai](https://openrouter.ai/)). **`js/search-data.js`** chat row → `other-assistants.html` (was wrongly `chats.html`). **`companies.html`** copy 400+ models. Docs updated.
+**Out-of-scope observations:** **`tools.html`** Reference card unchanged (API/dev angle).
+---
+
+## 2026-06-10 — Duck.ai → Other Assistants (provider, not lab)
+**What changed:** **`chats.html`** — removed **Duck.ai** from Provider Chats. **`other-assistants.html`** — added (US). **`js/search-data.js`**, **`about.html`**, **`DOCS/CONTENT_GUIDE.md`**, **`DOCS/CHANGELOG.md`**, **`DOCS/SUMMARY.md`**. **`companies.html`** DuckDuckGo section unchanged.
+---
+
 ## 2026-06-10 — Nex-AGI (Nex-N2, China)
 **What changed:** **`chats.html`** — **Nex-AGI** (China Provider Chats). **`companies.html`** — **Nex-AGI** section (site, GitHub, Hugging Face). **`js/search-data.js`**, **`js/badges.js`**. **`DOCS/CHANGELOG.md`**, **`DOCS/SUMMARY.md`**.
 **Out-of-scope observations:** Try-now on site routes via OpenRouter/SiliconFlow; no dedicated chat subdomain yet.

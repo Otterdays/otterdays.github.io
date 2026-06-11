@@ -17,6 +17,37 @@ const UPDATES_DATA = [
     ]
   },
   {
+    version: "1.11.0",
+    date: "2026-06-10",
+    sections: [
+      {
+        type: "added",
+        items: [
+          "**other-assistants.html** — New page for answer engines, multi-model hubs, and specialty chats (Perplexity, Poe, NotebookLM, Character.AI, Cohere, Pi, etc.) grouped by country; sidebar **🌐 Other Assistants** on all main pages; **`sitemap.xml`**, **`js/explore.js`**, **`about.html`**; site **22 pages**.",
+          "**Provider Chats expansion** — **`chats.html`** country-grouped labs: **MiMo Studio** (Xiaomi, China), **NVIDIA Build** (US), **Upstage Playground** (South Korea), **MAI Playground** (US), **Nex-AGI** (China), **Kyutai** (France — Moshi & Unmute), **Yandex** (Russia), **Liquid Playground** (US); **`companies.html`** sections for **Xiaomi**, **Upstage**, **Microsoft AI**, **Nex-AGI**, **Kyutai**, **Moeru AI**, **Yandex AI**, **Liquid AI**.",
+          "**other-assistants.html` hubs** — **OpenRouter**, **T3 Chat**, **Duck.ai** (moved off Provider Chats — hubs/providers, not labs); **`js/search-data.js`** chat rows point to correct pages.",
+          "**AIRI / Moeru AI** — **`tools.html`** `#computer-automation`: [airi.moeru.ai](https://airi.moeru.ai/) open VTuber companion research (GitHub + docs); **`companies.html`** **Moeru AI** org.",
+          "**World of AI Bench** — [woaibench.ai](https://www.woaibench.ai/) on **`tools.html`**, **`companies.html`**, **`informational-links.html`** benchmarks, **`museum.html`** cross-link.",
+          "**AI Museum Q2 2026** — **`museum.html`**: flagships **Composer 2.5**, **Claude Fable 5**, **GPT-5.5**; Cursor Jun 2026 model-picker snapshot (effort tiers); roster + master catalog rows (**Fable 5**, **Opus 4.8**, **GPT-5.3**, etc.).",
+          "**Inspirations** — AICodeKing, Bijan Bowen, ryan3000, Adam Conover, The Infographics Show, SomeOrdinaryGamers, Fireship, The Diary Of A CEO, Gamers Nexus, Jimmy Kimmel Live, The Daily Show, PewDiePie, In the World of AI on **`inspirations.html`**.",
+          "**Specials** — **Moltbook** moved from **`chats.html`** to agent-first **`specials.html`** section; **`js/search-data.js`** (`special`).",
+          "**Hermes Agent refresh** — v0.16 copy + **Hermes Agent (GitHub)** cards on **`tools.html`** / **`companies.html`**."
+        ]
+      },
+      {
+        type: "changed",
+        items: [
+          "**chats.html restructure** — **Provider Chats** only (first-party labs by country); **Other Assistants** split to dedicated page; removed **OpenClaw**, **Moltbook**, **Llama 4** (not chats); cross-links to **`tools.html#computer-automation`** and **`specials.html`**.",
+          "**Placement fixes** — **T3 Chat**, **Duck.ai**, **OpenRouter** → **`other-assistants.html`**; **Llama** → [llama.com](https://llama.com/) on **`companies.html`** only.",
+          "**Sidebar** — **Other Assistants** icon **🌐** (was broken `??` placeholder); emoji font stack; tighter nav spacing + scroll polish in **`css/style.css`**.",
+          "**Version & badges** — Top-bar **v1.11.0** site-wide; **`updates.html`** **Latest** on this release; search modal placeholder **v1.11.0**.",
+          "**`js/search-data.js`**, **`js/badges.js`** — New/updated rows for all providers above; country flags (KR Upstage, FR Kyutai, CN Nex-AGI/MiMo, RU Yandex, CH Lumo/Proton).",
+          "**DOCS** — `CHANGELOG` **[1.11.0]**, `SUMMARY`, `SCRATCHPAD`, `CONTENT_GUIDE`, `ARCHITECTURE`, `OPENCLAW_ECOSYSTEM.md`, `journal/2026-06-10.md`."
+        ]
+      }
+    ]
+  },
+  {
     version: "1.10.1",
     date: "2026-03-29",
     sections: [
