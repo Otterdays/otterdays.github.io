@@ -1103,6 +1103,12 @@ html {
   background: color-mix(in srgb, var(--cluster-accent) 10%, var(--glass));
 }
 
+.link-cluster--minecraft-stuffs {
+  --cluster-accent: #62a037;
+  border-color: color-mix(in srgb, var(--cluster-accent) 40%, var(--border));
+  background: color-mix(in srgb, var(--cluster-accent) 11%, var(--glass));
+}
+
 .link-cluster--arteria {
   --cluster-accent: #a78bfa;
   border-color: color-mix(in srgb, var(--cluster-accent) 42%, var(--border));
@@ -1173,6 +1179,26 @@ html {
 }
 
 .feature-card--blockpanel:focus-within {
+  outline: 2px solid color-mix(in srgb, var(--cluster-accent) 72%, var(--border));
+  outline-offset: 3px;
+}
+
+.feature-card--minecraft-stuffs {
+  --cluster-accent: #62a037;
+  border-color: color-mix(in srgb, var(--cluster-accent) 38%, var(--border));
+  background: linear-gradient(
+    155deg,
+    color-mix(in srgb, var(--cluster-accent) 11%, transparent) 0%,
+    color-mix(in srgb, var(--fg), transparent 96%) 58%
+  );
+}
+
+.feature-card--minecraft-stuffs:hover {
+  border-color: color-mix(in srgb, var(--cluster-accent) 52%, var(--border));
+  box-shadow: 0 12px 32px color-mix(in srgb, var(--cluster-accent) 22%, transparent);
+}
+
+.feature-card--minecraft-stuffs:focus-within {
   outline: 2px solid color-mix(in srgb, var(--cluster-accent) 72%, var(--border));
   outline-offset: 3px;
 }

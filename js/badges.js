@@ -151,7 +151,7 @@
         'Terraria World Config', 'Arteria v1', 'Arteria v2'
     ];
     var music = ['Aethereal Hymns', 'Audacious', 'BlockBanger'];
-    var minecraft = ['Feeshman Deelux', 'Chipper Chopper', 'MC-Companion-Map', 'BlockPanel V3'];
+    var minecraft = ['Feeshman Deelux', 'Chipper Chopper', 'MC-Companion-Map', 'BlockPanel V3', 'Minecraft-Stuffs'];
     var android = ['Android-Stuffs', 'Arteria v2', 'Proof Of Purchase', 'Nebula-Camera', 'Brain-Busters', 'Lorenzez-Notez', 'Meal_Mate'];
 
     document.addEventListener('DOMContentLoaded', function () {

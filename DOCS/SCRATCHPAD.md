@@ -2,6 +2,10 @@
 
 # SCRATCHPAD
 
+## 2026-06-10 — Minecraft-Stuffs (Otters MC Studios)
+**What changed:** [Minecraft-Stuffs](https://otterdays.github.io/Minecraft-Stuffs/) + [GitHub](https://github.com/Otterdays/Minecraft-Stuffs) — hero **`.link-cluster--minecraft-stuffs`**, Explore card, Den callout. **`programs.html`**, **`js/search-data.js`**, **`js/badges.js`**, **`css/style.css`**, **`DOCS/CHANGELOG.md`** Unreleased.
+---
+
 ## 2026-06-10 — Homepage Modrinth + Ryan's Realm
 **What changed:** **`index.html`** — **`.link-cluster--modrinth`** (Modrinth profile), **`.home-link--realm`** (Ryan's Realm), Den callout Modrinth link. **`css/style.css`**, **`js/search-data.js`**, **`DOCS/CHANGELOG.md`** Unreleased.
 ---
