@@ -2,6 +2,10 @@
 
 # SCRATCHPAD
 
+## 2026-06-10 — Terraria World Config link-cluster UI
+**What changed:** **`index.html`** — `.link-cluster` (title + Docs / Quick start / GitHub segmented buttons) in hero + Explore card; docs URL [otterdays.github.io/Terraria-World-Config-Mod](https://otterdays.github.io/Terraria-World-Config-Mod/#home). **`css/style.css`**, **`js/search-data.js`**, **`programs.html`** docs link.
+---
+
 ## 2026-06-10 — Terraria World Config (homepage + programs)
 **What changed:** **`index.html`** — hero link + Explore card → [Terraria-World-Config-Mod](https://github.com/Otterdays/Terraria-World-Config-Mod) (World Config, first Terraria tModLoader mod). **`programs.html`**, **`js/search-data.js`**, **`js/badges.js`**. **`DOCS/CHANGELOG.md`** Unreleased.
 ---
