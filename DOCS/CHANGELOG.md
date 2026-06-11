@@ -4,7 +4,8 @@ All notable changes to this project are documented in this file. Format: [Keep a
 
 ## [Unreleased]
 
-_(Nothing yet.)_
+### Added
+- **Android-Stuffs (2026-06-10)** — [Otterdays/Android-Stuffs](https://github.com/Otterdays/Android-Stuffs) on **`index.html`** (hero link + Explore card), **`programs.html`**, **`js/search-data.js`**, **`js/badges.js`** (Android badge).
 
 ### Changed
 - **AGENTS.md + Cursor rules (2026-06-10)** — Project-specific agent charter; **`.cursor/rules/otterdays-agents.mdc`** (`alwaysApply`); fixed frontmatter on **`project-workflow.mdc`** and **`tech-stack-2026.mdc`**.

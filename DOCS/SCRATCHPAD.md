@@ -2,6 +2,11 @@
 
 # SCRATCHPAD
 
+## 2026-06-10 — Android-Stuffs (homepage + programs)
+**What changed:** **`index.html`** — hero link + Explore card → [Android-Stuffs](https://github.com/Otterdays/Android-Stuffs) (SoundPax index). **`programs.html`** project card. **`js/search-data.js`**, **`js/badges.js`**. **`DOCS/CHANGELOG.md`** Unreleased.
+**Next:** Commit when ready; no version bump unless shipping.
+---
+
 ## 2026-06-10 — AGENTS.md + Cursor rule
 **What changed:** Rewrote root **`AGENTS.md`** (project-specific charter). New **`.cursor/rules/otterdays-agents.mdc`** (`alwaysApply: true`).
 **Also fixed:** **`project-workflow.mdc`** and **`tech-stack-2026.mdc`** YAML frontmatter (were broken).

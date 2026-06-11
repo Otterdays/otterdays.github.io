@@ -151,7 +151,7 @@
     ];
     var music = ['Aethereal Hymns', 'Audacious', 'BlockBanger'];
     var minecraft = ['Feeshman Deelux', 'Chipper Chopper', 'MC-Companion-Map'];
-    var android = ['Proof Of Purchase', 'Nebula-Camera', 'Brain-Busters', 'Lorenzez-Notez', 'Meal_Mate'];
+    var android = ['Android-Stuffs', 'Proof Of Purchase', 'Nebula-Camera', 'Brain-Busters', 'Lorenzez-Notez', 'Meal_Mate'];
 
     document.addEventListener('DOMContentLoaded', function () {
         document.querySelectorAll('.project-card').forEach(function (card) {
