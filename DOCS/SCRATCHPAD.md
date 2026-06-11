@@ -2,6 +2,14 @@
 
 # SCRATCHPAD
 
+## 2026-06-10 — Inspirations: terrariums, ants, plants
+**What changed:** **Ants Canada**, **Dr Plants**, **Terrarium Designs**, **Worcester Terrariums** — new **Nature & hobbies** section on **`inspirations.html`**; **`js/search-data.js`**, **`DOCS/CHANGELOG.md`** Unreleased.
+---
+
+## 2026-06-10 — Bio: 2 years AI coding
+**What changed:** **`index.html`**, **`programs.html`**, **`about.html`**, **`js/search-data.js`** — 1+ year → **2 years** AI coding.
+---
+
 ## 2026-06-10 — Plumber bio + John Hammond / Vaush
 **What changed:** Bio on **`index.html`**, **`programs.html`**, **`about.html`** (12+ years plumbing, second-gen). **John Hammond**, **Vaush** on **`inspirations.html`**; **`js/search-data.js`**, **`DOCS/CHANGELOG.md`** Unreleased.
 ---
