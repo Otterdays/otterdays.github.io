@@ -1,5 +1,15 @@
 # SUMMARY
 
+## Recent update — 2026-06-11 (Inspirations expansion + layout)
+
+- **`inspirations.html`** — Ultrawide grid (1→5 section columns); new sections **Late-night talk shows**, **Music**; **Culture & long-form** trimmed to gaming/podcasts/long-form.
+- **New creators** — UFD Tech, KasaiSora, ThioJoe, Connor Price, Nic D, PRESIDENT, PROF, Veritasium, Reckless Ben, Fallon, Colbert; ryan3000 copy fix (Ryan Trahan MC side channel).
+- **`js/search-data.js`**, **`DOCS/CONTENT_GUIDE.md`** — section list + layout notes.
+
+## Recent update — 2026-06-11 (Git push / never pull)
+
+- **`.cursor/rules/git-push-never-pull.mdc`** — agents push when user ships; never `git pull`; stop and notify if remote sync would be required; **`AGENTS.md`** rules map.
+
 ## Recent update — 2026-06-11 (Daily drivers favicons)
 
 - **Homepage** — Daily drivers cards use cached `favicon.show` favicon images with letter fallbacks; fixed corrupted punctuation (`—`, `→`, `·`); **`css/style.css`** favicon slot styling; **`DOCS/SBOM.md`** external image CDN note.

@@ -6,6 +6,7 @@ All notable changes to this project are documented in this file. Format: [Keep a
 
 ## [Unreleased]
 
+- **Git push / never pull Cursor rule (2026-06-11)** — **`.cursor/rules/git-push-never-pull.mdc`** (`alwaysApply`); push when user ships; hard ban on `git pull` and fetch-merge; agent stops and notifies user if pull would be needed; **`AGENTS.md`** rules map.
 - **Inspirations Music section (2026-06-11)** — New **Music** section on **`inspirations.html`**; **Connor Price**, **Nic D**, **PRESIDENT**, **PROF** moved from Culture & long-form; **`DOCS/CONTENT_GUIDE.md`**.
 - **PROF on Inspirations (2026-06-11)** — **PROF** (Minneapolis rapper; profgampo.com) in Culture & long-form on **`inspirations.html`**; **`js/search-data.js`**.
 - **Colbert on Inspirations (2026-06-11)** — **The Late Show with Stephen Colbert** (`@ColbertLateShow`) in Late-night talk shows on **`inspirations.html`**; **`js/search-data.js`**.
