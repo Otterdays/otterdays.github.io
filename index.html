@@ -37,6 +37,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="images/otterdays-wordmark.png" as="image">
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" as="style">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
   
@@ -165,7 +166,9 @@
           <img src="images/profile.png" alt="Ryan Otterdays profile" width="240" height="240" loading="eager" fetchpriority="high">
         </div>
         <h1 class="home-title stagger-3">Ryan</h1>
-        <p class="home-handle stagger-3">Otterdays &middot; Developer</p>
+        <img src="images/otterdays-wordmark.png" alt="Otterdays" class="home-wordmark stagger-3" width="200"
+          height="48" loading="eager" decoding="async">
+        <p class="home-handle stagger-3">Developer</p>
         <p class="home-info stagger-4">Short dev profile. 1+ year AI coding &amp; engineering.</p>
         <nav class="home-links stagger-5">
           <a href="https://otterdays.github.io/Otters-Den-Server/" class="home-link home-link--primary" title="Join Otterdays Minecraft Server">
@@ -174,13 +177,19 @@
           </a>
           <a href="#" class="home-link disabled" aria-disabled="true" title="Coming soon">X</a>
           <a href="#" class="home-link disabled" aria-disabled="true" title="Coming soon">Bluesky</a>
-          <a href="https://github.com/Otterdays" rel="noopener noreferrer" target="_blank" class="home-link">GitHub</a>
+          <a href="https://github.com/Otterdays?tab=repositories" rel="noopener noreferrer" target="_blank"
+            class="home-github-pill" title="Otterdays repositories on GitHub">
+            <img src="images/github-repositories-pill.png" alt="Repositories on GitHub" width="168" height="32"
+              decoding="async">
+          </a>
           <a href="https://github.com/Otterdays/Android-Stuffs" rel="noopener noreferrer" target="_blank"
             class="home-link" title="Android-Stuffs — index of Android projects (SoundPax, …)">
             <span class="home-link-icon">📱</span>
             <span>Android-Stuffs</span>
           </a>
           <div class="link-cluster link-cluster--terraria" role="group" aria-label="World Config — Terraria mod">
+            <img src="images/world-config-banner.svg" alt="" class="link-cluster__banner" width="320" height="168"
+              loading="lazy" decoding="async">
             <div class="link-cluster__head">
               <span class="link-cluster__icon" aria-hidden="true">🌍</span>
               <span class="link-cluster__title">World Config</span>
@@ -240,7 +249,9 @@
             <h3>Android-Stuffs</h3>
             <p>Index of Android projects &mdash; SoundPax 16-pad MPC soundboard (Flutter + Rust), more coming.</p>
           </a>
-          <article class="feature-card feature-card--terraria feature-card--cluster">
+          <article class="feature-card feature-card--terraria feature-card--cluster feature-card--has-media">
+            <img class="feature-card__banner" src="images/world-config-banner.svg" alt="" width="640" height="336"
+              loading="lazy" decoding="async">
             <div class="feature-card-icon" aria-hidden="true">🌍</div>
             <h3>World Config</h3>
             <p>First Terraria mod &mdash; tModLoader world gen panel: resize worlds, ore veins, caves, dungeons, loot.</p>

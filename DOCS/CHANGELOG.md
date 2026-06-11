@@ -5,6 +5,9 @@ All notable changes to this project are documented in this file. Format: [Keep a
 ## [Unreleased]
 
 ### Changed
+- **Homepage images (2026-06-10)** — **`images/otterdays-wordmark.png`**, **`github-repositories-pill.png`**, **`world-config-banner.svg`** on **`index.html`** (hero wordmark, GitHub pill link, World Config banners); **`css/style.css`**.
+
+### Changed
 - **Inspirations page (2026-06-10)** — Reorganized into factual sections; subdued list layout (no gradient cards). **Philip DeFranco** added. Agent comment in **`inspirations.html`**; **`js/search-data.js`** updated.
 - **Bringus Studios (2026-06-10)** — [@BringusStudios](https://www.youtube.com/@BringusStudios) on **`inspirations.html`** (Hardware &amp; PC); **`js/search-data.js`**.
 

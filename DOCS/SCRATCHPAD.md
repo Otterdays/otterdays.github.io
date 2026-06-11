@@ -2,6 +2,10 @@
 
 # SCRATCHPAD
 
+## 2026-06-10 — Homepage images (wordmark, GitHub pill, Terraria banner)
+**What changed:** **`images/otterdays-wordmark.png`**, **`github-repositories-pill.png`**, **`world-config-banner.svg`**. **`index.html`** hero + World Config cards; **`css/style.css`**. **`DOCS/CHANGELOG.md`** Unreleased.
+---
+
 ## 2026-06-10 — Bringus Studios (inspirations)
 **What changed:** **`inspirations.html`** Hardware &amp; PC — [Bringus Studios](https://www.youtube.com/@BringusStudios). **`js/search-data.js`**, **`DOCS/CHANGELOG.md`** Unreleased.
 **Next:** Committed + pushed with inspirations redesign batch.

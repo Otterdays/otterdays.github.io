@@ -886,10 +886,46 @@ html {
   }
 }
 
+.home-wordmark {
+  display: block;
+  margin: 0 auto 0.45rem;
+  max-width: 11.5rem;
+  width: auto;
+  height: auto;
+}
+
 .home-handle {
   color: var(--muted);
   margin: 0 0 0.6rem;
   font-weight: 500;
+}
+
+.home-github-pill {
+  display: inline-flex;
+  padding: 0;
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+  line-height: 0;
+  text-decoration: none;
+  transition: transform 0.22s ease, opacity 0.22s ease;
+}
+
+.home-github-pill:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.home-github-pill:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.home-github-pill img {
+  display: block;
+  height: 2rem;
+  width: auto;
+  border-radius: 8px;
 }
 
 .home-info {
@@ -1021,6 +1057,15 @@ html {
   background: color-mix(in srgb, var(--cluster-accent) 11%, var(--glass));
 }
 
+.link-cluster__banner {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.15rem;
+  border: 1px solid color-mix(in srgb, var(--cluster-accent, var(--accent)) 22%, var(--border));
+}
+
 .link-cluster__head {
   display: flex;
   align-items: center;
@@ -1135,6 +1180,19 @@ html {
 .feature-card--cluster .link-cluster__btn {
   font-size: 0.8rem;
   padding: 0.52rem 0.5rem;
+}
+
+.feature-card--has-media {
+  padding-top: 0;
+}
+
+.feature-card__banner {
+  width: calc(100% + 2.3rem);
+  max-width: none;
+  margin: -1.15rem -1.15rem 0.65rem;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid var(--border);
 }
 
 .home-server-callout {
