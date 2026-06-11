@@ -18,21 +18,51 @@
     AGENT NOTE — inspirations.html
     Purpose: factual directory of creators Ryan follows — not a promotional gallery.
     Tone: informative, neutral third person. No catchphrases, meme quotes, or emoji stats.
-    Layout: section headings (h2) + flat .inspiration-list rows. No gradient banners, avatars, or CTA buttons.
+    Layout: .inspirations-sections responsive grid (1 → 2 → 3 section columns). Each section: h2 + .inspiration-list entry cards (auto-fit 2+ wide when space allows). No gradient banners or CTA buttons.
     New entry: pick the best section, copy .inspiration-entry markup, A–Z within section, add js/search-data.js (category: page).
   -->
   <style>
+    .inspirations-page main.content {
+      container-type: inline-size;
+      container-name: inspirations-main;
+    }
+
     .inspirations-page .inspirations-lede {
-      max-width: 52ch;
-      margin: 0 auto 2rem;
+      max-width: 62ch;
+      margin: 0 auto 1.5rem;
       color: var(--muted);
       font-size: 0.92rem;
       line-height: 1.55;
       text-align: center;
     }
 
+    .inspirations-page .inspirations-sections {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      width: 100%;
+      margin-top: 0.25rem;
+    }
+
+    @container inspirations-main (min-width: 40rem) {
+      .inspirations-page .inspirations-sections {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @container inspirations-main (min-width: 68rem) {
+      .inspirations-page .inspirations-sections {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
     .inspirations-page .inspiration-section {
-      margin-bottom: 2rem;
+      margin-top: 0;
+      margin-bottom: 0;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      min-width: 0;
     }
 
     .inspirations-page .inspiration-section h2 {
@@ -44,24 +74,32 @@
       margin: 0 0 0.65rem;
       padding-bottom: 0.45rem;
       border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
     }
 
     .inspirations-page .inspiration-list {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.55rem;
+      flex: 1;
+      padding: 0.55rem;
       border: 1px solid var(--border);
       border-radius: 10px;
-      overflow: hidden;
       background: color-mix(in srgb, var(--fg) 3%, transparent);
     }
 
-    .inspirations-page .inspiration-entry {
-      padding: 0.95rem 1.1rem;
-      border-bottom: 1px solid var(--border);
+    @container inspirations-main (min-width: 36rem) {
+      .inspirations-page .inspiration-list {
+        grid-template-columns: repeat(auto-fit, minmax(13.5rem, 1fr));
+      }
     }
 
-    .inspirations-page .inspiration-entry:last-child {
-      border-bottom: none;
+    .inspirations-page .inspiration-entry {
+      padding: 0.85rem 0.95rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: color-mix(in srgb, var(--fg) 2%, transparent);
+      min-width: 0;
     }
 
     .inspirations-page .inspiration-entry__head {
@@ -98,7 +136,6 @@
       color: var(--muted);
       line-height: 1.5;
       margin: 0 0 0.45rem;
-      max-width: 68ch;
     }
 
     .inspirations-page .inspiration-entry__topics {
@@ -223,6 +260,8 @@
       <h1 class="profile-title">Inspirations</h1>
       <p class="inspirations-lede">Creators and channels referenced for game dev, engineering, AI, hardware, and news. Entries are brief factual summaries with primary links.</p>
     </header>
+
+    <div class="inspirations-sections">
 
     <section class="profile-section inspiration-section" aria-labelledby="insp-game-dev">
       <h2 id="insp-game-dev">Game development</h2>
@@ -469,6 +508,8 @@
         </article>
       </div>
     </section>
+
+    </div>
 
     <footer class="site-footer">
       <div class="site-stats">

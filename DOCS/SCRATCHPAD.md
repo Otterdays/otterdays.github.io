@@ -2,6 +2,10 @@
 
 # SCRATCHPAD
 
+## 2026-06-10 — Inspirations responsive grid (2–3 wide)
+**What changed:** **`inspirations.html`** — `.inspirations-sections` container grid (1/2/3 cols via `@container` on `main.content`); entry lists `auto-fit` multi-column. **`DOCS/CONTENT_GUIDE.md`** layout note.
+---
+
 ## 2026-06-10 — Homepage images (wordmark, GitHub pill, Terraria banner)
 **What changed:** **`images/otterdays-wordmark.png`**, **`github-repositories-pill.png`**, **`world-config-banner.svg`**. **`index.html`** hero + World Config cards; **`css/style.css`**. **`DOCS/CHANGELOG.md`** Unreleased.
 ---
