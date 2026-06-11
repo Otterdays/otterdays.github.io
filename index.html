@@ -9,7 +9,7 @@
 
   <!-- SEO Meta Tags -->
   <meta name="description"
-    content="Ryan (Otterdays) — developer profile, Minecraft server, Arteria (mobile idle RPG), Nate's Space (friend's music & feed). Explore projects, tools, and resources.">
+    content="Ryan (Otterdays) — developer profile, Minecraft server, daily drivers, and personal projects. Cursor, Docker, Wispr Flow, Inno Setup, and more.">
   <meta name="keywords" content="developer, AI coding, engineering, programming, games, tools">
   <meta name="author" content="Ryan Otterdays">
 
@@ -339,114 +339,61 @@
         </section>
       </div>
 
-      <section class="home-features stagger-2">
-        <h2 class="home-features-title">Explore</h2>
-        <div class="home-features-grid">
-          <a href="museum.html" class="feature-card feature-card--museum">
-            <div class="feature-card-icon">🏛️</div>
-            <h3>AI Museum</h3>
-            <p>139+ landmark LLMs, pickers, and model catalogs</p>
+      <section class="home-features home-daily-drivers stagger-2" aria-labelledby="daily-drivers-heading">
+        <h2 class="home-features-title" id="daily-drivers-heading">Daily drivers</h2>
+        <p class="home-daily-drivers-lede">Desktop and mobile apps I actually run ? not a full catalog, just what sticks.</p>
+
+        <div class="daily-drivers-grid">
+          <a href="https://cursor.com/" rel="noopener noreferrer" target="_blank"
+            class="daily-driver-card daily-driver-card--cursor">
+            <span class="daily-driver-card__icon" aria-hidden="true">??</span>
+            <span class="daily-driver-card__body">
+              <span class="daily-driver-card__head">
+                <span class="daily-driver-card__name">Cursor</span>
+                <span class="daily-driver-card__platform">Desktop</span>
+              </span>
+              <span class="daily-driver-card__desc">Primary AI IDE ? agents, MCP, tab completion.</span>
+            </span>
+            <span class="daily-driver-card__arrow" aria-hidden="true">?</span>
           </a>
-          <a href="my-creations.html" class="feature-card feature-card--programs">
-            <div class="feature-card-icon">??</div>
-            <h3>My Creations</h3>
-            <p>60+ games, tools, and AI projects</p>
+          <a href="https://www.docker.com/" rel="noopener noreferrer" target="_blank"
+            class="daily-driver-card daily-driver-card--docker">
+            <span class="daily-driver-card__icon" aria-hidden="true">??</span>
+            <span class="daily-driver-card__body">
+              <span class="daily-driver-card__head">
+                <span class="daily-driver-card__name">Docker</span>
+                <span class="daily-driver-card__platform">Desktop</span>
+              </span>
+              <span class="daily-driver-card__desc">Containers, Compose, and MCP gateway for agent sandboxes.</span>
+            </span>
+            <span class="daily-driver-card__arrow" aria-hidden="true">?</span>
           </a>
-          <a href="chats.html" class="feature-card feature-card--chats">
-            <div class="feature-card-icon">💬</div>
-            <h3>AI Chats</h3>
-            <p>Curated AI chat platforms & assistants</p>
+          <a href="https://jrsoftware.org/isinfo.php" rel="noopener noreferrer" target="_blank"
+            class="daily-driver-card daily-driver-card--inno">
+            <span class="daily-driver-card__icon" aria-hidden="true">??</span>
+            <span class="daily-driver-card__body">
+              <span class="daily-driver-card__head">
+                <span class="daily-driver-card__name">Inno Setup</span>
+                <span class="daily-driver-card__platform">Windows</span>
+              </span>
+              <span class="daily-driver-card__desc">Scriptable Windows installers ? open-source setup builder.</span>
+            </span>
+            <span class="daily-driver-card__arrow" aria-hidden="true">?</span>
           </a>
-          <a href="companies.html" class="feature-card feature-card--companies">
-            <div class="feature-card-icon">🏢</div>
-            <h3>Companies</h3>
-            <p>78+ AI and tech companies directory</p>
-          </a>
-          <article class="feature-card feature-card--blockpanel feature-card--cluster">
-            <div class="feature-card-icon" aria-hidden="true">🧱</div>
-            <h3>BlockPanel V3</h3>
-            <p>Self-hosted Minecraft panel &mdash; Elixir + LiveView. Java &amp; Bedrock servers, jars, Modrinth mods, consoles.</p>
-            <div class="link-cluster__actions link-cluster__actions--card" role="group" aria-label="BlockPanel V3 links">
-              <a href="https://github.com/Otterdays/Block-Panel-V3" rel="noopener noreferrer" target="_blank"
-                class="link-cluster__btn" title="BlockPanel V3 on GitHub">GitHub</a>
-              <a href="https://github.com/Otterdays/Block-Panel-V3#quick-start" rel="noopener noreferrer"
-                target="_blank" class="link-cluster__btn" title="Quick start">Quick start</a>
-            </div>
-          </article>
-          <article class="feature-card feature-card--minecraft-stuffs feature-card--cluster">
-            <div class="feature-card-icon" aria-hidden="true">⬛</div>
-            <h3>Minecraft-Stuffs</h3>
-            <p>Otters MC Studios &mdash; Fabric mods, server panels, shaders, and voxel projects under one hub.</p>
-            <div class="link-cluster__actions link-cluster__actions--card" role="group"
-              aria-label="Minecraft-Stuffs links">
-              <a href="https://otterdays.github.io/Minecraft-Stuffs/" rel="noopener noreferrer" target="_blank"
-                class="link-cluster__btn" title="Otters MC Studios site">Site</a>
-              <a href="https://github.com/Otterdays/Minecraft-Stuffs" rel="noopener noreferrer" target="_blank"
-                class="link-cluster__btn" title="Source on GitHub">GitHub</a>
-            </div>
-          </article>
-          <article class="feature-card feature-card--android feature-card--cluster">
-            <div class="feature-card-icon" aria-hidden="true">📱</div>
-            <h3>Android-Stuffs</h3>
-            <p>Android projects index &mdash; tablets, tools, and experiments. SoundPax MPC soundboard (Flutter + Rust).</p>
-            <div class="link-cluster__actions link-cluster__actions--card" role="group" aria-label="Android-Stuffs links">
-              <a href="https://otterdays.github.io/Android-Stuffs/" rel="noopener noreferrer" target="_blank"
-                class="link-cluster__btn" title="Android-Stuffs site">Site</a>
-              <a href="https://github.com/Otterdays/Android-Stuffs" rel="noopener noreferrer" target="_blank"
-                class="link-cluster__btn" title="Source on GitHub">GitHub</a>
-            </div>
-          </article>
-          <article class="feature-card feature-card--terraria feature-card--cluster">
-            <div class="feature-card-icon" aria-hidden="true">🌍</div>
-            <h3>World Config</h3>
-            <p>First Terraria mod &mdash; tModLoader world gen panel: resize worlds, ore veins, caves, dungeons, loot.</p>
-            <div class="link-cluster__actions link-cluster__actions--card" role="group" aria-label="World Config links">
-              <a href="https://otterdays.github.io/Terraria-World-Config-Mod/#home" rel="noopener noreferrer"
-                target="_blank" class="link-cluster__btn" title="World Config docs site">Docs</a>
-              <a href="https://otterdays.github.io/Terraria-World-Config-Mod/#quick-start" rel="noopener noreferrer"
-                target="_blank" class="link-cluster__btn" title="5-minute quick start">Quick start</a>
-              <a href="https://github.com/Otterdays/Terraria-World-Config-Mod" rel="noopener noreferrer"
-                target="_blank" class="link-cluster__btn" title="Source on GitHub">GitHub</a>
-            </div>
-          </article>
-          <article class="feature-card feature-card--arteria feature-card--cluster">
-            <div class="feature-card-icon" aria-hidden="true">⚔️</div>
-            <h3>Arteria <span class="feature-card__version">v1</span></h3>
-            <p>Cosmic mobile idle RPG &mdash; skills, story quests, companions. APK and site on GitHub Pages.</p>
-            <div class="link-cluster__actions link-cluster__actions--card" role="group" aria-label="Arteria v1 links">
-              <a href="https://otterdays.github.io/GAME-Arteria/" rel="noopener noreferrer" target="_blank"
-                class="link-cluster__btn" title="Arteria v1 game site">Site</a>
-              <a href="https://github.com/Otterdays/GAME-Arteria" rel="noopener noreferrer" target="_blank"
-                class="link-cluster__btn" title="GAME-Arteria on GitHub">GitHub</a>
-            </div>
-          </article>
-          <article class="feature-card feature-card--arteria-v2 feature-card--cluster">
-            <div class="feature-card-icon" aria-hidden="true">⚔️</div>
-            <h3>Arteria <span class="feature-card__version">v2</span></h3>
-            <p>Native Android idle RPG &mdash; Kotlin, Compose, Room, JVM <code>:core</code> engine. Combat, skills, Docking UI.</p>
-            <div class="link-cluster__actions link-cluster__actions--card" role="group" aria-label="Arteria v2 links">
-              <a href="https://otterdays.github.io/Arteria-V2-Gradle-Edition-Reloaded/" rel="noopener noreferrer"
-                target="_blank" class="link-cluster__btn" title="Arteria V2 chronicle site">Site</a>
-              <a href="https://github.com/Otterdays/Arteria-V2-Gradle-Edition-Reloaded" rel="noopener noreferrer"
-                target="_blank" class="link-cluster__btn" title="Arteria V2 on GitHub">GitHub</a>
-            </div>
-          </article>
-          <article class="feature-card feature-card--nebula feature-card--cluster">
-            <div class="feature-card-icon" aria-hidden="true">🌌</div>
-            <h3>Nebula Chat</h3>
-            <p>Personal browser AI workspace &mdash; Gemini thinking models, personas, core memory, artifacts, Redis durable streaming.</p>
-            <div class="link-cluster__actions link-cluster__actions--card" role="group" aria-label="Nebula Chat links">
-              <a href="https://github.com/Otterdays/Nebula-Chat" rel="noopener noreferrer" target="_blank"
-                class="link-cluster__btn" title="Nebula-Chat on GitHub">GitHub</a>
-            </div>
-          </article>
-          <a href="https://otterdays.github.io/Nates-Space/" rel="noopener noreferrer" target="_blank"
-            class="feature-card feature-card--nates">
-            <div class="feature-card-icon">🎧</div>
-            <h3>Nate&rsquo;s Space</h3>
-            <p>Friend&rsquo;s site: music, feed, and studio gallery. Also at natee.vercel.app</p>
+          <a href="https://wisprflow.ai/" rel="noopener noreferrer" target="_blank"
+            class="daily-driver-card daily-driver-card--wispr">
+            <span class="daily-driver-card__icon" aria-hidden="true">???</span>
+            <span class="daily-driver-card__body">
+              <span class="daily-driver-card__head">
+                <span class="daily-driver-card__name">Wispr Flow</span>
+                <span class="daily-driver-card__platform">Desktop � Mobile</span>
+              </span>
+              <span class="daily-driver-card__desc">Voice dictation into any app ? Mac, Windows, iPhone, Android.</span>
+            </span>
+            <span class="daily-driver-card__arrow" aria-hidden="true">?</span>
           </a>
         </div>
+        <p class="home-daily-drivers-foot">Full tool directory on <a href="tools.html">Tools</a> � projects in <a href="my-creations.html">My Creations</a>.</p>
       </section>
     </div>
     <!-- Site Footer -->

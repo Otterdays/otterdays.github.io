@@ -4,6 +4,7 @@ All notable changes to this project are documented in this file. Format: [Keep a
 
 ## [Unreleased]
 
+- **Homepage Daily drivers (2026-06-11)** — Replaced Explore feature grid with **Daily drivers** (Cursor, Docker, Inno Setup, Wispr Flow); **`css/style.css`** card layout; **`tools.html#packaging-installers`** + search/badges for Inno Setup; Wispr Flow desc adds Android.
 - **About — Pages at a glance (2026-06-11)** — Regrouped Home / Main / More to match sidebar; concise linked bullets; removed duplicate Inspirations block; **`css/style.css`**, **`js/search-data.js`**.
 - **Mobile nav sheet (2026-06-11)** — Chevron **Open menu** handle on mobile; tap expands labeled nav sheet; backdrop + Escape to close; **`js/qol.js`**, **`css/style.css`**.
 - **Sidebar grouped layout (2026-06-11)** — Home standalone; **Main** block (About, AI Chats, Inspirations, Media Gen, Offline survival, Other Assistants, Specials, Tools); **More** block (AI Museum, My Creations, Companies, Explore, Posts, Updates); **`css/style.css`** dividers + labels; **`tools/replace_sidebar_nav.py`**, **`AGENTS.md`**.

@@ -2,6 +2,10 @@
 
 # SCRATCHPAD
 
+## 2026-06-11 — Homepage Daily drivers (replaces Explore grid)
+**What changed:** **`index.html`** — Explore feature grid → **Daily drivers** (Cursor, Docker, Inno Setup, Wispr Flow); **`css/style.css`** `.daily-driver-card`; **`tools.html#packaging-installers`** Inno Setup; **`js/search-data.js`**, **`js/badges.js`**, **`js/qol.js`** scroll anim.
+---
+
 ## 2026-06-11 — About page: Pages at a glance cleanup
 **What changed:** **`about.html`** — regrouped glance (Home / Main / More) with linked bullets; removed duplicate Inspirations section; **`css/style.css`** `.about-glance-group`; **`js/search-data.js`** About desc.
 ---

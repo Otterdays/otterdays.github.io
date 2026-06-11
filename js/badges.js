@@ -64,7 +64,7 @@
         'Falcon LLM': UAE, 'Hunyuan AI Studio': CN, 'Builder.io': USA, 'Duck.ai': USA,
         'Allen AI (Ai2)': USA, 'Cohere Chat': CA, 'Deep Agent': USA, 'Anything': USA,
         'SambaNova Playground': USA, 'HuggingChat': FR, 'Bolt': USA, 'bolt.diy': USA,
-        'Rocket.new': USA, 'Amp Free': USA, 'Amp CLI': USA, 'Wispr Flow': USA, 'Wix AI': IL, 'Crush': FR,
+        'Rocket.new': USA, 'Amp Free': USA, 'Amp CLI': USA, 'Wispr Flow': USA, 'Inno Setup': USA, 'Wix AI': IL, 'Crush': FR,
         'Junie': { flag: '\uD83C\uDDE8\uD83C\uDDFF', label: 'Czech Republic' }, 'Junie CLI': { flag: '\uD83C\uDDE8\uD83C\uDDFF', label: 'Czech Republic' },
         'Gemini Code Assist': USA,
         'Horizons': USA, 'Cloudflare AI': USA, 'Cloudflare Pages': USA, 'vinext': USA, 'MongoDB Atlas': USA,

@@ -260,7 +260,7 @@
     // Check if IntersectionObserver is supported
     if (!('IntersectionObserver' in window)) return;
 
-    var animatedElements = document.querySelectorAll('.feature-card');
+    var animatedElements = document.querySelectorAll('.feature-card, .daily-driver-card');
     if (!animatedElements.length) return;
 
     var observer = new IntersectionObserver(function (entries) {
