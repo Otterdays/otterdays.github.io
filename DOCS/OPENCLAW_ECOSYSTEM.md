@@ -6,7 +6,7 @@ Where each OpenClaw-related project **appears on this static site** (GitHub Page
 
 | Project / resource | Primary link | On-site location |
 |-------------------|--------------|------------------|
-| **OpenClaw** | [openclaw.ai](https://openclaw.ai/) | `tools.html#computer-automation`; **CLI** block on `tools.html`; `chats.html`; `companies.html` (site, GitHub, Docs) |
+| **OpenClaw** | [openclaw.ai](https://openclaw.ai/) | `tools.html#computer-automation`; **CLI** block on `tools.html`; `companies.html` (site, GitHub, Docs) |
 | **OpenClaw Docs** | [docs.openclaw.ai](https://docs.openclaw.ai/) | `companies.html` (OpenClaw section) |
 | **Playwright** | [playwright.dev](https://playwright.dev/) | `tools.html#computer-automation` (narrative + inline MCP link in intro) |
 | **Playwright MCP** | [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) | `tools.html#computer-automation` |
@@ -32,7 +32,7 @@ Where each OpenClaw-related project **appears on this static site** (GitHub Page
 | **n8n** | [n8n-io/n8n](https://github.com/n8n-io/n8n) | `tools.html#computer-automation` |
 | **TrustClaw** | [trustclaw.app](https://www.trustclaw.app/) | `tools.html#computer-automation` |
 | **NemoClaw** | [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) · [docs.nvidia.com/nemoclaw](https://docs.nvidia.com/nemoclaw) | `tools.html` **CLI** section; `companies.html` (NVIDIA) |
-| **Moltbook** | [moltbook.com](https://www.moltbook.com/) | `chats.html`; `companies.html` |
+| **Moltbook** | [moltbook.com](https://www.moltbook.com/) | `specials.html` (AI social networks); `companies.html` |
 | **Awesome OpenClaw alternatives** | [T31K/awesome-openclaw-alternatives](https://github.com/T31K/awesome-openclaw-alternatives) | `tools.html#computer-automation` |
 | **Openclaw_variations.md** (annotated list) | Repo root | Not rendered on Pages; linked from `tools.html` card → GitHub blob |
 | **memU** / other niche alts | (verify upstream) | *Repo notes only* in `Openclaw_variations.md` until a stable primary URL is confirmed |

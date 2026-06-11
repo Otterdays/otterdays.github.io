@@ -1,5 +1,12 @@
 # SUMMARY
 
+## Recent update — 2026-06-10 (Chats by country; Moltbook placement)
+
+- **`chats.html`** — Provider Chats and Other Assistants grouped by country of origin; OpenClaw removed (lives on **`tools.html#computer-automation`**).
+- **`specials.html`** — New **AI social networks** section; **Moltbook** moved here from chats.
+- **Flags:** **`js/badges.js`** — ChatGPT, Claude, T3 Chat → US; LongCat → China.
+- **Docs:** **`DOCS/OPENCLAW_ECOSYSTEM.md`**, **`DOCS/CHANGELOG.md`** [Unreleased], **`DOCS/CONTENT_GUIDE.md`**, **`DOCS/SCRATCHPAD.md`**.
+
 ## Version modality
 
 - **v1.9.1** through **v1.9.5** are **consolidated under** the minor **v1.10.0** (one bucket for the museum / informational-links / Gemini / multi-provider catalog work). The **per-patch log** stays in **`updates.html`** (`js/updates-data.js`) and **`DOCS/CHANGELOG.md`** sections **[1.9.1]–[1.9.5]**.

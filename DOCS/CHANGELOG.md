@@ -5,6 +5,15 @@ All notable changes to this project are documented in this file. Format: [Keep a
 ## [Unreleased]
 
 ### Added
+- **Specials — AI social networks (2026-06-10)** — **`specials.html`** section for agent-first platforms; **Moltbook** moved from **`chats.html`**. **`js/search-data.js`** (`special`), **`js/badges.js`**.
+
+### Changed
+- **`chats.html` (2026-06-10)** — Provider and Other Assistants grouped by **country of origin**; removed **OpenClaw** and **Moltbook**. Cross-links to **`tools.html#computer-automation`** and **`specials.html`**.
+- **`js/badges.js` (2026-06-10)** — **ChatGPT**, **Claude**, **T3 Chat** → United States; **LongCat** / **LongCat AI** → China.
+- **`DOCS/OPENCLAW_ECOSYSTEM.md` (2026-06-10)** — OpenClaw off `chats.html`; Moltbook on `specials.html`.
+- **`DOCS/CONTENT_GUIDE.md` (2026-06-10)** — Chats country-grouping + Moltbook placement notes.
+
+### Added
 - **Design & UI (tools)** — **`tools.html`** `#design-ui`: **Coolors** ([coolors.co](https://coolors.co/)), **Mobbin** ([mobbin.com](https://mobbin.com/)), **Awesome DESIGN.md** ([VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md)), **Button Stealer** (Chrome Web Store). **`js/search-data.js`**, **`js/badges.js`** (incl. Italy flag for Coolors).
 - **`explore.html`** — Premium metrics redesign: SVG-based donut chart with interactive hover highlights and legend; animated 8-count statistics grid with count-up effects; top-pages podium (🥇🥈🥉); multi-color bar charts for page and tag distributions; interactive tag cloud with frequency-based sizing and count badges.
 - **`js/explore.js`** — Complete refactor to support SVG rendering, `requestAnimationFrame` counters, and dynamic CSS bar width transitions.

@@ -2,6 +2,11 @@
 
 # SCRATCHPAD
 
+## 2026-06-10 — Chats by country; Moltbook → Specials; badge fixes
+**What changed:** **`chats.html`** — grouped Provider Chats + Other Assistants by country; removed OpenClaw + Moltbook. **`specials.html`** — new **AI social networks** section (Moltbook). **`js/badges.js`** — ChatGPT, Claude, T3 Chat → US; LongCat/LongCat AI → CN. **`js/search-data.js`** — Moltbook → `specials.html`; dropped OpenClaw chat row. **`DOCS/OPENCLAW_ECOSYSTEM.md`**, **`DOCS/CHANGELOG.md`**, **`DOCS/SUMMARY.md`**, **`DOCS/CONTENT_GUIDE.md`**.
+**Out-of-scope observations:** None.
+---
+
 ## 2026-04-29 — Added caveman Cursor skill
 **What changed:** Added `caveman` Cursor agent skill under `~/.cursor/skills/caveman/` (`SKILL.md`, `reference.md`, `examples.md`).
 **Out-of-scope observations:** None.

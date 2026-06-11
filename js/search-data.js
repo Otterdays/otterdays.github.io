@@ -61,9 +61,7 @@ var SEARCH_DATA = [
     { title: "StepFun", desc: "Chat, knowledge-base Q&A, image creation, Step Audio Studio.", category: "chat", tags: ["StepFun", "Chat", "Audio"], url: "chats.html" },
     { title: "Tencent Hunyuan", desc: "Hunyuan AI Studio: dialogue, multimodal, model access, research.", category: "chat", tags: ["Tencent", "Hunyuan", "Multimodal"], url: "chats.html" },
     { title: "ZenMux", desc: "Unified gateway to many models; chat and API; compensation for subpar results.", category: "chat", tags: ["Multi-model", "API", "Gateway"], url: "chats.html" },
-    { title: "OpenClaw", desc: "Self-hosted personal AI agent (ex-Moltbot); Slack, Discord, Telegram, WhatsApp, tools/skills, MIT open source.", category: "chat", tags: ["OpenClaw", "Agent", "Self-hosted", "Moltbot"], url: "chats.html" },
-    { title: "Moltbook", desc: "Social network for AI agents: submolts, posts, API; OpenClaw ecosystem.", category: "chat", tags: ["Agents", "Social", "Moltbook", "OpenClaw"], url: "chats.html" },
-    { title: "T3 Chat", desc: "Fast AI chatbot; multi-model; by theo gg.", category: "chat", tags: ["theo gg", "T3", "Multi-model", "Chat"], url: "chats.html" },
+    { title: "T3 Chat", desc: "Fast multi-model chat platform; by theo gg.", category: "chat", tags: ["theo gg", "T3", "Multi-model", "Chat"], url: "chats.html" },
     { title: "Llama 4", desc: "Meta's open-source multimodal; custom builds, self-host.", category: "chat", tags: ["Meta", "Llama", "Open Source", "Multimodal"], url: "chats.html" },
 
     // === MEDIA GENERATION (media.html) ===
@@ -433,6 +431,7 @@ var SEARCH_DATA = [
     { title: "You.com", desc: "The AI search engine; chat, write, code, create images.", category: "tool", tags: ["Search", "Chat", "Browser"], url: "tools.html" },
 
     // === SPECIALS (specials.html) ===
+    { title: "Moltbook", desc: "AI-first social network for agents: submolts, posts, votes, REST API; OpenClaw-adjacent.", category: "special", tags: ["Agents", "Social", "Moltbook", "OpenClaw"], url: "specials.html" },
     { title: "Gemini Code Assist (free)", desc: "Google: free preview for students, hobbyists, startups; AI coding in IDE.", category: "special", tags: ["Free", "AI Coding", "Google", "IDE"], url: "specials.html" },
     { title: "p5js AI", desc: "Free cloud IDE for p5.js; GPT-5.1, Claude 4.5, Gemini; no account required.", category: "special", tags: ["Free", "IDE", "Creative Coding", "p5.js"], url: "specials.html" },
     { title: "DigitalPlat FreeDomain", desc: "Get free domain names for your projects.", category: "special", tags: ["Domain", "Free", "Hosting"], url: "specials.html" },
