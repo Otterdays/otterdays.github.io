@@ -1,5 +1,20 @@
 # SUMMARY
 
+## Recent update — 2026-06-10 (Inspirations)
+
+- **`inspirations.html`** — **AICodeKing**, **Bijan Bowen**, **ryan3000** (@ryanthreethousand); PrimeTime card HTML fix.
+- **Indexing:** **`js/search-data.js`**, **`about.html`**.
+
+## Recent update — 2026-06-10 (Inspirations +6)
+
+- **`inspirations.html`** — **The Diary Of A CEO**, **Gamers Nexus**, **Jimmy Kimmel Live**, **The Daily Show**, **PewDiePie**, **In the World of AI**.
+- **Indexing:** **`js/search-data.js`**, **`about.html`**.
+
+## Recent update — 2026-06-10 (Inspirations +4)
+
+- **`inspirations.html`** — **Adam Conover**, **The Infographics Show**, **SomeOrdinaryGamers**, **Fireship** (with existing **AICodeKing**, **Bijan Bowen**, **ryan3000** = 7 new this batch).
+- **Indexing:** **`js/search-data.js`**, **`about.html`**.
+
 ## Recent update — 2026-06-10 (Liquid AI)
 
 - **`companies.html`** — **Liquid AI** ([liquid.ai](https://www.liquid.ai/)) + **Liquid Playground** chat.

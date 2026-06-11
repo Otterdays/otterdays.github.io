@@ -5,6 +5,7 @@ All notable changes to this project are documented in this file. Format: [Keep a
 ## [Unreleased]
 
 ### Added
+- **Inspirations (2026-06-10)** — **AICodeKing**, **Bijan Bowen**, **ryan3000**, **Adam Conover**, **The Infographics Show**, **SomeOrdinaryGamers**, **Fireship**, **The Diary Of A CEO**, **Gamers Nexus**, **Jimmy Kimmel Live**, **The Daily Show**, **PewDiePie**, **In the World of AI** on **`inspirations.html`**; **`js/search-data.js`**, **`about.html`**. Fixed missing **`</article>`** on The PrimeTime card.
 - **Liquid AI (2026-06-10)** — **`companies.html`** section ([liquid.ai](https://www.liquid.ai/), [Liquid Playground](https://playground.liquid.ai/chat?model=cmppnbgse000004l4bc8df3wx)); **`chats.html`** US Provider Chats card; **`js/search-data.js`**, **`js/badges.js`** (United States).
 - **Specials — AI social networks (2026-06-10)** — **`specials.html`** section for agent-first platforms; **Moltbook** moved from **`chats.html`**. **`js/search-data.js`** (`special`), **`js/badges.js`**.
 

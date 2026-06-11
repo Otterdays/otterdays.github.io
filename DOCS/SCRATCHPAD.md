@@ -2,6 +2,21 @@
 
 # SCRATCHPAD
 
+## 2026-06-10 — Inspirations: +6 YouTube channels
+**What changed:** **`inspirations.html`** — **The Diary Of A CEO**, **Gamers Nexus**, **Jimmy Kimmel Live**, **The Daily Show**, **PewDiePie**, **In the World of AI**. **`js/search-data.js`**, **`about.html`**, **`DOCS/CHANGELOG.md`**, **`DOCS/SUMMARY.md`**.
+**Out-of-scope observations:** None.
+---
+
+## 2026-06-10 — Inspirations: +4 from screenshots (7 new total)
+**What changed:** **`inspirations.html`** — added **Adam Conover**, **The Infographics Show**, **SomeOrdinaryGamers**, **Fireship** (AICodeKing/Bijan/ryan3000 already present). **`js/search-data.js`**, **`about.html`**, **`DOCS/CHANGELOG.md`**, **`DOCS/SUMMARY.md`**.
+**Out-of-scope observations:** None.
+---
+
+## 2026-06-10 — Inspirations: AICodeKing, Bijan Bowen, ryan3000
+**What changed:** **`inspirations.html`** — three new cards; fixed missing **`</article>`** on The PrimeTime card. **`js/search-data.js`**, **`about.html`**. **`DOCS/CHANGELOG.md`**, **`DOCS/SUMMARY.md`**.
+**Out-of-scope observations:** None.
+---
+
 ## 2026-06-10 — Liquid AI + Liquid Playground
 **What changed:** **`companies.html`** — **Liquid AI** section (site + playground chat). **`chats.html`** — **Liquid Playground** in US Provider Chats. **`js/search-data.js`**, **`js/badges.js`** (US). **`DOCS/CHANGELOG.md`**, **`DOCS/SUMMARY.md`**.
 **Out-of-scope observations:** LEAP / Liquid Apollo not added to **`tools.html`** yet.
