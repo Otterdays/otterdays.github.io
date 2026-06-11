@@ -12,6 +12,7 @@ All notable changes to this project are documented in this file. Format: [Keep a
 - **Hero portrait + social bar (2026-06-10)** — **`images/ai-image-1.png`** split duo with **`profile.png`** (crossfade cycle on narrow viewports); **`.home-social`** pill row under bio (GitHub, Indeed, Modrinth, itch.io, Linktree). **`index.html`**, **`css/style.css`**.
 - **Which AI Made This? (2026-06-10)** — [ui-design-bench.vercel.app](https://ui-design-bench.vercel.app/) on **`informational-links.html`** (benchmarks) + **`tools.html`** Reference; **`js/search-data.js`**.
 - **Nebula-Chat (2026-06-10)** — [Nebula-Chat](https://github.com/Otterdays/Nebula-Chat) personal browser AI workspace on **`index.html`** hero + Explore; **`programs.html`**, **`js/search-data.js`**, **`css/style.css`**.
+- **Plumber bio + inspirations (2026-06-10)** — Homepage/programs bio: 12+ years plumbing, second-generation plumber. **John Hammond**, **Vaush** on **`inspirations.html`** (**Gamers Nexus**, **Jimmy Kimmel Live** already listed); **`about.html`**, **`js/search-data.js`**.
 
 ## [1.12.0] - 2026-06-10
 

@@ -2,6 +2,10 @@
 
 # SCRATCHPAD
 
+## 2026-06-10 — Plumber bio + John Hammond / Vaush
+**What changed:** Bio on **`index.html`**, **`programs.html`**, **`about.html`** (12+ years plumbing, second-gen). **John Hammond**, **Vaush** on **`inspirations.html`**; **`js/search-data.js`**, **`DOCS/CHANGELOG.md`** Unreleased.
+---
+
 ## 2026-06-10 — Nebula-Chat (browser AI workspace)
 **What changed:** [Nebula-Chat](https://github.com/Otterdays/Nebula-Chat) — hero **`.link-cluster--nebula`**, Explore card, **`programs.html`** card + **`js/search-data.js`**, **`css/style.css`**, **`DOCS/CHANGELOG.md`** Unreleased.
 ---
