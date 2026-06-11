@@ -6,7 +6,9 @@ All notable changes to this project are documented in this file. Format: [Keep a
 
 ## [Unreleased]
 
-(Nothing yet.)
+- **Emoji restore (2026-06-11)** — Fixed sidebar/footer/search icons showing `??` after v1.13.0 badge pass used PowerShell without UTF-8; restored `*.html` emoji glyphs; version badges remain **v1.13.0**.
+
+(Nothing else yet.)
 
 ## [1.13.0] - 2026-06-11
 

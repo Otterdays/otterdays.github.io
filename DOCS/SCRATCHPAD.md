@@ -2,6 +2,10 @@
 
 # SCRATCHPAD
 
+## 2026-06-11 — Fix emoji corruption (v1.13.0 HTML bump)
+**What changed:** Restored all `*.html` from pre-corruption commit; re-bumped **v1.13.0** via Python UTF-8 (PowerShell `Set-Content` had mangled emoji → `??`). **Cause:** `Get-Content`/`Set-Content` without UTF-8 on v1.13.0 badge pass.
+---
+
 ## 2026-06-11 — ship v1.13.0
 **What changed:** **`js/updates-data.js`** — **1.13.0** card. All `*.html` badges **v1.13.0**; `updates.html` search placeholder; `DOCS/CHANGELOG.md` **[1.13.0]**; `DOCS/journal/2026-06-11.md`; `README.md`, `ARCHITECTURE`, `SUMMARY`, `AGENTS.md`, `otterdays-agents.mdc`.
 ---
