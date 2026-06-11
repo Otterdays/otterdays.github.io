@@ -171,6 +171,7 @@ After changes:
 | Rule file | When it applies |
 |-----------|-----------------|
 | `.cursor/rules/otterdays-agents.mdc` | Always — this charter |
+| `.cursor/rules/git-push-never-pull.mdc` | Always — push when shipping; **never pull** |
 | `.cursor/rules/project-workflow.mdc` | Docs, JSON, README |
 | `.cursor/rules/tech-stack-2026.mdc` | HTML, CSS, JS |
 

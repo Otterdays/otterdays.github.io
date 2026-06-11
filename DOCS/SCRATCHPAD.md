@@ -2,6 +2,10 @@
 
 # SCRATCHPAD
 
+## 2026-06-11 — Cursor rule: git push, never pull
+**What changed:** **`.cursor/rules/git-push-never-pull.mdc`** — always push when user ships; hard ban on `git pull`/fetch-merge; stop and notify user if pull would be needed. **`AGENTS.md`** rules map.
+---
+
 ## 2026-06-11 — Inspirations Music section
 **What changed:** **`inspirations.html`** — new **Music** section; moved **Connor Price**, **Nic D**, **PRESIDENT**, **PROF** from Culture & long-form. Culture keeps PewDiePie, ryan3000, DOAC. **`DOCS/CONTENT_GUIDE.md`**, **`DOCS/CHANGELOG.md`** Unreleased.
 ---

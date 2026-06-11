@@ -1,0 +1,41 @@
+---
+description: Git sync policy — push when shipping; never pull; stop and ask user if pull would be needed.
+alwaysApply: true
+---
+
+# Git: push yes, pull never
+
+## Hard ban — never run
+
+- `git pull` (any flags: `--rebase`, `--ff-only`, etc.)
+- `git fetch` followed by merge/rebase onto remote
+- Any command whose purpose is syncing **from** remote into the local branch
+
+No exceptions. Not for CI fixes, not for "get latest first," not for conflict resolution.
+
+## Push
+
+When the user asks to **commit**, **ship**, **push**, or **sync to remote**:
+
+1. Commit only if they asked (existing commit rules still apply).
+2. **Push** after a successful commit unless they explicitly say not to push.
+
+```powershell
+git push -u origin HEAD
+```
+
+Use `-u` on first push of a branch. Do not force-push `main`/`master`.
+
+## When remote is ahead or pull would be needed
+
+**Stop.** Do not pull. Tell the user plainly:
+
+- Local vs remote state (e.g. "branch is N commits behind `origin/main`").
+- What you already did (commit/push attempt if any).
+- That **only they** should pull/rebase on their machine — you will not.
+
+Wait for their instruction. Do not work around the ban with fetch, clone-into-temp, or third-party sync tools.
+
+## Still ask first
+
+- Force-push, hard reset, amend after push, skip hooks, git config changes — unchanged from `AGENTS.md`.
