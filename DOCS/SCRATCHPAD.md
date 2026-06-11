@@ -2,6 +2,10 @@
 
 # SCRATCHPAD
 
+## 2026-06-11 — PROF on Inspirations
+**What changed:** **`inspirations.html`** Culture & long-form — **PROF** (Minneapolis rapper; user channel URL). **`js/search-data.js`**, **`DOCS/CHANGELOG.md`** Unreleased.
+---
+
 ## 2026-06-11 — Colbert on Inspirations (late-night)
 **What changed:** **`inspirations.html`** Late-night talk shows — **The Late Show with Stephen Colbert** (`@ColbertLateShow`). **`js/search-data.js`**, **`DOCS/CHANGELOG.md`** Unreleased.
 ---

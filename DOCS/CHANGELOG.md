@@ -6,6 +6,7 @@ All notable changes to this project are documented in this file. Format: [Keep a
 
 ## [Unreleased]
 
+- **PROF on Inspirations (2026-06-11)** — **PROF** (Minneapolis rapper; profgampo.com) in Culture & long-form on **`inspirations.html`**; **`js/search-data.js`**.
 - **Colbert on Inspirations (2026-06-11)** — **The Late Show with Stephen Colbert** (`@ColbertLateShow`) in Late-night talk shows on **`inspirations.html`**; **`js/search-data.js`**.
 - **Inspirations late-night section (2026-06-11)** — New **Late-night talk shows** section: **The Tonight Show** (@fallontonight), **Jimmy Kimmel Live**, **Late Night with Seth Meyers**, **The Daily Show** (moved from Culture). **Veritasium**, **Reckless Ben** in News & commentary; **`js/search-data.js`**, **`DOCS/CONTENT_GUIDE.md`**.
 - **Inspirations ultrawide grid (2026-06-11)** — Section grid scales to 4–5 columns on wide viewports (`@container` 86rem / 108rem); `main.content` max-width 2800px on **`inspirations.html`**; **`DOCS/CONTENT_GUIDE.md`** layout note.
