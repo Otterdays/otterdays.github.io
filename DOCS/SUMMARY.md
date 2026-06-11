@@ -1,9 +1,31 @@
 # SUMMARY
 
+## Recent update — 2026-06-10 (MiMo Studio + NVIDIA Build)
+
+- **`chats.html`** — **MiMo Studio** (Xiaomi, China), **NVIDIA Build** (US provider chats).
+- **`companies.html`** — **Xiaomi** (MiMo Studio), **NVIDIA Build** under NVIDIA.
+- **`js/search-data.js`**, **`js/badges.js`**.
+
+## Recent update — 2026-06-10 (AI Museum — Cursor Jun 2026)
+
+- **`museum.html`** — Q2 2026 flagships (**Composer 2.5**, **Fable 5**, **GPT-5.5**); Cursor model menu snapshot; roster cards; master catalog (+5 rows, 144 total).
+- **`js/search-data.js`**, **`informational-links.html`** (flagship lineup blurb).
+
 ## Recent update — 2026-06-10 (Inspirations)
 
 - **`inspirations.html`** — **AICodeKing**, **Bijan Bowen**, **ryan3000** (@ryanthreethousand); PrimeTime card HTML fix.
 - **Indexing:** **`js/search-data.js`**, **`about.html`**.
+
+## Recent update — 2026-06-10 (Other Assistants page)
+
+- **`other-assistants.html`** — Perplexity, NotebookLM, Character.AI, Copilot, Poe, Cohere, HuggingChat, Pi (by country).
+- **`chats.html`** — Provider Chats only; cross-links to new page. Sidebar **🤝 Other Assistants** site-wide. **22 pages**.
+
+## Recent update — 2026-06-10 (Lumo + Duck.ai chats)
+
+- **`chats.html`** — **Lumo** ([lumo.proton.me/guest](https://lumo.proton.me/guest)) under Switzerland; **Duck.ai** in US Provider Chats.
+- **`companies.html`** — **Proton AG** (Proton + Lumo).
+- **Flags / search:** **`js/badges.js`** (CH), **`js/search-data.js`**.
 
 ## Recent update — 2026-06-10 (Inspirations +6)
 

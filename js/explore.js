@@ -40,6 +40,7 @@
     'tools.html':               'Tools',
     'companies.html':           'Companies',
     'chats.html':               'AI Chats',
+    'other-assistants.html':    'Other Assistants',
     'media.html':               'Media Gen',
     'programs.html':            'Programs',
     'specials.html':            'Specials',

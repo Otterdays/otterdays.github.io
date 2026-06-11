@@ -4,74 +4,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>404 - Page Not Found | Otterdays</title>
-  <meta name="description" content="The page you're looking for doesn't exist. Return to Otterdays developer profile.">
-  <meta name="robots" content="noindex, nofollow">
-  <!-- Fonts -->
+  <title>Other Assistants | Otterdays</title>
+
+  <meta name="description"
+    content="Specialty AI assistants: Perplexity, NotebookLM, Character.AI, Copilot, Poe, HuggingChat, Cohere, Pi — grouped by country.">
+  <meta name="keywords" content="Perplexity, NotebookLM, Character.AI, Copilot, Poe, HuggingChat, Cohere, Pi, AI assistants">
+  <meta name="author" content="Ryan Otterdays">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://otterdays.github.io/other-assistants.html">
+  <meta property="og:title" content="Other Assistants | Otterdays">
+  <meta property="og:description" content="Answer engines, multi-model hubs, and specialty AI assistants.">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicon.svg">
+  <link rel="canonical" href="https://otterdays.github.io/other-assistants.html">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-  <style>
-    .error-page {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: calc(100vh - 4rem);
-      text-align: center;
-      padding: 2rem;
-    }
-
-    .error-code {
-      font-size: 8rem;
-      font-weight: 700;
-      background: linear-gradient(135deg, var(--accent) 0%, var(--muted) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      margin: 0;
-      line-height: 1;
-    }
-
-    .error-title {
-      font-size: 1.75rem;
-      font-weight: 600;
-      margin: 1rem 0 0.5rem;
-      color: var(--fg);
-    }
-
-    .error-desc {
-      color: var(--muted);
-      margin: 0 0 2rem;
-      max-width: 24rem;
-    }
-
-    .error-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.75rem 1.5rem;
-      color: var(--bg);
-      background: var(--accent);
-      text-decoration: none;
-      font-weight: 600;
-      border-radius: 8px;
-      transition: all 0.25s ease;
-    }
-
-    .error-link:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px var(--accent-glow);
-    }
-  </style>
 </head>
 
 <body data-theme="dark">
   <a href="#main" class="skip-link">Skip to content</a>
-  <!-- Sidebar Navigation -->
   <nav class="sidebar">
     <a href="about.html" title="About">
       <span class="sidebar-icon">👤</span>
@@ -81,8 +38,8 @@
       <span class="sidebar-icon">💬</span>
       <span class="sidebar-text">AI Chats</span>
     </a>
-    <a href="other-assistants.html" title="Other Assistants">
-      <span class="sidebar-icon">??</span>
+    <a href="other-assistants.html" class="active" title="Other Assistants">
+      <span class="sidebar-icon">🤝</span>
       <span class="sidebar-text">Other Assistants</span>
     </a>
     <a href="museum.html" title="AI Museum">
@@ -143,10 +100,8 @@
     </a>
   </nav>
 
-  <main class="error-page content" id="main">
-    <!-- Top Bar: Search & Theme (Floating) -->
+  <main class="content" id="main">
     <div class="top-bar">
-      <!-- Version Badge -->
       <a href="updates.html" class="version-badge" title="Version 1.10.1 – Click for details">
         <span class="version-badge-icon">🎮</span>
         <span class="version-badge-text">v1.10.1</span>
@@ -165,20 +120,78 @@
           <span class="theme-btn-label" id="theme-label">Dark</span>
           <span class="theme-btn-arrow">▼</span>
         </button>
-        <div class="theme-dropdown" id="theme-dropdown" role="menu" hidden>
-          <!-- Populated by JS -->
-        </div>
+        <div class="theme-dropdown" id="theme-dropdown" role="menu" hidden></div>
       </div>
     </div>
 
-    <p class="error-code stagger-2">404</p>
-    <h1 class="error-title stagger-3">Page Not Found</h1>
-    <p class="error-desc stagger-3">The page you're looking for doesn't exist or has been moved. Let's get you back on
-      track.</p>
-    <a href="index.html" class="error-link stagger-4">
-      <span>←</span> Back to Home
-    </a>
-    <!-- Site Footer -->
+    <header class="profile-header" style="text-align: left; margin-bottom: 3rem;">
+      <h1 class="profile-title" style="font-size: 3rem;">Other Assistants</h1>
+      <p class="profile-handle" style="font-size: 1.2rem;">Answer engines, hubs, and specialty chats beyond core provider models.</p>
+    </header>
+
+    <section class="profile-section" style="background: none; border: none; box-shadow: none; padding: 0;">
+      <p style="margin-bottom: 2rem; opacity: 0.85;">Grouped by country of origin. First-party model chats (ChatGPT, Claude,
+        Gemini, T3 Chat, Duck.ai, Lumo, etc.) live on <a href="chats.html">AI Chats &rarr; Provider Chats</a>.</p>
+
+      <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">United States</h2>
+      <div class="chat-links bento-grid" style="margin-bottom: 2.5rem;">
+        <a href="https://www.perplexity.ai/" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card col-span-2">
+          <span class="chat-link-name">Perplexity</span>
+          <span class="chat-link-desc">AI answer engine with cited search</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://notebooklm.google.com/" rel="noopener noreferrer" target="_blank"
+          class="chat-link-card col-span-2">
+          <span class="chat-link-name">NotebookLM</span>
+          <span class="chat-link-desc">Google&rsquo;s AI notebook</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://character.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Character.AI</span>
+          <span class="chat-link-desc">10M+ characters</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://copilot.microsoft.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Copilot</span>
+          <span class="chat-link-desc">Microsoft</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+        <a href="https://poe.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Poe</span>
+          <span class="chat-link-desc">Multi-model hub</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+      </div>
+
+      <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">Canada</h2>
+      <div class="chat-links bento-grid" style="margin-bottom: 2.5rem;">
+        <a href="https://chat.cohere.com/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Cohere</span>
+          <span class="chat-link-desc">Command R</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+      </div>
+
+      <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">France</h2>
+      <div class="chat-links bento-grid" style="margin-bottom: 2.5rem;">
+        <a href="https://huggingface.co/chat" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">HuggingChat</span>
+          <span class="chat-link-desc">Open-source models</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+      </div>
+
+      <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">Austria</h2>
+      <div class="chat-links bento-grid">
+        <a href="https://pi.ai/" rel="noopener noreferrer" target="_blank" class="chat-link-card">
+          <span class="chat-link-name">Pi</span>
+          <span class="chat-link-desc">Emotional AI</span>
+          <span class="chat-link-arrow">→</span>
+        </a>
+      </div>
+    </section>
+
     <footer class="site-footer">
       <div class="site-stats">
         <div class="stat-item" title="Indexed items"><span class="stat-icon">🔍</span> 100+ items</div>
@@ -191,10 +204,8 @@
     </footer>
   </main>
 
-  <!-- Scroll to Top Button -->
   <button type="button" class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top">↑</button>
 
-  <!-- Search Modal -->
   <div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Site search" hidden>
     <div class="search-modal" id="search-modal">
       <div class="search-header">
@@ -215,6 +226,7 @@
     </div>
   </div>
 
+  <script src="js/badges.js" defer></script>
   <script src="js/theme.js"></script>
   <script src="js/qol.js"></script>
   <script src="js/search-data.js" defer></script>

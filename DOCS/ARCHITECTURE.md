@@ -8,7 +8,8 @@
 /
 ├── index.html              # Home: profile, social links
 ├── programs.html           # Projects grid with badges (~60+ projects)
-├── chats.html              # AI Chats: Assistants + Provider hubs & playgrounds
+├── chats.html              # AI Chats: Provider model chats by country
+├── other-assistants.html   # Answer engines & specialty assistants (Perplexity, Poe, etc.)
 ├── museum.html             # AI Model Museum (landmark LLMs); premium provider catalog chips; master catalog; model makers registry (registry vs linked v1.0 badges)
 ├── google-gemini.html      # Premium provider catalog: full Gemini / Gemma / Nano Banana tables (museum expansion template)
 ├── openai.html             # Premium provider catalog: OpenAI GPT / o-series

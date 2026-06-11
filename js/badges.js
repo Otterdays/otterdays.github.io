@@ -39,11 +39,11 @@
         'Stability AI': UK, 'Black Forest Labs': DE, 'Runway': USA, 'DeepAI': USA, 'Midjourney': USA,
         'Ideogram': CA, 'Recraft': UK, 'Leonardo.ai': UK, 'Luma': USA, 'ElevenLabs': USA,
         'Suno': USA, 'Udio': USA, 'Artlist': IL, 'Synthesia': UK, 'HeyGen': USA, 'Rosebud AI': USA,
-        'itch.io': USA, 'Armor Games': USA, 'Newgrounds': USA, 'Nous Research': USA, 'Public AI': CH,
+        'itch.io': USA, 'Armor Games': USA, 'Newgrounds': USA, 'Nous Research': USA, 'Proton AG': CH, 'Public AI': CH,
         'StepFun': CN, 'TII (Falcon)': UAE, 'K2 Think (MBZUAI)': UAE, 'Tencent Hunyuan': CN,
         'vLLM': USA, 'Yandex': RU, 'Snyk': IL, 'Tabnine': IL, 'Sourcegraph': USA, 'Mintlify': USA,
         'Descript': USA, 'Canva': AU, 'You.com': USA, 'Wix': IL, 'Hostinger': { flag: '\uD83C\uDDF1\uD83C\uDDF9', label: 'Lithuania' },
-        'Lumio AI': IN, 'Jabali': USA, 'Agent Opus': USA, 'Arena': USA, 'Awesome TUIs': USA, 'Anything (Create.xyz)': USA,
+        'Lumio AI': IN, 'Jabali': USA, 'Agent Opus': USA, 'Arena': USA, 'World of AI Bench': USA, 'Awesome TUIs': USA, 'Anything (Create.xyz)': USA,
         'Builder': USA, 'Biela': USA, 'Emergent': USA, 'Squarespace': USA, 'Sup AI': USA,
         'Arcee AI': USA, 'Rocket': USA, 'JDoodle': SG, 'Jam': USA, 'JetBrains': { flag: '\uD83C\uDDE8\uD83C\uDDFF', label: 'Czech Republic' }, 'Amp': USA, 'TRAE': USA, 'Wispr': USA,
         'Vibecode': USA, 'Pika': USA, 'Design Arena': USA, 'Higgsfield': USA, 'SuperMaker AI': USA,
@@ -53,8 +53,10 @@
         'Sora 2': USA, 'Luma Dream Machine': USA, 'Google Flow': USA, 'Veo 3': USA, 'Sparkify': USA,
         'SuperMaker': USA, 'DALL-E 3': USA, 'Grok Imagine': USA, 'Firefly': USA, 'Stable Diffusion': UK,
         'FLUX': DE, 'OpusClip': USA, 'Soundraw': USA, 'Hugging Face Spaces': FR,
-        'Dolphin Chat': USA, 'Falcon': UAE, 'K2 Think': UAE, 'LongCat AI': CN, 'Nous Chat': USA,
+        'Dolphin Chat': USA, 'Falcon': UAE, 'K2 Think': UAE, 'LongCat AI': CN, 'MiMo Studio': CN, 'NVIDIA Build': USA,
+        'Nous Chat': USA,
         'ChatGPT': USA, 'Claude': USA, 'T3 Chat': USA, 'Liquid AI': USA, 'Liquid Playground': USA,
+        'Lumo': CH, 'Proton': CH,
         'Falcon LLM': UAE, 'Hunyuan AI Studio': CN, 'Builder.io': USA, 'Duck.ai': USA,
         'Allen AI (Ai2)': USA, 'Cohere Chat': CA, 'Deep Agent': USA, 'Anything': USA,
         'SambaNova Playground': USA, 'HuggingChat': FR, 'Bolt': USA, 'bolt.diy': USA,
@@ -102,7 +104,7 @@
         'Lovable': USA, 'v0': USA, 'Jan': USA, 'Msty': USA, 'NVIDIA': USA, 'NemoClaw': USA, 'NVIDIA ChatRTX': USA,
         'OpenClaw (GitHub)': USA, 'OpenClaw Docs': USA,
         'Playwright': USA, 'MaxClaw': CN, 'Kimi Claw': CN, 'NanoClaw': USA, 'NanoClaw (GitHub)': USA,
-        'PicoClaw': CN, 'NullClaw': USA, 'Hermes Agent': USA,
+        'PicoClaw': CN, 'NullClaw': USA, 'Hermes Agent': USA, 'Hermes Agent (GitHub)': USA,
         'ZeroClaw': USA, 'IronClaw': USA, 'ZeptoClaw': USA, 'Nanobot': CN, 'Moltis': USA,
         'SafeClaw': USA, 'TinyClaw': USA, 'HermitClaw': USA, 'zclaw': USA, 'MimiClaw': USA,
         'OpenFang': USA, 'SuperAGI': IN, 'Anything LLM': USA, 'n8n': DE, 'TrustClaw': USA,
@@ -118,7 +120,7 @@
         'Zread': CN, 'Code Wiki': USA,
         'Codeium': USA, 'Continue': USA, 'MCP Directory': USA, 'Kuaishou': CN, 'Lightricks': IL,
         'Kling': CN, 'LTX Video': IL, 'Lightricks': IL, 'Kuaishou': CN,
-        'Gemini Code Assist (free)': USA, 'p5js AI': USA, 'Llama 4': USA
+        'Gemini Code Assist (free)': USA, 'p5js AI': USA, 'Llama (llama.com)': USA
     };
     window.BADGE_COUNTRY_MAP = COUNTRY_MAP;
 

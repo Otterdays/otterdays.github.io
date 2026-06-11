@@ -12,7 +12,7 @@
 - **Playwright MCP:** Browser tools exposed over MCP. https://github.com/microsoft/playwright-mcp
 
 ### Ecosystem & hosted / vendor variants (from site docs + common comparisons)
-- **Hermes Agent** (Nous Research): Autonomous server agent, memory, MIT; Linux, macOS, WSL 2. https://hermes-agent.nousresearch.com/ · https://github.com/nousresearch/Hermes-Agent
+- **Hermes Agent** (Nous Research): Autonomous server agent, memory, MIT; macOS, Linux, Windows. https://hermes-agent.nousresearch.com/ · https://github.com/nousresearch/hermes-agent
 - **MaxClaw** (MiniMax): Cloud 24/7 assistant (e.g. M2.7); Telegram, Discord, Slack. https://agent.minimax.io/max-claw
 - **Kimi Claw** (Moonshot): Hosted OpenClaw-style; Kimi K2.5 Thinking, skills, link existing OpenClaw. https://www.kimi.com/bot
 - **NemoClaw** (NVIDIA): Sandboxed OpenClaw-style assistants in OpenShell; policy, egress; alpha. https://github.com/NVIDIA/NemoClaw · https://docs.nvidia.com/nemoclaw

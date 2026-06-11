@@ -5,11 +5,19 @@ All notable changes to this project are documented in this file. Format: [Keep a
 ## [Unreleased]
 
 ### Added
+- **Provider chats (2026-06-10)** — **MiMo Studio** ([aistudio.xiaomimimo.com](https://aistudio.xiaomimimo.com/#/c), China) and **NVIDIA Build** ([build.nvidia.com](https://build.nvidia.com/), US) on **`chats.html`**; **`companies.html`** (**Xiaomi**, **NVIDIA**); **`js/search-data.js`**, **`js/badges.js`**.
+- **World of AI Bench (2026-06-10)** — [woaibench.ai](https://www.woaibench.ai/) on **`tools.html`**, **`companies.html`**, **`informational-links.html`** (benchmarks section with Arena, Artificial Analysis, Design Arena), **`museum.html`** cross-link; **`js/search-data.js`**, **`js/badges.js`**.
 - **Inspirations (2026-06-10)** — **AICodeKing**, **Bijan Bowen**, **ryan3000**, **Adam Conover**, **The Infographics Show**, **SomeOrdinaryGamers**, **Fireship**, **The Diary Of A CEO**, **Gamers Nexus**, **Jimmy Kimmel Live**, **The Daily Show**, **PewDiePie**, **In the World of AI** on **`inspirations.html`**; **`js/search-data.js`**, **`about.html`**. Fixed missing **`</article>`** on The PrimeTime card.
 - **Liquid AI (2026-06-10)** — **`companies.html`** section ([liquid.ai](https://www.liquid.ai/), [Liquid Playground](https://playground.liquid.ai/chat?model=cmppnbgse000004l4bc8df3wx)); **`chats.html`** US Provider Chats card; **`js/search-data.js`**, **`js/badges.js`** (United States).
 - **Specials — AI social networks (2026-06-10)** — **`specials.html`** section for agent-first platforms; **Moltbook** moved from **`chats.html`**. **`js/search-data.js`** (`special`), **`js/badges.js`**.
+- **Other Assistants page (2026-06-10)** — New **`other-assistants.html`**; sidebar link on main pages; **`sitemap.xml`**, **`js/explore.js`**, **`js/search-data.js`**; **`about.html`**; page count **22**.
 
 ### Changed
+- **Hermes Agent (2026-06-10)** — Refreshed copy (v0.16, channels, sandbox); **GitHub** card [nousresearch/hermes-agent](https://github.com/nousresearch/hermes-agent) on **`tools.html`** and **`companies.html`**; **`js/search-data.js`**, **`js/badges.js`**, **`Openclaw_variations.md`**.
+- **Llama link (2026-06-10)** — Removed **Llama 4** from **`chats.html`** (not a chat). **`companies.html`** Meta section → [llama.com](https://llama.com/) (download models &amp; docs). **`js/search-data.js`**, **`js/badges.js`**.
+- **AI Museum (2026-06-10)** — **`museum.html`** Q2 2026: flagships **Composer 2.5**, **Claude Fable 5**, **GPT-5.5**; Cursor Jun 2026 model menu snapshot (effort tiers High/Medium/None/Edit); roster + master catalog (**Fable 5**, **Opus 4.8**, **GPT-5.3**, etc.); **Sonnet 4.6** labeled **Medium**. **`js/search-data.js`**, **`informational-links.html`**.
+- **`chats.html` (2026-06-10)** — **Other Assistants** section moved to **`other-assistants.html`**; **Provider Chats** only (incl. **T3 Chat**, **Duck.ai**). **`DOCS/CONTENT_GUIDE.md`**, **`DOCS/ARCHITECTURE.md`**.
+- **`chats.html` (2026-06-10)** — **Duck.ai** moved to **Provider Chats** (US); **Lumo** added under Switzerland (Proton AG). **`companies.html`** — **Proton AG** section. **`js/search-data.js`**, **`js/badges.js`**.
 - **`chats.html` (2026-06-10)** — Provider and Other Assistants grouped by **country of origin**; removed **OpenClaw** and **Moltbook**. Cross-links to **`tools.html#computer-automation`** and **`specials.html`**.
 - **`js/badges.js` (2026-06-10)** — **ChatGPT**, **Claude**, **T3 Chat** → United States; **LongCat** / **LongCat AI** → China.
 - **`DOCS/OPENCLAW_ECOSYSTEM.md` (2026-06-10)** — OpenClaw off `chats.html`; Moltbook on `specials.html`.

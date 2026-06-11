@@ -2,6 +2,41 @@
 
 # SCRATCHPAD
 
+## 2026-06-10 — MiMo Studio + NVIDIA Build (provider chats)
+**What changed:** **`chats.html`** — **MiMo Studio** (China), **NVIDIA Build** (US). **`companies.html`** — **Xiaomi**, **NVIDIA Build** card. **`js/search-data.js`**, **`js/badges.js`**. **`DOCS/CHANGELOG.md`**, **`DOCS/SUMMARY.md`**. Pushed to `main`.
+**Out-of-scope observations:** build.nvidia.com is model hub + chat, not only chat; labeled per user request.
+---
+
+## 2026-06-10 — World of AI Bench (woaibench.ai)
+**What changed:** **`tools.html`** Reference, **`companies.html`** (World of AI), **`informational-links.html`** benchmarks section, **`museum.html`** cross-link; **`js/search-data.js`**, **`js/badges.js`**, **`DOCS/CONTENT_GUIDE.md`**, **`DOCS/CHANGELOG.md`**.
+**Out-of-scope observations:** None.
+---
+
+## 2026-06-10 — Hermes Agent links refresh
+**What changed:** **`tools.html`** + **`companies.html`** — [hermes-agent.nousresearch.com](https://hermes-agent.nousresearch.com/) copy (v0.16); new **Hermes Agent (GitHub)** card → [github.com/nousresearch/hermes-agent](https://github.com/nousresearch/hermes-agent). **`js/search-data.js`**, **`js/badges.js`**, **`Openclaw_variations.md`**.
+**Out-of-scope observations:** Already listed since v1.10.1; this is URL + feature refresh.
+---
+
+## 2026-06-10 — Llama: llama.com on companies, off chats
+**What changed:** **`chats.html`** — removed Llama 4 card (model download hub, not chat). **`companies.html`** — `https://llama.com/` with download/docs copy. **`js/search-data.js`** (company row), **`js/badges.js`**. Meta AI chat stays on **`chats.html`**.
+**Out-of-scope observations:** None.
+---
+
+## 2026-06-10 — Model museum: Cursor Jun 2026 menu
+**What changed:** **`museum.html`** — Q2 2026 flagships (Composer 2.5, Fable 5, GPT-5.5); Cursor picker snapshot (10 models + effort tiers); roster cards (CR-00–CR-00f); comparison + master catalog rows; Sonnet 4.6 → Medium. **`js/search-data.js`**, **`informational-links.html`** (flagship blurb). **`DOCS/CHANGELOG.md`**, **`DOCS/SUMMARY.md`**.
+**Out-of-scope observations:** Not pushed; large local diff from prior sessions still uncommitted.
+---
+
+## 2026-06-10 — Other Assistants page + chats split
+**What changed:** New **`other-assistants.html`** (Perplexity, NotebookLM, Poe, etc. by country). **`chats.html`** — Provider Chats only; sidebar **Other Assistants** on all main HTML. **`js/search-data.js`**, **`sitemap.xml`**, **`js/explore.js`**, **`about.html`**, footers **22 pages**. **`DOCS/CONTENT_GUIDE.md`**, **`DOCS/ARCHITECTURE.md`**, **`DOCS/CHANGELOG.md`**, **`DOCS/SUMMARY.md`**.
+**Out-of-scope observations:** T3 Chat already in US Provider Chats; confirmed.
+---
+
+## 2026-06-10 — Chats: Lumo (Proton) + Duck.ai in Provider Chats
+**What changed:** **`chats.html`** — **Lumo** (Switzerland) in Provider Chats; **Duck.ai** moved from Other Assistants to US Provider Chats. **`companies.html`** — **Proton AG** section. **`js/search-data.js`**, **`js/badges.js`** (`Lumo`, `Proton` → CH). **`DOCS/CHANGELOG.md`**, **`DOCS/SUMMARY.md`**.
+**Out-of-scope observations:** None.
+---
+
 ## 2026-06-10 — Inspirations: +6 YouTube channels
 **What changed:** **`inspirations.html`** — **The Diary Of A CEO**, **Gamers Nexus**, **Jimmy Kimmel Live**, **The Daily Show**, **PewDiePie**, **In the World of AI**. **`js/search-data.js`**, **`about.html`**, **`DOCS/CHANGELOG.md`**, **`DOCS/SUMMARY.md`**.
 **Out-of-scope observations:** None.
