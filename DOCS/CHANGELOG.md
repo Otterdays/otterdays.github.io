@@ -6,6 +6,14 @@ All notable changes to this project are documented in this file. Format: [Keep a
 
 ## [Unreleased]
 
+- **Colbert on Inspirations (2026-06-11)** — **The Late Show with Stephen Colbert** (`@ColbertLateShow`) in Late-night talk shows on **`inspirations.html`**; **`js/search-data.js`**.
+- **Inspirations late-night section (2026-06-11)** — New **Late-night talk shows** section: **The Tonight Show** (@fallontonight), **Jimmy Kimmel Live**, **Late Night with Seth Meyers**, **The Daily Show** (moved from Culture). **Veritasium**, **Reckless Ben** in News & commentary; **`js/search-data.js`**, **`DOCS/CONTENT_GUIDE.md`**.
+- **Inspirations ultrawide grid (2026-06-11)** — Section grid scales to 4–5 columns on wide viewports (`@container` 86rem / 108rem); `main.content` max-width 2800px on **`inspirations.html`**; **`DOCS/CONTENT_GUIDE.md`** layout note.
+- **Connor Price, Nic D, PRESIDENT on Inspirations (2026-06-11)** — Music artists in Culture & long-form on **`inspirations.html`**; **`js/search-data.js`**.
+- **ThioJoe on Inspirations (2026-06-11)** — **ThioJoe** (`@ThioJoe`, thiojoe.com) in News & commentary on **`inspirations.html`**; **`js/search-data.js`**.
+- **ryan3000 copy fix (2026-06-11)** — **`inspirations.html`**: ryan3000 = Ryan Trahan Minecraft gameplay side channel; moved from Game development to Culture & long-form; **`js/search-data.js`**.
+- **KasaiSora on Inspirations (2026-06-11)** — **KasaiSora** (`@KasaiSora`, kasai.gg) in Game development on **`inspirations.html`**; **`js/search-data.js`**.
+- **UFD Tech on Inspirations (2026-06-11)** — **UFD Tech** (`@UFDTech`) in Hardware & PC on **`inspirations.html`**; **`js/search-data.js`**.
 - **Homepage Daily drivers favicons (2026-06-11)** — Replaced broken placeholder glyphs with cached `favicon.show` favicon images; restored corrupted punctuation (`—`, `→`, `·`, `&amp;`); **`css/style.css`** favicon slot styling; **`DOCS/SBOM.md`** external image CDN note.
 - **Homepage Daily drivers (2026-06-11)** — Replaced Explore feature grid with **Daily drivers** (Cursor, Docker, Inno Setup, Wispr Flow); **`css/style.css`** card layout; **`tools.html#packaging-installers`** + search/badges for Inno Setup; Wispr Flow desc adds Android.
 - **About — Pages at a glance (2026-06-11)** — Regrouped Home / Main / More to match sidebar; concise linked bullets; removed duplicate Inspirations block; **`css/style.css`**, **`js/search-data.js`**.

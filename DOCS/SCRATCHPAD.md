@@ -2,6 +2,38 @@
 
 # SCRATCHPAD
 
+## 2026-06-11 — Colbert on Inspirations (late-night)
+**What changed:** **`inspirations.html`** Late-night talk shows — **The Late Show with Stephen Colbert** (`@ColbertLateShow`). **`js/search-data.js`**, **`DOCS/CHANGELOG.md`** Unreleased.
+---
+
+## 2026-06-11 — Inspirations: late-night section + Veritasium, Reckless Ben, Fallon
+**What changed:** **`inspirations.html`** — new **Late-night talk shows** section (Fallon, Kimmel, Seth Meyers, Daily Show moved from Culture); **Veritasium**, **Reckless Ben** in News & commentary. **`js/search-data.js`**, **`DOCS/CONTENT_GUIDE.md`**, **`DOCS/CHANGELOG.md`** Unreleased.
+---
+
+## 2026-06-11 — Inspirations ultrawide grid (5 cols)
+**What changed:** **`inspirations.html`** — `main.content` max-width 2800px; section grid 1→2→3→4→5 via `@container` (86rem / 108rem); entry lists single-col when 4–5 section cols. **`DOCS/CONTENT_GUIDE.md`**, **`DOCS/CHANGELOG.md`** Unreleased.
+---
+
+## 2026-06-11 — Connor Price, Nic D, PRESIDENT on Inspirations
+**What changed:** **`inspirations.html`** Culture & long-form — **Connor Price**, **Nic D**, **PRESIDENT** (user channel URLs). **`js/search-data.js`**, **`DOCS/CHANGELOG.md`** Unreleased.
+---
+
+## 2026-06-11 — ThioJoe on Inspirations
+**What changed:** **`inspirations.html`** News & commentary — **ThioJoe** (`@ThioJoe`, thiojoe.com). **`js/search-data.js`**, **`DOCS/CHANGELOG.md`** Unreleased.
+---
+
+## 2026-06-11 — ryan3000 copy fix (Ryan Trahan)
+**What changed:** **`inspirations.html`** — ryan3000 moved Game dev → Culture & long-form; desc = Ryan Trahan MC gameplay side channel (not independent creator). **`js/search-data.js`**, **`DOCS/CHANGELOG.md`** Unreleased.
+---
+
+## 2026-06-11 — KasaiSora on Inspirations
+**What changed:** **`inspirations.html`** Game dev — **KasaiSora** (`@KasaiSora`, kasai.gg). **`js/search-data.js`**, **`DOCS/CHANGELOG.md`** Unreleased.
+---
+
+## 2026-06-11 — UFD Tech on Inspirations
+**What changed:** **`inspirations.html`** Hardware & PC — **UFD Tech** (`@UFDTech`). **`js/search-data.js`**, **`DOCS/CHANGELOG.md`** Unreleased.
+---
+
 ## 2026-06-11 — Homepage Daily drivers favicons
 **What changed:** **`index.html`** Daily drivers now use cached `favicon.show` favicon images with letter fallbacks; corrupted placeholder glyphs restored (`—`, `→`, `·`, `&amp;`). **`css/style.css`** adds fixed favicon image slot. **`DOCS/SBOM.md`** notes external image CDN.
 ---

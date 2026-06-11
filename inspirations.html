@@ -18,13 +18,14 @@
     AGENT NOTE — inspirations.html
     Purpose: factual directory of creators Ryan follows — not a promotional gallery.
     Tone: informative, neutral third person. No catchphrases, meme quotes, or emoji stats.
-    Layout: .inspirations-sections responsive grid (1 → 2 → 3 section columns). Each section: h2 + .inspiration-list entry cards (auto-fit 2+ wide when space allows). No gradient banners or CTA buttons.
+    Layout: .inspirations-sections responsive grid (1 → 2 → 3 → 4 → 5 section columns via @container). Each section: h2 + .inspiration-list entry cards (auto-fit when sections are few; single column when 4–5 sections wide). No gradient banners or CTA buttons.
     New entry: pick the best section, copy .inspiration-entry markup, A–Z within section, add js/search-data.js (category: page).
   -->
   <style>
     .inspirations-page main.content {
       container-type: inline-size;
       container-name: inspirations-main;
+      max-width: min(100%, 2800px);
     }
 
     .inspirations-page .inspirations-lede {
@@ -53,6 +54,22 @@
     @container inspirations-main (min-width: 68rem) {
       .inspirations-page .inspirations-sections {
         grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    @container inspirations-main (min-width: 86rem) {
+      .inspirations-page .inspirations-sections {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .inspirations-page .inspiration-list {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @container inspirations-main (min-width: 108rem) {
+      .inspirations-page .inspirations-sections {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
       }
     }
 
@@ -283,12 +300,12 @@
         </article>
         <article class="inspiration-entry">
           <header class="inspiration-entry__head">
-            <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/@ryanthreethousand" rel="noopener noreferrer" target="_blank">ryan3000</a></h3>
-            <span class="inspiration-entry__platform">YouTube</span>
+            <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/@KasaiSora" rel="noopener noreferrer" target="_blank">KasaiSora</a></h3>
+            <span class="inspiration-entry__platform">YouTube · kasai.gg</span>
           </header>
-          <p class="inspiration-entry__desc">Minecraft survival and building series; creator of the world3000 project. Long-form playthroughs and community-driven worlds.</p>
+          <p class="inspiration-entry__desc">Minecraft plugin and mod tutorials, showcases, and reviews for Java and Bedrock editions. Server plugins (Paper, Spigot) and client mods (Fabric, Forge, NeoForge).</p>
           <ul class="inspiration-entry__topics">
-            <li>Minecraft</li><li>Survival</li><li>Building</li><li>world3000</li>
+            <li>Minecraft</li><li>Mods</li><li>Plugins</li><li>Tutorials</li>
           </ul>
         </article>
       </div>
@@ -419,6 +436,16 @@
             <li>Tech news</li><li>Hardware</li><li>Industry</li>
           </ul>
         </article>
+        <article class="inspiration-entry">
+          <header class="inspiration-entry__head">
+            <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/@UFDTech" rel="noopener noreferrer" target="_blank">UFD Tech</a></h3>
+            <span class="inspiration-entry__platform">YouTube</span>
+          </header>
+          <p class="inspiration-entry__desc">PC hardware builds, component reviews, and unconventional system design. Budget gaming rigs, teardowns, and practical build guides.</p>
+          <ul class="inspiration-entry__topics">
+            <li>PC builds</li><li>Hardware</li><li>Components</li><li>Budget gaming</li>
+          </ul>
+        </article>
       </div>
     </section>
 
@@ -493,6 +520,16 @@
         </article>
         <article class="inspiration-entry">
           <header class="inspiration-entry__head">
+            <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/@RecklessBen" rel="noopener noreferrer" target="_blank">Reckless Ben</a></h3>
+            <span class="inspiration-entry__platform">YouTube</span>
+          </header>
+          <p class="inspiration-entry__desc">Investigative documentary and social-experiment videos from Benjamin Schneider. Long-form reporting on controversial organizations, businesses, and internet-culture stories.</p>
+          <ul class="inspiration-entry__topics">
+            <li>Investigations</li><li>Documentary</li><li>Commentary</li><li>Long-form</li>
+          </ul>
+        </article>
+        <article class="inspiration-entry">
+          <header class="inspiration-entry__head">
             <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/@SAMTIME" rel="noopener noreferrer" target="_blank">Samtime</a></h3>
             <span class="inspiration-entry__platform">YouTube · Australia</span>
           </header>
@@ -523,6 +560,16 @@
         </article>
         <article class="inspiration-entry">
           <header class="inspiration-entry__head">
+            <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/@ThioJoe" rel="noopener noreferrer" target="_blank">ThioJoe</a></h3>
+            <span class="inspiration-entry__platform">YouTube · thiojoe.com</span>
+          </header>
+          <p class="inspiration-entry__desc">Technology reviews, news, and explainers from Joseph Thio. Hardware and software deep dives, Windows and productivity tips, and occasional open-source tooling.</p>
+          <ul class="inspiration-entry__topics">
+            <li>Tech news</li><li>Reviews</li><li>Windows</li><li>Explainers</li>
+          </ul>
+        </article>
+        <article class="inspiration-entry">
+          <header class="inspiration-entry__head">
             <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/@Vaush" rel="noopener noreferrer" target="_blank">Vaush</a></h3>
             <span class="inspiration-entry__platform">YouTube</span>
           </header>
@@ -531,11 +578,21 @@
             <li>Politics</li><li>Commentary</li><li>Debate</li><li>News</li>
           </ul>
         </article>
+        <article class="inspiration-entry">
+          <header class="inspiration-entry__head">
+            <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/@veritasium" rel="noopener noreferrer" target="_blank">Veritasium</a></h3>
+            <span class="inspiration-entry__platform">YouTube</span>
+          </header>
+          <p class="inspiration-entry__desc">Science and engineering explainers from Derek Muller. Physics demonstrations, research-driven storytelling, and misconceptions in STEM education.</p>
+          <ul class="inspiration-entry__topics">
+            <li>Science</li><li>Physics</li><li>Education</li><li>Explainers</li>
+          </ul>
+        </article>
       </div>
     </section>
 
-    <section class="profile-section inspiration-section" aria-labelledby="insp-culture">
-      <h2 id="insp-culture">Culture &amp; long-form</h2>
+    <section class="profile-section inspiration-section" aria-labelledby="insp-late-night">
+      <h2 id="insp-late-night">Late-night talk shows</h2>
       <div class="inspiration-list">
         <article class="inspiration-entry">
           <header class="inspiration-entry__head">
@@ -559,6 +616,62 @@
         </article>
         <article class="inspiration-entry">
           <header class="inspiration-entry__head">
+            <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/@TheDailyShow" rel="noopener noreferrer" target="_blank">The Daily Show</a></h3>
+            <span class="inspiration-entry__platform">YouTube</span>
+          </header>
+          <p class="inspiration-entry__desc">Political satire and news commentary. Monologues, field segments, and guest interviews on U.S. and world current events.</p>
+          <ul class="inspiration-entry__topics">
+            <li>Satire</li><li>News</li><li>Politics</li><li>Late night</li>
+          </ul>
+        </article>
+        <article class="inspiration-entry">
+          <header class="inspiration-entry__head">
+            <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/@ColbertLateShow" rel="noopener noreferrer" target="_blank">The Late Show with Stephen Colbert</a></h3>
+            <span class="inspiration-entry__platform">YouTube · CBS</span>
+          </header>
+          <p class="inspiration-entry__desc">CBS late-night talk show hosted by Stephen Colbert. Monologues, political satire, celebrity interviews, and comedy segments on news and pop culture.</p>
+          <ul class="inspiration-entry__topics">
+            <li>Late night</li><li>Comedy</li><li>Satire</li><li>Interviews</li>
+          </ul>
+        </article>
+        <article class="inspiration-entry">
+          <header class="inspiration-entry__head">
+            <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/@fallontonight" rel="noopener noreferrer" target="_blank">The Tonight Show</a></h3>
+            <span class="inspiration-entry__platform">YouTube · NBC</span>
+          </header>
+          <p class="inspiration-entry__desc">NBC late-night talk show hosted by Jimmy Fallon. Monologues, celebrity interviews, comedy sketches, and musical performances.</p>
+          <ul class="inspiration-entry__topics">
+            <li>Late night</li><li>Comedy</li><li>Interviews</li><li>Music</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="profile-section inspiration-section" aria-labelledby="insp-culture">
+      <h2 id="insp-culture">Culture &amp; long-form</h2>
+      <div class="inspiration-list">
+        <article class="inspiration-entry">
+          <header class="inspiration-entry__head">
+            <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/channel/UCDzdCE9XbxTbgvuVdhbLtOQ" rel="noopener noreferrer" target="_blank">Connor Price</a></h3>
+            <span class="inspiration-entry__platform">YouTube</span>
+          </header>
+          <p class="inspiration-entry__desc">Canadian rapper and actor. Hip-hop singles and official music videos; Spin the Globe collaboration series pairing with artists from countries picked at random.</p>
+          <ul class="inspiration-entry__topics">
+            <li>Hip-hop</li><li>Music</li><li>Spin the Globe</li><li>Canada</li>
+          </ul>
+        </article>
+        <article class="inspiration-entry">
+          <header class="inspiration-entry__head">
+            <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/channel/UCifdpJnv6JymGahUuPDPV6g" rel="noopener noreferrer" target="_blank">Nic D</a></h3>
+            <span class="inspiration-entry__platform">YouTube</span>
+          </header>
+          <p class="inspiration-entry__desc">Independent hip-hop artist from Virginia. Official music videos and frequent collaborations with Connor Price; steady release cadence across singles and EPs.</p>
+          <ul class="inspiration-entry__topics">
+            <li>Hip-hop</li><li>Rap</li><li>Music</li><li>Collaborations</li>
+          </ul>
+        </article>
+        <article class="inspiration-entry">
+          <header class="inspiration-entry__head">
             <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/@PewDiePie" rel="noopener noreferrer" target="_blank">PewDiePie</a></h3>
             <span class="inspiration-entry__platform">YouTube</span>
           </header>
@@ -569,12 +682,22 @@
         </article>
         <article class="inspiration-entry">
           <header class="inspiration-entry__head">
-            <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/@TheDailyShow" rel="noopener noreferrer" target="_blank">The Daily Show</a></h3>
+            <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/channel/UCCAxEuKZzOWyUZHFzuoTcjA" rel="noopener noreferrer" target="_blank">PRESIDENT</a></h3>
             <span class="inspiration-entry__platform">YouTube</span>
           </header>
-          <p class="inspiration-entry__desc">Political satire and news commentary. Monologues, field segments, and guest interviews on U.S. and world current events.</p>
+          <p class="inspiration-entry__desc">UK alternative metal band (masked collective). Debut EP King of Terrors and debut album Blood of Your Empire; heavy sonics with cinematic and electronic textures.</p>
           <ul class="inspiration-entry__topics">
-            <li>Satire</li><li>News</li><li>Politics</li>
+            <li>Metal</li><li>Alternative</li><li>Music</li><li>Live</li>
+          </ul>
+        </article>
+        <article class="inspiration-entry">
+          <header class="inspiration-entry__head">
+            <h3 class="inspiration-entry__name"><a href="https://www.youtube.com/@ryanthreethousand" rel="noopener noreferrer" target="_blank">ryan3000</a></h3>
+            <span class="inspiration-entry__platform">YouTube · Ryan Trahan</span>
+          </header>
+          <p class="inspiration-entry__desc">Ryan Trahan&rsquo;s Minecraft gameplay side channel. Daily survival-and-building series in World 3000; separate from his main challenge and travel channel.</p>
+          <ul class="inspiration-entry__topics">
+            <li>Minecraft</li><li>Gameplay</li><li>Ryan Trahan</li><li>Long-form</li>
           </ul>
         </article>
         <article class="inspiration-entry">
