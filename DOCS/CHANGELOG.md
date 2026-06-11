@@ -1,9 +1,12 @@
+<!-- PRESERVATION RULE: Never delete or replace content. Append or annotate only. -->
+
 # CHANGELOG
 
 All notable changes to this project are documented in this file. Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+- **Homepage Daily drivers favicons (2026-06-11)** — Replaced broken placeholder glyphs with cached `favicon.show` favicon images; restored corrupted punctuation (`—`, `→`, `·`, `&amp;`); **`css/style.css`** favicon slot styling; **`DOCS/SBOM.md`** external image CDN note.
 - **Homepage Daily drivers (2026-06-11)** — Replaced Explore feature grid with **Daily drivers** (Cursor, Docker, Inno Setup, Wispr Flow); **`css/style.css`** card layout; **`tools.html#packaging-installers`** + search/badges for Inno Setup; Wispr Flow desc adds Android.
 - **About — Pages at a glance (2026-06-11)** — Regrouped Home / Main / More to match sidebar; concise linked bullets; removed duplicate Inspirations block; **`css/style.css`**, **`js/search-data.js`**.
 - **Mobile nav sheet (2026-06-11)** — Chevron **Open menu** handle on mobile; tap expands labeled nav sheet; backdrop + Escape to close; **`js/qol.js`**, **`css/style.css`**.

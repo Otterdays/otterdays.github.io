@@ -1,5 +1,9 @@
 # SUMMARY
 
+## Recent update — 2026-06-11 (Daily drivers favicons)
+
+- **Homepage** — Daily drivers cards use cached `favicon.show` favicon images with letter fallbacks; fixed corrupted punctuation (`—`, `→`, `·`); **`css/style.css`** favicon slot styling; **`DOCS/SBOM.md`** external image CDN note.
+
 ## Recent update — 2026-06-11 (Sidebar grouped layout)
 
 - **Home** standalone; **Main** (About → Tools) and **More** (Museum → Updates) sections with dividers; labels on sidebar expand.

@@ -2,6 +2,10 @@
 
 # SCRATCHPAD
 
+## 2026-06-11 — Homepage Daily drivers favicons
+**What changed:** **`index.html`** Daily drivers now use cached `favicon.show` favicon images with letter fallbacks; corrupted placeholder glyphs restored (`—`, `→`, `·`, `&amp;`). **`css/style.css`** adds fixed favicon image slot. **`DOCS/SBOM.md`** notes external image CDN.
+---
+
 ## 2026-06-11 — Homepage Daily drivers (replaces Explore grid)
 **What changed:** **`index.html`** — Explore feature grid → **Daily drivers** (Cursor, Docker, Inno Setup, Wispr Flow); **`css/style.css`** `.daily-driver-card`; **`tools.html#packaging-installers`** Inno Setup; **`js/search-data.js`**, **`js/badges.js`**, **`js/qol.js`** scroll anim.
 ---
