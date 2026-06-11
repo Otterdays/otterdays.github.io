@@ -401,56 +401,154 @@ body {
   display: none !important;
 }
 
+/* Mobile nav handle + slide-up sheet (backdrop + toggle in sidebar markup) */
+.mobile-nav-toggle,
+.mobile-nav-backdrop {
+  display: none;
+}
+
 /* Mobile Adjustments */
 @media (max-width: 768px) {
   body {
     grid-template-columns: 1fr;
-    /* Stack layout */
-    padding-bottom: 4rem;
-    /* Bottom nav space */
+    padding-bottom: 3.25rem;
+  }
+
+  .mobile-nav-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 110;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: color-mix(in srgb, var(--bg) 35%, black 65%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.28s ease;
+    cursor: pointer;
+  }
+
+  .mobile-nav-backdrop.is-visible {
+    opacity: 0.55;
+    pointer-events: auto;
+  }
+
+  .mobile-nav-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 112;
+    height: 3.25rem;
+    margin: 0;
+    padding: 0 1rem;
+    border: none;
+    border-top: 1px solid var(--border);
+    background: color-mix(in srgb, var(--card-solid) 94%, var(--bg));
+    color: var(--fg);
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 -8px 24px color-mix(in srgb, var(--bg) 50%, transparent);
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  .mobile-nav-toggle:hover,
+  .mobile-nav-toggle:focus-visible {
+    background: color-mix(in srgb, var(--accent-glow) 55%, var(--card-solid));
+    color: var(--accent);
+    outline: none;
+  }
+
+  .mobile-nav-toggle-chevron {
+    display: inline-block;
+    width: 0.55rem;
+    height: 0.55rem;
+    border-left: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(-45deg) translateY(2px);
+    transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .mobile-nav-toggle.is-open .mobile-nav-toggle-chevron {
+    transform: rotate(135deg) translateY(-1px);
   }
 
   .sidebar {
     position: fixed;
-    bottom: 0;
+    left: 0;
+    right: 0;
+    bottom: 3.25rem;
     top: auto;
-    height: auto;
     width: 100%;
-    flex-direction: row;
-    align-items: center;
-    overflow-x: auto;
-    padding: 0.5rem;
+    max-height: min(72vh, 32rem);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.35rem;
+    padding: 0.65rem 0.5rem 0.85rem;
     border-top: 1px solid var(--border);
     border-right: none;
-    background: var(--bg);
-    /* Solid bg for mobile nav */
+    background: color-mix(in srgb, var(--card-solid) 96%, var(--bg));
+    box-shadow: 0 -12px 40px color-mix(in srgb, var(--bg) 45%, black 55%);
+    z-index: 111;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    transform: translateY(110%);
+    opacity: 0;
+    pointer-events: none;
+    transition:
+      transform 0.34s cubic-bezier(0.22, 1, 0.36, 1),
+      opacity 0.24s ease;
+  }
+
+  .sidebar.is-open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
   }
 
   .sidebar-block {
-    flex-direction: row;
-    gap: 0;
+    flex-direction: column;
+    gap: 0.2rem;
   }
 
   .sidebar-divider {
-    width: 1px;
-    height: 1.75rem;
-    margin: 0 0.2rem;
-    align-self: center;
+    width: auto;
+    height: 1px;
+    margin: 0.3rem 0.65rem;
+    align-self: stretch;
   }
 
   .sidebar-group-label {
-    display: none;
+    display: block;
+    max-width: none;
+    opacity: 1;
+    padding: 0.2rem 0.75rem 0.15rem;
   }
 
   .sidebar a {
-    justify-content: center;
-    gap: 0;
-    padding: 0.5rem 0.65rem;
+    justify-content: flex-start;
+    gap: 0.75rem;
+    padding: 0.62rem 0.75rem;
   }
 
   .sidebar-text {
-    display: none;
-    /* Icon only on mobile */
+    display: inline;
+    max-width: none;
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+
+  body.mobile-nav-open {
+    overflow: hidden;
   }
 
   .content {
@@ -461,7 +559,6 @@ body {
 
   .col-span-2 {
     grid-column: span 1;
-    /* Stack bento on mobile */
   }
 }
 

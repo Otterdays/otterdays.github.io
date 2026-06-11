@@ -2,6 +2,10 @@
 
 # SCRATCHPAD
 
+## 2026-06-11 — Mobile nav expand handle
+**What changed:** **`js/qol.js`** `initMobileNav` — chevron toggle + backdrop; mobile sidebar slides up with labels; **`css/style.css`**; **`tools/replace_sidebar_nav.py`** `id="site-sidebar"`.
+---
+
 ## 2026-06-11 — Sidebar grouped layout (Home / Main / More)
 **What changed:** **`tools/replace_sidebar_nav.py`** — Home standalone; **Main** + **More** sections with dividers; **`css/style.css`** `.sidebar-block`, `.sidebar-divider`, `.sidebar-group-label`; all `*.html` sidebars; **`AGENTS.md`**, **`DOCS/CHANGELOG.md`** Unreleased.
 ---

@@ -57,7 +57,8 @@
   
   <a href="#main" class="skip-link">Skip to content</a>
   <!-- Sidebar Navigation -->
-              <nav class="sidebar">
+  <button type="button" class="mobile-nav-backdrop" hidden aria-label="Close navigation menu"></button>
+  <nav class="sidebar" id="site-sidebar" aria-label="Site navigation">
   <div class="sidebar-block sidebar-block--home">
     <a href="index.html" class="active" title="Home">
       <span class="sidebar-icon">🏠</span>
@@ -129,6 +130,11 @@
     </a>
   </div>
   </nav>
+  <button type="button" class="mobile-nav-toggle" id="mobile-nav-toggle"
+    aria-controls="site-sidebar" aria-expanded="false">
+    <span class="mobile-nav-toggle-chevron" aria-hidden="true"></span>
+    <span class="mobile-nav-toggle-text">Open menu</span>
+  </button>
 
   <!-- Main Content Area -->
   <main class="content" id="main">

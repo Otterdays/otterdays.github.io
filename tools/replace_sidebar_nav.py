@@ -52,7 +52,11 @@ def block_lines(links: list[tuple[str, str, str, str]], active_href: str | None,
 
 
 def build_nav(active_href: str | None) -> str:
-    lines = ['  <nav class="sidebar">']
+    lines = [
+        "  <!-- Sidebar Navigation -->",
+        '  <button type="button" class="mobile-nav-backdrop" hidden aria-label="Close navigation menu"></button>',
+        '  <nav class="sidebar" id="site-sidebar" aria-label="Site navigation">',
+    ]
     lines.extend(block_lines([HOME], active_href, "sidebar-block--home"))
     lines.append('  <div class="sidebar-divider" role="presentation"></div>')
     lines.append('  <div class="sidebar-block sidebar-block--main">')
@@ -67,12 +71,19 @@ def build_nav(active_href: str | None) -> str:
         lines.extend(link_line(href, title, icon, text, active_href))
     lines.append("  </div>")
     lines.append("  </nav>")
+    lines.extend([
+        '  <button type="button" class="mobile-nav-toggle" id="mobile-nav-toggle"',
+        '    aria-controls="site-sidebar" aria-expanded="false">',
+        '    <span class="mobile-nav-toggle-chevron" aria-hidden="true"></span>',
+        '    <span class="mobile-nav-toggle-text">Open menu</span>',
+        "  </button>",
+    ])
     return "\n".join(lines)
 
 
 def process_file(path: Path) -> bool:
     text = path.read_text(encoding="utf-8")
-    if '<nav class="sidebar">' not in text:
+    if not re.search(r'<nav class="sidebar"', text):
         return False
     name = path.name
     if name in COMPANY_PAGES or name == "404.html":
@@ -80,7 +91,12 @@ def process_file(path: Path) -> bool:
     else:
         active = name
     new_nav = build_nav(active)
-    pattern = r"<nav class=\"sidebar\">.*?</nav>"
+    pattern = (
+        r"(?:\s*<!-- Sidebar Navigation -->\s*)?"
+        r"(?:\s*<button type=\"button\" class=\"mobile-nav-backdrop\"[^>]*>.*?</button>\s*)?"
+        r"\s*<nav class=\"sidebar\"[^>]*>.*?</nav>"
+        r"(?:\s*<button type=\"button\" class=\"mobile-nav-toggle\"[^>]*>.*?</button>)?"
+    )
     new_text, n = re.subn(pattern, new_nav, text, count=1, flags=re.DOTALL)
     if n != 1:
         print(f"SKIP {path.name}: pattern matched {n} times")

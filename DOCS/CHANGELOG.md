@@ -4,6 +4,7 @@ All notable changes to this project are documented in this file. Format: [Keep a
 
 ## [Unreleased]
 
+- **Mobile nav sheet (2026-06-11)** — Chevron **Open menu** handle on mobile; tap expands labeled nav sheet; backdrop + Escape to close; **`js/qol.js`**, **`css/style.css`**.
 - **Sidebar grouped layout (2026-06-11)** — Home standalone; **Main** block (About, AI Chats, Inspirations, Media Gen, Offline survival, Other Assistants, Specials, Tools); **More** block (AI Museum, My Creations, Companies, Explore, Posts, Updates); **`css/style.css`** dividers + labels; **`tools/replace_sidebar_nav.py`**, **`AGENTS.md`**.
 - **Remove favorites page (2026-06-11)** — Deleted empty **`favorites.html`** placeholder; removed sidebar entry (`tools/replace_sidebar_nav.py`); dropped **`ensureFavoritesNavItem`** from **`js/theme.js`**; footer **19 pages**.
 - **Rename Programs → My Creations (2026-06-11)** — **`my-creations.html`** (nav label **My Creations**); **`programs.html`** redirect stub; sidebar, **`js/search-data.js`**, **`js/explore.js`**, **`sitemap.xml`**, **`index.html`**, **`about.html`**, **`AGENTS.md`**, **`DOCS/CONTENT_GUIDE.md`**.
