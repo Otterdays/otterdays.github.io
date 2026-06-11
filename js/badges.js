@@ -54,7 +54,7 @@
         'SuperMaker': USA, 'DALL-E 3': USA, 'Grok Imagine': USA, 'Firefly': USA, 'Stable Diffusion': UK,
         'FLUX': DE, 'OpusClip': USA, 'Soundraw': USA, 'Hugging Face Spaces': FR,
         'Dolphin Chat': USA, 'Falcon': UAE, 'K2 Think': UAE, 'LongCat AI': CN, 'Nous Chat': USA,
-        'ChatGPT': USA, 'Claude': USA, 'T3 Chat': USA,
+        'ChatGPT': USA, 'Claude': USA, 'T3 Chat': USA, 'Liquid AI': USA, 'Liquid Playground': USA,
         'Falcon LLM': UAE, 'Hunyuan AI Studio': CN, 'Builder.io': USA, 'Duck.ai': USA,
         'Allen AI (Ai2)': USA, 'Cohere Chat': CA, 'Deep Agent': USA, 'Anything': USA,
         'SambaNova Playground': USA, 'HuggingChat': FR, 'Bolt': USA, 'bolt.diy': USA,

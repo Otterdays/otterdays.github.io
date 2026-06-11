@@ -5,6 +5,7 @@ All notable changes to this project are documented in this file. Format: [Keep a
 ## [Unreleased]
 
 ### Added
+- **Liquid AI (2026-06-10)** — **`companies.html`** section ([liquid.ai](https://www.liquid.ai/), [Liquid Playground](https://playground.liquid.ai/chat?model=cmppnbgse000004l4bc8df3wx)); **`chats.html`** US Provider Chats card; **`js/search-data.js`**, **`js/badges.js`** (United States).
 - **Specials — AI social networks (2026-06-10)** — **`specials.html`** section for agent-first platforms; **Moltbook** moved from **`chats.html`**. **`js/search-data.js`** (`special`), **`js/badges.js`**.
 
 ### Changed

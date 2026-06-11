@@ -1,5 +1,11 @@
 # SUMMARY
 
+## Recent update — 2026-06-10 (Liquid AI)
+
+- **`companies.html`** — **Liquid AI** ([liquid.ai](https://www.liquid.ai/)) + **Liquid Playground** chat.
+- **`chats.html`** — **Liquid Playground** in US Provider Chats.
+- **Indexing / flags:** **`js/search-data.js`**, **`js/badges.js`** (United States).
+
 ## Recent update — 2026-06-10 (Chats by country; Moltbook placement)
 
 - **`chats.html`** — Provider Chats and Other Assistants grouped by country of origin; OpenClaw removed (lives on **`tools.html#computer-automation`**).

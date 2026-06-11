@@ -2,6 +2,11 @@
 
 # SCRATCHPAD
 
+## 2026-06-10 — Liquid AI + Liquid Playground
+**What changed:** **`companies.html`** — **Liquid AI** section (site + playground chat). **`chats.html`** — **Liquid Playground** in US Provider Chats. **`js/search-data.js`**, **`js/badges.js`** (US). **`DOCS/CHANGELOG.md`**, **`DOCS/SUMMARY.md`**.
+**Out-of-scope observations:** LEAP / Liquid Apollo not added to **`tools.html`** yet.
+---
+
 ## 2026-06-10 — Chats by country; Moltbook → Specials; badge fixes
 **What changed:** **`chats.html`** — grouped Provider Chats + Other Assistants by country; removed OpenClaw + Moltbook. **`specials.html`** — new **AI social networks** section (Moltbook). **`js/badges.js`** — ChatGPT, Claude, T3 Chat → US; LongCat/LongCat AI → CN. **`js/search-data.js`** — Moltbook → `specials.html`; dropped OpenClaw chat row. **`DOCS/OPENCLAW_ECOSYSTEM.md`**, **`DOCS/CHANGELOG.md`**, **`DOCS/SUMMARY.md`**, **`DOCS/CONTENT_GUIDE.md`**.
 **Out-of-scope observations:** None.

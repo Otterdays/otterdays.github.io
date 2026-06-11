@@ -62,6 +62,7 @@ var SEARCH_DATA = [
     { title: "Tencent Hunyuan", desc: "Hunyuan AI Studio: dialogue, multimodal, model access, research.", category: "chat", tags: ["Tencent", "Hunyuan", "Multimodal"], url: "chats.html" },
     { title: "ZenMux", desc: "Unified gateway to many models; chat and API; compensation for subpar results.", category: "chat", tags: ["Multi-model", "API", "Gateway"], url: "chats.html" },
     { title: "T3 Chat", desc: "Fast multi-model chat platform; by theo gg.", category: "chat", tags: ["theo gg", "T3", "Multi-model", "Chat"], url: "chats.html" },
+    { title: "Liquid Playground", desc: "Liquid AI browser chat; try LFM2.5 on-device foundation models.", category: "chat", tags: ["Liquid AI", "LFM", "Edge AI", "Chat"], url: "chats.html" },
     { title: "Llama 4", desc: "Meta's open-source multimodal; custom builds, self-host.", category: "chat", tags: ["Meta", "Llama", "Open Source", "Multimodal"], url: "chats.html" },
 
     // === MEDIA GENERATION (media.html) ===
@@ -166,6 +167,7 @@ var SEARCH_DATA = [
     { title: "Deep Cogito", desc: "Multi-model chat (Cogito 671B, 405B, 109B, 70B).", category: "company", tags: ["Multi-model", "Cogito", "Chat"], url: "companies.html" },
     { title: "Dolphin (dphn.ai)", desc: "Dolphin Chat: chat, bot, models, network, docs.", category: "company", tags: ["Dolphin", "Chat", "Models"], url: "companies.html" },
     { title: "K2 Think (MBZUAI)", desc: "Open-source reasoning model from Mohamed bin Zayed University of AI.", category: "company", tags: ["MBZUAI", "Reasoning", "Open Source"], url: "companies.html" },
+    { title: "Liquid AI", desc: "Liquid Foundation Models (LFM2); efficient on-device and edge AI; LEAP, Liquid Apollo.", category: "company", tags: ["Liquid AI", "LFM", "Edge AI", "On-device"], url: "companies.html" },
     { title: "LongCat", desc: "LongCat AI: think, search, generate image and video.", category: "company", tags: ["LongCat", "Multimodal", "Chat"], url: "companies.html" },
     { title: "Nous Research", desc: "Nous Chat (Hermes models); Hermes Agent: self-hosted server agent, MIT; worldbuilding, code, reasoning.", category: "company", tags: ["Nous", "Hermes", "Chat", "Hermes Agent"], url: "companies.html" },
     { title: "Public AI", desc: "Apertus: open-source LLM from public institution (Switzerland).", category: "company", tags: ["Apertus", "Open Source", "Public AI"], url: "companies.html" },
