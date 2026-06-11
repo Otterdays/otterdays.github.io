@@ -2,6 +2,10 @@
 
 # SCRATCHPAD
 
+## 2026-06-11 — About page: Pages at a glance cleanup
+**What changed:** **`about.html`** — regrouped glance (Home / Main / More) with linked bullets; removed duplicate Inspirations section; **`css/style.css`** `.about-glance-group`; **`js/search-data.js`** About desc.
+---
+
 ## 2026-06-11 — Mobile nav expand handle
 **What changed:** **`js/qol.js`** `initMobileNav` — chevron toggle + backdrop; mobile sidebar slides up with labels; **`css/style.css`**; **`tools/replace_sidebar_nav.py`** `id="site-sidebar"`.
 ---

@@ -2002,6 +2002,33 @@ html {
   margin-bottom: 0;
 }
 
+.about-glance > p {
+  margin-bottom: 0.25rem;
+}
+
+.about-glance-group {
+  margin-top: 1rem;
+}
+
+.about-glance-group h3 {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 0.35rem;
+}
+
+.about-glance-group .about-list a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.about-glance-group .about-list a:hover,
+.about-glance-group .about-list a:focus-visible {
+  text-decoration: underline;
+}
+
 /* === PROJECTS GRID === */
 .projects-grid {
   display: grid;
