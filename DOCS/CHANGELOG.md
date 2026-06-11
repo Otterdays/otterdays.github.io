@@ -4,19 +4,21 @@ All notable changes to this project are documented in this file. Format: [Keep a
 
 ## [Unreleased]
 
-### Changed
-- **Homepage images (2026-06-10)** — **`images/otterdays-wordmark.png`**, **`github-repositories-pill.png`**, **`world-config-banner.svg`** on **`index.html`** (hero wordmark, GitHub pill link, World Config banners); **`css/style.css`**.
+(Nothing yet.)
 
-### Changed
-- **Inspirations page (2026-06-10)** — Reorganized into factual sections; subdued list layout (no gradient cards). **Philip DeFranco** added. Agent comment in **`inspirations.html`**; **`js/search-data.js`** updated.
-- **Bringus Studios (2026-06-10)** — [@BringusStudios](https://www.youtube.com/@BringusStudios) on **`inspirations.html`** (Hardware &amp; PC); **`js/search-data.js`**.
+## [1.12.0] - 2026-06-10
 
 ### Added
-- **Terraria World Config (2026-06-10)** — [docs site](https://otterdays.github.io/Terraria-World-Config-Mod/#home) + [GitHub](https://github.com/Otterdays/Terraria-World-Config-Mod) on **`index.html`** (`.link-cluster` hero + Explore card), **`programs.html`**, **`css/style.css`**, **`js/search-data.js`**, **`js/badges.js`** (Game badge).
-- **Android-Stuffs (2026-06-10)** — [Otterdays/Android-Stuffs](https://github.com/Otterdays/Android-Stuffs) on **`index.html`** (hero link + Explore card), **`programs.html`**, **`js/search-data.js`**, **`js/badges.js`** (Android badge).
+- **Homepage projects (2026-06-10)** — **`.link-cluster`** hero + Explore cards: **Android-Stuffs** ([site](https://otterdays.github.io/Android-Stuffs/) + GitHub), **Terraria World Config** ([docs](https://otterdays.github.io/Terraria-World-Config-Mod/#home) / Quick start / GitHub), **BlockPanel V3** ([GitHub](https://github.com/Otterdays/Block-Panel-V3) + Den server callout), **Arteria v1** ([GAME-Arteria](https://github.com/Otterdays/GAME-Arteria)), **Arteria v2** ([Gradle Edition Reloaded](https://github.com/Otterdays/Arteria-V2-Gradle-Edition-Reloaded) + [chronicle site](https://otterdays.github.io/Arteria-V2-Gradle-Edition-Reloaded/)). **`programs.html`**, **`js/search-data.js`**, **`js/badges.js`**, **`css/style.css`** (cluster + feature-card variants).
+- **Homepage images (2026-06-10)** — **`images/otterdays-wordmark.png`**, **`github-repositories-pill.png`**, **`world-config-banner.svg`** on **`index.html`**; **`css/style.css`**.
+- **Inspirations (2026-06-10)** — **Philip DeFranco**, **Bringus Studios**, **Late Night with Seth Meyers** on **`inspirations.html`**; **`js/search-data.js`**.
+- **AGENTS.md + Cursor rules (2026-06-10)** — Project-specific agent charter; **`.cursor/rules/otterdays-agents.mdc`** (`alwaysApply`); fixed frontmatter on **`project-workflow.mdc`** and **`tech-stack-2026.mdc`**.
 
 ### Changed
-- **AGENTS.md + Cursor rules (2026-06-10)** — Project-specific agent charter; **`.cursor/rules/otterdays-agents.mdc`** (`alwaysApply`); fixed frontmatter on **`project-workflow.mdc`** and **`tech-stack-2026.mdc`**.
+- **Inspirations page (2026-06-10)** — Factual sectioned directory (no gradient cards/CTAs); agent HTML comment; **`.inspirations-sections`** responsive grid (1 → 2 → 3 columns via `@container`); **`DOCS/CONTENT_GUIDE.md`** layout note.
+- **Sidebar (2026-06-10)** — **Home** first; full **2px inset ring** active state; **Favorites** on all main pages (`tools/replace_sidebar_nav.py`, **`css/style.css`**).
+- **Android-Stuffs URL (2026-06-10)** — Primary link → [otterdays.github.io/Android-Stuffs](https://otterdays.github.io/Android-Stuffs/) on **`index.html`**, **`programs.html`**, **`js/search-data.js`**.
+- **Site:** Version badge **v1.12.0** on all HTML pages; **`updates.html`** **Latest** on **v1.12.0** (`js/updates-data.js`); search modal placeholder **v1.12.0**; **`README.md`**, **`AGENTS.md`**, **`DOCS/SUMMARY.md`**, **`DOCS/SBOM.md`**, **`DOCS/ARCHITECTURE.md`**, **`DOCS/journal/2026-06-10.md`**.
 
 ## [1.11.0] - 2026-06-10
 

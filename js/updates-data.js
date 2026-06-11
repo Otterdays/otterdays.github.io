@@ -17,6 +17,30 @@ const UPDATES_DATA = [
     ]
   },
   {
+    version: "1.12.0",
+    date: "2026-06-10",
+    sections: [
+      {
+        type: "added",
+        items: [
+          "**Homepage link-clusters** — **Android-Stuffs** (GitHub Pages site + repo), **Terraria World Config** (docs / Quick start / GitHub), **BlockPanel V3** (Elixir/LiveView Minecraft panel + Den callout), **Arteria v1** ([GAME-Arteria](https://github.com/Otterdays/GAME-Arteria)), **Arteria v2** ([Gradle Edition Reloaded](https://github.com/Otterdays/Arteria-V2-Gradle-Edition-Reloaded) + chronicle site). Matching Explore cards + **`programs.html`**; **`js/search-data.js`**, **`js/badges.js`**, **`css/style.css`** variants.",
+          "**Homepage images** — Wordmark, GitHub repositories pill, Terraria World Config banner (`images/`).",
+          "**Inspirations** — Philip DeFranco, Bringus Studios, Late Night with Seth Meyers; factual sectioned directory + responsive 1/2/3-column grid (`@container`).",
+          "**AGENTS.md** — Project charter + **`.cursor/rules/otterdays-agents.mdc`** (`alwaysApply`)."
+        ]
+      },
+      {
+        type: "changed",
+        items: [
+          "**Sidebar** — Home pinned first; full-ring active nav; Favorites on all main pages (`tools/replace_sidebar_nav.py`).",
+          "**Android-Stuffs** — Primary URL → [otterdays.github.io/Android-Stuffs](https://otterdays.github.io/Android-Stuffs/).",
+          "**Version & badges** — Top-bar **v1.12.0** site-wide; **`updates.html`** **Latest** on this release; search modal placeholder **v1.12.0**.",
+          "**DOCS** — `CHANGELOG` **[1.12.0]**, `SUMMARY`, `SCRATCHPAD`, `journal/2026-06-10.md`, `README.md`, `SBOM`, `ARCHITECTURE`."
+        ]
+      }
+    ]
+  },
+  {
     version: "1.11.0",
     date: "2026-06-10",
     sections: [

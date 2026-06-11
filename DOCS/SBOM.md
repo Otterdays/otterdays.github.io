@@ -1,6 +1,6 @@
 # SBOM — Software Bill of Materials
 
-**Updated:** 2026-06-10 (**v1.11.0** — Provider chats, Other Assistants page, museum Q2 2026, sidebar fix)
+**Updated:** 2026-06-10 (**v1.12.0** — Homepage link-clusters, Arteria v1/v2, BlockPanel V3, inspirations grid, sidebar polish)
 
 [AMENDED 2026-03-29]: **v1.10.1** — Hermes Agent patch + docs
 

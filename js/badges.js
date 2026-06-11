@@ -148,11 +148,11 @@
     var games = [
         'kingdom.io', 'GaelDrive', 'FireFest', 'Brain-Busters', 'Click-It-Goin',
         'otter.planes.io', 'Runes-of-Tir-na-nOg', 'Zombobs', 'Fable-Forged', 'Game-Runic-Lands',
-        'Terraria World Config'
+        'Terraria World Config', 'Arteria v1', 'Arteria v2'
     ];
     var music = ['Aethereal Hymns', 'Audacious', 'BlockBanger'];
-    var minecraft = ['Feeshman Deelux', 'Chipper Chopper', 'MC-Companion-Map'];
-    var android = ['Android-Stuffs', 'Proof Of Purchase', 'Nebula-Camera', 'Brain-Busters', 'Lorenzez-Notez', 'Meal_Mate'];
+    var minecraft = ['Feeshman Deelux', 'Chipper Chopper', 'MC-Companion-Map', 'BlockPanel V3'];
+    var android = ['Android-Stuffs', 'Arteria v2', 'Proof Of Purchase', 'Nebula-Camera', 'Brain-Busters', 'Lorenzez-Notez', 'Meal_Mate'];
 
     document.addEventListener('DOMContentLoaded', function () {
         document.querySelectorAll('.project-card').forEach(function (card) {

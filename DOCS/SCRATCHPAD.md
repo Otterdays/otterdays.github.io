@@ -2,6 +2,31 @@
 
 # SCRATCHPAD
 
+## 2026-06-10 — World Config banner removed (broken image)
+**What changed:** **`index.html`** — dropped `world-config-banner.svg` from hero link-cluster + Explore card (reserved huge slot; SVG 404/broken on live). Cards match other link-clusters (icon + title + buttons only).
+---
+
+## 2026-06-10 — ship v1.12.0 (homepage projects + inspirations)
+**What changed:** **`js/updates-data.js`** — **1.12.0** card. All `*.html` badges **v1.12.0**; `updates.html` search placeholder; `DOCS/CHANGELOG.md` **[1.12.0]**; `DOCS/journal/2026-06-10.md`; `README.md`, `SBOM`, `ARCHITECTURE`, `SUMMARY`, `AGENTS.md`.
+**Next:** Pushed to `main`.
+---
+
+## 2026-06-10 — Arteria v2 (Gradle Edition Reloaded)
+**What changed:** [Arteria-V2-Gradle-Edition-Reloaded](https://github.com/Otterdays/Arteria-V2-Gradle-Edition-Reloaded) + [chronicle site](https://otterdays.github.io/Arteria-V2-Gradle-Edition-Reloaded/) on **`index.html`** (v2 link-cluster + Explore), **`programs.html`**, **`js/search-data.js`**, **`js/badges.js`**, **`css/style.css`**.
+---
+
+## 2026-06-10 — Arteria v1 link-cluster (GAME-Arteria GitHub)
+**What changed:** **`index.html`** — Arteria → `.link-cluster--arteria` with **v1** tag; Site + [GitHub](https://github.com/Otterdays/GAME-Arteria). Explore card + **`programs.html`** **Arteria v1**. **`js/search-data.js`**, **`css/style.css`**.
+---
+
+## 2026-06-10 — BlockPanel V3 (homepage + programs)
+**What changed:** [Block-Panel-V3](https://github.com/Otterdays/Block-Panel-V3) — Elixir/LiveView Minecraft panel on **`index.html`** (hero + Explore + Den callout), **`programs.html`**, **`js/search-data.js`**, **`js/badges.js`**, **`css/style.css`**. **`DOCS/CHANGELOG.md`** Unreleased.
+---
+
+## 2026-06-10 — Seth Meyers + Android-Stuffs site URL
+**What changed:** **Late Night with Seth Meyers** (@LateNightSeth) on **`inspirations.html`**. **Android-Stuffs** → [otterdays.github.io/Android-Stuffs](https://otterdays.github.io/Android-Stuffs/) (Site + GitHub link-cluster on **`index.html`**). **`programs.html`**, **`js/search-data.js`**, **`css/style.css`**.
+---
+
 ## 2026-06-10 — Inspirations responsive grid (2–3 wide)
 **What changed:** **`inspirations.html`** — `.inspirations-sections` container grid (1/2/3 cols via `@container` on `main.content`); entry lists `auto-fit` multi-column. **`DOCS/CONTENT_GUIDE.md`** layout note.
 ---

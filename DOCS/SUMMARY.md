@@ -1,5 +1,11 @@
 # SUMMARY
 
+## Release v1.12.0 — 2026-06-10
+
+- **Version:** Site badge **v1.12.0** everywhere; **`updates.html`** **Latest** on **v1.12.0**; **`js/updates-data.js`** release card.
+- **Headline:** Homepage **link-cluster** projects (Android-Stuffs, Terraria World Config, BlockPanel V3, Arteria v1/v2); homepage images; inspirations directory + grid + new creators; sidebar Home-first + active ring.
+- **Docs:** `DOCS/CHANGELOG.md` **[1.12.0]**; `DOCS/journal/2026-06-10.md`; this file; `README.md`; `AGENTS.md`; `DOCS/SBOM.md`; `DOCS/ARCHITECTURE.md`.
+
 ## Recent update — 2026-06-10 (Inspirations directory redesign)
 
 - **`inspirations.html`** — Factual sectioned layout (no gradient cards). Agent HTML comment defines tone: informative, not promotional. Sections: Game dev · Software · AI · Hardware · News · Culture.

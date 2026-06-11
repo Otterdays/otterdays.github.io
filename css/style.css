@@ -1057,6 +1057,112 @@ html {
   background: color-mix(in srgb, var(--cluster-accent) 11%, var(--glass));
 }
 
+.link-cluster--android {
+  --cluster-accent: #3ddc84;
+  border-color: color-mix(in srgb, var(--cluster-accent) 38%, var(--border));
+  background: color-mix(in srgb, var(--cluster-accent) 10%, var(--glass));
+}
+
+.link-cluster--blockpanel {
+  --cluster-accent: #6b9b4e;
+  border-color: color-mix(in srgb, var(--cluster-accent) 40%, var(--border));
+  background: color-mix(in srgb, var(--cluster-accent) 11%, var(--glass));
+}
+
+.link-cluster--arteria {
+  --cluster-accent: #a78bfa;
+  border-color: color-mix(in srgb, var(--cluster-accent) 42%, var(--border));
+  background: color-mix(in srgb, var(--cluster-accent) 12%, var(--glass));
+}
+
+.link-cluster--arteria-v2 {
+  --cluster-accent: #c4b5fd;
+  border-color: color-mix(in srgb, var(--cluster-accent) 44%, var(--border));
+  background: color-mix(in srgb, var(--cluster-accent) 13%, var(--glass));
+}
+
+.feature-card--arteria-v2 {
+  --arteria-v2: #c4b5fd;
+  border-color: color-mix(in srgb, var(--arteria-v2) 40%, var(--border));
+  background: linear-gradient(
+    155deg,
+    color-mix(in srgb, var(--arteria-v2) 13%, transparent) 0%,
+    color-mix(in srgb, var(--fg), transparent 96%) 58%
+  );
+}
+
+.feature-card--arteria-v2:hover {
+  border-color: color-mix(in srgb, var(--arteria-v2) 54%, var(--border));
+  box-shadow: 0 12px 32px color-mix(in srgb, var(--arteria-v2) 22%, transparent);
+}
+
+.feature-card--arteria-v2:focus-within {
+  outline: 2px solid color-mix(in srgb, var(--arteria-v2) 72%, var(--border));
+  outline-offset: 3px;
+}
+
+.feature-card--arteria-v2 .feature-card__version {
+  --arteria-purple: #c4b5fd;
+}
+
+.feature-card--arteria-v2 p code {
+  font-size: 0.82em;
+  padding: 0.05rem 0.25rem;
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--fg) 8%, transparent);
+}
+
+.feature-card__version {
+  font-size: 0.78em;
+  font-weight: 600;
+  color: color-mix(in srgb, var(--arteria-purple, var(--accent)) 88%, white);
+  letter-spacing: 0.02em;
+}
+
+.feature-card--arteria .feature-card__version {
+  --arteria-purple: #a78bfa;
+}
+
+.feature-card--blockpanel {
+  --cluster-accent: #6b9b4e;
+  border-color: color-mix(in srgb, var(--cluster-accent) 38%, var(--border));
+  background: linear-gradient(
+    155deg,
+    color-mix(in srgb, var(--cluster-accent) 11%, transparent) 0%,
+    color-mix(in srgb, var(--fg), transparent 96%) 58%
+  );
+}
+
+.feature-card--blockpanel:hover {
+  border-color: color-mix(in srgb, var(--cluster-accent) 52%, var(--border));
+  box-shadow: 0 12px 32px color-mix(in srgb, var(--cluster-accent) 22%, transparent);
+}
+
+.feature-card--blockpanel:focus-within {
+  outline: 2px solid color-mix(in srgb, var(--cluster-accent) 72%, var(--border));
+  outline-offset: 3px;
+}
+
+.feature-card--android {
+  --cluster-accent: #3ddc84;
+  border-color: color-mix(in srgb, var(--cluster-accent) 36%, var(--border));
+  background: linear-gradient(
+    155deg,
+    color-mix(in srgb, var(--cluster-accent) 10%, transparent) 0%,
+    color-mix(in srgb, var(--fg), transparent 96%) 58%
+  );
+}
+
+.feature-card--android:hover {
+  border-color: color-mix(in srgb, var(--cluster-accent) 50%, var(--border));
+  box-shadow: 0 12px 32px color-mix(in srgb, var(--cluster-accent) 20%, transparent);
+}
+
+.feature-card--android:focus-within {
+  outline: 2px solid color-mix(in srgb, var(--cluster-accent) 70%, var(--border));
+  outline-offset: 3px;
+}
+
 .link-cluster__banner {
   display: block;
   width: 100%;

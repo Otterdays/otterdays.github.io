@@ -2,7 +2,7 @@
 
 Agent charter for **otterdays.github.io**: a static personal portfolio and AI link directory on **GitHub Pages**. No build step — plain **HTML, CSS, and vanilla JS**.
 
-**Current release:** v1.11.0 · Live: [otterdays.github.io](https://otterdays.github.io/)
+**Current release:** v1.12.0 · Live: [otterdays.github.io](https://otterdays.github.io/)
 
 ---
 
@@ -172,4 +172,4 @@ After changes:
 
 ---
 
-*Last updated: 2026-06-10 (v1.11.0)*
+*Last updated: 2026-06-10 (v1.12.0)*

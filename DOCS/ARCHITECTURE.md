@@ -1,6 +1,6 @@
 # ARCHITECTURE
 
-**Current release:** v1.11.0 (version badge in top bar → `updates.html`). [AMENDED 2026-06-10]
+**Current release:** v1.12.0 (version badge in top bar → `updates.html`). [AMENDED 2026-06-10]
 
 [AMENDED 2026-03-29]: v1.10.1
 
@@ -109,7 +109,7 @@
 - `body { display: grid; grid-template-columns: 64px 1fr; }`
 - **Sidebar:** Fixed width (64px -> 240px hover).
 - **Content:** `1fr` area (`.content`).
-- **Top Bar:** Version badge (v1.11.0 → `updates.html`), Search, Theme switcher. [AMENDED 2026-06-10]
+- **Top Bar:** Version badge (v1.12.0 → `updates.html`), Search, Theme switcher. [AMENDED 2026-06-10]
 
 ## Glassmorphism & Motion
 

@@ -136,9 +136,9 @@
     <!-- Top Bar: Search & Theme (Floating) -->
     <div class="top-bar">
       <!-- Version Badge -->
-      <a href="updates.html" class="version-badge" title="Version 1.11.0 – Click for details">
+      <a href="updates.html" class="version-badge" title="Version 1.12.0 – Click for details">
         <span class="version-badge-icon">🎮</span>
-        <span class="version-badge-text">v1.11.0</span>
+        <span class="version-badge-text">v1.12.0</span>
       </a>
       
       <button type="button" class="search-trigger" id="search-trigger" aria-label="Search site">
@@ -175,6 +175,19 @@
             <span class="home-link-icon">⛏️</span>
             <span>Minecraft Server</span>
           </a>
+          <div class="link-cluster link-cluster--blockpanel" role="group" aria-label="BlockPanel V3 — Minecraft server panel">
+            <div class="link-cluster__head">
+              <span class="link-cluster__icon" aria-hidden="true">🧱</span>
+              <span class="link-cluster__title">BlockPanel V3</span>
+              <span class="link-cluster__tag">Minecraft panel</span>
+            </div>
+            <div class="link-cluster__actions">
+              <a href="https://github.com/Otterdays/Block-Panel-V3" rel="noopener noreferrer" target="_blank"
+                class="link-cluster__btn" title="BlockPanel V3 on GitHub">GitHub</a>
+              <a href="https://github.com/Otterdays/Block-Panel-V3#quick-start" rel="noopener noreferrer"
+                target="_blank" class="link-cluster__btn" title="Clone, mix setup, phx.server">Quick start</a>
+            </div>
+          </div>
           <a href="#" class="home-link disabled" aria-disabled="true" title="Coming soon">X</a>
           <a href="#" class="home-link disabled" aria-disabled="true" title="Coming soon">Bluesky</a>
           <a href="https://github.com/Otterdays?tab=repositories" rel="noopener noreferrer" target="_blank"
@@ -182,14 +195,20 @@
             <img src="images/github-repositories-pill.png" alt="Repositories on GitHub" width="168" height="32"
               decoding="async">
           </a>
-          <a href="https://github.com/Otterdays/Android-Stuffs" rel="noopener noreferrer" target="_blank"
-            class="home-link" title="Android-Stuffs — index of Android projects (SoundPax, …)">
-            <span class="home-link-icon">📱</span>
-            <span>Android-Stuffs</span>
-          </a>
+          <div class="link-cluster link-cluster--android" role="group" aria-label="Android-Stuffs — Android projects">
+            <div class="link-cluster__head">
+              <span class="link-cluster__icon" aria-hidden="true">📱</span>
+              <span class="link-cluster__title">Android-Stuffs</span>
+              <span class="link-cluster__tag">Android index</span>
+            </div>
+            <div class="link-cluster__actions">
+              <a href="https://otterdays.github.io/Android-Stuffs/" rel="noopener noreferrer" target="_blank"
+                class="link-cluster__btn" title="Android-Stuffs site">Site</a>
+              <a href="https://github.com/Otterdays/Android-Stuffs" rel="noopener noreferrer" target="_blank"
+                class="link-cluster__btn" title="Source on GitHub">GitHub</a>
+            </div>
+          </div>
           <div class="link-cluster link-cluster--terraria" role="group" aria-label="World Config — Terraria mod">
-            <img src="images/world-config-banner.svg" alt="" class="link-cluster__banner" width="320" height="168"
-              loading="lazy" decoding="async">
             <div class="link-cluster__head">
               <span class="link-cluster__icon" aria-hidden="true">🌍</span>
               <span class="link-cluster__title">World Config</span>
@@ -204,11 +223,32 @@
                 target="_blank" class="link-cluster__btn" title="Source on GitHub">GitHub</a>
             </div>
           </div>
-          <a href="https://otterdays.github.io/GAME-Arteria/" rel="noopener noreferrer" target="_blank"
-            class="home-link home-link--arteria" title="Arteria — cosmic idle RPG (GitHub Pages)">
-            <span class="home-link-icon">⚔️</span>
-            <span>Arteria</span>
-          </a>
+          <div class="link-cluster link-cluster--arteria" role="group" aria-label="Arteria v1 — mobile idle RPG">
+            <div class="link-cluster__head">
+              <span class="link-cluster__icon" aria-hidden="true">⚔️</span>
+              <span class="link-cluster__title">Arteria</span>
+              <span class="link-cluster__tag">v1</span>
+            </div>
+            <div class="link-cluster__actions">
+              <a href="https://otterdays.github.io/GAME-Arteria/" rel="noopener noreferrer" target="_blank"
+                class="link-cluster__btn" title="Arteria v1 game site">Site</a>
+              <a href="https://github.com/Otterdays/GAME-Arteria" rel="noopener noreferrer" target="_blank"
+                class="link-cluster__btn" title="GAME-Arteria on GitHub">GitHub</a>
+            </div>
+          </div>
+          <div class="link-cluster link-cluster--arteria-v2" role="group" aria-label="Arteria v2 — Gradle native Android">
+            <div class="link-cluster__head">
+              <span class="link-cluster__icon" aria-hidden="true">⚔️</span>
+              <span class="link-cluster__title">Arteria</span>
+              <span class="link-cluster__tag">v2</span>
+            </div>
+            <div class="link-cluster__actions">
+              <a href="https://otterdays.github.io/Arteria-V2-Gradle-Edition-Reloaded/" rel="noopener noreferrer"
+                target="_blank" class="link-cluster__btn" title="Arteria V2 chronicle site">Site</a>
+              <a href="https://github.com/Otterdays/Arteria-V2-Gradle-Edition-Reloaded" rel="noopener noreferrer"
+                target="_blank" class="link-cluster__btn" title="Arteria V2 on GitHub">GitHub</a>
+            </div>
+          </div>
           <a href="https://otterdays.github.io/Nates-Space/" rel="noopener noreferrer" target="_blank"
             class="home-link home-link--friend" title="Nate's Space — music &amp; feed">Nate&rsquo;s Space</a>
         </nav>
@@ -217,6 +257,8 @@
           <p class="home-server-desc">Beyond Vanilla survival on Java Edition 26.1 with high uptime and smooth TPS.</p>
           <a href="https://github.com/Otterdays/Otters-Den-Server" rel="noopener noreferrer" target="_blank"
             class="home-server-link" title="Otter's Den Server — GitHub repository">Server repository</a>
+          <a href="https://github.com/Otterdays/Block-Panel-V3" rel="noopener noreferrer" target="_blank"
+            class="home-server-link" title="BlockPanel V3 — self-hosted Minecraft panel">BlockPanel V3</a>
         </section>
       </div>
 
@@ -243,15 +285,29 @@
             <h3>Companies</h3>
             <p>78+ AI and tech companies directory</p>
           </a>
-          <a href="https://github.com/Otterdays/Android-Stuffs" rel="noopener noreferrer" target="_blank"
-            class="feature-card">
+          <article class="feature-card feature-card--blockpanel feature-card--cluster">
+            <div class="feature-card-icon" aria-hidden="true">🧱</div>
+            <h3>BlockPanel V3</h3>
+            <p>Self-hosted Minecraft panel &mdash; Elixir + LiveView. Java &amp; Bedrock servers, jars, Modrinth mods, consoles.</p>
+            <div class="link-cluster__actions link-cluster__actions--card" role="group" aria-label="BlockPanel V3 links">
+              <a href="https://github.com/Otterdays/Block-Panel-V3" rel="noopener noreferrer" target="_blank"
+                class="link-cluster__btn" title="BlockPanel V3 on GitHub">GitHub</a>
+              <a href="https://github.com/Otterdays/Block-Panel-V3#quick-start" rel="noopener noreferrer"
+                target="_blank" class="link-cluster__btn" title="Quick start">Quick start</a>
+            </div>
+          </article>
+          <article class="feature-card feature-card--android feature-card--cluster">
             <div class="feature-card-icon" aria-hidden="true">📱</div>
             <h3>Android-Stuffs</h3>
-            <p>Index of Android projects &mdash; SoundPax 16-pad MPC soundboard (Flutter + Rust), more coming.</p>
-          </a>
-          <article class="feature-card feature-card--terraria feature-card--cluster feature-card--has-media">
-            <img class="feature-card__banner" src="images/world-config-banner.svg" alt="" width="640" height="336"
-              loading="lazy" decoding="async">
+            <p>Android projects index &mdash; tablets, tools, and experiments. SoundPax MPC soundboard (Flutter + Rust).</p>
+            <div class="link-cluster__actions link-cluster__actions--card" role="group" aria-label="Android-Stuffs links">
+              <a href="https://otterdays.github.io/Android-Stuffs/" rel="noopener noreferrer" target="_blank"
+                class="link-cluster__btn" title="Android-Stuffs site">Site</a>
+              <a href="https://github.com/Otterdays/Android-Stuffs" rel="noopener noreferrer" target="_blank"
+                class="link-cluster__btn" title="Source on GitHub">GitHub</a>
+            </div>
+          </article>
+          <article class="feature-card feature-card--terraria feature-card--cluster">
             <div class="feature-card-icon" aria-hidden="true">🌍</div>
             <h3>World Config</h3>
             <p>First Terraria mod &mdash; tModLoader world gen panel: resize worlds, ore veins, caves, dungeons, loot.</p>
@@ -264,12 +320,28 @@
                 target="_blank" class="link-cluster__btn" title="Source on GitHub">GitHub</a>
             </div>
           </article>
-          <a href="https://otterdays.github.io/GAME-Arteria/" rel="noopener noreferrer" target="_blank"
-            class="feature-card feature-card--arteria">
+          <article class="feature-card feature-card--arteria feature-card--cluster">
             <div class="feature-card-icon" aria-hidden="true">⚔️</div>
-            <h3>Arteria</h3>
-            <p>Mobile idle RPG &mdash; skills, story quests, companions. Site, APK, and repo on GitHub.</p>
-          </a>
+            <h3>Arteria <span class="feature-card__version">v1</span></h3>
+            <p>Cosmic mobile idle RPG &mdash; skills, story quests, companions. APK and site on GitHub Pages.</p>
+            <div class="link-cluster__actions link-cluster__actions--card" role="group" aria-label="Arteria v1 links">
+              <a href="https://otterdays.github.io/GAME-Arteria/" rel="noopener noreferrer" target="_blank"
+                class="link-cluster__btn" title="Arteria v1 game site">Site</a>
+              <a href="https://github.com/Otterdays/GAME-Arteria" rel="noopener noreferrer" target="_blank"
+                class="link-cluster__btn" title="GAME-Arteria on GitHub">GitHub</a>
+            </div>
+          </article>
+          <article class="feature-card feature-card--arteria-v2 feature-card--cluster">
+            <div class="feature-card-icon" aria-hidden="true">⚔️</div>
+            <h3>Arteria <span class="feature-card__version">v2</span></h3>
+            <p>Native Android idle RPG &mdash; Kotlin, Compose, Room, JVM <code>:core</code> engine. Combat, skills, Docking UI.</p>
+            <div class="link-cluster__actions link-cluster__actions--card" role="group" aria-label="Arteria v2 links">
+              <a href="https://otterdays.github.io/Arteria-V2-Gradle-Edition-Reloaded/" rel="noopener noreferrer"
+                target="_blank" class="link-cluster__btn" title="Arteria V2 chronicle site">Site</a>
+              <a href="https://github.com/Otterdays/Arteria-V2-Gradle-Edition-Reloaded" rel="noopener noreferrer"
+                target="_blank" class="link-cluster__btn" title="Arteria V2 on GitHub">GitHub</a>
+            </div>
+          </article>
           <a href="https://otterdays.github.io/Nates-Space/" rel="noopener noreferrer" target="_blank"
             class="feature-card feature-card--nates">
             <div class="feature-card-icon">🎧</div>
