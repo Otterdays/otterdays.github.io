@@ -2,6 +2,11 @@
 
 # SCRATCHPAD
 
+## 2026-06-10 — ship v1.11.0 (updates timeline + badges)
+**What changed:** **`js/updates-data.js`** — **1.11.0** card (Jun 2026 batch). All `*.html` badges **v1.11.0**; `updates.html` search placeholder; `DOCS/CHANGELOG.md` **[1.11.0]**; `DOCS/journal/2026-06-10.md`; `README.md`, `SBOM`, `ARCHITECTURE`, `SUMMARY`.
+**Next:** Commit + push when ready.
+---
+
 ## 2026-06-10 — AIRI / Moeru AI (open research companion)
 **What changed:** **`tools.html`** `#computer-automation` — **AIRI**, GitHub, Docs ([airi.moeru.ai](https://airi.moeru.ai/)). **`companies.html`** — **Moeru AI** section. **`js/search-data.js`**. Not Provider Chats (research / VTuber companion stack).
 ---

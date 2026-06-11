@@ -1,5 +1,11 @@
 # SUMMARY
 
+## Release v1.11.0 — 2026-06-10
+
+- **Version:** Site badge **v1.11.0** everywhere; **`updates.html`** **Latest** on **v1.11.0**; **`js/updates-data.js`** minor release card.
+- **Headline:** **Other Assistants** page split; Provider Chats country expansion (Kyutai, Yandex, Nex-AGI, Upstage, MiMo, NVIDIA Build, MAI, Liquid); hub placement (OpenRouter, T3 Chat, Duck.ai); AIRI research tool; AI Museum Q2 2026; sidebar **🌐** fix.
+- **Docs:** `DOCS/CHANGELOG.md` **[1.11.0]**; `DOCS/journal/2026-06-10.md`; this file; `README.md`; `DOCS/ARCHITECTURE.md`; `DOCS/SBOM.md`.
+
 ## Recent update — 2026-06-10 (AIRI / Moeru AI)
 
 - **`tools.html`** — **AIRI** ([airi.moeru.ai](https://airi.moeru.ai/)) in computer-automation; GitHub + docs.

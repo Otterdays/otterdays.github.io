@@ -4,6 +4,10 @@ All notable changes to this project are documented in this file. Format: [Keep a
 
 ## [Unreleased]
 
+_(Nothing yet.)_
+
+## [1.11.0] - 2026-06-10
+
 ### Added
 - **Nex-AGI (2026-06-10)** — [nex-agi.com](https://nex-agi.com/) (Nex-N2) on **`chats.html`** (China) and **`companies.html`**; **`js/search-data.js`**, **`js/badges.js`**.
 - **MAI Playground + Microsoft AI (2026-06-10)** — [playground.microsoft.ai/chat](https://playground.microsoft.ai/chat), [microsoft.ai](https://microsoft.ai/) on **`chats.html`** and **`companies.html`**; **`js/search-data.js`**, **`js/badges.js`**.
@@ -51,6 +55,10 @@ All notable changes to this project are documented in this file. Format: [Keep a
 - **`DOCS/CONTENT_GUIDE.md`** [2026-04-03] — **OpenClaw ecosystem** maintainer checklist (variations file, ecosystem map, search, badges).
 - **`Openclaw_variations.md`** — Cross-reference points to **`DOCS/OPENCLAW_ECOSYSTEM.md`** and clarified on-site vs CLI placement.
 - **`DOCS/ARCHITECTURE.md`** — Repo tree: **`Openclaw_variations.md`**, **`DOCS/OPENCLAW_ECOSYSTEM.md`**, expanded **`tools.html`** note.
+
+### Changed (release)
+- **Sidebar (2026-06-10)** — Other Assistants icon **🌐** (fixed broken `??` placeholder); emoji font stack; nav spacing in **`css/style.css`**.
+- **Site:** Version badge **v1.11.0** on all HTML pages; **`updates.html`** **Latest** ribbon on **v1.11.0** (`js/updates-data.js`); search modal placeholder **v1.11.0**; **`README.md`** current version link.
 
 ## [1.10.1] - 2026-03-29
 
