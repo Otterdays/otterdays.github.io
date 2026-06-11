@@ -2,6 +2,14 @@
 
 # SCRATCHPAD
 
+## 2026-06-10 — Homepage Modrinth + Ryan's Realm
+**What changed:** **`index.html`** — **`.link-cluster--modrinth`** (Modrinth profile), **`.home-link--realm`** (Ryan's Realm), Den callout Modrinth link. **`css/style.css`**, **`js/search-data.js`**, **`DOCS/CHANGELOG.md`** Unreleased.
+---
+
+## 2026-06-10 — GitHub repos pill stacked (157 + 122)
+**What changed:** **`images/github-repositories-pill-122.png`**. **`index.html`** — **`.home-github-pill--stack`** (157 pill over 122 tab screenshot). **`css/style.css`**. **`DOCS/CHANGELOG.md`** Unreleased.
+---
+
 ## 2026-06-10 — World Config banner removed (broken image)
 **What changed:** **`index.html`** — dropped `world-config-banner.svg` from hero link-cluster + Explore card (reserved huge slot; SVG 404/broken on live). Cards match other link-clusters (icon + title + buttons only).
 ---

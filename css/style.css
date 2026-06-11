@@ -928,6 +928,12 @@ html {
   border-radius: 8px;
 }
 
+.home-github-pill--stack {
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+
 .home-info {
   color: var(--muted);
   font-size: 1rem;
@@ -1008,6 +1014,28 @@ html {
   box-shadow: 0 6px 22px color-mix(in srgb, var(--friend-teal) 30%, transparent);
 }
 
+/* Personal site (Ryan's Realm) — gold accent, matches otterdays.vercel.app RPG UI */
+.home-link--realm {
+  --realm-gold: #fbbf24;
+  color: color-mix(in srgb, var(--realm-gold) 92%, white);
+  border-color: color-mix(in srgb, var(--realm-gold) 45%, var(--border));
+  background: color-mix(in srgb, var(--realm-gold) 14%, var(--glass));
+}
+
+.home-link--realm:hover {
+  background: color-mix(in srgb, var(--realm-gold) 24%, var(--glass));
+  border-color: color-mix(in srgb, var(--realm-gold) 65%, var(--border));
+  box-shadow: 0 6px 22px color-mix(in srgb, var(--realm-gold) 28%, transparent);
+}
+
+.home-link.home-link--realm:hover:not(.disabled) {
+  --realm-gold: #fbbf24;
+  color: color-mix(in srgb, var(--realm-gold) 98%, white);
+  background: color-mix(in srgb, var(--realm-gold) 26%, var(--glass));
+  border-color: color-mix(in srgb, var(--realm-gold) 65%, var(--border));
+  box-shadow: 0 6px 24px color-mix(in srgb, var(--realm-gold) 32%, transparent);
+}
+
 /* Arteria (GAME-Arteria) — purple accent, matches otterdays.github.io/GAME-Arteria/ */
 .home-link--arteria {
   --arteria-purple: #a78bfa;
@@ -1067,6 +1095,12 @@ html {
   --cluster-accent: #6b9b4e;
   border-color: color-mix(in srgb, var(--cluster-accent) 40%, var(--border));
   background: color-mix(in srgb, var(--cluster-accent) 11%, var(--glass));
+}
+
+.link-cluster--modrinth {
+  --cluster-accent: #1bd96a;
+  border-color: color-mix(in srgb, var(--cluster-accent) 38%, var(--border));
+  background: color-mix(in srgb, var(--cluster-accent) 10%, var(--glass));
 }
 
 .link-cluster--arteria {

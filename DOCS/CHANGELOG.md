@@ -4,7 +4,8 @@ All notable changes to this project are documented in this file. Format: [Keep a
 
 ## [Unreleased]
 
-(Nothing yet.)
+- **Homepage GitHub repos pill (2026-06-10)** — Stacked **157** + **122** repository count screenshots (`images/github-repositories-pill-122.png`); **`.home-github-pill--stack`** on **`index.html`**, **`css/style.css`**.
+- **Homepage Modrinth + Ryan's Realm (2026-06-10)** — [Modrinth profile](https://modrinth.com/user/OtterDays) link-cluster + Den callout; [Ryan's Realm](https://otterdays.vercel.app/) hero link (**`.home-link--realm`**). **`js/search-data.js`**.
 
 ## [1.12.0] - 2026-06-10
 
