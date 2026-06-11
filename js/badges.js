@@ -25,11 +25,13 @@
     var AT = { flag: '\uD83C\uDDE6\uD83C\uDDF9', label: 'Austria' };
     var BE = { flag: '\uD83C\uDDE7\uD83C\uDDEA', label: 'Belgium' };
     var NL = { flag: '\uD83C\uDDF3\uD83C\uDDF1', label: 'Netherlands' };
+    var KR = { flag: '\uD83C\uDDF0\uD83C\uDDF7', label: 'South Korea' };
 
     var COUNTRY_MAP = {
         'Google': USA, 'OpenAI': USA, 'Anthropic': USA, 'Meta': USA, 'Microsoft': USA, 'xAI': USA,
         'Cursor': USA, 'Mistral': FR, 'Amazon': USA, 'Alibaba / QwenLM': CN, 'DeepSeek': CN,
-        'Perplexity': USA, 'Poolside': USA, 'Poolside Docs': USA, 'Genspark': USA, 'Moonshot AI': CN, 'Minimax': CN, 'GDevelop': CH, 'IBM': USA,
+        'Perplexity': USA, 'Poolside': USA, 'Poolside Docs': USA, 'Genspark': USA, 'Moonshot AI': CN, 'Minimax': CN,
+        'Upstage': KR, 'GDevelop': CH, 'IBM': USA,
         'Zhipu AI': CN, 'Quora': USA, 'Character.AI': USA, 'Inflection': USA, 'Cohere': CA,
         'Abacus.AI': USA, 'Allen Institute for AI': USA, 'DuckDuckGo': USA, 'QuillBot': USA,
         'OpenRouter': USA, 'Groq': USA, 'GitHub': USA, 'SambaNova': USA, 'Cerebras': USA,
@@ -54,7 +56,7 @@
         'SuperMaker': USA, 'DALL-E 3': USA, 'Grok Imagine': USA, 'Firefly': USA, 'Stable Diffusion': UK,
         'FLUX': DE, 'OpusClip': USA, 'Soundraw': USA, 'Hugging Face Spaces': FR,
         'Dolphin Chat': USA, 'Falcon': UAE, 'K2 Think': UAE, 'LongCat AI': CN, 'MiMo Studio': CN, 'NVIDIA Build': USA,
-        'Nous Chat': USA,
+        'Nous Chat': USA, 'MAI Playground': USA, 'Microsoft AI': USA, 'Upstage Playground': KR,
         'ChatGPT': USA, 'Claude': USA, 'T3 Chat': USA, 'Liquid AI': USA, 'Liquid Playground': USA,
         'Lumo': CH, 'Proton': CH,
         'Falcon LLM': UAE, 'Hunyuan AI Studio': CN, 'Builder.io': USA, 'Duck.ai': USA,

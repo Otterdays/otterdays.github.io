@@ -1,5 +1,17 @@
 # SUMMARY
 
+## Recent update — 2026-06-10 (MAI Playground + Microsoft AI)
+
+- **`chats.html`** — **MAI Playground** (US provider chats).
+- **`companies.html`** — **Microsoft AI** + **MAI Playground** under Microsoft.
+- **`js/search-data.js`**, **`js/badges.js`**.
+
+## Recent update — 2026-06-10 (Upstage Playground)
+
+- **`chats.html`** — **South Korea** region; **Upstage Playground** (Solar Pro 3 chat).
+- **`companies.html`** — **Upstage** (playground + upstage.ai).
+- **`js/search-data.js`**, **`js/badges.js`** (🇰🇷).
+
 ## Recent update — 2026-06-10 (MiMo Studio + NVIDIA Build)
 
 - **`chats.html`** — **MiMo Studio** (Xiaomi, China), **NVIDIA Build** (US provider chats).

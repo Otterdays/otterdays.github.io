@@ -2,6 +2,16 @@
 
 # SCRATCHPAD
 
+## 2026-06-10 — MAI Playground + Microsoft AI
+**What changed:** **`chats.html`** — **MAI Playground** (US). **`companies.html`** — **Microsoft AI**, **MAI Playground** under Microsoft. **`js/search-data.js`**, **`js/badges.js`**. **`DOCS/CHANGELOG.md`**, **`DOCS/SUMMARY.md`**.
+**Out-of-scope observations:** Copilot stays on **`other-assistants.html`**; MAI is separate Microsoft AI division product line.
+---
+
+## 2026-06-10 — Upstage Playground (South Korea)
+**What changed:** **`chats.html`** — new **South Korea** region; **Upstage Playground** ([console.upstage.ai/playground/chat](https://console.upstage.ai/playground/chat)). **`companies.html`** — **Upstage** section. **`js/search-data.js`**, **`js/badges.js`** (KR). **`DOCS/CHANGELOG.md`**, **`DOCS/SUMMARY.md`**.
+**Out-of-scope observations:** Solar Pro 3 (Mar 2026); document AI/OCR on same console — chat card only for now.
+---
+
 ## 2026-06-10 — MiMo Studio + NVIDIA Build (provider chats)
 **What changed:** **`chats.html`** — **MiMo Studio** (China), **NVIDIA Build** (US). **`companies.html`** — **Xiaomi**, **NVIDIA Build** card. **`js/search-data.js`**, **`js/badges.js`**. **`DOCS/CHANGELOG.md`**, **`DOCS/SUMMARY.md`**. Pushed to `main`.
 **Out-of-scope observations:** build.nvidia.com is model hub + chat, not only chat; labeled per user request.

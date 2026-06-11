@@ -5,6 +5,8 @@ All notable changes to this project are documented in this file. Format: [Keep a
 ## [Unreleased]
 
 ### Added
+- **MAI Playground + Microsoft AI (2026-06-10)** — [playground.microsoft.ai/chat](https://playground.microsoft.ai/chat), [microsoft.ai](https://microsoft.ai/) on **`chats.html`** and **`companies.html`**; **`js/search-data.js`**, **`js/badges.js`**.
+- **Upstage Playground (2026-06-10)** — [console.upstage.ai/playground/chat](https://console.upstage.ai/playground/chat) (Solar Pro 3, South Korea) on **`chats.html`**; **`companies.html`**; **`js/search-data.js`**, **`js/badges.js`** (KR).
 - **Provider chats (2026-06-10)** — **MiMo Studio** ([aistudio.xiaomimimo.com](https://aistudio.xiaomimimo.com/#/c), China) and **NVIDIA Build** ([build.nvidia.com](https://build.nvidia.com/), US) on **`chats.html`**; **`companies.html`** (**Xiaomi**, **NVIDIA**); **`js/search-data.js`**, **`js/badges.js`**.
 - **World of AI Bench (2026-06-10)** — [woaibench.ai](https://www.woaibench.ai/) on **`tools.html`**, **`companies.html`**, **`informational-links.html`** (benchmarks section with Arena, Artificial Analysis, Design Arena), **`museum.html`** cross-link; **`js/search-data.js`**, **`js/badges.js`**.
 - **Inspirations (2026-06-10)** — **AICodeKing**, **Bijan Bowen**, **ryan3000**, **Adam Conover**, **The Infographics Show**, **SomeOrdinaryGamers**, **Fireship**, **The Diary Of A CEO**, **Gamers Nexus**, **Jimmy Kimmel Live**, **The Daily Show**, **PewDiePie**, **In the World of AI** on **`inspirations.html`**; **`js/search-data.js`**, **`about.html`**. Fixed missing **`</article>`** on The PrimeTime card.
