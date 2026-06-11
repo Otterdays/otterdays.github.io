@@ -147,7 +147,8 @@
     // Project type mappings
     var games = [
         'kingdom.io', 'GaelDrive', 'FireFest', 'Brain-Busters', 'Click-It-Goin',
-        'otter.planes.io', 'Runes-of-Tir-na-nOg', 'Zombobs', 'Fable-Forged', 'Game-Runic-Lands'
+        'otter.planes.io', 'Runes-of-Tir-na-nOg', 'Zombobs', 'Fable-Forged', 'Game-Runic-Lands',
+        'Terraria World Config'
     ];
     var music = ['Aethereal Hymns', 'Audacious', 'BlockBanger'];
     var minecraft = ['Feeshman Deelux', 'Chipper Chopper', 'MC-Companion-Map'];

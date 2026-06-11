@@ -5,6 +5,7 @@ All notable changes to this project are documented in this file. Format: [Keep a
 ## [Unreleased]
 
 ### Added
+- **Terraria World Config (2026-06-10)** — [Otterdays/Terraria-World-Config-Mod](https://github.com/Otterdays/Terraria-World-Config-Mod) on **`index.html`** (hero link + Explore card), **`programs.html`**, **`js/search-data.js`**, **`js/badges.js`** (Game badge).
 - **Android-Stuffs (2026-06-10)** — [Otterdays/Android-Stuffs](https://github.com/Otterdays/Android-Stuffs) on **`index.html`** (hero link + Explore card), **`programs.html`**, **`js/search-data.js`**, **`js/badges.js`** (Android badge).
 
 ### Changed

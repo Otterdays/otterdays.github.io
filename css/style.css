@@ -143,18 +143,16 @@ body {
 }
 
 .sidebar a.active {
-  background: var(--accent-glow);
+  background: color-mix(in srgb, var(--accent) 14%, var(--accent-glow));
   color: var(--accent);
   font-weight: 600;
-  box-shadow: inset 3px 0 0 0 var(--accent);
-  /* Left border indicator */
+  box-shadow: inset 0 0 0 2px var(--accent);
 }
 
 .sidebar a.active:hover {
   transform: none;
-  box-shadow:
-    inset 3px 0 0 0 var(--accent),
-    inset 0 0 0 1px color-mix(in srgb, var(--accent) 28%, transparent);
+  background: color-mix(in srgb, var(--accent) 20%, var(--accent-glow));
+  box-shadow: inset 0 0 0 2px var(--accent);
 }
 
 .sidebar-icon {

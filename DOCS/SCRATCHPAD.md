@@ -2,6 +2,14 @@
 
 # SCRATCHPAD
 
+## 2026-06-10 — Terraria World Config (homepage + programs)
+**What changed:** **`index.html`** — hero link + Explore card → [Terraria-World-Config-Mod](https://github.com/Otterdays/Terraria-World-Config-Mod) (World Config, first Terraria tModLoader mod). **`programs.html`**, **`js/search-data.js`**, **`js/badges.js`**. **`DOCS/CHANGELOG.md`** Unreleased.
+---
+
+## 2026-06-10 — Sidebar: Home first + active ring
+**What changed:** **`css/style.css`** — `.sidebar a.active` uses full **2px inset ring** (was left-only stripe). **`tools/replace_sidebar_nav.py`** — Home pinned first, rest A–Z; **Favorites** on all main pages; ran script on all `*.html` sidebars.
+---
+
 ## 2026-06-10 — Android-Stuffs (homepage + programs)
 **What changed:** **`index.html`** — hero link + Explore card → [Android-Stuffs](https://github.com/Otterdays/Android-Stuffs) (SoundPax index). **`programs.html`** project card. **`js/search-data.js`**, **`js/badges.js`**. **`DOCS/CHANGELOG.md`** Unreleased.
 **Next:** Commit when ready; no version bump unless shipping.

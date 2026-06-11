@@ -1,4 +1,4 @@
-# One-off: replace site sidebar with alphabetized nav (no per-company items).
+# Sync site sidebar: Home first, remaining links A–Z.
 # Run from repo root: python tools/replace_sidebar_nav.py
 
 import re
@@ -6,16 +6,20 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 
+# Home pinned first; rest alphabetical by label.
 LINKS = [
+    ("index.html", "Home", "🏠", "Home"),
     ("about.html", "About", "👤", "About"),
     ("chats.html", "AI Chats", "💬", "AI Chats"),
     ("museum.html", "AI Museum", "🏛️", "AI Museum"),
     ("companies.html", "Companies", "🏢", "Companies"),
     ("explore.html", "Explore Data", "📊", "Explore"),
-    ("index.html", "Home", "🏠", "Home"),
+    ("favorites.html", "Favorites", "❤️", "Favorites"),
     ("informational-links.html", "Informational Links", "🔗", "Informational Links"),
     ("inspirations.html", "Inspirations", "✨", "Inspirations"),
     ("media.html", "Media Gen", "🎨", "Media Gen"),
+    ("offline-survival.html", "Offline survival", "🛡️", "Offline survival"),
+    ("other-assistants.html", "Other Assistants", "🌐", "Other Assistants"),
     ("posts.html", "Posts", "📰", "Posts"),
     ("programs.html", "Programs", "🎮", "Programs"),
     ("skills.html", "Skills", "🧠", "Skills"),
