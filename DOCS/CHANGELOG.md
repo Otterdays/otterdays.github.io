@@ -6,6 +6,7 @@ All notable changes to this project are documented in this file. Format: [Keep a
 
 ## [Unreleased]
 
+- **Mobile nav stuck open (2026-06-11)** — Page-loader `shellReveal` animation pinned the mobile nav sheet at `opacity: 1` / `translateY(0)`; excluded `.sidebar`, `.mobile-nav-backdrop`, `.mobile-nav-toggle` from loader selectors; backdrop `[hidden]` display fix (`css/style.css`).
 - **Emoji restore (2026-06-11)** — Fixed sidebar/footer/search icons showing `??` after v1.13.0 badge pass used PowerShell without UTF-8; restored `*.html` emoji glyphs; version badges remain **v1.13.0**.
 
 (Nothing else yet.)

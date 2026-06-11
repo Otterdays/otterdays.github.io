@@ -429,6 +429,10 @@ body {
     cursor: pointer;
   }
 
+  .mobile-nav-backdrop[hidden] {
+    display: none !important;
+  }
+
   .mobile-nav-backdrop.is-visible {
     opacity: 0.55;
     pointer-events: auto;
@@ -508,10 +512,17 @@ body {
       opacity 0.24s ease;
   }
 
+  .sidebar:not(.is-open) {
+    animation: none !important;
+    filter: none !important;
+  }
+
   .sidebar.is-open {
     transform: translateY(0);
     opacity: 1;
     pointer-events: auto;
+    animation: none !important;
+    filter: none !important;
   }
 
   .sidebar-block {
@@ -2829,20 +2840,21 @@ html {
 }
 
 /* === PAGE LOADER === */
-html:not(.ui-loading):not(.ui-ready) body > *:not(script):not(.page-loader) {
+/* Exclude mobile nav shell — shellReveal's end state overrides closed sheet CSS */
+html:not(.ui-loading):not(.ui-ready) body > *:not(script):not(.page-loader):not(.sidebar):not(.mobile-nav-backdrop):not(.mobile-nav-toggle) {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
   animation: shellJsFallback 0s linear 2s forwards;
 }
 
-html.ui-loading body > *:not(script):not(.page-loader) {
+html.ui-loading body > *:not(script):not(.page-loader):not(.sidebar):not(.mobile-nav-backdrop):not(.mobile-nav-toggle) {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
 
-html.ui-ready body > *:not(script):not(.page-loader) {
+html.ui-ready body > *:not(script):not(.page-loader):not(.sidebar):not(.mobile-nav-backdrop):not(.mobile-nav-toggle) {
   animation: shellReveal 0.34s cubic-bezier(0.2, 0.8, 0.2, 1) both;
 }
 

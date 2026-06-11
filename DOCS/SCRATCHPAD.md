@@ -2,6 +2,11 @@
 
 # SCRATCHPAD
 
+## 2026-06-11 — Fix mobile nav sheet stuck open
+**What changed:** **`css/style.css`** — page-loader `shellReveal` was applied to `.sidebar` / backdrop / toggle; animation end state overrode mobile closed sheet (`translateY(110%)`, `opacity: 0`). Excluded nav elements from loader selectors; `[hidden]` backdrop display fix; `animation: none` on mobile sidebar.
+**Verified:** Mobile viewport — sheet hidden on load; Open/Close menu toggles correctly.
+---
+
 ## 2026-06-11 — Fix emoji corruption (v1.13.0 HTML bump)
 **What changed:** Restored all `*.html` from pre-corruption commit; re-bumped **v1.13.0** via Python UTF-8 (PowerShell `Set-Content` had mangled emoji → `??`). **Cause:** `Get-Content`/`Set-Content` without UTF-8 on v1.13.0 badge pass.
 ---
