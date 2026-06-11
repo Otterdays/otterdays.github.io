@@ -1,5 +1,11 @@
 # SUMMARY
 
+## Recent update — 2026-06-10 (Nex-AGI)
+
+- **`chats.html`** — **Nex-AGI** (China; Nex-N2 agent models).
+- **`companies.html`** — **Nex-AGI**, **Nex-N2 (GitHub)**, **Hugging Face**.
+- **`js/search-data.js`**, **`js/badges.js`** (🇨🇳).
+
 ## Recent update — 2026-06-10 (T3 Chat → Other Assistants)
 
 - **`chats.html`** — **T3 Chat** removed from Provider Chats (hub, not lab).

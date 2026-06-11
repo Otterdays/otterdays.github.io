@@ -5,6 +5,7 @@ All notable changes to this project are documented in this file. Format: [Keep a
 ## [Unreleased]
 
 ### Added
+- **Nex-AGI (2026-06-10)** — [nex-agi.com](https://nex-agi.com/) (Nex-N2) on **`chats.html`** (China) and **`companies.html`**; **`js/search-data.js`**, **`js/badges.js`**.
 - **MAI Playground + Microsoft AI (2026-06-10)** — [playground.microsoft.ai/chat](https://playground.microsoft.ai/chat), [microsoft.ai](https://microsoft.ai/) on **`chats.html`** and **`companies.html`**; **`js/search-data.js`**, **`js/badges.js`**.
 - **Upstage Playground (2026-06-10)** — [console.upstage.ai/playground/chat](https://console.upstage.ai/playground/chat) (Solar Pro 3, South Korea) on **`chats.html`**; **`companies.html`**; **`js/search-data.js`**, **`js/badges.js`** (KR).
 - **Provider chats (2026-06-10)** — **MiMo Studio** ([aistudio.xiaomimimo.com](https://aistudio.xiaomimimo.com/#/c), China) and **NVIDIA Build** ([build.nvidia.com](https://build.nvidia.com/), US) on **`chats.html`**; **`companies.html`** (**Xiaomi**, **NVIDIA**); **`js/search-data.js`**, **`js/badges.js`**.
