@@ -1,0 +1,41 @@
+---
+description: "Otterdays.github.io agent charter — read AGENTS.md; content placement, search index, releases."
+alwaysApply: true
+---
+
+# Otterdays Site Agent
+
+**Read `AGENTS.md` at repo root** before non-trivial work. Static GitHub Pages site — HTML/CSS/vanilla JS, no build step.
+
+## Must-know placement
+
+| Page | Content |
+|------|---------|
+| `chats.html` | First-party **lab** chats by **country** only |
+| `other-assistants.html` | Hubs & specialty (Perplexity, OpenRouter, Poe, T3 Chat, Duck.ai) |
+| `tools.html` | Dev tools; agents in `#computer-automation` (curated order, not A–Z) |
+| `companies.html` | Every organization on the site |
+| `specials.html` | Moltbook, free domains, learning, games |
+
+**Hub ≠ lab.** Multi-model routers go on Other Assistants, not Provider Chats.
+
+## Every new link item
+
+1. HTML card on correct page
+2. `js/search-data.js` entry
+3. `js/badges.js` if country flag needed (key = exact `.chat-link-name`)
+4. `companies.html` if new org
+5. `DOCS/SCRATCHPAD.md` + `DOCS/CHANGELOG.md`
+
+Full checklist: `DOCS/CONTENT_GUIDE.md`.
+
+## Releases
+
+Bump `js/updates-data.js`, all HTML `vX.Y.Z` badges, `DOCS/CHANGELOG.md` — only when user ships a version. Do not commit/push unless asked.
+
+## Constraints
+
+- Windows shell: `;` not `&&`
+- Sidebar nav must stay identical across all `*.html` (🌐 for Other Assistants — never `??`)
+- Minimize scope; read files before editing
+- Current version: **v1.11.0**

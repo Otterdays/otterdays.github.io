@@ -6,6 +6,9 @@ All notable changes to this project are documented in this file. Format: [Keep a
 
 _(Nothing yet.)_
 
+### Changed
+- **AGENTS.md + Cursor rules (2026-06-10)** — Project-specific agent charter; **`.cursor/rules/otterdays-agents.mdc`** (`alwaysApply`); fixed frontmatter on **`project-workflow.mdc`** and **`tech-stack-2026.mdc`**.
+
 ## [1.11.0] - 2026-06-10
 
 ### Added

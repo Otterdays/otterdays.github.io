@@ -2,6 +2,11 @@
 
 # SCRATCHPAD
 
+## 2026-06-10 — AGENTS.md + Cursor rule
+**What changed:** Rewrote root **`AGENTS.md`** (project-specific charter). New **`.cursor/rules/otterdays-agents.mdc`** (`alwaysApply: true`).
+**Also fixed:** **`project-workflow.mdc`** and **`tech-stack-2026.mdc`** YAML frontmatter (were broken).
+---
+
 ## 2026-06-10 — ship v1.11.0 (updates timeline + badges)
 **What changed:** **`js/updates-data.js`** — **1.11.0** card (Jun 2026 batch). All `*.html` badges **v1.11.0**; `updates.html` search placeholder; `DOCS/CHANGELOG.md` **[1.11.0]**; `DOCS/journal/2026-06-10.md`; `README.md`, `SBOM`, `ARCHITECTURE`, `SUMMARY`.
 **Next:** Commit + push when ready.

@@ -1,17 +1,10 @@
 ---
-alwaysApply: true
+description: "2025-2026 web standards for Otterdays.github.io — semantic HTML, modern CSS, ES2025+ JS."
+globs: "**/*.html,**/*.css,**/*.js,**/*.jsx,**/*.tsx,**/*.ts,**/*.astro"
+alwaysApply: false
 ---
 
-description: "2025-2026 Web Standards for Otterdays.github.io: Semantic HTML, Modern CSS (Nesting, Container Queries), and Latest JavaScript (ES2025+)."globs:
-
-"**/*.html"
-"**/*.css"
-"**/*.js"
-"**/*.jsx"
-"**/*.tsx"
-"**/*.ts"
-"**/*.astro"alwaysApply: false
-2025-2026 Web Development Standards for Otterdays
+# 2025-2026 Web Development Standards for Otterdays
 1. HTML Architecture (Semantic & Accessible)
 Prioritize Semantic HTML: Always use semantic elements (<article>, <section>, <figure>, <figcaption>, <nav>, <aside>) over generic <div> structures to improve SEO and accessibility.
 Modern Forms:

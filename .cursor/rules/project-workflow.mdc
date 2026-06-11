@@ -1,14 +1,10 @@
 ---
-alwaysApply: true
+description: "Otterdays docs, git conventions, and file structure — see AGENTS.md for full workflow."
+globs: "**/*.md,**/*.json,.gitignore,README.md"
+alwaysApply: false
 ---
 
-description: "Organizational standards for Otterdays.github.io including Git conventions, documentation, and file structure."globs:
-
-"**/*.md"
-"**/*.json"
-".gitignore"
-"README.md"alwaysApply: false
-Project Workflow & Organizational Standards
+# Project Workflow & Organizational Standards
 1. Git & Commit Conventions
 Commit Messages: Use conventional commits format: type(scope): description.
 Types: feat (new feature), fix (bug fix), style (formatting), refactor (code restructuring), docs (documentation).
