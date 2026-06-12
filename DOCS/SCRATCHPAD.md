@@ -2,6 +2,10 @@
 
 # SCRATCHPAD
 
+## 2026-06-11 — Add new inspirations
+**What changed:** Added GameLinked to Hardware & PC; added Ryan Trahan (main channel) to Culture & long-form; added SWARM, Out Of Line Music, Sumerian Records, and Imminence to Music; added DeFranco News to News & commentary. Updated `js/search-data.js` and `inspirations.html`.
+---
+
 ## 2026-06-11 — Fix mobile nav sheet stuck open
 **What changed:** **`css/style.css`** — page-loader `shellReveal` was applied to `.sidebar` / backdrop / toggle; animation end state overrode mobile closed sheet (`translateY(110%)`, `opacity: 0`). Excluded nav elements from loader selectors; `[hidden]` backdrop display fix; `animation: none` on mobile sidebar.
 **Verified:** Mobile viewport — sheet hidden on load; Open/Close menu toggles correctly.

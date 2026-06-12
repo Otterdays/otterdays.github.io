@@ -11,7 +11,8 @@ const UPDATES_DATA = [
       {
         type: "added",
         items: [
-          "(Nothing yet.)"
+          "**New Inspirations** — Added **GameLinked** (Hardware & PC), **DeFranco News** (News & commentary), **Imminence** (Music), **Out Of Line Music** (Music), **Sumerian Records** (Music), **SWARM** (Music), and **Ryan Trahan** (Culture & long-form) to the inspirations directory and search index.",
+          "**Minecraft Inspirations** — Added **Chuck Nasty**, **Technoblade**, and **MrTechnodad** to the Culture & long-form section in the inspirations directory and search index."
         ]
       }
     ]
