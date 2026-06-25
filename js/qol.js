@@ -32,6 +32,8 @@
     initScrollAnimations();
     addKeyboardHints();
     initMobileNav();
+    initMobileEnhancements();
+    initHomeProjectsDrawer();
     logPerformanceMetrics();
   }
 
@@ -81,6 +83,107 @@
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && open) closeNav();
     });
+  }
+
+  /** Viewport, touch class, dynamic vh, and visual-viewport edge cases */
+  function initMobileEnhancements() {
+    var root = document.documentElement;
+
+    enhanceViewportMeta();
+    syncDynamicViewportHeight();
+    window.addEventListener('resize', syncDynamicViewportHeight, { passive: true });
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener('resize', syncDynamicViewportHeight, { passive: true });
+    }
+
+    var coarseMq = window.matchMedia('(pointer: coarse)');
+    function syncPointerClass() {
+      root.classList.toggle('coarse-pointer', coarseMq.matches);
+    }
+    syncPointerClass();
+    coarseMq.addEventListener('change', syncPointerClass);
+
+    initSearchViewportFix();
+  }
+
+  function enhanceViewportMeta() {
+    var meta = document.querySelector('meta[name="viewport"]');
+    if (!meta) return;
+    var content = meta.getAttribute('content') || '';
+    if (content.indexOf('viewport-fit=cover') === -1) {
+      meta.setAttribute('content', content.replace(/,\s*$/, '') + ', viewport-fit=cover');
+    }
+  }
+
+  function syncDynamicViewportHeight() {
+    var vh = window.visualViewport ? window.visualViewport.height : window.innerHeight;
+    document.documentElement.style.setProperty('--app-vh', (vh * 0.01) + 'px');
+  }
+
+  /** Keep search modal usable when mobile keyboard opens */
+  function initSearchViewportFix() {
+    var overlay = document.getElementById('search-overlay');
+    var input = document.getElementById('search-input');
+    if (!overlay || !input || !window.visualViewport) return;
+
+    function syncSearchLayout() {
+      if (!overlay.classList.contains('active')) {
+        overlay.style.top = '';
+        overlay.style.left = '';
+        overlay.style.width = '';
+        overlay.style.height = '';
+        return;
+      }
+      if (!window.matchMedia('(max-width: 768px)').matches) {
+        overlay.style.top = '';
+        overlay.style.left = '';
+        overlay.style.width = '';
+        overlay.style.height = '';
+        return;
+      }
+      var vv = window.visualViewport;
+      overlay.style.top = vv.offsetTop + 'px';
+      overlay.style.left = vv.offsetLeft + 'px';
+      overlay.style.width = vv.width + 'px';
+      overlay.style.height = vv.height + 'px';
+    }
+
+    window.visualViewport.addEventListener('resize', syncSearchLayout, { passive: true });
+    window.visualViewport.addEventListener('scroll', syncSearchLayout, { passive: true });
+
+    var overlayObserver = new MutationObserver(syncSearchLayout);
+    overlayObserver.observe(overlay, { attributes: true, attributeFilter: ['class', 'hidden'] });
+
+    var trigger = document.getElementById('search-trigger');
+    if (trigger) {
+      trigger.addEventListener('click', function () {
+        window.setTimeout(syncSearchLayout, 0);
+      });
+    }
+
+    input.addEventListener('focus', function () {
+      window.setTimeout(function () {
+        syncSearchLayout();
+        try {
+          input.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+        } catch (e) {
+          input.scrollIntoView(true);
+        }
+      }, 120);
+    });
+  }
+
+  /** Projects drawer: open on desktop, collapsed on mobile */
+  function initHomeProjectsDrawer() {
+    var drawer = document.querySelector('.home-projects-drawer');
+    if (!drawer) return;
+
+    var mq = window.matchMedia('(min-width: 769px)');
+    function sync() {
+      drawer.open = mq.matches;
+    }
+    sync();
+    mq.addEventListener('change', sync);
   }
 
   function initPageLoader() {
@@ -183,7 +286,7 @@
 
   /** Add title="Open [Name] in new tab → domain.com" to external link cards */
   function injectCardTooltips() {
-    var cards = document.querySelectorAll('a.chat-link-card[href^="http"]');
+    var cards = document.querySelectorAll('a.chat-link-card[href^="http"], a.home-primary-link[href^="http"]');
     cards.forEach(function (card) {
       var href = card.getAttribute('href') || '';
       if (!href || href === '#') return;

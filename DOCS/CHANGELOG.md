@@ -6,6 +6,8 @@ All notable changes to this project are documented in this file. Format: [Keep a
 
 ## [Unreleased]
 
+- **Homepage hero + mobile QoL (2026-06-23)** — Primary outbound cards (Linktree, Indeed, GitHub, Dev site); projects/repos in `<details>` drawer; site-wide mobile safe-area, touch targets, search keyboard fixes in **`css/style.css`** + **`js/qol.js`**.
+
 - **Gear (2026-06-23)** — Homepage **Gear** section: Lenovo laptop + tablet, AMD desktop CPU + GPU; **`css/style.css`** gear cards; **`js/search-data.js`** index anchor.
 
 - **Common tools (2026-06-23)** — Homepage **Common tools** section (Git, Python, Bun) with favicon cards; **`tools.html#common-tools`**; **`js/search-data.js`** Git + Python; Bun anchor → `#common-tools`; **`css/style.css`** triple-column grid.

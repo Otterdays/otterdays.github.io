@@ -2,6 +2,10 @@
 
 # SCRATCHPAD
 
+## 2026-06-23 — Homepage hero + mobile QoL
+**What changed:** **`index.html`** — primary link cards (Linktree, Indeed, GitHub, Dev site); projects in collapsible drawer. **`css/style.css`** `.home-primary-links`, mobile safe-area/touch/search fixes. **`js/qol.js`** viewport-fit, `--app-vh`, coarse-pointer, search keyboard, projects drawer sync.
+---
+
 ## 2026-06-23 — Docs sync (ingest architecture)
 **What changed:** **`CONTENT_GUIDE.md`** intake step 0 + quick-reference card + §5. **`AGENTS.md`** §1/§10/§11. **`DOCS/journal/2026-06-23.md`**. **`DOCS/SUMMARY.md`** 2026-06-23 batch. **`DOCS/SBOM.md`** Python / verify_intake. **`INGEST_WORKFLOW.md`** template SKIP note. **`CHANGELOG`** journal cross-ref.
 ---
