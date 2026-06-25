@@ -2,6 +2,10 @@
 
 # SCRATCHPAD
 
+## 2026-06-23 — Search index sync
+**What changed:** **`js/search-data.js`** — hero aliases (Linktree, Dev site, Daily drivers, Common tools), Gear entries, Otterdays Den Server, reTunnel, 18 agent skills; homepage `#daily-drivers` / `#common-tools` anchors.
+---
+
 ## 2026-06-23 — Homepage hero + mobile QoL
 **What changed:** **`index.html`** — primary link cards (Linktree, Indeed, GitHub, Dev site); projects in collapsible drawer. **`css/style.css`** `.home-primary-links`, mobile safe-area/touch/search fixes. **`js/qol.js`** viewport-fit, `--app-vh`, coarse-pointer, search keyboard, projects drawer sync.
 ---
