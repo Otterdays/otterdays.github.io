@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "intake_id": "2026-06-23_example-cli",
+  "created": "2026-06-23",
+  "agent": "cursor-agent",
+  "user_prompt": "EXAMPLE ONLY — fictional batch for schema reference; do not import.",
+  "status": "classified",
+  "blockers": [],
+  "entities": [
+    {
+      "display_name": "Example CLI",
+      "kind": "tool",
+      "organization": "ExampleCorp",
+      "country_iso2": "US",
+      "primary_url": "https://example.com/cli",
+      "source_urls": [
+        "https://example.com/cli",
+        "https://example.com/docs/cli"
+      ],
+      "one_line": "Fictional terminal agent for docs only; OpenAI-compatible API and MCP support",
+      "placement": {
+        "html_pages": ["tools.html", "companies.html"],
+        "html_sections": ["CLI", "ExampleCorp"],
+        "companies_section": "ExampleCorp",
+        "new_company_section": true,
+        "badge_keys": ["Example CLI"],
+        "ordering": "alpha",
+        "search_entries": [
+          {
+            "title": "Example CLI",
+            "desc": "Fictional terminal agent; schema reference only.",
+            "category": "tool",
+            "tags": ["CLI", "Agent", "ExampleCorp"],
+            "url": "tools.html"
+          }
+        ]
+      },
+      "research": {
+        "hub_vs_lab": "neither",
+        "access_model": "public",
+        "primary_source_verified": true,
+        "notes": "Placeholder entity — never import to the live site."
+      }
+    }
+  ]
+}

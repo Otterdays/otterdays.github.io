@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://otterdays.github.io/schemas/intake-record.schema.json",
+  "title": "Otterdays site intake record",
+  "description": "Machine-readable research artifact produced before any HTML/search import. Agents write this; humans may ignore it.",
+  "type": "object",
+  "required": ["schema_version", "intake_id", "created", "status", "entities"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "intake_id": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}_[a-z0-9-]+$",
+      "description": "YYYY-MM-DD_slug — e.g. 2026-06-23_north"
+    },
+    "created": { "type": "string", "format": "date" },
+    "agent": { "type": "string" },
+    "user_prompt": { "type": "string" },
+    "status": {
+      "enum": ["research", "classified", "imported", "verified", "blocked"]
+    },
+    "blockers": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "entities": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/entity" }
+    }
+  },
+  "$defs": {
+    "entity": {
+      "type": "object",
+      "required": [
+        "display_name",
+        "kind",
+        "primary_url",
+        "one_line",
+        "placement",
+        "research"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "display_name": {
+          "type": "string",
+          "description": "Exact .chat-link-name on cards"
+        },
+        "kind": {
+          "enum": [
+            "lab_chat",
+            "hub_assistant",
+            "tool",
+            "company",
+            "media",
+            "special",
+            "creator",
+            "museum",
+            "project"
+          ]
+        },
+        "organization": { "type": "string" },
+        "country_iso2": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}$",
+          "description": "Badge country: US, CA, FR, CN, …"
+        },
+        "primary_url": { "type": "string", "format": "uri" },
+        "source_urls": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "format": "uri" }
+        },
+        "one_line": {
+          "type": "string",
+          "minLength": 10,
+          "maxLength": 120,
+          "description": "10–20 words for .chat-link-desc and search desc"
+        },
+        "placement": { "$ref": "#/$defs/placement" },
+        "research": { "$ref": "#/$defs/research" }
+      }
+    },
+    "placement": {
+      "type": "object",
+      "required": ["html_pages", "search_entries"],
+      "additionalProperties": false,
+      "properties": {
+        "html_pages": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string" }
+        },
+        "html_sections": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "companies_section": { "type": "string" },
+        "new_company_section": { "type": "boolean" },
+        "badge_keys": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "search_entries": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/search_entry" }
+        },
+        "ordering": {
+          "type": "string",
+          "enum": ["alpha", "curated", "country_alpha", "n/a"]
+        }
+      }
+    },
+    "search_entry": {
+      "type": "object",
+      "required": ["title", "desc", "category", "tags", "url"],
+      "additionalProperties": false,
+      "properties": {
+        "title": { "type": "string" },
+        "desc": { "type": "string" },
+        "category": {
+          "enum": ["project", "chat", "media", "company", "tool", "special", "page"]
+        },
+        "tags": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 6,
+          "items": { "type": "string" }
+        },
+        "url": { "type": "string" }
+      }
+    },
+    "research": {
+      "type": "object",
+      "required": ["hub_vs_lab", "access_model", "primary_source_verified"],
+      "additionalProperties": false,
+      "properties": {
+        "hub_vs_lab": {
+          "enum": ["lab", "hub", "neither", "unknown"]
+        },
+        "access_model": {
+          "enum": [
+            "public",
+            "freemium",
+            "waitlist",
+            "enterprise",
+            "open_source",
+            "api_only"
+          ]
+        },
+        "primary_source_verified": { "type": "boolean" },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}

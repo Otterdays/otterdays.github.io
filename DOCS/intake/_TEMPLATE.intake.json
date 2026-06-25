@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "intake_id": "YYYY-MM-DD_slug",
+  "created": "YYYY-MM-DD",
+  "agent": "cursor-agent",
+  "user_prompt": "Paste the user request verbatim.",
+  "status": "research",
+  "blockers": [],
+  "entities": [
+    {
+      "display_name": "Exact Card Name",
+      "kind": "tool",
+      "organization": "Org Name",
+      "country_iso2": "US",
+      "primary_url": "https://example.com/",
+      "source_urls": [
+        "https://example.com/",
+        "https://example.com/docs"
+      ],
+      "one_line": "Ten to twenty words describing what it does for humans scanning cards.",
+      "placement": {
+        "html_pages": ["tools.html"],
+        "html_sections": ["CLI"],
+        "companies_section": "Org Name",
+        "new_company_section": true,
+        "badge_keys": ["Exact Card Name"],
+        "ordering": "alpha",
+        "search_entries": [
+          {
+            "title": "Exact Card Name",
+            "desc": "Same as one_line but sentence case with period.",
+            "category": "tool",
+            "tags": ["CLI", "Agent", "Org Name"],
+            "url": "tools.html"
+          }
+        ]
+      },
+      "research": {
+        "hub_vs_lab": "neither",
+        "access_model": "public",
+        "primary_source_verified": true,
+        "notes": "Optional: funding, launch date, disambiguation."
+      }
+    }
+  ]
+}

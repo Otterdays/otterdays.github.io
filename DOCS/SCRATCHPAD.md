@@ -2,6 +2,26 @@
 
 # SCRATCHPAD
 
+## 2026-06-23 — Docs sync (ingest architecture)
+**What changed:** **`CONTENT_GUIDE.md`** intake step 0 + quick-reference card + §5. **`AGENTS.md`** §1/§10/§11. **`DOCS/journal/2026-06-23.md`**. **`DOCS/SUMMARY.md`** 2026-06-23 batch. **`DOCS/SBOM.md`** Python / verify_intake. **`INGEST_WORKFLOW.md`** template SKIP note. **`CHANGELOG`** journal cross-ref.
+---
+
+## 2026-06-23 — Homepage Gear section
+**What changed:** **`index.html`** — **Gear** section (Lenovo laptop + tablet, AMD desktop CPU + GPU); **`css/style.css`** `.gear-grid` / `.gear-card`; **`js/search-data.js`** Gear row; **`DOCS/CHANGELOG.md`** Unreleased.
+---
+
+## 2026-06-23 — Common tools (Git, Python, Bun)
+**What changed:** Homepage **Common tools** section (Git, Python, Bun) with favicon cards + **`css/style.css`** triple grid; **`tools.html#common-tools`** link cards; **`js/search-data.js`** Git + Python entries, Bun → `#common-tools`.
+---
+
+## 2026-06-23 — Content ingest architecture (site-wide)
+**What changed:** Agent-first pipeline for **any** research → import job — **`DOCS/INGEST_WORKFLOW.md`**, **`DOCS/schemas/intake-record.schema.json`**, **`DOCS/intake/_TEMPLATE.intake.json`**, **`DOCS/intake/_EXAMPLE.intake.json`**, **`tools/verify_intake.py`**. Wired into **`AGENTS.md`** §4, **`DOCS/ARCHITECTURE.md`** § Content ingest pipeline, **`DOCS/CONTENT_GUIDE.md`**, **`.cursor/rules/otterdays-agents.mdc`**. General architecture improvement; not coupled to any single product batch.
+---
+
+## 2026-06-23 — North & Subquadratic
+**What changed:** **North** (Cohere enterprise workspace) — **`other-assistants.html`** Canada, **`companies.html`** Cohere section. **Subquadratic** — new **`companies.html`** section (SubQ API, SubQ Code, SubQ Search); **SubQ Code** on **`tools.html`** CLI. **`js/search-data.js`**, **`js/badges.js`** (North 🇨🇦, Subquadratic 🇺🇸).
+---
+
 ## 2026-06-11 — Add new inspirations
 **What changed:** Added GameLinked to Hardware & PC; added Ryan Trahan (main channel) to Culture & long-form; added SWARM, Out Of Line Music, Sumerian Records, and Imminence to Music; added DeFranco News to News & commentary. Updated `js/search-data.js` and `inspirations.html`.
 ---

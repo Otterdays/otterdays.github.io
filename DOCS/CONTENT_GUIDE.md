@@ -2,19 +2,23 @@
 
 How to add new content to the website and ensure it appears in search.
 
+**Agent pipeline (site-wide):** For any research + import job, run **`DOCS/INGEST_WORKFLOW.md`** first — write `DOCS/intake/YYYY-MM-DD_slug.intake.json`, gate with **`tools/verify_intake.py`**, then apply the HTML/search steps below. See **`DOCS/ARCHITECTURE.md`** § Content ingest pipeline.
+
 ---
 
 ## Quick Checklist
 
 When adding **any** new item:
 
+0. ✅ **Intake** — `DOCS/INGEST_WORKFLOW.md`: copy `_TEMPLATE.intake.json` → `DOCS/intake/YYYY-MM-DD_slug.intake.json`; `python tools/verify_intake.py` → **PASS** (skip `_TEMPLATE*`; validate real jobs only)
 1. ✅ Add HTML entry to the appropriate page
 2. ✅ Add entry to `js/search-data.js`
 3. ✅ Use consistent tags (see Tag Reference below)
 4. ✅ Add company entry to `companies.html` if it's a new organization
-5. ✅ **Tools page:** Keep CLI, IDE, and Browser Tools in **alphabetical order** by card name (`.chat-link-name`)
-6. ✅ Update `DOCS/SCRATCHPAD.md` and `DOCS/CHANGELOG.md`
-7. ✅ On a **numbered release**: bump `js/updates-data.js`, `DOCS/CHANGELOG.md`, `DOCS/SUMMARY.md`, version badge (`v1.x.x` + title) on **all** `.html` pages, and add `DOCS/journal/YYYY-MM-DD.md` if significant
+5. ✅ **`js/badges.js`** — country flag if needed (key = exact `.chat-link-name`)
+6. ✅ **Tools page:** Keep CLI, IDE, and Browser Tools in **alphabetical order** by card name (`.chat-link-name`)
+7. ✅ Update `DOCS/SCRATCHPAD.md` and `DOCS/CHANGELOG.md`
+8. ✅ On a **numbered release**: bump `js/updates-data.js`, `DOCS/CHANGELOG.md`, `DOCS/SUMMARY.md`, version badge (`v1.x.x` + title) on **all** `.html` pages, and add `DOCS/journal/YYYY-MM-DD.md` if significant
 
 ---
 
@@ -214,15 +218,21 @@ If you add a new tool/chat/media from a company not yet listed:
 
 After adding content, update:
 
-1. **`DOCS/SCRATCHPAD.md`** — Add to "Last 5 actions"
-2. **`DOCS/CHANGELOG.md`** — Add under current version or create new patch version
-3. **`DOCS/ARCHITECTURE.md`** — If adding new sections or page structure changes
+1. **`DOCS/intake/YYYY-MM-DD_slug.intake.json`** — set `status: "verified"` (optional commit for audit)
+2. **`DOCS/SCRATCHPAD.md`** — Add to top (last actions)
+3. **`DOCS/CHANGELOG.md`** — Add under `[Unreleased]` or current version
+4. **`DOCS/ARCHITECTURE.md`** — If adding new sections or page structure changes
+5. **`DOCS/SUMMARY.md`** — Brief note if the change is user-visible or architectural
+
+Full ingest runbook: **`DOCS/INGEST_WORKFLOW.md`**.
 
 ---
 
 ## 6. Examples
 
 ### Example: Adding a new AI chat assistant
+
+**0. Intake** — See `DOCS/INGEST_WORKFLOW.md`; write `DOCS/intake/YYYY-MM-DD_newchat.intake.json`; verify **PASS**.
 
 **1. Add to `chats.html`** (in appropriate section):
 ```html
@@ -280,6 +290,7 @@ After adding entries:
 
 | ❌ Don't | ✅ Do |
 |----------|-------|
+| Edit HTML before intake PASS | Run **`DOCS/INGEST_WORKFLOW.md`** + `verify_intake.py` first |
 | Lowercase tags | Title Case tags (`"cli"` → `"CLI"`) |
 | Forget search entry | Always add to `search-data.js` |
 | Skip company page | Add company if it's a new org |
@@ -294,12 +305,14 @@ After adding entries:
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│ ADDING NEW CONTENT                                          │
+│ ADDING NEW CONTENT (agent-first)                            │
 ├─────────────────────────────────────────────────────────────┤
+│ 0. Intake       → INGEST_WORKFLOW + verify_intake.py PASS   │
 │ 1. HTML page    → Add card to correct page                  │
 │ 2. Search       → Add entry to js/search-data.js            │
-│ 3. Company      → Add section to companies.html (if new)    │
-│ 4. Docs         → Update SCRATCHPAD + CHANGELOG             │
-│ 5. Test         → Cmd/Ctrl+K and search for it              │
+│ 3. Badges       → js/badges.js if country flag needed        │
+│ 4. Company      → Add section to companies.html (if new)    │
+│ 5. Docs         → SCRATCHPAD + CHANGELOG (+ intake verified)│
+│ 6. Test         → Cmd/Ctrl+K and search for it              │
 └─────────────────────────────────────────────────────────────┘
 ```

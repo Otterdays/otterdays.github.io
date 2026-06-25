@@ -6,6 +6,14 @@ All notable changes to this project are documented in this file. Format: [Keep a
 
 ## [Unreleased]
 
+- **Gear (2026-06-23)** — Homepage **Gear** section: Lenovo laptop + tablet, AMD desktop CPU + GPU; **`css/style.css`** gear cards; **`js/search-data.js`** index anchor.
+
+- **Common tools (2026-06-23)** — Homepage **Common tools** section (Git, Python, Bun) with favicon cards; **`tools.html#common-tools`**; **`js/search-data.js`** Git + Python; Bun anchor → `#common-tools`; **`css/style.css`** triple-column grid.
+
+- **Content ingest architecture (2026-06-23)** — Agent-first research → import pipeline: **`DOCS/INGEST_WORKFLOW.md`**, intake JSON schema + template/example, **`tools/verify_intake.py`**; documented in **`AGENTS.md`**, **`DOCS/ARCHITECTURE.md`**, **`CONTENT_GUIDE.md`**, **`DOCS/journal/2026-06-23.md`**, **`.cursor/rules/otterdays-agents.mdc`**, **`DOCS/SBOM.md`**. Site-wide; applies to all future content adds.
+
+- **North & Subquadratic (2026-06-23)** — **North** (Cohere enterprise AI workspace) on **`other-assistants.html`** (Canada) + **`companies.html`** (Cohere section). **Subquadratic** / **SubQ API**, **SubQ Code**, **SubQ Search** on **`companies.html`**; **SubQ Code** on **`tools.html`** CLI; **`js/search-data.js`**, **`js/badges.js`** (Canada / USA flags).
+
 - **Mobile nav stuck open (2026-06-11)** — Page-loader `shellReveal` animation pinned the mobile nav sheet at `opacity: 1` / `translateY(0)`; excluded `.sidebar`, `.mobile-nav-backdrop`, `.mobile-nav-toggle` from loader selectors; backdrop `[hidden]` display fix (`css/style.css`).
 - **Emoji restore (2026-06-11)** — Fixed sidebar/footer/search icons showing `??` after v1.13.0 badge pass used PowerShell without UTF-8; restored `*.html` emoji glyphs; version badges remain **v1.13.0**.
 

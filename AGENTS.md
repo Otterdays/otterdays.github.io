@@ -14,7 +14,9 @@ Before non-trivial work, skim (in order):
 2. `DOCS/CONTENT_GUIDE.md` — where new items go
 3. `DOCS/SCRATCHPAD.md` — active tasks and blockers
 
-For architecture or nav questions: `DOCS/ARCHITECTURE.md`. For OpenClaw-adjacent agents: `DOCS/OPENCLAW_ECOSYSTEM.md`.
+**Adding/researching site items:** `DOCS/INGEST_WORKFLOW.md` end-to-end (intake JSON → `python tools/verify_intake.py` → import). Placement rules: this file §3 + `CONTENT_GUIDE.md`.
+
+For architecture or nav questions: `DOCS/ARCHITECTURE.md` (§ Content ingest pipeline). For OpenClaw-adjacent agents: `DOCS/OPENCLAW_ECOSYSTEM.md`.
 
 ---
 
@@ -64,14 +66,17 @@ Full templates and tag reference: `DOCS/CONTENT_GUIDE.md`.
 
 ## 4. Adding or changing a site item
 
+**Canonical path (research + import):** `DOCS/INGEST_WORKFLOW.md` — intake JSON → `python tools/verify_intake.py` **PASS** → mutate HTML/JS → post-import grep. Applies to **any** new link, org, chat, tool, or creator batch.
+
 Minimum checklist (do all that apply):
 
-1. **HTML** — link card on the correct page (match existing `.chat-link-card` pattern)
-2. **`js/search-data.js`** — row with correct `category`, `tags`, `url`
-3. **`js/badges.js`** — country flag if the card shows a region (key = exact `.chat-link-name`)
-4. **`companies.html`** — if it's a new organization
-5. **`DOCS/SCRATCHPAD.md`** + **`DOCS/CHANGELOG.md`** — append under `[Unreleased]` or current release
-6. **Sidebar** — if adding a new page, update nav on **all** main `*.html` files (icon + label; use real emoji, never `??` placeholders)
+1. **Intake** — `DOCS/intake/YYYY-MM-DD_slug.intake.json` (copy from `_TEMPLATE.intake.json`; see `_EXAMPLE.intake.json`)
+2. **HTML** — link card on the correct page (match existing `.chat-link-card` pattern)
+3. **`js/search-data.js`** — row with correct `category`, `tags`, `url`
+4. **`js/badges.js`** — country flag if the card shows a region (key = exact `.chat-link-name`)
+5. **`companies.html`** — if it's a new organization
+6. **`DOCS/SCRATCHPAD.md`** + **`DOCS/CHANGELOG.md`** — append under `[Unreleased]` or current release
+7. **Sidebar** — if adding a new page, update nav on **all** main `*.html` files (icon + label; use real emoji, never `??` placeholders)
 
 ### Ordering
 
@@ -145,8 +150,10 @@ When editing sidebar on one page, sync all pages or run `python tools/replace_si
 
 After changes:
 
+- **Content adds:** `python tools/verify_intake.py DOCS/intake/YYYY-MM-DD_slug.intake.json` (pre-import); post-import grep per `DOCS/INGEST_WORKFLOW.md` §6
 - Grep for broken placeholders (`??` in sidebar icons)
 - Confirm new items appear in `js/search-data.js`
+- `node --check js/search-data.js` if search index was edited
 - Open changed HTML locally if layout/nav was touched
 - No build step required — if JS syntax is uncertain, read the file back
 
@@ -158,7 +165,7 @@ After changes:
 |-----------|-----|
 | Reversible, obvious placement | Act — add to correct page + search index |
 | Hub vs lab unclear | Prefer `other-assistants.html` for multi-model / third-party routing |
-| User gives a URL only | Research what it is, pick page from §3, wire search + companies if needed |
+| User gives a URL only | Run **`INGEST_WORKFLOW.md`** — research, intake JSON, then import |
 | Irreversible git ops | Ask first |
 | Version bump | Only on explicit release or when user says "ship" / "release" |
 
@@ -174,7 +181,8 @@ After changes:
 | `.cursor/rules/git-push-never-pull.mdc` | Always — push when shipping; **never pull** |
 | `.cursor/rules/project-workflow.mdc` | Docs, JSON, README |
 | `.cursor/rules/tech-stack-2026.mdc` | HTML, CSS, JS |
+| `DOCS/INGEST_WORKFLOW.md` | Research → import any site content (agent runbook) |
 
 ---
 
-*Last updated: 2026-06-11 (v1.13.0)*
+*Last updated: 2026-06-23 (content ingest architecture)*

@@ -21,13 +21,14 @@ alwaysApply: true
 
 ## Every new link item
 
-1. HTML card on correct page
-2. `js/search-data.js` entry
-3. `js/badges.js` if country flag needed (key = exact `.chat-link-name`)
-4. `companies.html` if new org
-5. `DOCS/SCRATCHPAD.md` + `DOCS/CHANGELOG.md`
+1. **`DOCS/INGEST_WORKFLOW.md`** — intake JSON → `python tools/verify_intake.py` **PASS** → import
+2. HTML card on correct page
+3. `js/search-data.js` entry
+4. `js/badges.js` if country flag needed (key = exact `.chat-link-name`)
+5. `companies.html` if new org
+6. `DOCS/SCRATCHPAD.md` + `DOCS/CHANGELOG.md`
 
-Full checklist: `DOCS/CONTENT_GUIDE.md`.
+Full checklist: `DOCS/CONTENT_GUIDE.md` · Pipeline: `DOCS/ARCHITECTURE.md` § Content ingest pipeline. Site-wide — any product/org/tool batch.
 
 ## Releases
 

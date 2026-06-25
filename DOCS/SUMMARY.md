@@ -1,5 +1,11 @@
 # SUMMARY
 
+## Recent update — 2026-06-23 (Unreleased batch)
+
+- **Content ingest architecture** — Agent-first pipeline for any research → import: **`DOCS/INGEST_WORKFLOW.md`**, **`DOCS/schemas/intake-record.schema.json`**, **`DOCS/intake/`** templates, **`tools/verify_intake.py`**. Documented in **`AGENTS.md`**, **`ARCHITECTURE.md`**, **`CONTENT_GUIDE.md`**, journal **`DOCS/journal/2026-06-23.md`**.
+- **North & Subquadratic** — Cohere **North** (Canada); **Subquadratic** / SubQ products + CLI card.
+- **Common tools** — Homepage + **`tools.html#common-tools`** (Git, Python, Bun).
+
 ## Release v1.13.0 — 2026-06-11
 
 - **Version:** Site badge **v1.13.0** everywhere; **`updates.html`** **Latest** on **v1.13.0**; **`js/updates-data.js`** release card.

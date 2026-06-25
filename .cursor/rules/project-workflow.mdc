@@ -18,6 +18,7 @@ Tech stack versions (e.g., "Node v20", "Jekyll 4.3").
 Deployment commands.
 Inline Comments: Document complex CSS logic (especially container queries or nested contexts) and JS utility functions directly in the code.
 Changelog: Maintain a CHANGELOG.md to track significant updates to the site design or functionality.
+Content ingest: For research → import jobs, follow DOCS/INGEST_WORKFLOW.md; intake JSON in DOCS/intake/; gate with python tools/verify_intake.py before HTML edits.
 3. File Organization
 Components: Keep UI components isolated. If using a framework (React/Vue/Astro), group components by feature (e.g., components/blog/, components/layout/).
 Assets: Store images in an assets/images/ or public/images/ folder. Use descriptive filenames (kebab-case) like blog-post-cover-2025.jpg instead of img001.jpg.

@@ -49,10 +49,16 @@
 │   ├── favicon.svg
 │   └── placeholder.svg
 ├── fetch-github-repos.js   # Optional local: repos → repos.md
+├── tools/
+│   ├── verify_intake.py    # Pre-import gate for DOCS/intake/*.intake.json
+│   └── …                   # replace_sidebar_nav.py, museum catalog generators, etc.
 ├── DOCS/
 │   ├── ARCHITECTURE.md
 │   ├── CHANGELOG.md
 │   ├── CONTENT_GUIDE.md
+│   ├── INGEST_WORKFLOW.md     # Agent runbook: research → intake JSON → import
+│   ├── intake/                # Per-job intake artifacts (_TEMPLATE, _EXAMPLE, YYYY-MM-DD_*.json)
+│   ├── schemas/               # intake-record.schema.json
 │   ├── OPENCLAW_ECOSYSTEM.md  # [2026-04-03] Map: OpenClaw-related projects → site pages
 │   ├── journal/            # Dated release notes (e.g. 2026-03-21.md)
 │   ├── SUMMARY.md
@@ -145,6 +151,26 @@
 - `js/search-data.js` + `js/search.js` — unified search.
 - `js/updates-data.js` + `js/updates.js` — `updates.html` only.
 - `fetch-github-repos.js` — local optional; `repos.md` not required for the live site.
+
+## Content ingest pipeline [AMENDED 2026-06-23]
+
+Agent-first architecture for adding **any** site item (not one-off scripts per product).
+
+```
+User request → Web research → intake JSON → verify_intake.py → HTML + search-data + badges → grep verify → SCRATCHPAD/CHANGELOG
+```
+
+| Stage | Artifact | Owner |
+|-------|----------|-------|
+| Research | `source_urls`, `research.*` in intake | Agent (`WebSearch`, `WebFetch`) |
+| Classify | `kind`, `placement`, `hub_vs_lab` | Agent + `CONTENT_GUIDE.md` / `AGENTS.md` §3 |
+| Gate | `DOCS/intake/YYYY-MM-DD_slug.intake.json` | `tools/verify_intake.py` (deterministic, no network) |
+| Import | `*.html`, `js/search-data.js`, `js/badges.js` | Agent (read-neighbor, minimal diff) |
+| Audit | Optional committed intake file | Repo history |
+
+**Runbook:** `DOCS/INGEST_WORKFLOW.md` · **Schema:** `DOCS/schemas/intake-record.schema.json` · **Templates:** `DOCS/intake/_TEMPLATE.intake.json`, `_EXAMPLE.intake.json`.
+
+**Rule:** Do not mutate HTML or `search-data.js` until intake verify returns **PASS** (unless user says skip intake).
 
 ## Search System
 
