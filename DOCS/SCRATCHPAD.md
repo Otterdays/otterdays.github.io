@@ -2,6 +2,10 @@
 
 # SCRATCHPAD
 
+## 2026-06-25 — Homepage layout refresh
+**What changed:** **`index.html`** — hero split into `.home-identity` + `.home-connect`; stack sections wrapped in `.home-stack` with jump nav; removed duplicate Wispr from Common tools. **`css/style.css`** — side-by-side identity on tablet+, full-width primary links on mobile, paired Daily drivers / Common tools panels on desktop, softer section titles.
+---
+
 ## 2026-06-23 — Search index sync
 **What changed:** **`js/search-data.js`** — hero aliases (Linktree, Dev site, Daily drivers, Common tools), Gear entries, Otterdays Den Server, reTunnel, 18 agent skills; homepage `#daily-drivers` / `#common-tools` anchors.
 ---

@@ -168,19 +168,24 @@
 
     <div class="home">
       <div class="home-hero stagger-1">
-        <figure class="home-portrait stagger-2" aria-label="Ryan Otterdays portraits">
-          <img class="home-portrait__img home-portrait__img--profile" src="images/profile.png"
-            alt="Ryan Otterdays profile" width="180" height="180" loading="eager" fetchpriority="high"
-            decoding="async">
-          <img class="home-portrait__img home-portrait__img--ai" src="images/ai-image-1.png"
-            alt="Ryan Otterdays — AI portrait" width="180" height="180" loading="eager" decoding="async">
-        </figure>
-        <h1 class="home-title stagger-3">Ryan</h1>
-        <img src="images/otterdays-wordmark.png" alt="Otterdays" class="home-wordmark stagger-3" width="200"
-          height="48" loading="eager" decoding="async">
-        <p class="home-handle stagger-3">Developer</p>
-        <p class="home-info stagger-4">12+ years plumbing &mdash; second-generation plumber. 2 years AI coding &amp; engineering.</p>
-        <nav class="home-primary-links stagger-4" aria-label="Primary links">
+        <header class="home-identity stagger-2">
+          <figure class="home-portrait" aria-label="Ryan Otterdays portraits">
+            <img class="home-portrait__img home-portrait__img--profile" src="images/profile.png"
+              alt="Ryan Otterdays profile" width="180" height="180" loading="eager" fetchpriority="high"
+              decoding="async">
+            <img class="home-portrait__img home-portrait__img--ai" src="images/ai-image-1.png"
+              alt="Ryan Otterdays — AI portrait" width="180" height="180" loading="eager" decoding="async">
+          </figure>
+          <div class="home-identity__text">
+            <h1 class="home-title stagger-3">Ryan</h1>
+            <img src="images/otterdays-wordmark.png" alt="Otterdays" class="home-wordmark stagger-3" width="200"
+              height="48" loading="eager" decoding="async">
+            <p class="home-handle stagger-3">Developer</p>
+          </div>
+        </header>
+        <div class="home-connect stagger-4">
+        <p class="home-info">12+ years plumbing &mdash; second-generation plumber. 2 years AI coding &amp; engineering.</p>
+        <nav class="home-primary-links" aria-label="Primary links">
           <a href="https://linktr.ee/RyTheGuy95" rel="noopener noreferrer" target="_blank"
             class="home-primary-link home-primary-link--linktree" title="RyTheGuy95 on Linktree">
             <span class="home-primary-link__icon" aria-hidden="true">
@@ -230,12 +235,13 @@
             <span class="home-primary-link__arrow" aria-hidden="true">→</span>
           </a>
         </nav>
-        <nav class="home-social home-social--more stagger-4" aria-label="More profiles">
+        <nav class="home-social home-social--more" aria-label="More profiles">
           <a href="https://modrinth.com/user/OtterDays" rel="noopener noreferrer" target="_blank" class="home-social__link"
             title="OtterDays on Modrinth">Modrinth</a>
           <a href="https://itch.io/profile/otterdays" rel="noopener noreferrer" target="_blank"
             class="home-social__link" title="OtterDays on itch.io">itch.io</a>
         </nav>
+        </div>
         <details class="home-projects-drawer stagger-5">
           <summary class="home-projects-drawer__summary">Projects &amp; repos</summary>
           <div class="home-projects-drawer__body">
@@ -386,7 +392,15 @@
         </details>
       </div>
 
-      <section class="home-features home-daily-drivers stagger-2" id="daily-drivers" aria-labelledby="daily-drivers-heading">
+      <div class="home-stack stagger-2">
+        <nav class="home-jump" aria-label="On this page">
+          <a href="#daily-drivers" class="home-jump__link">Daily drivers</a>
+          <a href="#common-tools" class="home-jump__link">Common tools</a>
+          <a href="#gear" class="home-jump__link">Gear</a>
+        </nav>
+
+        <div class="home-stack-panels">
+      <section class="home-features home-daily-drivers" id="daily-drivers" aria-labelledby="daily-drivers-heading">
         <h2 class="home-features-title" id="daily-drivers-heading">Daily drivers</h2>
         <p class="home-daily-drivers-lede">Desktop and mobile apps I actually run — not a full catalog, just what sticks.</p>
 
@@ -452,12 +466,12 @@
             <span class="daily-driver-card__arrow" aria-hidden="true">→</span>
           </a>
         </div>
-        <p class="home-daily-drivers-foot">Full tool directory on <a href="tools.html">Tools</a> · projects in <a href="my-creations.html">My Creations</a>.</p>
+        <p class="home-daily-drivers-foot">Full directory on <a href="tools.html">Tools</a> · projects in <a href="my-creations.html">My Creations</a>.</p>
       </section>
 
-      <section class="home-features home-common-tools stagger-3" id="common-tools" aria-labelledby="common-tools-heading">
+      <section class="home-features home-common-tools" id="common-tools" aria-labelledby="common-tools-heading">
         <h2 class="home-features-title" id="common-tools-heading">Common tools</h2>
-        <p class="home-common-tools-lede">The baseline stack on every machine — version control, scripting, and a fast JS runtime.</p>
+        <p class="home-common-tools-lede">Baseline stack on every machine — version control, scripting, and a fast JS runtime.</p>
 
         <div class="common-tools-grid">
           <a href="https://git-scm.com/" rel="noopener noreferrer" target="_blank"
@@ -505,26 +519,12 @@
             </span>
             <span class="daily-driver-card__arrow" aria-hidden="true">→</span>
           </a>
-          <a href="https://wisprflow.ai/" rel="noopener noreferrer" target="_blank"
-            class="daily-driver-card daily-driver-card--wispr">
-            <span class="daily-driver-card__icon" aria-hidden="true">
-              <img src="https://favicon.show/wisprflow.ai?fallback=letter&letter=W" alt="" width="32" height="32"
-                loading="lazy" decoding="async">
-            </span>
-            <span class="daily-driver-card__body">
-              <span class="daily-driver-card__head">
-                <span class="daily-driver-card__name">Wispr Flow</span>
-                <span class="daily-driver-card__platform">Desktop &amp; Mobile</span>
-              </span>
-              <span class="daily-driver-card__desc">Voice dictation into any app — Mac, Windows, iPhone, Android.</span>
-            </span>
-            <span class="daily-driver-card__arrow" aria-hidden="true">→</span>
-          </a>
         </div>
         <p class="home-common-tools-foot">Also on <a href="tools.html#common-tools">Tools → Common tools</a>.</p>
       </section>
+        </div>
 
-      <section class="home-features home-gear stagger-4" id="gear" aria-labelledby="gear-heading">
+      <section class="home-features home-gear" id="gear" aria-labelledby="gear-heading">
         <h2 class="home-features-title" id="gear-heading">Gear</h2>
         <p class="home-gear-lede">Hardware I actually run — laptop, tablet, and desktop.</p>
 
@@ -591,6 +591,7 @@
           </a>
         </div>
       </section>
+      </div>
     </div>
     <!-- Site Footer -->
     <footer class="site-footer">
