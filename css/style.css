@@ -1270,6 +1270,64 @@ html {
   border-top: none;
 }
 
+.home-stack .home-featured {
+  margin-bottom: 1.75rem;
+}
+
+.home-featured-lede {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+  text-wrap: pretty;
+}
+
+.home-featured-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  padding: 0.85rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 38%, var(--border));
+  border-radius: 16px;
+  background: linear-gradient(
+    155deg,
+    color-mix(in srgb, var(--accent) 10%, transparent) 0%,
+    color-mix(in srgb, var(--fg) 4%, transparent) 72%
+  );
+  box-shadow: 0 10px 32px color-mix(in srgb, var(--accent) 14%, transparent);
+}
+
+@media (min-width: 42rem) {
+  .home-featured-box {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+  }
+}
+
+.home-featured-box .feature-card {
+  align-items: stretch;
+  text-align: start;
+  justify-content: flex-start;
+  min-height: 0;
+  padding: 0.7rem;
+  height: 100%;
+}
+
+.home-featured-box .link-cluster {
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  padding: 0.15rem;
+}
+
+.home-featured-box .feature-card:focus-within {
+  outline: 2px solid color-mix(in srgb, var(--accent) 55%, var(--border));
+  outline-offset: 3px;
+}
+
 /* Hero — primary outbound links (Linktree, Indeed, GitHub, dev site) */
 .home-primary-links {
   display: grid;
@@ -1865,6 +1923,26 @@ html {
 }
 
 .feature-card--blockpanel:focus-within {
+  outline: 2px solid color-mix(in srgb, var(--cluster-accent) 72%, var(--border));
+  outline-offset: 3px;
+}
+
+.feature-card--zombobs {
+  --cluster-accent: #e11d48;
+  border-color: color-mix(in srgb, var(--cluster-accent) 38%, var(--border));
+  background: linear-gradient(
+    155deg,
+    color-mix(in srgb, var(--cluster-accent) 12%, transparent) 0%,
+    color-mix(in srgb, var(--fg), transparent 96%) 58%
+  );
+}
+
+.feature-card--zombobs:hover {
+  border-color: color-mix(in srgb, var(--cluster-accent) 52%, var(--border));
+  box-shadow: 0 12px 32px color-mix(in srgb, var(--cluster-accent) 22%, transparent);
+}
+
+.feature-card--zombobs:focus-within {
   outline: 2px solid color-mix(in srgb, var(--cluster-accent) 72%, var(--border));
   outline-offset: 3px;
 }
@@ -2546,7 +2624,8 @@ html {
 @media (max-width: 42rem) {
   .home-features-grid,
   .daily-drivers-grid,
-  .gear-grid {
+  .gear-grid,
+  .home-featured-box {
     grid-template-columns: 1fr;
   }
 
