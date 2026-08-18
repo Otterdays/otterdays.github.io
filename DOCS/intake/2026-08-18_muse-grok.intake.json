@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0",
+  "intake_id": "2026-08-18_muse-grok",
+  "created": "2026-08-18",
+  "agent": "cursor-agent",
+  "user_prompt": "Add the meta muse coding harness to the website to the correct section, and grok build and grok bot. Research all info before adding to the correctly research section.\n\nPush all",
+  "status": "verified",
+  "blockers": [],
+  "entities": [
+    {
+      "display_name": "Muse Code",
+      "kind": "tool",
+      "organization": "Meta",
+      "country_iso2": "US",
+      "primary_url": "https://developer.meta.com/ai/products/muse-code/",
+      "source_urls": [
+        "https://developer.meta.com/ai/products/muse-code/",
+        "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2",
+        "https://dev.meta.ai/docs/muse-code/extending/"
+      ],
+      "one_line": "Meta terminal coding harness (beta) powered by Muse Spark 1.2; persistent background agents and a local event log.",
+      "placement": {
+        "html_pages": ["tools.html", "companies.html"],
+        "html_sections": ["CLI", "Meta"],
+        "companies_section": "Meta",
+        "new_company_section": false,
+        "badge_keys": ["Muse Code"],
+        "ordering": "alpha",
+        "search_entries": [
+          {
+            "title": "Muse Code",
+            "desc": "Meta terminal coding harness (beta) powered by Muse Spark 1.2; persistent background agents and a local event log.",
+            "category": "tool",
+            "tags": ["CLI", "Agent", "Meta", "Harness"],
+            "url": "tools.html"
+          }
+        ]
+      },
+      "research": {
+        "hub_vs_lab": "neither",
+        "access_model": "public",
+        "primary_source_verified": true,
+        "notes": "Official name is Muse Code (the coding harness), not a separate Meta Muse product. Powered by Muse Spark 1.2, co-trained with the harness. Install: curl -fsSL https://dev.meta.ai/install.sh | bash (macOS/Linux). Features: async persistent background agents, append-only local event log (replay-exact, restart-safe), bundled skills /plan /grill /goal, subagent fan-out, MCP, headless CI. Product page developer.meta.com/ai/products/muse-code/. Place in tools.html CLI A-Z (after Mistral Vibe, before NemoClaw) plus companies.html Meta. Do not put on chats.html (not a lab chat). Muse Spark 1.2 is the model, not the harness card."
+      }
+    },
+    {
+      "display_name": "Grok Build",
+      "kind": "tool",
+      "organization": "xAI",
+      "country_iso2": "US",
+      "primary_url": "https://x.ai/build",
+      "source_urls": [
+        "https://x.ai/build",
+        "https://docs.x.ai/build/overview",
+        "https://github.com/xai-org/grok-build",
+        "https://x.ai/cli"
+      ],
+      "one_line": "xAI terminal coding agent powered by Grok 4.6; TUI, skills, subagents, MCP, and headless CI.",
+      "placement": {
+        "html_pages": ["tools.html", "companies.html"],
+        "html_sections": ["CLI", "xAI"],
+        "companies_section": "xAI",
+        "new_company_section": false,
+        "badge_keys": ["Grok Build"],
+        "ordering": "alpha",
+        "search_entries": [
+          {
+            "title": "Grok Build",
+            "desc": "xAI terminal coding agent powered by Grok 4.6; TUI, skills, subagents, MCP, and headless CI.",
+            "category": "tool",
+            "tags": ["CLI", "Agent", "xAI", "TUI"],
+            "url": "tools.html"
+          }
+        ]
+      },
+      "research": {
+        "hub_vs_lab": "neither",
+        "access_model": "public",
+        "primary_source_verified": true,
+        "notes": "SpaceXAI/xAI coding agent harness and TUI. Product: x.ai/build (also x.ai/cli). Install: curl -fsSL https://x.ai/cli/install.sh | bash; Windows irm https://x.ai/cli/install.ps1 | iex. Command: grok. Powered by Grok 4.6. Interactive TUI, headless scripting, Agent Client Protocol (ACP). Skills, plugins, marketplaces, hooks, MCP, AGENTS.md, plan mode, subagents, worktrees. GitHub xai-org/grok-build Apache 2.0 (Rust). Docs docs.x.ai/build/overview. Place CLI A-Z after Goose, before Junie CLI; companies.html xAI after Grok. Distinct from Grok chat (chats.html) and Grok Bot."
+      }
+    },
+    {
+      "display_name": "Grok Bot",
+      "kind": "tool",
+      "organization": "xAI",
+      "country_iso2": "US",
+      "primary_url": "https://x.ai/bot",
+      "source_urls": [
+        "https://x.ai/bot",
+        "https://docs.x.ai/grok-bot/overview",
+        "https://x.ai/news/introducing-grok-bot",
+        "https://docs.x.ai/grok-bot/get-started"
+      ],
+      "one_line": "xAI AI teammates on a persistent cloud computer; message from desktop or iOS until they need approval.",
+      "placement": {
+        "html_pages": ["tools.html", "companies.html"],
+        "html_sections": ["computer-automation", "xAI"],
+        "companies_section": "xAI",
+        "new_company_section": false,
+        "badge_keys": ["Grok Bot"],
+        "ordering": "curated",
+        "search_entries": [
+          {
+            "title": "Grok Bot",
+            "desc": "xAI AI teammates on a persistent cloud computer; message from desktop or iOS until they need approval.",
+            "category": "tool",
+            "tags": ["Agent", "Cloud", "xAI", "Computer Automation"],
+            "url": "tools.html#computer-automation"
+          }
+        ]
+      },
+      "research": {
+        "hub_vs_lab": "neither",
+        "access_model": "public",
+        "primary_source_verified": true,
+        "notes": "Not a coding CLI and not Grok chat. Durable named AI teammates with a user-scoped persistent cloud Linux VM (browser, filesystem, terminal, computer use, MCP). Multiple Bots share one computer — not a security boundary. Desktop macOS/Windows + iOS. Early beta; included with SuperGrok Heavy, Cursor Ultra, Cursor Teams Premium. Product https://x.ai/bot launched 2026-08-11. Place tools.html#computer-automation with other hosted cloud agents (before MaxClaw), plus companies.html xAI. Do not put on chats.html or other-assistants.html."
+      }
+    }
+  ]
+}

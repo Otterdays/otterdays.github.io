@@ -1,5 +1,11 @@
 # SUMMARY
 
+## Recent update — 2026-08-18 (Muse Code, Grok Build, Grok Bot)
+
+- **Muse Code** — Meta terminal coding harness (Muse Spark 1.2) on Tools CLI + Companies (Meta).
+- **Grok Build** — xAI coding TUI (Grok 4.6) on Tools CLI + Companies (xAI).
+- **Grok Bot** — cloud-computer AI teammates on Tools computer-automation + Companies (xAI).
+
 ## Recent update — 2026-08-18 (Zombobs feature link)
 
 - **Zombobs** — Homepage link-cluster (Site / GitHub / itch.io) alongside Arteria and BlockPanel V3; [otterdays.github.io/Zombobs/](https://otterdays.github.io/Zombobs/); My Creations card + search index.

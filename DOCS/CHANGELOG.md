@@ -6,6 +6,8 @@ All notable changes to this project are documented in this file. Format: [Keep a
 
 ## [Unreleased]
 
+- **Muse Code, Grok Build, Grok Bot (2026-08-18)** — **Muse Code** (Meta terminal harness, Muse Spark 1.2) on **`tools.html` CLI** + **`companies.html` Meta**. **Grok Build** (xAI TUI / Grok 4.6) on CLI + xAI. **Grok Bot** (cloud-computer teammates) on **`tools.html#computer-automation`** + xAI. Intake `DOCS/intake/2026-08-18_muse-grok.intake.json`.
+
 - **Zombobs feature link (2026-08-18)** — Homepage **`.link-cluster`** for **[Zombobs](https://otterdays.github.io/Zombobs/)** (Site / GitHub / itch.io) alongside Arteria and BlockPanel V3; filled **`my-creations.html`** card; **`js/search-data.js`**; **`css/style.css`** rose accent. Intake `DOCS/intake/2026-08-18_zombobs.intake.json`.
   [AMENDED 2026-08-18]: Homepage featured trio is **BlockPanel V3**, **Arteria** (one cluster — Site / v2 / GitHub; not “v3”), and **Zombobs**. Merged the old Arteria v1 + v2 clusters.
   [AMENDED 2026-08-18]: **Featured** homepage box (`#featured`) holds the trio in colored feature cards; Daily drivers swaps **Inno Setup** → **OpenCode** ([opencode.ai](https://opencode.ai/)). Inno Setup remains on **`tools.html#packaging-installers`**.

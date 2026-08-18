@@ -2,6 +2,10 @@
 
 # SCRATCHPAD
 
+## 2026-08-18 — Ingest: muse-grok
+**What changed:** **Muse Code** → `tools.html` CLI (A–Z after Mistral Vibe) + `companies.html` Meta. **Grok Build** → CLI (after Goose) + xAI. **Grok Bot** → `#computer-automation` (hosted cloud teammate, before MaxClaw) + xAI. Search + USA badges. Intake `DOCS/intake/2026-08-18_muse-grok.intake.json`.
+---
+
 ## 2026-08-18 — Ingest: zombobs
 **What changed:** Featured **Zombobs** homepage `.link-cluster` (peer of Arteria v1/v2 + BlockPanel V3) — Site [otterdays.github.io/Zombobs/](https://otterdays.github.io/Zombobs/) / GitHub / itch.io. Filled blank **`my-creations.html`** card; **`js/search-data.js`**; **`css/style.css`** `.link-cluster--zombobs`; OG/Twitter mention. Intake `DOCS/intake/2026-08-18_zombobs.intake.json`. GAME-Zombobs-3D left untouched.
 [AMENDED 2026-08-18]: Featured trio is **BlockPanel V3**, **Arteria** (single cluster, not v3), **Zombobs**. Merged Arteria v1/v2 homepage clusters into one **Arteria** feature (Site / v2 / GitHub). Search row **Arteria** added.
