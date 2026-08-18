@@ -279,6 +279,8 @@ Append only:
 
 **Do not** bump version badges unless user ships a release.
 
+[AMENDED 2026-08-18]: Also prepend matching bullets to the **Unreleased** card in **`js/updates-data.js`** (`updates.html` timeline). If the product is on `companies.html`, add a **`category: "company"`** row in **`js/search-data.js`**. If placement/structure changed, append `[AMENDED YYYY-MM-DD]` notes on **`CONTENT_GUIDE.md`** / **`ARCHITECTURE.md`**. Significant batches get **`DOCS/journal/YYYY-MM-DD.md`**. Still no version-badge bump until the user ships.
+
 ---
 
 ## 8. Output bundle (deliver to user)

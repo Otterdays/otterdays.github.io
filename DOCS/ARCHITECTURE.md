@@ -8,7 +8,7 @@
 
 ```
 /
-├── index.html              # Home: profile, social links
+├── index.html              # Home: profile, social links. [AMENDED 2026-08-18]: **Featured** (`#featured` / `.home-featured-box`) — BlockPanel V3, Arteria (one cluster), Zombobs; Daily drivers includes OpenCode (not Inno Setup).
 ├── my-creations.html       # Personal creations grid with badges (~60+ projects); nav label **My Creations**
 ├── programs.html           # Redirect → my-creations.html (legacy URL)
 ├── chats.html              # AI Chats: Provider model chats by country
@@ -21,7 +21,7 @@
 ├── arcee.html              # Premium provider catalog: Arcee AI models & merge stack
 ├── media.html              # AI Media Gen: Video, Image, Audio
 ├── companies.html          # AI & dev tools by company (80+); collapsible sections
-├── tools.html              # CLI, IDE, Browser based builder, Browser Tools, Web builders, DevOps, Reference, etc. (A–Z within sections). [AMENDED 2026-03-29]: **Computer automation (agents)** — curated order (OpenClaw, Playwright, Hermes Agent, claw ecosystem); not strict A–Z. [AMENDED 2026-04-03]: Extended claw alts, Playwright MCP, awesome list, link to **Openclaw_variations.md** on GitHub. [AMENDED 2026-04-27]: **Design & UI** (`#design-ui`) — Coolors, Mobbin, Awesome DESIGN.md (VoltAgent), Button Stealer; **Games tools** section — MC Tools card (section renamed from Game development).
+├── tools.html              # CLI, IDE, Browser based builder, Browser Tools, Web builders, DevOps, Reference, etc. (A–Z within sections). [AMENDED 2026-03-29]: **Computer automation (agents)** — curated order (OpenClaw, Playwright, Hermes Agent, claw ecosystem); not strict A–Z. [AMENDED 2026-04-03]: Extended claw alts, Playwright MCP, awesome list, link to **Openclaw_variations.md** on GitHub. [AMENDED 2026-04-27]: **Design & UI** (`#design-ui`) — Coolors, Mobbin, Awesome DESIGN.md (VoltAgent), Button Stealer; **Games tools** section — MC Tools card (section renamed from Game development). [AMENDED 2026-08-18]: CLI A–Z includes **Muse Code** (Meta) and **Grok Build** (xAI). **Grok Bot** (xAI) is in `#computer-automation` (hosted cloud teammate, before MaxClaw), not CLI.
 ├── Openclaw_variations.md  # Repo-only: OpenClaw alternatives, decision guide (linked from tools.html).
 ├── offline-survival.html   # Offline resilience: Project NOMAD, Kiwix, IIAB, building blocks
 ├── specials.html           # Specials: Free domains, Learning, Games; link hub to offline-survival
@@ -88,12 +88,12 @@
 
 | Page           | Sections / content |
 |----------------|--------------------|
-| **index**      | Profile, image, home links (X, Bluesky, GitHub). **Bento layout:** Image (col-span-2 on mobile), profile text. |
+| **index**      | Profile, image, home links (X, Bluesky, GitHub). **Bento layout:** Image (col-span-2 on mobile), profile text. [AMENDED 2026-08-18]: Jump nav **Featured** → Daily drivers → Common tools → Gear. **`#featured`** holds BlockPanel V3, Arteria (one cluster), Zombobs. Daily drivers: Cursor, Docker, **OpenCode**, Wispr Flow. |
 | **my-creations** | Profile header + creations grid; `js/badges.js` adds badges by title. **Glassmorphic cards.** |
 | **chats**      | **Assistants** & **Provider hubs**: Bento grid layout with featured cards (e.g. OpenAI, Anthropic). |
 | **media**      | **Video**, **Image**, **Audio**, **Platforms**: Collapsible sections. Bento grid layout with emoji accents. |
 | **companies**  | One section per company (80+); collapsible; country badges on h2. |
-| **tools**      | **CLI** (incl. AI agents, **Fresh** / **Orbiton** TUI editors), **Browser based builder**, **IDE**, **Web builders**, **Browser Tools**, **DevOps**, **Reference** (e.g. Awesome TUIs), etc.; collapsible + A–Z filter bar. |
+| **tools**      | **CLI** (incl. AI agents, **Fresh** / **Orbiton** TUI editors), **Browser based builder**, **IDE**, **Web builders**, **Browser Tools**, **DevOps**, **Reference** (e.g. Awesome TUIs), etc.; collapsible + A–Z filter bar. [AMENDED 2026-08-18]: CLI includes **Muse Code** and **Grok Build**. **Grok Bot** is under `#computer-automation` (curated order). |
 | **specials**   | **Free domains**, **Learning**, **Games**: Collapsible sections; **Offline resilience** intro + card → `offline-survival.html`. |
 | **offline-survival** | **Project NOMAD** (featured), building blocks (Kiwix, Ollama, OSM, Kolibri), **Internet in a Box**; install snippet; cross-links to Tools / Specials / Museum. |
 | **tools** (`#agent-skills`) | [AMENDED 2026-06-11] SkillBox, skills.sh, skills directory cards; links **`DOCS/CURSOR_IDE_SETUP.md`**. |
@@ -154,10 +154,12 @@
 
 ## Content ingest pipeline [AMENDED 2026-06-23]
 
+[AMENDED 2026-08-18]: Document stage also prepends the **Unreleased** card in `js/updates-data.js` (`updates.html` timeline). Company products get a matching `category: "company"` search row.
+
 Agent-first architecture for adding **any** site item (not one-off scripts per product).
 
 ```
-User request → Web research → intake JSON → verify_intake.py → HTML + search-data + badges → grep verify → SCRATCHPAD/CHANGELOG
+User request → Web research → intake JSON → verify_intake.py → HTML + search-data + badges → grep verify → SCRATCHPAD/CHANGELOG + updates-data Unreleased
 ```
 
 | Stage | Artifact | Owner |
@@ -182,6 +184,7 @@ User request → Web research → intake JSON → verify_intake.py → HTML + se
 - **Trigger:** Search button in nav bar + `Cmd/Ctrl+K` keyboard shortcut
 - **Search algorithm:** Fuzzy matching with scored results (title > tags > category > description)
 - **UI:** Glassmorphic modal with results list, category icons, and hints
+  [AMENDED 2026-08-18]: Products listed on `companies.html` also need a `category: "company"` row (in addition to the tools/chats row) so the search modal surfaces them under Companies.
 - **Navigation:** Arrow keys (↑↓), Enter to select, Escape to close
 - **Accessibility:** ARIA labels, focus trap, screen reader support
 

@@ -11,8 +11,19 @@ const UPDATES_DATA = [
       {
         type: "added",
         items: [
+          "**Muse Code** — Meta terminal coding harness (beta, Muse Spark 1.2) on **`tools.html` CLI** (A–Z after Mistral Vibe) and **`companies.html` Meta**; [developer.meta.com/ai/products/muse-code](https://developer.meta.com/ai/products/muse-code/).",
+          "**Grok Build** — xAI terminal TUI coding agent (Grok 4.6) on **`tools.html` CLI** (A–Z after Goose) and **`companies.html` xAI**; [x.ai/build](https://x.ai/build).",
+          "**Grok Bot** — xAI cloud-computer teammates on **`tools.html#computer-automation`** (hosted, before MaxClaw — not A–Z) and **`companies.html` xAI**; [x.ai/bot](https://x.ai/bot). Distinct from Grok chat and Grok Build.",
+          "**Homepage Featured** — **`#featured`** box for **BlockPanel V3**, **Arteria** (one cluster — Site / v2 / GitHub; idle RPG, not “v3”), and **Zombobs** ([otterdays.github.io/Zombobs/](https://otterdays.github.io/Zombobs/) Site / GitHub / itch.io); filled **`my-creations.html`** Zombobs card.",
           "**New Inspirations** — Added **GameLinked** (Hardware & PC), **DeFranco News** (News & commentary), **Imminence** (Music), **Out Of Line Music** (Music), **Sumerian Records** (Music), **SWARM** (Music), and **Ryan Trahan** (Culture & long-form) to the inspirations directory and search index.",
           "**Minecraft Inspirations** — Added **Chuck Nasty**, **Technoblade**, and **MrTechnodad** to the Culture & long-form section in the inspirations directory and search index."
+        ]
+      },
+      {
+        type: "changed",
+        items: [
+          "**Daily drivers** — Homepage swap **Inno Setup** → **OpenCode** ([opencode.ai](https://opencode.ai/)). Inno Setup remains on **`tools.html#packaging-installers`**.",
+          "**Search modal** — Company-category rows for **Muse Code**, **Grok Build**, and **Grok Bot**; Meta / xAI tags updated so site search finds the new products."
         ]
       }
     ]
