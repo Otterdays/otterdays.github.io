@@ -1,5 +1,11 @@
 # SUMMARY
 
+## Recent update — 2026-08-18 (docs + updates/search modals)
+
+- **`js/updates-data.js`** Unreleased card prepended (Muse/Grok ingest + Featured + OpenCode).
+- **Search modal** — company-category rows for Muse Code, Grok Build, Grok Bot.
+- **Docs** — append-only notes on `CONTENT_GUIDE.md`, `ARCHITECTURE.md`, `INGEST_WORKFLOW.md`; journal `DOCS/journal/2026-08-18.md`. Still **v1.13.0**.
+
 ## Recent update — 2026-08-18 (Muse Code, Grok Build, Grok Bot)
 
 - **Muse Code** — Meta terminal coding harness (Muse Spark 1.2) on Tools CLI + Companies (Meta).

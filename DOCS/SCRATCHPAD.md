@@ -2,6 +2,10 @@
 
 # SCRATCHPAD
 
+## 2026-08-18 — Docs + updates/search modals
+**What changed:** Synced **`js/updates-data.js` Unreleased** card (Muse Code, Grok Build, Grok Bot, Featured trio, Daily drivers OpenCode). Search modal **company** rows for the three products. Append-only notes on **`CONTENT_GUIDE.md`**, **`ARCHITECTURE.md`**, **`INGEST_WORKFLOW.md`**; journal **`DOCS/journal/2026-08-18.md`**. No version bump (still **v1.13.0**).
+---
+
 ## 2026-08-18 — Ingest: muse-grok
 **What changed:** **Muse Code** → `tools.html` CLI (A–Z after Mistral Vibe) + `companies.html` Meta. **Grok Build** → CLI (after Goose) + xAI. **Grok Bot** → `#computer-automation` (hosted cloud teammate, before MaxClaw) + xAI. Search + USA badges. Intake `DOCS/intake/2026-08-18_muse-grok.intake.json`.
 ---

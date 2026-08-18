@@ -19,6 +19,7 @@ When adding **any** new item:
 6. ✅ **Tools page:** Keep CLI, IDE, and Browser Tools in **alphabetical order** by card name (`.chat-link-name`)
 7. ✅ Update `DOCS/SCRATCHPAD.md` and `DOCS/CHANGELOG.md`
 8. ✅ On a **numbered release**: bump `js/updates-data.js`, `DOCS/CHANGELOG.md`, `DOCS/SUMMARY.md`, version badge (`v1.x.x` + title) on **all** `.html` pages, and add `DOCS/journal/YYYY-MM-DD.md` if significant
+   [AMENDED 2026-08-18]: Between releases, prepend Unreleased work to the **Unreleased** card in **`js/updates-data.js`** (newest first — this is the `updates.html` timeline / “modal”). Add matching **`category: "company"`** search rows when a product lands on `companies.html`. Do **not** bump HTML version badges until the user ships.
 
 ---
 
@@ -49,8 +50,9 @@ Quick use:
 | `other-assistants.html` | Other assistants | Answer engines, multi-model hubs, specialty chats (Perplexity, Poe, T3 Chat, NotebookLM, etc.) grouped by country [AMENDED 2026-06-10] |
 | `specials.html` | AI social networks (agent-first) | Moltbook and similar agent-only social platforms [AMENDED 2026-06-10] |
 | `media.html` | AI media generation tools | Video, image, audio, 3D generation |
-| `tools.html` | Developer tools | CLI, IDE, browser, tunneling, DevOps |
+| `tools.html` | Developer tools | CLI, IDE, browser, tunneling, DevOps [AMENDED 2026-08-18]: CLI A–Z — **Muse Code**, **Grok Build**; `#computer-automation` curated — **Grok Bot** (not A–Z, not chats) |
 | `companies.html` | Organizations/companies | Every company with products on the site |
+| `index.html` | Homepage featured / daily drivers / common tools / gear | [AMENDED 2026-08-18] Featured box (`#featured`): BlockPanel V3, Arteria, Zombobs. Daily drivers: Cursor, Docker, OpenCode, Wispr Flow |
 | `specials.html` | Free resources, learning | Domains, courses, unique offers |
 | `offline-survival.html` | Offline / resilience knowledge | Project NOMAD, Kiwix, local AI, maps, prep stacks; [AMENDED 2026-04-04] |
 | ~~`skills.html`~~ | *(deprecated 2026-06-11)* | Moved to **`tools.html#agent-skills`** + **`DOCS/CURSOR_IDE_SETUP.md`** |
@@ -80,10 +82,10 @@ Quick use:
 ### Page-specific notes
 
 - **Companies page** (`companies.html`): Has body class `companies-page` and loads `js/companies.js`. Sections are collapsible (toggle at top center). Minimization styles live under `.companies-page` in `css/style.css`; other pages are unaffected.
-- **Tools page** (`tools.html`): CLI, IDE, and Browser Tools sections are kept **alphabetically** by card name (`.chat-link-name`). When adding a new card, insert it in A–Z order within its section. [AMENDED 2026-03-29]: The **Computer automation (agents)** section (`#computer-automation`) uses **curated narrative order** (pioneer stack, Playwright, cross-vendor agents like Hermes Agent, then OpenClaw-adjacent “claw” projects) — do **not** re-sort that block to strict A–Z without updating this note. Canonical list of AI IDEs/CLIs/coding assistants: tools.html (sections IDE, CLI, Coding Assistants) plus `js/search-data.js` for search.
+- **Tools page** (`tools.html`): CLI, IDE, and Browser Tools sections are kept **alphabetically** by card name (`.chat-link-name`). When adding a new card, insert it in A–Z order within its section. [AMENDED 2026-03-29]: The **Computer automation (agents)** section (`#computer-automation`) uses **curated narrative order** (pioneer stack, Playwright, cross-vendor agents like Hermes Agent, then OpenClaw-adjacent “claw” projects) — do **not** re-sort that block to strict A–Z without updating this note. Canonical list of AI IDEs/CLIs/coding assistants: tools.html (sections IDE, CLI, Coding Assistants) plus `js/search-data.js` for search. [AMENDED 2026-08-18]: **Muse Code** (Meta) and **Grok Build** (xAI) live on **CLI A–Z**. **Grok Bot** (xAI hosted cloud teammate) lives in **`#computer-automation`** (before MaxClaw) — not CLI, not `chats.html`, not A–Z.
 - **Chats page** (`chats.html`) [AMENDED 2026-06-10]: **Provider Chats** only — first-party **lab** interfaces grouped by **country of origin** (h3 per region, A–Z within each). Not multi-model hubs (Poe, T3 Chat) — those go on **`other-assistants.html`**. [AMENDED 2026-06-10]: **T3 Chat** moved off Provider Chats (hub, not a lab). [AMENDED 2026-06-10]: **Kyutai** (France) — open-science lab with Moshi & Unmute voice demos. [AMENDED 2026-06-10]: **Yandex** (Russia) — YandexGPT at ai.yandex.com/eng.
 - **Other Assistants** (`other-assistants.html`) [AMENDED 2026-06-10]: Perplexity, **OpenRouter**, **Duck.ai**, Poe, **T3 Chat**, NotebookLM, Character.AI, Copilot, HuggingChat, Cohere, Pi — grouped by country. Cross-link from **`chats.html`**. Hubs/providers (not labs): **OpenRouter**, **Duck.ai**, **T3 Chat**, Poe.
-- **Placement** [AMENDED 2026-06-10]: Local PC agent tools (**OpenClaw**, **NanoClaw**, **NemoClaw**) → **`tools.html`** (`#computer-automation` / CLI). Agent-first social (**Moltbook**) → **`specials.html`**.
+- **Placement** [AMENDED 2026-06-10]: Local PC agent tools (**OpenClaw**, **NanoClaw**, **NemoClaw**) → **`tools.html`** (`#computer-automation` / CLI). Agent-first social (**Moltbook**) → **`specials.html`**. [AMENDED 2026-08-18]: Hosted cloud teammates like **Grok Bot** also go in **`#computer-automation`** (curated order), not Provider Chats and not CLI A–Z.
 - **OpenClaw ecosystem** [AMENDED 2026-04-03]: Long-form notes and decision guide live in repo-root **`Openclaw_variations.md`** (not built for GitHub Pages). **Site map** (project → `tools.html` / `companies.html` / `specials.html`): **`DOCS/OPENCLAW_ECOSYSTEM.md`**. When adding a new claw-class or adjacent agent: (1) card in **`#computer-automation`** (preserve narrative order), (2) row in **`DOCS/OPENCLAW_ECOSYSTEM.md`**, (3) **`js/search-data.js`**, (4) optional bullet in **`Openclaw_variations.md`**, (5) country badge in **`js/badges.js`** if the card should show a flag (match `.chat-link-name` exactly).
 - **Inspirations** (`inspirations.html`) [AMENDED 2026-06-11]: **Informative directory** — factual third-person blurbs; no catchphrases, emoji stats, gradient banners, or CTA buttons. Read the **AGENT NOTE** HTML comment at top of the file. Layout: `.inspirations-sections` responsive grid (1 → 2 → 3 → 4 → 5 columns via `@container` on `main.content`, max-width 2800px) wrapping `.inspiration-section` cards; each section has `h2` + `.inspiration-list` entry grid (`auto-fit` when ≤3 section columns; single column when 4–5 section columns). **A–Z within each section**. Pick section: Game development · Software engineering · AI & machine learning · Hardware & PC · Nature & hobbies · News & commentary · Late-night talk shows · Music · Culture & long-form. Also add **`js/search-data.js`** (`category: page`).
 
@@ -196,6 +198,7 @@ If you add a new tool/chat/media from a company not yet listed:
 1. Add a new section to `companies.html`
 2. Add a search entry with `category: "company"`
 3. Link to their main product(s)
+   [AMENDED 2026-08-18]: New **products** on an existing org (e.g. Muse Code under Meta, Grok Build / Grok Bot under xAI) also get their own `category: "company"` search rows so the search modal lists them under Companies.
 
 ### Company Section Template
 
@@ -223,6 +226,8 @@ After adding content, update:
 3. **`DOCS/CHANGELOG.md`** — Add under `[Unreleased]` or current version
 4. **`DOCS/ARCHITECTURE.md`** — If adding new sections or page structure changes
 5. **`DOCS/SUMMARY.md`** — Brief note if the change is user-visible or architectural
+6. [AMENDED 2026-08-18] **`js/updates-data.js`** — Prepend bullets to the **Unreleased** card (updates.html timeline). Numbered-release bumps stay on checklist item 8.
+7. [AMENDED 2026-08-18] **`DOCS/journal/YYYY-MM-DD.md`** — Significant batches (ingest + homepage structure), even when version badges stay put.
 
 Full ingest runbook: **`DOCS/INGEST_WORKFLOW.md`**.
 
