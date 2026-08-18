@@ -1781,6 +1781,12 @@ html {
   background: color-mix(in srgb, var(--cluster-accent) 13%, var(--glass));
 }
 
+.link-cluster--zombobs {
+  --cluster-accent: #e11d48;
+  border-color: color-mix(in srgb, var(--cluster-accent) 42%, var(--border));
+  background: color-mix(in srgb, var(--cluster-accent) 12%, var(--glass));
+}
+
 .feature-card--arteria-v2 {
   --arteria-v2: #c4b5fd;
   border-color: color-mix(in srgb, var(--arteria-v2) 40%, var(--border));

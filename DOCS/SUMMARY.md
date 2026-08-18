@@ -1,5 +1,9 @@
 # SUMMARY
 
+## Recent update — 2026-08-18 (Zombobs feature link)
+
+- **Zombobs** — Homepage link-cluster (Site / GitHub / itch.io) alongside Arteria and BlockPanel V3; [otterdays.github.io/Zombobs/](https://otterdays.github.io/Zombobs/); My Creations card + search index.
+
 ## Recent update — 2026-06-23 (Unreleased batch)
 
 - **Content ingest architecture** — Agent-first pipeline for any research → import: **`DOCS/INGEST_WORKFLOW.md`**, **`DOCS/schemas/intake-record.schema.json`**, **`DOCS/intake/`** templates, **`tools/verify_intake.py`**. Documented in **`AGENTS.md`**, **`ARCHITECTURE.md`**, **`CONTENT_GUIDE.md`**, journal **`DOCS/journal/2026-06-23.md`**.

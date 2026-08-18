@@ -6,6 +6,8 @@ All notable changes to this project are documented in this file. Format: [Keep a
 
 ## [Unreleased]
 
+- **Zombobs feature link (2026-08-18)** — Homepage **`.link-cluster`** for **[Zombobs](https://otterdays.github.io/Zombobs/)** (Site / GitHub / itch.io) alongside Arteria and BlockPanel V3; filled **`my-creations.html`** card; **`js/search-data.js`**; **`css/style.css`** rose accent. Intake `DOCS/intake/2026-08-18_zombobs.intake.json`.
+
 - **Homepage hero + mobile QoL (2026-06-23)** — Primary outbound cards (Linktree, Indeed, GitHub, Dev site); projects/repos in `<details>` drawer; site-wide mobile safe-area, touch targets, search keyboard fixes in **`css/style.css`** + **`js/qol.js`**.
 
 - **Gear (2026-06-23)** — Homepage **Gear** section: Lenovo laptop + tablet, AMD desktop CPU + GPU; **`css/style.css`** gear cards; **`js/search-data.js`** index anchor.

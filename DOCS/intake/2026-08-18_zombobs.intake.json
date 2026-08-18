@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "intake_id": "2026-08-18_zombobs",
+  "created": "2026-08-18",
+  "agent": "cursor-agent",
+  "user_prompt": "I'd like to make my zombobs page a feature link, alongside arterial v3 and block panel v3.\n\nOtterdays.github.io/Zombobs/",
+  "status": "verified",
+  "blockers": [],
+  "entities": [
+    {
+      "display_name": "Zombobs",
+      "kind": "project",
+      "organization": "Otterdays",
+      "primary_url": "https://otterdays.github.io/Zombobs/",
+      "source_urls": [
+        "https://otterdays.github.io/Zombobs/",
+        "https://github.com/Otterdays/Zombobs",
+        "https://otterdays.itch.io/zombobs"
+      ],
+      "one_line": "Top-down zombie survival arena shooter in vanilla JavaScript with WebGPU, playable on GitHub Pages.",
+      "placement": {
+        "html_pages": ["index.html", "my-creations.html"],
+        "html_sections": ["Projects & repos", "My creations"],
+        "companies_section": "",
+        "new_company_section": false,
+        "badge_keys": [],
+        "ordering": "curated",
+        "search_entries": [
+          {
+            "title": "Zombobs",
+            "desc": "Top-down zombie survival arena shooter — vanilla JS + WebGPU; GitHub Pages playable alpha.",
+            "category": "project",
+            "tags": ["JavaScript", "Game", "WebGPU", "Zombie"],
+            "url": "https://otterdays.github.io/Zombobs/"
+          }
+        ]
+      },
+      "research": {
+        "hub_vs_lab": "neither",
+        "access_model": "public",
+        "primary_source_verified": true,
+        "notes": "Ryan's own game (my-creations + homepage link-cluster). Live GitHub Pages site shows V0.10.1 ALPHA WebGPU. Repo Otterdays/Zombobs (JS, has_pages). itch.io: 2D top-down zombie shooter, vanilla HTML5 Canvas + JS, WebGPU with Canvas 2D fallback. Existing my-creations.html card is blank placeholder — upgrade in place, do not duplicate. Peer of Arteria v1/v2 and BlockPanel V3 homepage .link-cluster feature links (user said arterial v3; site has Arteria v1/v2, no v3). GAME-Zombobs-3D is a separate blank card — leave untouched."
+      }
+    }
+  ]
+}
